@@ -30,6 +30,9 @@ public class Zip {
   /**
    * Opens a new zip archive in the location denoted by file and readies it for
    * writing.
+   * 
+   * @param file the zip archive file that is used for writing
+   * @throws FileNotFoundException
    */
   public Zip( final File file ) throws FileNotFoundException {
     this.zipOutputStream = new ZipOutputStream( new FileOutputStream( file ) );
@@ -55,7 +58,7 @@ public class Zip {
    * Adds the contents of a folder to the zip archive.
    * 
    * @param folder The folder to add. If the file is not a folder, nothing
-   *          happens.
+   *            happens.
    */
   public void addFolder( final File folder ) throws IOException {
     if( folder.isDirectory() ) {
@@ -68,7 +71,7 @@ public class Zip {
    * 
    * @param file The file or folder to add.
    * @param rootContainer The parent directory. All files' paths are made
-   *          relative to this folder.
+   *            relative to this folder.
    */
   private void addFile( final File file, final File rootContainer )
     throws IOException
@@ -76,8 +79,9 @@ public class Zip {
     if( file.isDirectory() ) {
       addDirectoryContents( file, rootContainer );
     } else {
-      String entryName = file.getCanonicalPath()
-        .replace( rootContainer.getCanonicalPath(), "." );//$NON-NLS-1$
+      String path = file.getCanonicalPath();
+      String entryName 
+        = path.replace( rootContainer.getCanonicalPath(), "." );//$NON-NLS-1$
       addFileAs( file, entryName );
     }
   }
@@ -98,9 +102,18 @@ public class Zip {
     if( entryName.startsWith( ".\\" ) ) {//$NON-NLS-1$
       name = name.replaceFirst( ".\\\\", "" );//$NON-NLS-1$//$NON-NLS-2$
     }
-    zipOutputStream.putNextEntry( new ZipEntry( name ) );
+    this.zipOutputStream.putNextEntry( new ZipEntry( name ) );
     writeFileToZip( new FileInputStream( file ) );
-    zipOutputStream.closeEntry();
+    this.zipOutputStream.closeEntry();
+  }
+
+  /**
+   * Closes the zip file. No further additions are possible.
+   * 
+   * @throws IOException if the file couldn't be closed
+   */
+  public void close() throws IOException {
+    this.zipOutputStream.close();
   }
 
   /**
@@ -109,7 +122,7 @@ public class Zip {
    * 
    * @param file The directory to add.
    * @param rootContainer The parent directory. All files' paths are made
-   *          relative to this folder.
+   *            relative to this folder.
    */
   private void addDirectoryContents( final File file, final File rootContainer )
     throws IOException
@@ -126,13 +139,8 @@ public class Zip {
     byte[] buffer = new byte[ 512 ];
     int lengthRead = 0;
     while( ( lengthRead = inStream.read( buffer ) ) != -1 ) {
-      zipOutputStream.write( buffer, 0, lengthRead );
+      this.zipOutputStream.write( buffer, 0, lengthRead );
     }
     inStream.close();
-  }
-
-  /** Closes the zip file. No further additions are possible. */
-  public void close() throws IOException {
-    zipOutputStream.close();
   }
 }
