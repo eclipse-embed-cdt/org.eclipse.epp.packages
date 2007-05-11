@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+
+	<target name="init" description="Read build properties ">
+		<tstamp>
+			<format property="build.num" pattern="yyyyMMddHHmmss" />
+		</tstamp>
+		<!-- build.root is set by the eclipse packaging application -->
+		<property name="build.out" location="${build.root}" />
+		<property name="build.temp" location="${build.root}/installer/temp" />
+		<property name="log.dir" location="${build.root}/installer/logs" />
+		<property name="install.name" value="${product.name}" />
+		<!-- install.tools is set by the eclipse packaging application -->
+		<property name="install.temp" location="${build.temp}/${install.name}/out" />
+		<!-- install.image is set by the eclipse packaging application -->
+		<fail unless="eclipse.running" />
+
+		<!-- Delete the temporary directory -->
+		<delete dir="${build.temp}" />
+		<delete dir="$${install.temp}" />
+		<mkdir dir="${build.temp}" />
+		<mkdir dir="${log.dir}" />
+		<mkdir dir="${install.temp}" />
+
+		<!-- Check to see if the install-image directory exists -->
+		<available file="${install.image}" property="install.image.exists" />
+	</target>
+
+	<target name="prepare_installer">
+		<mkdir dir="${install.temp}/swt-installer" />
+		<unzip src="InstallerClasses.zip" dest="${install.temp}/swt-installer" />
+		<copy todir="${install.temp}/swt-installer/org/eclipse/packaging/installer" file="install.properties" />
+	</target>
+
+	<target name="prepare_zip_image">
+		<unzip dest="${build.temp}/install-image" src="${install.image}" />
+		<move todir="${install.temp}/install-image">
+			<fileset dir="${build.temp}/install-image/eclipse" />
+		</move>
+	</target>
+
+	<target name="prepare_tar_image">
+		<untar dest="${build.temp}/install-image" src="${install.image}" compression="gzip" />
+		<move todir="${install.temp}/install-image">
+			<fileset dir="${build.temp}/install-image/eclipse" />
+		</move>
+	</target>
+
+	<!-- Assemble the installer JAR -->
+	<target name="assemble_jar">
+		<mkdir dir="${build.out}" />
+		<jar destfile="${build.out}/install.jar">
+			<manifest>
+				<attribute name="Main-Class" value="com.instantiations.installer.launcher.Main" />
+			</manifest>
+			<metainf dir="META-INF" />
+			<fileset dir="${install.temp}" />
+			<fileset dir="${install.tools}/lib">
+				<exclude name="**/src/**/*.*" />
+			</fileset>
+		</jar>
+	</target>
+
+
+	<!-- Macro for checking that a file or directory exists.-->
+	<macrodef name="checkfile">
+		<attribute name="file" />
+		<attribute name="message" default="Cannot find file: @{file}" />
+		<sequential>
+
+			<!-- Assert that the file exists -->
+			<fail message="@{message}">
+				<condition>
+					<not>
+						<available file="@{file}" />
+					</not>
+				</condition>
+			</fail>
+		</sequential>
+	</macrodef>
+
+</project>

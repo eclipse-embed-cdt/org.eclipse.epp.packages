@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="build_installer" basedir=".">
+
+	<import file="build_init.xml" />
+
+	<!-- Build the installer -->
+	<target name="build_installer_from_tar" depends="init, prepare_installer, prepare_tar_image, assemble_jar">
+		<!-- Assemble the Linux installer -->
+		<property name="InstallerLinuxExe" location="" />
+		<java classname="com.instantiations.installer.tools.packager.NativePackager" failonerror="true" output="${log.dir}/build-installer-${install.name}-linux.log">
+			<arg value="${build.out}/${install.name}.bin" />
+			<arg value="${install.tools}/template/linux/x86/install" />
+			<arg value="-x${build.out}/install.jar" />
+			<classpath>
+				<pathelement location="${install.tools}/installerTools.jar" />
+			</classpath>
+		</java>
+
+		<!-- Rename the installer JAR to its final name -->
+		<delete file="${build.out}/install.jar" />
+	</target>
+</project>
