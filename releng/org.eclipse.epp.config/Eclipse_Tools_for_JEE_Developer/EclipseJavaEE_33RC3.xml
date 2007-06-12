@@ -117,7 +117,6 @@
       version="2.0.0.v200706071730-7A1ECBCnbckz0bYv2wHkDKN1pVrT">
     </feature>
 
-<!-- 
     <feature
       id="org.eclipse.emf"
       version="2.3.0.v200705300200">
@@ -126,14 +125,7 @@
       id="org.eclipse.emf.ecore.sdo"
       version="2.3.0.v200705300200">
     </feature>
-    <feature
-      id="org.eclipse.datatools.modelbase.feature"
-      version="1.5.0.200705301">
-    </feature>
-    <feature
-      id="org.eclipse.datatools.connectivity.feature"
-      version="1.5.0.200705301">
-    </feature>
+
     <feature
       id="org.eclipse.datatools.connectivity.oda.feature"
       version="1.5.0.200705301">
@@ -142,15 +134,28 @@
       id="org.eclipse.datatools.connectivity.oda.designer.feature"
       version="1.5.0.200705301">
     </feature>
+	  <feature
+	    id="org.eclipse.datatools.modelbase.feature"
+	    version="1.5.0.200705301">
+	  </feature>
+
+    <!-- 
+	  <feature
+      id="org.eclipse.datatools.connectivity.feature"
+      version="1.5.0.200705301">
+    </feature>
     <feature
       id="org.eclipse.datatools.sqldevtools.results.feature"
       version="1.5.0.200705301">
     </feature>
+    -->
+ 
     <feature
       id="org.eclipse.jst"
       version="2.0.0.v200706110805-7B-08dDPIRlx0adz-mevwphF-s2S">
     </feature>
 
+<!-- 
     <feature
       id="org.eclipse.datatools.sqldevtools.feature"
       version="1.5.0.200705301">
