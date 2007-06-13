@@ -139,7 +139,36 @@
 	    version="1.5.0.200705301">
 	  </feature>
 
-    <!-- 
+<!-- try it START -->
+
+	  <feature
+	    id="org.eclipse.pde"
+	    version="3.3.0.v20061114-0800-7N7M-DUUEF6EpNV6EcHC">
+	  </feature>
+
+	  <feature
+	    id="org.eclipse.datatools.sqldevtools.ddl.feature"
+	    version="1.5.0.200705301">
+	  </feature>
+	  <feature
+	    id="org.eclipse.datatools.sqldevtools.data.feature"
+	    version="1.5.0.200705301">
+	  </feature>
+	  <feature
+	    id="org.eclipse.datatools.sqldevtools.feature"
+	    version="1.5.0.200705301">
+	  </feature>
+	  <feature
+	    id="org.eclipse.datatools.enablement.jdbc.feature"
+	    version="1.5.0.200705301">
+	  </feature>
+	  <feature
+	    id="org.eclipse.datatools.sqldevtools.parsers.feature"
+	    version="1.5.0.200705301">
+	  </feature>
+
+	  <!-- try it END -->
+
 	  <feature
       id="org.eclipse.datatools.connectivity.feature"
       version="1.5.0.200705301">
@@ -148,23 +177,16 @@
       id="org.eclipse.datatools.sqldevtools.results.feature"
       version="1.5.0.200705301">
     </feature>
-    -->
  
     <feature
       id="org.eclipse.jst"
       version="2.0.0.v200706110805-7B-08dDPIRlx0adz-mevwphF-s2S">
     </feature>
 
-<!-- 
-    <feature
-      id="org.eclipse.datatools.sqldevtools.feature"
-      version="1.5.0.200705301">
-    </feature>
     <feature
       id="org.eclipse.jpt.feature"
-      version="1.0.0.v200706040001-77- -CYQCCz-CnRQCCCH">
+      version="1.0.0.v200706040001-77--CYQCCz-CnRQCCCH">
     </feature>
- -->
 
 	</requiredFeatures>
 
