@@ -1,18 +1,20 @@
 #!/bin/sh
 
-cd Eclipse_for_RCP_Plugin_Developers
+DIRECTORY=$PWD
+
+cd $DIRECTORY/Eclipse_for_RCP_Plugin_Developers
 sh ./build.sh
 sh ./build.sh
 
-cd Eclipse_IDE_for_C_C++_Developers
+cd $DIRECTORY/Eclipse_IDE_for_C_C++_Developers
 sh ./build.sh
 sh ./build.sh
 
-cd Eclipse_IDE_for_Java_Developers
+cd $DIRECTORY/Eclipse_IDE_for_Java_Developers
 sh ./build.sh
 sh ./build.sh
 
-cd Eclipse_IDE_for_JEE_Developers
+cd $DIRECTORY/Eclipse_IDE_for_JEE_Developers
 sh ./build.sh
 sh ./build.sh
 
