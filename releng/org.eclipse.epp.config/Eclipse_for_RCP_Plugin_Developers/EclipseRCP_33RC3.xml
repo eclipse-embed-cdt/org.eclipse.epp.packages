@@ -56,62 +56,74 @@
     </feature>
 
     <feature
-      id="org.eclipse.mylar_feature"
-      version="2.0.0.v20070607-1200">
+      id="org.eclipse.mylyn_feature"
+      version="2.0.0.v20070615-0900">
     </feature>
     <feature
-      id="org.eclipse.mylar.ide_feature"
-      version="2.0.0.v20070607-1200">
+      id="org.eclipse.mylyn.context_feature"
+      version="2.0.0.v20070615-0900">
     </feature>
     <feature
-      id="org.eclipse.mylar.bugzilla_feature"
-      version="2.0.0.v20070607-1200">
+      id="org.eclipse.mylyn.bugzilla_feature"
+      version="2.0.0.v20070615-0900">
+    </feature>
+    <feature
+      id="org.eclipse.mylyn.ide_feature"
+      version="2.0.0.v20070615-0900">
+    </feature>
+    <feature
+      id="org.eclipse.mylyn.java_feature"
+      version="2.0.0.v20070615-0900">
+    </feature>
+    <feature
+      id="org.eclipse.mylyn.pde_feature"
+      version="2.0.0.v20070615-0900">
     </feature>
 
     <feature
       id="org.eclipse.emf.common"
-      version="2.3.0.v200705300200">
+      version="2.3.0.v200706130003">
     </feature>
     <feature
       id="org.eclipse.emf.common.ui"
-      version="2.3.0.v200705300200">
+      version="2.3.0.v200706130003">
     </feature>
     <feature
       id="org.eclipse.emf.ecore"
-      version="2.3.0.v200705300200">
-    </feature>
-    <feature
-      id="org.eclipse.emf.ecore.edit"
-      version="2.3.0.v200705300200">
+      version="2.3.0.v200706130003">
     </feature>
     <feature
       id="org.eclipse.emf.edit"
-      version="2.3.0.v200705300200">
+      version="2.3.0.v200706130003">
+    </feature>
+    <feature
+      id="org.eclipse.emf.ecore.edit"
+      version="2.3.0.v200706130003">
     </feature>
     <feature
       id="org.eclipse.emf.edit.ui"
-      version="2.3.0.v200705300200">
-    </feature>
-    <feature
-      id="org.eclipse.xsd.edit"
-      version="2.3.0.v200705300200">
+      version="2.3.0.v200706130003">
     </feature>
     <feature
       id="org.eclipse.xsd"
-      version="2.3.0.v200705300200">
+      version="2.3.0.v200706130003">
     </feature>
     <feature
-      id="org.eclipse.wst.common_ui.feature"
-      version="2.0.0.v200706041905-7C5EGyE9RvTVniQtupe5TgOOg1g8">
+      id="org.eclipse.xsd.edit"
+      version="2.3.0.v200706130003">
     </feature>
     <feature
       id="org.eclipse.gef"
-      version="3.3.0.v20070529">
+      version="3.3.0.v20070613">
+    </feature>
+    <feature
+      id="org.eclipse.wst.common_ui.feature"
+      version="2.0.0.v200706041905-7C5EGzE9RvTVniSrwnf4TgOPe3e9">
     </feature>
 
     <feature
       id="org.eclipse.wst.xml_ui.feature"
-      version="2.0.0.v200706071730-7A1ECBCnbckz0bYv2wHkDKN1pVrT">
+      version="2.0.0.v200706071730-7A1ECBCnbckz0bZt4wJn9KN2nXpZ">
     </feature>
 
   </requiredFeatures>
@@ -129,7 +141,7 @@
   <!-- relativeFolder, names the subfolder of the base folder where the update site will be created. 
     This is configurable so that working areas, especially root files, are reusable. -->
   <extensionSite
-    relativeFolder="Eclipse_for_RCP_Plugin_Developer_Site">
+    relativeFolder="epp-rcp-europa_site">
   </extensionSite>
 
   <!-- Create archives for win32, linux, macosx platforms, antZip is default format -->
