@@ -15,7 +15,7 @@ TARGETS="linux.gtk.x86  macosx.carbon.x86  win32.win32.x86"
 
 cd $ECLIPSE_PATH
 $JAVA -Xms64m -Xmx512m -jar startup.jar -consoleLog   \
-      -data $SCRIPT_DIRECTORY/target $SCRIPT_DIRECTORY/EclipseCDT_33RC3.xml
+      -data $SCRIPT_DIRECTORY/target $SCRIPT_DIRECTORY/EclipseJavaEE_33RC3.xml
 
 # tar.gz error in build script
 if [ ! -e $SCRIPT_DIRECTORY/target/temp/linux.gtk.x86/eclipse/eclipse ]
