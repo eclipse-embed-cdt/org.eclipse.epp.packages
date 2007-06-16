@@ -4,15 +4,14 @@ JAVA=/opt/java/current/bin/java
 PACKAGING_ROOT=$HOME/packaging
 ECLIPSE_PATH=$PACKAGING_ROOT/eclipse
 ROOT_FILES=$PACKAGING_ROOT/roots
-SCRIPT_DIRECTORY="$(dirname $BASH_SOURCE[-1])"
+# not working...
+# SCRIPT_DIRECTORY="$(dirname $BASH_SOURCE[-1])"
+SCRIPT_DIRECTORY=$PWD
 TARGETS="linux.gtk.x86  macosx.carbon.x86  win32.win32.x86"
 
 #################################################
 # building with Eclipse 3.2.1 as base platform  #
 #################################################
-
-echo $SCRIPT_DIRECTORY/target
-echo $SCRIPT_DIRECTORY/EclipseRCP_33RC3.xml
 
 cd $ECLIPSE_PATH
 $JAVA -Xms64m -Xmx512m -jar startup.jar -consoleLog   \
