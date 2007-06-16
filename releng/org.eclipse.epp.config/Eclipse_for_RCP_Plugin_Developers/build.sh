@@ -11,6 +11,9 @@ TARGETS="linux.gtk.x86  macosx.carbon.x86  win32.win32.x86"
 # building with Eclipse 3.2.1 as base platform  #
 #################################################
 
+echo $SCRIPT_DIRECTORY/target
+echo $SCRIPT_DIRECTORY/EclipseRCP_33RC3.xml
+
 cd $ECLIPSE_PATH
 $JAVA -Xms64m -Xmx512m -jar startup.jar -consoleLog   \
       -data $SCRIPT_DIRECTORY/target $SCRIPT_DIRECTORY/EclipseRCP_33RC3.xml
