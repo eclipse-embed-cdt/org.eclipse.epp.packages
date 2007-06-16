@@ -32,7 +32,7 @@ mv epp-cpp-europa-win32.win32.x86.zip        epp-cpp-europa-win32.zip
 
 mv epp-rcp-europa-linux.gtk.x86.tar.gz       epp-rcp-europa-linux-gtk.tar.gz
 mv epp-rcp-europa-macosx.carbon.x86.tar.gz   epp-rcp-europa-macosx-carbon.tar.gz
-mv epp-rcp-europa-win32.win32.x86.zip        epp-rcp-europa-win32..zip
+mv epp-rcp-europa-win32.win32.x86.zip        epp-rcp-europa-win32.zip
 
 mv epp-java-europa-linux.gtk.x86.tar.gz      epp-java-europa-linux-gtk.tar.gz
 mv epp-java-europa-macosx.carbon.x86.tar.gz  epp-java-europa-macosx-carbon.tar.gz
@@ -40,7 +40,7 @@ mv epp-java-europa-win32.win32.x86.zip       epp-java-europa-win32.zip
 
 mv epp-jee-europa-linux.gtk.x86.tar.gz       epp-jee-europa-linux-gtk.tar.gz
 mv epp-jee-europa-macosx.carbon.x86.tar.gz   epp-jee-europa-macosx-carbon.tar.gz
-mv epp-jee-europa-win32.win32.x86.zip        epp-jee-europa-win32..zip
+mv epp-jee-europa-win32.win32.x86.zip        epp-jee-europa-win32.zip
 
 for FILE in *[zp]; do md5sum -b $FILE >$FILE.md5; done
 for FILE in *[zp]; do sha1sum -b $FILE >$FILE.sha1; done
