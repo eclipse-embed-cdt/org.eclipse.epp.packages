@@ -7,7 +7,7 @@
 	<!-- configIni, the config.ini file to use. -->
 	<!-- name, the name of the product, used in naming the created files. -->
 	<product
-	  configIni="/home/mknauer/packaging/config.ini"
+	  configIni="/home/mknauer/packaging/org.eclipse.epp/releng/org.eclipse.epp.config/Eclipse_IDE_for_Java_Developers/config.ini"
 	  name="epp-java-europa" />
 
 	<!-- url, pointing to an update site. -->
