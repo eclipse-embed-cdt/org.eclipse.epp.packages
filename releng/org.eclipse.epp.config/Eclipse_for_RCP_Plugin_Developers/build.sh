@@ -18,22 +18,22 @@ $JAVA -Xms64m -Xmx512m -jar startup.jar -consoleLog   \
       -data $SCRIPT_DIRECTORY/target $SCRIPT_DIRECTORY/EclipseRCP_33RC3.xml
 
 # tar.gz error in build script
-if [ ! -e $SCRIPT_DIRECTORY/target/linux.gtk.x86/eclipse/eclipse ]
+if [ ! -e $SCRIPT_DIRECTORY/target/temp/linux.gtk.x86/eclipse/eclipse ]
 then
   echo "unpacking linux archive"
-  cd $SCRIPT_DIRECTORY/target/linux.gtk.x86/
+  cd $SCRIPT_DIRECTORY/target/temp/linux.gtk.x86/
   tar zxf $ROOT_FILES/eclipse-RCP-3.3-linux-gtk.tar.gz
 fi
-if [ ! -e $SCRIPT_DIRECTORY/target/macosx.carbon.x86/eclipse/eclipse ]
+if [ ! -e $SCRIPT_DIRECTORY/target/temp/macosx.carbon.x86/eclipse/eclipse ]
 then
   echo "unpacking macosx archive"
-  cd $SCRIPT_DIRECTORY/target/macosx.carbon.x86/
+  cd $SCRIPT_DIRECTORY/target/temp/macosx.carbon.x86/
   tar zxf $ROOT_FILES/eclipse-RCP-3.3-macosx-carbon.tar.gz
 fi
 
 # plugin_customization.ini
 cp -a $SCRIPT_DIRECTORY/plugin_customization.ini \
-      $SCRIPT_DIRECTORY/target/epp-rcp-europa_site/eclipse/plugins/org.eclipse.platform_3.3.0.*/
+      $SCRIPT_DIRECTORY/target/extension_site/eclipse/plugins/org.eclipse.platform_3.3.0.*/
 
 # eclipse.ini
 for TARGET in "$TARGETS";
