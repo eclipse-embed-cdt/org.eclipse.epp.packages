@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-	<!-- version, the RCP version to build. This is used to determine the file name of the root file archives -->
+	<!-- version, the RCP version to build. This is used to determine the file 
+    name of the root file archives -->
 	<rcp version="3.3" />
 
 	<!-- configIni, the config.ini file to use. -->
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product configIni="/home/mknauer/packaging/config.ini"
-		name="Eclipse_Tools_for_Java_Developer" />
+	<product
+	  configIni="/home/mknauer/packaging/config.ini"
+	  name="epp-jee-europa" />
 
 	<!-- url, pointing to an update site. -->
 	<updateSites>
     <!-- local mirrors -->
     <updateSite url="file:///home/mknauer/mirror/3.3milestones/" />
-<!-- 
     <updateSite url="file:///home/mknauer/mirror/releases/europa/" />
- -->
+<!-- 
     <updateSite url="file:///home/mknauer/mirror/releases/europa/staging/" />
-
+ -->
 
     <!-- eclipse.org update sites -->
     <!-- 
@@ -42,7 +43,7 @@
 	<!-- id, a feature id. -->
 	<!-- version, the feature version. -->
 	<requiredFeatures>
-		<!--Features for Eclipse 3.3 RC3 -->
+    <!--Features for Eclipse 3.3 RC3 -->
 
     <!-- RC3 version from modified eclipse/updates/3.3milestones/site.xml -->
     <feature
@@ -105,17 +106,87 @@
       version="2.3.0.v200705300200">
     </feature>
     <feature
-      id="org.eclipse.wst.common_ui.feature"
-      version="2.0.0.v200706041905-7C5EGyE9RvTVniQtupe5TgOOg1g8">
-    </feature>
-    <feature
       id="org.eclipse.gef"
       version="3.3.0.v20070529">
     </feature>
-
+    <feature
+      id="org.eclipse.wst"
+      version="2.0.0.v200706041905-7C-08k0IWJY85WFFKlO25VeieoJf">
+    </feature>
     <feature
       id="org.eclipse.wst.xml_ui.feature"
       version="2.0.0.v200706071730-7A1ECBCnbckz0bYv2wHkDKN1pVrT">
+    </feature>
+
+    <feature
+      id="org.eclipse.emf"
+      version="2.3.0.v200705300200">
+    </feature>
+    <feature
+      id="org.eclipse.emf.ecore.sdo"
+      version="2.3.0.v200705300200">
+    </feature>
+
+    <feature
+      id="org.eclipse.datatools.connectivity.oda.feature"
+      version="1.5.0.200705301">
+    </feature>
+    <feature
+      id="org.eclipse.datatools.connectivity.oda.designer.feature"
+      version="1.5.0.200705301">
+    </feature>
+	  <feature
+	    id="org.eclipse.datatools.modelbase.feature"
+	    version="1.5.0.200705301">
+	  </feature>
+
+<!-- try it START -->
+
+	  <feature
+	    id="org.eclipse.pde"
+	    version="3.3.0.v20061114-0800-7N7M-DUUEF6EpNV6EcHC">
+	  </feature>
+
+	  <feature
+	    id="org.eclipse.datatools.sqldevtools.ddl.feature"
+	    version="1.5.0.200705301">
+	  </feature>
+	  <feature
+	    id="org.eclipse.datatools.sqldevtools.data.feature"
+	    version="1.5.0.200705301">
+	  </feature>
+	  <feature
+	    id="org.eclipse.datatools.sqldevtools.feature"
+	    version="1.5.0.200705301">
+	  </feature>
+	  <feature
+	    id="org.eclipse.datatools.enablement.jdbc.feature"
+	    version="1.5.0.200705301">
+	  </feature>
+	  <feature
+	    id="org.eclipse.datatools.sqldevtools.parsers.feature"
+	    version="1.5.0.200705301">
+	  </feature>
+
+	  <!-- try it END -->
+
+	  <feature
+      id="org.eclipse.datatools.connectivity.feature"
+      version="1.5.0.200705301">
+    </feature>
+    <feature
+      id="org.eclipse.datatools.sqldevtools.results.feature"
+      version="1.5.0.200705301">
+    </feature>
+ 
+    <feature
+      id="org.eclipse.jst"
+      version="2.0.0.v200706110805-7B-08dDPIRlx0adz-mevwphF-s2S">
+    </feature>
+
+    <feature
+      id="org.eclipse.jpt.feature"
+      version="1.0.0.v200706040001-77--CYQCCz-CnRQCCCH">
     </feature>
 
 	</requiredFeatures>
@@ -137,7 +208,7 @@
 
 	<!-- relativeFolder, names the subfolder of the base folder where the update site will be created. 
 		This is configurable so that working areas, especially root files, are reusable. -->
-	<extensionSite relativeFolder="Eclipse_Tools_for_Java_Developer_Site"></extensionSite>
+	<extensionSite relativeFolder="Eclipse_Tools_for_JEE_Developer_Site"></extensionSite>
 
 	<!-- Create archives for win32, linux, macosx platforms, antZip is default format -->
 	<targetPlatforms>

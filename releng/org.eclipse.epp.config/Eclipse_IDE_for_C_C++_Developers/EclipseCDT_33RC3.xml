@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-	<!-- version, the RCP version to build. This is used to determine the file name of the root file archives -->
+	<!-- version, the RCP version to build. This is used to determine the file 
+    name of the root file archives -->
 	<rcp version="3.3" />
 
 	<!-- configIni, the config.ini file to use. -->
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product configIni="/home/mknauer/packaging/config.ini"
-		name="Eclipse_Tools_for_C_Developer" />
+	<product
+	  configIni="/home/mknauer/packaging/config.ini"
+	  name="epp-cpp-europa" />
 
 	<!-- url, pointing to an update site. -->
 	<updateSites>
     <!-- local mirrors -->
     <updateSite url="file:///home/mknauer/mirror/3.3milestones/" />
-<!-- 
     <updateSite url="file:///home/mknauer/mirror/releases/europa/" />
- -->
+<!-- 
     <updateSite url="file:///home/mknauer/mirror/releases/europa/staging/" />
-
+ -->
 
     <!-- eclipse.org update sites -->
 <!-- 

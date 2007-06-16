@@ -8,16 +8,16 @@
   <!-- name, the name of the product, used in naming the created files. -->
   <product
     configIni="/home/mknauer/packaging/config.ini"
-    name="Eclipse_for_RCP_Plugin_Developer" />
+    name="epp-rcp-europa" />
 
   <!-- url, pointing to an update site. -->
   <updateSites>
     <!-- local mirrors -->
     <updateSite url="file:///home/mknauer/mirror/3.3milestones/" />
-<!-- 
     <updateSite url="file:///home/mknauer/mirror/releases/europa/" />
- -->
+<!-- 
     <updateSite url="file:///home/mknauer/mirror/releases/europa/staging/" />
+ -->
 
     <!-- eclipse.org update sites -->
     <!-- 
