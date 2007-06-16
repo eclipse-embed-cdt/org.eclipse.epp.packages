@@ -1,5 +1,22 @@
 #!/bin/sh
 
+cd Eclipse_for_RCP_Plugin_Developers
+sh ./build.sh
+sh ./build.sh
+
+cd Eclipse_IDE_for_C_C++_Developers
+sh ./build.sh
+sh ./build.sh
+
+cd Eclipse_IDE_for_Java_Developers
+sh ./build.sh
+sh ./build.sh
+
+cd Eclipse_IDE_for_JEE_Developers
+sh ./build.sh
+sh ./build.sh
+
+
 #################################################
 # building with Eclipse 3.2.1 as base platform  #
 #################################################
@@ -8,22 +25,22 @@ cd /home/mknauer/packaging/eclipse
 # RCP
 #/opt/java/jdk1.5.0_07.modified/bin/java -Xms64m -Xmx512m -jar startup.jar -consolelog -data /home/mknauer/packaging/target /home/mknauer/packaging/EclipseRCP_33RC1.xml
 #/opt/java/jdk1.5.0_07.modified/bin/java -Xms64m -Xmx512m -jar startup.jar -consolelog -data /home/mknauer/packaging/target /home/mknauer/packaging/EclipseRCP_33RC2.xml
-/opt/java/jdk1.5.0_07.modified/bin/java -Xms64m -Xmx512m -jar startup.jar -consolelog -data /home/mknauer/packaging/target /home/mknauer/packaging/EclipseRCP_33RC3.xml
+#/opt/java/jdk1.5.0_07.modified/bin/java -Xms64m -Xmx512m -jar startup.jar -consolelog -data /home/mknauer/packaging/target /home/mknauer/packaging/EclipseRCP_33RC3.xml
 
 # CDT
 #/opt/java/jdk1.5.0_07.modified/bin/java -Xms64m -Xmx512m -jar startup.jar -consolelog -data /home/mknauer/packaging/target /home/mknauer/packaging/EclipseCDT_33RC1.xml
 #/opt/java/jdk1.5.0_07.modified/bin/java -Xms64m -Xmx512m -jar startup.jar -consolelog -data /home/mknauer/packaging/target /home/mknauer/packaging/EclipseCDT_33RC2.xml
-/opt/java/jdk1.5.0_07.modified/bin/java -Xms64m -Xmx512m -jar startup.jar -consolelog -data /home/mknauer/packaging/target /home/mknauer/packaging/EclipseCDT_33RC3.xml
+#/opt/java/jdk1.5.0_07.modified/bin/java -Xms64m -Xmx512m -jar startup.jar -consolelog -data /home/mknauer/packaging/target /home/mknauer/packaging/EclipseCDT_33RC3.xml
 
 # Java
 #/opt/java/jdk1.5.0_07.modified/bin/java -Xms64m -Xmx512m -jar startup.jar -consolelog -data /home/mknauer/packaging/target /home/mknauer/packaging/EclipseJava_33RC1.xml
 #/opt/java/jdk1.5.0_07.modified/bin/java -Xms64m -Xmx512m -jar startup.jar -consolelog -data /home/mknauer/packaging/target /home/mknauer/packaging/EclipseJava_33RC2.xml
-/opt/java/jdk1.5.0_07.modified/bin/java -Xms64m -Xmx512m -jar startup.jar -consolelog -data /home/mknauer/packaging/target /home/mknauer/packaging/EclipseJava_33RC3.xml
+#/opt/java/jdk1.5.0_07.modified/bin/java -Xms64m -Xmx512m -jar startup.jar -consolelog -data /home/mknauer/packaging/target /home/mknauer/packaging/EclipseJava_33RC3.xml
 
 # Java EE
 #/opt/java/jdk1.5.0_07.modified/bin/java -Xms64m -Xmx512m -jar startup.jar -consolelog -data /home/mknauer/packaging/target /home/mknauer/packaging/EclipseJavaEE_33RC1.xml
 #/opt/java/jdk1.5.0_07.modified/bin/java -Xms64m -Xmx512m -XX:MaxPermSize=128m -jar startup.jar -consolelog -data /home/mknauer/packaging/target /home/mknauer/packaging/EclipseJavaEE_33RC2.xml
-/opt/java/jdk1.5.0_07.modified/bin/java -Xms64m -Xmx512m -XX:MaxPermSize=128m -jar startup.jar -consolelog -data /home/mknauer/packaging/target /home/mknauer/packaging/EclipseJavaEE_33RC3.xml
+#/opt/java/jdk1.5.0_07.modified/bin/java -Xms64m -Xmx512m -XX:MaxPermSize=128m -jar startup.jar -consolelog -data /home/mknauer/packaging/target /home/mknauer/packaging/EclipseJavaEE_33RC3.xml
 
 
 #################################################
