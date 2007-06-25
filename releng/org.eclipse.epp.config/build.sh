@@ -23,27 +23,27 @@ cd $DIRECTORY/Eclipse_IDE_for_JEE_Developers
 sh ./build.sh
 
 mkdir $DIRECTORY/result
-find $DIRECTORY -name "epp-*" -maxdepth 3 -type f -exec mv {} $DIRECTORY/result/ \;
+find $DIRECTORY -name "epp-*" -maxdepth 3 -type f -exec cp -a {} $DIRECTORY/result/ \;
 cd $DIRECTORY/result
 
-mv -f epp-cpp-europa-linux.gtk.x86.tar.gz       epp-cpp-europa-linux-gtk.tar.gz
-mv -f epp-cpp-europa-macosx.carbon.x86.tar.gz   epp-cpp-europa-macosx-carbon.tar.gz
-mv -f epp-cpp-europa-win32.win32.x86.zip        epp-cpp-europa-win32.zip
+mv -f epp-cpp-europa-linux.gtk.x86.tar.gz       eclipse-cpp-europa-linux-gtk.tar.gz
+mv -f epp-cpp-europa-macosx.carbon.x86.tar.gz   eclipse-cpp-europa-macosx-carbon.tar.gz
+mv -f epp-cpp-europa-win32.win32.x86.zip        eclipse-cpp-europa-win32.zip
 
-mv -f epp-rcp-europa-linux.gtk.x86.tar.gz       epp-rcp-europa-linux-gtk.tar.gz
-mv -f epp-rcp-europa-macosx.carbon.x86.tar.gz   epp-rcp-europa-macosx-carbon.tar.gz
-mv -f epp-rcp-europa-win32.win32.x86.zip        epp-rcp-europa-win32.zip
+mv -f epp-rcp-europa-linux.gtk.x86.tar.gz       eclipse-rcp-europa-linux-gtk.tar.gz
+mv -f epp-rcp-europa-macosx.carbon.x86.tar.gz   eclipse-rcp-europa-macosx-carbon.tar.gz
+mv -f epp-rcp-europa-win32.win32.x86.zip        eclipse-rcp-europa-win32.zip
 
-mv -f epp-java-europa-linux.gtk.x86.tar.gz      epp-java-europa-linux-gtk.tar.gz
-mv -f epp-java-europa-macosx.carbon.x86.tar.gz  epp-java-europa-macosx-carbon.tar.gz
-mv -f epp-java-europa-win32.win32.x86.zip       epp-java-europa-win32.zip
+mv -f epp-java-europa-linux.gtk.x86.tar.gz      eclipse-java-europa-linux-gtk.tar.gz
+mv -f epp-java-europa-macosx.carbon.x86.tar.gz  eclipse-java-europa-macosx-carbon.tar.gz
+mv -f epp-java-europa-win32.win32.x86.zip       eclipse-java-europa-win32.zip
 
-mv -f epp-jee-europa-linux.gtk.x86.tar.gz       epp-jee-europa-linux-gtk.tar.gz
-mv -f epp-jee-europa-macosx.carbon.x86.tar.gz   epp-jee-europa-macosx-carbon.tar.gz
-mv -f epp-jee-europa-win32.win32.x86.zip        epp-jee-europa-win32.zip
+mv -f epp-jee-europa-linux.gtk.x86.tar.gz       eclipse-jee-europa-linux-gtk.tar.gz
+mv -f epp-jee-europa-macosx.carbon.x86.tar.gz   eclipse-jee-europa-macosx-carbon.tar.gz
+mv -f epp-jee-europa-win32.win32.x86.zip        eclipse-jee-europa-win32.zip
 
-for FILE in *[zp]; do md5sum -b $FILE >$FILE.md5; done
-for FILE in *[zp]; do sha1sum -b $FILE >$FILE.sha1; done
+for FILE in *[zp]; do md5sum -b $FILE >packages.md5; done
+for FILE in *[zp]; do sha1sum -b $FILE >packages.sha1; done
 
 
 
