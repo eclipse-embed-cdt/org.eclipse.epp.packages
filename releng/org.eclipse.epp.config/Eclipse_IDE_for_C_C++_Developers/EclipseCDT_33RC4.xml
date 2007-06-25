@@ -45,16 +45,17 @@
 	<requiredFeatures>
     <feature
       id="org.eclipse.platform"
-      version="3.3.0.v20070530a-_19REnTF-XsdF8OaOj3B">
+      version="3.3.0.v20070612-_19UEkLEzwsdF9jSqQ-G">
     </feature>
 
     <feature
       id="org.eclipse.cdt"
-      version="4.0.0.200706081931">
+      version="4.0.0.200706222100">
     </feature>
+
     <feature
       id="org.eclipse.cvs"
-      version="1.0.0.v20070510-7C79_79EI99g_PFZ">
+      version="1.0.0.v20070606-7C79_79EI99g_Y9e">
     </feature>
 
 	</requiredFeatures>
