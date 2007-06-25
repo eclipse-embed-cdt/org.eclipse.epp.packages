@@ -42,8 +42,8 @@ mv -f epp-jee-europa-linux.gtk.x86.tar.gz       eclipse-jee-europa-linux-gtk.tar
 mv -f epp-jee-europa-macosx.carbon.x86.tar.gz   eclipse-jee-europa-macosx-carbon.tar.gz
 mv -f epp-jee-europa-win32.win32.x86.zip        eclipse-jee-europa-win32.zip
 
-for FILE in *[zp]; do md5sum -b $FILE >packages.md5; done
-for FILE in *[zp]; do sha1sum -b $FILE >packages.sha1; done
+for FILE in *[zp]; do md5sum -b $FILE >>packages.md5; done
+for FILE in *[zp]; do sha1sum -b $FILE >>packages.sha1; done
 
 
 
