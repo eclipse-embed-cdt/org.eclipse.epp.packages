@@ -70,10 +70,6 @@
       id="org.eclipse.mylyn.bugzilla_feature"
       version="2.0.0.v20070621-1800">
     </feature>
-    <feature
-      id="org.eclipse.mylyn.java_feature"
-      version="2.0.0.v20070621-1800">
-    </feature>
 
   <feature
       id="org.eclipse.emf.common"
