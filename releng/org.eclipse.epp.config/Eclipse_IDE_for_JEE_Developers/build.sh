@@ -34,7 +34,7 @@ fi
 # plugin_customization.ini
 echo "Copying plugin_customization.ini"
 cp -a $SCRIPT_DIRECTORY/plugin_customization.ini \
-      $SCRIPT_DIRECTORY/target/extension_site/eclipse/plugins/org.eclipse.ide_3.3.0.*/
+      $SCRIPT_DIRECTORY/target/extension_site/eclipse/plugins/org.eclipse.platform_3.3.0.*/
 
 # eclipse.ini
 for TARGET in $TARGETS;
