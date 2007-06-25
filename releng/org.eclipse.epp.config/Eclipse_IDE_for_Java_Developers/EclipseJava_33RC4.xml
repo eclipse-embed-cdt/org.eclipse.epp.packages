@@ -45,67 +45,75 @@
 	<requiredFeatures>
     <feature
       id="org.eclipse.platform"
-      version="3.3.0.v20070530a-_19REnTF-XsdF8OaOj3B">
+      version="3.3.0.v20070612-_19UEkLEzwsdF9jSqQ-G">
     </feature>
 
     <feature
       id="org.eclipse.cvs"
-      version="1.0.0.v20070510-7C79_79EI99g_PFZ">
+      version="1.0.0.v20070606-7C79_79EI99g_Y9e">
     </feature>
     <feature
       id="org.eclipse.jdt"
-      version="3.3.0.v20070531-1300-7o7jCHEFpPooeYp2xpl1ZR">
+      version="3.3.0.v20070606-0010-7o7jCHEFpPoqQYvnXqejeR">
     </feature>
+
 
     <feature
       id="org.eclipse.mylyn_feature"
-      version="2.0.0.v20070615-0900">
+      version="2.0.0.v20070621-1800">
     </feature>
     <feature
       id="org.eclipse.mylyn.context_feature"
-      version="2.0.0.v20070615-0900">
+      version="2.0.0.v20070621-1800">
     </feature>
     <feature
       id="org.eclipse.mylyn.bugzilla_feature"
-      version="2.0.0.v20070615-0900">
+      version="2.0.0.v20070621-1800">
+    </feature>
+    <feature
+      id="org.eclipse.mylyn.ide_feature"
+      version="2.0.0.v20070621-1800">
+    </feature>
+    <feature
+      id="org.eclipse.mylyn.java_feature"
+      version="2.0.0.v20070621-1800">
     </feature>
 
-    <feature
+  <feature
       id="org.eclipse.emf.common"
-      version="2.3.0.v200706130003">
+      version="2.3.0.v200706200000">
     </feature>
     <feature
       id="org.eclipse.emf.common.ui"
-      version="2.3.0.v200706130003">
+      version="2.3.0.v200706200000">
     </feature>
     <feature
       id="org.eclipse.emf.ecore"
-      version="2.3.0.v200706130003">
+      version="2.3.0.v200706200000">
     </feature>
     <feature
       id="org.eclipse.emf.edit"
-      version="2.3.0.v200706130003">
+      version="2.3.0.v200706200000">
     </feature>
     <feature
       id="org.eclipse.emf.ecore.edit"
-      version="2.3.0.v200706130003">
+      version="2.3.0.v200706200000">
     </feature>
     <feature
       id="org.eclipse.emf.edit.ui"
-      version="2.3.0.v200706130003">
+      version="2.3.0.v200706200000">
     </feature>
     <feature
       id="org.eclipse.xsd"
-      version="2.3.0.v200706130003">
+      version="2.3.0.v200706200000">
     </feature>
     <feature
       id="org.eclipse.xsd.edit"
-      version="2.3.0.v200706130003">
+      version="2.3.0.v200706200000">
     </feature>
-
     <feature
       id="org.eclipse.gef"
-      version="3.3.0.v20070613">
+      version="3.3.0.v20070620">
     </feature>
     <feature
       id="org.eclipse.wst.common_ui.feature"
@@ -114,7 +122,7 @@
 
     <feature
       id="org.eclipse.wst.xml_ui.feature"
-      version="2.0.0.v200706071730-7A1ECBCnbckz0bZt4wJn9KN2nXpZ">
+      version="2.0.0.v200706182145-7A1ECBCnbckz0bZu9wHqAKN3mYpZ">
     </feature>
 
 	</requiredFeatures>
