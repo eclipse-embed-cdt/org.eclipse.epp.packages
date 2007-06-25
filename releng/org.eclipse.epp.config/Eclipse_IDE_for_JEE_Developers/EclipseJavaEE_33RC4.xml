@@ -43,156 +43,153 @@
 	<!-- id, a feature id. -->
 	<!-- version, the feature version. -->
 	<requiredFeatures>
-    <!--Features for Eclipse 3.3 RC3 -->
-
-    <!-- RC3 version from modified eclipse/updates/3.3milestones/site.xml -->
     <feature
       id="org.eclipse.platform"
-      version="3.3.0.v20070530a-_19REnTF-XsdF8OaOj3B">
+      version="3.3.0.v20070612-_19UEkLEzwsdF9jSqQ-G">
     </feature>
 
     <feature
       id="org.eclipse.cvs"
-      version="1.0.0.v20070510-7C79_79EI99g_PFZ">
+      version="1.0.0.v20070606-7C79_79EI99g_Y9e">
     </feature>
     <feature
       id="org.eclipse.jdt"
-      version="3.3.0.v20070531-1300-7o7jCHEFpPooeYp2xpl1ZR">
+      version="3.3.0.v20070606-0010-7o7jCHEFpPoqQYvnXqejeR">
     </feature>
 
     <feature
       id="org.eclipse.mylyn_feature"
-      version="2.0.0.v20070615-0900">
+      version="2.0.0.v20070621-1800">
     </feature>
     <feature
       id="org.eclipse.mylyn.context_feature"
-      version="2.0.0.v20070615-0900">
+      version="2.0.0.v20070621-1800">
     </feature>
     <feature
       id="org.eclipse.mylyn.bugzilla_feature"
-      version="2.0.0.v20070615-0900">
+      version="2.0.0.v20070621-1800">
     </feature>
     <feature
       id="org.eclipse.mylyn.ide_feature"
-      version="2.0.0.v20070615-0900">
+      version="2.0.0.v20070621-1800">
     </feature>
     <feature
       id="org.eclipse.mylyn.java_feature"
-      version="2.0.0.v20070615-0900">
+      version="2.0.0.v20070621-1800">
     </feature>
 
     <feature
       id="org.eclipse.emf.common"
-      version="2.3.0.v200706130003">
+      version="2.3.0.v200706200000">
     </feature>
     <feature
       id="org.eclipse.emf.common.ui"
-      version="2.3.0.v200706130003">
+      version="2.3.0.v200706200000">
     </feature>
     <feature
       id="org.eclipse.emf.ecore"
-      version="2.3.0.v200706130003">
+      version="2.3.0.v200706200000">
     </feature>
     <feature
       id="org.eclipse.emf.edit"
-      version="2.3.0.v200706130003">
+      version="2.3.0.v200706200000">
     </feature>
     <feature
       id="org.eclipse.emf.ecore.edit"
-      version="2.3.0.v200706130003">
+      version="2.3.0.v200706200000">
     </feature>
     <feature
       id="org.eclipse.emf.edit.ui"
-      version="2.3.0.v200706130003">
+      version="2.3.0.v200706200000">
     </feature>
     <feature
       id="org.eclipse.xsd"
-      version="2.3.0.v200706130003">
+      version="2.3.0.v200706200000">
     </feature>
     <feature
       id="org.eclipse.xsd.edit"
-      version="2.3.0.v200706130003">
+      version="2.3.0.v200706200000">
     </feature>
 
     <feature
       id="org.eclipse.gef"
-      version="3.3.0.v20070613">
+      version="3.3.0.v20070620">
     </feature>
 
     <feature
       id="org.eclipse.wst"
-      version="2.0.0.v200706041905-7C-18k0IWJZ93YDIJlQ-1ZcpUtO3">
+      version="2.0.0.v200706041905-7C-18k0IWJZ93WDDJlQ60nUjTdJp">
     </feature>
     <feature
       id="org.eclipse.wst.xml_ui.feature"
-      version="2.0.0.v200706071730-7A1ECBCnbckz0bZt4wJn9KN2nXpZ">
+      version="2.0.0.v200706182145-7A1ECBCnbckz0bZu9wHqAKN3mYpZ">
     </feature>
 
     <feature
       id="org.eclipse.emf"
-      version="2.3.0.v200706130003">
+      version="2.3.0.v200706200000">
     </feature>
     <feature
       id="org.eclipse.emf.ecore.sdo"
-      version="2.3.0.v200706130003">
+      version="2.3.0.v200706200000">
     </feature>
 
     <feature
       id="org.eclipse.datatools.connectivity.oda.feature"
-      version="1.5.0.200706121">
+      version="1.5.0.200706221">
     </feature>
     <feature
       id="org.eclipse.datatools.connectivity.oda.designer.feature"
-      version="1.5.0.200706121">
+      version="1.5.0.200706221">
     </feature>
     <feature
       id="org.eclipse.datatools.modelbase.feature"
-      version="1.5.0.200706121">
+      version="1.5.0.200706221">
     </feature>
 
     <feature
       id="org.eclipse.pde"
-      version="3.3.0.v20061114-0800-7N7M-DUUEF6EpNV6EcHC">
+      version="3.3.0.v20070607-7N7M-DUUEF6Ez0H46IcCC">
     </feature>
 
     <feature
       id="org.eclipse.datatools.sqldevtools.ddl.feature"
-      version="1.5.0.200706121">
+      version="1.5.0.200706221">
     </feature>
     <feature
       id="org.eclipse.datatools.sqldevtools.data.feature"
-      version="1.5.0.200706121">
+      version="1.5.0.200706221">
     </feature>
     <feature
       id="org.eclipse.datatools.sqldevtools.feature"
-      version="1.5.0.200706121">
+      version="1.5.0.200706221">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.jdbc.feature"
-      version="1.5.0.200706121">
+      version="1.5.0.200706221">
     </feature>
     <feature
       id="org.eclipse.datatools.sqldevtools.parsers.feature"
-      version="1.5.0.200706121">
+      version="1.5.0.200706221">
     </feature>
 
     <feature
       id="org.eclipse.datatools.connectivity.feature"
-      version="1.5.0.200706121">
+      version="1.5.0.200706221">
     </feature>
     <feature
       id="org.eclipse.datatools.sqldevtools.results.feature"
-      version="1.5.0.200706121">
+      version="1.5.0.200706221">
     </feature>
 
     <feature
       id="org.eclipse.jst"
-      version="2.0.0.v200706110805-7B-18dDQISlz0z0cc-masoloYWrH">
+      version="2.0.0.v200706110805-7B-18dDQISlz0z0cc-oasolrW8jP">
     </feature>
 
     <feature
       id="org.eclipse.jpt.feature"
-      version="1.0.0.v200706130000-77--CYQCCz-CoRKCCCH">
+      version="1.0.0.v200706190000-77--CYQCCz-CoRPCCCH">
     </feature>
 
 	</requiredFeatures>
