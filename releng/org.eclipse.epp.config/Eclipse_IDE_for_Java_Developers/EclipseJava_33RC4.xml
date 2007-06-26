@@ -14,9 +14,9 @@
 	<updateSites>
     <!-- local mirrors -->
     <updateSite url="file:///home/mknauer/mirror/3.3milestones/" />
-    <updateSite url="file:///home/mknauer/mirror/releases/europa/" />
-<!-- 
     <updateSite url="file:///home/mknauer/mirror/releases/europa/staging/" />
+<!-- 
+    <updateSite url="file:///home/mknauer/mirror/releases/europa/" />
  -->
 
     <!-- eclipse.org update sites -->
