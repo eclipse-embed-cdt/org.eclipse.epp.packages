@@ -84,35 +84,35 @@
 
     <feature
       id="org.eclipse.emf.common"
-      version="2.3.0.v200706251320">
+      version="2.3.0.v200706262000">
     </feature>
     <feature
       id="org.eclipse.emf.common.ui"
-      version="2.3.0.v200706251320">
+      version="2.3.0.v200706262000">
     </feature>
     <feature
       id="org.eclipse.emf.ecore"
-      version="2.3.0.v200706251320">
+      version="2.3.0.v200706262000">
     </feature>
     <feature
       id="org.eclipse.emf.edit"
-      version="2.3.0.v200706251320">
+      version="2.3.0.v200706262000">
     </feature>
     <feature
       id="org.eclipse.emf.ecore.edit"
-      version="2.3.0.v200706251320">
+      version="2.3.0.v200706262000">
     </feature>
     <feature
       id="org.eclipse.emf.edit.ui"
-      version="2.3.0.v200706251320">
+      version="2.3.0.v200706262000">
     </feature>
     <feature
       id="org.eclipse.xsd"
-      version="2.3.0.v200706251320">
+      version="2.3.0.v200706262000">
     </feature>
     <feature
       id="org.eclipse.xsd.edit"
-      version="2.3.0.v200706251320">
+      version="2.3.0.v200706262000">
     </feature>
 
     <feature
@@ -131,11 +131,11 @@
 
     <feature
       id="org.eclipse.emf"
-      version="2.3.0.v200706251320">
+      version="2.3.0.v200706262000">
     </feature>
     <feature
       id="org.eclipse.emf.ecore.sdo"
-      version="2.3.0.v200706251320">
+      version="2.3.0.v200706262000">
     </feature>
 
     <feature
