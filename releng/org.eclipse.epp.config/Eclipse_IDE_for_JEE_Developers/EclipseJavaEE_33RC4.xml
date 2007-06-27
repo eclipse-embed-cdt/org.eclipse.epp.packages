@@ -59,27 +59,27 @@
 
     <feature
       id="org.eclipse.mylyn_feature"
-      version="2.0.0.v20070627-0100">
+      version="2.0.0.v20070627-1400">
     </feature>
     <feature
       id="org.eclipse.mylyn.context_feature"
-      version="2.0.0.v20070627-0100">
+      version="2.0.0.v20070627-1400">
     </feature>
     <feature
       id="org.eclipse.mylyn.ide_feature"
-      version="2.0.0.v20070627-0100">
+      version="2.0.0.v20070627-1400">
     </feature>
     <feature
       id="org.eclipse.mylyn.java_feature"
-      version="2.0.0.v20070627-0100">
+      version="2.0.0.v20070627-1400">
     </feature>
     <feature
       id="org.eclipse.mylyn.pde_feature"
-      version="2.0.0.v20070627-0100">
+      version="2.0.0.v20070627-1400">
     </feature>
     <feature
       id="org.eclipse.mylyn.bugzilla_feature"
-      version="2.0.0.v20070627-0100">
+      version="2.0.0.v20070627-1400">
     </feature>
 
     <feature
