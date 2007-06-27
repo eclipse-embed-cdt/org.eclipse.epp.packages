@@ -44,6 +44,7 @@ do
   echo "Copying eclipse.ini for target $TARGET"
   cp -a $SCRIPT_DIRECTORY/eclipse.ini $SCRIPT_DIRECTORY/target/temp/$TARGET/eclipse/
 done
+cp -a $SCRIPT_DIRECTORY/eclipse.ini $SCRIPT_DIRECTORY/target/temp/eclipse/
 
 
 
