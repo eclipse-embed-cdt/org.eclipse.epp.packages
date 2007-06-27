@@ -15,7 +15,7 @@
     <!-- local mirrors -->
     <updateSite url="file:///home/mknauer/mirror/3.3milestones/" />
     <updateSite url="file:///home/mknauer/mirror/releases/europa/staging/" />
-    <updateSite url="http:///download.eclipse.org/tools/mylyn/update/e3.3/" />
+    <updateSite url="http://download.eclipse.org/tools/mylyn/update/e3.3/" />
 <!-- 
     <updateSite url="file:///home/mknauer/mirror/releases/europa/" />
  -->
