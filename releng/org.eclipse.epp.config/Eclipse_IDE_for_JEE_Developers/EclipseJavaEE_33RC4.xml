@@ -59,56 +59,56 @@
 
     <feature
       id="org.eclipse.mylyn_feature"
-      version="2.0.0.v20070623-1130">
+      version="2.0.0.v20070626-1000">
     </feature>
     <feature
       id="org.eclipse.mylyn.context_feature"
-      version="2.0.0.v20070623-1130">
+      version="2.0.0.v20070626-1000">
     </feature>
     <feature
       id="org.eclipse.mylyn.bugzilla_feature"
-      version="2.0.0.v20070623-1130">
+      version="2.0.0.v20070626-1000">
     </feature>
     <feature
       id="org.eclipse.mylyn.ide_feature"
-      version="2.0.0.v20070623-1130">
+      version="2.0.0.v20070626-1000">
     </feature>
     <feature
       id="org.eclipse.mylyn.java_feature"
-      version="2.0.0.v20070623-1130">
+      version="2.0.0.v20070626-1000">
     </feature>
 
     <feature
       id="org.eclipse.emf.common"
-      version="2.3.0.v200706200000">
+      version="2.3.0.v200706251320">
     </feature>
     <feature
       id="org.eclipse.emf.common.ui"
-      version="2.3.0.v200706200000">
+      version="2.3.0.v200706251320">
     </feature>
     <feature
       id="org.eclipse.emf.ecore"
-      version="2.3.0.v200706200000">
+      version="2.3.0.v200706251320">
     </feature>
     <feature
       id="org.eclipse.emf.edit"
-      version="2.3.0.v200706200000">
+      version="2.3.0.v200706251320">
     </feature>
     <feature
       id="org.eclipse.emf.ecore.edit"
-      version="2.3.0.v200706200000">
+      version="2.3.0.v200706251320">
     </feature>
     <feature
       id="org.eclipse.emf.edit.ui"
-      version="2.3.0.v200706200000">
+      version="2.3.0.v200706251320">
     </feature>
     <feature
       id="org.eclipse.xsd"
-      version="2.3.0.v200706200000">
+      version="2.3.0.v200706251320">
     </feature>
     <feature
       id="org.eclipse.xsd.edit"
-      version="2.3.0.v200706200000">
+      version="2.3.0.v200706251320">
     </feature>
 
     <feature
@@ -127,11 +127,11 @@
 
     <feature
       id="org.eclipse.emf"
-      version="2.3.0.v200706200000">
+      version="2.3.0.v200706251320">
     </feature>
     <feature
       id="org.eclipse.emf.ecore.sdo"
-      version="2.3.0.v200706200000">
+      version="2.3.0.v200706251320">
     </feature>
 
     <feature
@@ -189,7 +189,7 @@
 
     <feature
       id="org.eclipse.jpt.feature"
-      version="1.0.0.v200706190000-77--CYQCCz-CoRPCCCH">
+      version="1.0.0.v200706250000-77--CYQCCz-CoRPCCCH">
     </feature>
 
 	</requiredFeatures>
