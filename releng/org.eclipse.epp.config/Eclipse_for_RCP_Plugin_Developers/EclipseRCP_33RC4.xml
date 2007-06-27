@@ -15,6 +15,7 @@
     <!-- local mirrors -->
     <updateSite url="file:///home/mknauer/mirror/3.3milestones/" />
     <updateSite url="file:///home/mknauer/mirror/releases/europa/staging/" />
+    <updateSite url="http://download.eclipse.org/tools/mylyn/update/e3.3/" />
 <!-- 
     <updateSite url="file:///home/mknauer/mirror/releases/europa/" />
  -->
@@ -55,27 +56,27 @@
 
   <feature
     id="org.eclipse.mylyn_feature"
-    version="2.0.0.v20070626-1000">
+    version="2.0.0.v20070627-0100">
   </feature>
   <feature
     id="org.eclipse.mylyn.context_feature"
-    version="2.0.0.v20070626-1000">
-  </feature>
-  <feature
-    id="org.eclipse.mylyn.bugzilla_feature"
-    version="2.0.0.v20070626-1000">
+    version="2.0.0.v20070627-0100">
   </feature>
   <feature
     id="org.eclipse.mylyn.ide_feature"
-    version="2.0.0.v20070626-1000">
+    version="2.0.0.v20070627-0100">
   </feature>
   <feature
     id="org.eclipse.mylyn.java_feature"
-    version="2.0.0.v20070626-1000">
+    version="2.0.0.v20070627-0100">
   </feature>
   <feature
     id="org.eclipse.mylyn.pde_feature"
-    version="2.0.0.v20070626-1000">
+    version="2.0.0.v20070627-0100">
+  </feature>
+  <feature
+    id="org.eclipse.mylyn.bugzilla_feature"
+    version="2.0.0.v20070627-0100">
   </feature>
 
 
