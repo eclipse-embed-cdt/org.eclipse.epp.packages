@@ -14,9 +14,9 @@
 	<updateSites>
     <!-- local mirrors -->
     <updateSite url="file:///home/mknauer/mirror/3.3milestones/" />
-    <updateSite url="file:///home/mknauer/mirror/releases/europa/staging/" />
-<!-- 
     <updateSite url="file:///home/mknauer/mirror/releases/europa/" />
+<!-- 
+    <updateSite url="file:///home/mknauer/mirror/releases/europa/staging/" />
  -->
 
     <!-- eclipse.org update sites -->
@@ -71,7 +71,7 @@
     </feature>
     <feature
       id="org.eclipse.mylyn.java_feature"
-      version="2.0.0.v20070627-1400">
+      version="2.0.0.v20070628-1000">
     </feature>
     <feature
       id="org.eclipse.mylyn.pde_feature"
