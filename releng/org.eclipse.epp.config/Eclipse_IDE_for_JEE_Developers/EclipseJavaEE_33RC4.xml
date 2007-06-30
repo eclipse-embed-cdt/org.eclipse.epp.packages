@@ -187,6 +187,15 @@
     </feature>
 
     <feature
+      id="org.eclipse.datatools.enablement.feature"
+      version="1.5.0.200706221">
+    </feature>
+    <feature
+      id="org.eclipse.datatools.doc.user"
+      version="1.5.0.200706221">
+    </feature>
+
+    <feature
       id="org.eclipse.jst"
       version="2.0.0.v200706110805-7B-18dDQISlz0z0cc-oasolrW8jP">
     </feature>
