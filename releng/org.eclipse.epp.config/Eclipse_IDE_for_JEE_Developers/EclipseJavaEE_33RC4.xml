@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-	<!-- version, the RCP version to build. This is used to determine the file 
+  <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-	<rcp version="3.3" />
+  <rcp version="3.3" />
 
-	<!-- configIni, the config.ini file to use. -->
-	<!-- name, the name of the product, used in naming the created files. -->
-	<product
-	  configIni="/home/mknauer/packaging/org.eclipse.epp/releng/org.eclipse.epp.config/Eclipse_IDE_for_JEE_Developers/config.ini"
-	  name="epp-jee-europa" />
+  <!-- configIni, the config.ini file to use. -->
+  <!-- name, the name of the product, used in naming the created files. -->
+  <product
+    configIni="/home/mknauer/packaging/org.eclipse.epp/releng/org.eclipse.epp.config/Eclipse_IDE_for_JEE_Developers/config.ini"
+    name="epp-jee-europa" />
 
-	<!-- url, pointing to an update site. -->
-	<updateSites>
+  <!-- url, pointing to an update site. -->
+  <updateSites>
     <!-- local mirrors -->
     <updateSite url="file:///home/mknauer/mirror/3.3milestones/" />
     <updateSite url="file:///home/mknauer/mirror/releases/europa/" />
-<!-- 
-    <updateSite url="file:///home/mknauer/mirror/releases/europa/staging/" />
- -->
+    <!-- 
+      <updateSite url="file:///home/mknauer/mirror/releases/europa/staging/" />
+    -->
 
     <!-- eclipse.org update sites -->
     <!-- 
-    <updateSite url="http://download.eclipse.org/releases/europa/" />
-    <updateSite url="http://download.eclipse.org/releases/europa/staging/" />
-    <updateSite url="http://download.eclipse.org/technology/mylar/update-site/e3.3/" />
-    <updateSite url="http://download.eclipse.org/tools/cdt/releases/europa/" />
-    <updateSite url="http://download.eclipse.org/webtools/updates/" />
-    <updateSite url="http://download.eclipse.org/webtools/milestones/" />
-    <updateSite url="http://download.eclipse.org/modeling/emf/updates/" />
-    <updateSite url="http://download.eclipse.org/modeling/gmf/update-site/europa/" />
-    <updateSite url="http://download.eclipse.org/modeling/gmf/update-site/milestone/" />
-    <updateSite url="http://download.eclipse.org/eclipse/updates/3.3milestones/" />
-     -->
+      <updateSite url="http://download.eclipse.org/releases/europa/" />
+      <updateSite url="http://download.eclipse.org/releases/europa/staging/" />
+      <updateSite url="http://download.eclipse.org/technology/mylar/update-site/e3.3/" />
+      <updateSite url="http://download.eclipse.org/tools/cdt/releases/europa/" />
+      <updateSite url="http://download.eclipse.org/webtools/updates/" />
+      <updateSite url="http://download.eclipse.org/webtools/milestones/" />
+      <updateSite url="http://download.eclipse.org/modeling/emf/updates/" />
+      <updateSite url="http://download.eclipse.org/modeling/gmf/update-site/europa/" />
+      <updateSite url="http://download.eclipse.org/modeling/gmf/update-site/milestone/" />
+      <updateSite url="http://download.eclipse.org/eclipse/updates/3.3milestones/" />
+    -->
 
     <!-- old and/or test update sites -->
     <!-- 
-    <updateSite url="http://download.eclipse.org/callisto/releases/" />
-    <updateSite url="http://download.eclipse.org/eclipse/testUpdates/" />
-     -->
-	</updateSites>
+      <updateSite url="http://download.eclipse.org/callisto/releases/" />
+      <updateSite url="http://download.eclipse.org/eclipse/testUpdates/" />
+    -->
+  </updateSites>
 
-	<!-- id, a feature id. -->
-	<!-- version, the feature version. -->
-	<requiredFeatures>
+  <!-- id, a feature id. -->
+  <!-- version, the feature version. -->
+  <requiredFeatures>
     <feature
       id="org.eclipse.platform"
       version="3.3.0.v20070612-_19UEkLEzwsdF9jSqQ-G">
@@ -195,6 +195,49 @@
       version="1.5.0.200706221">
     </feature>
 
+    <!-- optional DB/SQL features -->
+    <feature
+      id="org.eclipse.datatools.enablement.apache.derby.feature"
+      version="1.5.0.200706221">
+    </feature>
+    <feature
+      id="org.eclipse.datatools.enablement.hsqldb.feature"
+      version="1.5.0.200706221">
+    </feature>
+    <feature
+      id="org.eclipse.datatools.enablement.ibm.feature"
+      version="1.5.0.200706221">
+    </feature>
+    <feature
+      id="org.eclipse.datatools.enablement.msft.feature"
+      version="1.5.0.200706221">
+    </feature>
+    <feature
+      id="org.eclipse.datatools.enablement.mysql.feature"
+      version="1.5.0.200706221">
+    </feature>
+    <feature
+      id="org.eclipse.datatools.enablement.oda.feature"
+      version="1.5.0.200706221">
+    </feature>
+    <feature
+      id="org.eclipse.datatools.enablement.oda.designer.feature"
+      version="1.5.0.200706221">
+    </feature>
+    <feature
+      id="org.eclipse.datatools.enablement.oracle.feature"
+      version="1.5.0.200706221">
+    </feature>
+    <feature
+      id="org.eclipse.datatools.enablement.postgresql.feature"
+      version="1.5.0.200706221">
+    </feature>
+    <feature
+      id="org.eclipse.datatools.enablement.sybase.feature"
+      version="1.5.0.200706221">
+    </feature>
+    <!-- optional DB/SQL features / END -->
+
     <feature
       id="org.eclipse.jst"
       version="2.0.0.v200706110805-7B-18dDQISlz0z0cc-oasolrW8jP">
@@ -205,37 +248,44 @@
       version="1.0.0.v200706250000-77--CYQCCz-CoRPCCCH">
     </feature>
 
-	</requiredFeatures>
+  </requiredFeatures>
 
-	<!-- folder, pointing to the packager configuration. 
-		This folder must contain 
-		  'packager.properties', 
-		  'packaging.properties' and 
-		  'customTargetsStub.xml', all of which can be left unmodified. -->
-	<packagerConfigurationFolder
-		folder="/home/mknauer/packaging/config" />
+  <!-- folder, pointing to the packager configuration. 
+    This folder must contain 
+    'packager.properties', 
+    'packaging.properties' and 
+    'customTargetsStub.xml', all of which can be left unmodified. -->
+  <packagerConfigurationFolder folder="/home/mknauer/packaging/config" />
 
-	<installerConfigurationFolder
-		folder="/home/mknauer/packaging/config" />
+  <installerConfigurationFolder folder="/home/mknauer/packaging/config" />
 
-	<!-- folder, pointing to a folder containing the zipped root files for each of 
-		the target platforms. -->
-	<rootFileFolder folder="/home/mknauer/packaging/roots" />
+  <!-- folder, pointing to a folder containing the zipped root files for each of 
+    the target platforms. -->
+  <rootFileFolder folder="/home/mknauer/packaging/roots" />
 
-	<!-- relativeFolder, names the subfolder of the base folder where the update site will be created. 
-		This is configurable so that working areas, especially root files, are reusable. -->
-	<extensionSite relativeFolder="extension_site"></extensionSite>
+  <!-- relativeFolder, names the subfolder of the base folder where the update site will be created. 
+    This is configurable so that working areas, especially root files, are reusable. -->
+  <extensionSite relativeFolder="extension_site"></extensionSite>
 
-	<!-- Create archives for win32, linux, macosx platforms, antZip is default format -->
-	<targetPlatforms>
-		<platform os="win32" ws="win32" arch="x86">
-			<archiveFormat format="antZip"></archiveFormat>
-		</platform>
-		<platform os="linux" ws="gtk" arch="x86">
-			<archiveFormat format="tar" />
-		</platform>
-		<platform os="macosx" ws="carbon" arch="x86">
-			<archiveFormat format="tar" />
-		</platform>
-	</targetPlatforms>
+  <!-- Create archives for win32, linux, macosx platforms, antZip is default format -->
+  <targetPlatforms>
+    <platform
+      os="win32"
+      ws="win32"
+      arch="x86">
+      <archiveFormat format="antZip"></archiveFormat>
+    </platform>
+    <platform
+      os="linux"
+      ws="gtk"
+      arch="x86">
+      <archiveFormat format="tar" />
+    </platform>
+    <platform
+      os="macosx"
+      ws="carbon"
+      arch="x86">
+      <archiveFormat format="tar" />
+    </platform>
+  </targetPlatforms>
 </configuration>
