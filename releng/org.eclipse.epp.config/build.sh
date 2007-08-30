@@ -26,21 +26,21 @@ mkdir $DIRECTORY/result
 find $DIRECTORY -name "epp-*" -maxdepth 3 -type f -exec cp -a {} $DIRECTORY/result/ \;
 cd $DIRECTORY/result
 
-mv -f epp-cpp-europa-linux.gtk.x86.tar.gz       eclipse-cpp-europa-linux-gtk.tar.gz
-mv -f epp-cpp-europa-macosx.carbon.x86.tar.gz   eclipse-cpp-europa-macosx-carbon.tar.gz
-mv -f epp-cpp-europa-win32.win32.x86.zip        eclipse-cpp-europa-win32.zip
+mv -f epp-cpp-europa-fall-linux.gtk.x86.tar.gz       eclipse-cpp-europa-fall-linux-gtk.tar.gz
+mv -f epp-cpp-europa-fall-macosx.carbon.x86.tar.gz   eclipse-cpp-europa-fall-macosx-carbon.tar.gz
+mv -f epp-cpp-europa-fall-win32.win32.x86.zip        eclipse-cpp-europa-fall-win32.zip
 
-mv -f epp-rcp-europa-linux.gtk.x86.tar.gz       eclipse-rcp-europa-linux-gtk.tar.gz
-mv -f epp-rcp-europa-macosx.carbon.x86.tar.gz   eclipse-rcp-europa-macosx-carbon.tar.gz
-mv -f epp-rcp-europa-win32.win32.x86.zip        eclipse-rcp-europa-win32.zip
+mv -f epp-rcp-europa-fall-linux.gtk.x86.tar.gz       eclipse-rcp-europa-fall-linux-gtk.tar.gz
+mv -f epp-rcp-europa-fall-macosx.carbon.x86.tar.gz   eclipse-rcp-europa-fall-macosx-carbon.tar.gz
+mv -f epp-rcp-europa-fall-win32.win32.x86.zip        eclipse-rcp-europa-fall-win32.zip
 
-mv -f epp-java-europa-linux.gtk.x86.tar.gz      eclipse-java-europa-linux-gtk.tar.gz
-mv -f epp-java-europa-macosx.carbon.x86.tar.gz  eclipse-java-europa-macosx-carbon.tar.gz
-mv -f epp-java-europa-win32.win32.x86.zip       eclipse-java-europa-win32.zip
+mv -f epp-java-europa-fall-linux.gtk.x86.tar.gz      eclipse-java-europa-fall-linux-gtk.tar.gz
+mv -f epp-java-europa-fall-macosx.carbon.x86.tar.gz  eclipse-java-europa-fall-macosx-carbon.tar.gz
+mv -f epp-java-europa-fall-win32.win32.x86.zip       eclipse-java-europa-fall-win32.zip
 
-mv -f epp-jee-europa-linux.gtk.x86.tar.gz       eclipse-jee-europa-linux-gtk.tar.gz
-mv -f epp-jee-europa-macosx.carbon.x86.tar.gz   eclipse-jee-europa-macosx-carbon.tar.gz
-mv -f epp-jee-europa-win32.win32.x86.zip        eclipse-jee-europa-win32.zip
+mv -f epp-jee-europa-fall-linux.gtk.x86.tar.gz       eclipse-jee-europa-fall-linux-gtk.tar.gz
+mv -f epp-jee-europa-fall-macosx.carbon.x86.tar.gz   eclipse-jee-europa-fall-macosx-carbon.tar.gz
+mv -f epp-jee-europa-fall-win32.win32.x86.zip        eclipse-jee-europa-fall-win32.zip
 
 for FILE in *[zp]; do md5sum -b $FILE >>packages.md5; done
 for FILE in *[zp]; do sha1sum -b $FILE >>packages.sha1; done

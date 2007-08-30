@@ -15,26 +15,26 @@ TARGETS="linux.gtk.x86  macosx.carbon.x86  win32.win32.x86"
 
 cd $ECLIPSE_PATH
 $JAVA -Xms64m -Xmx512m -jar startup.jar -consoleLog   \
-      -data $SCRIPT_DIRECTORY/target $SCRIPT_DIRECTORY/EclipseJava_33RC4.xml
+      -data $SCRIPT_DIRECTORY/target $SCRIPT_DIRECTORY/EclipseJava_331.xml
 
 # tar.gz error in build script
 if [ ! -e $SCRIPT_DIRECTORY/target/temp/linux.gtk.x86/eclipse/eclipse ]
 then
   echo "unpacking linux archive"
   cd $SCRIPT_DIRECTORY/target/temp/linux.gtk.x86/
-  tar zxf $ROOT_FILES/eclipse-RCP-3.3-linux-gtk.tar.gz
+  tar zxf $ROOT_FILES/eclipse-RCP-3.3.1-linux-gtk.tar.gz
 fi
 if [ ! -e $SCRIPT_DIRECTORY/target/temp/macosx.carbon.x86/eclipse/eclipse ]
 then
   echo "unpacking macosx archive"
   cd $SCRIPT_DIRECTORY/target/temp/macosx.carbon.x86/
-  tar zxf $ROOT_FILES/eclipse-RCP-3.3-macosx-carbon.tar.gz
+  tar zxf $ROOT_FILES/eclipse-RCP-3.3.1-macosx-carbon.tar.gz
 fi
 
 # plugin_customization.ini
 echo "Copying plugin_customization.ini"
 cp -a $SCRIPT_DIRECTORY/plugin_customization.ini \
-      $SCRIPT_DIRECTORY/target/extension_site/eclipse/plugins/org.eclipse.platform_3.3.0.*/
+      $SCRIPT_DIRECTORY/target/extension_site/eclipse/plugins/org.eclipse.platform_3.3.1.*/
 
 # eclipse.ini
 for TARGET in $TARGETS;
