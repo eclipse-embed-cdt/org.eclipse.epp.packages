@@ -90,11 +90,11 @@
     </feature>
     <feature
       id="org.eclipse.emf.ecore"
-      version="2.3.0.v200708142030">
+      version="2.3.1.v200708142030">
     </feature>
     <feature
       id="org.eclipse.emf.edit"
-      version="2.3.0.v200708142030">
+      version="2.3.1.v200708142030">
     </feature>
     <feature
       id="org.eclipse.emf.ecore.edit"
@@ -106,7 +106,7 @@
     </feature>
     <feature
       id="org.eclipse.xsd"
-      version="2.3.0.v200708142030">
+      version="2.3.1.v200708142030">
     </feature>
     <feature
       id="org.eclipse.xsd.edit"

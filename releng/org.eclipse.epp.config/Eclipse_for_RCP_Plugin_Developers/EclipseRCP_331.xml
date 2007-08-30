@@ -82,11 +82,11 @@
 
   <feature
       id="org.eclipse.emf.common"
-      version="2.3.1.v200708142030">
+      version="2.3.0.v200708142030">
     </feature>
     <feature
       id="org.eclipse.emf.common.ui"
-      version="2.3.1.v200708142030">
+      version="2.3.0.v200708142030">
     </feature>
     <feature
       id="org.eclipse.emf.ecore"
@@ -98,11 +98,11 @@
     </feature>
     <feature
       id="org.eclipse.emf.ecore.edit"
-      version="2.3.1.v200708142030">
+      version="2.3.0.v200708142030">
     </feature>
     <feature
       id="org.eclipse.emf.edit.ui"
-      version="2.3.1.v200708142030">
+      version="2.3.0.v200708142030">
     </feature>
     <feature
       id="org.eclipse.xsd"
@@ -110,7 +110,7 @@
     </feature>
     <feature
       id="org.eclipse.xsd.edit"
-      version="2.3.1.v200708142030">
+      version="2.3.0.v200708142030">
     </feature>
     <feature
       id="org.eclipse.gef"
