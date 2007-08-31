@@ -86,7 +86,7 @@
     </feature>
     <feature
       id="org.eclipse.emf.common.ui"
-      version="2.3.0.v200708301145">
+      version="2.3.1.v200708301145">
     </feature>
     <feature
       id="org.eclipse.emf.ecore"
