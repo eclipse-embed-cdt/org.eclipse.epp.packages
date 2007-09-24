@@ -105,7 +105,7 @@
     </feature>
     <feature
       id="org.eclipse.emf.edit.ui"
-      version="2.3.0.v200709182140">
+      version="2.3.1.v200709182140">
     </feature>
     <feature
       id="org.eclipse.xsd"
