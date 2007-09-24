@@ -46,12 +46,12 @@
   <requiredFeatures>
   <feature
     id="org.eclipse.platform"
-    version="3.3.1.R33x_r20070802-_19UEkfF-f3Hip77sl56">
+    version="3.3.1.R33x_r20070911-_19UEkpF-B7Uh2hKy75y">
   </feature>
 
   <feature
     id="org.eclipse.sdk"
-    version="3.3.1.R33x_r20070802-7M7J77_qsz0lhB0ZlJTX9N4LXqNj">
+    version="3.3.1.R33x_r20070802-7M7J78_mu1mmlvZ3F0Yw59JTz0dC">
   </feature>
 
   <feature
@@ -80,50 +80,51 @@
   </feature>
 
 
-  <feature
+    <feature
       id="org.eclipse.emf.common"
-      version="2.3.0.v200708301145">
+      version="2.3.0.v200709182140">
     </feature>
     <feature
       id="org.eclipse.emf.common.ui"
-      version="2.3.1.v200708301145">
+      version="2.3.1.v200709182140">
     </feature>
     <feature
       id="org.eclipse.emf.ecore"
-      version="2.3.1.v200708301145">
+      version="2.3.1.v200709182140">
     </feature>
     <feature
       id="org.eclipse.emf.edit"
-      version="2.3.1.v200708301145">
+      version="2.3.1.v200709182140">
     </feature>
     <feature
       id="org.eclipse.emf.ecore.edit"
-      version="2.3.0.v200708301145">
+      version="2.3.0.v200709182140">
     </feature>
     <feature
       id="org.eclipse.emf.edit.ui"
-      version="2.3.0.v200708301145">
+      version="2.3.0.v200709182140">
     </feature>
     <feature
       id="org.eclipse.xsd"
-      version="2.3.1.v200708301145">
+      version="2.3.1.v200709182140">
     </feature>
     <feature
       id="org.eclipse.xsd.edit"
-      version="2.3.0.v200708301145">
+      version="2.3.0.v200709182140">
     </feature>
+    
     <feature
       id="org.eclipse.gef"
       version="3.3.0.v20070620">
     </feature>
     <feature
       id="org.eclipse.wst.common_ui.feature"
-      version="2.0.0.v200706041905-7C5EGzE9RvTVniSrwnf4TgOPe3e9">
+      version="2.0.1.v200709110622-7C5EH2E9RvTVnijrspVz0bgOmfz-">
     </feature>
 
     <feature
       id="org.eclipse.wst.xml_ui.feature"
-      version="2.0.0.v200706182145-7A1ECBCnbckz0bZu9wHqAKN3mYpZ">
+      version="2.0.1.v200709110650-7A1ECGCnbckz0bnr5wCp8KNAjipR">
     </feature>
 
   </requiredFeatures>
