@@ -127,15 +127,6 @@
       version="2.0.1.v200709110650-7A1ECGCnbckz0bnr5wCp8KNAjipR">
     </feature>
 
-    <feature
-      id="org.eclipse.ecf.core"
-      version="1.1.0.v20070908-1720">
-    </feature>
-    <feature
-      id="org.eclipse.ecf.examples"
-      version="1.1.0.v20070908-1720">
-    </feature>
-
 	</requiredFeatures>
 
 	<!-- folder, pointing to the packager configuration. 
