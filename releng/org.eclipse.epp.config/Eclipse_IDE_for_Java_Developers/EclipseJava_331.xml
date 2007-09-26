@@ -156,6 +156,7 @@ org.eclipse.platform
 --launcher.XXMaxPermSize
 128M
 -vmargs
+-Dosgi.requiredJavaVersion=1.5
 -Xms40m
 -Xmx256m</eclipseIniFileContent>
 		</platform>
@@ -166,6 +167,7 @@ org.eclipse.platform
 --launcher.XXMaxPermSize
 128M
 -vmargs
+-Dosgi.requiredJavaVersion=1.5
 -Xms40m
 -Xmx256m</eclipseIniFileContent>
 		</platform>
@@ -176,6 +178,7 @@ org.eclipse.platform
 --launcher.XXMaxPermSize
 128M
 -vmargs
+-Dosgi.requiredJavaVersion=1.5
 -Xms40m
 -Xmx256m</eclipseIniFileContent>
 		</platform>
