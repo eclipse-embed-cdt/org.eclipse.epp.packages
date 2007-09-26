@@ -52,16 +52,42 @@ public class CustomTargetsWriter {
    * @param platform
    */
   public void addTargetFileForPlatform( final IPlatform platform ) {
-    this.writer.append( "<target name=\"assemble." //$NON-NLS-1$
+    this.writer.append( "  <target name=\"assemble." //$NON-NLS-1$
                         + platform.toString( '.' )
                         + ".xml\" depends=\"init\">\n" ); //$NON-NLS-1$
-    this.writer.append( "<ant antfile=\"${assembleScriptName}\" >\n" ); //$NON-NLS-1$
-    this.writer.append( "<property name=\"archiveName\" value=\"" //$NON-NLS-1$
+    
+    this.writer.append( "    <replaceregexp file=\"${tempDirectory}/"  //$NON-NLS-1$
+                        + platform.toString( '.' ) 
+                        + "/eclipse/configuration/config.ini\"\n" ); //$NON-NLS-1$
+    this.writer.append( "      match=\"eclipse.product=(.*)\"\n" ); //$NON-NLS-1$
+    this.writer.append( "      replace=\"eclipse.product="  //$NON-NLS-1$
+                        + this.configuration.getEclipseProductId() 
+                        + "\"\n" ); //$NON-NLS-1$
+    this.writer.append( "      byline=\"true\" />\n" ); //$NON-NLS-1$
+    
+    this.writer.append( "    <replaceregexp byline=\"true\">\n" ); //$NON-NLS-1$
+    this.writer.append( "      <regexp pattern=\"org.eclipse.ui/defaultPerspectiveId=(.*)\"/>\n" ); //$NON-NLS-1$
+    this.writer.append( "      <substitution expression=\"org.eclipse.ui/defaultPerspectiveId="  //$NON-NLS-1$
+                        + this.configuration.getInitialPerspectiveId() 
+                        + "\"/>\n" ); //$NON-NLS-1$
+    this.writer.append( "      <fileset dir=\"${tempDirectory}/eclipse/plugins/\" includes=\""  //$NON-NLS-1$
+//                        + this.configuration.getEclipseProductId()
+                        + "*/plugin_customization.ini\"/>\n" ); //$NON-NLS-1$
+    this.writer.append( "    </replaceregexp>\n" ); //$NON-NLS-1$
+    
+    this.writer.append( "    <echo file=\"${tempDirectory}/"  //$NON-NLS-1$
+                        + platform.toString( '.' )  
+                        + "/eclipse/eclipse.ini\">" ); //$NON-NLS-1$
+    this.writer.append( platform.getEclipseIniFileContent() );
+    this.writer.append( "    </echo>\n" ); //$NON-NLS-1$
+    
+    this.writer.append( "    <ant antfile=\"${assembleScriptName}\" >\n" ); //$NON-NLS-1$
+    this.writer.append( "    <property name=\"archiveName\" value=\"" //$NON-NLS-1$
                         + platform.getTargetFileName( this.configuration )
                         + platform.getArchiveFormat().getExtension()
                         + "\"/>\n" ); //$NON-NLS-1$
-    this.writer.append( "</ant>\n" ); //$NON-NLS-1$
-    this.writer.append( "</target>\n" ); //$NON-NLS-1$
+    this.writer.append( "    </ant>\n" ); //$NON-NLS-1$
+    this.writer.append( "  </target>\n" ); //$NON-NLS-1$
   }
 
   /**

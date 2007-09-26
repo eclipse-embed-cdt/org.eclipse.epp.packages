@@ -7,8 +7,10 @@
 	<!-- configIni, the config.ini file to use. -->
 	<!-- name, the name of the product, used in naming the created files. -->
 	<product
-	  configIni="/home/mknauer/packaging/org.eclipse.epp/releng/org.eclipse.epp.config/Eclipse_IDE_for_Java_Developers/config.ini"
-	  name="epp-java-europa-fall" />
+	  configIni="/home/mknauer/projects/packaging33/org.eclipse.epp/releng/org.eclipse.epp.config/Eclipse_IDE_for_Java_Developers/config.ini"
+	  name="eclipse-java-europa-fall"
+	  eclipseProductId="org.eclipse.platform.ide"
+    initialPerspectiveId="org.eclipse.jdt.ui.JavaPerspective" />
 
 	<!-- url, pointing to an update site. -->
 	<updateSites>
@@ -60,23 +62,23 @@
 
     <feature
       id="org.eclipse.mylyn_feature"
-      version="2.0.0.v20070627-1400">
+      version="2.1.0.v20070924-2200">
     </feature>
     <feature
       id="org.eclipse.mylyn.context_feature"
-      version="2.0.0.v20070627-1400">
+      version="2.1.0.v20070924-2200">
     </feature>
     <feature
       id="org.eclipse.mylyn.ide_feature"
-      version="2.0.0.v20070627-1400">
+      version="2.1.0.v20070924-2200">
     </feature>
     <feature
       id="org.eclipse.mylyn.java_feature"
-      version="2.0.0.v20070628-1000">
+      version="2.1.0.v20070924-2200">
     </feature>
     <feature
       id="org.eclipse.mylyn.bugzilla_feature"
-      version="2.0.0.v20070627-1400">
+      version="2.1.0.v20070924-2200">
     </feature>
 
 
@@ -115,7 +117,7 @@
     
     <feature
       id="org.eclipse.gef"
-      version="3.3.0.v20070620">
+      version="3.3.1.v20070814">
     </feature>
     <feature
       id="org.eclipse.wst.common_ui.feature"
@@ -129,16 +131,13 @@
 
 	</requiredFeatures>
 
-	<!-- folder, pointing to the packager configuration. 
-		This folder must contain 
-		  'packager.properties', 
-		  'packaging.properties' and 
-		  'customTargetsStub.xml', all of which can be left unmodified. -->
-	<packagerConfigurationFolder
-		folder="/home/mknauer/packaging/config" />
+  <!-- folder, pointing to the packager configuration. This folder must contain 'packager.properties', 
+    'packaging.properties' and 'customTargetsStub.xml', all of which can be left unmodified. -->
+  <packagerConfigurationFolder
+    folder="/home/mknauer/projects/packaging33/org.eclipse.epp/releng/org.eclipse.epp.config/config" />
 
-	<installerConfigurationFolder
-		folder="/home/mknauer/packaging/config" />
+  <installerConfigurationFolder
+    folder="/home/mknauer/projects/packaging33/org.eclipse.epp/releng/org.eclipse.epp.config/config" />
 
 	<!-- folder, pointing to a folder containing the zipped root files for each of 
 		the target platforms. -->
@@ -152,12 +151,33 @@
 	<targetPlatforms>
 		<platform os="win32" ws="win32" arch="x86">
 			<archiveFormat format="antZip"></archiveFormat>
+			<eclipseIniFileContent>-showsplash
+org.eclipse.platform
+--launcher.XXMaxPermSize
+128M
+-vmargs
+-Xms40m
+-Xmx256m</eclipseIniFileContent>
 		</platform>
 		<platform os="linux" ws="gtk" arch="x86">
 			<archiveFormat format="tar" />
+      <eclipseIniFileContent>-showsplash
+org.eclipse.platform
+--launcher.XXMaxPermSize
+128M
+-vmargs
+-Xms40m
+-Xmx256m</eclipseIniFileContent>
 		</platform>
-		<platform os="macosx" ws="carbon" arch="x86">
+		<platform os="macosx" ws="carbon" arch="ppc">
 			<archiveFormat format="tar" />
+      <eclipseIniFileContent>-showsplash
+org.eclipse.platform
+--launcher.XXMaxPermSize
+128M
+-vmargs
+-Xms40m
+-Xmx256m</eclipseIniFileContent>
 		</platform>
 	</targetPlatforms>
 </configuration>

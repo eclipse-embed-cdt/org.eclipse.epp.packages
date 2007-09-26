@@ -7,8 +7,10 @@
   <!-- configIni, the config.ini file to use. -->
   <!-- name, the name of the product, used in naming the created files. -->
   <product
-    configIni="/home/mknauer/packaging/org.eclipse.epp/releng/org.eclipse.epp.config/Eclipse_IDE_for_JEE_Developers/config.ini"
-    name="epp-jee-europa-fall" />
+    configIni="/home/mknauer/projects/packaging33/org.eclipse.epp/releng/org.eclipse.epp.config/Eclipse_IDE_for_JEE_Developers/config.ini"
+    name="eclipse-jee-europa-fall"
+    eclipseProductId="org.eclipse.platform.ide"
+    initialPerspectiveId="org.eclipse.jst.j2ee.J2EEPerspective" />
 
   <!-- url, pointing to an update site. -->
   <updateSites>
@@ -60,27 +62,27 @@
 
     <feature
       id="org.eclipse.mylyn_feature"
-      version="2.0.0.v20070627-1400">
+      version="2.1.0.v20070924-2200">
     </feature>
     <feature
       id="org.eclipse.mylyn.context_feature"
-      version="2.0.0.v20070627-1400">
+      version="2.1.0.v20070924-2200">
     </feature>
     <feature
       id="org.eclipse.mylyn.ide_feature"
-      version="2.0.0.v20070627-1400">
+      version="2.1.0.v20070924-2200">
     </feature>
     <feature
       id="org.eclipse.mylyn.java_feature"
-      version="2.0.0.v20070628-1000">
+      version="2.1.0.v20070924-2200">
     </feature>
     <feature
       id="org.eclipse.mylyn.pde_feature"
-      version="2.0.0.v20070627-1400">
+      version="2.1.0.v20070924-2200">
     </feature>
     <feature
       id="org.eclipse.mylyn.bugzilla_feature"
-      version="2.0.0.v20070627-1400">
+      version="2.1.0.v20070924-2200">
     </feature>
 
     <feature
@@ -118,7 +120,7 @@
 
     <feature
       id="org.eclipse.gef"
-      version="3.3.0.v20070620">
+      version="3.3.1.v20070814">
     </feature>
 
     <feature
@@ -141,101 +143,101 @@
 
     <feature
       id="org.eclipse.datatools.connectivity.oda.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
     <feature
       id="org.eclipse.datatools.connectivity.oda.designer.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
     <feature
       id="org.eclipse.datatools.modelbase.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
 
     <feature
       id="org.eclipse.pde"
-      version="3.3.1.R33x_r20070802-7N7M2DUUEF6F6Jz06GmCC">
+      version="3.3.1.R33x_r20070802-7N7M3D1VIA_52JsDFsEC">
     </feature>
 
     <feature
       id="org.eclipse.datatools.sqldevtools.ddl.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
     <feature
       id="org.eclipse.datatools.sqldevtools.data.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
     <feature
       id="org.eclipse.datatools.sqldevtools.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.jdbc.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
     <feature
       id="org.eclipse.datatools.sqldevtools.parsers.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
 
     <feature
       id="org.eclipse.datatools.connectivity.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
     <feature
       id="org.eclipse.datatools.sqldevtools.results.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
 
     <feature
       id="org.eclipse.datatools.enablement.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
     <feature
       id="org.eclipse.datatools.doc.user"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
 
     <!-- optional DB/SQL features -->
     <feature
       id="org.eclipse.datatools.enablement.apache.derby.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.hsqldb.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.ibm.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.msft.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.mysql.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.oda.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.oda.designer.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.oracle.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.postgresql.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.sybase.feature"
-      version="1.5.1.200708211">
+      version="1.5.1.200709251">
     </feature>
     <!-- optional DB/SQL features / END -->
 
@@ -251,14 +253,13 @@
 
   </requiredFeatures>
 
-  <!-- folder, pointing to the packager configuration. 
-    This folder must contain 
-    'packager.properties', 
-    'packaging.properties' and 
-    'customTargetsStub.xml', all of which can be left unmodified. -->
-  <packagerConfigurationFolder folder="/home/mknauer/packaging/config" />
+  <!-- folder, pointing to the packager configuration. This folder must contain 'packager.properties', 
+    'packaging.properties' and 'customTargetsStub.xml', all of which can be left unmodified. -->
+  <packagerConfigurationFolder
+    folder="/home/mknauer/projects/packaging33/org.eclipse.epp/releng/org.eclipse.epp.config/config" />
 
-  <installerConfigurationFolder folder="/home/mknauer/packaging/config" />
+  <installerConfigurationFolder
+    folder="/home/mknauer/projects/packaging33/org.eclipse.epp/releng/org.eclipse.epp.config/config" />
 
   <!-- folder, pointing to a folder containing the zipped root files for each of 
     the target platforms. -->
@@ -275,18 +276,39 @@
       ws="win32"
       arch="x86">
       <archiveFormat format="antZip"></archiveFormat>
+      <eclipseIniFileContent>-showsplash
+org.eclipse.platform
+--launcher.XXMaxPermSize
+128M
+-vmargs
+-Xms40m
+-Xmx512m</eclipseIniFileContent>
     </platform>
     <platform
       os="linux"
       ws="gtk"
       arch="x86">
       <archiveFormat format="tar" />
+      <eclipseIniFileContent>-showsplash
+org.eclipse.platform
+--launcher.XXMaxPermSize
+128M
+-vmargs
+-Xms40m
+-Xmx512m</eclipseIniFileContent>
     </platform>
     <platform
       os="macosx"
       ws="carbon"
-      arch="x86">
+      arch="ppc">
       <archiveFormat format="tar" />
+      <eclipseIniFileContent>-showsplash
+org.eclipse.platform
+--launcher.XXMaxPermSize
+128M
+-vmargs
+-Xms40m
+-Xmx512m</eclipseIniFileContent>
     </platform>
   </targetPlatforms>
 </configuration>

@@ -80,7 +80,7 @@ public class EclipsePackager implements IPackager {
                                        final PackagingPropertiesWriter propertiesWriter )
   {
     mapWriter.addCustomFileForAllPlatforms( filename );
-    propertiesWriter.addFileToOrder( filename );
+//    propertiesWriter.addFileToOrder( filename );
   }
 
   private void zipConfig( final File parentFolder,

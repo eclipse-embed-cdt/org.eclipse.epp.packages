@@ -40,4 +40,8 @@ public interface IPackagerConfiguration {
   public File getConfigIni();
 
   public String getProductName();
+  
+  public String getEclipseProductId();
+  
+  public String getInitialPerspectiveId();
 }

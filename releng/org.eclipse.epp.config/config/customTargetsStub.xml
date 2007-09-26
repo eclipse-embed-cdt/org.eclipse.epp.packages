@@ -5,11 +5,14 @@
 	<!-- This goal of this target is to get the packaging map files of the things you care for 
 	       The files must be fetched into the downloadDirectory folder -->
 	<target name="getMapFiles" unless="localMaps">
+	  <!-- if packagerMapURL is not set
 		<get src="${packagerMapURL}" dest="${downloadDirectory}/initial.map" usetimestamp="true" />
+	  -->
 	</target>
 
 	<target name="init">
 		<property name="archiveNamePrefix" value="${buildId}" />
 	</target>
 
-	<!--This file is a stub. It will be completed by the packager at runtime.-->
+	<!-- This file is a stub. It will be completed by EPP at runtime. -->
+

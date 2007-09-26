@@ -33,6 +33,8 @@ public class PackagerConfiguration implements IModifiablePackagerConfiguration {
   private File rootFolder;
   private File configIni;
   private String productName;
+  private String eclipseProductId;
+  private String initialPerspectiveId;
   private String installerConfigurationFolder;
 
   public PackagerConfiguration() {
@@ -40,24 +42,24 @@ public class PackagerConfiguration implements IModifiablePackagerConfiguration {
   }
 
   public URL[] getUpdateSites() {
-    return updateSites.toArray( new URL[ updateSites.size() ] );
+    return this.updateSites.toArray( new URL[ this.updateSites.size() ] );
   }
 
   public void addUpdateSite( final String string ) throws MalformedURLException
   {
-    updateSites.add( new URL( string ) );
+    this.updateSites.add( new URL( string ) );
   }
 
   public VersionedIdentifier[] getRequiredFeatures() {
-    return requiredFeatures.toArray( new VersionedIdentifier[ requiredFeatures.size() ] );
+    return this.requiredFeatures.toArray( new VersionedIdentifier[ requiredFeatures.size() ] );
   }
 
   public void addRequiredFeature( final String id, final String version ) {
-    requiredFeatures.add( new VersionedIdentifier( id, version ) );
+    this.requiredFeatures.add( new VersionedIdentifier( id, version ) );
   }
 
   public File getPackagerConfigurationFolder() {
-    return packagerConfigurationFolder;
+    return this.packagerConfigurationFolder;
   }
 
   public void setPackagerConfigurationFolder( final String folder ) {
@@ -65,36 +67,37 @@ public class PackagerConfiguration implements IModifiablePackagerConfiguration {
   }
 
   public File getTargetFolder() {
-    return baseFolder;
+    return this.baseFolder;
   }
 
   public void setExtensionSiteRelative( final String relativeFolder ) {
-    this.extensionSite = new File( baseFolder, relativeFolder );
+    this.extensionSite = new File( this.baseFolder, relativeFolder );
   }
 
   public File getExtensionSite() {
-    return extensionSite;
+    return this.extensionSite;
   }
 
   public Platform addTargetPlatform( final String os,
                                      final String ws,
-                                     final String arch )
+                                     final String arch,
+                                     final String eclipseIniFileContent )
   {
-    Platform platform = new Platform( os, ws, arch );
-    targetPlatforms.add( platform );
+    Platform platform = new Platform( os, ws, arch, eclipseIniFileContent );
+    this.targetPlatforms.add( platform );
     return platform;
   }
 
   public IPlatform[] getTargetPlatforms() {
-    return targetPlatforms.toArray( new IPlatform[ targetPlatforms.size() ] );
+    return this.targetPlatforms.toArray( new IPlatform[ targetPlatforms.size() ] );
   }
 
   public String getRootFileBaseName() {
-    return "eclipse-RCP-" + rcpVersion + '-'; //$NON-NLS-1$
+    return "eclipse-RCP-" + this.rcpVersion + '-'; //$NON-NLS-1$
   }
 
   public File getRootFileFolder() {
-    return rootFolder;
+    return this.rootFolder;
   }
 
   public void setRcpVersion( final String version ) {
@@ -106,7 +109,7 @@ public class PackagerConfiguration implements IModifiablePackagerConfiguration {
   }
 
   public File getConfigIni() {
-    return configIni;
+    return this.configIni;
   }
 
   public void setConfigIni( final String fileName ) {
@@ -118,14 +121,30 @@ public class PackagerConfiguration implements IModifiablePackagerConfiguration {
   }
 
   public String getProductName() {
-    return productName;
+    return this.productName;
   }
 
   public String getInstallerConfigurationFolder() {
-    return installerConfigurationFolder;
+    return this.installerConfigurationFolder;
   }
 
   public void setInstallerConfigurationFolder( final String folder ) {
     this.installerConfigurationFolder = folder;
+  }
+
+  public void setEclipseProductId( final String eclipseProductId ) {
+    this.eclipseProductId = eclipseProductId;
+  }
+
+  public String getEclipseProductId() {
+    return this.eclipseProductId;
+  }
+
+  public void setInitialPerspectiveId( final String initialPerspectiveId ) {
+    this.initialPerspectiveId = initialPerspectiveId;
+  }
+  
+  public String getInitialPerspectiveId() {
+    return this.initialPerspectiveId;
   }
 }

@@ -27,12 +27,18 @@ public class Platform implements IPlatform {
   private final String os;
   private final String ws;
   private final String arch;
+  private final String eclipseIniFileContent;
   private ArchiveFormat archiveFormat = ArchiveFormat.antZip;
 
-  public Platform( final String os, final String ws, final String arch ) {
+  public Platform( final String os,
+                   final String ws,
+                   final String arch,
+                   final String eclipseIniFileContent )
+  {
     this.os = os;
     this.ws = ws;
     this.arch = arch;
+    this.eclipseIniFileContent = eclipseIniFileContent;
   }
 
   @Override
@@ -117,5 +123,9 @@ public class Platform implements IPlatform {
       buildFile = "build-installer-default.xml"; //$NON-NLS-1$
     }
     return buildFile;
+  }
+
+  public String getEclipseIniFileContent() {
+    return eclipseIniFileContent;
   }
 }

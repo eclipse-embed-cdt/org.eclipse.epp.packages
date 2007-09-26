@@ -7,8 +7,10 @@
 	<!-- configIni, the config.ini file to use. -->
 	<!-- name, the name of the product, used in naming the created files. -->
 	<product
-	  configIni="/home/mknauer/packaging/org.eclipse.epp/releng/org.eclipse.epp.config/Eclipse_IDE_for_C_C++_Developers/config.ini"
-	  name="epp-cpp-europa-fall" />
+	  configIni="/home/mknauer/projects/packaging33/org.eclipse.epp/releng/org.eclipse.epp.config/Eclipse_IDE_for_C_C++_Developers/config.ini"
+	  name="eclipse-cpp-europa-fall" 
+	  eclipseProductId="org.eclipse.platform.ide"
+	  initialPerspectiveId="org.eclipse.cdt.ui.CPerspective" />
 
 	<!-- url, pointing to an update site. -->
 	<updateSites>
@@ -67,10 +69,10 @@
 		  'packaging.properties' and 
 		  'customTargetsStub.xml', all of which can be left unmodified. -->
 	<packagerConfigurationFolder
-		folder="/home/mknauer/packaging/config" />
+		folder="/home/mknauer/projects/packaging33/org.eclipse.epp/releng/org.eclipse.epp.config/config" />
 
 	<installerConfigurationFolder
-		folder="/home/mknauer/packaging/config" />
+		folder="/home/mknauer/projects/packaging33/org.eclipse.epp/releng/org.eclipse.epp.config/config" />
 
 	<!-- folder, pointing to a folder containing the zipped root files for each of 
 		the target platforms. -->
@@ -84,12 +86,33 @@
 	<targetPlatforms>
 		<platform os="win32" ws="win32" arch="x86">
 			<archiveFormat format="antZip"></archiveFormat>
+			<eclipseIniFileContent>-showsplash
+org.eclipse.platform
+--launcher.XXMaxPermSize
+128M
+-vmargs
+-Xms40m
+-Xmx256m</eclipseIniFileContent>
 		</platform>
 		<platform os="linux" ws="gtk" arch="x86">
 			<archiveFormat format="tar" />
+			<eclipseIniFileContent>-showsplash
+org.eclipse.platform
+--launcher.XXMaxPermSize
+128M
+-vmargs
+-Xms40m
+-Xmx256m</eclipseIniFileContent>
 		</platform>
-		<platform os="macosx" ws="carbon" arch="x86">
+		<platform os="macosx" ws="carbon" arch="ppc">
 			<archiveFormat format="tar" />
+			<eclipseIniFileContent>-showsplash
+org.eclipse.platform
+--launcher.XXMaxPermSize
+128M
+-vmargs
+-Xms40m
+-Xmx256m</eclipseIniFileContent>
 		</platform>
 	</targetPlatforms>
 </configuration>

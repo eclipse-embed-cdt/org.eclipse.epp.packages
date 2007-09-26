@@ -48,4 +48,8 @@ public class XmlElement implements IXmlElement {
     }
     return result.toArray( new IXmlElement[ result.size() ] );
   }
+
+  public String getText() {
+    return this.node.getTextContent();
+  }
 }

@@ -14,6 +14,7 @@ import java.io.IOException;
 
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.epp.packaging.core.assembly.EclipsePackager;
+import org.eclipse.epp.packaging.core.assembly.IPackager;
 import org.eclipse.epp.packaging.core.assembly.InstallerPackager;
 import org.eclipse.epp.packaging.core.assembly.PackageMover;
 import org.eclipse.epp.packaging.core.configuration.ICommands;
@@ -61,9 +62,11 @@ public class EclipsePackagingExecutor {
   private void build() throws IOException, CoreException {
     if( commands.mustDo( Task.BUILD ) ) {
       MessageLogger.getInstance().logBeginProcess( "Application.Building" ); //$NON-NLS-1$
-      new EclipsePackager( configuration ).packApplication();
-      new PackageMover( configuration ).moveFiles();
-      new InstallerPackager( configuration ).packApplication();
+      IPackager packager = new EclipsePackager( this.configuration );
+      packager.packApplication();
+      PackageMover mover = new PackageMover( this.configuration );
+      mover.moveFiles();
+//      new InstallerPackager( configuration ).packApplication();
       MessageLogger.getInstance().logEndProcess();
     }
   }

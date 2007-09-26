@@ -45,4 +45,7 @@ public interface IPlatform {
 
   /** Returns the name installer-creating script most suitable for this platform. */
   public String getInstallScriptName();
+  
+  /** Returns a string with the content of the eclipse.ini file */
+  public String getEclipseIniFileContent();
 }

@@ -29,4 +29,6 @@ public interface IXmlElement {
    * if none exist.
    */
   public IXmlElement getElement( String tagName );
+  
+  public String getText();
 }

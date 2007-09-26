@@ -50,6 +50,9 @@ public class ConfigurationParser {
   private static final String TAG_PRODUCT = "product"; //$NON-NLS-1$
   private static final String ATTRIB_CONFIG_INI = "configIni"; //$NON-NLS-1$
   private static final String ATTRIB_NAME = "name"; //$NON-NLS-1$
+  private static final String ATTRIB_ECLIPSE_PRODUCT_ID = "eclipseProductId"; //$NON-NLS-1$
+  private static final String ATTRIB_INITIAL_PERSPECTIVE_ID = "initialPerspectiveId"; //$NON-NLS-1$
+  private static final String TAG_ECLIPSE_INI_FILE = "eclipseIniFileContent"; //$NON-NLS-1$
 
   /**
    * Parses the configuration contained in xmlFile.
@@ -103,9 +106,14 @@ public class ConfigurationParser {
                              final IXmlElement parent )
   {
     IXmlElement productElement = parent.getElement( TAG_PRODUCT );
-    configuration.setProductName( productElement.getAttributeValue( ATTRIB_NAME ) );
+    String productName = productElement.getAttributeValue( ATTRIB_NAME );
+    configuration.setProductName( productName );
     String configIni = productElement.getAttributeValue( ATTRIB_CONFIG_INI );
     configuration.setConfigIni( configIni );
+    String eclipseProductId = productElement.getAttributeValue( ATTRIB_ECLIPSE_PRODUCT_ID );
+    configuration.setEclipseProductId( eclipseProductId );
+    String initialPerspectiveId = productElement.getAttributeValue( ATTRIB_INITIAL_PERSPECTIVE_ID );
+    configuration.setInitialPerspectiveId( initialPerspectiveId );
   }
 
   /** Loads and sets the target platforms. */
@@ -117,7 +125,9 @@ public class ConfigurationParser {
       String os = platformElement.getAttributeValue( ATTRIB_OS );
       String ws = platformElement.getAttributeValue( ATTRIB_WS );
       String arch = platformElement.getAttributeValue( ATTRIB_ARCH );
-      Platform platform = configuration.addTargetPlatform( os, ws, arch );
+      IXmlElement eclipseIniFileElement = platformElement.getElement( TAG_ECLIPSE_INI_FILE );
+      String eclipseIniFileContent = eclipseIniFileElement.getText();
+      Platform platform = configuration.addTargetPlatform( os, ws, arch, eclipseIniFileContent );
       IXmlElement archiveFormat = platformElement.getElement( TAG_ARCHIVE_FORMAT );
       if( archiveFormat != null ) {
         platform.setArchiveFormat( archiveFormat.getAttributeValue( ATTRIB_FORMAT ) );
