@@ -77,7 +77,8 @@ public class CustomTargetsWriter {
     
     this.writer.append( "    <echo file=\"${tempDirectory}/"  //$NON-NLS-1$
                         + platform.toString( '.' )  
-                        + "/eclipse/eclipse.ini\">" ); //$NON-NLS-1$
+                        + platform.getEclipseIniFilePath()
+                        + "eclipse.ini\">" ); //$NON-NLS-1$
     this.writer.append( platform.getEclipseIniFileContent() );
     this.writer.append( "    </echo>\n" ); //$NON-NLS-1$
     

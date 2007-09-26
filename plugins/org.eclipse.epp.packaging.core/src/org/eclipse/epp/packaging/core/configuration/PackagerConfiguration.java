@@ -81,9 +81,10 @@ public class PackagerConfiguration implements IModifiablePackagerConfiguration {
   public Platform addTargetPlatform( final String os,
                                      final String ws,
                                      final String arch,
-                                     final String eclipseIniFileContent )
+                                     final String eclipseIniFileContent, 
+                                     final String eclipseIniFilePath )
   {
-    Platform platform = new Platform( os, ws, arch, eclipseIniFileContent );
+    Platform platform = new Platform( os, ws, arch, eclipseIniFileContent, eclipseIniFilePath );
     this.targetPlatforms.add( platform );
     return platform;
   }

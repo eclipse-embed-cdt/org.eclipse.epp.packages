@@ -39,7 +39,8 @@ public interface IModifiablePackagerConfiguration
   public Platform addTargetPlatform( final String os,
                                      final String ws,
                                      final String arch,
-                                     final String eclipseIniFileContent );
+                                     final String eclipseIniFileContent,
+                                     final String eclipseIniFilePath );
 
   /**Sets the RCP version to use.*/
   public void setRcpVersion( final String version );

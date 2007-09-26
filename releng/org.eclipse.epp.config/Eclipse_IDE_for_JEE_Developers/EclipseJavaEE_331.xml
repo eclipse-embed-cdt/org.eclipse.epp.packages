@@ -276,10 +276,10 @@
       ws="win32"
       arch="x86">
       <archiveFormat format="antZip"></archiveFormat>
-      <eclipseIniFileContent>-showsplash
+      <eclipseIniFileContent path="/eclipse/">-showsplash
 org.eclipse.platform
 --launcher.XXMaxPermSize
-128M
+256M
 -vmargs
 -Dosgi.requiredJavaVersion=1.5
 -Xms40m
@@ -290,10 +290,10 @@ org.eclipse.platform
       ws="gtk"
       arch="x86">
       <archiveFormat format="tar" />
-      <eclipseIniFileContent>-showsplash
+      <eclipseIniFileContent path="/eclipse/">-showsplash
 org.eclipse.platform
 --launcher.XXMaxPermSize
-128M
+256M
 -vmargs
 -Dosgi.requiredJavaVersion=1.5
 -Xms40m
@@ -304,11 +304,13 @@ org.eclipse.platform
       ws="carbon"
       arch="ppc">
       <archiveFormat format="tar" />
-      <eclipseIniFileContent>-showsplash
+      <eclipseIniFileContent path="/eclipse/Eclipse.app/Contents/MacOS/">-showsplash
 org.eclipse.platform
 --launcher.XXMaxPermSize
-128M
+256m
 -vmargs
+-Xdock:icon=../Resources/Eclipse.icns
+-XstartOnFirstThread
 -Dosgi.requiredJavaVersion=1.5
 -Xms40m
 -Xmx512m</eclipseIniFileContent>

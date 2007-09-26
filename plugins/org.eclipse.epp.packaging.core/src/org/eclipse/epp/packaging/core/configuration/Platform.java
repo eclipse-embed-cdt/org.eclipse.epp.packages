@@ -28,17 +28,20 @@ public class Platform implements IPlatform {
   private final String ws;
   private final String arch;
   private final String eclipseIniFileContent;
+  private final String eclipseIniFilePath;
   private ArchiveFormat archiveFormat = ArchiveFormat.antZip;
 
   public Platform( final String os,
                    final String ws,
                    final String arch,
-                   final String eclipseIniFileContent )
+                   final String eclipseIniFileContent, 
+                   final String eclipseIniFilePath )
   {
     this.os = os;
     this.ws = ws;
     this.arch = arch;
     this.eclipseIniFileContent = eclipseIniFileContent;
+    this.eclipseIniFilePath = eclipseIniFilePath;
   }
 
   @Override
@@ -127,5 +130,9 @@ public class Platform implements IPlatform {
 
   public String getEclipseIniFileContent() {
     return eclipseIniFileContent;
+  }
+  
+  public String getEclipseIniFilePath() {
+    return eclipseIniFilePath;
   }
 }

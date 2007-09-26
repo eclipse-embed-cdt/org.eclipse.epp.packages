@@ -48,4 +48,7 @@ public interface IPlatform {
   
   /** Returns a string with the content of the eclipse.ini file */
   public String getEclipseIniFileContent();
+
+  /** Returns a string with the internal path to eclipse.ini */
+  public String getEclipseIniFilePath();
 }
