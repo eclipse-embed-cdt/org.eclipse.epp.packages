@@ -62,57 +62,57 @@
 
     <feature
       id="org.eclipse.mylyn_feature"
-      version="2.1.0.v20070924-2200">
+      version="2.1.0.v20070926-1230">
     </feature>
     <feature
       id="org.eclipse.mylyn.context_feature"
-      version="2.1.0.v20070924-2200">
+      version="2.1.0.v20070926-1230">
     </feature>
     <feature
       id="org.eclipse.mylyn.ide_feature"
-      version="2.1.0.v20070924-2200">
+      version="2.1.0.v20070926-1230">
     </feature>
     <feature
       id="org.eclipse.mylyn.java_feature"
-      version="2.1.0.v20070924-2200">
+      version="2.1.0.v20070926-1230">
     </feature>
     <feature
       id="org.eclipse.mylyn.bugzilla_feature"
-      version="2.1.0.v20070924-2200">
+      version="2.1.0.v20070926-1230">
     </feature>
 
 
     <feature
       id="org.eclipse.emf.common"
-      version="2.3.0.v200709182140">
+      version="2.3.0.v200709252135">
     </feature>
     <feature
       id="org.eclipse.emf.common.ui"
-      version="2.3.1.v200709182140">
+      version="2.3.1.v200709252135">
     </feature>
     <feature
       id="org.eclipse.emf.ecore"
-      version="2.3.1.v200709182140">
+      version="2.3.1.v200709252135">
     </feature>
     <feature
       id="org.eclipse.emf.edit"
-      version="2.3.1.v200709182140">
+      version="2.3.1.v200709252135">
     </feature>
     <feature
       id="org.eclipse.emf.ecore.edit"
-      version="2.3.0.v200709182140">
+      version="2.3.0.v200709252135">
     </feature>
     <feature
       id="org.eclipse.emf.edit.ui"
-      version="2.3.1.v200709182140">
+      version="2.3.1.v200709252135">
     </feature>
     <feature
       id="org.eclipse.xsd"
-      version="2.3.1.v200709182140">
+      version="2.3.1.v200709252135">
     </feature>
     <feature
       id="org.eclipse.xsd.edit"
-      version="2.3.0.v200709182140">
+      version="2.3.0.v200709252135">
     </feature>
     
     <feature

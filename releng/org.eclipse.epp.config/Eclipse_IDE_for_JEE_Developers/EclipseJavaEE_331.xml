@@ -62,60 +62,60 @@
 
     <feature
       id="org.eclipse.mylyn_feature"
-      version="2.1.0.v20070924-2200">
+      version="2.1.0.v20070926-1230">
     </feature>
     <feature
       id="org.eclipse.mylyn.context_feature"
-      version="2.1.0.v20070924-2200">
+      version="2.1.0.v20070926-1230">
     </feature>
     <feature
       id="org.eclipse.mylyn.ide_feature"
-      version="2.1.0.v20070924-2200">
+      version="2.1.0.v20070926-1230">
     </feature>
     <feature
       id="org.eclipse.mylyn.java_feature"
-      version="2.1.0.v20070924-2200">
+      version="2.1.0.v20070926-1230">
     </feature>
     <feature
       id="org.eclipse.mylyn.pde_feature"
-      version="2.1.0.v20070924-2200">
+      version="2.1.0.v20070926-1230">
     </feature>
     <feature
       id="org.eclipse.mylyn.bugzilla_feature"
-      version="2.1.0.v20070924-2200">
+      version="2.1.0.v20070926-1230">
     </feature>
 
     <feature
       id="org.eclipse.emf.common"
-      version="2.3.0.v200709182140">
+      version="2.3.0.v200709252135">
     </feature>
     <feature
       id="org.eclipse.emf.common.ui"
-      version="2.3.1.v200709182140">
+      version="2.3.1.v200709252135">
     </feature>
     <feature
       id="org.eclipse.emf.ecore"
-      version="2.3.1.v200709182140">
+      version="2.3.1.v200709252135">
     </feature>
     <feature
       id="org.eclipse.emf.edit"
-      version="2.3.1.v200709182140">
+      version="2.3.1.v200709252135">
     </feature>
     <feature
       id="org.eclipse.emf.ecore.edit"
-      version="2.3.0.v200709182140">
+      version="2.3.0.v200709252135">
     </feature>
     <feature
       id="org.eclipse.emf.edit.ui"
-      version="2.3.1.v200709182140">
+      version="2.3.1.v200709252135">
     </feature>
     <feature
       id="org.eclipse.xsd"
-      version="2.3.1.v200709182140">
+      version="2.3.1.v200709252135">
     </feature>
     <feature
       id="org.eclipse.xsd.edit"
-      version="2.3.0.v200709182140">
+      version="2.3.0.v200709252135">
     </feature>
 
     <feature
@@ -134,24 +134,24 @@
 
     <feature
       id="org.eclipse.emf"
-      version="2.3.1.v200709182140">
+      version="2.3.1.v200709252135">
     </feature>
     <feature
       id="org.eclipse.emf.ecore.sdo"
-      version="2.3.0.v200709182140">
+      version="2.3.0.v200709252135">
     </feature>
 
     <feature
       id="org.eclipse.datatools.connectivity.oda.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
     <feature
       id="org.eclipse.datatools.connectivity.oda.designer.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
     <feature
       id="org.eclipse.datatools.modelbase.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
 
     <feature
@@ -161,83 +161,83 @@
 
     <feature
       id="org.eclipse.datatools.sqldevtools.ddl.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
     <feature
       id="org.eclipse.datatools.sqldevtools.data.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
     <feature
       id="org.eclipse.datatools.sqldevtools.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.jdbc.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
     <feature
       id="org.eclipse.datatools.sqldevtools.parsers.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
 
     <feature
       id="org.eclipse.datatools.connectivity.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
     <feature
       id="org.eclipse.datatools.sqldevtools.results.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
 
     <feature
       id="org.eclipse.datatools.enablement.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
     <feature
       id="org.eclipse.datatools.doc.user"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
 
     <!-- optional DB/SQL features -->
     <feature
       id="org.eclipse.datatools.enablement.apache.derby.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.hsqldb.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.ibm.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.msft.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.mysql.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.oda.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.oda.designer.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.oracle.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.postgresql.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.sybase.feature"
-      version="1.5.1.200709251">
+      version="1.5.1.200709261">
     </feature>
     <!-- optional DB/SQL features / END -->
 
