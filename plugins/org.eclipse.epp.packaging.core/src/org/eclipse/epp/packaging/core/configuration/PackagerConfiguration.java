@@ -23,6 +23,8 @@ import org.eclipse.update.core.VersionedIdentifier;
  */
 public class PackagerConfiguration implements IModifiablePackagerConfiguration {
 
+  private static final String ECLIPSE_PLATTFORM = "eclipse-platform-"; //$NON-NLS-1$
+  
   private final List<URL> updateSites = new ArrayList<URL>();
   private final List<VersionedIdentifier> requiredFeatures = new ArrayList<VersionedIdentifier>();
   private final List<Platform> targetPlatforms = new ArrayList<Platform>();
@@ -94,7 +96,7 @@ public class PackagerConfiguration implements IModifiablePackagerConfiguration {
   }
 
   public String getRootFileBaseName() {
-    return "eclipse-RCP-" + this.rcpVersion + '-'; //$NON-NLS-1$
+    return ECLIPSE_PLATTFORM + this.rcpVersion + '-';
   }
 
   public File getRootFileFolder() {
