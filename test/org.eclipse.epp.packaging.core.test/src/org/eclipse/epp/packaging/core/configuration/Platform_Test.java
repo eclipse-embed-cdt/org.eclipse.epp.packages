@@ -19,28 +19,28 @@ import junit.framework.TestCase;
 public class Platform_Test extends TestCase {
 
   public void testEquals() throws Exception {
-    Platform platform = new Platform( "win32", "win32", "x86" ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
-    Platform secondPlatform = new Platform( "win32", "win32", "x86" ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+    Platform platform = new Platform( "win32", "win32", "x86", null, null ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+    Platform secondPlatform = new Platform( "win32", "win32", "x86", null, null ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
     assertTrue( platform.equals( secondPlatform ) );
   }
 
   public void testToString() throws Exception {
-    Platform platform = new Platform( "win32", "win32", "x86" ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+    Platform platform = new Platform( "win32", "win32", "x86", null, null ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
     Assert.assertEquals( "win32,win32,x86", platform.toString() ); //$NON-NLS-1$
   }
 
   public void testAdvancedToString() throws Exception {
-    Platform platform = new Platform( "win32", "win32", "x86" ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+    Platform platform = new Platform( "win32", "win32", "x86", null, null ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
     Assert.assertEquals( "win32nwin32nx86", platform.toString( 'n' ) ); //$NON-NLS-1$
   }
 
   public void testDefaultArchiveFormat() {
-    Platform platform = new Platform( "win32", "win32", "x86" ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+    Platform platform = new Platform( "win32", "win32", "x86", null, null ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
     Assert.assertEquals( "antZip", platform.getArchiveFormat().name() ); //$NON-NLS-1$
   }
 
   public void testSetArchiveFormat() throws Exception {
-    Platform platform = new Platform( "win32", "win32", "x86" ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+    Platform platform = new Platform( "win32", "win32", "x86", null, null ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
     platform.setArchiveFormat( "tar" ); //$NON-NLS-1$
     Assert.assertEquals( "tar", platform.getArchiveFormat().name() ); //$NON-NLS-1$
   }

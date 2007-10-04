@@ -78,15 +78,16 @@ public class DummyPackagerConfiguration implements IPackagerConfiguration {
     throw new UnsupportedOperationException( "Not yet implemented." ); //$NON-NLS-1$
   }
 
-  public File getConfigIni() {
-    throw new UnsupportedOperationException( "Not yet implemented." ); //$NON-NLS-1$
-  }
-
   public String getProductName() {
     throw new UnsupportedOperationException( "Not yet implemented." ); //$NON-NLS-1$
   }
 
-  public String getInstallerConfigurationFolder() {
-    throw new UnsupportedOperationException( "Not yet implemented." ); //$NON-NLS-1$;
+  public String getEclipseProductId() {
+    throw new UnsupportedOperationException( "Not yet implemented." ); //$NON-NLS-1$
   }
+
+  public String getInitialPerspectiveId() {
+    throw new UnsupportedOperationException( "Not yet implemented." ); //$NON-NLS-1$
+  }
+
 }

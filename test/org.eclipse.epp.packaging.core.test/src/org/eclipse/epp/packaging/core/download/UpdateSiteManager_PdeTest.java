@@ -25,14 +25,14 @@ import org.eclipse.update.core.VersionedIdentifier;
 /** Test class*/
 public class UpdateSiteManager_PdeTest extends TestCase {
 
-  private static final String BUCKMINSTER_UPDATESITE_URL 
-    = "http://download.eclipse.org/technology/buckminster/updates/"; //$NON-NLS-1$
-  private static final VersionedIdentifier BUCKMINSTERIDENTIFIER 
-    = new VersionedIdentifier( "org.eclipse.buckminster.core.feature", //$NON-NLS-1$
-                               "1.0.0.v20070220" ); //$NON-NLS-1$
-  private static final VersionedIdentifier HEADLESSIDENTIFIER 
-    = new VersionedIdentifier( "org.eclipse.buckminster.svn.headless.feature", //$NON-NLS-1$
-                               "1.0.0.v20070207" ); //$NON-NLS-1$
+  private static final String UPDATESITE_URL 
+    = "http://download.eclipse.org/eclipse/updates/"; //$NON-NLS-1$
+  private static final VersionedIdentifier FEATURE_1 
+    = new VersionedIdentifier( "org.eclipse.platform", //$NON-NLS-1$
+                               "2.0.0" ); //$NON-NLS-1$
+  private static final VersionedIdentifier FEATURE_2 
+    = new VersionedIdentifier( "org.eclipse.jdt", //$NON-NLS-1$
+                               "2.0.0" ); //$NON-NLS-1$
   private DummyPackagerConfiguration configuration;
   private UpdateSiteManager manager;
 
@@ -40,9 +40,9 @@ public class UpdateSiteManager_PdeTest extends TestCase {
   protected void setUp() throws Exception {
     super.setUp();
     this.configuration = new DummyPackagerConfiguration();
-    this.configuration.setUpdateSite( BUCKMINSTER_UPDATESITE_URL );
-    this.configuration.addRequiredFeature( BUCKMINSTERIDENTIFIER );
-    this.configuration.addRequiredFeature( HEADLESSIDENTIFIER );
+    this.configuration.setUpdateSite( UPDATESITE_URL );
+    this.configuration.addRequiredFeature( FEATURE_1 );
+    this.configuration.addRequiredFeature( FEATURE_2 );
     this.manager = new UpdateSiteManager( this.configuration );
   }
 
@@ -59,7 +59,7 @@ public class UpdateSiteManager_PdeTest extends TestCase {
   {
     this.manager = new UpdateSiteManager( this.configuration );
     Assert.assertTrue( this.manager.areFeaturesPresent( new VersionedIdentifier[]{
-      BUCKMINSTERIDENTIFIER, HEADLESSIDENTIFIER
+      FEATURE_1, FEATURE_2
     } ) );
   }
 }
