@@ -7,7 +7,6 @@
 	<!-- configIni, the config.ini file to use. -->
 	<!-- name, the name of the product, used in naming the created files. -->
 	<product
-	  configIni="/home/mknauer/projects/packaging33/org.eclipse.epp/releng/org.eclipse.epp.config/Eclipse_IDE_for_Java_Developers/config.ini"
 	  name="eclipse-java-europa-fall"
 	  eclipseProductId="org.eclipse.platform.ide"
     initialPerspectiveId="org.eclipse.jdt.ui.JavaPerspective" />
@@ -136,9 +135,6 @@
   <packagerConfigurationFolder
     folder="/home/mknauer/projects/packaging33/org.eclipse.epp/releng/org.eclipse.epp.config/config" />
 
-  <installerConfigurationFolder
-    folder="/home/mknauer/projects/packaging33/org.eclipse.epp/releng/org.eclipse.epp.config/config" />
-
 	<!-- folder, pointing to a folder containing the zipped root files for each of 
 		the target platforms. -->
 	<rootFileFolder folder="/home/mknauer/packaging/roots" />
@@ -171,6 +167,17 @@ org.eclipse.platform
 -Xms40m
 -Xmx256m</eclipseIniFileContent>
 		</platform>
+    <platform os="linux" ws="gtk" arch="x86_64">
+      <archiveFormat format="tar" />
+      <eclipseIniFileContent path="/eclipse/">-showsplash
+org.eclipse.platform
+--launcher.XXMaxPermSize
+256M
+-vmargs
+-Dosgi.requiredJavaVersion=1.5
+-Xms40m
+-Xmx256m</eclipseIniFileContent>
+    </platform>
 		<platform os="macosx" ws="carbon" arch="ppc">
 			<archiveFormat format="tar" />
       <eclipseIniFileContent path="/eclipse/Eclipse.app/Contents/MacOS/">-showsplash

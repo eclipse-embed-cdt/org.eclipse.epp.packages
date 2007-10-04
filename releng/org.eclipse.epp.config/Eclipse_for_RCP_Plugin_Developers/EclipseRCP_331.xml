@@ -7,7 +7,6 @@
   <!-- configIni, the config.ini file to use. -->
   <!-- name, the name of the product, used in naming the created files. -->
   <product
-    configIni="/home/mknauer/packaging/org.eclipse.epp/releng/org.eclipse.epp.config/Eclipse_for_RCP_Plugin_Developers/config.ini"
     name="eclipse-rcp-europa-fall" 
     eclipseProductId="org.eclipse.sdk.ide"
     initialPerspectiveId="org.eclipse.jdt.ui.JavaPerspective" />
@@ -136,9 +135,6 @@
   <packagerConfigurationFolder
     folder="/home/mknauer/projects/packaging33/org.eclipse.epp/releng/org.eclipse.epp.config/config" />
 
-  <installerConfigurationFolder
-    folder="/home/mknauer/projects/packaging33/org.eclipse.epp/releng/org.eclipse.epp.config/config" />
-
   <!-- folder, pointing to a folder containing the zipped root files for each of 
     the target platforms. -->
   <rootFileFolder folder="/home/mknauer/packaging/roots" />
@@ -169,6 +165,20 @@ org.eclipse.platform
       os="linux"
       ws="gtk"
       arch="x86">
+      <archiveFormat format="tar" />
+      <eclipseIniFileContent path="/eclipse/">-showsplash
+org.eclipse.platform
+--launcher.XXMaxPermSize
+256M
+-vmargs
+-Dosgi.requiredJavaVersion=1.5
+-Xms40m
+-Xmx512m</eclipseIniFileContent>
+    </platform>
+    <platform
+      os="linux"
+      ws="gtk"
+      arch="x86_64">
       <archiveFormat format="tar" />
       <eclipseIniFileContent path="/eclipse/">-showsplash
 org.eclipse.platform
