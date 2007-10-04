@@ -25,8 +25,6 @@ public interface IPackagerConfiguration {
 
   public File getPackagerConfigurationFolder();
 
-  public String getInstallerConfigurationFolder();
-
   public File getTargetFolder();
 
   public File getExtensionSite();
@@ -36,8 +34,6 @@ public interface IPackagerConfiguration {
   public String getRootFileBaseName();
 
   public File getRootFileFolder();
-
-  public File getConfigIni();
 
   public String getProductName();
   

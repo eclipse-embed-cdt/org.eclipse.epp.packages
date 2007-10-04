@@ -16,19 +16,33 @@ public interface IXmlElement {
   /**
    * Returns all descendant elements of this element whose name equals the given
    * name.
+   * 
+   * @param tagName name of the tag
+   * @return element
    */
   public IXmlElement[] getElements( String tagName );
 
   /**
+   * Returns the first descendant element of the given name or <code>null</code>,
+   * if none exist.
+   * 
+   * @param tagName name of the tag
+   * @return the element or <code>null</code>
+   */
+  public IXmlElement getElement( String tagName );
+
+  /**
    * Returns the value of the given attribute.
+   * 
+   * @param attributeName name of the XML attribute
+   * @return plain string value of the XML attribute
    */
   public String getAttributeValue( String attributeName );
 
   /**
-   * Returns the first descendant element of the given name or <code>null</code>,
-   * if none exist.
+   * Returns the text value of this element without any preprocessing.
+   * 
+   * @return text of this XML element
    */
-  public IXmlElement getElement( String tagName );
-  
   public String getText();
 }

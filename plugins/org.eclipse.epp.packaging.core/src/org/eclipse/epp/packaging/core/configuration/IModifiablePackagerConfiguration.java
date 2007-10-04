@@ -48,12 +48,6 @@ public interface IModifiablePackagerConfiguration
   /**Sets the folder containing the RCP root files.*/
   public void setRootFileFolder( final String folderName );
 
-  /**Sets the config.ini file to use.*/
-  public void setConfigIni( final String fileName );
-
   /**Sets the product name to use for the final result.*/
   public void setProductName( final String name );
-
-  /**Sets the folder containing the configuration files for the installer.*/
-  public void setInstallerConfigurationFolder( final String folder );
 }

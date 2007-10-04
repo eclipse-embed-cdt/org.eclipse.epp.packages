@@ -21,16 +21,17 @@ public class XmlElement implements IXmlElement {
 
   private final Element node;
 
+  /**
+   * Creates a new XmlElement by providing a new node.
+   * 
+   * @param node
+   */
   public XmlElement( final Element node ) {
     this.node = node;
   }
 
-  public String getAttributeValue( final String attributeName ) {
-    return node.getAttribute( attributeName );
-  }
-
   public IXmlElement getElement( final String tagName ) {
-    NodeList elementsByTagName = node.getElementsByTagName( tagName );
+    NodeList elementsByTagName = this.node.getElementsByTagName( tagName );
     IXmlElement result;
     if( elementsByTagName.getLength() == 0 ) {
       result = null;
@@ -41,12 +42,16 @@ public class XmlElement implements IXmlElement {
   }
 
   public IXmlElement[] getElements( final String tagName ) {
-    NodeList elementsByTagName = node.getElementsByTagName( tagName );
+    NodeList elementsByTagName = this.node.getElementsByTagName( tagName );
     List<IXmlElement> result = new ArrayList<IXmlElement>();
     for( int index = 0; index < elementsByTagName.getLength(); index++ ) {
       result.add( new XmlElement( ( Element )elementsByTagName.item( index ) ) );
     }
     return result.toArray( new IXmlElement[ result.size() ] );
+  }
+
+  public String getAttributeValue( final String attributeName ) {
+    return this.node.getAttribute( attributeName );
   }
 
   public String getText() {

@@ -15,7 +15,6 @@ import java.io.IOException;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.epp.packaging.core.assembly.EclipsePackager;
 import org.eclipse.epp.packaging.core.assembly.IPackager;
-import org.eclipse.epp.packaging.core.assembly.InstallerPackager;
 import org.eclipse.epp.packaging.core.assembly.PackageMover;
 import org.eclipse.epp.packaging.core.configuration.ICommands;
 import org.eclipse.epp.packaging.core.configuration.IPackagerConfiguration;
@@ -25,7 +24,10 @@ import org.eclipse.epp.packaging.core.download.IUpdateSiteManager;
 import org.eclipse.epp.packaging.core.download.UpdateSiteManager;
 import org.eclipse.epp.packaging.core.logging.MessageLogger;
 
-/**The main class, independent from the creation of the configuration and less dependent on the application/platformrunnable*/
+/**
+ * The main class, independent from the creation of the configuration and less
+ * dependent on the application/platform runnable
+ */
 public class EclipsePackagingExecutor {
 
   private final ICommands commands;
@@ -38,18 +40,22 @@ public class EclipsePackagingExecutor {
     this.configuration = configuration;
   }
 
-  /**Run the packaging process*/
+  /** 
+   * Run the packaging process 
+   */
   public void execute() throws CoreException, IOException {
-    MessageLogger.getInstance()
-      .log( "Application.FeatureCount", //$NON-NLS-1$
-            configuration.getRequiredFeatures().length );
-    boolean doCheckOrInstall = commands.mustDo( Task.CHECK )
-                               || commands.mustDo( Task.INSTALL );
+    MessageLogger logger = MessageLogger.getInstance();
+    logger.log( "Application.FeatureCount", //$NON-NLS-1$
+                Integer.valueOf( this.configuration.getRequiredFeatures().length ) );
+    boolean doCheckOrInstall =    this.commands.mustDo( Task.CHECK )
+                               || this.commands.mustDo( Task.INSTALL );
     if( doCheckOrInstall ) {
-      IUpdateSiteManager manager = new UpdateSiteManager( configuration );
-      boolean areFeaturesPresent = manager.areFeaturesPresent( configuration.getRequiredFeatures() );
+      IUpdateSiteManager manager 
+        = new UpdateSiteManager( this.configuration );
+      boolean areFeaturesPresent 
+        = manager.areFeaturesPresent( this.configuration.getRequiredFeatures() );
       if( areFeaturesPresent ) {
-        if( commands.mustDo( Task.INSTALL ) ) {
+        if( this.commands.mustDo( Task.INSTALL ) ) {
           install( manager );
         }
         build();
@@ -60,13 +66,12 @@ public class EclipsePackagingExecutor {
   }
 
   private void build() throws IOException, CoreException {
-    if( commands.mustDo( Task.BUILD ) ) {
+    if( this.commands.mustDo( Task.BUILD ) ) {
       MessageLogger.getInstance().logBeginProcess( "Application.Building" ); //$NON-NLS-1$
       IPackager packager = new EclipsePackager( this.configuration );
       packager.packApplication();
       PackageMover mover = new PackageMover( this.configuration );
       mover.moveFiles();
-//      new InstallerPackager( configuration ).packApplication();
       MessageLogger.getInstance().logEndProcess();
     }
   }
@@ -79,7 +84,9 @@ public class EclipsePackagingExecutor {
     throws IOException, CoreException
   {
     MessageLogger.getInstance().logBeginProcess( "Application.Installing" ); //$NON-NLS-1$
-    new ExtensionSiteManager( configuration ).installFeatures( manager );
+    ExtensionSiteManager extensionSiteManager 
+      = new ExtensionSiteManager( this.configuration );
+    extensionSiteManager.installFeatures( manager );
     MessageLogger.getInstance().logEndProcess();
   }
 }

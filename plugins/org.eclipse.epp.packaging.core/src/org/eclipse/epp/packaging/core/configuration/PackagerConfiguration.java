@@ -33,11 +33,9 @@ public class PackagerConfiguration implements IModifiablePackagerConfiguration {
   private File extensionSite;
   private String rcpVersion;
   private File rootFolder;
-  private File configIni;
   private String productName;
   private String eclipseProductId;
   private String initialPerspectiveId;
-  private String installerConfigurationFolder;
 
   public PackagerConfiguration() {
     this.baseFolder = org.eclipse.core.runtime.Platform.getLocation().toFile();
@@ -111,28 +109,12 @@ public class PackagerConfiguration implements IModifiablePackagerConfiguration {
     this.rootFolder = new File( folderName );
   }
 
-  public File getConfigIni() {
-    return this.configIni;
-  }
-
-  public void setConfigIni( final String fileName ) {
-    this.configIni = new File( fileName );
-  }
-
   public void setProductName( final String name ) {
     this.productName = name;
   }
 
   public String getProductName() {
     return this.productName;
-  }
-
-  public String getInstallerConfigurationFolder() {
-    return this.installerConfigurationFolder;
-  }
-
-  public void setInstallerConfigurationFolder( final String folder ) {
-    this.installerConfigurationFolder = folder;
   }
 
   public void setEclipseProductId( final String eclipseProductId ) {

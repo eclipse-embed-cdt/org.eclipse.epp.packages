@@ -28,7 +28,10 @@ public class Application implements IPlatformRunnable {
    */
   public Object run( final Object args ) throws Exception {
     ICommands commands = ArgumentParser.parse( args );
-    IPackagerConfiguration configuration = new ConfigurationParser().parseConfiguration( commands.getConfigurationFile() );
+    ConfigurationParser configurationParser 
+      = new ConfigurationParser( commands.getConfigurationFile() );
+    IPackagerConfiguration configuration 
+      = configurationParser.parseConfiguration(  );
     new EclipsePackagingExecutor( commands, configuration ).execute();
     return EXIT_OK;
   }

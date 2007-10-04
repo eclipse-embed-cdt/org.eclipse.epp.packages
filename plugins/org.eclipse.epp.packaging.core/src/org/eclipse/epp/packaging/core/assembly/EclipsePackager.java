@@ -26,7 +26,6 @@ import org.eclipse.update.core.VersionedIdentifier;
 public class EclipsePackager implements IPackager {
 
   private static final String CONFIGURED_FEATURES_ZIP = "ConfiguredFeatures.zip"; //$NON-NLS-1$
-  private static final String CONFIG_INI_ZIP = "ConfigIni.zip"; //$NON-NLS-1$
   private final PackagerRunner runner;
 
   /**
@@ -44,7 +43,7 @@ public class EclipsePackager implements IPackager {
     prepareWorkingArea( configuration );
   }
 
-  /** Creates the map file in the workspace and clears the existing workarea. */
+  /** Creates the map file in the workspace and clears the existing work area. */
   private void prepareWorkingArea( final IPackagerConfiguration configuration )
     throws IOException
   {
@@ -68,8 +67,6 @@ public class EclipsePackager implements IPackager {
     writeDataForCustomFile( CONFIGURED_FEATURES_ZIP,
                             mapWriter,
                             propertiesWriter );
-    zipConfig( sourceFolder, configuration );
-    writeDataForCustomFile( CONFIG_INI_ZIP, mapWriter, propertiesWriter );
     mapWriter.close();
     propertiesWriter.close();
     customTargetsWriter.close();
@@ -80,20 +77,7 @@ public class EclipsePackager implements IPackager {
                                        final PackagingPropertiesWriter propertiesWriter )
   {
     mapWriter.addCustomFileForAllPlatforms( filename );
-//    propertiesWriter.addFileToOrder( filename );
-  }
-
-  private void zipConfig( final File parentFolder,
-                          final IPackagerConfiguration configuration )
-    throws IOException
-  {
-    String canonicalPath = configuration.getConfigIni().getCanonicalPath();
-    MessageLogger.getInstance().log( "EclipsePackager.InjectIni", //$NON-NLS-1$
-                                     canonicalPath );
-    Zip zip = new Zip( parentFolder, CONFIG_INI_ZIP );
-    zip.addFileAs( configuration.getConfigIni(),
-                   "eclipse/configuration/config.ini" ); //$NON-NLS-1$
-    zip.close();
+    propertiesWriter.addFileToOrder( filename );
   }
 
   /**

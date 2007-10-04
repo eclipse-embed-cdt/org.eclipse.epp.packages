@@ -27,38 +27,44 @@ import org.xml.sax.SAXException;
 public class ConfigurationParser {
 
   private static final String ATTRIB_ARCH = "arch"; //$NON-NLS-1$
+//  private static final String ATTRIB_CONFIG_INI = "configIni"; //$NON-NLS-1$
+  private static final String ATTRIB_ECLIPSE_INI_PATH = "path"; //$NON-NLS-1$
+  private static final String ATTRIB_ECLIPSE_PRODUCT_ID = "eclipseProductId"; //$NON-NLS-1$
   private static final String ATTRIB_FOLDER = "folder"; //$NON-NLS-1$
   private static final String ATTRIB_FORMAT = "format"; //$NON-NLS-1$
   private static final String ATTRIB_ID = "id"; //$NON-NLS-1$
+  private static final String ATTRIB_INITIAL_PERSPECTIVE_ID = "initialPerspectiveId"; //$NON-NLS-1$
+  private static final String ATTRIB_NAME = "name"; //$NON-NLS-1$
   private static final String ATTRIB_OS = "os"; //$NON-NLS-1$
   private static final String ATTRIB_RELATIVE_FOLDER = "relativeFolder"; //$NON-NLS-1$
   private static final String ATTRIB_URL = "url"; //$NON-NLS-1$
   private static final String ATTRIB_VERSION = "version"; //$NON-NLS-1$
   private static final String ATTRIB_WS = "ws"; //$NON-NLS-1$
+
   private static final String TAG_ARCHIVE_FORMAT = "archiveFormat"; //$NON-NLS-1$
+  private static final String TAG_ECLIPSE_INI_FILE = "eclipseIniFileContent"; //$NON-NLS-1$
   private static final String TAG_EXTENSION_SITE = "extensionSite"; //$NON-NLS-1$
   private static final String TAG_FEATURE = "feature"; //$NON-NLS-1$
   private static final String TAG_PACKAGER_CONFIGURATION_FOLDER = "packagerConfigurationFolder"; //$NON-NLS-1$
-  private static final String TAG_INSTALLER_CONFIGURATION_FOLDER = "installerConfigurationFolder"; //$NON-NLS-1$
   private static final String TAG_PLATFORM = "platform"; //$NON-NLS-1$
+  private static final String TAG_PRODUCT = "product"; //$NON-NLS-1$
   private static final String TAG_RCP = "rcp"; //$NON-NLS-1$
   private static final String TAG_REQUIRED_FEATURES = "requiredFeatures"; //$NON-NLS-1$
   private static final String TAG_ROOT_FILE_FOLDER = "rootFileFolder"; //$NON-NLS-1$
   private static final String TAG_TARGET_PLATFORMS = "targetPlatforms"; //$NON-NLS-1$
   private static final String TAG_UPDATE_SITE = "updateSite"; //$NON-NLS-1$
   private static final String TAG_UPDATE_SITES = "updateSites"; //$NON-NLS-1$
-  private static final String TAG_PRODUCT = "product"; //$NON-NLS-1$
-  private static final String ATTRIB_CONFIG_INI = "configIni"; //$NON-NLS-1$
-  private static final String ATTRIB_NAME = "name"; //$NON-NLS-1$
-  private static final String ATTRIB_ECLIPSE_PRODUCT_ID = "eclipseProductId"; //$NON-NLS-1$
-  private static final String ATTRIB_INITIAL_PERSPECTIVE_ID = "initialPerspectiveId"; //$NON-NLS-1$
-  private static final String TAG_ECLIPSE_INI_FILE = "eclipseIniFileContent"; //$NON-NLS-1$
-  private static final String ATTRIB_ECLIPSE_INI_PATH = "path"; //$NON-NLS-1$
 
+  private final File xmlFile;
+
+  public ConfigurationParser( final File xmlFile ) {
+    this.xmlFile = xmlFile;
+  }
+  
   /**
    * Parses the configuration contained in xmlFile.
    */
-  public IPackagerConfiguration parseConfiguration( final File xmlFile )
+  public IPackagerConfiguration parseConfiguration()
     throws SAXException, IOException, ParserConfigurationException
   {
     return parseConfiguration( new XMLDocument( xmlFile ).getRootElement() );
@@ -72,6 +78,16 @@ public class ConfigurationParser {
     ParserConfigurationException
   {
     return parseConfiguration( new XMLDocument( xml ).getRootElement() );
+  }
+
+  private IXmlElement[] getElements( final IXmlElement element,
+                                     final String name )
+  {
+    return element.getElements( name );
+  }
+
+  private String getFolderName( final IXmlElement element ) {
+    return element.getAttributeValue( ATTRIB_FOLDER );
   }
 
   /**
@@ -88,33 +104,27 @@ public class ConfigurationParser {
     parseUpdateSites( configuration, root );
     parseRequiredFeatures( configuration, root );
     parsePackagerConfigurationFolder( configuration, root );
-    parseInstallerConfigurationFolder( configuration, root );
     parseRootFolder( configuration, root );
     parseExtensionSite( configuration, root );
     parsePlatforms( configuration, root );
     return configuration;
   }
 
-  private void parseRcp( final PackagerConfiguration configuration,
-                         final IXmlElement parent )
+  /** Loads and sets the extension site to use. */
+  private void parseExtensionSite( final PackagerConfiguration configuration,
+                                   final IXmlElement parent )
   {
-    String rcpVersion = parent.getElement( TAG_RCP )
-      .getAttributeValue( ATTRIB_VERSION );
-    configuration.setRcpVersion( rcpVersion );
+    IXmlElement element = parent.getElement( TAG_EXTENSION_SITE );
+    configuration.setExtensionSiteRelative( element.getAttributeValue( ATTRIB_RELATIVE_FOLDER ) );
   }
 
-  private void parseProduct( final PackagerConfiguration configuration,
-                             final IXmlElement parent )
+  /** Loads and sets the packager configuration folder to use. */
+  private void parsePackagerConfigurationFolder( final PackagerConfiguration configuration,
+                                                 final IXmlElement parent )
   {
-    IXmlElement productElement = parent.getElement( TAG_PRODUCT );
-    String productName = productElement.getAttributeValue( ATTRIB_NAME );
-    configuration.setProductName( productName );
-    String configIni = productElement.getAttributeValue( ATTRIB_CONFIG_INI );
-    configuration.setConfigIni( configIni );
-    String eclipseProductId = productElement.getAttributeValue( ATTRIB_ECLIPSE_PRODUCT_ID );
-    configuration.setEclipseProductId( eclipseProductId );
-    String initialPerspectiveId = productElement.getAttributeValue( ATTRIB_INITIAL_PERSPECTIVE_ID );
-    configuration.setInitialPerspectiveId( initialPerspectiveId );
+    IXmlElement element = parent.getElement( TAG_PACKAGER_CONFIGURATION_FOLDER );
+    String folder = resolveRelativeFileName( getFolderName( element ) );
+    configuration.setPackagerConfigurationFolder( folder );
   }
 
   /** Loads and sets the target platforms. */
@@ -137,6 +147,26 @@ public class ConfigurationParser {
     }
   }
 
+  private void parseProduct( final PackagerConfiguration configuration,
+                             final IXmlElement parent )
+  {
+    IXmlElement productElement = parent.getElement( TAG_PRODUCT );
+    String productName = productElement.getAttributeValue( ATTRIB_NAME );
+    configuration.setProductName( productName );
+    String eclipseProductId = productElement.getAttributeValue( ATTRIB_ECLIPSE_PRODUCT_ID );
+    configuration.setEclipseProductId( eclipseProductId );
+    String initialPerspectiveId = productElement.getAttributeValue( ATTRIB_INITIAL_PERSPECTIVE_ID );
+    configuration.setInitialPerspectiveId( initialPerspectiveId );
+  }
+
+  private void parseRcp( final PackagerConfiguration configuration,
+                         final IXmlElement parent )
+  {
+    IXmlElement rcpElement = parent.getElement( TAG_RCP );
+    String rcpVersion = rcpElement.getAttributeValue( ATTRIB_VERSION );
+    configuration.setRcpVersion( rcpVersion );
+  }
+
   /** Loads and sets the required features. */
   private void parseRequiredFeatures( final PackagerConfiguration configuration,
                                       final IXmlElement parent )
@@ -146,6 +176,15 @@ public class ConfigurationParser {
       configuration.addRequiredFeature( featureElement.getAttributeValue( ATTRIB_ID ),
                                         featureElement.getAttributeValue( ATTRIB_VERSION ) );
     }
+  }
+
+  /** Loads and sets the folder containing the root files. */
+  private void parseRootFolder( final PackagerConfiguration configuration,
+                                final IXmlElement parent )
+  {
+    IXmlElement element = parent.getElement( TAG_ROOT_FILE_FOLDER );
+    String folder = resolveRelativeFileName( getFolderName( element ) );
+    configuration.setRootFileFolder( folder );
   }
 
   /**
@@ -162,46 +201,16 @@ public class ConfigurationParser {
       configuration.addUpdateSite( siteElement.getAttributeValue( ATTRIB_URL ) );
     }
   }
-
-  /** Loads and sets the extension site to use. */
-  private void parseExtensionSite( final PackagerConfiguration configuration,
-                                   final IXmlElement parent )
-  {
-    IXmlElement element = parent.getElement( TAG_EXTENSION_SITE );
-    configuration.setExtensionSiteRelative( element.getAttributeValue( ATTRIB_RELATIVE_FOLDER ) );
+  
+  /*
+   * This method resolves a potentially relative file name. If the path is
+   * specified relative, then it is considered relative to the parent of the
+   * configuration (XML) file.
+   */
+  private String resolveRelativeFileName( final String path ) {
+    if( new File( path ).isAbsolute() )
+      return path;
+    return new File( this.xmlFile.getParent(), path ).toString();
   }
-
-  /** Loads and sets the packager configuration folder to use. */
-  private void parsePackagerConfigurationFolder( final PackagerConfiguration configuration,
-                                                 final IXmlElement parent )
-  {
-    IXmlElement element = parent.getElement( TAG_PACKAGER_CONFIGURATION_FOLDER );
-    configuration.setPackagerConfigurationFolder( getFolderName( element ) );
-  }
-
-  /** Loads and sets the installer configuration folder to use. */
-  private void parseInstallerConfigurationFolder( final PackagerConfiguration configuration,
-                                                  final IXmlElement parent )
-  {
-    IXmlElement element = parent.getElement( TAG_INSTALLER_CONFIGURATION_FOLDER );
-    configuration.setInstallerConfigurationFolder( getFolderName( element ) );
-  }
-
-  /** Loads and sets the folder containing the root files. */
-  private void parseRootFolder( final PackagerConfiguration configuration,
-                                final IXmlElement parent )
-  {
-    IXmlElement element = parent.getElement( TAG_ROOT_FILE_FOLDER );
-    configuration.setRootFileFolder( getFolderName( element ) );
-  }
-
-  private String getFolderName( final IXmlElement element ) {
-    return element.getAttributeValue( ATTRIB_FOLDER );
-  }
-
-  private IXmlElement[] getElements( final IXmlElement element,
-                                     final String name )
-  {
-    return element.getElements( name );
-  }
+  
 }

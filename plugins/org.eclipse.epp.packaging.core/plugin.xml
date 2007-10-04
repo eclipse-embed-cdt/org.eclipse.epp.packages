@@ -15,11 +15,11 @@
          id="EPP"
          point="org.eclipse.core.runtime.products">
       <product
-            application="org.eclipse.packaging.application"
-            name="%product.name">
+            application="org.eclipse.epp.packaging.core.application"
+            name="EPP Packaging">
          <property
                name="appName"
-               value="EPP">
+               value="EPP Packaging">
          </property>
       </product>
    </extension>
