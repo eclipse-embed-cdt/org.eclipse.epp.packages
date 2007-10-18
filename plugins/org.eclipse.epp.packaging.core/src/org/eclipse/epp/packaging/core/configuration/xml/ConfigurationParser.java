@@ -27,7 +27,6 @@ import org.xml.sax.SAXException;
 public class ConfigurationParser {
 
   private static final String ATTRIB_ARCH = "arch"; //$NON-NLS-1$
-//  private static final String ATTRIB_CONFIG_INI = "configIni"; //$NON-NLS-1$
   private static final String ATTRIB_ECLIPSE_INI_PATH = "path"; //$NON-NLS-1$
   private static final String ATTRIB_ECLIPSE_PRODUCT_ID = "eclipseProductId"; //$NON-NLS-1$
   private static final String ATTRIB_FOLDER = "folder"; //$NON-NLS-1$
