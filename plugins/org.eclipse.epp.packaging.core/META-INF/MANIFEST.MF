@@ -18,4 +18,5 @@ Export-Package: org.eclipse.epp.packaging.core,
  org.eclipse.epp.packaging.core.download,
  org.eclipse.epp.packaging.core.io,
  org.eclipse.epp.packaging.core.logging
+Eclipse-LazyStart: false
 

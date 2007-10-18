@@ -10,29 +10,32 @@
  *******************************************************************************/
 package org.eclipse.epp.packaging.core;
 
-import org.eclipse.core.runtime.IPlatformRunnable;
+import java.util.Iterator;
+import java.util.Map;
+
 import org.eclipse.epp.packaging.core.configuration.ArgumentParser;
 import org.eclipse.epp.packaging.core.configuration.ICommands;
 import org.eclipse.epp.packaging.core.configuration.IPackagerConfiguration;
 import org.eclipse.epp.packaging.core.configuration.xml.ConfigurationParser;
+import org.eclipse.equinox.app.IApplication;
+import org.eclipse.equinox.app.IApplicationContext;
 
 /**
  * Main entry point for the EPP packager.
  */
-public class Application implements IPlatformRunnable {
+public class PackagingApplication implements IApplication {
 
-  /**
-   * Runs the Eclipse Packager. args is expected to be a conventional String
-   * array. The first entry must hold the location of the configuration
-   * properties file.
-   */
-  public Object run( final Object args ) throws Exception {
+  public Object start( final IApplicationContext context ) throws Exception {
+    Map arguments = context.getArguments();
+    String[] args = ( String[] )arguments.get( IApplicationContext.APPLICATION_ARGS );
     ICommands commands = ArgumentParser.parse( args );
-    ConfigurationParser configurationParser 
-      = new ConfigurationParser( commands.getConfigurationFile() );
-    IPackagerConfiguration configuration 
-      = configurationParser.parseConfiguration(  );
+    ConfigurationParser configurationParser = new ConfigurationParser( commands.getConfigurationFile() );
+    IPackagerConfiguration configuration = configurationParser.parseConfiguration();
     new EclipsePackagingExecutor( commands, configuration ).execute();
     return EXIT_OK;
+  }
+
+  public void stop() {
+    // nothing to stop here...
   }
 }

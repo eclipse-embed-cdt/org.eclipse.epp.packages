@@ -7,7 +7,7 @@
          point="org.eclipse.core.runtime.applications">
       <application>
          <run
-               class="org.eclipse.epp.packaging.core.Application">
+               class="org.eclipse.epp.packaging.core.PackagingApplication">
          </run>
       </application>
    </extension>
@@ -15,7 +15,7 @@
          id="EPP"
          point="org.eclipse.core.runtime.products">
       <product
-            application="org.eclipse.epp.packaging.core.application"
+            application="application"
             name="EPP Packaging">
          <property
                name="appName"
