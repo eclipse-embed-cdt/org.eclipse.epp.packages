@@ -36,18 +36,18 @@ public class ExtensionSiteManager {
   public void installFeatures( final IUpdateSiteManager manager )
     throws IOException, CoreException
   {
-    File localSiteFolder = configuration.getExtensionSite();
-    MessageLogger.getInstance()
-      .log( "ExtensionSiteManager.SiteCreated", localSiteFolder ); //$NON-NLS-1$
+    File localSiteFolder = this.configuration.getExtensionSite();
+    MessageLogger.getInstance().log( "ExtensionSiteManager.SiteCreated",  //$NON-NLS-1$
+                                     localSiteFolder );
     IConfiguredSite site = SiteCreator.createInstallationSite( localSiteFolder );
-    for( IPlatform platform : configuration.getTargetPlatforms() ) {
-      MessageLogger.getInstance()
-        .logBeginProcess( "ExtensionSiteManager.InstallPlatform", //$NON-NLS-1$
-                          platform );
+    for( IPlatform platform : this.configuration.getTargetPlatforms() ) {
+      MessageLogger.getInstance().logBeginProcess( "ExtensionSiteManager.InstallPlatform", //$NON-NLS-1$
+                                                   platform );
       platform.configureSite();
       for( IFeature feature : manager.getFeatures() ) {
-        MessageLogger.getInstance()
-          .logBeginProcess( "ExtensionSiteManager.Installing", feature.getVersionedIdentifier().getIdentifier() ); //$NON-NLS-1$
+        String identifier = feature.getVersionedIdentifier().getIdentifier();
+        MessageLogger.getInstance().logBeginProcess( "ExtensionSiteManager.Installing",  //$NON-NLS-1$
+                                                     identifier );
         site.install( feature, null, new NullProgressMonitor() );
         MessageLogger.getInstance().logEndProcess();
       }

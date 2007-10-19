@@ -12,6 +12,10 @@ package org.eclipse.epp.packaging.core.configuration;
 
 import java.io.File;
 import java.net.URL;
+
+import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.IProgressMonitor;
+import org.eclipse.core.runtime.IStatus;
 import org.eclipse.update.core.VersionedIdentifier;
 
 /**
@@ -40,4 +44,6 @@ public interface IPackagerConfiguration {
   public String getEclipseProductId();
   
   public String getInitialPerspectiveId();
+
+  public IStatus checkFeatures( IProgressMonitor monitor ) throws CoreException;
 }

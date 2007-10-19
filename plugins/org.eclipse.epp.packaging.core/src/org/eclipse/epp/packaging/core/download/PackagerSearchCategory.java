@@ -14,24 +14,28 @@ import org.eclipse.update.core.VersionedIdentifier;
 import org.eclipse.update.search.IUpdateSearchCategory;
 import org.eclipse.update.search.IUpdateSearchQuery;
 
-/**An UpdateSearchCategory looking for feature identifiers*/
+/** 
+ * An UpdateSearchCategory looking for feature identifiers
+ */
 public class PackagerSearchCategory implements IUpdateSearchCategory {
 
   private final PackagerSearchQuery query = new PackagerSearchQuery();
   private String id;
 
   public String getId() {
-    return id;
+    return this.id;
   }
 
-  /**Adds a feature to search for.*/
+  /** 
+   * Adds a feature to search for. 
+   */
   public void addFeatureToSearch( final VersionedIdentifier identifier ) {
-    query.addFeatureIdentifier( identifier );
+    this.query.addFeatureIdentifier( identifier );
   }
 
   public IUpdateSearchQuery[] getQueries() {
     return new IUpdateSearchQuery[]{
-      query
+      this.query
     };
   }
 

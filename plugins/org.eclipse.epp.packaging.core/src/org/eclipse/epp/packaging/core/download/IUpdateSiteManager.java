@@ -28,7 +28,8 @@ public interface IUpdateSiteManager {
   public boolean areFeaturesPresent( VersionedIdentifier[] identifiers )
     throws CoreException;
 
-  /** Returns the IFeatures for the configured feature references
+  /**
+   * Returns the IFeatures for the configured feature references
    */
   public IFeature[] getFeatures() throws CoreException;
 }

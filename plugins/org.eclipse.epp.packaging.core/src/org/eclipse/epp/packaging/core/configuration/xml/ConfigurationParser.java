@@ -19,6 +19,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.eclipse.epp.packaging.core.configuration.IPackagerConfiguration;
 import org.eclipse.epp.packaging.core.configuration.PackagerConfiguration;
 import org.eclipse.epp.packaging.core.configuration.Platform;
+import org.eclipse.update.core.VersionedIdentifier;
 import org.xml.sax.SAXException;
 
 /**
@@ -26,6 +27,8 @@ import org.xml.sax.SAXException;
  */
 public class ConfigurationParser {
 
+  private static final String LATEST = "latest"; //$NON-NLS-1$
+  
   private static final String ATTRIB_ARCH = "arch"; //$NON-NLS-1$
   private static final String ATTRIB_ECLIPSE_INI_PATH = "path"; //$NON-NLS-1$
   private static final String ATTRIB_ECLIPSE_PRODUCT_ID = "eclipseProductId"; //$NON-NLS-1$
@@ -109,6 +112,7 @@ public class ConfigurationParser {
     return configuration;
   }
 
+
   /** Loads and sets the extension site to use. */
   private void parseExtensionSite( final PackagerConfiguration configuration,
                                    final IXmlElement parent )
@@ -166,14 +170,23 @@ public class ConfigurationParser {
     configuration.setRcpVersion( rcpVersion );
   }
 
-  /** Loads and sets the required features. */
+  /** 
+   * Loads and sets the required features.
+   */
   private void parseRequiredFeatures( final PackagerConfiguration configuration,
                                       final IXmlElement parent )
   {
     IXmlElement element = parent.getElement( TAG_REQUIRED_FEATURES );
     for( IXmlElement featureElement : getElements( element, TAG_FEATURE ) ) {
+      String version = featureElement.getAttributeValue( ATTRIB_VERSION );
+      if( version != null ) {
+        version = version.trim();
+        if( version.length() == 0 || LATEST.equalsIgnoreCase( version ) ) {
+          version = null;
+        }
+      }
       configuration.addRequiredFeature( featureElement.getAttributeValue( ATTRIB_ID ),
-                                        featureElement.getAttributeValue( ATTRIB_VERSION ) );
+                                        version );
     }
   }
 

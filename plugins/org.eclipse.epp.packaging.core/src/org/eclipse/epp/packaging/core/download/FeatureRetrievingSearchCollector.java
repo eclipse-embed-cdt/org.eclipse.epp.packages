@@ -17,22 +17,24 @@ import org.eclipse.update.core.IFeature;
 import org.eclipse.update.core.VersionedIdentifier;
 import org.eclipse.update.search.IUpdateSearchResultCollector;
 
-/** An UpdateSearchResultCollector returning a feature.*/
+/** 
+ * An UpdateSearchResultCollector returning a feature.
+ */
 public class FeatureRetrievingSearchCollector
   implements IUpdateSearchResultCollector
 {
 
-  private final List<IFeature> result = new ArrayList<IFeature>();
+  private final List<IFeature> features = new ArrayList<IFeature>();
   private final List<VersionedIdentifier> identifiers = new ArrayList<VersionedIdentifier>();
 
   public void accept( final IFeature match ) {
-    if( !identifiers.contains( match.getVersionedIdentifier() ) ) {
-      result.add( match );
-      identifiers.add( match.getVersionedIdentifier() );
+    if( !this.identifiers.contains( match.getVersionedIdentifier() ) ) {
+      this.features.add( match );
+      this.identifiers.add( match.getVersionedIdentifier() );
     }
   }
 
   public IFeature[] getFeatures() {
-    return result.toArray( new IFeature[ result.size() ] );
+    return this.features.toArray( new IFeature[ this.features.size() ] );
   }
 }

@@ -18,7 +18,10 @@ import org.eclipse.update.core.IFeature;
 import org.eclipse.update.core.VersionedIdentifier;
 import org.eclipse.update.search.IUpdateSearchResultCollector;
 
-/**UpdateSearchResultCollector comparing features found with a base set of features to find.*/
+/**
+ * UpdateSearchResultCollector comparing features found with a base set of
+ * features to find.
+ */
 public class FeatureVerifyingSearchCollector
   implements IUpdateSearchResultCollector
 {
@@ -27,20 +30,24 @@ public class FeatureVerifyingSearchCollector
 
   public FeatureVerifyingSearchCollector( final VersionedIdentifier[] listedFeatures )
   {
-    Collections.addAll( featuresToFind, listedFeatures );
+    Collections.addAll( this.featuresToFind, listedFeatures );
   }
 
   public void accept( final IFeature feature ) {
-    featuresToFind.remove( feature.getVersionedIdentifier() );
+    this.featuresToFind.remove( feature.getVersionedIdentifier() );
   }
 
-  /**@return true if all the configured features are found, false otherwise.*/
+  /**
+   * @return true if all the configured features are found, false otherwise.
+   */
   public boolean allFeaturesFound() {
-    return featuresToFind.isEmpty();
+    return this.featuresToFind.isEmpty();
   }
 
-  /**Returns the list of missing features*/
+  /**
+   * @return the list of missing features
+   */
   public VersionedIdentifier[] getMissingFeatures() {
-    return featuresToFind.toArray( new VersionedIdentifier[ featuresToFind.size() ] );
+    return this.featuresToFind.toArray( new VersionedIdentifier[ this.featuresToFind.size() ] );
   }
 }

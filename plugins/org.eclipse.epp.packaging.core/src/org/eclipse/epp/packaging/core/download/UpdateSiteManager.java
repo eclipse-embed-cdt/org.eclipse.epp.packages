@@ -31,24 +31,22 @@ public class UpdateSiteManager implements IUpdateSiteManager {
   public UpdateSiteManager( final IPackagerConfiguration configuration ) {
     this.listedSites = configuration.getUpdateSites();
     this.listedFeatures = configuration.getRequiredFeatures();
-    MessageLogger.getInstance()
-      .log( "UpdateSiteManager.ListedSitesCount", listedSites.length ); //$NON-NLS-1$
+    MessageLogger.getInstance().log( "UpdateSiteManager.ListedSitesCount", //$NON-NLS-1$
+                                     Integer.valueOf( this.listedSites.length ) );
   }
 
   public boolean areFeaturesPresent( final VersionedIdentifier[] identifiers )
     throws CoreException
   {
-    MessageLogger.getInstance()
-      .logBeginProcess( "UpdateSiteManager.FeatureLookup" ); //$NON-NLS-1$
-    FeatureVerifyingSearchCollector collector = new FeatureVerifyingSearchCollector( listedFeatures );
+    MessageLogger.getInstance().logBeginProcess( "UpdateSiteManager.FeatureLookup" ); //$NON-NLS-1$
+    FeatureVerifyingSearchCollector collector 
+      = new FeatureVerifyingSearchCollector( this.listedFeatures );
     search( collector );
     boolean result = collector.allFeaturesFound();
     if( result ) {
-      MessageLogger.getInstance()
-        .logEndProcess( "UpdateSiteManager.FeaturesPresent" ); //$NON-NLS-1$
+      MessageLogger.getInstance().logEndProcess( "UpdateSiteManager.FeaturesPresent" ); //$NON-NLS-1$
     } else {
-      MessageLogger.getInstance()
-        .logEndProcess( "UpdateSiteManager.FeaturesMissing" ); //$NON-NLS-1$
+      MessageLogger.getInstance().logEndProcess( "UpdateSiteManager.FeaturesMissing" ); //$NON-NLS-1$
       for( VersionedIdentifier feature : collector.getMissingFeatures() ) {
         MessageLogger.getInstance().log( feature.toString() );
       }
@@ -65,6 +63,8 @@ public class UpdateSiteManager implements IUpdateSiteManager {
   private void search( final IUpdateSearchResultCollector collector )
     throws CoreException
   {
-    new FeatureSearcher( listedFeatures, listedSites ).run( collector );
+    FeatureSearcher featureSearcher = new FeatureSearcher( this.listedFeatures,
+                                                           this.listedSites );
+    featureSearcher.run( collector );
   }
 }

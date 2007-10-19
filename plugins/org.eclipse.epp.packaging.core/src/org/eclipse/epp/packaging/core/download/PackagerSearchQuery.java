@@ -24,7 +24,9 @@ import org.eclipse.update.search.IUpdateSearchFilter;
 import org.eclipse.update.search.IUpdateSearchQuery;
 import org.eclipse.update.search.IUpdateSearchResultCollector;
 
-/**Search query looking for occurences of configured features.*/
+/** 
+ * Search query looking for occurrences of configured features. 
+ */
 public class PackagerSearchQuery implements IUpdateSearchQuery {
 
   private final List<VersionedIdentifier> identifiers = new ArrayList<VersionedIdentifier>();
@@ -42,17 +44,19 @@ public class PackagerSearchQuery implements IUpdateSearchQuery {
     ISiteFeatureReference[] featureReferences = site.getFeatureReferences();
     for( ISiteFeatureReference reference : featureReferences ) {
       try {
-        if( identifiers.contains( reference.getVersionedIdentifier() ) ) {
+        if( this.identifiers.contains( reference.getVersionedIdentifier() ) ) {
           collector.accept( reference.getFeature( new NullProgressMonitor() ) );
         }
-      } catch( CoreException e ) {
+      } catch( CoreException ce ) {
         // The search is over, and there is nothing we could do about it.
       }
     }
   }
 
-  /**Add a feature to look for.*/
+  /**
+   * Add a feature to look for.
+   */
   public void addFeatureIdentifier( final VersionedIdentifier identifier ) {
-    identifiers.add( identifier );
+    this.identifiers.add( identifier );
   }
 }

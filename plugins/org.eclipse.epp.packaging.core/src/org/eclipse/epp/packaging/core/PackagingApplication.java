@@ -10,9 +10,10 @@
  *******************************************************************************/
 package org.eclipse.epp.packaging.core;
 
-import java.util.Iterator;
 import java.util.Map;
 
+import org.eclipse.core.runtime.IStatus;
+import org.eclipse.core.runtime.NullProgressMonitor;
 import org.eclipse.epp.packaging.core.configuration.ArgumentParser;
 import org.eclipse.epp.packaging.core.configuration.ICommands;
 import org.eclipse.epp.packaging.core.configuration.IPackagerConfiguration;
@@ -26,12 +27,28 @@ import org.eclipse.equinox.app.IApplicationContext;
 public class PackagingApplication implements IApplication {
 
   public Object start( final IApplicationContext context ) throws Exception {
-    Map arguments = context.getArguments();
+    Map<?, ?> arguments = context.getArguments();
     String[] args = ( String[] )arguments.get( IApplicationContext.APPLICATION_ARGS );
     ICommands commands = ArgumentParser.parse( args );
-    ConfigurationParser configurationParser = new ConfigurationParser( commands.getConfigurationFile() );
-    IPackagerConfiguration configuration = configurationParser.parseConfiguration();
-    new EclipsePackagingExecutor( commands, configuration ).execute();
+    ConfigurationParser configurationParser 
+      = new ConfigurationParser( commands.getConfigurationFile() );
+    IPackagerConfiguration configuration 
+      = configurationParser.parseConfiguration();
+    IStatus checkFeaturesResult 
+      = configuration.checkFeatures( new NullProgressMonitor() );
+    
+    IStatus[] status = checkFeaturesResult.getChildren();
+    for( IStatus singleStatus : status ) {
+      System.out.println( singleStatus.getMessage() );
+    }  
+    
+    if(    checkFeaturesResult.getSeverity() == IStatus.OK
+        || checkFeaturesResult.getSeverity() == IStatus.INFO 
+        || checkFeaturesResult.getSeverity() == IStatus.WARNING ) {
+      EclipsePackagingExecutor packagingExecutor 
+        = new EclipsePackagingExecutor( commands, configuration );
+      packagingExecutor.execute();
+    }
     return EXIT_OK;
   }
 

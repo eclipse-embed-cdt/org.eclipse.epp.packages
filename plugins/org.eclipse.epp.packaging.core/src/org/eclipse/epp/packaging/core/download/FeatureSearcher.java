@@ -20,7 +20,10 @@ import org.eclipse.update.search.IUpdateSearchResultCollector;
 import org.eclipse.update.search.UpdateSearchRequest;
 import org.eclipse.update.search.UpdateSearchScope;
 
-/**Handles and executes the search for a set of features over a number of update sites.*/
+/**
+ * Handles and executes the search for a set of features over a number of update
+ * sites.
+ */
 public class FeatureSearcher {
 
   private final UpdateSearchScope scope = new UpdateSearchScope();
@@ -30,20 +33,23 @@ public class FeatureSearcher {
                           final URL[] listedSites )
   {
     for( VersionedIdentifier identifier : listedFeatures ) {
-      category.addFeatureToSearch( identifier );
+      this.category.addFeatureToSearch( identifier );
     }
     for( URL siteUrl : listedSites ) {
-      scope.addSearchSite( "", siteUrl, null ); //$NON-NLS-1$
+      this.scope.addSearchSite( "", siteUrl, null ); //$NON-NLS-1$
     }
   }
 
-  /**Run the search.  
-   * @param collector the collector storing the search results.*/
+  /**
+   * Run the search.
+   * 
+   * @param collector the collector storing the search results.
+   */
   public void run( final IUpdateSearchResultCollector collector )
     throws OperationCanceledException, CoreException
   {
-    UpdateSearchRequest searchRequest = new UpdateSearchRequest( category,
-                                                                 scope );
+    UpdateSearchRequest searchRequest 
+      = new UpdateSearchRequest( this.category, this.scope );
     searchRequest.performSearch( collector, new NullProgressMonitor() );
   }
 }
