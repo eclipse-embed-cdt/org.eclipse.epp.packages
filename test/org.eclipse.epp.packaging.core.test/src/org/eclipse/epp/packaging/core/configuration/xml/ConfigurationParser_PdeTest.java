@@ -35,7 +35,6 @@ public class ConfigurationParser_PdeTest extends TestCase {
                                     + "<requiredFeatures>" //$NON-NLS-1$
                                     + "  <feature id=\"org.eclipse.rcp\" version=\"3.1.1\"/>" //$NON-NLS-1$
                                     + "</requiredFeatures>" //$NON-NLS-1$                                    
-                                    + "<packagerConfigurationFolder folder=\"/home/help\"/>" //$NON-NLS-1$
                                     + "<rootFileFolder folder=\"/home/root\"/>" //$NON-NLS-1$
                                     + "<extensionSite relativeFolder=\"site\"/>" //$NON-NLS-1$
                                     + "<targetPlatforms>" //$NON-NLS-1$
@@ -61,12 +60,6 @@ public class ConfigurationParser_PdeTest extends TestCase {
     IPackagerConfiguration config = new ConfigurationParser( null ).parseConfiguration( xml );
     Assert.assertEquals( new VersionedIdentifier( "org.eclipse.rcp", "3.1.1" ), //$NON-NLS-1$ //$NON-NLS-2$
                          config.getRequiredFeatures()[ 0 ] );
-  }
-
-  public void testParsePackagerConfigurationFolder() throws Exception {
-    IPackagerConfiguration config = new ConfigurationParser( null ).parseConfiguration( xml );
-    Assert.assertEquals( new File( "/home/help" ), //$NON-NLS-1$
-                         config.getPackagerConfigurationFolder() );
   }
 
   public void testParseRelativeExtensionSite() throws Exception {
