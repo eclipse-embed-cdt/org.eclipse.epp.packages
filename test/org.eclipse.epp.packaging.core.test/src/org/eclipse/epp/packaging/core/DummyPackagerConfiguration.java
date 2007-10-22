@@ -16,12 +16,18 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.IProgressMonitor;
+import org.eclipse.core.runtime.IStatus;
 import org.eclipse.epp.packaging.core.configuration.IPackagerConfiguration;
 import org.eclipse.epp.packaging.core.configuration.IPlatform;
 import org.eclipse.update.core.VersionedIdentifier;
 
 /** Test class */
 public class DummyPackagerConfiguration implements IPackagerConfiguration {
+
+  private static final String PACKAGER_CONFIGURATION_DIRECTORY 
+    = "packagerConfiguration"; //$NON-NLS-1$
 
   private URL siteUrl;
   private IPlatform[] platforms;
@@ -34,10 +40,6 @@ public class DummyPackagerConfiguration implements IPackagerConfiguration {
 
   public File getTargetFolder() {
     return baseDir;
-  }
-
-  public File getPackagerConfigurationFolder() {
-    throw new UnsupportedOperationException( "Not yet implemented." ); //$NON-NLS-1$
   }
 
   public void addRequiredFeature( final VersionedIdentifier identifier ) {
@@ -73,6 +75,12 @@ public class DummyPackagerConfiguration implements IPackagerConfiguration {
   public void setBaseFolder( final String baseFolder ) {
     this.baseDir = new File( baseFolder );
   }
+  
+  public File getPackagerConfigurationFolder() {
+    File result = new File( this.baseDir, PACKAGER_CONFIGURATION_DIRECTORY );
+    result.mkdir();
+    return result;
+  }
 
   public File getRootFileFolder() {
     throw new UnsupportedOperationException( "Not yet implemented." ); //$NON-NLS-1$
@@ -87,6 +95,11 @@ public class DummyPackagerConfiguration implements IPackagerConfiguration {
   }
 
   public String getInitialPerspectiveId() {
+    throw new UnsupportedOperationException( "Not yet implemented." ); //$NON-NLS-1$
+  }
+
+  public IStatus checkFeatures( IProgressMonitor monitor ) throws CoreException
+  {
     throw new UnsupportedOperationException( "Not yet implemented." ); //$NON-NLS-1$
   }
 
