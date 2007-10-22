@@ -29,9 +29,6 @@ public interface IModifiablePackagerConfiguration
   /**Adds the feature [id] with the given version to the list of required features.*/
   public void addRequiredFeature( final String id, final String version );
 
-  /**Sets the designated folder containing the PDE packager config files.*/
-  public void setPackagerConfigurationFolder( final String folder );
-
   /**Sets the extension site's name in the target folder.*/
   public void setExtensionSiteRelative( final String relativeFolder );
 
@@ -50,4 +47,4 @@ public interface IModifiablePackagerConfiguration
 
   /**Sets the product name to use for the final result.*/
   public void setProductName( final String name );
-}
+}   

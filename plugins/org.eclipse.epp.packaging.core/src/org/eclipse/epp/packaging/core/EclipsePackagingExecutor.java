@@ -11,6 +11,7 @@
 package org.eclipse.epp.packaging.core;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.epp.packaging.core.assembly.EclipsePackager;
@@ -42,8 +43,9 @@ public class EclipsePackagingExecutor {
 
   /** 
    * Run the packaging process 
+   * @throws URISyntaxException 
    */
-  public void execute() throws CoreException, IOException {
+  public void execute() throws CoreException, IOException, URISyntaxException {
     MessageLogger logger = MessageLogger.getInstance();
     logger.log( "Application.FeatureCount", //$NON-NLS-1$
                 Integer.valueOf( this.configuration.getRequiredFeatures().length ) );
@@ -65,7 +67,7 @@ public class EclipsePackagingExecutor {
     }
   }
 
-  private void build() throws IOException, CoreException {
+  private void build() throws IOException, CoreException, URISyntaxException {
     if( this.commands.mustDo( Task.BUILD ) ) {
       MessageLogger.getInstance().logBeginProcess( "Application.Building" ); //$NON-NLS-1$
       IPackager packager = new EclipsePackager( this.configuration );

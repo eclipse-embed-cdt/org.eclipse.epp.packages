@@ -19,7 +19,6 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.eclipse.epp.packaging.core.configuration.IPackagerConfiguration;
 import org.eclipse.epp.packaging.core.configuration.PackagerConfiguration;
 import org.eclipse.epp.packaging.core.configuration.Platform;
-import org.eclipse.update.core.VersionedIdentifier;
 import org.xml.sax.SAXException;
 
 /**
@@ -47,7 +46,6 @@ public class ConfigurationParser {
   private static final String TAG_ECLIPSE_INI_FILE = "eclipseIniFileContent"; //$NON-NLS-1$
   private static final String TAG_EXTENSION_SITE = "extensionSite"; //$NON-NLS-1$
   private static final String TAG_FEATURE = "feature"; //$NON-NLS-1$
-  private static final String TAG_PACKAGER_CONFIGURATION_FOLDER = "packagerConfigurationFolder"; //$NON-NLS-1$
   private static final String TAG_PLATFORM = "platform"; //$NON-NLS-1$
   private static final String TAG_PRODUCT = "product"; //$NON-NLS-1$
   private static final String TAG_RCP = "rcp"; //$NON-NLS-1$
@@ -105,7 +103,6 @@ public class ConfigurationParser {
     parseProduct( configuration, root );
     parseUpdateSites( configuration, root );
     parseRequiredFeatures( configuration, root );
-    parsePackagerConfigurationFolder( configuration, root );
     parseRootFolder( configuration, root );
     parseExtensionSite( configuration, root );
     parsePlatforms( configuration, root );
@@ -121,15 +118,7 @@ public class ConfigurationParser {
     configuration.setExtensionSiteRelative( element.getAttributeValue( ATTRIB_RELATIVE_FOLDER ) );
   }
 
-  /** Loads and sets the packager configuration folder to use. */
-  private void parsePackagerConfigurationFolder( final PackagerConfiguration configuration,
-                                                 final IXmlElement parent )
-  {
-    IXmlElement element = parent.getElement( TAG_PACKAGER_CONFIGURATION_FOLDER );
-    String folder = resolveRelativeFileName( getFolderName( element ) );
-    configuration.setPackagerConfigurationFolder( folder );
-  }
-
+  
   /** Loads and sets the target platforms. */
   private void parsePlatforms( final PackagerConfiguration configuration,
                                final IXmlElement parent )

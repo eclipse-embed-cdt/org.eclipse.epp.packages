@@ -14,10 +14,17 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.URISyntaxException;
+import java.net.URL;
 
+import org.eclipse.core.runtime.FileLocator;
+import org.eclipse.core.runtime.IPath;
+import org.eclipse.core.runtime.Path;
+import org.eclipse.epp.packaging.core.Activator;
 import org.eclipse.epp.packaging.core.configuration.IPackagerConfiguration;
 import org.eclipse.epp.packaging.core.configuration.IPlatform;
 import org.eclipse.epp.packaging.core.io.FileUtils;
+import org.osgi.framework.Bundle;
 
 /**
  * Completes the custom targets stub to form a customtargets.xml ant file.
@@ -25,6 +32,7 @@ import org.eclipse.epp.packaging.core.io.FileUtils;
  */
 public class CustomTargetsWriter {
 
+  private static final String SKELETONS_DIRECTORY = "skeletons/"; //$NON-NLS-1$
   private final PrintWriter writer;
   private final IPackagerConfiguration configuration;
 
@@ -33,13 +41,20 @@ public class CustomTargetsWriter {
    * @param configuration
    * @param baseFile
    * @throws IOException
+   * @throws URISyntaxException 
    */
   public CustomTargetsWriter( final IPackagerConfiguration configuration,
-                              final String baseFile ) throws IOException
+                              final String baseFile )
+    throws IOException, URISyntaxException
   {
     this.configuration = configuration;
-    File stubFile = new File( configuration.getPackagerConfigurationFolder(),
-                              baseFile );
+
+    IPath path = new Path( SKELETONS_DIRECTORY + baseFile );
+    Bundle bundle = Activator.getDefault().getBundle();
+    URL url = FileLocator.find( bundle, path, null );
+    URL fileURL = FileLocator.toFileURL( url );
+    File stubFile = new File( fileURL.toURI() );
+    
     File customTargetsFile = new File( configuration.getPackagerConfigurationFolder(),
                                        "customTargets.xml" ); //$NON-NLS-1$
     FileUtils.copy( stubFile, customTargetsFile );

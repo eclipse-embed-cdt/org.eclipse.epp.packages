@@ -22,6 +22,7 @@ import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.MultiStatus;
 import org.eclipse.core.runtime.PluginVersionIdentifier;
 import org.eclipse.core.runtime.Status;
+import org.eclipse.epp.packaging.core.Activator;
 import org.eclipse.epp.packaging.core.logging.MessageLogger;
 import org.eclipse.update.core.ISite;
 import org.eclipse.update.core.ISiteFeatureReference;
@@ -34,9 +35,11 @@ import org.eclipse.update.core.VersionedIdentifier;
  */
 public class PackagerConfiguration implements IModifiablePackagerConfiguration {
 
-  private static final String PLUGIN_ID = "org.eclipse.epp.packaging.core"; //$NON-NLS-1$
+  private static final String PACKAGER_CONFIGURATION_DIRECTORY 
+    = "packagerConfiguration"; //$NON-NLS-1$
 
-  private static final String ECLIPSE_PLATTFORM = "eclipse-platform-"; //$NON-NLS-1$
+  private static final String ECLIPSE_PLATTFORM 
+    = "eclipse-platform-"; //$NON-NLS-1$
   
   private final List<URL> updateSites = new ArrayList<URL>();
   private final List<Platform> targetPlatforms = new ArrayList<Platform>();
@@ -71,16 +74,16 @@ public class PackagerConfiguration implements IModifiablePackagerConfiguration {
     this.requiredFeatures.add( new VersionedIdentifier( id, version ) );
   }
 
-  public File getPackagerConfigurationFolder() {
-    return this.packagerConfigurationFolder;
-  }
-
-  public void setPackagerConfigurationFolder( final String folder ) {
-    this.packagerConfigurationFolder = new File( folder );
-  }
-
   public File getTargetFolder() {
     return this.baseFolder;
+  }
+
+  public File getPackagerConfigurationFolder() {
+    File result = new File( this.baseFolder, PACKAGER_CONFIGURATION_DIRECTORY );
+    if( ! result.isDirectory() ) {
+      result.mkdir();
+    }
+    return result;
   }
 
   public void setExtensionSiteRelative( final String relativeFolder ) {
@@ -156,7 +159,7 @@ public class PackagerConfiguration implements IModifiablePackagerConfiguration {
   public IStatus checkFeatures( final IProgressMonitor monitor )
     throws CoreException
   {
-    MultiStatus result = new MultiStatus( PLUGIN_ID, IStatus.OK, null, null );
+    MultiStatus result = new MultiStatus( Activator.PLUGIN_ID, IStatus.OK, null, null );
     FeatureVersionRepository availableFeatures = new FeatureVersionRepository();
     List<VersionedIdentifier> newRequiredFeatures = new ArrayList<VersionedIdentifier>();
     createFeatureRepository( monitor, availableFeatures );
@@ -172,7 +175,7 @@ public class PackagerConfiguration implements IModifiablePackagerConfiguration {
                          + identifier
                          + " with version " //$NON-NLS-1$
                          + newVersion;
-        result.add( new Status( IStatus.INFO, PLUGIN_ID, message ) );
+        result.add( new Status( IStatus.INFO, Activator.PLUGIN_ID, message ) );
         VersionedIdentifier newVersionId = new VersionedIdentifier( identifier,
                                                                     newVersion );
         newRequiredFeatures.add( newVersionId );

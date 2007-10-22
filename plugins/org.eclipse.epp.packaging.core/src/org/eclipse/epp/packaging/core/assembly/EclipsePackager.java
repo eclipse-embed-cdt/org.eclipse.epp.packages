@@ -12,29 +12,43 @@ package org.eclipse.epp.packaging.core.assembly;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
+import java.net.URL;
+
 import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.FileLocator;
+import org.eclipse.core.runtime.IPath;
+import org.eclipse.core.runtime.Path;
+import org.eclipse.epp.packaging.core.Activator;
 import org.eclipse.epp.packaging.core.configuration.IPackagerConfiguration;
 import org.eclipse.epp.packaging.core.configuration.IPlatform;
 import org.eclipse.epp.packaging.core.io.FileUtils;
 import org.eclipse.epp.packaging.core.io.Zip;
 import org.eclipse.epp.packaging.core.logging.MessageLogger;
 import org.eclipse.update.core.VersionedIdentifier;
+import org.osgi.framework.Bundle;
 
 /**
  * An IPackager using the main configuration as its argument.
  */
 public class EclipsePackager implements IPackager {
 
-  private static final String CONFIGURED_FEATURES_ZIP = "ConfiguredFeatures.zip"; //$NON-NLS-1$
+  private static final String PACKAGER_SKELETON_DIR 
+    = "skeletons/"; //$NON-NLS-1$
+  private static final String PACKAGER_PROPERTIES_FILE 
+    = "packager.properties"; //$NON-NLS-1$
+  private static final String CONFIGURED_FEATURES_ZIP 
+    = "ConfiguredFeatures.zip"; //$NON-NLS-1$
   private final PackagerRunner runner;
 
   /**
    * TODO mknauer missing doc
    * @param configuration
    * @throws IOException
+   * @throws URISyntaxException 
    */
   public EclipsePackager( final IPackagerConfiguration configuration )
-    throws IOException
+    throws IOException, URISyntaxException
   {
     this.runner = new PackagerRunner();
     setFolders( configuration );
@@ -43,9 +57,13 @@ public class EclipsePackager implements IPackager {
     prepareWorkingArea( configuration );
   }
 
-  /** Creates the map file in the workspace and clears the existing work area. */
+  /**
+   * Creates the map file in the workspace and clears the existing work area.
+   * 
+   * @throws URISyntaxException
+   */
   private void prepareWorkingArea( final IPackagerConfiguration configuration )
-    throws IOException
+    throws IOException, URISyntaxException
   {
     FileUtils.deleteFile( new File( configuration.getTargetFolder(),
                                     "workingPlace" ) ); //$NON-NLS-1$
@@ -70,6 +88,15 @@ public class EclipsePackager implements IPackager {
     mapWriter.close();
     propertiesWriter.close();
     customTargetsWriter.close();
+
+    IPath path = new Path( PACKAGER_SKELETON_DIR + PACKAGER_PROPERTIES_FILE );
+    Bundle bundle = Activator.getDefault().getBundle();
+    URL url = FileLocator.find( bundle, path, null );
+    URL fileURL = FileLocator.toFileURL( url );
+    File packagerPropertiesFile = new File( fileURL.toURI() );
+    File destinationPPFile = new File( configuration.getPackagerConfigurationFolder(),
+                                       PACKAGER_PROPERTIES_FILE ); //$NON-NLS-1$
+    FileUtils.copy( packagerPropertiesFile, destinationPPFile );
   }
 
   private void writeDataForCustomFile( final String filename,
