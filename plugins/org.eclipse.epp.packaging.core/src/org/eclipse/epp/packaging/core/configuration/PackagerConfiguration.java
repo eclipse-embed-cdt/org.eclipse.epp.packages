@@ -20,14 +20,13 @@ import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.MultiStatus;
-import org.eclipse.core.runtime.PluginVersionIdentifier;
 import org.eclipse.core.runtime.Status;
 import org.eclipse.epp.packaging.core.Activator;
-import org.eclipse.epp.packaging.core.logging.MessageLogger;
 import org.eclipse.update.core.ISite;
 import org.eclipse.update.core.ISiteFeatureReference;
 import org.eclipse.update.core.SiteManager;
 import org.eclipse.update.core.VersionedIdentifier;
+import org.osgi.framework.Version;
 
 /**
  * A configurable IPackagerConfiguration. All data is handed in as String, then
@@ -44,7 +43,6 @@ public class PackagerConfiguration implements IModifiablePackagerConfiguration {
   private final List<URL> updateSites = new ArrayList<URL>();
   private final List<Platform> targetPlatforms = new ArrayList<Platform>();
   private List<VersionedIdentifier> requiredFeatures = new ArrayList<VersionedIdentifier>();
-  private File packagerConfigurationFolder;
   private File baseFolder;
   private File extensionSite;
   private String rcpVersion;
@@ -67,7 +65,7 @@ public class PackagerConfiguration implements IModifiablePackagerConfiguration {
   }
 
   public VersionedIdentifier[] getRequiredFeatures() {
-    return this.requiredFeatures.toArray( new VersionedIdentifier[ requiredFeatures.size() ] );
+    return this.requiredFeatures.toArray( new VersionedIdentifier[ this.requiredFeatures.size() ] );
   }
 
   public void addRequiredFeature( final String id, final String version ) {
@@ -153,8 +151,6 @@ public class PackagerConfiguration implements IModifiablePackagerConfiguration {
    * Creates a list of available feature versions from all given update sites.
    * Required features with no version number (0.0.0) are replaced with the
    * highest available version number.
-   * 
-   * TODO mknauer enable logging, progress monitor, check availability of feature
    */
   public IStatus checkFeatures( final IProgressMonitor monitor )
     throws CoreException
@@ -164,24 +160,40 @@ public class PackagerConfiguration implements IModifiablePackagerConfiguration {
     List<VersionedIdentifier> newRequiredFeatures = new ArrayList<VersionedIdentifier>();
     createFeatureRepository( monitor, availableFeatures );
     for( VersionedIdentifier featureIdentifier : this.requiredFeatures ) {
-      PluginVersionIdentifier version = featureIdentifier.getVersion();
-      String identifier = featureIdentifier.getIdentifier();
-      if( new PluginVersionIdentifier( 0, 0, 0 ).equals( version )
-          && availableFeatures.containsIdentifier( identifier ) )
-      {
-        String newVersion 
-          = availableFeatures.getHighestVersion( identifier ).toString();
-        String message = "Replacing feature version of " //$NON-NLS-1$
-                         + identifier
-                         + " with version " //$NON-NLS-1$
-                         + newVersion;
-        result.add( new Status( IStatus.INFO, Activator.PLUGIN_ID, message ) );
-        VersionedIdentifier newVersionId = new VersionedIdentifier( identifier,
-                                                                    newVersion );
-        newRequiredFeatures.add( newVersionId );
+      
+      VersionedIdentifier newIdentifier = featureIdentifier;
+      String featureId = featureIdentifier.getIdentifier();
+      Version featureVersion = new Version( featureIdentifier.getVersion().toString() );
+      
+      if( ! availableFeatures.containsIdentifier( featureId ) ) {
+        String message = "Feature " //$NON-NLS-1$
+                         + featureId
+                         + " not available on given update sites."; //$NON-NLS-1$
+        result.add( new Status( IStatus.WARNING, Activator.PLUGIN_ID, message ) );
       } else {
-        newRequiredFeatures.add( featureIdentifier );
+        Version highestVersion = availableFeatures.getHighestVersion( featureId );
+        String newVersion = highestVersion.toString();
+
+        if( Version.emptyVersion.equals( featureVersion ) )
+        {
+          String message = "Replacing feature version of " //$NON-NLS-1$
+                           + featureId
+                           + " with version " //$NON-NLS-1$
+                           + newVersion;
+          result.add( new Status( IStatus.INFO, Activator.PLUGIN_ID, message ) );
+          newIdentifier = new VersionedIdentifier( featureId, newVersion );
+        } else {
+          if( highestVersion.compareTo( featureVersion ) > 0 ) {
+            String message = "Higher version of feature " //$NON-NLS-1$
+              + featureId
+              + " available: " //$NON-NLS-1$
+              + newVersion;
+            result.add( new Status( IStatus.INFO, Activator.PLUGIN_ID, message ) );
+          }
+        }
       }
+      
+      newRequiredFeatures.add( newIdentifier );
     }
     this.requiredFeatures = newRequiredFeatures;
     return result;

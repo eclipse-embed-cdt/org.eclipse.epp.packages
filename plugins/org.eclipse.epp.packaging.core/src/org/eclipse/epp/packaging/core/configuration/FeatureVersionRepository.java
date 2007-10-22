@@ -15,7 +15,6 @@ import java.util.Map;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-import org.eclipse.core.runtime.PluginVersionIdentifier;
 import org.eclipse.update.core.VersionedIdentifier;
 import org.osgi.framework.Version;
 
@@ -29,7 +28,8 @@ public class FeatureVersionRepository {
 
   public void addVersionIdentifier( final VersionedIdentifier versionedIdentifier ) {
     String identifier = versionedIdentifier.getIdentifier();
-    PluginVersionIdentifier version = versionedIdentifier.getVersion();
+    String version = versionedIdentifier.getVersion().toString();
+    
     if( !this.features.containsKey( identifier ) ) {
       this.features.put( identifier, new VersionList() );
     }
@@ -45,8 +45,8 @@ public class FeatureVersionRepository {
    * @return the highest available version number or <code>null</code> if the
    *         identifier is not found.
    */
-  public PluginVersionIdentifier getHighestVersion( final String identifier ) {
-    PluginVersionIdentifier result = null;
+  public Version getHighestVersion( final String identifier ) {
+    Version result = null;
     VersionList versionList = this.features.get( identifier );
     if( versionList != null ) {
       result = versionList.getHighestVersion();
@@ -80,13 +80,10 @@ public class FeatureVersionRepository {
      * Adds a new version to the list of available versions if the version is
      * not yet included in the list.
      * 
-     * @param versionIdentifier the version that is to be added to the list
+     * @param version the version that is to be added to the list
      */
-    void addVersion( final PluginVersionIdentifier versionIdentifier ) {
-      Version version = new Version( versionIdentifier.getMajorComponent(),
-                                     versionIdentifier.getMinorComponent(),
-                                     versionIdentifier.getServiceComponent(),
-                                     versionIdentifier.getQualifierComponent() );
+    void addVersion( final String versionString ) {
+      Version version = new Version( versionString );
       if( !this.versions.contains( version ) ) {
         this.versions.add( version );
       }
@@ -95,8 +92,8 @@ public class FeatureVersionRepository {
     /**
      * @return the highest version number in the list
      */
-    PluginVersionIdentifier getHighestVersion() {
-      return new PluginVersionIdentifier( this.versions.last().toString() );
+    Version getHighestVersion() {
+      return this.versions.last();
     }
   }
 }
