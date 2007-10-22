@@ -4,7 +4,6 @@
     name of the root file archives -->
   <rcp version="3.3.1" />
 
-  <!-- configIni, the config.ini file to use. -->
   <!-- name, the name of the product, used in naming the created files. -->
   <product
     name="eclipse-jee-europa-fall"
@@ -14,31 +13,18 @@
   <!-- url, pointing to an update site. -->
   <updateSites>
     <!-- local mirrors -->
-    <updateSite url="file:///home/mknauer/mirror/3.3milestones/" />
-    <updateSite url="file:///home/mknauer/mirror/testUpdates-M/" />
-    <updateSite url="file:///home/mknauer/mirror/releases/europa/staging/" />
-    <!-- 
+    <updateSite url="file:///home/mknauer/mirror/eclipse/updates/3.3/" />
+    <updateSite url="file:///home/mknauer/mirror/eclipse/updates/3.3milestones/" />
+    <updateSite url="file:///home/mknauer/mirror/eclipse/testUpdates-M/" />
     <updateSite url="file:///home/mknauer/mirror/releases/europa/" />
-    -->
+    <updateSite url="file:///home/mknauer/mirror/releases/europa/staging/" />
 
     <!-- eclipse.org update sites -->
     <!-- 
+      <updateSite url="http://download.eclipse.org/eclipse/updates/3.3/" />
+      <updateSite url="http://download.eclipse.org/eclipse/updates/3.3milestones/" />
       <updateSite url="http://download.eclipse.org/releases/europa/" />
       <updateSite url="http://download.eclipse.org/releases/europa/staging/" />
-      <updateSite url="http://download.eclipse.org/technology/mylar/update-site/e3.3/" />
-      <updateSite url="http://download.eclipse.org/tools/cdt/releases/europa/" />
-      <updateSite url="http://download.eclipse.org/webtools/updates/" />
-      <updateSite url="http://download.eclipse.org/webtools/milestones/" />
-      <updateSite url="http://download.eclipse.org/modeling/emf/updates/" />
-      <updateSite url="http://download.eclipse.org/modeling/gmf/update-site/europa/" />
-      <updateSite url="http://download.eclipse.org/modeling/gmf/update-site/milestone/" />
-      <updateSite url="http://download.eclipse.org/eclipse/updates/3.3milestones/" />
-    -->
-
-    <!-- old and/or test update sites -->
-    <!-- 
-      <updateSite url="http://download.eclipse.org/callisto/releases/" />
-      <updateSite url="http://download.eclipse.org/eclipse/testUpdates/" />
     -->
   </updateSites>
 
@@ -251,11 +237,6 @@
     </feature>
 
   </requiredFeatures>
-
-  <!-- folder, pointing to the packager configuration. This folder must contain 'packager.properties', 
-    'packaging.properties' and 'customTargetsStub.xml', all of which can be left unmodified. -->
-  <packagerConfigurationFolder
-    folder="/home/mknauer/projects/packaging33/org.eclipse.epp/releng/org.eclipse.epp.config/config" />
 
   <!-- folder, pointing to a folder containing the zipped root files for each of 
     the target platforms. -->
