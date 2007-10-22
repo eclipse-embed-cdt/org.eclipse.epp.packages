@@ -16,23 +16,31 @@ package org.eclipse.epp.packaging.core.configuration;
  * https://bugs.eclipse.org/bugs/show_bug.cgi?id=142792 are fixed.
  */
 public enum ArchiveFormat {
+
+  /**
+   * Archive format with the file extension <tt>.tar.gz</tt>.
+   */
   tar {
 
     @Override
-    public String getExtension()
-    {
+    public String getExtension() {
       return ".tar.gz"; //$NON-NLS-1$
     }
   },
   
+  /**
+   * Archive format with the file extension <tt>.zip</tt>.
+   */
   antZip {
 
     @Override
-    public String getExtension()
-    {
+    public String getExtension() {
       return ".zip"; //$NON-NLS-1$
     }
   };
 
+  /**
+   * @return the file extension that matches the archive format.
+   */
   public abstract String getExtension();
 }

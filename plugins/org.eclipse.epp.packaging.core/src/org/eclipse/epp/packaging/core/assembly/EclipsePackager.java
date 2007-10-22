@@ -95,7 +95,7 @@ public class EclipsePackager implements IPackager {
     URL fileURL = FileLocator.toFileURL( url );
     File packagerPropertiesFile = new File( fileURL.toURI() );
     File destinationPPFile = new File( configuration.getPackagerConfigurationFolder(),
-                                       PACKAGER_PROPERTIES_FILE ); //$NON-NLS-1$
+                                       PACKAGER_PROPERTIES_FILE );
     FileUtils.copy( packagerPropertiesFile, destinationPPFile );
   }
 
