@@ -47,7 +47,7 @@ public class CommandLineParser_Test extends TestCase {
 
   public void testBadArgumentType() throws Exception {
     try {
-      ArgumentParser.parse( Boolean.TRUE );
+      ArgumentParser.parse( null );
       fail();
     } catch( IllegalArgumentException e ) {
       // expected exception
