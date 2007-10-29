@@ -2,22 +2,19 @@
 <configuration>
 	<!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-	<rcp version="3.3.1" />
+	<rcp version="3.3.1.1" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
 	<product
-	  name="eclipse-cpp-europa-fall" 
+	  name="eclipse-java-europa-fall-1"
 	  eclipseProductId="org.eclipse.platform.ide"
-	  initialPerspectiveId="org.eclipse.cdt.ui.CPerspective" />
+    initialPerspectiveId="org.eclipse.jdt.ui.JavaPerspective" />
 
 	<!-- url, pointing to an update site. -->
   <updateSites>
     <!-- local mirrors -->
     <updateSite url="file:///home/mknauer/mirror/eclipse/updates/3.3/" />
-    <updateSite url="file:///home/mknauer/mirror/eclipse/updates/3.3milestones/" />
-    <updateSite url="file:///home/mknauer/mirror/eclipse/testUpdates-M/" />
     <updateSite url="file:///home/mknauer/mirror/releases/europa/" />
-    <updateSite url="file:///home/mknauer/mirror/releases/europa/staging/" />
 
     <!-- eclipse.org update sites -->
     <!-- 
@@ -33,29 +30,92 @@
 	<requiredFeatures>
     <feature
       id="org.eclipse.platform"
-      version="latest">
-    </feature>
-<!-- 
-      version="3.3.1.R33x_r20070911-_19UEkpF-B7Uh2hKy75y">
-      version="4.0.1.200709241202">
-      version="1.0.1.R33x_r20070802-7C79_9_KKG-mDM9e3H5D">
- -->
-
-    <feature
-      id="org.eclipse.cdt"
-      version="latest">
+      version="3.3.2.R33x_v20071022-_19UEksF-G8Yc6bUv3Dz">
     </feature>
 
     <feature
       id="org.eclipse.cvs"
-      version="latest">
+      version="1.0.1.R33x_r20070802-7C79_9_KKG-mDM9e3H5D">
+    </feature>
+    <feature
+      id="org.eclipse.jdt"
+      version="3.3.1.r331_v20070629-7o7jE72EDlXAbqAcnbmyg1rf8RIL">
+    </feature>
+
+    <feature
+      id="org.eclipse.mylyn_feature"
+      version="2.1.0.v20070927-0900">
+    </feature>
+    <feature
+      id="org.eclipse.mylyn.context_feature"
+      version="2.1.0.v20070927-0900">
+    </feature>
+    <feature
+      id="org.eclipse.mylyn.ide_feature"
+      version="2.1.0.v20070927-0900">
+    </feature>
+    <feature
+      id="org.eclipse.mylyn.java_feature"
+      version="2.1.0.v20070927-0900">
+    </feature>
+    <feature
+      id="org.eclipse.mylyn.bugzilla_feature"
+      version="2.1.0.v20070927-0900">
+    </feature>
+
+
+    <feature
+      id="org.eclipse.emf.common"
+      version="2.3.0.v200709252135">
+    </feature>
+    <feature
+      id="org.eclipse.emf.common.ui"
+      version="2.3.1.v200709252135">
+    </feature>
+    <feature
+      id="org.eclipse.emf.ecore"
+      version="2.3.1.v200709252135">
+    </feature>
+    <feature
+      id="org.eclipse.emf.edit"
+      version="2.3.1.v200709252135">
+    </feature>
+    <feature
+      id="org.eclipse.emf.ecore.edit"
+      version="2.3.0.v200709252135">
+    </feature>
+    <feature
+      id="org.eclipse.emf.edit.ui"
+      version="2.3.1.v200709252135">
+    </feature>
+    <feature
+      id="org.eclipse.xsd"
+      version="2.3.1.v200709252135">
+    </feature>
+    <feature
+      id="org.eclipse.xsd.edit"
+      version="2.3.0.v200709252135">
+    </feature>
+    
+    <feature
+      id="org.eclipse.gef"
+      version="3.3.1.v20070814">
+    </feature>
+    <feature
+      id="org.eclipse.wst.common_ui.feature"
+      version="2.0.1.v200709110622-7C5EH2E9RvTVnijrspVz0bgOmfz-">
+    </feature>
+
+    <feature
+      id="org.eclipse.wst.xml_ui.feature"
+      version="2.0.1.v200709110650-7A1ECGCnbckz0bnr5wCp8KNAjipR">
     </feature>
 
 	</requiredFeatures>
 
 	<!-- folder, pointing to a folder containing the zipped root files for each of 
 		the target platforms. -->
-	<rootFileFolder folder="../../../../../../packaging/roots" />
+  <rootFileFolder folder="../../../../../../mirror/eclipse/downloads/drops/R-3.3.1.1-200710231652" />
 
 	<!-- relativeFolder, names the subfolder of the base folder where the update site will be created. 
 		This is configurable so that working areas, especially root files, are reusable. -->
@@ -76,10 +136,8 @@ org.eclipse.platform
 		</platform>
 		<platform os="linux" ws="gtk" arch="x86">
 			<archiveFormat format="tar" />
-			<eclipseIniFileContent path="/eclipse/">-showsplash
+      <eclipseIniFileContent path="/eclipse/">-showsplash
 org.eclipse.platform
---launcher.XXMaxPermSize
-256M
 -vmargs
 -Dosgi.requiredJavaVersion=1.5
 -Xms40m
@@ -89,8 +147,6 @@ org.eclipse.platform
       <archiveFormat format="tar" />
       <eclipseIniFileContent path="/eclipse/">-showsplash
 org.eclipse.platform
---launcher.XXMaxPermSize
-256M
 -vmargs
 -Dosgi.requiredJavaVersion=1.5
 -Xms40m
@@ -100,14 +156,14 @@ org.eclipse.platform
 			<archiveFormat format="tar" />
       <eclipseIniFileContent path="/eclipse/Eclipse.app/Contents/MacOS/">-showsplash
 org.eclipse.platform
---launcher.XXMaxPermSize
-256m
 -vmargs
 -Xdock:icon=../Resources/Eclipse.icns
 -XstartOnFirstThread
--Dosgi.requiredJavaVersion=1.5
 -Xms40m
--Xmx256m</eclipseIniFileContent>			
+-Xmx256m
+-XX:MaxPermSize=256m
+-Dosgi.requiredJavaVersion=1.5
+-Dorg.eclipse.swt.internal.carbon.smallFonts</eclipseIniFileContent>
 		</platform>
 	</targetPlatforms>
 </configuration>

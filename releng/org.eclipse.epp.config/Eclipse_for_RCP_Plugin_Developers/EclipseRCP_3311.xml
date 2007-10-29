@@ -2,11 +2,11 @@
 <configuration>
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="3.3.1" />
+  <rcp version="3.3.1.1" />
 
   <!-- name, the name of the product, used in naming the created files. -->
   <product
-    name="eclipse-rcp-europa-fall" 
+    name="eclipse-rcp-europa-fall-1" 
     eclipseProductId="org.eclipse.sdk.ide"
     initialPerspectiveId="org.eclipse.jdt.ui.JavaPerspective" />
 
@@ -14,10 +14,7 @@
   <updateSites>
     <!-- local mirrors -->
     <updateSite url="file:///home/mknauer/mirror/eclipse/updates/3.3/" />
-    <updateSite url="file:///home/mknauer/mirror/eclipse/updates/3.3milestones/" />
-    <updateSite url="file:///home/mknauer/mirror/eclipse/testUpdates-M/" />
     <updateSite url="file:///home/mknauer/mirror/releases/europa/" />
-    <updateSite url="file:///home/mknauer/mirror/releases/europa/staging/" />
 
     <!-- eclipse.org update sites -->
     <!-- 
@@ -33,12 +30,12 @@
   <requiredFeatures>
   <feature
     id="org.eclipse.platform"
-    version="3.3.1.R33x_r20070911-_19UEkpF-B7Uh2hKy75y">
+    version="3.3.2.R33x_v20071022-_19UEksF-G8Yc6bUv3Dz">
   </feature>
 
   <feature
     id="org.eclipse.sdk"
-    version="3.3.1.R33x_r20070802-7M7J78_mu1mnlRa7A4Ns52XeZ6D0">
+    version="3.3.2.R33x_r20071022-7M7J7C_Mu2gop0b_GAwplOBhyuKO">
   </feature>
 
   <feature
@@ -118,7 +115,7 @@
 
   <!-- folder, pointing to a folder containing the zipped root files for each of 
     the target platforms. -->
-  <rootFileFolder folder="/home/mknauer/packaging/roots" />
+  <rootFileFolder folder="../../../../../../mirror/eclipse/downloads/drops/R-3.3.1.1-200710231652" />
 
   <!-- relativeFolder, names the subfolder of the base folder where the update site will be created. 
     This is configurable so that working areas, especially root files, are reusable. -->
@@ -149,8 +146,6 @@ org.eclipse.platform
       <archiveFormat format="tar" />
       <eclipseIniFileContent path="/eclipse/">-showsplash
 org.eclipse.platform
---launcher.XXMaxPermSize
-256M
 -vmargs
 -Dosgi.requiredJavaVersion=1.5
 -Xms40m
@@ -163,8 +158,6 @@ org.eclipse.platform
       <archiveFormat format="tar" />
       <eclipseIniFileContent path="/eclipse/">-showsplash
 org.eclipse.platform
---launcher.XXMaxPermSize
-256M
 -vmargs
 -Dosgi.requiredJavaVersion=1.5
 -Xms40m
@@ -177,14 +170,14 @@ org.eclipse.platform
       <archiveFormat format="tar" />
       <eclipseIniFileContent path="/eclipse/Eclipse.app/Contents/MacOS/">-showsplash
 org.eclipse.platform
---launcher.XXMaxPermSize
-256m
 -vmargs
 -Xdock:icon=../Resources/Eclipse.icns
 -XstartOnFirstThread
--Dosgi.requiredJavaVersion=1.5
 -Xms40m
--Xmx512m</eclipseIniFileContent>
+-Xmx512m
+-XX:MaxPermSize=256m
+-Dosgi.requiredJavaVersion=1.5
+-Dorg.eclipse.swt.internal.carbon.smallFonts</eclipseIniFileContent>
     </platform>
   </targetPlatforms>
 </configuration>
