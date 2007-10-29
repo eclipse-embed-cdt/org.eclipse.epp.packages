@@ -190,6 +190,13 @@ public class PackagerConfiguration implements IModifiablePackagerConfiguration {
               + newVersion;
             result.add( new Status( IStatus.INFO, Activator.PLUGIN_ID, message ) );
           }
+          if( highestVersion.compareTo( featureVersion ) < 0 ) {
+            String message = "Only lower version of feature " //$NON-NLS-1$
+              + featureId
+              + " available: " //$NON-NLS-1$
+              + newVersion;
+            result.add( new Status( IStatus.WARNING, Activator.PLUGIN_ID, message ) );
+          }
         }
       }
       
