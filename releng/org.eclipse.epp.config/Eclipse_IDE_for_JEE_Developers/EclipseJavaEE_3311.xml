@@ -6,7 +6,7 @@
 
   <!-- name, the name of the product, used in naming the created files. -->
   <product
-    name="eclipse-jee-europa-fall-1"
+    name="eclipse-jee-europa-fall-2"
     eclipseProductId="org.eclipse.platform.ide"
     initialPerspectiveId="org.eclipse.jst.j2ee.J2EEPerspective" />
 
@@ -177,7 +177,7 @@
     </feature>
     <feature
       id="org.eclipse.datatools.doc.user"
-      version="1.5.1.200709261">
+      version="1.5.1.200710161">
     </feature>
 
     <!-- optional DB/SQL features -->

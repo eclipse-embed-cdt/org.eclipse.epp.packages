@@ -6,7 +6,7 @@
 
 	<!-- name, the name of the product, used in naming the created files. -->
 	<product
-	  name="eclipse-java-europa-fall-1"
+	  name="eclipse-java-europa-fall-2"
 	  eclipseProductId="org.eclipse.platform.ide"
     initialPerspectiveId="org.eclipse.jdt.ui.JavaPerspective" />
 
