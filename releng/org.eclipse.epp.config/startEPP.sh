@@ -14,7 +14,7 @@ rm -r workspace*
 
 # check-out configuration
 cd $WORKING_DIR
-cvs -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology co $PACKAGE
+cvs -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology -P checkout $PACKAGE
 
 # build
 cd $ECLIPSE_DIR
