@@ -18,7 +18,9 @@ cvs -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology co $PACKAGE
 
 # build
 cd $ECLIPSE_DIR
-./eclipse -data $WORKING_DIR/workspaceJava  \
+WORKSPACE=$WORKING_DIR/workspaceJava
+mkdir $WORKSPACE
+./eclipse -data $WORKSPACE \
     -consoleLog \
     -vm $VM $WORKING_DIR/EclipseCDT_340.xml \
-    2>&1 1>$WORKING_DIR/workspaceJava/log.txt
+    2>&1 1>$WORKSPACE/log.txt
