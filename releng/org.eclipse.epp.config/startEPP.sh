@@ -28,10 +28,9 @@ mkdir $WORKSPACE
 ./eclipse -data $WORKSPACE \
     -consoleLog \
     -vm $VM $WORKING_DIR/EclipseCDT_340.xml \
-    2>&1 1>$WORKSPACE/cdt.log
+    2>&1 1>$TARGET_DIR/cdt.log
 cd $WORKSPACE
 for II in eclipse*; do mv $II $TARGET_DIR/$START_TIME\_$II; done
-mv $WORKSPACE/cdt.log $TARGET_DIR/
 
 cd $ECLIPSE_DIR
 WORKSPACE=$WORKING_DIR/workspaceJava
@@ -39,10 +38,9 @@ mkdir $WORKSPACE
 ./eclipse -data $WORKSPACE \
     -consoleLog \
     -vm $VM $WORKING_DIR/EclipseJava_340.xml \
-    2>&1 1>$WORKSPACE/java.log
+    2>&1 1>$TARGET_DIR/java.log
 cd $WORKSPACE
 for II in eclipse*; do mv $II $TARGET_DIR/$START_TIME\_$II; done
-mv $WORKSPACE/java.log $TARGET_DIR/
 
 cd $ECLIPSE_DIR
 WORKSPACE=$WORKING_DIR/workspaceRCP
@@ -50,9 +48,8 @@ mkdir $WORKSPACE
 ./eclipse -data $WORKSPACE \
     -consoleLog \
     -vm $VM $WORKING_DIR/EclipseRCP_340.xml \
-    2>&1 1>$WORKSPACE/rcp.log
+    2>&1 1>$TARGET_DIR/rcp.log
 cd $WORKSPACE
 for II in eclipse*; do mv $II $TARGET_DIR/$START_TIME\_$II; done
-mv $WORKSPACE/rcp.log $TARGET_DIR/
 
 
