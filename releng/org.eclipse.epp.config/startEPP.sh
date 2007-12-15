@@ -10,20 +10,25 @@ PACKAGE=org.eclipse.epp/releng/org.eclipse.epp.config
 ###############################################################################
 
 # remove old workspaces
+echo "...removing old workspaces"
 cd  $WORKING_DIR
 rm -r workspace*
 
 # create target directory
 TARGET_DIR=$WORKING_DIR/$START_TIME
+echo "...creating target directory $TARGET_DIR"
 mkdir $TARGET_DIR
 
 # check-out configuration
+echo "...checking out configuration to $WORKING_DIR"
 cd $WORKING_DIR
 cvs -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P $PACKAGE
 
 # build
+echo "...starting build"
 
 ######### CDT
+echo "...creating CDT package"
 cd $ECLIPSE_DIR
 WORKSPACE=$WORKING_DIR/workspaceCDT
 mkdir $WORKSPACE
@@ -35,6 +40,7 @@ cd $WORKSPACE
 for II in eclipse*; do mv $II $TARGET_DIR/$START_TIME\_$II; done
 
 ######### Java
+echo "...creating Java package"
 cd $ECLIPSE_DIR
 WORKSPACE=$WORKING_DIR/workspaceJava
 mkdir $WORKSPACE
@@ -46,6 +52,7 @@ cd $WORKSPACE
 for II in eclipse*; do mv $II $TARGET_DIR/$START_TIME\_$II; done
 
 ######### JEE
+echo "...creating JEE package"
 cd $ECLIPSE_DIR
 WORKSPACE=$WORKING_DIR/workspaceJEE
 mkdir $WORKSPACE
@@ -57,6 +64,7 @@ cd $WORKSPACE
 for II in eclipse*; do mv $II $TARGET_DIR/$START_TIME\_$II; done
 
 ######### RCP
+echo "...creating RCP package"
 cd $ECLIPSE_DIR
 WORKSPACE=$WORKING_DIR/workspaceRCP
 mkdir $WORKSPACE
@@ -66,4 +74,14 @@ mkdir $WORKSPACE
     2>&1 1>$TARGET_DIR/rcp.log
 cd $WORKSPACE
 for II in eclipse*; do mv $II $TARGET_DIR/$START_TIME\_$II; done
+
+
+# create checksum files
+echo "...creating checksum files"
+cd $TARGET_DIR
+for II in *eclipse*; do md5sum $II >>packages.md5; done
+for II in *eclipse*; do sha1sum $II >>packages.sha1; done
+
+
+
 
