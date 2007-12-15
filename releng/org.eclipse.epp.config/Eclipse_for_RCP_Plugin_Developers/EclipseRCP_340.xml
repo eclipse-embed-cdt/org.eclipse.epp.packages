@@ -2,11 +2,11 @@
 <configuration>
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="3.4M3" />
+  <rcp version="3.4M4" />
 
   <!-- name, the name of the product, used in naming the created files. -->
   <product
-    name="eclipse-rcp-ganymede-M3" 
+    name="eclipse-rcp-ganymede-M4" 
     eclipseProductId="org.eclipse.sdk.ide"
     initialPerspectiveId="org.eclipse.jdt.ui.JavaPerspective" />
 
@@ -117,7 +117,7 @@
 
   <!-- folder, pointing to a folder containing the zipped root files for each of 
     the target platforms. -->
-  <rootFileFolder folder="/home/data/httpd/download.eclipse.org/eclipse/downloads/drops/S-3.4M3-200711012000" />
+  <rootFileFolder folder="/home/data/httpd/download.eclipse.org/eclipse/downloads/drops/S-3.4M4-200712131700" />
 
   <!-- relativeFolder, names the subfolder of the base folder where the update site will be created. 
     This is configurable so that working areas, especially root files, are reusable. -->
