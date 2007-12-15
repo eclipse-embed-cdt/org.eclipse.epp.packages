@@ -66,6 +66,7 @@
       version="latest">
     </feature>
 
+<!-- removing XML editing features
     <feature
       id="org.eclipse.emf.common"
       version="latest">
@@ -112,6 +113,7 @@
       id="org.eclipse.wst.xml_ui.feature"
       version="latest">
     </feature>
+ -->
 
   </requiredFeatures>
 

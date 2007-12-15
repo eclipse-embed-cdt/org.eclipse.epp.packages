@@ -13,6 +13,8 @@
 	<!-- url, pointing to an update site. -->
   <updateSites>
     <!-- local mirrors -->
+    <updateSite url="file:///home/data/httpd/download.eclipse.org/eclipse/updates/3.4/" />
+    <updateSite url="file:///home/data/httpd/download.eclipse.org/eclipse/updates/3.4milestones/" />
     <updateSite url="file:///home/data/httpd/download.eclipse.org/releases/ganymede/staging/" />
 
     <!-- eclipse.org update sites -->
@@ -63,7 +65,7 @@
       version="latest">
     </feature>
 
-
+<!-- removing XML editing features
     <feature
       id="org.eclipse.emf.common"
       version="latest">
@@ -111,14 +113,6 @@
       id="org.eclipse.wst.xml_ui.feature"
       version="latest">
     </feature>
-
-<!-- 
-org.eclipse.wst.common\_ui.feature\_2.1.0.v200709192200-7C6EIaE9RvTVninpsnWz0WgQZgle XXXX
-org.eclipse.wst.common\_core.feature\_2.1.0.v200709192200-7C78EKGE\_EkMNfPYfkdoez0
-
-org.eclipse.wst.xml\_ui.feature\_2.1.0.v200709192200-7A3EIPCnbckz0itrBsMmAKQjdclf XXXX
-org.eclipse.wst.xml\_core.feature\_2.1.0.v200709192200-787BEFBCYQCCz-GRLKHePS
-org.eclipse.wst.xml\_userdoc.feature\_2.1.0.v200709152030-4-EGk\_kE77Y7QI7EEEQ
  -->
 
 	</requiredFeatures>
