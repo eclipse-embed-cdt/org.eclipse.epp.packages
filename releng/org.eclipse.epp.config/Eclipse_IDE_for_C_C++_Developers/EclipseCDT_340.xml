@@ -13,6 +13,8 @@
 	<!-- url, pointing to an update site. -->
   <updateSites>
     <!-- local mirrors -->
+    <updateSite url="file:///home/data/httpd/download.eclipse.org/eclipse/updates/3.4/" />
+    <updateSite url="file:///home/data/httpd/download.eclipse.org/eclipse/updates/3.4milestones/" />
     <updateSite url="file:///home/data/httpd/download.eclipse.org/releases/ganymede/staging/" />
 
     <!-- eclipse.org update sites -->
