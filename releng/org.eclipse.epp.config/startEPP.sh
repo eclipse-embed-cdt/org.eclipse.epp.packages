@@ -115,8 +115,10 @@ fi
 # create checksum files
 echo "...creating checksum files"
 cd $TARGET_DIR
-for II in *eclipse*; do md5sum $II >>$II.md5; done
-for II in *eclipse*; do sha1sum $II >>$II.sha1; done
+for II in *eclipse*; do 
+	md5sum $II >>$II.md5
+	sha1sum $II >>$II.sha1;
+done
 
 # create index file
 
