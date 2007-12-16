@@ -1,5 +1,5 @@
 #!/bin/sh
-set -x
+#set -x
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
@@ -67,11 +67,13 @@ mkdir $WORKSPACE
     -consoleLog \
     -vm $VM $WORKING_DIR/$PACKAGE/Eclipse_IDE_for_Java_Developers/EclipseJava_340.xml \
     2>&1 1>$TARGET_DIR/java.log
-if [ $? eq 0 ]; then
+if [ $? = "0" ]; then
     echo "Java build successful"
     JAVABUILD=true
     cd $WORKSPACE
     for II in eclipse*; do mv $II $TARGET_DIR/$START_TIME\_$II; done
+else
+    echo "Java build failed."
 fi
 
 ######### JEE
@@ -83,11 +85,13 @@ mkdir $WORKSPACE
     -consoleLog \
     -vm $VM $WORKING_DIR/$PACKAGE/Eclipse_IDE_for_JEE_Developers/EclipseJavaEE_340.xml \
     2>&1 1>$TARGET_DIR/jee.log
-if [ $? eq 0 ]; then
+if [ $? = "0" ]; then
     echo "JEE build successful"
     JEEBUILD=true
     cd $WORKSPACE
     for II in eclipse*; do mv $II $TARGET_DIR/$START_TIME\_$II; done
+else
+    echo "JEE build failed."
 fi
 
 ######### RCP
@@ -99,18 +103,20 @@ mkdir $WORKSPACE
     -consoleLog \
     -vm $VM $WORKING_DIR/$PACKAGE/Eclipse_for_RCP_Plugin_Developers/EclipseRCP_340.xml \
     2>&1 1>$TARGET_DIR/rcp.log
-if [ $? eq 0 ]; then
+if [ $? = "0" ]; then
     echo "RCP build successful"
     RCPBUILD=true
     cd $WORKSPACE
     for II in eclipse*; do mv $II $TARGET_DIR/$START_TIME\_$II; done
+else
+    echo "RCP build failed."
 fi
 
 # create checksum files
 echo "...creating checksum files"
 cd $TARGET_DIR
-for II in *eclipse*; do md5sum $II >>packages.md5; done
-for II in *eclipse*; do sha1sum $II >>packages.sha1; done
+for II in *eclipse*; do md5sum $II >>$II.md5; done
+for II in *eclipse*; do sha1sum $II >>$II.sha1; done
 
 # create index file
 
