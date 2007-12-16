@@ -42,6 +42,10 @@
       id="org.eclipse.jdt"
       version="latest">
     </feature>
+    <feature
+      id="org.eclipse.pde"
+      version="latest">
+    </feature>
 
     <feature
       id="org.eclipse.mylyn_feature"
@@ -107,7 +111,7 @@
     </feature>
 
     <feature
-      id="org.eclipse.wst"
+      id="org.eclipse.wst.common_ui.feature"
       version="latest">
     </feature>
     <feature
@@ -129,6 +133,10 @@
       version="latest">
     </feature>
     <feature
+      id="org.eclipse.datatools.doc.user"
+      version="latest">
+    </feature>
+    <feature
       id="org.eclipse.datatools.connectivity.oda.designer.feature"
       version="latest">
     </feature>
@@ -138,10 +146,9 @@
     </feature>
 
     <feature
-      id="org.eclipse.pde"
+      id="org.eclipse.datatools.connectivity.feature"
       version="latest">
     </feature>
-
     <feature
       id="org.eclipse.datatools.sqldevtools.ddl.feature"
       version="latest">
@@ -164,20 +171,11 @@
     </feature>
 
     <feature
-      id="org.eclipse.datatools.connectivity.feature"
-      version="latest">
-    </feature>
-    <feature
       id="org.eclipse.datatools.sqldevtools.results.feature"
       version="latest">
     </feature>
-
     <feature
       id="org.eclipse.datatools.enablement.feature"
-      version="latest">
-    </feature>
-    <feature
-      id="org.eclipse.datatools.doc.user"
       version="latest">
     </feature>
 
@@ -224,6 +222,10 @@
     </feature>
     <!-- optional DB/SQL features / END -->
 
+    <feature
+      id="org.eclipse.wst"
+      version="latest">
+    </feature>
     <feature
       id="org.eclipse.jst"
       version="latest">
