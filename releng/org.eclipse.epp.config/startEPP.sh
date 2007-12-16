@@ -19,15 +19,18 @@ fi
 trap "rm -f $LOCKFILE; exit" INT TERM EXIT
 touch $LOCKFILE
 
-# remove old workspaces
-echo "...removing old workspaces"
-cd  $WORKING_DIR
-rm -r workspace*
-
 # create target directory
 TARGET_DIR=$WORKING_DIR/$START_TIME
 echo "...creating target directory $TARGET_DIR"
 mkdir $TARGET_DIR
+
+# log to file
+exec 1>$TARGET_DIR/eppbuild.log 2>&1
+
+# remove old workspaces
+echo "...removing old workspaces from $WORKING_DIR"
+cd  $WORKING_DIR
+rm -r workspace*
 
 # check-out configuration
 echo "...checking out configuration to $WORKING_DIR"
@@ -46,11 +49,13 @@ mkdir $WORKSPACE
     -consoleLog \
     -vm $VM $WORKING_DIR/$PACKAGE/Eclipse_IDE_for_C_C++_Developers/EclipseCDT_340.xml \
     2>&1 1>$TARGET_DIR/cdt.log
-if [ $? eq 0 ]; then
+if [ $? = "0" ]; then
 	echo "CDT build successful"
 	CDTBUILD=true
     cd $WORKSPACE
     for II in eclipse*; do mv $II $TARGET_DIR/$START_TIME\_$II; done
+else
+    echo "CDT build failed."
 fi
 
 ######### Java
