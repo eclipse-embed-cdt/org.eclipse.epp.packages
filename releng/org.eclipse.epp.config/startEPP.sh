@@ -104,9 +104,14 @@ echo "...moving files to download server"
 mv $WORKING_DIR/$START_TIME $DOWNLOAD_DIR
 
 # link results somehow in a single file
-echo "...recreate status.stub"
+echo "...recreate $DOWNLOAD_DIR/$STATUSFILENAME"
 rm $DOWNLOAD_DIR/$STATUSFILENAME
-find $DOWNLOAD_DIR -name $STATUSFILENAME -exec cat {} >>$DOWNLOAD_DIR/$STATUSFILENAME \;
+cd $DOWNLOAD_DIR
+for FILE in */$STATUSFILENAME
+do
+  echo ...adding $FILE
+  cat $FILE >>$DOWNLOAD_DIR/$STATUSFILENAME
+done
 
 # remove lockfile
 rm $LOCKFILE
