@@ -103,22 +103,22 @@ do
 cat >>$TARGET_DIR/index.html <<Endofmessage
 <tr>
  <td><a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${NAME}.log">${NAME}</a></td>
- <td style=\"background-color: rgb(204, 255, 204);\">
+ <td style="background-color: rgb(204, 255, 204);">
    <a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-win32.win32.x86.zip">package</a> 
    [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-win32.win32.x86.zip.md5">md5</a>] 
    [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-win32.win32.x86.zip.sha1">sha1</a>]
  </td>
- <td style=\"background-color: rgb(204, 255, 204);\">
+ <td style="background-color: rgb(204, 255, 204);">
    <a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-linux.gtk.x86.tar.gz">package</a> 
    [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-linux.gtk.x86.tar.gz.md5">md5</a>] 
    [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-linux.gtk.x86.tar.gz.sha1">sha1</a>]
  </td>
- <td style=\"background-color: rgb(204, 255, 204);\">
+ <td style="background-color: rgb(204, 255, 204);">
    <a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-linux.gtk.x86_64.tar.gz">package</a> 
    [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-linux.gtk.x86_64.tar.gz.md5">md5</a>] 
    [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-linux.gtk.x86_64.tar.gz.sha1">sha1</a>]
  </td>
- <td style=\"background-color: rgb(204, 255, 204);\">
+ <td style="background-color: rgb(204, 255, 204);">
    <a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-macosx.carbon.ppc.tar.gz">package</a> 
    [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-macosx.carbon.ppc.tar.gz.md5">md5</a>] 
    [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-macosx.carbon.ppc.tar.gz.sha1">sha1</a>]
@@ -129,10 +129,10 @@ Endofmessage
 cat >>$TARGET_DIR/index.html <<Endofmessage
 <tr>
  <td><a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${NAME}.log">${NAME}</a></td>
- <td style=\"background-color: rgb(255, 204, 204);\">Fail</td>
- <td style=\"background-color: rgb(255, 204, 204);\">Fail</td>
- <td style=\"background-color: rgb(255, 204, 204);\">Fail</td>
- <td style=\"background-color: rgb(255, 204, 204);\">Fail</td>
+ <td style="background-color: rgb(255, 204, 204);">Fail</td>
+ <td style="background-color: rgb(255, 204, 204);">Fail</td>
+ <td style="background-color: rgb(255, 204, 204);">Fail</td>
+ <td style="background-color: rgb(255, 204, 204);">Fail</td>
 </tr>
 Endofmessage
    fi
