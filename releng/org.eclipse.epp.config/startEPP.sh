@@ -31,11 +31,6 @@ mkdir $TARGET_DIR
 # log to file
 exec 1>$TARGET_DIR/eppbuild.log 2>&1
 
-# remove old workspaces
-echo "...removing old workspaces from $WORKING_DIR"
-cd  $WORKING_DIR
-rm -r workspace*
-
 # check-out configuration
 echo "...checking out configuration to $WORKING_DIR"
 cd $WORKING_DIR
@@ -47,14 +42,18 @@ echo "...starting build"
 # create packages
 for PACKAGENAME in $PACKAGES;
 do
-    echo "...creating package $PACKAGENAME"
+	PACKAGECONFIGURATION="$WORKING_DIR/$CVSPATH/eclipse\_$PACKAGENAME\_340.xml"
+    echo "...creating package $PACKAGENAME with config $PACKAGECONFIGURATION"
     cd $ECLIPSE_DIR
     WORKSPACE=$WORKING_DIR/workspace_$PACKAGENAME
+    rm -r $WORKSPACE
     mkdir $WORKSPACE
-    ./eclipse -data $WORKSPACE \
-        -consoleLog \
-        -vm $VM $WORKING_DIR/$CVSPATH/eclipse_$PACKAGENAME_340.xml \
-        2>&1 1>$TARGET_DIR/$PACKAGENAME.log
+    $ECLIPSE_DIR/eclipse \
+            -data $WORKSPACE \
+            -consoleLog \
+            -vm $VM \
+            $PACKAGECONFIGURATION \
+            2>&1 1>$TARGET_DIR/$PACKAGENAME.log
     if [ $? = "0" ]; then
         echo "...successful finished $PACKAGENAME build"
 	    BUILDSUCCESS="$BUILDSUCCESS $PACKAGENAME"
@@ -68,7 +67,7 @@ done
 # create checksum files
 echo "...creating checksum files"
 cd $TARGET_DIR
-for II in $START_TIME\_eclipse*; do 
+for II in *eclipse*; do 
 	md5sum $II >>$II.md5
 	sha1sum $II >>$II.sha1;
 done
@@ -79,8 +78,26 @@ done
 
 
 # create status file
-
-
+echo "<td><a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/index.html">$START_TIME</a></td>" >$TARGET_DIR/$STATUSFILENAME
+for PACKAGENAME in $PACKAGES;
+do
+	if [[ "$BUILDSUCCESS" == "*$PACKAGENAME*" ]]
+	then
+		SUCCESS="true"
+	else
+	    SUCCESS="false"
+    fi
+    echo -n "<td style=\"background-color: rgb("  >>$TARGET_DIR/$STATUSFILENAME
+    if [[ "$SUCCESS" == "true" ]]; 
+      then echo -n "204, 255, 204"                >>$TARGET_DIR/$STATUSFILENAME
+      else echo -n "255, 204, 204"                >>$TARGET_DIR/$STATUSFILENAME
+    fi
+    echo -n ");\"><a href=\"http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/$PACKAGENAME.log\">" >>$TARGET_DIR/$STATUSFILENAME
+    if [[ "$SUCCESS" == "true" ]]; 
+      then echo -n "Success</a></td>"                >>$TARGET_DIR/$STATUSFILENAME
+      else echo -n "Fail</a></td>"                >>$TARGET_DIR/$STATUSFILENAME
+    fi
+done
 
 # move everything to download area
 echo "...moving files to download server"
