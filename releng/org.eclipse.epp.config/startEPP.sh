@@ -10,7 +10,7 @@ ECLIPSE_DIR=$WORKING_DIR/eclipse
 DOWNLOAD_DIR=/home/data/httpd/download.eclipse.org/technology/epp/downloads/testing
 VM=$HOME/ibm-java2-ppc-50/jre/bin/java
 CVSPATH=org.eclipse.epp/releng/org.eclipse.epp.config
-PACKAGES="cdt java jee rcp"
+PACKAGES="cpp java jee rcp"
 BUILDSUCCESS=""
 
 ###############################################################################
