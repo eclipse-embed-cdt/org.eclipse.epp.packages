@@ -73,9 +73,77 @@ for II in *eclipse*; do
 done
 
 # create index file
+cat >>$TARGET_DIR/index.html <<Endofmessage
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="http://www.eclipse.org/eclipse.org-common/themes/Phoenix/css/visual.css" media="screen" />
+<title>EPP Build Status $START_TIME</title>
+</head>
+<body>
+<h1>EPP Build Status $START_TIME</h1>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr style="background-image: url(http://dash.eclipse.org/dash/commits/web-app/header_bg.gif);">
+<td><a href="http://www.eclipse.org/"><img src="http://dash.eclipse.org/dash/commits/web-app/header_logo.gif" width="163" height="68" border="0" alt="Eclipse Logo" class="logo" /></a></td>
+<td align="right" style="color: white; font-family: verdana,arial,helvetica; font-size: 1.25em; font-style: italic;"><b>EPP Build Status&nbsp;</b></font> </td>
+</tr>
+</table>
+<table border="1">
+<tr>
+  <th><a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/eppbuild.log">Package</a></th>
+  <th>Windows</th>
+  <th>Linux 32 GTK</th>
+  <th>Linux 64 GTK</th>
+  <th>Mac OSX</th>
+</tr>
+Endofmessage
 
-
-
+for NAME in $PACKAGES;
+do
+   if [[ "$BUILDSUCCESS" == "* $PACKAGENAME *" ]]
+   then
+cat >>$TARGET_DIR/index.html <<Endofmessage
+<tr>
+ <td><a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/$NAME.log">$NAME</a></td>
+ <td>
+   <a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/$START_TIME_eclipse-$NAME-ganymede-M4-win32.win32.x86.zip">package</a> [
+   <a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/$START_TIME_eclipse-$NAME-ganymede-M4-win32.win32.x86.zip.md5">md5</a>] [
+   <a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/$START_TIME_eclipse-$NAME-ganymede-M4-win32.win32.x86.zip.sha1">sha1</a>]
+ </td>
+ <td>
+   <a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/$START_TIME_eclipse-$NAME-ganymede-M4-linux.gtk.x86.tar.gz">package</a> [
+   <a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/$START_TIME_eclipse-$NAME-ganymede-M4-linux.gtk.x86.tar.gz.md5">md5</a>] [
+   <a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/$START_TIME_eclipse-$NAME-ganymede-M4-linux.gtk.x86.tar.gz.sha1">sha1</a>]
+ </td>
+ <td>
+   <a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/$START_TIME_eclipse-$NAME-ganymede-M4-linux.gtk.x86_64.tar.gz">package</a> [
+   <a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/$START_TIME_eclipse-$NAME-ganymede-M4-linux.gtk.x86_64.tar.gz.md5">md5</a>] [
+   <a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/$START_TIME_eclipse-$NAME-ganymede-M4-linux.gtk.x86_64.tar.gz.sha1">sha1</a>]
+ </td>
+ <td>
+   <a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/$START_TIME_eclipse-$NAME-ganymede-M4-macosx.carbon.ppc.tar.gz">package</a> [
+   <a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/$START_TIME_eclipse-$NAME-ganymede-M4-macosx.carbon.ppc.tar.gz.md5">md5</a>] [
+   <a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/$START_TIME_eclipse-$NAME-ganymede-M4-macosx.carbon.ppc.tar.gz.sha1">sha1</a>]
+ </td>
+</tr>
+Endofmessage
+   else
+cat >>$TARGET_DIR/index.html <<Endofmessage
+<tr>
+ <td><a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/$NAME.log">$NAME</a></td>
+ <td></td>
+ <td></td>
+ <td></td>
+ <td></td>
+</tr>
+Endofmessage
+   fi
+done
+cat >>$TARGET_DIR/index.html <<Endofmessage
+</table>
+</body>
+</html>
+Endofmessage
 
 # create status file
 echo "<td><a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/index.html">$START_TIME</a></td>" >$TARGET_DIR/$STATUSFILENAME
