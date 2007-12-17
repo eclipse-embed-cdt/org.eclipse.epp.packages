@@ -97,10 +97,9 @@ cat >>$TARGET_DIR/index.html <<Endofmessage
   <th>Mac OSX</th>
 </tr>
 Endofmessage
-
 for NAME in $PACKAGES;
 do
-   if [[ "$BUILDSUCCESS" == "*$PACKAGENAME*" ]]
+   if [[ "$BUILDSUCCESS" == *$PACKAGENAME* ]]
    then
 cat >>$TARGET_DIR/index.html <<Endofmessage
 <tr>
@@ -150,7 +149,7 @@ echo "<tr>"                                       >>$TARGET_DIR/$STATUSFILENAME
 echo "<td><a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/index.html">$START_TIME</a></td>" >>$TARGET_DIR/$STATUSFILENAME
 for PACKAGENAME in $PACKAGES;
 do
-	if [[ "$BUILDSUCCESS" == "*$PACKAGENAME*" ]]
+	if [[ "$BUILDSUCCESS" == *$PACKAGENAME* ]]
 	then
 		SUCCESS="true"
 	else
@@ -177,7 +176,7 @@ mv $WORKING_DIR/$START_TIME $DOWNLOAD_DIR
 echo "...recreate $DOWNLOAD_DIR/$STATUSFILENAME"
 rm $DOWNLOAD_DIR/$STATUSFILENAME
 cd $DOWNLOAD_DIR
-for FILE in */$STATUSFILENAME
+for FILE in `ls -r */$STATUSFILENAME`
 do
   echo ...adding $FILE
   cat $FILE >>$DOWNLOAD_DIR/$STATUSFILENAME
