@@ -131,10 +131,10 @@ Endofmessage
 cat >>$TARGET_DIR/index.html <<Endofmessage
 <tr>
  <td><a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/$NAME.log">$NAME</a></td>
- <td></td>
- <td></td>
- <td></td>
- <td></td>
+ <td style=\"background-color: rgb(255, 204, 204);\">Fail</td>
+ <td style=\"background-color: rgb(255, 204, 204);\">Fail</td>
+ <td style=\"background-color: rgb(255, 204, 204);\">Fail</td>
+ <td style=\"background-color: rgb(255, 204, 204);\">Fail</td>
 </tr>
 Endofmessage
    fi
