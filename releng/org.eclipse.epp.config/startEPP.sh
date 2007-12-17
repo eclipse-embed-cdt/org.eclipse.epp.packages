@@ -42,7 +42,7 @@ echo "...starting build"
 # create packages
 for PACKAGENAME in $PACKAGES;
 do
-	PACKAGECONFIGURATION="$WORKING_DIR/$CVSPATH/eclipse_$PACKAGENAME_340.xml"
+	PACKAGECONFIGURATION="$WORKING_DIR/$CVSPATH/eclipse_"$PACKAGENAME"_340.xml"
     echo "...creating package $PACKAGENAME with config $PACKAGECONFIGURATION"
     cd $ECLIPSE_DIR
     WORKSPACE=$WORKING_DIR/workspace_$PACKAGENAME
@@ -80,6 +80,7 @@ done
 # create status file
 echo "<td><a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/index.html">$START_TIME</a></td>" >$TARGET_DIR/$STATUSFILENAME
 for PACKAGENAME in $PACKAGES;
+echo "<tr>"                                       >>$TARGET_DIR/$STATUSFILENAME
 do
 	if [[ "$BUILDSUCCESS" == "* $PACKAGENAME *" ]]
 	then
@@ -98,6 +99,7 @@ do
       else echo "Fail</a></td>"                   >>$TARGET_DIR/$STATUSFILENAME
     fi
 done
+echo "</tr>"                                      >>$TARGET_DIR/$STATUSFILENAME
 
 # move everything to download area
 echo "...moving files to download server"
