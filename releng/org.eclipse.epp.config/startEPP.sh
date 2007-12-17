@@ -100,7 +100,7 @@ Endofmessage
 
 for NAME in $PACKAGES;
 do
-   if [[ "$BUILDSUCCESS" == "* $PACKAGENAME *" ]]
+   if [[ "$BUILDSUCCESS" == "*$PACKAGENAME*" ]]
    then
 cat >>$TARGET_DIR/index.html <<Endofmessage
 <tr>
@@ -147,10 +147,10 @@ Endofmessage
 
 # create status file
 echo "<td><a href="http://download.eclipse.org/technology/epp/downloads/testing/$START_TIME/index.html">$START_TIME</a></td>" >$TARGET_DIR/$STATUSFILENAME
-for PACKAGENAME in $PACKAGES;
 echo "<tr>"                                       >>$TARGET_DIR/$STATUSFILENAME
+for PACKAGENAME in $PACKAGES;
 do
-	if [[ "$BUILDSUCCESS" == "* $PACKAGENAME *" ]]
+	if [[ "$BUILDSUCCESS" == "*$PACKAGENAME*" ]]
 	then
 		SUCCESS="true"
 	else
