@@ -4,10 +4,14 @@
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
 LOCKFILE=/tmp/epp.build.lock
+STATUSFILENAME=status.stub
 WORKING_DIR=$HOME/epp.build
 ECLIPSE_DIR=$WORKING_DIR/eclipse
+DOWNLOAD_DIR=/home/data/httpd/download.eclipse.org/technology/epp/downloads/testing
 VM=$HOME/ibm-java2-ppc-50/jre/bin/java
-PACKAGE=org.eclipse.epp/releng/org.eclipse.epp.config
+CVSPATH=org.eclipse.epp/releng/org.eclipse.epp.config
+PACKAGES="cdt java jee rcp"
+BUILDSUCCESS=""
 
 ###############################################################################
 
@@ -35,87 +39,36 @@ rm -r workspace*
 # check-out configuration
 echo "...checking out configuration to $WORKING_DIR"
 cd $WORKING_DIR
-cvs -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P $PACKAGE
+cvs -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P $CVSPATH
 
 # build
 echo "...starting build"
 
-######### CDT
-echo "...creating CDT package"
-cd $ECLIPSE_DIR
-WORKSPACE=$WORKING_DIR/workspaceCDT
-mkdir $WORKSPACE
-./eclipse -data $WORKSPACE \
-    -consoleLog \
-    -vm $VM $WORKING_DIR/$PACKAGE/Eclipse_IDE_for_C_C++_Developers/EclipseCDT_340.xml \
-    2>&1 1>$TARGET_DIR/cdt.log
-if [ $? = "0" ]; then
-	echo "CDT build successful"
-	CDTBUILD=true
-    cd $WORKSPACE
-    for II in eclipse*; do mv $II $TARGET_DIR/$START_TIME\_$II; done
-else
-    echo "CDT build failed."
-fi
-
-######### Java
-echo "...creating Java package"
-cd $ECLIPSE_DIR
-WORKSPACE=$WORKING_DIR/workspaceJava
-mkdir $WORKSPACE
-./eclipse -data $WORKSPACE \
-    -consoleLog \
-    -vm $VM $WORKING_DIR/$PACKAGE/Eclipse_IDE_for_Java_Developers/EclipseJava_340.xml \
-    2>&1 1>$TARGET_DIR/java.log
-if [ $? = "0" ]; then
-    echo "Java build successful"
-    JAVABUILD=true
-    cd $WORKSPACE
-    for II in eclipse*; do mv $II $TARGET_DIR/$START_TIME\_$II; done
-else
-    echo "Java build failed."
-fi
-
-######### JEE
-echo "...creating JEE package"
-cd $ECLIPSE_DIR
-WORKSPACE=$WORKING_DIR/workspaceJEE
-mkdir $WORKSPACE
-./eclipse -data $WORKSPACE \
-    -consoleLog \
-    -vm $VM $WORKING_DIR/$PACKAGE/Eclipse_IDE_for_JEE_Developers/EclipseJavaEE_340.xml \
-    2>&1 1>$TARGET_DIR/jee.log
-if [ $? = "0" ]; then
-    echo "JEE build successful"
-    JEEBUILD=true
-    cd $WORKSPACE
-    for II in eclipse*; do mv $II $TARGET_DIR/$START_TIME\_$II; done
-else
-    echo "JEE build failed."
-fi
-
-######### RCP
-echo "...creating RCP package"
-cd $ECLIPSE_DIR
-WORKSPACE=$WORKING_DIR/workspaceRCP
-mkdir $WORKSPACE
-./eclipse -data $WORKSPACE \
-    -consoleLog \
-    -vm $VM $WORKING_DIR/$PACKAGE/Eclipse_for_RCP_Plugin_Developers/EclipseRCP_340.xml \
-    2>&1 1>$TARGET_DIR/rcp.log
-if [ $? = "0" ]; then
-    echo "RCP build successful"
-    RCPBUILD=true
-    cd $WORKSPACE
-    for II in eclipse*; do mv $II $TARGET_DIR/$START_TIME\_$II; done
-else
-    echo "RCP build failed."
-fi
+# create packages
+for PACKAGENAME in $PACKAGES;
+do
+    echo "...creating package $PACKAGENAME"
+    cd $ECLIPSE_DIR
+    WORKSPACE=$WORKING_DIR/workspace_$PACKAGENAME
+    mkdir $WORKSPACE
+    ./eclipse -data $WORKSPACE \
+        -consoleLog \
+        -vm $VM $WORKING_DIR/$CVSPATH/eclipse_$PACKAGENAME_340.xml \
+        2>&1 1>$TARGET_DIR/$PACKAGENAME.log
+    if [ $? = "0" ]; then
+        echo "...successful finished $PACKAGENAME build"
+	    BUILDSUCCESS="$BUILDSUCCESS $PACKAGENAME"
+        cd $WORKSPACE
+        for II in eclipse*; do mv $II $TARGET_DIR/$START_TIME\_$II; done
+    else
+        echo "...failed while building $PACKAGENAME"
+    fi
+done
 
 # create checksum files
 echo "...creating checksum files"
 cd $TARGET_DIR
-for II in *eclipse*; do 
+for II in $START_TIME\_eclipse*; do 
 	md5sum $II >>$II.md5
 	sha1sum $II >>$II.sha1;
 done
@@ -123,8 +76,20 @@ done
 # create index file
 
 
-# move everything to download area and link it somehow
 
+
+# create status file
+
+
+
+# move everything to download area
+echo "...moving files to download server"
+mv $WORKING_DIR/$START_TIME $DOWNLOAD_DIR
+
+# link results somehow in a single file
+echo "...recreate status.stub"
+rm $DOWNLOAD_DIR/$STATUSFILENAME
+find $DOWNLOAD_DIR -name $STATUSFILENAME -exec cat {} >>$DOWNLOAD_DIR/$STATUSFILENAME \;
 
 # remove lockfile
 rm $LOCKFILE
