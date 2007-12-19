@@ -11,6 +11,8 @@ DOWNLOAD_DIR="/home/data/httpd/download.eclipse.org/technology/epp/downloads/tes
 VM="${HOME}/ibm-java2-ppc-50/jre/bin/java"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 PACKAGES="cpp java jee rcp"
+PLATFORMS="win32.win32.x86.zip linux.gtk.x86.tar.gz linux.gtk.x86_64.tar.gz macosx.carbon.ppc.tar.gz"
+BASENAME="ganymede-M4"
 BUILDSUCCESS=""
 
 ###############################################################################
@@ -96,43 +98,35 @@ cat >>$TARGET_DIR/index.html <<Endofmessage
   <th>Mac OSX</th>
 </tr>
 Endofmessage
-for NAME in $PACKAGES;
+for NAME in ${PACKAGES};
 do
    if [[ "$BUILDSUCCESS" == *${NAME}* ]]
    then
 cat >>$TARGET_DIR/index.html <<Endofmessage
 <tr>
  <td><a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${NAME}.log">${NAME}</a></td>
+Endofmessage
+   for PLATFORMEXTENSION in ${PLATFORMS};
+   do
+cat >>$TARGET_DIR/index.html <<Endofmessage
  <td style="background-color: rgb(204, 255, 204);">
-   <a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-win32.win32.x86.zip">package</a> 
-   [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-win32.win32.x86.zip.md5">md5</a>] 
-   [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-win32.win32.x86.zip.sha1">sha1</a>]
+   <a href="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-${BASENAME}-${PLATFORMEXTENSION}">package</a> 
+   [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-${BASENAME}-${PLATFORMEXTENSION}.md5">md5</a>] 
+   [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-${BASENAME}-${PLATFORMEXTENSION}.sha1">sha1</a>]
  </td>
- <td style="background-color: rgb(204, 255, 204);">
-   <a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-linux.gtk.x86.tar.gz">package</a> 
-   [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-linux.gtk.x86.tar.gz.md5">md5</a>] 
-   [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-linux.gtk.x86.tar.gz.sha1">sha1</a>]
- </td>
- <td style="background-color: rgb(204, 255, 204);">
-   <a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-linux.gtk.x86_64.tar.gz">package</a> 
-   [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-linux.gtk.x86_64.tar.gz.md5">md5</a>] 
-   [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-linux.gtk.x86_64.tar.gz.sha1">sha1</a>]
- </td>
- <td style="background-color: rgb(204, 255, 204);">
-   <a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-macosx.carbon.ppc.tar.gz">package</a> 
-   [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-macosx.carbon.ppc.tar.gz.md5">md5</a>] 
-   [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-ganymede-M4-macosx.carbon.ppc.tar.gz.sha1">sha1</a>]
- </td>
+Endofmessage
+   done
+cat >>$TARGET_DIR/index.html <<Endofmessage
 </tr>
 Endofmessage
    else
 cat >>$TARGET_DIR/index.html <<Endofmessage
 <tr>
  <td><a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${NAME}.log">${NAME}</a></td>
- <td style="background-color: rgb(255, 204, 204);">Fail</td>
- <td style="background-color: rgb(255, 204, 204);">Fail</td>
- <td style="background-color: rgb(255, 204, 204);">Fail</td>
- <td style="background-color: rgb(255, 204, 204);">Fail</td>
+ <td align="center" style="background-color: rgb(255, 204, 204);"><b>Fail</b></td>
+ <td align="center" style="background-color: rgb(255, 204, 204);"><b>Fail</b></td>
+ <td align="center" style="background-color: rgb(255, 204, 204);"><b>Fail</b></td>
+ <td align="center" style="background-color: rgb(255, 204, 204);"><b>Fail</b></td>
 </tr>
 Endofmessage
    fi
@@ -170,6 +164,11 @@ echo "</tr>"                                      >>$TARGET_DIR/$STATUSFILENAME
 # move everything to download server
 echo "...moving files to download directory ${DOWNLOAD_DIR}"
 mv ${WORKING_DIR}/${START_TIME} ${DOWNLOAD_DIR}
+
+# remove 'some' (which?) files from the download server
+##echo "...remove old builds from download directory ${DOWNLOAD_DIR}"
+##cd ${DOWNLOAD_DIR}
+## TODO
 
 # link results somehow in a single file
 echo "...recreate ${DOWNLOAD_DIR}/${STATUSFILENAME}"
