@@ -3,12 +3,12 @@
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
-LOCKFILE="/tmp/epp.build.lock"
-STATUSFILENAME="status.stub"
-WORKING_DIR="${HOME}/epp.build"
+WORKING_DIR="/shared/technology/epp"
 ECLIPSE_DIR="${WORKING_DIR}/eclipse"
 DOWNLOAD_DIR="/home/data/httpd/download.eclipse.org/technology/epp/downloads/testing"
-VM="${HOME}/ibm-java2-ppc-50/jre/bin/java"
+VM="/opt/ibm/java2-ppc-50/bin/java"
+STATUSFILENAME="status.stub"
+LOCKFILE="/tmp/epp.build.lock"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 PACKAGES="cpp java jee rcp"
 PLATFORMS="win32.win32.x86.zip linux.gtk.x86.tar.gz linux.gtk.x86_64.tar.gz macosx.carbon.ppc.tar.gz"
