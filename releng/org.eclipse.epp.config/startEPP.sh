@@ -166,9 +166,12 @@ echo "...moving files to download directory ${DOWNLOAD_DIR}"
 mv ${WORKING_DIR}/${START_TIME} ${DOWNLOAD_DIR}
 
 # remove 'some' (which?) files from the download server
-##echo "...remove old builds from download directory ${DOWNLOAD_DIR}"
-##cd ${DOWNLOAD_DIR}
-## TODO
+echo "...remove oldest build from download directory ${DOWNLOAD_DIR}"
+cd ${DOWNLOAD_DIR}
+TOBEDELETED_TEMP=`find . -name ${STATUSFILENAME} | grep -v "\./${STATUSFILENAME}" | sort | head -n 1`
+TOBEDELETED_DIR=`echo ${TOBEDELETED_TEMP} | cut -d "/" -f 2`
+echo "...removing ${TOBEDELETED_DIR} from ${DOWNLOAD_DIR}"
+rm -r ${TOBEDELETED_DIR}
 
 # link results somehow in a single file
 echo "...recreate ${DOWNLOAD_DIR}/${STATUSFILENAME}"
