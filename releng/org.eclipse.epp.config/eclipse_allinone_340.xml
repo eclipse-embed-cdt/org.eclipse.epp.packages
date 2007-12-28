@@ -54,7 +54,7 @@
       version="latest">
     </feature>
     
-    <!-- GEF Part I -- from Eclipse SDK M4 section -->
+    <!-- GEF Part I - from Eclipse SDK M4 section -->
     <feature
       id="org.eclipse.gef"
       version="latest">
