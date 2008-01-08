@@ -11,6 +11,7 @@ STATUSFILENAME="status.stub"
 LOCKFILE="/tmp/epp.build.lock"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 PACKAGES="cpp java jee rcp"
+UMON_PACKAGES="cppum javaum jeeum rcpum"
 PLATFORMS="win32.win32.x86.zip linux.gtk.x86.tar.gz linux.gtk.x86_64.tar.gz macosx.carbon.ppc.tar.gz"
 BASENAME="ganymede-M4"
 BUILDSUCCESS=""
@@ -41,7 +42,7 @@ cvs -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSP
 echo "...starting build"
 
 # create packages
-for PACKAGENAME in $PACKAGES;
+for PACKAGENAME in ${PACKAGES} %{UMON_PACKAGES};
 do
     PACKAGECONFIGURATION="${WORKING_DIR}/${CVSPATH}/eclipse_"${PACKAGENAME}"_340.xml"
     echo "...creating package ${PACKAGENAME} with config ${PACKAGECONFIGURATION}"
@@ -98,7 +99,7 @@ cat >>$TARGET_DIR/index.html <<Endofmessage
   <th>Mac OSX</th>
 </tr>
 Endofmessage
-for NAME in ${PACKAGES};
+for NAME in ${PACKAGES} ${UMON_PACKAGES};
 do
    if [[ "$BUILDSUCCESS" == *${NAME}* ]]
    then
