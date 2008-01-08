@@ -16,7 +16,7 @@
     <updateSite url="file:///home/data/httpd/download.eclipse.org/eclipse/updates/3.4/" />
     <updateSite url="file:///home/data/httpd/download.eclipse.org/eclipse/updates/3.4milestones/" />
     <updateSite url="file:///home/data/httpd/download.eclipse.org/releases/ganymede/staging/" />
-    <updateSite url="file:///home/data/users/mknauer/update-site/" />
+    <updateSite url="file:///home/data/httpd/download.eclipse.org/technology/epp/updates/0.5milestones/" />
 
     <!-- eclipse.org update sites -->
     <!-- 
