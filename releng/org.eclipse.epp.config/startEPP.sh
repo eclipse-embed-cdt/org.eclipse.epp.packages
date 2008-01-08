@@ -43,7 +43,7 @@ cvs -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSP
 echo "...starting build"
 
 # create packages
-for PACKAGENAME in ${PACKAGES} %{UMONPACKAGES};
+for PACKAGENAME in ${PACKAGES} ${UMONPACKAGES};
 do
     PACKAGECONFIGURATION="${WORKING_DIR}/${CVSPATH}/eclipse_"${PACKAGENAME}"_340.xml"
     echo "...creating package ${PACKAGENAME} with config ${PACKAGECONFIGURATION}"
