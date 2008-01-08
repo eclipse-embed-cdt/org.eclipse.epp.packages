@@ -6,7 +6,7 @@
 
 	<!-- name, the name of the product, used in naming the created files. -->
 	<product
-	  name="eclipse-java-ganymede-M4"
+	  name="eclipse-java-um-ganymede-M4"
 	  eclipseProductId="org.eclipse.platform.ide"
     initialPerspectiveId="org.eclipse.jdt.ui.JavaPerspective" />
 
@@ -16,6 +16,7 @@
     <updateSite url="file:///home/data/httpd/download.eclipse.org/eclipse/updates/3.4/" />
     <updateSite url="file:///home/data/httpd/download.eclipse.org/eclipse/updates/3.4milestones/" />
     <updateSite url="file:///home/data/httpd/download.eclipse.org/releases/ganymede/staging/" />
+    <updateSite url="file:///home/data/users/mknauer/update-site/" />
 
     <!-- eclipse.org update sites -->
     <!-- 
@@ -110,6 +111,11 @@
 
     <feature
       id="org.eclipse.wst.xml_ui.feature"
+      version="latest">
+    </feature>
+
+    <feature
+      id="org.eclipse.epp.usagedata.feature"
       version="latest">
     </feature>
 

@@ -16,7 +16,6 @@
     <updateSite url="file:///home/data/httpd/download.eclipse.org/eclipse/updates/3.4/" />
     <updateSite url="file:///home/data/httpd/download.eclipse.org/eclipse/updates/3.4milestones/" />
     <updateSite url="file:///home/data/httpd/download.eclipse.org/releases/ganymede/staging/" />
-    <updateSite url="file:///home/data/users/mknauer/update-site/" />
 
     <!-- eclipse.org update sites -->
     <!-- 
@@ -43,11 +42,6 @@
 
     <feature
       id="org.eclipse.cvs"
-      version="latest">
-    </feature>
-
-    <feature
-      id="org.eclipse.epp.usagedata.feature"
       version="latest">
     </feature>
 
