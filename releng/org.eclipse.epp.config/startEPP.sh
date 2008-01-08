@@ -8,10 +8,11 @@ ECLIPSE_DIR="${WORKING_DIR}/eclipse"
 DOWNLOAD_DIR="/home/data/httpd/download.eclipse.org/technology/epp/downloads/testing"
 VM="/opt/ibm/java2-ppc-50/bin/java"
 STATUSFILENAME="status.stub"
+UMONSTATUSFILENAME="statusumon.stub"
 LOCKFILE="/tmp/epp.build.lock"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 PACKAGES="cpp java jee rcp"
-UMON_PACKAGES="cppudc javaudc jeeudc rcpudc"
+UMONPACKAGES="cppudc javaudc jeeudc rcpudc"
 PLATFORMS="win32.win32.x86.zip linux.gtk.x86.tar.gz linux.gtk.x86_64.tar.gz macosx.carbon.ppc.tar.gz"
 BASENAME="ganymede-M4"
 BUILDSUCCESS=""
@@ -42,7 +43,7 @@ cvs -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSP
 echo "...starting build"
 
 # create packages
-for PACKAGENAME in ${PACKAGES} %{UMON_PACKAGES};
+for PACKAGENAME in ${PACKAGES} %{UMONPACKAGES};
 do
     PACKAGECONFIGURATION="${WORKING_DIR}/${CVSPATH}/eclipse_"${PACKAGENAME}"_340.xml"
     echo "...creating package ${PACKAGENAME} with config ${PACKAGECONFIGURATION}"
@@ -99,7 +100,7 @@ cat >>$TARGET_DIR/index.html <<Endofmessage
   <th>Mac OSX</th>
 </tr>
 Endofmessage
-for NAME in ${PACKAGES} ${UMON_PACKAGES};
+for NAME in ${PACKAGES} ${UMONPACKAGES};
 do
    if [[ "$BUILDSUCCESS" == *${NAME}* ]]
    then
@@ -162,6 +163,31 @@ do
 done
 echo "</tr>"                                      >>$TARGET_DIR/$STATUSFILENAME
 
+# create 2nd status file
+echo "<tr>"                                       >>$TARGET_DIR/$UMONSTATUSFILENAME
+echo "<td><a href=\"http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/index.html\">${START_TIME}</a></td>" >>$TARGET_DIR/$UMONSTATUSFILENAME
+for PACKAGENAME in $PACKAGES $UMONPACKAGES;
+do
+  if [[ "$BUILDSUCCESS" == *$PACKAGENAME* ]]
+  then
+    SUCCESS="true"
+  else
+      SUCCESS="false"
+    fi
+    echo -n "<td style=\"background-color: rgb("  >>$TARGET_DIR/$UMONSTATUSFILENAME
+    if [[ "$SUCCESS" == "true" ]]; 
+      then echo -n "204, 255, 204"                >>$TARGET_DIR/$UMONSTATUSFILENAME
+      else echo -n "255, 204, 204"                >>$TARGET_DIR/$UMONSTATUSFILENAME
+    fi
+    echo -n ");\"><a href=\"http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/$PACKAGENAME.log\">" >>$TARGET_DIR/$UMONSTATUSFILENAME
+    if [[ "$SUCCESS" == "true" ]]; 
+      then echo "Success</a></td>"                >>$TARGET_DIR/$UMONSTATUSFILENAME
+      else echo "Fail</a></td>"                   >>$TARGET_DIR/$UMONSTATUSFILENAME
+    fi
+done
+echo "</tr>"                                      >>$TARGET_DIR/$UMONSTATUSFILENAME
+
+
 # move everything to download server
 echo "...moving files to download directory ${DOWNLOAD_DIR}"
 mv ${WORKING_DIR}/${START_TIME} ${DOWNLOAD_DIR}
@@ -182,6 +208,16 @@ for FILE in `ls -r */${STATUSFILENAME}`
 do
   echo "...adding $FILE"
   cat ${FILE} >>${DOWNLOAD_DIR}/${STATUSFILENAME}
+done
+
+# link results somehow in a 2nd single file
+echo "...recreate ${DOWNLOAD_DIR}/${UMONSTATUSFILENAME}"
+rm ${DOWNLOAD_DIR}/${UMONSTATUSFILENAME}
+cd ${DOWNLOAD_DIR}
+for FILE in `ls -r */${UMONSTATUSFILENAME}`
+do
+  echo "...adding $FILE"
+  cat ${FILE} >>${DOWNLOAD_DIR}/${UMONSTATUSFILENAME}
 done
 
 # remove lockfile
