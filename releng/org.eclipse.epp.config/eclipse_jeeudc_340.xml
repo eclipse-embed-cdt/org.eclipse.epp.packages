@@ -6,7 +6,7 @@
 
   <!-- name, the name of the product, used in naming the created files. -->
   <product
-    name="eclipse-jee-udc-ganymede-M4"
+    name="eclipse-jeeudc-ganymede-M4"
     eclipseProductId="org.eclipse.platform.ide"
     initialPerspectiveId="org.eclipse.jst.j2ee.J2EEPerspective" />
 
