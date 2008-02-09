@@ -14,7 +14,7 @@ CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 PACKAGES="cpp java jee rcp"
 UMONPACKAGES=""
 PLATFORMS="win32.win32.x86.zip linux.gtk.x86.tar.gz linux.gtk.x86_64.tar.gz macosx.carbon.ppc.tar.gz"
-BASENAME="ganymede-M4"
+BASENAME="ganymede-M5"
 BUILDSUCCESS=""
 
 ###############################################################################
