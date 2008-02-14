@@ -1,5 +1,6 @@
 #!/bin/sh
 #set -x
+umask 0022
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
