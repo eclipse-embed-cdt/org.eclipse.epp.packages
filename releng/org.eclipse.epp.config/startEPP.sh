@@ -9,11 +9,11 @@ ECLIPSE_DIR="${WORKING_DIR}/eclipse"
 DOWNLOAD_DIR="/home/data/httpd/download.eclipse.org/technology/epp/downloads/testing"
 VM="/opt/ibm/java2-ppc-50/bin/java"
 STATUSFILENAME="status.stub"
-UMONSTATUSFILENAME="statusumon.stub"
+TESTSTATUSFILENAME="statusumon.stub"
 LOCKFILE="/tmp/epp.build.lock"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 PACKAGES="cpp java jee rcp"
-UMONPACKAGES=""
+TESTPACKAGES="modeling"
 PLATFORMS="win32.win32.x86.zip linux.gtk.x86.tar.gz linux.gtk.x86_64.tar.gz macosx.carbon.ppc.tar.gz"
 BASENAME="ganymede-M5"
 BUILDSUCCESS=""
@@ -44,7 +44,7 @@ cvs -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSP
 echo "...starting build"
 
 # create packages
-for PACKAGENAME in ${PACKAGES} ${UMONPACKAGES};
+for PACKAGENAME in ${PACKAGES} ${TESTPACKAGES};
 do
     PACKAGECONFIGURATION="${WORKING_DIR}/${CVSPATH}/eclipse_"${PACKAGENAME}"_340.xml"
     echo "...creating package ${PACKAGENAME} with config ${PACKAGECONFIGURATION}"
@@ -101,7 +101,7 @@ cat >>$TARGET_DIR/index.html <<Endofmessage
   <th>Mac OSX</th>
 </tr>
 Endofmessage
-for NAME in ${PACKAGES} ${UMONPACKAGES};
+for NAME in ${PACKAGES} ${TESTPACKAGES};
 do
    if [[ "$BUILDSUCCESS" == *${NAME}* ]]
    then
@@ -165,9 +165,9 @@ done
 echo "</tr>"                                      >>$TARGET_DIR/$STATUSFILENAME
 
 # create 2nd status file
-echo "<tr>"                                       >>$TARGET_DIR/$UMONSTATUSFILENAME
-echo "<td><a href=\"http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/index.html\">${START_TIME}</a></td>" >>$TARGET_DIR/$UMONSTATUSFILENAME
-for PACKAGENAME in $PACKAGES $UMONPACKAGES;
+echo "<tr>"                                       >>$TARGET_DIR/$TESTSTATUSFILENAME
+echo "<td><a href=\"http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/index.html\">${START_TIME}</a></td>" >>$TARGET_DIR/$TESTSTATUSFILENAME
+for PACKAGENAME in $PACKAGES $TESTPACKAGES;
 do
   if [[ "$BUILDSUCCESS" == *$PACKAGENAME* ]]
   then
@@ -175,18 +175,18 @@ do
   else
       SUCCESS="false"
     fi
-    echo -n "<td style=\"background-color: rgb("  >>$TARGET_DIR/$UMONSTATUSFILENAME
+    echo -n "<td style=\"background-color: rgb("  >>$TARGET_DIR/$TESTSTATUSFILENAME
     if [[ "$SUCCESS" == "true" ]]; 
-      then echo -n "204, 255, 204"                >>$TARGET_DIR/$UMONSTATUSFILENAME
-      else echo -n "255, 204, 204"                >>$TARGET_DIR/$UMONSTATUSFILENAME
+      then echo -n "204, 255, 204"                >>$TARGET_DIR/$TESTSTATUSFILENAME
+      else echo -n "255, 204, 204"                >>$TARGET_DIR/$TESTSTATUSFILENAME
     fi
-    echo -n ");\"><a href=\"http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/$PACKAGENAME.log\">" >>$TARGET_DIR/$UMONSTATUSFILENAME
+    echo -n ");\"><a href=\"http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/$PACKAGENAME.log\">" >>$TARGET_DIR/$TESTSTATUSFILENAME
     if [[ "$SUCCESS" == "true" ]]; 
-      then echo "Success</a></td>"                >>$TARGET_DIR/$UMONSTATUSFILENAME
-      else echo "Fail</a></td>"                   >>$TARGET_DIR/$UMONSTATUSFILENAME
+      then echo "Success</a></td>"                >>$TARGET_DIR/$TESTSTATUSFILENAME
+      else echo "Fail</a></td>"                   >>$TARGET_DIR/$TESTSTATUSFILENAME
     fi
 done
-echo "</tr>"                                      >>$TARGET_DIR/$UMONSTATUSFILENAME
+echo "</tr>"                                      >>$TARGET_DIR/$TESTSTATUSFILENAME
 
 
 # move everything to download server
@@ -212,13 +212,13 @@ do
 done
 
 # link results somehow in a 2nd single file
-echo "...recreate ${DOWNLOAD_DIR}/${UMONSTATUSFILENAME}"
-rm ${DOWNLOAD_DIR}/${UMONSTATUSFILENAME}
+echo "...recreate ${DOWNLOAD_DIR}/${TESTSTATUSFILENAME}"
+rm ${DOWNLOAD_DIR}/${TESTSTATUSFILENAME}
 cd ${DOWNLOAD_DIR}
-for FILE in `ls -r */${UMONSTATUSFILENAME}`
+for FILE in `ls -r */${TESTSTATUSFILENAME}`
 do
   echo "...adding $FILE"
-  cat ${FILE} >>${DOWNLOAD_DIR}/${UMONSTATUSFILENAME}
+  cat ${FILE} >>${DOWNLOAD_DIR}/${TESTSTATUSFILENAME}
 done
 
 # remove lockfile
