@@ -226,6 +226,8 @@ do
   echo "...adding $FILE"
   cat ${FILE} >>${DOWNLOAD_DIR}/${TESTSTATUSFILENAME}
 done
+# only for 33 (hack!)
+cp ${DOWNLOAD_DIR}/${TESTSTATUSFILENAME} /home/data/httpd/download.eclipse.org/technology/epp/downloads/testing/status33.stub
 
 # remove lockfile
 rm ${LOCKFILE}
