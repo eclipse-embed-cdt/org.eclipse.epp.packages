@@ -191,7 +191,7 @@ echo "</tr>"                                      >>$TARGET_DIR/$TESTSTATUSFILEN
 
 # move everything to download server
 echo "...moving files to download directory ${DOWNLOAD_DIR}"
-rsync -avx --progress ${WORKING_DIR}/${START_TIME} ${DOWNLOAD_DIR}
+rsync -avc --progress ${WORKING_DIR}/${START_TIME} ${DOWNLOAD_DIR}
 
 # remove 'some' (which?) files from the download server
 echo "...remove oldest build from download directory ${DOWNLOAD_DIR}"
