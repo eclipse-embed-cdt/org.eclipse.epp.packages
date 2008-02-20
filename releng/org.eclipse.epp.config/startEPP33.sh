@@ -100,7 +100,7 @@ cat >>$TARGET_DIR/index.html <<Endofmessage
 <h1>EPP Europa Build Status ${START_TIME}</h1>
 <table border="1">
 <tr>
-  <th><a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/eppbuild.log">Package</a></th>
+  <th><a href="http://build.eclipse.org/technology/epp/epp_build/33/download/${START_TIME}/eppbuild.log">Package</a></th>
   <th>Windows</th>
   <th>Linux 32 GTK</th>
   <th>Linux 64 GTK</th>
