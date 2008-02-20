@@ -4,18 +4,18 @@ umask 0022
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
-WORKING_DIR="/shared/technology/epp/epp_build/33"
+WORKING_DIR="/shared/technology/epp/epp_build/34"
 ECLIPSE_DIR="${WORKING_DIR}/eclipse"
-DOWNLOAD_DIR="/shared/technology/epp/epp_build/33/download"
+DOWNLOAD_DIR="/home/data/httpd/download.eclipse.org/technology/epp/downloads/testing"
 VM="/opt/ibm/java2-ppc-50/bin/java"
 STATUSFILENAME="status.stub"
 TESTSTATUSFILENAME="statusumon.stub"
-LOCKFILE="/tmp/epp.build33.lock"
+LOCKFILE="/tmp/epp.build34.lock"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 PACKAGES="cpp java jee rcp"
-TESTPACKAGES=""
+TESTPACKAGES="modeling reporting"
 PLATFORMS="win32.win32.x86.zip linux.gtk.x86.tar.gz linux.gtk.x86_64.tar.gz macosx.carbon.ppc.tar.gz"
-BASENAME="europa-winter"
+BASENAME="ganymede-M5"
 BUILDSUCCESS=""
 
 ###############################################################################
@@ -40,19 +40,13 @@ echo "...checking out configuration to ${WORKING_DIR}"
 cd ${WORKING_DIR}
 cvs -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSPATH}
 
-# prepare config files (rename and relocate)
-cp ${WORKING_DIR}/${CVSPATH}/Eclipse_IDE_for_C_C++_Developers/EclipseCDT_332.xml ${WORKING_DIR}/${CVSPATH}/eclipse_cpp_332.xml 
-cp ${WORKING_DIR}/${CVSPATH}/Eclipse_IDE_for_Java_Developers/EclipseJava_332.xml ${WORKING_DIR}/${CVSPATH}/eclipse_java_332.xml 
-cp ${WORKING_DIR}/${CVSPATH}/Eclipse_for_RCP_Plugin_Developers/EclipseRCP_332.xml ${WORKING_DIR}/${CVSPATH}/eclipse_rcp_332.xml 
-cp ${WORKING_DIR}/${CVSPATH}/Eclipse_IDE_for_JEE_Developers/EclipseJavaEE_332.xml ${WORKING_DIR}/${CVSPATH}/eclipse_jee_332.xml 
-
 # build
 echo "...starting build"
 
 # create packages
 for PACKAGENAME in ${PACKAGES} ${TESTPACKAGES};
 do
-    PACKAGECONFIGURATION="${WORKING_DIR}/${CVSPATH}/eclipse_"${PACKAGENAME}"_332.xml"
+    PACKAGECONFIGURATION="${WORKING_DIR}/${CVSPATH}/eclipse_"${PACKAGENAME}"_340.xml"
     echo "...creating package ${PACKAGENAME} with config ${PACKAGECONFIGURATION}"
     cd ${ECLIPSE_DIR}
     WORKSPACE=${WORKING_DIR}/workspace_${PACKAGENAME}
