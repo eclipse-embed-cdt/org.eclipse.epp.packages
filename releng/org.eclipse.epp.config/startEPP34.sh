@@ -82,7 +82,7 @@ cat >>$TARGET_DIR/index.html <<Endofmessage
 <html><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="http://www.eclipse.org/eclipse.org-common/themes/Phoenix/css/visual.css" media="screen" />
-<title>EPP Build Status ${START_TIME}</title>
+<title>EPP Ganymede Build Status ${START_TIME}</title>
 </head>
 <body>
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
@@ -91,7 +91,7 @@ cat >>$TARGET_DIR/index.html <<Endofmessage
 <td align="right" style="color: white; font-family: verdana,arial,helvetica; font-size: 1.25em; font-style: italic;"><b>EPP Build Status&nbsp;</b></font> </td>
 </tr>
 </table>
-<h1>EPP Build Status ${START_TIME}</h1>
+<h1>EPP Ganymede Build Status ${START_TIME}</h1>
 <table border="1">
 <tr>
   <th><a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/eppbuild.log">Package</a></th>
