@@ -6,7 +6,7 @@ umask 0022
 START_TIME=`date -u +%Y%m%d-%H%M`
 WORKING_DIR="/shared/technology/epp/epp_build/34"
 ECLIPSE_DIR="${WORKING_DIR}/eclipse"
-DOWNLOAD_DIR="/home/data/httpd/download.eclipse.org/technology/epp/downloads/testing"
+DOWNLOAD_DIR="/shared/technology/epp/epp_build/34/download"
 VM="/opt/ibm/java2-ppc-50/bin/java"
 STATUSFILENAME="status.stub"
 TESTSTATUSFILENAME="statusumon.stub"
@@ -94,7 +94,7 @@ cat >>$TARGET_DIR/index.html <<Endofmessage
 <h1>EPP Ganymede Build Status ${START_TIME}</h1>
 <table border="1">
 <tr>
-  <th><a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/eppbuild.log">Package</a></th>
+  <th><a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/eppbuild.log">Package</a></th>
   <th>Windows</th>
   <th>Linux 32 GTK</th>
   <th>Linux 64 GTK</th>
@@ -107,15 +107,15 @@ do
    then
 cat >>$TARGET_DIR/index.html <<Endofmessage
 <tr>
- <td><a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${NAME}.log">${NAME}</a></td>
+ <td><a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/${NAME}.log">${NAME}</a></td>
 Endofmessage
    for PLATFORMEXTENSION in ${PLATFORMS};
    do
 cat >>$TARGET_DIR/index.html <<Endofmessage
  <td style="background-color: rgb(204, 255, 204);">
-   <a href="http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-${BASENAME}-${PLATFORMEXTENSION}">package</a> 
-   [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-${BASENAME}-${PLATFORMEXTENSION}.md5">md5</a>] 
-   [<a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${START_TIME}_eclipse-${NAME}-${BASENAME}-${PLATFORMEXTENSION}.sha1">sha1</a>]
+   <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/${START_TIME}_eclipse-${NAME}-${BASENAME}-${PLATFORMEXTENSION}">package</a> 
+   [<a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/${START_TIME}_eclipse-${NAME}-${BASENAME}-${PLATFORMEXTENSION}.md5">md5</a>] 
+   [<a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/${START_TIME}_eclipse-${NAME}-${BASENAME}-${PLATFORMEXTENSION}.sha1">sha1</a>]
  </td>
 Endofmessage
    done
@@ -125,7 +125,7 @@ Endofmessage
    else
 cat >>$TARGET_DIR/index.html <<Endofmessage
 <tr>
- <td><a href="http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/${NAME}.log">${NAME}</a></td>
+ <td><a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/${NAME}.log">${NAME}</a></td>
  <td align="center" style="background-color: rgb(255, 204, 204);"><b>Fail</b></td>
  <td align="center" style="background-color: rgb(255, 204, 204);"><b>Fail</b></td>
  <td align="center" style="background-color: rgb(255, 204, 204);"><b>Fail</b></td>
@@ -142,7 +142,7 @@ Endofmessage
 
 # create status file
 echo "<tr>"                                       >>$TARGET_DIR/$STATUSFILENAME
-echo "<td><a href=\"http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/index.html\">${START_TIME}</a></td>" >>$TARGET_DIR/$STATUSFILENAME
+echo "<td><a href=\"http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/index.html\">${START_TIME}</a></td>" >>$TARGET_DIR/$STATUSFILENAME
 for PACKAGENAME in $PACKAGES;
 do
 	if [[ "$BUILDSUCCESS" == *$PACKAGENAME* ]]
@@ -156,7 +156,7 @@ do
       then echo -n "204, 255, 204"                >>$TARGET_DIR/$STATUSFILENAME
       else echo -n "255, 204, 204"                >>$TARGET_DIR/$STATUSFILENAME
     fi
-    echo -n ");\"><a href=\"http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/$PACKAGENAME.log\">" >>$TARGET_DIR/$STATUSFILENAME
+    echo -n ");\"><a href=\"http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/$PACKAGENAME.log\">" >>$TARGET_DIR/$STATUSFILENAME
     if [[ "$SUCCESS" == "true" ]]; 
       then echo "Success</a></td>"                >>$TARGET_DIR/$STATUSFILENAME
       else echo "Fail</a></td>"                   >>$TARGET_DIR/$STATUSFILENAME
@@ -166,7 +166,7 @@ echo "</tr>"                                      >>$TARGET_DIR/$STATUSFILENAME
 
 # create 2nd status file
 echo "<tr>"                                       >>$TARGET_DIR/$TESTSTATUSFILENAME
-echo "<td><a href=\"http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/index.html\">${START_TIME}</a></td>" >>$TARGET_DIR/$TESTSTATUSFILENAME
+echo "<td><a href=\"http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/index.html\">${START_TIME}</a></td>" >>$TARGET_DIR/$TESTSTATUSFILENAME
 for PACKAGENAME in $PACKAGES $TESTPACKAGES;
 do
   if [[ "$BUILDSUCCESS" == *$PACKAGENAME* ]]
@@ -180,7 +180,7 @@ do
       then echo -n "204, 255, 204"                >>$TARGET_DIR/$TESTSTATUSFILENAME
       else echo -n "255, 204, 204"                >>$TARGET_DIR/$TESTSTATUSFILENAME
     fi
-    echo -n ");\"><a href=\"http://download.eclipse.org/technology/epp/downloads/testing/${START_TIME}/$PACKAGENAME.log\">" >>$TARGET_DIR/$TESTSTATUSFILENAME
+    echo -n ");\"><a href=\"http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/$PACKAGENAME.log\">" >>$TARGET_DIR/$TESTSTATUSFILENAME
     if [[ "$SUCCESS" == "true" ]]; 
       then echo "Success</a></td>"                >>$TARGET_DIR/$TESTSTATUSFILENAME
       else echo "Fail</a></td>"                   >>$TARGET_DIR/$TESTSTATUSFILENAME
@@ -210,6 +210,7 @@ do
   echo "...adding $FILE"
   cat ${FILE} >>${DOWNLOAD_DIR}/${STATUSFILENAME}
 done
+cp -a ${DOWNLOAD_DIR}/${STATUSFILENAME} /home/data/httpd/download.eclipse.org/technology/epp/downloads/testing/
 
 # link results somehow in a 2nd single file
 echo "...recreate ${DOWNLOAD_DIR}/${TESTSTATUSFILENAME}"
@@ -220,6 +221,7 @@ do
   echo "...adding $FILE"
   cat ${FILE} >>${DOWNLOAD_DIR}/${TESTSTATUSFILENAME}
 done
+cp -a ${DOWNLOAD_DIR}/${TESTSTATUSFILENAME} /home/data/httpd/download.eclipse.org/technology/epp/downloads/testing/
 
 # remove lockfile
 rm ${LOCKFILE}
