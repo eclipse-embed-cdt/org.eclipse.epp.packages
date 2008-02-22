@@ -50,7 +50,7 @@ do
     echo "...creating package ${PACKAGENAME} with config ${PACKAGECONFIGURATION}"
     cd ${ECLIPSE_DIR}
     WORKSPACE=${WORKING_DIR}/workspace_${PACKAGENAME}
-    rm -r ${WORKSPACE}
+    rm -rf ${WORKSPACE}
     mkdir ${WORKSPACE}
     ${ECLIPSE_DIR}/eclipse \
             -data ${WORKSPACE} \
@@ -59,12 +59,15 @@ do
             ${PACKAGECONFIGURATION} \
             2>&1 1>${TARGET_DIR}/${PACKAGENAME}.log
     if [ $? = "0" ]; then
-        echo "...successfully finished ${PACKAGENAME} package build"
+        echo -n "...successfully finished ${PACKAGENAME} package build"
         BUILDSUCCESS="${BUILDSUCCESS} ${PACKAGENAME}"
         cd ${WORKSPACE}
         for II in eclipse*; do mv ${II} ${TARGET_DIR}/${START_TIME}\_$II; done
+        echo " ...removing workspace"
+        rm -rf ${WORKSPACE}
     else
         echo "...failed while building package ${PACKAGENAME}"
+        echo "...workspace ${workspace} not removed"
     fi
 done
 

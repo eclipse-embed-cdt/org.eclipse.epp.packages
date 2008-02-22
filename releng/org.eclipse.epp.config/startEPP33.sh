@@ -56,7 +56,7 @@ do
     echo "...creating package ${PACKAGENAME} with config ${PACKAGECONFIGURATION}"
     cd ${ECLIPSE_DIR}
     WORKSPACE=${WORKING_DIR}/workspace_${PACKAGENAME}
-    rm -r ${WORKSPACE}
+    rm -rf ${WORKSPACE}
     mkdir ${WORKSPACE}
     ${ECLIPSE_DIR}/eclipse \
             -data ${WORKSPACE} \
@@ -65,12 +65,15 @@ do
             ${PACKAGECONFIGURATION} \
             2>&1 1>${TARGET_DIR}/${PACKAGENAME}.log
     if [ $? = "0" ]; then
-        echo "...successfully finished ${PACKAGENAME} package build"
+        echo -n "...successfully finished ${PACKAGENAME} package build"
         BUILDSUCCESS="${BUILDSUCCESS} ${PACKAGENAME}"
         cd ${WORKSPACE}
         for II in eclipse*; do mv ${II} ${TARGET_DIR}/${START_TIME}\_$II; done
+        echo " ...removing workspace"
+        rm -rf ${WORKSPACE}
     else
         echo "...failed while building package ${PACKAGENAME}"
+        echo "...workspace ${workspace} not removed"
     fi
 done
 
@@ -94,7 +97,7 @@ cat >>$TARGET_DIR/index.html <<Endofmessage
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
 <tr style="background-image: url(http://dash.eclipse.org/dash/commits/web-app/header_bg.gif);">
 <td><a href="http://www.eclipse.org/"><img src="http://dash.eclipse.org/dash/commits/web-app/header_logo.gif" width="163" height="68" border="0" alt="Eclipse Logo" class="logo" /></a></td>
-<td align="right" style="color: white; font-family: verdana,arial,helvetica; font-size: 1.25em; font-style: italic;"><b>EPP Build Status&nbsp;</b></font> </td>
+<td align="right" style="color: white; font-family: verdana,arial,helvetica; font-size: 1.25em; font-style: italic;"><b>EPP Europa Build Status&nbsp;</b></font> </td>
 </tr>
 </table>
 <h1>EPP Europa Build Status ${START_TIME}</h1>
