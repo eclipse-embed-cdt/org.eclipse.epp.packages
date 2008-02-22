@@ -151,13 +151,13 @@ do
   if [[ "$BUILDSUCCESS" == *$PACKAGENAME* ]]
   then
 cat >>$TARGET_DIR/$STATUSFILENAME <<Endofmessage
-<td style="background-color: rgb(204, 255, 204);">
+<td align="center" style="background-color: rgb(204, 255, 204);">
   <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/index.html">Success</a>
 </td>
 Endofmessage
   else
 cat >>$TARGET_DIR/$STATUSFILENAME <<Endofmessage
-<td style="background-color: rgb(255, 204, 204);">
+<td align="center" style="background-color: rgb(255, 204, 204);">
   <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/$PACKAGENAME.log">Fail</a>
 </td>
 Endofmessage
@@ -173,13 +173,17 @@ do
   if [[ "$BUILDSUCCESS" == *$PACKAGENAME* ]]
   then
 cat >>$TARGET_DIR/$TESTSTATUSFILENAME <<Endofmessage
-<td style="background-color: rgb(204, 255, 204);">
-  <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/index.html">Success</a>
+<td align="center" style="background-color: rgb(204, 255, 204);">
+  <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/index.html">Success</a><br>
+  <font size="-2">
+    <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/${START_TIME}_eclipse-${PACKAGENAME}-${BASENAME}-win32.win32.x86.zip">win32</a>
+    <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/index.html">other</a>
+  </font>
 </td>
 Endofmessage
   else
 cat >>$TARGET_DIR/$TESTSTATUSFILENAME <<Endofmessage
-<td style="background-color: rgb(255, 204, 204);">
+<td align="center" style="background-color: rgb(255, 204, 204);">
   <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/$PACKAGENAME.log">Fail</a>
 </td>
 Endofmessage
