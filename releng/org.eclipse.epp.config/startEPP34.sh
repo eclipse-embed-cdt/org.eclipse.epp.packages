@@ -152,7 +152,7 @@ do
   then
 cat >>$TARGET_DIR/$STATUSFILENAME <<Endofmessage
 <td style="background-color: rgb(204, 255, 204);">
-  <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/${START_TIME}_eclipse-${NAME}-${BASENAME}-${PLATFORMEXTENSION}">Success</a>
+  <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/index.html">Success</a>
 </td>
 Endofmessage
   else
@@ -174,7 +174,7 @@ do
   then
 cat >>$TARGET_DIR/$TESTSTATUSFILENAME <<Endofmessage
 <td style="background-color: rgb(204, 255, 204);">
-  <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/${START_TIME}_eclipse-${NAME}-${BASENAME}-${PLATFORMEXTENSION}">Success</a>
+  <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/index.html">Success</a>
 </td>
 Endofmessage
   else
