@@ -150,57 +150,60 @@ cat >>$TARGET_DIR/index.html <<Endofmessage
 Endofmessage
 
 # create status file
-echo "<tr>"                                       >>$TARGET_DIR/$STATUSFILENAME
+echo "<tr>" >>$TARGET_DIR/$STATUSFILENAME
 echo "<td><a href=\"http://build.eclipse.org/technology/epp/epp_build/33/download/${START_TIME}/index.html\">${START_TIME}</a></td>" >>$TARGET_DIR/$STATUSFILENAME
 for PACKAGENAME in $PACKAGES;
 do
-	if [[ "$BUILDSUCCESS" == *$PACKAGENAME* ]]
-	then
-		SUCCESS="true"
-	else
-	    SUCCESS="false"
-    fi
-    echo -n "<td style=\"background-color: rgb("  >>$TARGET_DIR/$STATUSFILENAME
-    if [[ "$SUCCESS" == "true" ]]; 
-      then echo -n "204, 255, 204"                >>$TARGET_DIR/$STATUSFILENAME
-      else echo -n "255, 204, 204"                >>$TARGET_DIR/$STATUSFILENAME
-    fi
-    echo -n ");\"><a href=\"http://build.eclipse.org/technology/epp/epp_build/33/download/${START_TIME}/$PACKAGENAME.log\">" >>$TARGET_DIR/$STATUSFILENAME
-    if [[ "$SUCCESS" == "true" ]]; 
-      then echo "Success</a></td>"                >>$TARGET_DIR/$STATUSFILENAME
-      else echo "Fail</a></td>"                   >>$TARGET_DIR/$STATUSFILENAME
-    fi
+  if [[ "$BUILDSUCCESS" == *$PACKAGENAME* ]]
+  then
+cat >>$TARGET_DIR/$STATUSFILENAME <<Endofmessage
+<td style="background-color: rgb(204, 255, 204);">
+  <a href="http://build.eclipse.org/technology/epp/epp_build/33/download/${START_TIME}/${START_TIME}_eclipse-${NAME}-${BASENAME}-${PLATFORMEXTENSION}">Success</a>
+</td>
+Endofmessage
+  else
+cat >>$TARGET_DIR/$STATUSFILENAME <<Endofmessage
+<td style="background-color: rgb(255, 204, 204);">
+  <a href="http://build.eclipse.org/technology/epp/epp_build/33/download/${START_TIME}/$PACKAGENAME.log">Fail</a>
+</td>
+Endofmessage
+  fi
 done
-echo "</tr>"                                      >>$TARGET_DIR/$STATUSFILENAME
+echo "</tr>" >>$TARGET_DIR/$STATUSFILENAME
 
 # create 2nd status file
-echo "<tr>"                                       >>$TARGET_DIR/$TESTSTATUSFILENAME
+echo "<tr>" >>$TARGET_DIR/$TESTSTATUSFILENAME
 echo "<td><a href=\"http://build.eclipse.org/technology/epp/epp_build/33/download/${START_TIME}/index.html\">${START_TIME}</a></td>" >>$TARGET_DIR/$TESTSTATUSFILENAME
 for PACKAGENAME in $PACKAGES $TESTPACKAGES;
 do
   if [[ "$BUILDSUCCESS" == *$PACKAGENAME* ]]
   then
-    SUCCESS="true"
+cat >>$TARGET_DIR/$TESTSTATUSFILENAME <<Endofmessage
+<td style="background-color: rgb(204, 255, 204);">
+  <a href="http://build.eclipse.org/technology/epp/epp_build/33/download/${START_TIME}/${START_TIME}_eclipse-${NAME}-${BASENAME}-${PLATFORMEXTENSION}">Success</a>
+</td>
+Endofmessage
   else
-      SUCCESS="false"
-    fi
-    echo -n "<td style=\"background-color: rgb("  >>$TARGET_DIR/$TESTSTATUSFILENAME
-    if [[ "$SUCCESS" == "true" ]]; 
-      then echo -n "204, 255, 204"                >>$TARGET_DIR/$TESTSTATUSFILENAME
-      else echo -n "255, 204, 204"                >>$TARGET_DIR/$TESTSTATUSFILENAME
-    fi
-    echo -n ");\"><a href=\"http://build.eclipse.org/technology/epp/epp_build/33/download/${START_TIME}/$PACKAGENAME.log\">" >>$TARGET_DIR/$TESTSTATUSFILENAME
-    if [[ "$SUCCESS" == "true" ]]; 
-      then echo "Success</a></td>"                >>$TARGET_DIR/$TESTSTATUSFILENAME
-      else echo "Fail</a></td>"                   >>$TARGET_DIR/$TESTSTATUSFILENAME
-    fi
+cat >>$TARGET_DIR/$TESTSTATUSFILENAME <<Endofmessage
+<td style="background-color: rgb(255, 204, 204);">
+  <a href="http://build.eclipse.org/technology/epp/epp_build/33/download/${START_TIME}/$PACKAGENAME.log">Fail</a>
+</td>
+Endofmessage
+  fi
 done
-echo "</tr>"                                      >>$TARGET_DIR/$TESTSTATUSFILENAME
+echo "</tr>" >>$TARGET_DIR/$TESTSTATUSFILENAME
 
 
-# move everything to download server
+# move everything to download area
 echo "...moving files to download directory ${DOWNLOAD_DIR}"
-rsync -avc --progress ${WORKING_DIR}/${START_TIME} ${DOWNLOAD_DIR}
+rsync -a --stats ${WORKING_DIR}/${START_TIME} ${DOWNLOAD_DIR}
+if [ $? = "0" ]; then
+  echo -n "...files successfully moved."
+  rm -r ${WORKING_DIR}/${START_TIME}
+  echo " Directory ${WORKING_DIR}/${START_TIME} removed."
+else
+  echo "...failed moving files. Not deleting source files."
+fi
 
 # remove 'some' (which?) files from the download server
 echo "...remove oldest build from download directory ${DOWNLOAD_DIR}"
