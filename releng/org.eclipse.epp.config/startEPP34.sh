@@ -176,7 +176,7 @@ cat >>$TARGET_DIR/$TESTSTATUSFILENAME <<Endofmessage
 <td align="center" style="background-color: rgb(204, 255, 204);">
   <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/index.html">Success</a><br>
   <font size="-2">
-    <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/${START_TIME}_eclipse-${PACKAGENAME}-${BASENAME}-win32.win32.x86.zip">win32</a>
+    <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/${START_TIME}_eclipse-${PACKAGENAME}-${BASENAME}-win32.win32.x86.zip">win32</a> |
     <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/index.html">other</a>
   </font>
 </td>
