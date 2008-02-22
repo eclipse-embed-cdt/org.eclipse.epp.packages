@@ -188,9 +188,16 @@ done
 echo "</tr>" >>$TARGET_DIR/$TESTSTATUSFILENAME
 
 
-# move everything to download server
+# move everything to download area
 echo "...moving files to download directory ${DOWNLOAD_DIR}"
-rsync -avc --progress ${WORKING_DIR}/${START_TIME} ${DOWNLOAD_DIR}
+rsync -a --stats ${WORKING_DIR}/${START_TIME} ${DOWNLOAD_DIR}
+if [ $? = "0" ]; then
+  echo -n "...files successfully moved."
+  rm -r ${WORKING_DIR}/${START_TIME}
+  echo " Directory ${WORKING_DIR}/${START_TIME} removed."
+else
+  echo "...failed moving files. Not deleting source files."
+fi
 
 # remove 'some' (which?) files from the download server
 echo "...remove oldest build from download directory ${DOWNLOAD_DIR}"
