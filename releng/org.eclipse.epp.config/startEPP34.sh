@@ -88,7 +88,7 @@ cat >>$TARGET_DIR/index.html <<Endofmessage
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
 <tr style="background-image: url(http://dash.eclipse.org/dash/commits/web-app/header_bg.gif);">
 <td><a href="http://www.eclipse.org/"><img src="http://dash.eclipse.org/dash/commits/web-app/header_logo.gif" width="163" height="68" border="0" alt="Eclipse Logo" class="logo" /></a></td>
-<td align="right" style="color: white; font-family: verdana,arial,helvetica; font-size: 1.25em; font-style: italic;"><b>EPP Build Status&nbsp;</b></font> </td>
+<td align="right" style="color: white; font-family: verdana,arial,helvetica; font-size: 1.25em; font-style: italic;"><b>EPP Ganymede Build Status&nbsp;</b></font> </td>
 </tr>
 </table>
 <h1>EPP Ganymede Build Status ${START_TIME}</h1>
@@ -141,52 +141,48 @@ cat >>$TARGET_DIR/index.html <<Endofmessage
 Endofmessage
 
 # create status file
-echo "<tr>"                                       >>$TARGET_DIR/$STATUSFILENAME
+echo "<tr>" >>$TARGET_DIR/$STATUSFILENAME
 echo "<td><a href=\"http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/index.html\">${START_TIME}</a></td>" >>$TARGET_DIR/$STATUSFILENAME
 for PACKAGENAME in $PACKAGES;
 do
-	if [[ "$BUILDSUCCESS" == *$PACKAGENAME* ]]
-	then
-		SUCCESS="true"
-	else
-	    SUCCESS="false"
-    fi
-    echo -n "<td style=\"background-color: rgb("  >>$TARGET_DIR/$STATUSFILENAME
-    if [[ "$SUCCESS" == "true" ]]; 
-      then echo -n "204, 255, 204"                >>$TARGET_DIR/$STATUSFILENAME
-      else echo -n "255, 204, 204"                >>$TARGET_DIR/$STATUSFILENAME
-    fi
-    echo -n ");\"><a href=\"http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/$PACKAGENAME.log\">" >>$TARGET_DIR/$STATUSFILENAME
-    if [[ "$SUCCESS" == "true" ]]; 
-      then echo "Success</a></td>"                >>$TARGET_DIR/$STATUSFILENAME
-      else echo "Fail</a></td>"                   >>$TARGET_DIR/$STATUSFILENAME
-    fi
+  if [[ "$BUILDSUCCESS" == *$PACKAGENAME* ]]
+  then
+cat >>$TARGET_DIR/$STATUSFILENAME <<Endofmessage
+<td style="background-color: rgb(204, 255, 204);">
+  <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/${START_TIME}_eclipse-${NAME}-${BASENAME}-${PLATFORMEXTENSION}">Success</a>
+</td>
+Endofmessage
+  else
+cat >>$TARGET_DIR/$STATUSFILENAME <<Endofmessage
+<td style="background-color: rgb(255, 204, 204);">
+  <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/$PACKAGENAME.log">Fail</a>
+</td>
+Endofmessage
+  fi
 done
-echo "</tr>"                                      >>$TARGET_DIR/$STATUSFILENAME
+echo "</tr>" >>$TARGET_DIR/$STATUSFILENAME
 
 # create 2nd status file
-echo "<tr>"                                       >>$TARGET_DIR/$TESTSTATUSFILENAME
+echo "<tr>" >>$TARGET_DIR/$TESTSTATUSFILENAME
 echo "<td><a href=\"http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/index.html\">${START_TIME}</a></td>" >>$TARGET_DIR/$TESTSTATUSFILENAME
 for PACKAGENAME in $PACKAGES $TESTPACKAGES;
 do
   if [[ "$BUILDSUCCESS" == *$PACKAGENAME* ]]
   then
-    SUCCESS="true"
+cat >>$TARGET_DIR/$TESTSTATUSFILENAME <<Endofmessage
+<td style="background-color: rgb(204, 255, 204);">
+  <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/${START_TIME}_eclipse-${NAME}-${BASENAME}-${PLATFORMEXTENSION}">Success</a>
+</td>
+Endofmessage
   else
-      SUCCESS="false"
-    fi
-    echo -n "<td style=\"background-color: rgb("  >>$TARGET_DIR/$TESTSTATUSFILENAME
-    if [[ "$SUCCESS" == "true" ]]; 
-      then echo -n "204, 255, 204"                >>$TARGET_DIR/$TESTSTATUSFILENAME
-      else echo -n "255, 204, 204"                >>$TARGET_DIR/$TESTSTATUSFILENAME
-    fi
-    echo -n ");\"><a href=\"http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/$PACKAGENAME.log\">" >>$TARGET_DIR/$TESTSTATUSFILENAME
-    if [[ "$SUCCESS" == "true" ]]; 
-      then echo "Success</a></td>"                >>$TARGET_DIR/$TESTSTATUSFILENAME
-      else echo "Fail</a></td>"                   >>$TARGET_DIR/$TESTSTATUSFILENAME
-    fi
+cat >>$TARGET_DIR/$TESTSTATUSFILENAME <<Endofmessage
+<td style="background-color: rgb(255, 204, 204);">
+  <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/$PACKAGENAME.log">Fail</a>
+</td>
+Endofmessage
+  fi
 done
-echo "</tr>"                                      >>$TARGET_DIR/$TESTSTATUSFILENAME
+echo "</tr>" >>$TARGET_DIR/$TESTSTATUSFILENAME
 
 
 # move everything to download server
