@@ -8,6 +8,7 @@ WORKING_DIR="/shared/technology/epp/epp_build/33"
 ECLIPSE_DIR="${WORKING_DIR}/eclipse"
 DOWNLOAD_DIR="/shared/technology/epp/epp_build/33/download"
 VM="/opt/ibm/java2-ppc-50/bin/java"
+MARKERFILENAME=".epp.nightlybuild"
 STATUSFILENAME="status33.stub"
 LOCKFILE="/tmp/epp.build33.lock"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
@@ -29,6 +30,7 @@ touch ${LOCKFILE}
 # create target directory
 TARGET_DIR="${WORKING_DIR}/${START_TIME}"
 mkdir ${TARGET_DIR}
+touch ${TARGET_DIR}/${MARKERFILENAME}
 
 # log to file
 exec 1>${TARGET_DIR}/eppbuild.log 2>&1
@@ -183,7 +185,7 @@ fi
 # remove 'some' (which?) files from the download server
 echo "...remove oldest build from download directory ${DOWNLOAD_DIR}"
 cd ${DOWNLOAD_DIR}
-TOBEDELETED_TEMP=`find . -name ${STATUSFILENAME} | grep -v "\./${STATUSFILENAME}" | sort | head -n 1`
+TOBEDELETED_TEMP=`find . -name ${MARKERFILENAME} | grep -v "\./${MARKERFILENAME}" | sort | head -n 1`
 TOBEDELETED_DIR=`echo ${TOBEDELETED_TEMP} | cut -d "/" -f 2`
 echo "...removing ${TOBEDELETED_DIR} from ${DOWNLOAD_DIR}"
 rm -r ${TOBEDELETED_DIR}
