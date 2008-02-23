@@ -8,12 +8,10 @@ WORKING_DIR="/shared/technology/epp/epp_build/33"
 ECLIPSE_DIR="${WORKING_DIR}/eclipse"
 DOWNLOAD_DIR="/shared/technology/epp/epp_build/33/download"
 VM="/opt/ibm/java2-ppc-50/bin/java"
-STATUSFILENAME="status.stub"
-TESTSTATUSFILENAME="statusumon.stub"
+STATUSFILENAME="status33.stub"
 LOCKFILE="/tmp/epp.build33.lock"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 PACKAGES="cpp java jee rcp"
-TESTPACKAGES=""
 PLATFORMS="win32.win32.x86.zip linux.gtk.x86.tar.gz linux.gtk.x86_64.tar.gz macosx.carbon.ppc.tar.gz"
 BASENAME="europa-winter"
 BUILDSUCCESS=""
@@ -38,7 +36,7 @@ exec 1>${TARGET_DIR}/eppbuild.log 2>&1
 # check-out configuration
 echo "...checking out configuration to ${WORKING_DIR}"
 cd ${WORKING_DIR}
-cvs -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSPATH}
+cvs -q -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSPATH}
 
 # prepare config files (rename and relocate)
 cp ${WORKING_DIR}/${CVSPATH}/Eclipse_IDE_for_C_C++_Developers/EclipseCDT_332.xml ${WORKING_DIR}/${CVSPATH}/eclipse_cpp_332.xml 
@@ -110,7 +108,7 @@ cat >>$TARGET_DIR/index.html <<Endofmessage
   <th>Mac OSX</th>
 </tr>
 Endofmessage
-for NAME in ${PACKAGES} ${TESTPACKAGES};
+for NAME in ${PACKAGES};
 do
    if [[ "$BUILDSUCCESS" == *${NAME}* ]]
    then
@@ -171,33 +169,6 @@ Endofmessage
 done
 echo "</tr>" >>$TARGET_DIR/$STATUSFILENAME
 
-# create 2nd status file
-echo "<tr>" >>$TARGET_DIR/$TESTSTATUSFILENAME
-echo "<td><a href=\"http://build.eclipse.org/technology/epp/epp_build/33/download/${START_TIME}/index.html\">${START_TIME}</a></td>" >>$TARGET_DIR/$TESTSTATUSFILENAME
-for PACKAGENAME in $PACKAGES $TESTPACKAGES;
-do
-  if [[ "$BUILDSUCCESS" == *$PACKAGENAME* ]]
-  then
-cat >>$TARGET_DIR/$TESTSTATUSFILENAME <<Endofmessage
-<td align="center" style="background-color: rgb(204, 255, 204);">
-  <a href="http://build.eclipse.org/technology/epp/epp_build/33/download/${START_TIME}/index.html">Success</a><br>
-  <font size="-2">
-    <a href="http://build.eclipse.org/technology/epp/epp_build/33/download/${START_TIME}/${START_TIME}_eclipse-${PACKAGENAME}-${BASENAME}-win32.win32.x86.zip">win32</a> |
-    <a href="http://build.eclipse.org/technology/epp/epp_build/33/download/${START_TIME}/index.html">other</a>
-  </font>
-</td>
-Endofmessage
-  else
-cat >>$TARGET_DIR/$TESTSTATUSFILENAME <<Endofmessage
-<td align="center" style="background-color: rgb(255, 204, 204);">
-  <a href="http://build.eclipse.org/technology/epp/epp_build/33/download/${START_TIME}/$PACKAGENAME.log">Fail</a>
-</td>
-Endofmessage
-  fi
-done
-echo "</tr>" >>$TARGET_DIR/$TESTSTATUSFILENAME
-
-
 # move everything to download area
 echo "...moving files to download directory ${DOWNLOAD_DIR}"
 rsync -a --stats ${WORKING_DIR}/${START_TIME} ${DOWNLOAD_DIR}
@@ -226,18 +197,7 @@ do
   echo "...adding $FILE"
   cat ${FILE} >>${DOWNLOAD_DIR}/${STATUSFILENAME}
 done
-
-# link results somehow in a 2nd single file
-echo "...recreate ${DOWNLOAD_DIR}/${TESTSTATUSFILENAME}"
-rm ${DOWNLOAD_DIR}/${TESTSTATUSFILENAME}
-cd ${DOWNLOAD_DIR}
-for FILE in `ls -r */${TESTSTATUSFILENAME}`
-do
-  echo "...adding $FILE"
-  cat ${FILE} >>${DOWNLOAD_DIR}/${TESTSTATUSFILENAME}
-done
-# only for 33 (hack!)
-cp ${DOWNLOAD_DIR}/${TESTSTATUSFILENAME} /home/data/httpd/download.eclipse.org/technology/epp/downloads/testing/status33.stub
+cp ${DOWNLOAD_DIR}/${STATUSFILENAME} /home/data/httpd/download.eclipse.org/technology/epp/downloads/testing/
 
 # remove lockfile
 rm ${LOCKFILE}
