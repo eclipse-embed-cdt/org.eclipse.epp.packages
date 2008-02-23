@@ -8,8 +8,9 @@ WORKING_DIR="/shared/technology/epp/epp_build/34"
 ECLIPSE_DIR="${WORKING_DIR}/eclipse"
 DOWNLOAD_DIR="/shared/technology/epp/epp_build/34/download"
 VM="/opt/ibm/java2-ppc-50/bin/java"
-STATUSFILENAME="status.stub"
-TESTSTATUSFILENAME="statusumon.stub"
+MARKERFILENAME=".epp.nightlybuild"
+STATUSFILENAME="status34.stub"
+TESTSTATUSFILENAME="status34test.stub"
 LOCKFILE="/tmp/epp.build34.lock"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 PACKAGES="cpp java jee rcp"
@@ -31,6 +32,7 @@ touch ${LOCKFILE}
 # create target directory
 TARGET_DIR="${WORKING_DIR}/${START_TIME}"
 mkdir ${TARGET_DIR}
+touch ${TARGET_DIR}/${MARKERFILENAME}
 
 # log to file
 exec 1>${TARGET_DIR}/eppbuild.log 2>&1
@@ -38,7 +40,7 @@ exec 1>${TARGET_DIR}/eppbuild.log 2>&1
 # check-out configuration
 echo "...checking out configuration to ${WORKING_DIR}"
 cd ${WORKING_DIR}
-cvs -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSPATH}
+cvs -q -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSPATH}
 
 # build
 echo "...starting build"
@@ -147,22 +149,7 @@ Endofmessage
 echo "<tr>" >>$TARGET_DIR/$STATUSFILENAME
 echo "<td><a href=\"http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/index.html\">${START_TIME}</a></td>" >>$TARGET_DIR/$STATUSFILENAME
 for PACKAGENAME in $PACKAGES;
-do
-  if [[ "$BUILDSUCCESS" == *$PACKAGENAME* ]]
-  then
-cat >>$TARGET_DIR/$STATUSFILENAME <<Endofmessage
-<td align="center" style="background-color: rgb(204, 255, 204);">
-  <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/index.html">Success</a>
-</td>
-Endofmessage
-  else
-cat >>$TARGET_DIR/$STATUSFILENAME <<Endofmessage
-<td align="center" style="background-color: rgb(255, 204, 204);">
-  <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/$PACKAGENAME.log">Fail</a>
-</td>
-Endofmessage
-  fi
-done
+cp -a ${DOWNLOAD_DIR}/${STATUSFILENAME} /home/data/httpd/download.eclipse.org/technology/epp/downloads/testing/
 echo "</tr>" >>$TARGET_DIR/$STATUSFILENAME
 
 # create 2nd status file
@@ -206,7 +193,7 @@ fi
 # remove 'some' (which?) files from the download server
 echo "...remove oldest build from download directory ${DOWNLOAD_DIR}"
 cd ${DOWNLOAD_DIR}
-TOBEDELETED_TEMP=`find . -name ${STATUSFILENAME} | grep -v "\./${STATUSFILENAME}" | sort | head -n 1`
+TOBEDELETED_TEMP=`find . -name ${MARKERFILENAME} | grep -v "\./${MARKERFILENAME}" | sort | head -n 1`
 TOBEDELETED_DIR=`echo ${TOBEDELETED_TEMP} | cut -d "/" -f 2`
 echo "...removing ${TOBEDELETED_DIR} from ${DOWNLOAD_DIR}"
 rm -r ${TOBEDELETED_DIR}
@@ -221,6 +208,7 @@ do
   cat ${FILE} >>${DOWNLOAD_DIR}/${STATUSFILENAME}
 done
 cp -a ${DOWNLOAD_DIR}/${STATUSFILENAME} /home/data/httpd/download.eclipse.org/technology/epp/downloads/testing/
+cp -a ${DOWNLOAD_DIR}/${STATUSFILENAME} /home/data/httpd/download.eclipse.org/technology/epp/downloads/testing/status.stub
 
 # link results somehow in a 2nd single file
 echo "...recreate ${DOWNLOAD_DIR}/${TESTSTATUSFILENAME}"
