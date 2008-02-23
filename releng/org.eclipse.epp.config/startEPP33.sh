@@ -48,7 +48,7 @@ cp ${WORKING_DIR}/${CVSPATH}/Eclipse_IDE_for_JEE_Developers/EclipseJavaEE_332.xm
 echo "...starting build"
 
 # create packages
-for PACKAGENAME in ${PACKAGES} ${TESTPACKAGES};
+for PACKAGENAME in ${PACKAGES};
 do
     PACKAGECONFIGURATION="${WORKING_DIR}/${CVSPATH}/eclipse_"${PACKAGENAME}"_332.xml"
     echo "...creating package ${PACKAGENAME} with config ${PACKAGECONFIGURATION}"
