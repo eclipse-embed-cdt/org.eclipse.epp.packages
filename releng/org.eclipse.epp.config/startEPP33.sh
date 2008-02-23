@@ -21,7 +21,7 @@ BUILDSUCCESS=""
 
 # only one build process allowed
 if [ -e ${LOCKFILE} ]; then
-    echo "EPP build - lockfile ${LOCKFILE} exists" >/dev/stderr
+    echo "${START_TIME} EPP build - lockfile ${LOCKFILE} exists" >/dev/stderr
     exit 1
 fi
 trap "rm -f ${LOCKFILE}; exit" INT TERM EXIT
@@ -158,7 +158,11 @@ do
   then
 cat >>$TARGET_DIR/$STATUSFILENAME <<Endofmessage
 <td align="center" style="background-color: rgb(204, 255, 204);">
-  <a href="http://build.eclipse.org/technology/epp/epp_build/33/download/${START_TIME}/index.html">Success</a>
+  <a href="http://build.eclipse.org/technology/epp/epp_build/33/download/${START_TIME}/index.html">Success</a><br>
+  <font size="-2">
+    <a href="http://build.eclipse.org/technology/epp/epp_build/33/download/${START_TIME}/${START_TIME}_eclipse-${PACKAGENAME}-${BASENAME}-win32.win32.x86.zip">win32</a> |
+    <a href="http://build.eclipse.org/technology/epp/epp_build/33/download/${START_TIME}/index.html">other</a>
+  </font>
 </td>
 Endofmessage
   else
@@ -170,6 +174,7 @@ Endofmessage
   fi
 done
 echo "</tr>" >>$TARGET_DIR/$STATUSFILENAME
+
 
 # move everything to download area
 echo "...moving files to download directory ${DOWNLOAD_DIR}"
