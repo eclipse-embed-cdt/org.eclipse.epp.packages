@@ -23,7 +23,7 @@ BUILDSUCCESS=""
 
 # only one build process allowed
 if [ -e ${LOCKFILE} ]; then
-    echo "EPP build - lockfile ${LOCKFILE} exists" >/dev/stderr
+    echo "${START_TIME} EPP build - lockfile ${LOCKFILE} exists" >/dev/stderr
     exit 1
 fi
 trap "rm -f ${LOCKFILE}; exit" INT TERM EXIT
@@ -149,7 +149,26 @@ Endofmessage
 echo "<tr>" >>$TARGET_DIR/$STATUSFILENAME
 echo "<td><a href=\"http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/index.html\">${START_TIME}</a></td>" >>$TARGET_DIR/$STATUSFILENAME
 for PACKAGENAME in $PACKAGES;
-cp -a ${DOWNLOAD_DIR}/${STATUSFILENAME} /home/data/httpd/download.eclipse.org/technology/epp/downloads/testing/
+do
+  if [[ "$BUILDSUCCESS" == *$PACKAGENAME* ]]
+  then
+cat >>$TARGET_DIR/$STATUSFILENAME <<Endofmessage
+<td align="center" style="background-color: rgb(204, 255, 204);">
+  <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/index.html">Success</a><br>
+  <font size="-2">
+    <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/${START_TIME}_eclipse-${PACKAGENAME}-${BASENAME}-win32.win32.x86.zip">win32</a> |
+    <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/index.html">other</a>
+  </font>
+</td>
+Endofmessage
+  else
+cat >>$TARGET_DIR/$STATUSFILENAME <<Endofmessage
+<td align="center" style="background-color: rgb(255, 204, 204);">
+  <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/$PACKAGENAME.log">Fail</a>
+</td>
+Endofmessage
+  fi
+done
 echo "</tr>" >>$TARGET_DIR/$STATUSFILENAME
 
 # create 2nd status file
