@@ -13,6 +13,7 @@
 	<!-- url, pointing to an update site. -->
   <updateSites>
     <!-- local mirrors -->
+    <updateSite url="file:///home/data/httpd/download.eclipse.org/tools/mylyn/update/europa/" />
     <updateSite url="file:///home/data/httpd/download.eclipse.org/eclipse/testUpdates-M/" />
 <!-- 
     <updateSite url="file:///home/data/httpd/download.eclipse.org/eclipse/updates/3.3/" />
