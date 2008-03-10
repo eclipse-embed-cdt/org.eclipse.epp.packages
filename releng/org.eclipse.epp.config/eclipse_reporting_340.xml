@@ -151,6 +151,14 @@
       version="latest">
     </feature>
     <feature
+      id="org.eclipse.datatools.sqldevtools.results.feature"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.datatools.sqldevtools.ddlgen.feature"
+      version="latest">
+    </feature>
+    <feature
       id="org.eclipse.datatools.sqldevtools.ddl.feature"
       version="latest">
     </feature>
@@ -172,11 +180,11 @@
     </feature>
 
     <feature
-      id="org.eclipse.datatools.sqldevtools.results.feature"
+      id="org.eclipse.datatools.enablement.feature"
       version="latest">
     </feature>
     <feature
-      id="org.eclipse.datatools.enablement.feature"
+      id="org.eclipse.datatools.intro"
       version="latest">
     </feature>
 
@@ -215,6 +223,10 @@
     </feature>
     <feature
       id="org.eclipse.datatools.enablement.postgresql.feature"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.datatools.enablement.sap.feature"
       version="latest">
     </feature>
     <feature
