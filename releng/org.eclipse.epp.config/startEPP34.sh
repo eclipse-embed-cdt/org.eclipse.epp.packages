@@ -13,13 +13,14 @@ STATUSFILENAME="status34.stub"
 TESTSTATUSFILENAME="status34test.stub"
 LOCKFILE="/tmp/epp.build34.lock"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
-PACKAGES="cpp java jee rcp"
-TESTPACKAGES="modeling reporting"
+DOWNLOADPACKAGES="cpp java jee rcp"
 PLATFORMS="win32.win32.x86.zip linux.gtk.x86.tar.gz linux.gtk.x86_64.tar.gz macosx.carbon.ppc.tar.gz"
 BASENAME="ganymede-M5"
 BUILDSUCCESS=""
 
 ###############################################################################
+
+. tools/functions.sh
 
 # only one build process allowed
 if [ -e ${LOCKFILE} ]; then
@@ -39,16 +40,16 @@ exec 1>${TARGET_DIR}/eppbuild.log 2>&1
 
 # check-out configuration
 echo "...checking out configuration to ${WORKING_DIR}"
-cd ${WORKING_DIR}
 cvs -q -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSPATH}
+pullAllConfigFiles ${WORKING_DIR}/${CVSPATH}/packages_map.txt ${TARGET_DIR}
 
 # build
 echo "...starting build"
 
 # create packages
-for PACKAGENAME in ${PACKAGES} ${TESTPACKAGES};
+for PACKAGENAME in ${ALL_PACKAGE_NAMES};
 do
-    PACKAGECONFIGURATION="${WORKING_DIR}/${CVSPATH}/eclipse_"${PACKAGENAME}"_340.xml"
+    PACKAGECONFIGURATION="${TARGET_DIR}/eclipse_"${PACKAGENAME}"_340.xml"
     echo "...creating package ${PACKAGENAME} with config ${PACKAGECONFIGURATION}"
     cd ${ECLIPSE_DIR}
     WORKSPACE=${WORKING_DIR}/workspace_${PACKAGENAME}
@@ -64,21 +65,17 @@ do
         echo -n "...successfully finished ${PACKAGENAME} package build"
         BUILDSUCCESS="${BUILDSUCCESS} ${PACKAGENAME}"
         cd ${WORKSPACE}
-        for II in eclipse*; do mv ${II} ${TARGET_DIR}/${START_TIME}\_$II; done
+        for II in eclipse*; do 
+            mv ${II} ${TARGET_DIR}/${START_TIME}\_$II
+            md5sum ${TARGET_DIR}/${START_TIME}\_$II >${TARGET_DIR}/${START_TIME}\_$II.md5
+            sha1sum ${TARGET_DIR}/${START_TIME}\_$II >>${TARGET_DIR}/${START_TIME}\_$II.sha1
+        done
         echo " ...removing workspace"
         rm -rf ${WORKSPACE}
     else
         echo "...failed while building package ${PACKAGENAME}"
         echo "...workspace ${workspace} not removed"
     fi
-done
-
-# create checksum files
-echo "...creating checksum files"
-cd ${TARGET_DIR}
-for II in *eclipse*; do 
-	md5sum $II >>$II.md5
-	sha1sum $II >>$II.sha1;
 done
 
 # create index file
@@ -106,7 +103,7 @@ cat >>$TARGET_DIR/index.html <<Endofmessage
   <th>Mac OSX</th>
 </tr>
 Endofmessage
-for NAME in ${PACKAGES} ${TESTPACKAGES};
+for NAME in ${ALL_PACKAGE_NAMES};
 do
    if [[ "$BUILDSUCCESS" == *${NAME}* ]]
    then
@@ -148,7 +145,7 @@ Endofmessage
 # create status file
 echo "<tr>" >>$TARGET_DIR/$STATUSFILENAME
 echo "<td><a href=\"http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/index.html\">${START_TIME}</a></td>" >>$TARGET_DIR/$STATUSFILENAME
-for PACKAGENAME in $PACKAGES;
+for PACKAGENAME in $DOWNLOADPACKAGES;
 do
   if [[ "$BUILDSUCCESS" == *$PACKAGENAME* ]]
   then
@@ -174,7 +171,7 @@ echo "</tr>" >>$TARGET_DIR/$STATUSFILENAME
 # create 2nd status file
 echo "<tr>" >>$TARGET_DIR/$TESTSTATUSFILENAME
 echo "<td><a href=\"http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/index.html\">${START_TIME}</a></td>" >>$TARGET_DIR/$TESTSTATUSFILENAME
-for PACKAGENAME in $PACKAGES $TESTPACKAGES;
+for PACKAGENAME in ${ALL_PACKAGE_NAMES};
 do
   if [[ "$BUILDSUCCESS" == *$PACKAGENAME* ]]
   then
