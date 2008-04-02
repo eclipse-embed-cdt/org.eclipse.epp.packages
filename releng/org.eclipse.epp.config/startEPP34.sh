@@ -20,7 +20,7 @@ BUILDSUCCESS=""
 
 ###############################################################################
 
-. tools/functions.sh
+. ${WORKING_DIR}/${CVSPATH}/tools/functions.sh
 
 # only one build process allowed
 if [ -e ${LOCKFILE} ]; then
