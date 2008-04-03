@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2007 Innoopract Informationssysteme GmbH
+ * Copyright (c) 2007, 2008 Innoopract Informationssysteme GmbH
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -11,6 +11,7 @@
 package org.eclipse.epp.packaging.core.assembly;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 
 import org.eclipse.core.runtime.CoreException;
 
@@ -24,6 +25,7 @@ public interface IPackager {
    * TODO mknauer missing doc
    * @throws CoreException 
    * @throws IOException 
+   * @throws URISyntaxException 
    */
-  public void packApplication() throws CoreException, IOException;
+  public void packApplication() throws CoreException, IOException, URISyntaxException;
 }

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2007 Innoopract Informationssysteme GmbH
+ * Copyright (c) 2007, 2008 Innoopract Informationssysteme GmbH
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -10,12 +10,17 @@
  *******************************************************************************/
 package org.eclipse.epp.packaging.core.assembly;
 
+import java.io.File;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.eclipse.ant.core.AntRunner;
 import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.FileLocator;
 
 /**
  * An IPackager based on the PDE Build packager. Locates, configures and
@@ -33,10 +38,12 @@ public class PackagerRunner implements IPackager {
   private final List<String> platforms = new ArrayList<String>();
   private final List<String> formats = new ArrayList<String>();
 
-  public void packApplication() throws CoreException, IOException {
+  public void packApplication()
+    throws CoreException, IOException, URISyntaxException
+  {
     AntRunner runner = new AntRunner();
-    String scriptLocation = PluginUtils.getPluginPath( PDE_BUILD_PLUGIN_ID )
-                            + "/scripts/package.xml";//$NON-NLS-1$
+    String scriptLocation 
+      = getScriptPath( PDE_BUILD_PLUGIN_ID, "scripts/package.xml" );//$NON-NLS-1$
     runner.setBuildFileLocation( scriptLocation );
     addFeatureListToArguments();
     addPlatformListToArguments();
@@ -94,7 +101,9 @@ public class PackagerRunner implements IPackager {
     setArgument( ARGUMENT_CONFIGURATION_FOLDER, folder );
   }
 
-  /** Sets the working directory for the PDE packager. 
+  /**
+   * Sets the working directory for the PDE packager.
+   * 
    * @param folder directory name of the base directory
    */
   public void setBaseDirectory( final String folder ) {
@@ -132,5 +141,16 @@ public class PackagerRunner implements IPackager {
    */
   public void setArchiveFormat( final String platform, final String format ) {
     this.formats.add( platform + '-' + format );
+  }
+
+  // helping methods
+  // ////////////////
+  private String getScriptPath( final String pluginId, final String path )
+    throws IOException, URISyntaxException
+  {
+    URI uri = new URI( "platform:/plugin/" + pluginId ); //$NON-NLS-1$
+    URL fileUrl = FileLocator.toFileURL( uri.toURL() );
+    File file = new File( fileUrl.toURI() );
+    return file.getAbsolutePath() + File.separator + path;
   }
 }
