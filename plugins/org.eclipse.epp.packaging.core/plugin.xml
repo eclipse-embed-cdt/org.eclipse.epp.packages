@@ -15,7 +15,7 @@
          id="EPP"
          point="org.eclipse.core.runtime.products">
       <product
-            application="application"
+            application="org.eclipse.epp.packaging.core.application"
             name="EPP Packaging">
          <property
                name="appName"
