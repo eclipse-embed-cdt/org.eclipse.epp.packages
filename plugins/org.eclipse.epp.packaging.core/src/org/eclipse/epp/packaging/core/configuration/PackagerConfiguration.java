@@ -38,7 +38,9 @@ public class PackagerConfiguration implements IModifiablePackagerConfiguration {
     = "packagerConfiguration"; //$NON-NLS-1$
 
   private static final String ECLIPSE_PLATTFORM 
+// TODO change this to platform
     = "eclipse-platform-"; //$NON-NLS-1$
+//    = "eclipse-SDK-"; //$NON-NLS-1$
   
   private final List<URL> updateSites = new ArrayList<URL>();
   private final List<Platform> targetPlatforms = new ArrayList<Platform>();
