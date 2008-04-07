@@ -19,6 +19,8 @@
      <packageTesters>
       <tester>David Williams</tester>
       <tester>Markus Knauer</tester>
+      <tester>Mik Kersten</tester>
+      <tester>Martin Oberhuber</tester>
     </packageTesters>
   </packageMetaData>
 
@@ -95,7 +97,7 @@
       version="latest">
     </feature>
 
-    <feature
+    <feature  
       id="org.eclipse.emf.common"
       version="latest">
     </feature>
@@ -264,6 +266,11 @@
 
     <feature
       id="org.eclipse.jpt.feature"
+      version="latest">
+    </feature>
+
+    <feature
+      id="org.eclipse.rse"
       version="latest">
     </feature>
 
