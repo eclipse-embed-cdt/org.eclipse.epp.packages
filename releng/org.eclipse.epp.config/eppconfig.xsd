@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema targetNamespace="http://www.eclipse.org/epp/config"
-  elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="unqualified" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns:epp="http://www.eclipse.org/epp/config">
   <xsd:annotation>
     <xsd:documentation>
@@ -19,34 +20,67 @@
     </xsd:annotation>
     <xsd:complexType>
       <xsd:sequence>
+        <xsd:element name="packageMetaData" type="epp:packageMetaDataType"
+          minOccurs="0" maxOccurs="1" />
         <xsd:element name="rcp" minOccurs="1" maxOccurs="1">
           <xsd:complexType>
             <xsd:attributeGroup ref="epp:rcpVersionAttribute"></xsd:attributeGroup>
           </xsd:complexType>
         </xsd:element>
-        <xsd:element name="updateSites" type="epp:updateSitesType" minOccurs="1" maxOccurs="1"/>
-        <xsd:element name="requiredFeatures" type="epp:FeatureType" minOccurs="1" maxOccurs="1"/>
-        <xsd:element name="rootFileFolder" minOccurs="1" maxOccurs="1">
+        <xsd:element name="product" minOccurs="1" maxOccurs="1">
+          <xsd:complexType>
+            <xsd:attributeGroup ref="epp:productNameAttribute"></xsd:attributeGroup>
+            <xsd:attributeGroup ref="epp:productEclipseProductIdAttribute"></xsd:attributeGroup>
+            <xsd:attributeGroup ref="epp:productInitialPerspectiveIdAttribute"></xsd:attributeGroup>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="updateSites" type="epp:updateSitesType"
+          minOccurs="1" maxOccurs="1" />
+        <xsd:element name="requiredFeatures" type="epp:FeatureType"
+          minOccurs="1" maxOccurs="1" />
+        <xsd:element name="rootFileFolder" minOccurs="1"
+          maxOccurs="1">
           <xsd:complexType>
             <xsd:attributeGroup ref="epp:folderAttribute"></xsd:attributeGroup>
           </xsd:complexType>
         </xsd:element>
-        <xsd:element name="extensionSite" minOccurs="1" maxOccurs="1">
+        <xsd:element name="extensionSite" minOccurs="1"
+          maxOccurs="1">
           <xsd:complexType>
             <xsd:attributeGroup ref="epp:relativeFolderAttribute"></xsd:attributeGroup>
           </xsd:complexType>
         </xsd:element>
-        <xsd:element name="targetPlatforms" type="epp:PlatformType" minOccurs="1" maxOccurs="1"/>
+        <xsd:element name="targetPlatforms" type="epp:PlatformType"
+          minOccurs="1" maxOccurs="1" />
       </xsd:sequence>
     </xsd:complexType>
   </xsd:element>
 
   <!-- Complex Types -->
+  <xsd:complexType name="packageMetaDataType">
+  <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+    <xsd:element name="description" />
+    <xsd:element name="packageTesters">
+      <xsd:complexType>
+        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+          <xsd:element name="tester">
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:sequence>
+  <xsd:attributeGroup ref="epp:packageMDpackageName"></xsd:attributeGroup>
+  <xsd:attributeGroup ref="epp:packageMDmaintainer"></xsd:attributeGroup>
+  <xsd:attributeGroup ref="epp:packageMDiconurl"></xsd:attributeGroup>
+  <xsd:attributeGroup ref="epp:packageMDbugzillaCompId"></xsd:attributeGroup>
+  <xsd:attributeGroup ref="epp:packageMDtestPlan"></xsd:attributeGroup>
+  </xsd:complexType>
+
   <xsd:complexType name="updateSitesType">
     <xsd:sequence minOccurs="1" maxOccurs="unbounded">
-      <xsd:element name="updateSite">
+      <xsd:element name="updateSite" minOccurs="1" maxOccurs="unbounded">
         <xsd:complexType>
-          <xsd:attributeGroup ref="epp:updateSiteUrlAttribute"/>
+          <xsd:attributeGroup ref="epp:updateSiteUrlAttribute" />
         </xsd:complexType>
       </xsd:element>
     </xsd:sequence>
@@ -56,8 +90,8 @@
     <xsd:sequence minOccurs="1" maxOccurs="unbounded">
       <xsd:element name="feature">
         <xsd:complexType>
-          <xsd:attributeGroup ref="epp:featureIdAttribute"/>
-          <xsd:attributeGroup ref="epp:featureVersionAttribute"/>
+          <xsd:attributeGroup ref="epp:featureIdAttribute" />
+          <xsd:attributeGroup ref="epp:featureVersionAttribute" />
         </xsd:complexType>
       </xsd:element>
     </xsd:sequence>
@@ -75,7 +109,7 @@
             </xsd:element>
             <xsd:element name="eclipseIniFileContent" minOccurs="1" maxOccurs="1">
               <xsd:complexType>
-                <xsd:attribute name="path" default="/eclipse/" use="required"/>
+                <xsd:attribute name="path" default="/eclipse/" use="optional"/>
               </xsd:complexType>
             </xsd:element>
           </xsd:sequence>
@@ -120,23 +154,47 @@
   </xsd:simpleType>
 
   <!-- Global Attribute Declarations -->
+  <xsd:attributeGroup name="packageMDpackageName">
+    <xsd:attribute name="packageName" type="xsd:string" use="required" />
+  </xsd:attributeGroup>
+  <xsd:attributeGroup name="packageMDmaintainer">
+    <xsd:attribute name="maintainer" type="xsd:string" use="required" />
+  </xsd:attributeGroup>
+  <xsd:attributeGroup name="packageMDiconurl">
+    <xsd:attribute name="iconurl" type="xsd:anyURI" use="required" />
+  </xsd:attributeGroup>
+  <xsd:attributeGroup name="packageMDbugzillaCompId">
+    <xsd:attribute name="bugzillaComponentId" type="xsd:string" use="required" />
+  </xsd:attributeGroup>
+  <xsd:attributeGroup name="packageMDtestPlan">
+    <xsd:attribute name="testPlan" type="xsd:anyURI" use="required" />
+  </xsd:attributeGroup>
   <xsd:attributeGroup name="rcpVersionAttribute">
     <xsd:attribute name="version" type="xsd:string" use="required" />
   </xsd:attributeGroup>
+  <xsd:attributeGroup name="productNameAttribute">
+    <xsd:attribute name="name" type="xsd:string" use="required" />
+  </xsd:attributeGroup>
+  <xsd:attributeGroup name="productEclipseProductIdAttribute">
+    <xsd:attribute name="eclipseProductId" type="xsd:string" use="required" />
+  </xsd:attributeGroup>
+  <xsd:attributeGroup name="productInitialPerspectiveIdAttribute">
+    <xsd:attribute name="initialPerspectiveId" type="xsd:string" use="required" />
+  </xsd:attributeGroup>
   <xsd:attributeGroup name="updateSiteUrlAttribute">
-    <xsd:attribute name="updateSite" type="xsd:anyURI" use="required" />
+    <xsd:attribute name="url" type="xsd:anyURI" use="required" />
   </xsd:attributeGroup>  
   <xsd:attributeGroup name="featureIdAttribute">
     <xsd:attribute name="id" type="xsd:string" use="required" />
   </xsd:attributeGroup>  
   <xsd:attributeGroup name="featureVersionAttribute">
-    <xsd:attribute name="version" type="xsd:string" use="required" default="latest"/>
+    <xsd:attribute name="version" type="xsd:string" use="optional" default="latest"/>
   </xsd:attributeGroup>  
   <xsd:attributeGroup name="folderAttribute">
     <xsd:attribute name="folder" type="xsd:string" use="required"/>
   </xsd:attributeGroup>  
   <xsd:attributeGroup name="relativeFolderAttribute">
-    <xsd:attribute name="relativeFolder" type="xsd:string" use="required" default="extension_site"/>
+    <xsd:attribute name="relativeFolder" type="xsd:string" use="optional" default="extension_site"/>
   </xsd:attributeGroup>  
   <xsd:attributeGroup name="osAttribute">
     <xsd:attribute name="os" type="epp:osType" use="required"/>
