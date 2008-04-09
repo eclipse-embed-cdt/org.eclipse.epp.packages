@@ -275,6 +275,19 @@
     </feature>
 
     <feature
+      id="org.eclipse.tptp.platform.runtime"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.tptp.trace.runtime"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.tptp.wtp"
+      version="latest">
+    </feature>
+
+    <feature
       id="org.eclipse.epp.usagedata.feature"
       version="latest">
     </feature>
