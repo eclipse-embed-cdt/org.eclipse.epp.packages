@@ -6,7 +6,7 @@ java,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/
 jee,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_jee_340.xml,HEAD,eclipse_jee_340.xml
 #jee,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/webtools,webtools.releng/org.eclipse.wtp.releng.epp/config/eclipse_jee_340.xml,HEAD,eclipse_jee_340.xml
 rcp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_rcp_340.xml,HEAD,eclipse_rcp_340.xml
-#modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/modeling,org.eclipse.amalgam/releng/org.eclipse.amalgam.releng/epp/eclipse_modeling_ganymede.xml,HEAD,eclipse_modeling_340.xml
-modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_modeling_340.xml,HEAD,eclipse_modeling_340.xml
+modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/modeling,org.eclipse.amalgam/releng/org.eclipse.amalgam.releng/epp/eclipse_modeling_ganymede.xml,HEAD,eclipse_modeling_340.xml
+#modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_modeling_340.xml,HEAD,eclipse_modeling_340.xml
 reporting,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_reporting_340.xml,HEAD,eclipse_reporting_340.xml
 
