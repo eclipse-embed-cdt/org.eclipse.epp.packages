@@ -35,16 +35,17 @@
 	<!-- url, pointing to an update site. -->
   <updateSites>
     <!-- local mirrors -->
-    <updateSite url="file:///home/data/httpd/download.eclipse.org/eclipse/updates/3.4/" />
     <updateSite url="file:///home/data/httpd/download.eclipse.org/eclipse/updates/3.4milestones/" />
     <updateSite url="file:///home/data/httpd/download.eclipse.org/releases/ganymede/staging/" />
-    <updateSite url="file:///home/data/httpd/download.eclipse.org/technology/epp/updates/0.5milestones/" />
+    <updateSite url="file:///home/data/httpd/download.eclipse.org/modeling/emf/updates/site-interim.xml" />
+    <!-- 
+    <updateSite url="http://download.eclipse.org/modeling/emf/updates/site-interim.xml" />
+     -->
 
     <!-- eclipse.org update sites -->
     <!-- 
-    <updateSite url="file:///home/mknauer/mirror/eclipse/updates/3.4milestones/" />
-      <updateSite url="http://download.eclipse.org/eclipse/updates/3.4/" />
       <updateSite url="http://download.eclipse.org/eclipse/updates/3.4milestones/" />
+      <updateSite url="http://download.eclipse.org/eclipse/updates/3.4/" />
       <updateSite url="http://download.eclipse.org/releases/ganymede/" />
       <updateSite url="http://download.eclipse.org/releases/ganymede/staging/" />
     -->
@@ -59,7 +60,50 @@
     </feature>
 
     <feature
-      id="org.eclipse.sdk"
+      id="org.eclipse.cvs"
+      version="latest">
+    </feature>
+    
+    <feature
+      id="org.eclipse.jdt"
+      version="latest">
+    </feature>
+    
+    <feature
+      id="org.eclipse.emf.common"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.emf.common.ui"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.emf.ecore"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.emf.edit"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.emf.ecore.edit"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.emf.edit.ui"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.xsd"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.xsd.edit"
+      version="latest">
+    </feature>
+    
+    <feature
+      id="org.eclipse.gef"
       version="latest">
     </feature>
 
@@ -69,48 +113,7 @@
     </feature>
 
     <feature
-      id="org.eclipse.gef"
-      version="latest">
-    </feature>
-
-    <feature
       id="org.eclipse.uml2.sdk"
-      version="latest">
-    </feature>
-
-    <feature
-      id="org.eclipse.emf.transaction"
-      version="latest">
-    </feature>
-    <feature
-      id="org.eclipse.emf.validation"
-      version="latest">
-    </feature>
-    <feature
-      id="org.eclipse.emf.workspace"
-      version="latest">
-    </feature>
-    <feature
-      id="org.eclipse.emf.query"
-      version="latest">
-    </feature>
-
-    <feature
-      id="org.eclipse.ocl"
-      version="latest">
-    </feature>
-    <feature
-      id="org.eclipse.emf.ocl"
-      version="latest">
-    </feature>
-
-    <feature
-      id="org.eclipse.gmf.sdk"
-      version="latest">
-    </feature>
-
-    <feature
-      id="org.eclipse.uml2tools.sdk"
       version="latest">
     </feature>
     
@@ -118,22 +121,63 @@
       id="org.eclipse.ocl.all.sdk"
       version="latest">
     </feature>
-
+    
+    <feature
+      id="org.eclipse.emf.validation"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.emf.transaction"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.emf.workspace"
+      version="latest">
+    </feature>
+    <!-- to be removed - start -->
+    <feature
+      id="org.eclipse.emf.examples"
+      version="2.4.0.v200804012208">
+    </feature>
+    <!-- to be removed - stop -->
+    <feature
+      id="org.eclipse.emf.query"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.emf.query.ocl"
+      version="latest">
+    </feature>
+    
+    <feature
+      id="org.eclipse.gmf.sdk"
+      version="latest">
+    </feature>
+    
+    <feature
+      id="org.eclipse.uml2tools.sdk"
+      version="latest">
+    </feature>
+    
     <feature
       id="org.eclipse.emf.emfqtv.all.sdk"
       version="latest">
     </feature>
-
+    
+    <feature
+      id="org.eclipse.pde"
+      version="latest">
+    </feature>
     <feature
       id="org.eclipse.m2m.qvt.oml.sdk"
       version="latest">
     </feature>
-
+    
     <feature
       id="org.eclipse.epp.usagedata.feature"
       version="latest">
     </feature>
-
+    
 	</requiredFeatures>
 
 	<!-- folder, pointing to a folder containing the zipped root files for each of 
