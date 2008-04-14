@@ -45,7 +45,10 @@ mkdir ${TARGETDIR}
 echo 2nd: Copy logfiles
 cp -a ${SOURCEDIR}/*.log ${TARGETDIR}
 
-echo 3rd: Copy and rename packages
+echo 3rd: Copy config files
+cp -a ${SOURCEDIR}/*.xml ${TARGETDIR}
+
+echo 4th: Copy and rename packages
 cd ${SOURCEDIR}
 for II in *eclipse*; do
   if [[ ! ( "${II}" =~ ".sha1" || "${II}" =~ ".md5" ) ]]
@@ -67,7 +70,7 @@ for II in *eclipse*; do
   fi
 done
 
-echo 4th: Re-calculate checksum files
+echo 5th: Re-calculate checksum files
 cd ${TARGETDIR}
 for II in eclipse*; do 
   md5sum $II >$II.md5
@@ -77,7 +80,7 @@ done
 # <a href="http://download.eclipse.org/technology/epp/downloads/release/ganyMEDE/mXXX/eclipse-reporting-ganymede-M5-win32.zip">
 # http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/20080117-0620/eclipse-java-ganymede-M4-win32.zip
 
-echo 5th: Create new html and stub files
+echo 6th: Create new html and stub files
 cd ${SOURCEDIR}
 for II in index.html *.stub; do
   cat ${II} | \
