@@ -396,6 +396,10 @@ org.eclipse.platform
       <archiveFormat format="tar" />
       <eclipseIniFileContent path="/eclipse/Eclipse.app/Contents/MacOS/">-showsplash
 org.eclipse.platform
+-startup
+../../../plugins/org.eclipse.equinox.launcher_1.0.100.v20080303.jar
+--launcher.library
+../../../plugins/org.eclipse.equinox.launcher.carbon.macosx_1.0.100.v20080303
 -vmargs
 -Xdock:icon=../Resources/Eclipse.icns
 -XstartOnFirstThread
