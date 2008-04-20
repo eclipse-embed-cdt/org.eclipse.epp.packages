@@ -136,15 +136,6 @@
     </feature>
 
     <feature
-      id="org.eclipse.ecf.core"
-      version="latest">
-    </feature>
-    <feature
-      id="org.eclipse.ecf.examples"
-      version="latest">
-    </feature>
-
-    <feature
       id="org.eclipse.epp.usagedata.feature"
       version="latest">
     </feature>
