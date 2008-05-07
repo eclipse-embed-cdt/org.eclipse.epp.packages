@@ -67,26 +67,26 @@
       version="latest">
     </feature>
 
-    <feature
-      id="org.eclipse.mylyn_feature"
-      version="latest">
-    </feature>
-    <feature
-      id="org.eclipse.mylyn.context_feature"
-      version="latest">
-    </feature>
-    <feature
-      id="org.eclipse.mylyn.ide_feature"
-      version="latest">
-    </feature>
-    <feature
-      id="org.eclipse.mylyn.bugzilla_feature"
-      version="latest">
-    </feature>
-    <feature
-      id="org.eclipse.cdt.mylyn"
-      version="latest">
-    </feature>
+    <feature
+      id="org.eclipse.mylyn_feature"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.mylyn.context_feature"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.mylyn.ide_feature"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.mylyn.bugzilla_feature"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.cdt.mylyn"
+      version="latest">
+    </feature>
 
     <feature
       id="org.eclipse.epp.usagedata.feature"
