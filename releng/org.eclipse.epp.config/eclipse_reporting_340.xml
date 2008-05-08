@@ -27,7 +27,7 @@
 
   <!-- name, the name of the product, used in naming the created files. -->
   <product
-    name="eclipse-reporting-ganymede-M6"
+    name="eclipse-reporting-ganymede-M7"
     eclipseProductId="org.eclipse.platform.ide"
     initialPerspectiveId="org.eclipse.jst.j2ee.J2EEPerspective" />
 
@@ -397,9 +397,9 @@ org.eclipse.platform
       <eclipseIniFileContent path="/eclipse/Eclipse.app/Contents/MacOS/">-showsplash
 org.eclipse.platform
 -startup
-../../../plugins/org.eclipse.equinox.launcher_1.0.100.v20080303.jar
+../../../plugins/org.eclipse.equinox.launcher_1.0.100.v20080501.jar
 --launcher.library
-../../../plugins/org.eclipse.equinox.launcher.carbon.macosx_1.0.100.v20080303
+../../../plugins/org.eclipse.equinox.launcher.carbon.macosx_1.0.100.v20080428-1330
 -vmargs
 -Xdock:icon=../Resources/Eclipse.icns
 -XstartOnFirstThread
