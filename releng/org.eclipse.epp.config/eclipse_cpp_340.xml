@@ -58,6 +58,10 @@
     </feature>
 
     <feature
+      id="org.eclipse.cdt.platform"
+      version="latest">
+    </feature>
+    <feature
       id="org.eclipse.cdt"
       version="latest">
     </feature>
