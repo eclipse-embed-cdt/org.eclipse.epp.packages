@@ -60,7 +60,6 @@ do
             -data ${WORKSPACE} \
             -consoleLog \
             -vm ${VM} \
-            -vmargs ${VMPARAM} \
             ${PACKAGECONFIGURATION} \
             2>&1 1>${TARGET_DIR}/${PACKAGENAME}.log
     if [ $? = "0" ]; then
