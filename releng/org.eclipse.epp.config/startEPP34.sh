@@ -8,6 +8,7 @@ WORKING_DIR="/shared/technology/epp/epp_build/34"
 ECLIPSE_DIR="${WORKING_DIR}/eclipse"
 DOWNLOAD_DIR="/shared/technology/epp/epp_build/34/download"
 VM="/opt/ibm/java2-ppc-50/bin/java"
+VMPARAM="-Xms256m -Xmx768m -Dosgi.bundlefile.limit=800"
 MARKERFILENAME=".epp.nightlybuild"
 STATUSFILENAME="status34.stub"
 TESTSTATUSFILENAME="status34test.stub"
@@ -59,6 +60,7 @@ do
             -data ${WORKSPACE} \
             -consoleLog \
             -vm ${VM} \
+            -vmargs ${VMPARAM} \
             ${PACKAGECONFIGURATION} \
             2>&1 1>${TARGET_DIR}/${PACKAGENAME}.log
     if [ $? = "0" ]; then
