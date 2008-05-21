@@ -1,6 +1,7 @@
 #!/bin/sh
 #set -x
 umask 0022
+ulimit -n 2048
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
