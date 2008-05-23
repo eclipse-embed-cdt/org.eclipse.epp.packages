@@ -58,6 +58,8 @@ do
     rm -rf ${WORKSPACE}
     mkdir ${WORKSPACE}
     ${ECLIPSE_DIR}/eclipse \
+            -nosplash \
+            -application org.eclipse.epp.packaging.core.application \
             -data ${WORKSPACE} \
             -consoleLog \
             -vm ${VM} \
