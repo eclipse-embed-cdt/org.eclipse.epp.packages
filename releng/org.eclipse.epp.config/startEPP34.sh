@@ -62,6 +62,8 @@ do
             -consoleLog \
             -vm ${VM} \
             ${PACKAGECONFIGURATION} \
+            P2BUILD \
+            -Dorg.eclipse.epp.p2director=${ECLIPSE_DIR}/eclipse \
             2>&1 1>${TARGET_DIR}/${PACKAGENAME}.log
     if [ $? = "0" ]; then
         echo -n "...successfully finished ${PACKAGENAME} package build"
