@@ -40,7 +40,7 @@
 
     <!-- eclipse.org update sites    
       <updateSite url="http://download.eclipse.org/eclipse/updates/3.4milestones/" />
-      <updateSite url="http://download.eclipse.org/releases/ganymede/" /> 
+      <updateSite url="http://download.eclipse.org/releases/ganymede/staging/" /> 
     -->
   </updateSites>
 
@@ -48,7 +48,7 @@
   <!-- version, the feature version. -->
   <requiredFeatures>
   
-    <!-- Platform, JDT, CVS, PDE SDK-->
+  	<!-- Platform, JDT, CVS, PDE SDK-->
     <feature
       id="org.eclipse.sdk"
       version="latest">
@@ -80,7 +80,7 @@
       version="latest">
     </feature> 
     
-  <!-- UML2 Modeling -->
+	<!-- UML2 Modeling -->
     <feature
       id="org.eclipse.uml2.sdk"
       version="latest">
@@ -130,7 +130,7 @@
       version="latest">
     </feature>
     
-    <!-- Teneo 
+    <!-- Teneo [233650]
     <feature
       id="org.eclipse.emf.teneo.sdk"
       version="latest">
@@ -159,7 +159,6 @@
       id="org.eclipse.emf.ecoretools.sdk"
       version="latest">
     </feature>
-<!-- Pending 232147 -->
     <feature
       id="org.eclipse.emf.mint.sdk"
       version="latest">
@@ -168,8 +167,34 @@
       id="org.eclipse.emf.compare.sdk"
       version="latest">
     </feature>
+    
+    <!-- Mylyn -->
+    <feature
+      id="org.eclipse.mylyn_feature"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.mylyn.context_feature"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.mylyn.team_feature"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.mylyn.ide_feature"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.mylyn.java_feature"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.mylyn.bugzilla_feature"
+      version="latest">
+    </feature>
 
-  <!-- Obligatory EPP feature -->
+	<!-- Obligatory EPP feature -->
     <feature
       id="org.eclipse.epp.usagedata.feature"
       version="latest">
