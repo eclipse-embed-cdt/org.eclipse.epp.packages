@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
+
+  <!-- IMPORTANT: This is a fake package definition to show the Eclipse Classic, 
+       i.e. the Eclipse SDK download on the packages website. This package definition
+       is not used to build the Eclipse SDK download! -->
+
   <!-- Package Description information to be picked up by www.eclipse.org/packages -->
   <!-- PackageName is the title of your package 
        maintainer is the project or persons that are maintaining the package
