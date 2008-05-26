@@ -51,7 +51,7 @@ cp -a ${SOURCEDIR}/*.xml ${TARGETDIR}
 echo 4th: Copy and rename packages
 cd ${SOURCEDIR}
 for II in *eclipse*; do
-  if [[ ! ( "${II}" =~ ".sha1" || "${II}" =~ ".md5" ) ]]
+  if [[ ! ( "${II}" =~ ".sha1" || "${II}" =~ ".md5" || "${II}" =~ "^eclipse_" ) ]]
   then
     NEWNAME=`echo ${II} | \
              cut -d "_" -f 2- | \
@@ -72,7 +72,7 @@ done
 
 echo 5th: Re-calculate checksum files
 cd ${TARGETDIR}
-for II in eclipse*; do 
+for II in eclipse*.zip eclipse*.tar.gz; do 
   md5sum $II >$II.md5
   sha1sum $II >$II.sha1
 done
