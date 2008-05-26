@@ -25,6 +25,9 @@
       <tester>Eclipse Project</tester>
     </packageTesters>
     <FakePackage>True</FakePackage>
+    <FakePackageLocation>
+      http://download.eclipse.org/eclipse/downloads/drops/S-3.4RC1-200805161333/download.php?dropFile=
+    </FakePackageLocation>
   </packageMetaData>
 
   <!-- version, the RCP version to build. This is used to determine the file 
