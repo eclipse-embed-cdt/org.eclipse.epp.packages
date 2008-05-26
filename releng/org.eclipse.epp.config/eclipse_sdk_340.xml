@@ -33,7 +33,7 @@
 
   <!-- name, the name of the product, used in naming the created files. -->
   <product
-    name="eclipse-rcp-ganymede-RC1" 
+    name="eclipse-SDK-3.4RC1" 
     eclipseProductId="org.eclipse.sdk.ide"
     initialPerspectiveId="org.eclipse.jdt.ui.JavaPerspective" />
 
