@@ -26,7 +26,7 @@
     </packageTesters>
     <FakePackage>True</FakePackage>
     <FakePackageLocation>
-      http://download.eclipse.org/eclipse/downloads/drops/S-3.4RC1-200805161333/download.php?dropFile=
+      /eclipse/downloads/drops/S-3.4RC1-200805161333/
     </FakePackageLocation>
   </packageMetaData>
 
