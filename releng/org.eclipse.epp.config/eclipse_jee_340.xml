@@ -274,6 +274,12 @@
     </feature>
 
     <feature
+      id="org.eclipse.jpt.eclipselink.feature"
+      version="latest">
+    </feature>
+    
+
+    <feature
       id="org.eclipse.rse"
       version="latest">
     </feature>
