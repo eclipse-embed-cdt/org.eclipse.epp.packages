@@ -48,6 +48,9 @@
   <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
+  <NewAndNoteworthy
+    url="http://www.eclipse.org/ecf/NewAndNoteworthy.html"
+    project="Eclipse Communication Framework" />
   </MoreInfo>
 
 
