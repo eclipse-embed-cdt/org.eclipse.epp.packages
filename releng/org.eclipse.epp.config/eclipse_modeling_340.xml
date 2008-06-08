@@ -130,11 +130,11 @@
       version="latest">
     </feature>
     
-    <!-- Teneo -->
+    <!-- Teneo [233650]
     <feature
       id="org.eclipse.emf.teneo.sdk"
       version="latest">
-    </feature> 
+    </feature> -->
     
     <!-- Search -->
     <feature
