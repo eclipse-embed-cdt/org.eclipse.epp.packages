@@ -23,6 +23,17 @@
       <tester>Martin Oberhuber</tester>
     </packageTesters>
   </packageMetaData>
+  <MoreInfo>
+  <NewAndNoteworthy
+    url="http://www.eclipse.org/webtools/development/news/main.php"
+    project="Eclipse Webtools Project" />
+  <NewAndNoteworthy
+    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.4M7-200805020100/eclipse-news-M7.html"
+    project="Eclipse Platform" />
+  <NewAndNoteworthy
+    url="http://www.eclipse.org/mylyn/new/"
+    project="Eclipse Mylyn" />
+  </MoreInfo>
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->

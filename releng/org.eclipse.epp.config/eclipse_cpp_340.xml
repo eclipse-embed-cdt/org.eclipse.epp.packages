@@ -23,32 +23,11 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.4M1-200708091105/eclipse-news-M1.html"
-    project="Eclipse Platform M1" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.4M2-200709210919/eclipse-news-M2.html"
-    project="Eclipse Platform M2" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.4M3-200711012000/eclipse-news-M3.html"
-    project="Eclipse Platform M3" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.4M4-200712131700/eclipse-news-M4.html"
-    project="Eclipse Platform M4" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.4M5-200802071530/eclipse-news-M5.html"
-    project="Eclipse Platform M5" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.4M6-200803301350/eclipse-news-M6.html"
-    project="Eclipse Platform M6" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.4M6a-200804091425/eclipse-news-M6.html"
-    project="Eclipse Platform M6a" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.4M7-200805020100/eclipse-news-M7.html"
-    project="Eclipse Platform M7" />
-  <NewAndNoteworthy
     url="http://wiki.eclipse.org/CDT/User/NewIn50"
     project="Eclipse CDT" />
+  <NewAndNoteworthy
+    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.4M7-200805020100/eclipse-news-M7.html"
+    project="Eclipse Platform" />
   <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />

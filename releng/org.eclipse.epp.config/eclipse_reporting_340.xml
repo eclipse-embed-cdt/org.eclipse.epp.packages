@@ -9,7 +9,7 @@
    -->
   <packageMetaData
    packageName="Eclipse IDE for Java and Report Developers"
-   maintainer="Eclipse Packaging Project"
+   maintainer="Eclipse BIRT Project and the Eclipse Packaging Project"
    iconurl="http://www.eclipse.org/images/new.gif"
    bugzillaComponentId="reporting-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
@@ -20,6 +20,20 @@
       <tester>Xiaoying Gu</tester>
     </packageTesters>
   </packageMetaData>
+  <MoreInfo>
+  <NewAndNoteworthy
+    url="http://www.eclipse.org/birt/phoenix/whatsnew.php"
+    project="Eclipse BIRT Project" />
+  <NewAndNoteworthy
+    url="http://www.eclipse.org/webtools/development/news/main.php"
+    project="Eclipse Webtools Project" />
+  <NewAndNoteworthy
+    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.4M7-200805020100/eclipse-news-M7.html"
+    project="Eclipse Platform" />
+  <NewAndNoteworthy
+    url="http://www.eclipse.org/mylyn/new/"
+    project="Eclipse Mylyn" />
+  </MoreInfo>
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
