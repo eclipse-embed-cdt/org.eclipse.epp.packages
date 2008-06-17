@@ -17,7 +17,7 @@ LOCKFILE="/tmp/epp.build34.lock"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 DOWNLOADPACKAGES="cpp java jee rcp"
 PLATFORMS="win32.win32.x86.zip linux.gtk.x86.tar.gz linux.gtk.x86_64.tar.gz macosx.carbon.ppc.tar.gz"
-BASENAME="ganymede-RC4"
+BASENAME="ganymede-RC5"
 BUILDSUCCESS=""
 
 ###############################################################################
