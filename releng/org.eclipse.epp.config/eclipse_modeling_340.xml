@@ -8,13 +8,13 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse Modeling Tools"
+   packageName="Eclipse Modeling Tools (includes Incubating components)"
    maintainer="Modeling Amalgamation Project"
    iconurl="http://www.eclipse.org/modeling/images/modeling_about.png"
    bugzillaComponentId="modeling-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-     <description><![CDATA[This modeling package contains a collection of Eclipse Modeling Project components, including EMF, GMF, MDT XSD/OCL/UML2, M2M, M2T, and EMFT elements. It includes a complete SDK, developer tools and source code. Note that the Modeling package includes some incubating components, as indicated by feature numbers less than 1.0.0 on the feature list.]]></description>
+     <description><![CDATA[This modeling package contains a collection of Eclipse Modeling Project components, including EMF, GMF, MDT XSD/OCL/UML2, M2M, M2T, and EMFT elements. It includes a complete SDK, developer tools and source code. Note that the Modeling package includes some <a href="http://www.eclipse.org/projects/dev_process/validation-phase.php">incubating</a> components, as indicated by feature numbers less than 1.0.0 on the feature list.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
       <tester>Richard Gronback</tester>
@@ -23,11 +23,17 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://www.eclipse.org/modeling/emf/news-whatsnew.php#build"
+    url="http://wiki.eclipse.org/EMF#New_.26_Noteworthy"
     project="Eclipse Modeling Framework" />
   <NewAndNoteworthy
     url="http://wiki.eclipse.org/GMF_New_and_Noteworthy"
     project="Graphical Modeling Framework" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/MDT_1.1_New_and_Noteworthy"
+    project="Model Development Tools" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/EcoreTools_New_Noteworthy"
+    project="Ecore Tools" />
   <NewAndNoteworthy
     url="http://download.eclipse.org/eclipse/downloads/drops/S-3.4M7-200805020100/eclipse-news-M7.html"
     project="Eclipse Platform" />
@@ -62,7 +68,7 @@
   <!-- version, the feature version. -->
   <requiredFeatures>
   
-    <!-- Platform, JDT, CVS, PDE SDK-->
+  	<!-- Platform, JDT, CVS, PDE SDK-->
     <feature
       id="org.eclipse.sdk"
       version="latest">
@@ -94,7 +100,7 @@
       version="latest">
     </feature> 
     
-  <!-- UML2 Modeling -->
+	<!-- UML2 Modeling -->
     <feature
       id="org.eclipse.uml2.sdk"
       version="latest">
@@ -208,7 +214,7 @@
       version="latest">
     </feature>
 
-  <!-- Obligatory EPP feature -->
+	<!-- Obligatory EPP feature -->
     <feature
       id="org.eclipse.epp.usagedata.feature"
       version="latest">
