@@ -16,6 +16,7 @@ TESTSTATUSFILENAME="status34test.stub"
 LOCKFILE="/tmp/epp.build34.lock"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 DOWNLOADPACKAGES="cpp java jee rcp"
+INCUBATIONPACKAGES="modeling"
 PLATFORMS="win32.win32.x86.zip linux.gtk.x86.tar.gz linux.gtk.x86_64.tar.gz macosx.carbon.ppc.tar.gz"
 BASENAME="ganymede-RC5"
 BUILDSUCCESS=""
@@ -23,6 +24,7 @@ BUILDSUCCESS=""
 ###############################################################################
 
 . ${WORKING_DIR}/${CVSPATH}/tools/functions.sh
+. ${WORKING_DIR}/${CVSPATH}/tools/incubation.sh
 
 # only one build process allowed
 if [ -e ${LOCKFILE} ]; then
@@ -155,7 +157,7 @@ do
   then
 cat >>$TARGET_DIR/$STATUSFILENAME <<Endofmessage
 <td align="center" style="background-color: rgb(204, 255, 204);">
-  <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/index.html">Success</a><br>
+  <a href="http://build.eclipse.org/technology/epp/epp_bu$TARGET_DIR/$TESTSTATUSFILENAMEild/34/download/${START_TIME}/index.html">Success</a><br>
   <font size="-2">
     <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/${START_TIME}_eclipse-${PACKAGENAME}-${BASENAME}-win32.win32.x86.zip">win32</a> |
     <a href="http://build.eclipse.org/technology/epp/epp_build/34/download/${START_TIME}/index.html">other</a>
@@ -197,6 +199,13 @@ Endofmessage
   fi
 done
 echo "</tr>" >>$TARGET_DIR/$TESTSTATUSFILENAME
+
+for INCUBATIONPACKAGE in ${INCUBATIONPACKAGES};
+do
+    pullAllConfigFiles eclipse-${INCUBATIONPACKAGE}-${BASENAME} $TARGET_DIR/index.html ${START_TIME}
+    pullAllConfigFiles eclipse-${INCUBATIONPACKAGE}-${BASENAME} $TARGET_DIR/$STATUSFILENAME ${START_TIME}
+    pullAllConfigFiles eclipse-${INCUBATIONPACKAGE}-${BASENAME} $TARGET_DIR/$TESTSTATUSFILENAME ${START_TIME}
+done
 
 
 # move everything to download area
