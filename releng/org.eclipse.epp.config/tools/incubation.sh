@@ -11,8 +11,9 @@ function incubationLinkFix {
   VERSION=$3
 
   echo "Fixing ${FILEPATH} for package ${PACKAGENAME} (${VERSION})"
+  echo "using ${VERSION}_${PACKAGENAME} to ${VERSION}_${PACKAGENAME}-incubation"
   
-  sed 's/${VERSION}_${PACKAGENAME}/${VERSION}_${PACKAGENAME}-incubation/g' \
+  sed "s/${VERSION}_${PACKAGENAME}/${VERSION}_${PACKAGENAME}-incubation/g" \
       ${FILEPATH} >${FILEPATH}.temp
   mv ${FILEPATH}.temp ${FILEPATH}
   
