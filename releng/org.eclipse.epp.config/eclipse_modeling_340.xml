@@ -32,8 +32,14 @@
     url="http://wiki.eclipse.org/MDT_1.1_New_and_Noteworthy"
     project="Model Development Tools" />
   <NewAndNoteworthy
+    url="http://wiki.eclipse.org/ATL_2.0.0_New_and_Noteworthy"
+    project="M2M ATL" />
+  <NewAndNoteworthy
     url="http://wiki.eclipse.org/EcoreTools_New_Noteworthy"
     project="Ecore Tools" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/EMF_Compare_0.8.0_New_And_Noteworthy"
+    project="EMF Compare" />
   <NewAndNoteworthy
     url="http://download.eclipse.org/eclipse/downloads/drops/S-3.4M7-200805020100/eclipse-news-M7.html"
     project="Eclipse Platform" />
