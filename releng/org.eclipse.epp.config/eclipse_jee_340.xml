@@ -294,10 +294,6 @@
       id="org.eclipse.rse"
       version="latest">
     </feature>
-    <feature
-      id="org.eclipse.tm.terminal.sdk"
-      version="latest">
-    </feature>
 
     <feature
       id="org.eclipse.epp.usagedata.feature"
