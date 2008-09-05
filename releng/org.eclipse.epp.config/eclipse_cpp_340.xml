@@ -26,7 +26,7 @@
     url="http://wiki.eclipse.org/CDT/User/NewIn50"
     project="Eclipse CDT" />
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.4M7-200805020100/eclipse-news-M7.html"
+    url="http://download.eclipse.org/eclipse/downloads/drops/R-3.4-200806172000/whatsnew3.4/eclipse-news-part1.html"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"
@@ -36,11 +36,11 @@
 
 	<!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-	<rcp version="I20080617-2000" />
+	<rcp version="3.4.1RC1" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
 	<product
-    name="eclipse-cpp-ganymede-RC5" 
+    name="eclipse-cpp-ganymede-SR1-RC1" 
 	  eclipseProductId="org.eclipse.platform.ide"
 	  initialPerspectiveId="org.eclipse.cdt.ui.CPerspective" />
 
@@ -118,7 +118,7 @@
 
 	<!-- folder, pointing to a folder containing the zipped root files for each of 
 		the target platforms. -->
-  <rootFileFolder folder="/home/data/httpd/download.eclipse.org/eclipse/downloads/drops/I20080617-2000" />
+  <rootFileFolder folder="/home/data/httpd/download.eclipse.org/eclipse/downloads/drops/M-3.4.1RC1-200808272000" />
 
   <!-- relativeFolder, names the subfolder of the base folder where the update site will be created. 
     This is configurable so that working areas, especially root files, are reusable. -->
@@ -164,9 +164,9 @@ org.eclipse.platform
       <eclipseIniFileContent path="/eclipse/Eclipse.app/Contents/MacOS/">-showsplash
 org.eclipse.platform
 -startup
-../../../plugins/org.eclipse.equinox.launcher_1.0.100.v20080509-1800.jar
+../../../plugins/org.eclipse.equinox.launcher_1.0.101.R34x_v20080819.jar
 --launcher.library
-../../../plugins/org.eclipse.equinox.launcher.carbon.macosx_1.0.100.v20080509-1800
+../../../plugins/org.eclipse.equinox.launcher.carbon.macosx_1.0.101.R34x_v20080731
 -vmargs
 -Xdock:icon=../Resources/Eclipse.icns
 -XstartOnFirstThread
