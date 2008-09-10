@@ -61,6 +61,7 @@
   <!-- url, pointing to an update site. -->
   <updateSites>
     <!-- local mirrors -->
+    <updateSite url="file:///home/data/httpd/download.eclipse.org/eclipse/updates/3.4.x/" />
     <updateSite url="file:///home/data/httpd/download.eclipse.org/eclipse/updates/3.4milestones/" />
     <updateSite url="file:///home/data/httpd/download.eclipse.org/releases/ganymede/staging/" />
 
@@ -77,7 +78,7 @@
   	<!-- Platform, JDT, CVS, PDE SDK-->
     <feature
       id="org.eclipse.sdk"
-      version="latest">
+      version="3.4.1.R34x_v20080827-7O7S6C6I-5qI6pAeBkU9vWDFvfDbttOudPgwohs5aHDz-">
     </feature>
     
     <!--- EMF, XSD, SDO SDK-->

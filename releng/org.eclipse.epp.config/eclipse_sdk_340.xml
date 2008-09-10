@@ -49,6 +49,7 @@
   <!-- url, pointing to an update site. -->
   <updateSites>
     <!-- local mirrors -->
+    <updateSite url="file:///home/data/httpd/download.eclipse.org/eclipse/updates/3.4.x/" />
     <updateSite url="file:///home/data/httpd/download.eclipse.org/eclipse/updates/3.4/" />
     <updateSite url="file:///home/data/httpd/download.eclipse.org/eclipse/updates/3.4milestones/" />
     <updateSite url="file:///home/data/httpd/download.eclipse.org/releases/ganymede/staging/" />
@@ -70,74 +71,74 @@
   <requiredFeatures>
     <feature
       id="org.eclipse.platform"
-      version="latest">
+      version="3.4.1.r341_v20080731-9I96EiDElYevwvp-bdz--IZ6K3PgmmAGz-O4-iu">
     </feature>
 
     <feature
       id="org.eclipse.sdk"
-      version="latest">
+      version="3.4.1.R34x_v20080827-7O7S6C6I-5qI6pAeBkU9vWDFvfDbttOudPgwohs5aHDz-">
     </feature>
 
 
     <feature
       id="org.eclipse.cvs"
-      version="latest">
+      version="1.1.0.v20080603-7C79E8N9nJD4oAW9V1938">
     </feature>
     <feature
       id="org.eclipse.cvs.source"
-      version="latest">
+      version="1.1.0.v20080603-7C79E8N9nJD4oAW9V1938">
     </feature>
     <feature
       id="org.eclipse.equinox.p2.user.ui"
-      version="latest">
+      version="1.0.1.r34x_v20080721-7d-7KENoJ27phJLBHKAff278HM">
     </feature>
     <feature
       id="org.eclipse.equinox.p2.user.ui.source"
-      version="latest">
+      version="1.0.1.r34x_v20080721-7d-7KENoJ27phJLBHKAff278HM">
     </feature>
     <feature
       id="org.eclipse.help"
-      version="latest">
+      version="1.0.1.R34x_v20080827-7r7xEIxEI6Zu5nEbN7M3UBpCkbht">
     </feature>
     <feature
       id="org.eclipse.help.source"
-      version="latest">
+      version="1.0.1.R34x_v20080827-7r7xEIxEI6Zu5nEbN7M3UBpCkbht">
     </feature>
     <feature
       id="org.eclipse.jdt"
-      version="latest">
+      version="3.4.1.r341_v20080709-0800-7o7tEAeEFdT0vtbjsdvI4s826L55">
     </feature>
     <feature
       id="org.eclipse.jdt.source"
-      version="latest">
+      version="3.4.1.r341_v20080709-0800-7o7tEAeEFdT0vtbjsdvI4s826L55">
     </feature>
     <feature
       id="org.eclipse.pde"
-      version="latest">
+      version="3.4.1.r341_v20080731-7T7U0E9mlRIuGTYviF_VP">
     </feature>
     <feature
       id="org.eclipse.pde.source"
-      version="latest">
+      version="3.4.1.r341_v20080731-7T7U0E9mlRIuGTYviF_VP">
     </feature>
     <feature
       id="org.eclipse.pde.p2"
-      version="latest">
+      version="1.0.0.v20080522-1--7w3119171503111">
     </feature>
     <feature
       id="org.eclipse.pde.p2.source"
-      version="latest">
+      version="1.0.0.v20080522-1--7w3119171503111">
     </feature>
     <feature
       id="org.eclipse.platform.source"
-      version="latest">
+      version="3.4.1.r341_v20080731-9I96EiDElYevwvp-bdz--IZ6K3PgmmAGz-O4-iu">
     </feature>
     <feature
       id="org.eclipse.rcp"
-      version="latest">
+      version="3.4.100.r341_v20080814-989JES4EdAciFYBjagsDXSwQ2341">
     </feature>
     <feature
       id="org.eclipse.rcp.source"
-      version="latest">
+      version="3.4.100.r341_v20080814-989JES4EdAciFYBjagsDXSwQ2341">
     </feature>
 
   </requiredFeatures>
