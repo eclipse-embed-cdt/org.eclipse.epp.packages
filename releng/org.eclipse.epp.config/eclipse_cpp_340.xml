@@ -36,11 +36,11 @@
 
 	<!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-	<rcp version="3.4.1RC1" />
+	<rcp version="3.4.1RC2" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
 	<product
-    name="eclipse-cpp-ganymede-SR1-RC1" 
+    name="eclipse-cpp-ganymede-SR1-RC2" 
 	  eclipseProductId="org.eclipse.platform.ide"
 	  initialPerspectiveId="org.eclipse.cdt.ui.CPerspective" />
 
@@ -68,7 +68,7 @@
 	<requiredFeatures>
     <feature
       id="org.eclipse.platform"
-      version="3.4.1.r341_v20080731-9I96EiDElYevwvp-bdz--IZ6K3PgmmAGz-O4-iu">
+      version="latest">
     </feature>
 
     <feature
@@ -82,7 +82,7 @@
 
     <feature
       id="org.eclipse.cvs"
-      version="1.1.0.v20080603-7C79E8N9nJD4oAW9V1938">
+      version="latest">
     </feature>
 
     <feature
@@ -119,7 +119,7 @@
 
 	<!-- folder, pointing to a folder containing the zipped root files for each of 
 		the target platforms. -->
-  <rootFileFolder folder="/home/data/httpd/download.eclipse.org/eclipse/downloads/drops/M-3.4.1RC1-200808272000" />
+  <rootFileFolder folder="/home/data/httpd/download.eclipse.org/eclipse/downloads/drops/M-3.4.1RC2-200809032000" />
 
   <!-- relativeFolder, names the subfolder of the base folder where the update site will be created. 
     This is configurable so that working areas, especially root files, are reusable. -->
