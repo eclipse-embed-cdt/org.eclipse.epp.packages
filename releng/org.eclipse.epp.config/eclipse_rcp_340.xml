@@ -68,12 +68,12 @@
   <requiredFeatures>
     <feature
       id="org.eclipse.platform"
-      version="latest">
+      version="3.4.1.r341_v20080731-9I96EiDElYevwvp1XVz-1BX1kHPgmmAGz-s4z-eu">
     </feature>
 
     <feature
       id="org.eclipse.sdk"
-      version="latest">
+      version="3.4.1.R34x_v20080827-7O7S78C2J40sK2nBBEcK5gZu5VSWWnyZ7-c3ZClqF5H4A">
     </feature>
 
     <feature

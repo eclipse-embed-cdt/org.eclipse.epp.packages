@@ -78,7 +78,7 @@
   	<!-- Platform, JDT, CVS, PDE SDK-->
     <feature
       id="org.eclipse.sdk"
-      version="latest">
+      version="3.4.1.R34x_v20080827-7O7S78C2J40sK2nBBEcK5gZu5VSWWnyZ7-c3ZClqF5H4A">
     </feature>
     
     <!--- EMF, XSD, SDO SDK-->
