@@ -36,7 +36,7 @@
 
 	<!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-	<rcp version="3.4.1RC2" />
+	<rcp version="3.4.1RC3" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
 	<product
