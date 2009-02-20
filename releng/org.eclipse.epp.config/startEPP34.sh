@@ -18,7 +18,7 @@ CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 DOWNLOADPACKAGES="cpp java jee rcp"
 INCUBATIONPACKAGES="modeling"
 PLATFORMS="win32.win32.x86.zip linux.gtk.x86.tar.gz linux.gtk.x86_64.tar.gz macosx.carbon.ppc.tar.gz"
-BASENAME="ganymede-SR1-RC3"
+BASENAME="ganymede-SR2-RC3"
 BUILDSUCCESS=""
 
 ###############################################################################
@@ -53,7 +53,7 @@ echo "...starting build"
 # create packages
 for PACKAGENAME in ${ALL_PACKAGE_NAMES};
 do
-    PACKAGECONFIGURATION="${TARGET_DIR}/eclipse_"${PACKAGENAME}"_341.xml"
+    PACKAGECONFIGURATION="${TARGET_DIR}/eclipse_"${PACKAGENAME}"_342.xml"
     echo "...creating package ${PACKAGENAME} with config ${PACKAGECONFIGURATION}"
     cd ${ECLIPSE_DIR}
     WORKSPACE=${WORKING_DIR}/workspace_${PACKAGENAME}
