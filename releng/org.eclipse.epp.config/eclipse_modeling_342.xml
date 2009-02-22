@@ -98,6 +98,14 @@
     
     <!-- Query, Transaction, Validation -->
     <feature
+      id="org.eclipse.ocl"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.emf.ocl"
+      version="latest">
+    </feature>
+    <feature
       id="org.eclipse.emf.emfqtv.all.sdk"
       version="latest">
     </feature>
@@ -108,7 +116,13 @@
       version="latest">
     </feature> 
     
-	<!-- UML2 Modeling -->
+    <!-- GMF -->
+    <feature
+      id="org.eclipse.gmf.sdk"
+      version="latest">
+    </feature>
+
+    <!-- UML2 Modeling -->
     <feature
       id="org.eclipse.uml2.sdk"
       version="latest">
@@ -121,12 +135,6 @@
     <!-- OCL (need to include examples for console) -->
     <feature
       id="org.eclipse.ocl.all.sdk"
-      version="latest">
-    </feature>
-    
-    <!-- GMF -->
-    <feature
-      id="org.eclipse.gmf.sdk"
       version="latest">
     </feature>
     
@@ -164,6 +172,20 @@
       version="latest">
     </feature> 
     
+    <!-- EMF Tools -->
+    <feature
+      id="org.eclipse.emf.ecoretools.sdk"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.emf.mint.sdk"
+      version="latest">
+    </feature>
+    <feature
+      id="org.eclipse.emf.compare.sdk"
+      version="latest">
+    </feature>
+
     <!-- Search -->
     <feature
       id="org.eclipse.emf.search.sdk"
@@ -179,20 +201,6 @@
     </feature>
     <feature
       id="org.eclipse.uml2.search"
-      version="latest">
-    </feature>
-    
-    <!-- EMF Tools -->
-    <feature
-      id="org.eclipse.emf.ecoretools.sdk"
-      version="latest">
-    </feature>
-    <feature
-      id="org.eclipse.emf.mint.sdk"
-      version="latest">
-    </feature>
-    <feature
-      id="org.eclipse.emf.compare.sdk"
       version="latest">
     </feature>
     
