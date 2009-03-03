@@ -12,7 +12,8 @@ BASE_URL=${FILESYSTEM_BASE}
 
 # Ganymede Repositories
 REPO_ECLIPSE34="${BASE_URL}/eclipse/updates/3.4/"
-REPO_GANYMEDE="${BASE_URL}/releases/ganymede/"
+#REPO_GANYMEDE="${BASE_URL}/releases/ganymede/"
+REPO_GANYMEDE="file:///shared/galileo/build/galileo/I20090228-1400"
 REPO_EPP_GANYMEDE="${BASE_URL}/technology/epp/packages/ganymede/"
 REPO_EPP_UDC="${BASE_URL}/technology/epp/updates/1.0/"
 
