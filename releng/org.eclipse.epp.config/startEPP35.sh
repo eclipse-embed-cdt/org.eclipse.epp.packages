@@ -1,0 +1,88 @@
+#!/bin/sh
+#set -x
+umask 0022
+ulimit -n 2048
+
+
+HTTP_BASE="http://download.eclipse.org"
+FILESYSTEM_BASE="file:///home/data/httpd/download.eclipse.org"
+
+# change this if building on build.eclipse.org to FILESYSTEM_BASE
+BASE_URL=${FILESYSTEM_BASE}
+
+# Ganymede Repositories
+REPO_ECLIPSE34="${BASE_URL}/eclipse/updates/3.4/"
+REPO_GANYMEDE="${BASE_URL}/releases/ganymede/"
+REPO_EPP_GANYMEDE="${BASE_URL}/technology/epp/packages/ganymede/"
+REPO_EPP_UDC="${BASE_URL}/technology/epp/updates/1.0/"
+
+# Galileo Repositories
+REPO_ECLIPSE35="${BASE_URL}/eclipse/updates/3.5milestones/"
+REPO_GALILEO="${BASE_URL}/releases/galileo/"
+REPO_EPP_GALILEO="${BASE_URL}/technology/epp/packages/galileo/milestones"
+
+# Repositories (Galileo vs. Ganymede)
+METADATAREPOSITORIES="${REPO_ECLIPSE35},${REPO_GALILEO},${REPO_EPP_UDC},${REPO_EPP_GALILEO}"
+ARTIFACTREPOSITORIES="${REPO_ECLIPSE35},${REPO_GALILEO},${REPO_EPP_UDC}"
+# METADATAREPOSITORIES="${REPO_ECLIPSE34},${REPO_GANYMEDE},${REPO_EPP_GANYMEDE}"
+# ARTIFACTREPOSITORIES="${REPO_ECLIPSE34},${REPO_GANYMEDE}"
+
+# Eclipse installation, Java, etc.
+ECLIPSE="/shared/technology/epp/epp_build/35/eclipse/eclipse"
+JRE="/opt/ibm/java2-ppc-50/bin/java"
+
+PACKAGES="epp.package.cpp epp.package.java epp.package.jee epp.package.modeling epp.package.rcp epp.package.reporting"
+OSes=( win32 linux linux macosx )
+WSes=( win32 gtk gtk carbon )
+ARCHes=( x86 x86 x86_64 ppc )
+
+BUILD_DIR=/shared/technology/epp/epp_build/35/build
+
+###############################################################################
+
+# variables
+LOCKFILE="/tmp/epp.build35.lock"
+
+###############################################################################
+
+# only one build process allowed
+if [ -e ${LOCKFILE} ]; then
+    echo "${START_TIME} EPP build - lockfile ${LOCKFILE} exists" >/dev/stderr
+    exit 1
+fi
+trap "rm -f ${LOCKFILE}; exit" INT TERM EXIT
+touch ${LOCKFILE}
+
+for PACKAGE in ${PACKAGES};
+do
+  echo "Building package for IU ${PACKAGE}"
+  mkdir -p ${BUILD_DIR}/${PACKAGE}
+  for index in 0 1 2 3;
+  do
+    echo ".Building ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]}"
+    PACKAGE_BUILD_DIR="${BUILD_DIR}/${PACKAGE}/${OSes[$index]}_${WSes[$index]}_${ARCHes[$index]}"
+    rm -rf ${PACKAGE_BUILD_DIR}
+    mkdir ${PACKAGE_BUILD_DIR}
+    ${ECLIPSE} -nosplash -consoleLog -application org.eclipse.equinox.p2.director.app.application \
+      -metadataRepositories ${METADATAREPOSITORIES} -artifactRepositories ${ARTIFACTREPOSITORIES} \
+      -installIU ${PACKAGE} \
+      -destination ${PACKAGE_BUILD_DIR}/eclipse \
+      -profile ${PACKAGE} \
+      -profileProperties org.eclipse.update.install.features=true \
+      -bundlepool ${PACKAGE_BUILD_DIR}/eclipse \
+      -p2.os ${OSes[$index]} \
+      -p2.ws ${WSes[$index]} \
+      -p2.arch ${ARCHes[$index]} \
+      -roaming \
+      -vm ${JRE} \
+      -vmargs -Declipse.p2.data.area=${PACKAGE_BUILD_DIR}/eclipse/p2 \
+         2>&1 >${PACKAGE_BUILD_DIR}/build.log
+  done
+done
+
+###############################################################################
+
+# remove lockfile
+rm ${LOCKFILE}
+
+## EOF
