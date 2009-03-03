@@ -93,7 +93,7 @@ do
       if [ ${OSes[$index]} = "win32" ]; then
         zip -r -o -q ${DOWNLOAD_DIR}/${START_TIME}_eclipse-${PACKAGE}-${EXTENSION}.zip eclipse
       else
-        tar zc --group=eclipse --owner=eclipse -f ${DOWNLOAD_DIR}/${START_TIME}_eclipse-${PACKAGE}-${EXTENSION}.tar.gz eclipse
+        tar zcf ${DOWNLOAD_DIR}/${START_TIME}_eclipse-${PACKAGE}-${EXTENSION}.tar.gz eclipse
       fi
     else
       echo "...failed while building package ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]}"
