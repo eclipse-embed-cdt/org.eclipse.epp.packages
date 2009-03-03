@@ -69,7 +69,7 @@ do
   for index in 0 1 2 3;
   do
     echo -n "..Building ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]}"
-    EXTENSION=${OSes[$index]}\.${WSes[$index]}\.${ARCHes[$index]}"
+    EXTENSION="${OSes[$index]}\.${WSes[$index]}\.${ARCHes[$index]}"
     PACKAGE_BUILD_DIR="${BUILD_DIR}/${PACKAGE}/${EXTENSION}"
     rm -rf ${PACKAGE_BUILD_DIR}
     mkdir ${PACKAGE_BUILD_DIR}
@@ -93,7 +93,7 @@ do
       if [ ${OSes[$index]} = "win32" ]; then
         zip -r -o -q ${DOWNLOAD_DIR}/${START_TIME}_eclipse-${PACKAGE}-${EXTENSION}.zip eclipse
       else
-        tar zcf ${DOWNLOAD_DIR}/${START_TIME}_eclipse-${PACKAGE}-${EXTENSION}.tar.gz eclipse
+        tar zc --owner=eclipse --group=eclipse -f ${DOWNLOAD_DIR}/${START_TIME}_eclipse-${PACKAGE}-${EXTENSION}.tar.gz eclipse
       fi
     else
       echo "...failed while building package ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]}"
