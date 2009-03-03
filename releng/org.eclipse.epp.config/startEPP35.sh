@@ -35,6 +35,7 @@ PACKAGES="epp.package.cpp epp.package.java epp.package.jee epp.package.modeling 
 OSes=( win32 linux linux macosx )
 WSes=( win32 gtk gtk carbon )
 ARCHes=( x86 x86 x86_64 ppc )
+FORMAT=( zip tar.gz tar.gz tar.gz )
 
 BUILD_DIR=/shared/technology/epp/epp_build/35/build
 
@@ -59,7 +60,7 @@ do
   mkdir -p ${BUILD_DIR}/${PACKAGE}
   for index in 0 1 2 3;
   do
-    echo ".Building ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]}"
+    echo -n "..Building ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]}"
     PACKAGE_BUILD_DIR="${BUILD_DIR}/${PACKAGE}/${OSes[$index]}_${WSes[$index]}_${ARCHes[$index]}"
     rm -rf ${PACKAGE_BUILD_DIR}
     mkdir ${PACKAGE_BUILD_DIR}
@@ -77,6 +78,11 @@ do
       -vm ${JRE} \
       -vmargs -Declipse.p2.data.area=${PACKAGE_BUILD_DIR}/eclipse/p2 \
          2>&1 >${PACKAGE_BUILD_DIR}/build.log
+    if [ $? = "0" ]; then
+      echo "...successfully finished ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]} package build"
+    else
+      echo "...failed while building package ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]}"
+    fi
   done
 done
 
