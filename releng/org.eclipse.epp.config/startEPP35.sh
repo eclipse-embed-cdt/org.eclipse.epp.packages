@@ -61,6 +61,9 @@ touch ${LOCKFILE}
 DOWNLOAD_DIR=${DOWNLOAD_BASE_DIR}/${START_TIME}
 mkdir ${DOWNLOAD_DIR}
 
+# log to file
+exec 1>${DOWNLOAD_DIR}/eppbuild.log 2>&1
+
 # build the packages
 for PACKAGE in ${PACKAGES};
 do
