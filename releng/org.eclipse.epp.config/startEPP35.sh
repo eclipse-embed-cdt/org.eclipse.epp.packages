@@ -69,7 +69,7 @@ do
   for index in 0 1 2 3;
   do
     echo -n "..Building ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]}"
-    EXTENSION="${OSes[$index]}\.${WSes[$index]}\.${ARCHes[$index]}"
+    EXTENSION="${OSes[$index]}.${WSes[$index]}.${ARCHes[$index]}"
     PACKAGE_BUILD_DIR="${BUILD_DIR}/${PACKAGE}/${EXTENSION}"
     rm -rf ${PACKAGE_BUILD_DIR}
     mkdir ${PACKAGE_BUILD_DIR}
