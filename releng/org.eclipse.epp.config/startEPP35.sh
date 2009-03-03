@@ -37,11 +37,14 @@ WSes=( win32 gtk gtk carbon )
 ARCHes=( x86 x86 x86_64 ppc )
 FORMAT=( zip tar.gz tar.gz tar.gz )
 
-BUILD_DIR=/shared/technology/epp/epp_build/35/build
+BASE_DIR=/shared/technology/epp/epp_build/35
+DOWNLOAD_BASE_DIR=${BASE_DIR}/download
+BUILD_DIR=${BASE_DIR}/build
 
 ###############################################################################
 
 # variables
+START_TIME=`date -u +%Y%m%d-%H%M`
 LOCKFILE="/tmp/epp.build35.lock"
 
 ###############################################################################
@@ -54,6 +57,11 @@ fi
 trap "rm -f ${LOCKFILE}; exit" INT TERM EXIT
 touch ${LOCKFILE}
 
+# create download directory
+DOWNLOAD_DIR=${DOWNLOAD_BASE_DIR}/${START_TIME}
+mkdir ${DOWNLOAD_DIR}
+
+# build the packages
 for PACKAGE in ${PACKAGES};
 do
   echo "Building package for IU ${PACKAGE}"
@@ -61,7 +69,8 @@ do
   for index in 0 1 2 3;
   do
     echo -n "..Building ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]}"
-    PACKAGE_BUILD_DIR="${BUILD_DIR}/${PACKAGE}/${OSes[$index]}_${WSes[$index]}_${ARCHes[$index]}"
+    EXTENSION=${OSes[$index]}\.${WSes[$index]}\.${ARCHes[$index]}"
+    PACKAGE_BUILD_DIR="${BUILD_DIR}/${PACKAGE}/${EXTENSION}"
     rm -rf ${PACKAGE_BUILD_DIR}
     mkdir ${PACKAGE_BUILD_DIR}
     ${ECLIPSE} -nosplash -consoleLog -application org.eclipse.equinox.p2.director.app.application \
@@ -77,9 +86,15 @@ do
       -roaming \
       -vm ${JRE} \
       -vmargs -Declipse.p2.data.area=${PACKAGE_BUILD_DIR}/eclipse/p2 \
-         2>&1 >${PACKAGE_BUILD_DIR}/build.log
+         2>&1 >${DOWNLOAD_DIR}/${PACKAGE}_${EXTENSION}.log
     if [ $? = "0" ]; then
       echo "...successfully finished ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]} package build"
+      cd ${PACKAGE_BUILD_DIR}
+      if [ ${OSes[$index]} = "win32" ]; then
+        zip -r -o -q ${DOWNLOAD_DIR}/${START_TIME}_eclipse-${PACKAGE}-${EXTENSION}.zip eclipse
+      else
+        tar zc --group=eclipse --owner=eclipse -f ${DOWNLOAD_DIR}/${START_TIME}_eclipse-${PACKAGE}-${EXTENSION}.tar.gz eclipse
+      fi
     else
       echo "...failed while building package ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]}"
     fi
