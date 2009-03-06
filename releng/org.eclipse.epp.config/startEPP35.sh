@@ -19,7 +19,8 @@ REPO_EPP_UDC="${BASE_URL}/technology/epp/updates/1.0/"
 
 # Galileo Repositories
 REPO_ECLIPSE35="${BASE_URL}/eclipse/updates/3.5milestones/"
-REPO_GALILEO="${BASE_URL}/releases/galileo/"
+#REPO_GALILEO="${BASE_URL}/releases/galileo/"
+REPO_GALILEO="http://build.eclipse.org/galileo/staging/"
 REPO_EPP_GALILEO="${BASE_URL}/technology/epp/packages/galileo/milestones"
 
 # Repositories (Galileo vs. Ganymede)
