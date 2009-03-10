@@ -12,12 +12,12 @@ BASE_URL=${FILESYSTEM_BASE}
 
 # Ganymede Repositories
 REPO_ECLIPSE34="${BASE_URL}/eclipse/updates/3.4/"
-#REPO_GANYMEDE="${BASE_URL}/releases/ganymede/"
+REPO_GANYMEDE="${BASE_URL}/releases/ganymede/"
 REPO_EPP_GANYMEDE="${BASE_URL}/technology/epp/packages/ganymede/"
 REPO_EPP_UDC="${BASE_URL}/technology/epp/updates/1.0/"
 
 # Galileo Repositories
-REPO_ECLIPSE35="http://download.eclipse.org/eclipse/updates/3.5-I-builds"
+REPO_ECLIPSE35="${BASE_URL}/eclipse/updates/3.5milestones"
 #REPO_GALILEO="${BASE_URL}/releases/galileo/"
 REPO_GALILEO="http://build.eclipse.org/galileo/staging/"
 REPO_EPP_GALILEO="${BASE_URL}/technology/epp/packages/galileo/milestones"
@@ -32,7 +32,7 @@ ARTIFACTREPOSITORIES="${REPO_ECLIPSE35},${REPO_GALILEO},${REPO_EPP_UDC}"
 ECLIPSE="/shared/technology/epp/epp_build/35/eclipse/eclipse"
 JRE="/opt/ibm/java2-ppc-50/bin/java"
 
-PACKAGES="epp.package.cpp epp.package.java epp.package.jee epp.package.modeling epp.package.rcp epp.package.reporting"
+PACKAGES="epp.package.cpp epp.package.java epp.package.jee epp.package.modeling epp.package.rcp epp.package.reporting epp.package.javame"
 OSes=( win32 linux linux macosx )
 WSes=( win32 gtk gtk carbon )
 ARCHes=( x86 x86 x86_64 ppc )
