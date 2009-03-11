@@ -100,6 +100,8 @@ do
       else
         tar zc --owner=100 --group=100 -f ${DOWNLOAD_DIR}/${START_TIME}_eclipse-${PACKAGE}-${EXTENSION}.tar.gz eclipse
       fi
+      cd ..
+      rm -r ${PACKAGE_BUILD_DIR}
     else
       echo "...failed while building package ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]}"
     fi
