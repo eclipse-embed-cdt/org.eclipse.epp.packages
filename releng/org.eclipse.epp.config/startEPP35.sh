@@ -89,7 +89,7 @@ do
       -p2.arch ${ARCHes[$index]} \
       -roaming \
       -vm ${JRE} \
-      -vmargs -Declipse.p2.data.area=${PACKAGE_BUILD_DIR}/eclipse/p2 \
+      -vmargs -Declipse.p2.mirrors=false -Declipse.p2.data.area=${PACKAGE_BUILD_DIR}/eclipse/p2 \
          2>&1 >${DOWNLOAD_DIR}/${PACKAGE}_${EXTENSION}.log
     if [ $? = "0" ]; then
       echo "...successfully finished ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]} package build"
