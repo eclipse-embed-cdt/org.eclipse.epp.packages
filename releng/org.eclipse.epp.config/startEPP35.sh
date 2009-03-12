@@ -33,7 +33,7 @@ ARTIFACTREPOSITORIES="${REPO_ECLIPSE35},${REPO_GALILEO},${REPO_EPP_UDC}"
 ECLIPSE="/shared/technology/epp/epp_build/35/eclipse/eclipse"
 JRE="/opt/ibm/java2-ppc-50/bin/java"
 
-PACKAGES="epp.package.cpp epp.package.java epp.package.jee epp.package.modeling epp.package.rcp epp.package.reporting epp.package.javame"
+PACKAGES="epp.package.javame epp.package.cpp epp.package.java epp.package.jee epp.package.modeling epp.package.rcp epp.package.reporting"
 OSes=( win32 linux linux macosx )
 WSes=( win32 gtk gtk carbon )
 ARCHes=( x86 x86 x86_64 ppc )
@@ -64,7 +64,8 @@ DOWNLOAD_DIR=${DOWNLOAD_BASE_DIR}/${START_TIME}
 mkdir ${DOWNLOAD_DIR}
 
 # log to file
-exec 1>${DOWNLOAD_DIR}/eppbuild.log 2>&1
+LOGFILE="${DOWNLOAD_DIR}/build.log"
+exec 1>${LOGFILE} 2>&1
 
 # build the packages
 for PACKAGE in ${PACKAGES};
@@ -107,6 +108,9 @@ do
     fi
   done
 done
+
+
+
 
 ###############################################################################
 
