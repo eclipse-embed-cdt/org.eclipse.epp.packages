@@ -1,12 +1,13 @@
 # EPP package definitions
 # name, [CVS], repository string, path to file, version [HEAD], EPP local filename
 
-cpp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_cpp_342.xml,HEAD,eclipse_cpp_342.xml
-java,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_java_342.xml,HEAD,eclipse_java_342.xml
-#jee,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/webtools,webtools.releng/org.eclipse.wtp.releng.epp/config/eclipse_jee_342.xml,HEAD,eclipse_jee_342.xml
-jee,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_jee_342.xml,HEAD,eclipse_jee_342.xml
-rcp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_rcp_342.xml,HEAD,eclipse_rcp_342.xml
-#modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/modeling,org.eclipse.amalgam/releng/org.eclipse.amalgam.releng/epp/eclipse_modeling_ganymede.xml,HEAD,eclipse_modeling_342.xml
-modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_modeling_342.xml,HEAD,eclipse_modeling_342.xml
-#reporting,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/birt,source/org.eclipse.birt.releng.birtbuilder/epp/eclipse_reporting_342.xml,HEAD,eclipse_reporting_342.xml
-reporting,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_reporting_342.xml,HEAD,eclipse_reporting_342.xml
+cpp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_cpp_350.xml,HEAD,eclipse_cpp_350.xml
+javame,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_javame_350.xml,HEAD,eclipse_javame_350.xml
+java,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_java_350.xml,HEAD,eclipse_java_350.xml
+#jee,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/webtools,webtools.releng/org.eclipse.wtp.releng.epp/config/eclipse_jee_350.xml,HEAD,eclipse_jee_350.xml
+jee,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_jee_350.xml,HEAD,eclipse_jee_350.xml
+rcp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_rcp_350.xml,HEAD,eclipse_rcp_350.xml
+#modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/modeling,org.eclipse.amalgam/releng/org.eclipse.amalgam.releng/epp/eclipse_modeling_ganymede.xml,HEAD,eclipse_modeling_350.xml
+modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_modeling_350.xml,HEAD,eclipse_modeling_350.xml
+#reporting,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/birt,source/org.eclipse.birt.releng.birtbuilder/epp/eclipse_reporting_350.xml,HEAD,eclipse_reporting_350.xml
+reporting,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_reporting_350.xml,HEAD,eclipse_reporting_350.xml

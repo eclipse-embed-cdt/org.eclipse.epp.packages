@@ -42,7 +42,6 @@ else
 fi
 
 PACKAGES="epp.package.javame epp.package.cpp epp.package.java epp.package.jee epp.package.modeling epp.package.rcp epp.package.reporting"
-PACKAGES_NAMES=( "JavaME" "CPP" "Java" "JEE" "Modeling" "RCP" "Reporting" )
 OSes=( win32 linux linux macosx )
 WSes=( win32 gtk gtk carbon )
 ARCHes=( x86 x86 x86_64 ppc )
@@ -60,6 +59,9 @@ START_TIME=`date -u +%Y%m%d-%H%M`
 LOCKFILE="/tmp/epp.build35.lock"
 MARKERFILENAME=".epp.nightlybuild"
 STATUSFILENAME="status.stub"
+WORKING_DIR="/shared/technology/epp/epp_build/35"
+CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
+RELEASE_NAME="-galileo-M6"
 
 ###############################################################################
 
@@ -82,6 +84,11 @@ touch ${STATUSFILE}
 # log to file
 LOGFILE="${DOWNLOAD_DIR}/build.log"
 exec 1>${LOGFILE} 2>&1
+
+# check-out configuration
+echo "...checking out configuration to ${WORKING_DIR}"
+cvs -q -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSPATH}
+pullAllConfigFiles ${WORKING_DIR}/${CVSPATH}/packages_map.txt ${DOWNLOAD_DIR}
 
 # start statusfile
 echo "<tr>" >>${STATUSFILE}
@@ -116,11 +123,12 @@ do
          2>&1 >${DOWNLOAD_DIR}/${PACKAGE}_${EXTENSION}.log
     if [ $? = "0" ]; then
       cd ${PACKAGE_BUILD_DIR}
+      PACKAGE_SHORT=`echo ${PACKAGE} | cut -d "." -f 3`${RELEASE_NAME}
       if [ ${OSes[$index]} = "win32" ]; then
-        PACKAGEFILE="${START_TIME}_eclipse-${PACKAGE}-${EXTENSION}.zip"
+        PACKAGEFILE="${START_TIME}_eclipse-${PACKAGE_SHORT}-${EXTENSION}.zip"
         zip -r -o -q ${DOWNLOAD_DIR}/${PACKAGEFILE} eclipse
       else
-        PACKAGEFILE="${START_TIME}_eclipse-${PACKAGE}-${EXTENSION}.tar.gz"
+        PACKAGEFILE="${START_TIME}_eclipse-${PACKAGE_SHORT}-${EXTENSION}.tar.gz"
         tar zc --owner=100 --group=100 -f ${DOWNLOAD_DIR}/${PACKAGEFILE} eclipse
       fi
       cd ..
