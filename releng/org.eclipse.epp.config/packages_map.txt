@@ -11,3 +11,4 @@ rcp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/r
 modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_modeling_350.xml,HEAD,eclipse_modeling_350.xml
 #reporting,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/birt,source/org.eclipse.birt.releng.birtbuilder/epp/eclipse_reporting_350.xml,HEAD,eclipse_reporting_350.xml
 reporting,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_reporting_350.xml,HEAD,eclipse_reporting_350.xml
+sdk,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_sdk_350.xml,HEAD,eclipse_sdk_350.xml
