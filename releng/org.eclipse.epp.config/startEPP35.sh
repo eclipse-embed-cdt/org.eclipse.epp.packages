@@ -127,11 +127,11 @@ do
       rm -r ${PACKAGE_BUILD_DIR}
       echo "...successfully finished ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]} package build: ${PACKAGEFILE}"
       echo ${PACKAGEFILE} >>${DOWNLOAD_DIR}/${PACKAGE}_${EXTENSION}.log
-      echo "<small style=\"background-color: rgb(204, 255, 204);\"><a href=\"${DOWNLOAD_BASE_URL}/${START_TIME}/${PACKAGEFILE}\">${EXTENSION}</a></small><br>"  >>${STATUSFILE}
+      echo "<small style=\"background-color: rgb(204, 255, 204);\"><a href=\"${DOWNLOAD_BASE_URL}/${START_TIME}/${PACKAGEFILE}\">${OSes[$index]}.${ARCHes[$index]}</a></small><br>"  >>${STATUSFILE}
     else
       echo "...failed while building package ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]}"
       echo "FAILED" >>${DOWNLOAD_DIR}/${PACKAGE}_${EXTENSION}.log
-      echo "<small style=\"background-color: rgb(255, 204, 204);\"><a href=\"${DOWNLOAD_BASE_URL}/${START_TIME}/${PACKAGE}_${EXTENSION}.log\">${EXTENSION}</a></small><br>"  >>${STATUSFILE}
+      echo "<small style=\"background-color: rgb(255, 204, 204);\"><a href=\"${DOWNLOAD_BASE_URL}/${START_TIME}/${PACKAGE}_${EXTENSION}.log\">${OSes[$index]}.${ARCHes[$index]}</a></small><br>"  >>${STATUSFILE}
     fi
   done
   echo "</td>"  >>${STATUSFILE}
