@@ -59,7 +59,6 @@ START_TIME=`date -u +%Y%m%d-%H%M`
 LOCKFILE="/tmp/epp.build35.lock"
 MARKERFILENAME=".epp.nightlybuild"
 STATUSFILENAME="status.stub"
-WORKING_DIR="/shared/technology/epp/epp_build/35"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 RELEASE_NAME="-galileo-M6"
 
@@ -85,10 +84,13 @@ touch ${STATUSFILE}
 LOGFILE="${DOWNLOAD_DIR}/build.log"
 exec 1>${LOGFILE} 2>&1
 
+# load external functions
+. ${BASE_DIR}/${CVSPATH}/tools/functions.sh
+
 # check-out configuration
-echo "...checking out configuration to ${WORKING_DIR}"
+echo "...checking out configuration to ${BASE_DIR}"
 cvs -q -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSPATH}
-pullAllConfigFiles ${WORKING_DIR}/${CVSPATH}/packages_map.txt ${DOWNLOAD_DIR}
+pullAllConfigFiles ${BASE_DIR}/${CVSPATH}/packages_map.txt ${DOWNLOAD_DIR}
 
 # start statusfile
 echo "<tr>" >>${STATUSFILE}
