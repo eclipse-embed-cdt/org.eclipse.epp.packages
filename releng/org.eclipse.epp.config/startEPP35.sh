@@ -1,5 +1,5 @@
 #!/bin/sh
-set -x
+#set -x
 umask 0022
 ulimit -n 2048
 
