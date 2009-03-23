@@ -30,10 +30,10 @@ REPO_EPP_GALILEO="${BASE_URL}/technology/epp/packages/galileo/milestones"
 
 ALL_REPOS="${BASE_URL}/birt/update-site/2.5-interim,${BASE_URL}/datatools/downloads/drops/N_updates_1.7,${BASE_URL}/dsdp/dd/updates,${BASE_URL}/dsdp/mtj/updates/1.0/stable,${BASE_URL}/dsdp/nab/updates,${BASE_URL}/dsdp/tml/updates/0.3M6,${BASE_URL}/modeling/emft/updates/milestones,${BASE_URL}/modeling/emf/updates/milestones,${BASE_URL}/modeling/gmf/updates/milestones,${BASE_URL}/modeling/m2m/updates/milestones,${BASE_URL}/modeling/m2t/updates/milestones,${BASE_URL}/modeling/mdt/updates/milestones,${BASE_URL}/modeling/tmf/updates/milestones,${BASE_URL}/rt/rap/1.2/update,${BASE_URL}/rt/riena/1.1.0.M5/update,${BASE_URL}/stp/updates/galileo,${BASE_URL}/technology/actf/0.7/milestones,${BASE_URL}/technology/dltk/updates-dev/1.0-stable,${BASE_URL}/technology/epp/updates/1.0milestones,${BASE_URL}/technology/jwt/stable-update-site,${BASE_URL}/technology/jwt/update-site,${BASE_URL}/technology/mat/0.7/update-site,${BASE_URL}/technology/subversive/0.7/update-site,${BASE_URL}/tools/buckminster/updates-ganymede,${BASE_URL}/tools/cdt/releases/galileo,${BASE_URL}/tools/cdt/updates/galileo,${BASE_URL}/tools/gef/updates/milestones,${BASE_URL}/tools/mylyn/update/galileo,${BASE_URL}/tools/pdt/updates/milestones,${BASE_URL}/tptp/updates/galileo,${BASE_URL}/webtools/milestones,http://www.eclipse.org/external/rt/ecf/3.0/3.5/updateSite"
 
-CDT_REPOS="${BASE_URL}/tools/cdt/updates/galileo/,${BASE_URL}/tools/cdt/releases/galileo/"
+CDT_REPOS="${BASE_URL}/tools/cdt/updates/galileo/"
 
 # Repositories (Galileo)
-METADATAREPOSITORIES="${REPO_ECLIPSE35},${REPO_GALILEO},${REPO_GALILEO_STAGING},${REPO_EPP_GALILEO},${CDT_REPOS}"
+METADATAREPOSITORIES="${REPO_ECLIPSE35},${REPO_GALILEO},${REPO_GALILEO_STAGING},${CDT_REPOS},${REPO_EPP_GALILEO}"
 ARTIFACTREPOSITORIES="${REPO_ECLIPSE35},${REPO_GALILEO},${REPO_GALILEO_STAGING},${CDT_REPOS}"
 
 # Eclipse installation, Java, etc.
@@ -48,8 +48,8 @@ fi
 
 PACKAGES="epp.package.javame epp.package.cpp epp.package.java epp.package.jee epp.package.modeling epp.package.rcp epp.package.reporting"
 OSes=( win32 linux linux macosx )
-WSes=( win32 gtk gtk carbon )
-ARCHes=( x86 x86 x86_64 ppc )
+WSes=( win32 gtk gtk cocoa )
+ARCHes=( x86 x86 x86_64 x86 )
 FORMAT=( zip tar.gz tar.gz tar.gz )
 
 BASE_DIR=/shared/technology/epp/epp_build/35
