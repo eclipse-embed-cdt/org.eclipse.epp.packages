@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.epp.package.modeling.feature"
+      label="EPP Modeling Feature"
+      version="1.0.0.qualifier"
+      provider-name="Eclipse Packaging Project (EPP)"
+      plugin="org.eclipse.epp.package.modeling">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <url>
+      <discovery label="Galileo" url="http://download.eclipse.org/releases/galileo/"/>
+      <discovery label="Eclipse Platform 3.5 Milestones" url="http://download.eclipse.org/eclipse/updates/3.5milestones/"/>
+   </url>
+
+   <includes
+         id="org.eclipse.platform"
+         version="0.0.0"
+         search-location="both"/>
+
+   <requires>
+      <import feature="org.eclipse.cvs" version="1.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.equinox.p2.user.ui" version="1.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.help" version="1.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.jdt" version="3.5.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.pde" version="3.5.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.platform" version="3.5.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.rcp" version="3.5.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.wst.xml_ui.feature"/>
+      <import feature="org.eclipse.mylyn.ide_feature"/>
+      <import feature="org.eclipse.mylyn.java_feature"/>
+      <import feature="org.eclipse.mylyn.pde_feature"/>
+      <import feature="org.eclipse.mylyn.bugzilla_feature"/>
+      <import feature="org.eclipse.mylyn.context_feature"/>
+      <import feature="org.eclipse.mylyn_feature"/>
+      <import feature="org.eclipse.mylyn.wikitext_feature"/>
+      <import feature="org.eclipse.ecf.core"/>
+      <import feature="org.eclipse.epp.usagedata.feature"/>
+      <import feature="org.eclipse.emf.sdk"/>
+      <import feature="org.eclipse.xsd.sdk"/>
+      <import feature="org.eclipse.emf.emfqtv.all.sdk"/>
+      <import feature="org.eclipse.gef.sdk"/>
+      <import feature="org.eclipse.zest.sdk"/>
+      <import feature="org.eclipse.uml2.sdk"/>
+      <import feature="org.eclipse.uml2tools.sdk"/>
+      <import feature="org.eclipse.ocl.all.sdk"/>
+      <import feature="org.eclipse.gmf.sdk"/>
+      <import feature="org.eclipse.m2m.qvt.oml.sdk"/>
+      <import feature="org.eclipse.m2m.atl.sdk"/>
+      <import feature="org.eclipse.jet.sdk"/>
+      <import feature="org.eclipse.emf.teneo.sdk"/>
+      <import feature="org.eclipse.emf.ecoretools.sdk"/>
+      <import feature="org.eclipse.emf.mint.sdk"/>
+      <import feature="org.eclipse.emf.compare.sdk"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.epp.package.modeling"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>
