@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="EPP RCP Package" uid="epp.package.rcp" id="org.eclipse.epp.package.rcp.product" application="org.eclipse.ui.ide.workbench" version="1.0.0" useFeatures="true" includeLaunchers="true">
+
+   <aboutInfo>
+      <text>
+         This is the EPP RCP About Dialog.
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgsWin>--launcher.XXMaxPermSize
+256M</programArgsWin>
+      <vmArgs>-Dosgi.requiredJavaVersion=1.5
+-Xms40m
+-Xmx512m</vmArgs>
+      <vmArgsLin>-XX:MaxPermSize=256m</vmArgsLin>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+-XX:MaxPermSize=256m</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages/>
+
+   <splash
+      location="org.eclipse.epp.package.rcp" />
+   <launcher>
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+      <linux>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</linux>
+      <macos>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</macos>
+      <solaris>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</solaris>
+      <windows>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</windows>
+   </vm>
+
+   <license>
+        <text>
+   This is the EPP RCP License...
+         </text>
+   </license>
+
+   <plugins>
+      <plugin id="org.eclipse.epp.package.rcp"/>
+   </plugins>
+
+   <features>
+      <feature id="org.eclipse.epp.package.rcp.feature" version="1.0.0.qualifier"/>
+   </features>
+
+
+</product>
