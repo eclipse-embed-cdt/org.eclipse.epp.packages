@@ -46,7 +46,7 @@ else
   JRE="java"
 fi
 
-PACKAGES="epp.package.javame epp.package.cpp epp.package.java epp.package.jee epp.package.modeling epp.package.rcp epp.package.reporting"
+PACKAGES="epp.package.pulsar epp.package.cpp epp.package.java epp.package.jee epp.package.modeling epp.package.rcp epp.package.reporting"
 OSes=( win32 linux linux macosx )
 WSes=( win32 gtk gtk cocoa )
 ARCHes=( x86 x86 x86_64 x86 )
