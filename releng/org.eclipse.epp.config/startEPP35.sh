@@ -9,6 +9,7 @@ BUILDLOCATION="server"
 # Location of the build input
 HTTP_BASE="http://download.eclipse.org"
 FILESYSTEM_BASE="file:///home/data/httpd/download.eclipse.org"
+# Define the BASE_URL to be used
 if [ ${BUILDLOCATION} = "server" ]
 then
   BASE_URL=${FILESYSTEM_BASE}
@@ -48,7 +49,8 @@ else
   JRE="java"
 fi
 
-PACKAGES="epp.package.pulsar epp.package.cpp epp.package.java epp.package.jee epp.package.modeling epp.package.rcp epp.package.reporting"
+#PACKAGES is now generated from the packages definition checked into CVS
+#PACKAGES="epp.package.pulsar epp.package.cpp epp.package.java epp.package.jee epp.package.modeling epp.package.rcp epp.package.reporting"
 OSes=( win32 linux linux macosx )
 WSes=( win32 gtk gtk cocoa )
 ARCHes=( x86 x86 x86_64 x86 )
@@ -67,9 +69,18 @@ LOCKFILE="/tmp/epp.build35.lock"
 MARKERFILENAME=".epp.nightlybuild"
 STATUSFILENAME="status.stub"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
+CVSPROJECTPATH="org.eclipse.epp/packages"
 RELEASE_NAME="-galileo-M6"
 
 ###############################################################################
+
+#Build the packages from the list of packages checked into CVS
+PACKAGES=""
+cvs -q -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSPROJECTPATH}
+for file in  $(ls ${CVSPROJECTPATH} | grep -v feature | grep -v CVS);  
+do
+  PACKAGES="${PACKAGES} ${file##org.eclipse.}" 
+done
 
 # only one build process allowed
 if [ -e ${LOCKFILE} ]; then
@@ -81,7 +92,7 @@ touch ${LOCKFILE}
 
 # create download directory and files
 DOWNLOAD_DIR=${DOWNLOAD_BASE_DIR}/${START_TIME}
-mkdir ${DOWNLOAD_DIR}
+mkdir -p ${DOWNLOAD_DIR}
 MARKERFILE="${DOWNLOAD_DIR}/${MARKERFILENAME}"
 touch ${MARKERFILE}
 STATUSFILE="${DOWNLOAD_DIR}/${STATUSFILENAME}"
@@ -108,14 +119,17 @@ for PACKAGE in ${PACKAGES};
 do
   echo "Building package for IU ${PACKAGE}"
   mkdir -p ${BUILD_DIR}/${PACKAGE}
+  
+  # Start statusfile
   echo "<td>"  >>${STATUSFILE}
+  
   for index in 0 1 2 3;
   do
     echo -n "...EPP building ${PACKAGE} ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]} "
     EXTENSION="${OSes[$index]}.${WSes[$index]}.${ARCHes[$index]}"
     PACKAGE_BUILD_DIR="${BUILD_DIR}/${PACKAGE}/${EXTENSION}"
     rm -rf ${PACKAGE_BUILD_DIR}
-    mkdir ${PACKAGE_BUILD_DIR}
+    mkdir -p ${PACKAGE_BUILD_DIR}
     ${ECLIPSE} -nosplash -consoleLog -application org.eclipse.equinox.p2.director.app.application \
       -metadataRepositories ${METADATAREPOSITORIES} -artifactRepositories ${ARTIFACTREPOSITORIES} \
       -installIU ${PACKAGE} \
@@ -154,7 +168,7 @@ do
   echo "</td>"  >>${STATUSFILE}
 done
 
-# start statusfile
+# End statusfile
 echo "</tr>" >>${STATUSFILE}
 
 # remove 'some' (which?) files from the download server
