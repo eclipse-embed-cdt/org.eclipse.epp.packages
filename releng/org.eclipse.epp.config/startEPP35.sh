@@ -9,6 +9,7 @@ BUILDLOCATION="server"
 # Location of the build input
 HTTP_BASE="http://download.eclipse.org"
 FILESYSTEM_BASE="file:///home/data/httpd/download.eclipse.org"
+
 # Define the BASE_URL to be used
 if [ ${BUILDLOCATION} = "server" ]
 then
@@ -20,24 +21,17 @@ fi
 # Galileo Repositories
 REPO_ECLIPSE35="${BASE_URL}/eclipse/updates/3.5milestones"
 REPO_GALILEO="${BASE_URL}/releases/galileo/"
-#REPO_GALILEO_STAGING="${BASE_URL}/releases/galileo/"
-if [ ${BUILDLOCATION} = "server" ]
-then
-  REPO_GALILEO_STAGING="file:///opt/users/hudsonbuild/downloads/galileo/"
-else
-  REPO_GALILEO_STAGING="http://build.eclipse.org/galileo/staging/"
-fi
+REPO_STAGING="${BASE_URL}/releases/staging/"
 REPO_EPP_GALILEO="${BASE_URL}/technology/epp/packages/galileo/milestones"
+CDT_REPO="${BASE_URL}/tools/cdt/updates/galileo/"
 
 ALL_REPOS="${BASE_URL}/birt/update-site/2.5-interim,${BASE_URL}/datatools/downloads/drops/N_updates_1.7,${BASE_URL}/dsdp/dd/updates,${BASE_URL}/dsdp/mtj/updates/1.0/stable,${BASE_URL}/dsdp/nab/updates,${BASE_URL}/dsdp/tml/updates/0.3M6,${BASE_URL}/modeling/emft/updates/milestones,${BASE_URL}/modeling/emf/updates/milestones,${BASE_URL}/modeling/gmf/updates/milestones,${BASE_URL}/modeling/m2m/updates/milestones,${BASE_URL}/modeling/m2t/updates/milestones,${BASE_URL}/modeling/mdt/updates/milestones,${BASE_URL}/modeling/tmf/updates/milestones,${BASE_URL}/rt/rap/1.2/update,${BASE_URL}/rt/riena/1.1.0.M5/update,${BASE_URL}/stp/updates/galileo,${BASE_URL}/technology/actf/0.7/milestones,${BASE_URL}/technology/dltk/updates-dev/1.0-stable,${BASE_URL}/technology/epp/updates/1.0milestones,${BASE_URL}/technology/jwt/stable-update-site,${BASE_URL}/technology/jwt/update-site,${BASE_URL}/technology/mat/0.7/update-site,${BASE_URL}/technology/subversive/0.7/update-site,${BASE_URL}/tools/buckminster/updates-ganymede,${BASE_URL}/tools/cdt/releases/galileo,${BASE_URL}/tools/cdt/updates/galileo,${BASE_URL}/tools/gef/updates/milestones,${BASE_URL}/tools/mylyn/update/galileo,${BASE_URL}/tools/pdt/updates/milestones,${BASE_URL}/tptp/updates/galileo,${BASE_URL}/webtools/milestones,http://www.eclipse.org/external/rt/ecf/3.0/3.5/updateSite"
 
-CDT_REPOS="${BASE_URL}/tools/cdt/updates/galileo/"
-
 # Repositories (Galileo)
-#METADATAREPOSITORIES="${REPO_ECLIPSE35},${REPO_GALILEO},${REPO_GALILEO_STAGING},${CDT_REPOS},${REPO_EPP_GALILEO}"
-#ARTIFACTREPOSITORIES="${REPO_ECLIPSE35},${REPO_GALILEO},${REPO_GALILEO_STAGING},${CDT_REPOS},${REPO_EPP_GALILEO}"
-METADATAREPOSITORIES="${REPO_GALILEO},${CDT_REPOS},${REPO_EPP_GALILEO}"
-ARTIFACTREPOSITORIES="${REPO_GALILEO},${CDT_REPOS},${REPO_EPP_GALILEO}"
+#METADATAREPOSITORIES="${REPO_ECLIPSE35},${REPO_GALILEO},${REPO_STAGING},${CDT_REPO},${REPO_EPP_GALILEO}"
+#ARTIFACTREPOSITORIES="${REPO_ECLIPSE35},${REPO_GALILEO},${REPO_STAGING},${CDT_REPO},${REPO_EPP_GALILEO}"
+METADATAREPOSITORIES="${REPO_STAGING},${CDT_REPO},${REPO_EPP_GALILEO}"
+ARTIFACTREPOSITORIES="${REPO_STAGING},${CDT_REPO},${REPO_EPP_GALILEO}"
 
 # Eclipse installation, Java, etc.
 if [ ${BUILDLOCATION} = "server" ]
@@ -70,7 +64,7 @@ MARKERFILENAME=".epp.nightlybuild"
 STATUSFILENAME="status.stub"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 CVSPROJECTPATH="org.eclipse.epp/packages"
-RELEASE_NAME="-galileo-M6"
+RELEASE_NAME="-galileo-M7"
 
 ###############################################################################
 
