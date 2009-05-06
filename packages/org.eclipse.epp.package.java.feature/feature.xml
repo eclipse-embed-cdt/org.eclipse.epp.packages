@@ -42,7 +42,7 @@
       <import feature="org.eclipse.mylyn.context_feature"/>
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
-      <import feature="org.eclipse.ecf.core"/>
+<!--      <import feature="org.eclipse.ecf.core"/> -->
       <import feature="org.eclipse.epp.usagedata.feature"/>
    </requires>
 

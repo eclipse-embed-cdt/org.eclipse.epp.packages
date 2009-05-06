@@ -48,9 +48,7 @@
       <import feature="org.eclipse.epp.usagedata.feature"/>
       <import feature="org.eclipse.emf.sdk"/>
       <import feature="org.eclipse.xsd.sdk"/>
-      <!--
-      <import feature="org.eclipse.emf.emfqtv.all.sdk"/>
-      -->
+<!--      <import feature="org.eclipse.emf.emfqtv.all.sdk"/>  -->
       <import feature="org.eclipse.gef.sdk"/>
       <import feature="org.eclipse.zest.sdk"/>
       <import feature="org.eclipse.uml2.sdk"/>
@@ -60,7 +58,7 @@
       <import feature="org.eclipse.m2m.qvt.oml.sdk"/>
       <import feature="org.eclipse.m2m.atl.sdk"/>
       <import feature="org.eclipse.jet.sdk"/>
-      <import feature="org.eclipse.emf.teneo.sdk"/>
+<!--      <import feature="org.eclipse.emf.teneo.sdk"/> -->
       <import feature="org.eclipse.emf.ecoretools.sdk"/>
       <import feature="org.eclipse.emf.mint.sdk"/>
       <import feature="org.eclipse.emf.compare.sdk"/>
