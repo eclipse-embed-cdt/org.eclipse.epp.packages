@@ -1,14 +1,15 @@
 # EPP package definitions
 # name, [CVS], repository string, path to file, version [HEAD], EPP local filename
 
-cpp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_cpp_350.xml,HEAD,eclipse_cpp_350.xml
-javame,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_javame_350.xml,HEAD,eclipse_javame_350.xml
-java,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_java_350.xml,HEAD,eclipse_java_350.xml
-#jee,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/webtools,webtools.releng/org.eclipse.wtp.releng.epp/config/eclipse_jee_350.xml,HEAD,eclipse_jee_350.xml
-jee,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_jee_350.xml,HEAD,eclipse_jee_350.xml
-rcp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_rcp_350.xml,HEAD,eclipse_rcp_350.xml
-#modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/modeling,org.eclipse.amalgam/releng/org.eclipse.amalgam.releng/epp/eclipse_modeling_ganymede.xml,HEAD,eclipse_modeling_350.xml
-modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_modeling_350.xml,HEAD,eclipse_modeling_350.xml
-#reporting,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/birt,source/org.eclipse.birt.releng.birtbuilder/epp/eclipse_reporting_350.xml,HEAD,eclipse_reporting_350.xml
-reporting,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_reporting_350.xml,HEAD,eclipse_reporting_350.xml
-sdk,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_sdk_350.xml,HEAD,eclipse_sdk_350.xml
+# package definitions provided by EPP
+cpp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.cpp.feature/eclipse_cpp_galileo.xml,HEAD,eclipse_cpp_350.xml
+java,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.java.feature/eclipse_java_galileo.xml,HEAD,eclipse_java_350.xml
+jee,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.jee.feature/eclipse_jee_galileo.xml,HEAD,eclipse_jee_350.xml
+modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.modeling.feature/eclipse_modeling_galileo.xml,HEAD,eclipse_modeling_350.xml
+php,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.php.feature/eclipse_php_galileo.xml,HEAD,eclipse_php_350.xml
+pulsar,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.pulsar.feature/eclipse_pulsar_galileo.xml,HEAD,eclipse_pulsar_350.xml
+rcp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.rcp.feature/eclipse_rcp_galileo.xml,HEAD,eclipse_rcp_350.xml
+reporting,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.reporting.feature/eclipse_reporting_galileo.xml,HEAD,eclipse_reporting_350.xml
+
+# special case - we provide a dummy epp config file for the SDK
+sdk,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_sdk_galileo.xml,HEAD,eclipse_sdk_350.xml
