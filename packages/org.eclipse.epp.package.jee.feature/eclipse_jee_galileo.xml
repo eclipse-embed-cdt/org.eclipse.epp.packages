@@ -41,7 +41,7 @@
 
   <!-- name, the name of the product, used in naming the created files. -->
   <product
-    name="eclipse-jee-galileo-M6"
+    name="eclipse-jee-galileo-M7"
     eclipseProductId="org.eclipse.platform.ide"
     initialPerspectiveId="org.eclipse.jst.j2ee.J2EEPerspective" />
 

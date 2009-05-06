@@ -40,7 +40,7 @@
 
 	<!-- name, the name of the product, used in naming the created files. -->
 	<product
-    name="eclipse-cpp-galileo-M6" 
+    name="eclipse-cpp-galileo-M7" 
 	  eclipseProductId="org.eclipse.platform.ide"
 	  initialPerspectiveId="org.eclipse.cdt.ui.CPerspective" />
 
