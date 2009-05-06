@@ -64,8 +64,6 @@
       <import feature="org.mozilla.rhino"/>
       <import feature="org.w3c.sac"/>
       <import feature="org.apache.derby.core"/>
-      <import feature="org.eclipse.birt.integration.wtp"/>
-      <import feature="org.eclipse.birt.chart.integration.wtp"/>
    </requires>
 
    <plugin
