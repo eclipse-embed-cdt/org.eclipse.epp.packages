@@ -26,7 +26,8 @@
    <windowImages/>
 
    <splash
-      location="org.eclipse.epp.package.reporting" />
+      location="org.eclipse.epp.package.reporting"
+      startupProgressRect="5,275,445,15" />
    <launcher>
       <solaris/>
       <win useIco="false">

@@ -20,6 +20,10 @@
                name="aboutText"
                value="This is the EPP Pulsar About Dialog.">
          </property>
+         <property
+               name="startupProgressRect"
+               value="5,275,445,15">
+         </property>
       </product>
    </extension>
 

@@ -26,7 +26,8 @@
    <windowImages/>
 
    <splash
-      location="org.eclipse.epp.package.pulsar" />
+      location="org.eclipse.epp.package.pulsar"
+      startupProgressRect="5,275,445,15" />
    <launcher>
       <solaris/>
       <win useIco="false">
@@ -48,7 +49,7 @@
    </license>
 
    <plugins>
-      <plugin id="org.eclipse.epp.package.pulsar"/>
+      <plugin id="org.eclipse.epp.package.pulsar" fragment=""/>
    </plugins>
 
    <features>

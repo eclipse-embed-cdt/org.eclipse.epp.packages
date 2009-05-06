@@ -26,7 +26,8 @@
    <windowImages/>
 
    <splash
-      location="org.eclipse.epp.package.rcp" />
+      location="org.eclipse.epp.package.rcp"
+      startupProgressRect="5,275,445,15" />
    <launcher>
       <solaris/>
       <win useIco="false">
