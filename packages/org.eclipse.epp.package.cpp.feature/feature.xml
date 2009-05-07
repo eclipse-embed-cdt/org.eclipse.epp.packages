@@ -44,6 +44,7 @@
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
       <import feature="org.eclipse.cdt.mylyn"/>
       <import feature="org.eclipse.epp.usagedata.feature"/>
+      <import feature="org.eclipse.cdt.p2"/>
    </requires>
 
    <plugin
