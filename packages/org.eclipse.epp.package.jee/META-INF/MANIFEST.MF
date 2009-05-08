@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: EPP JEE Bundle
+Bundle-Name: Java EE IDE
 Bundle-SymbolicName: org.eclipse.epp.package.jee;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: Eclipse Packaging Project (EPP)

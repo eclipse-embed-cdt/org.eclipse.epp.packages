@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="EPP JEE Package" uid="epp.package.jee" id="org.eclipse.epp.package.jee.product" application="org.eclipse.ui.ide.workbench" version="1.0.0" useFeatures="true" includeLaunchers="true">
+<product name="Java EE IDE Package" uid="epp.package.jee" id="org.eclipse.epp.package.jee.product" application="org.eclipse.ui.ide.workbench" version="1.0.0" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <text>
-         This is the EPP JEE About Dialog.
+         The Eclipse Java EE IDE.
       </text>
    </aboutInfo>
 
@@ -44,7 +44,7 @@
 
    <license>
         <text>
-   This is the EPP JEE License...
+   EPL
          </text>
    </license>
 

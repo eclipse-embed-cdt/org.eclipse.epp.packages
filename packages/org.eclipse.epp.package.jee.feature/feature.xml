@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.eclipse.epp.package.jee.feature"
-      label="EPP JEE Feature"
+      label="Java EE IDE Feature"
       version="1.0.0.qualifier"
       provider-name="Eclipse Packaging Project (EPP)"
       plugin="org.eclipse.epp.package.jee">

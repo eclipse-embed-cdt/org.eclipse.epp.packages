@@ -6,19 +6,19 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
-            description="The EPP JEE Package."
-            name="EPP JEE Package">
+            description="The Java EE IDE Package."
+            name="Java EE IDE Package">
          <property
                name="preferenceCustomization"
                value="plugin_customization.ini">
          </property>
          <property
                name="appName"
-               value="EPP JEE Package">
+               value="Java EE IDE Package">
          </property>
          <property
                name="aboutText"
-               value="This is the EPP JEE About Dialog.">
+               value="The Java EE IDE Package.">
          </property>
          <property
                name="startupProgressRect"

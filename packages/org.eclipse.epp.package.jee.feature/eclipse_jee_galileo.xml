@@ -14,7 +14,7 @@
    bugzillaComponentId="jee-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-     <description><![CDATA[Tools for Java developers creating JEE and Web applications, including a Java IDE, tools for JEE and JSF, Mylyn and others.]]></description>
+     <description><![CDATA[Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java EE, JPA, JSF, Mylyn and others.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
       <tester>David Williams</tester>
@@ -55,12 +55,7 @@
     <updateSite url="file:///home/data/httpd/download.eclipse.org/technology/epp/updates/1.0milestones/" />
 
     <!-- eclipse.org update sites -->
-    <!-- 
-      <updateSite url="http://download.eclipse.org/eclipse/updates/3.4/" />
-      <updateSite url="http://download.eclipse.org/eclipse/updates/3.4milestones/" />
-      <updateSite url="http://download.eclipse.org/releases/ganymede/" />
-      <updateSite url="http://download.eclipse.org/releases/ganymede/staging/" />
-    -->
+      <updateSite url="http://download.eclipse.org/releases/galileo" />
   </updateSites>
 
   <!-- id, a feature id. -->
