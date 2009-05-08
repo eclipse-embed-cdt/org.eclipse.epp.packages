@@ -27,6 +27,7 @@
       <import feature="org.eclipse.mtj" version="1.0.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.mtj.sdk" version="1.0.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.mtj.examples" version="1.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.mtj.pulsar" version="1.0.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
       <import feature="org.eclipse.mylyn.java_feature"/>
@@ -36,9 +37,6 @@
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
       <import feature="org.eclipse.epp.usagedata.feature"/>
-      <!--
-      <import feature="org.eclipse.mtj.pulsar" version="1.0.0" match="greaterOrEqual"/>
-      -->
    </requires>
 
    <plugin
