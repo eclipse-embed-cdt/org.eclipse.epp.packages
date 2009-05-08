@@ -6,18 +6,6 @@
       provider-name="Eclipse Packaging Project (EPP)"
       plugin="org.eclipse.epp.package.pulsar">
 
-   <description url="http://www.example.com/description">
-      [Enter Feature Description here.]
-   </description>
-
-   <copyright url="http://www.example.com/copyright">
-      [Enter Copyright Description here.]
-   </copyright>
-
-   <license url="http://www.example.com/license">
-      [Enter License Description here.]
-   </license>
-
    <url>
       <discovery label="Galileo" url="http://download.eclipse.org/releases/galileo/"/>
       <discovery label="Eclipse Platform 3.5 Milestones" url="http://download.eclipse.org/eclipse/updates/3.5milestones/"/>
@@ -36,9 +24,9 @@
       <import feature="org.eclipse.pde" version="3.5.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.platform" version="3.5.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.rcp" version="3.5.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.mtj"/>
-      <import feature="org.eclipse.mtj.sdk"/>
-      <import feature="org.eclipse.mtj.examples"/>
+      <import feature="org.eclipse.mtj" version="1.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.mtj.sdk" version="1.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.mtj.examples" version="1.0.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
       <import feature="org.eclipse.mylyn.java_feature"/>
@@ -47,8 +35,8 @@
       <import feature="org.eclipse.mylyn.context_feature"/>
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
-<!--      <import feature="org.eclipse.ecf.core"/> -->
       <import feature="org.eclipse.epp.usagedata.feature"/>
+      <import feature="org.eclipse.mtj.pulsar" version="1.0.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin

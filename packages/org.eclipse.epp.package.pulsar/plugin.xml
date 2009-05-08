@@ -6,19 +6,25 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
-            description="The EPP Pulsar Package."
-            name="EPP Pulsar Package">
+            description="The essential tools for any Mobile Java developer, including a Java ME IDE, a CVS client, XML Editor and Mylyn."
+            name="Pulsar for Mobile Java Developers">
          <property
                name="preferenceCustomization"
                value="plugin_customization.ini">
          </property>
          <property
                name="appName"
-               value="EPP Pulsar Package">
+               value="Pulsar for Mobile Java Developers">
          </property>
          <property
                name="aboutText"
-               value="This is the EPP Pulsar About Dialog.">
+               value="Pulsar for Mobile Java Developers.\n\
+\n\
+Version: {featureVersion}\n\
+Build id: {0}\n\
+\n\
+(c) Copyright Pulsar Committers and others. 2009.  All rights reserved.\n\
+Visit http://www.eclipse.org/pulsar/">
          </property>
          <property
                name="startupProgressRect"
