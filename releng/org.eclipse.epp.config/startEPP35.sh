@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #set -x
 umask 0022
 ulimit -n 2048
@@ -30,8 +30,8 @@ ALL_REPOS="${BASE_URL}/birt/update-site/2.5-interim,${BASE_URL}/datatools/downlo
 # Repositories (Galileo)
 #METADATAREPOSITORIES="${REPO_ECLIPSE35},${REPO_GALILEO},${REPO_STAGING},${CDT_REPO},${REPO_EPP_GALILEO}"
 #ARTIFACTREPOSITORIES="${REPO_ECLIPSE35},${REPO_GALILEO},${REPO_STAGING},${CDT_REPO},${REPO_EPP_GALILEO}"
-METADATAREPOSITORIES="${REPO_STAGING},${CDT_REPO},${REPO_EPP_GALILEO}"
-ARTIFACTREPOSITORIES="${REPO_STAGING},${CDT_REPO},${REPO_EPP_GALILEO}"
+METADATAREPOSITORIES="${REPO_STAGING},${REPO_EPP_GALILEO}"
+ARTIFACTREPOSITORIES="${REPO_STAGING},${REPO_EPP_GALILEO}"
 
 # Eclipse installation, Java, etc.
 if [ ${BUILDLOCATION} = "server" ]
@@ -138,6 +138,18 @@ do
       -vm ${JRE} \
       -vmargs -Declipse.p2.mirrors=false -Declipse.p2.data.area=${PACKAGE_BUILD_DIR}/eclipse/p2 \
          2>&1 >${DOWNLOAD_DIR}/${PACKAGE}_${EXTENSION}.log
+    rm -rf ${PACKAGE_BUILD_DIR}/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/SDKProfile.profile
+    ${ECLIPSE} -nosplash -consoleLog -application org.eclipse.equinox.p2.director.app.application \
+      -metadataRepositories http://download.eclipse.org/releases/galileo \
+      -artifactRepositories http://download.eclipse.org/releases/galileo \
+      -destination ${PACKAGE_BUILD_DIR}/eclipse \
+      -profile ${PACKAGE} \
+      -p2.os ${OSes[$index]} \
+      -p2.ws ${WSes[$index]} \
+      -p2.arch ${ARCHes[$index]} \
+      -vm ${JRE} \
+      -vmargs -Declipse.p2.mirrors=false -Declipse.p2.data.area=${PACKAGE_BUILD_DIR}/eclipse/p2 -Declipse.p2.profile=${PACKAGE} \
+         2>&1 >>${DOWNLOAD_DIR}/${PACKAGE}_${EXTENSION}.log
     if [ $? = "0" ]; then
       cd ${PACKAGE_BUILD_DIR}
       PACKAGE_SHORT=`echo ${PACKAGE} | cut -d "." -f 3`${RELEASE_NAME}
