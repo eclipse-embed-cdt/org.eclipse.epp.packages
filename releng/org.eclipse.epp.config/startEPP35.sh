@@ -138,19 +138,19 @@ do
       -vm ${JRE} \
       -vmargs -Declipse.p2.mirrors=false -Declipse.p2.data.area=${PACKAGE_BUILD_DIR}/eclipse/p2 \
          2>&1 >${DOWNLOAD_DIR}/${PACKAGE}_${EXTENSION}.log
-    rm -rf ${PACKAGE_BUILD_DIR}/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/SDKProfile.profile
-    ${ECLIPSE} -nosplash -consoleLog -application org.eclipse.equinox.p2.director.app.application \
-      -metadataRepositories http://download.eclipse.org/releases/galileo \
-      -artifactRepositories http://download.eclipse.org/releases/galileo \
-      -destination ${PACKAGE_BUILD_DIR}/eclipse \
-      -profile ${PACKAGE} \
-      -p2.os ${OSes[$index]} \
-      -p2.ws ${WSes[$index]} \
-      -p2.arch ${ARCHes[$index]} \
-      -vm ${JRE} \
-      -vmargs -Declipse.p2.mirrors=false -Declipse.p2.data.area=${PACKAGE_BUILD_DIR}/eclipse/p2 -Declipse.p2.profile=${PACKAGE} \
-         2>&1 >>${DOWNLOAD_DIR}/${PACKAGE}_${EXTENSION}.log
     if [ $? = "0" ]; then
+      rm -rf ${PACKAGE_BUILD_DIR}/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/SDKProfile.profile
+      ${ECLIPSE} -nosplash -consoleLog -application org.eclipse.equinox.p2.director.app.application \
+        -metadataRepositories http://download.eclipse.org/releases/galileo \
+        -artifactRepositories http://download.eclipse.org/releases/galileo \
+        -destination ${PACKAGE_BUILD_DIR}/eclipse \
+        -profile ${PACKAGE} \
+        -p2.os ${OSes[$index]} \
+        -p2.ws ${WSes[$index]} \
+        -p2.arch ${ARCHes[$index]} \
+        -vm ${JRE} \
+        -vmargs -Declipse.p2.mirrors=false -Declipse.p2.data.area=${PACKAGE_BUILD_DIR}/eclipse/p2 -Declipse.p2.profile=${PACKAGE} \
+           2>&1 >>${DOWNLOAD_DIR}/${PACKAGE}_${EXTENSION}.log
       cd ${PACKAGE_BUILD_DIR}
       PACKAGE_SHORT=`echo ${PACKAGE} | cut -d "." -f 3`${RELEASE_NAME}
       if [ ${OSes[$index]} = "win32" ]; then
