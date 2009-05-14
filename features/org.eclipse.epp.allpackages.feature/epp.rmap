@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rmap xmlns="http://www.eclipse.org/buckminster/RMap-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mp="http://www.eclipse.org/buckminster/MavenProvider-1.0"
+	xmlns:pmp="http://www.eclipse.org/buckminster/PDEMapProvider-1.0"
+	xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0">
+
+	<searchPath name="org.eclipse.epp.packages">
+		<provider readerType="cvs" componentTypes="osgi.bundle,eclipse.feature" mutable="true" source="true">
+			<uri format=":pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/{0}">
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+		</provider>
+	</searchPath>
+
+	<searchPath name="buckminster.demo">
+		<provider readerType="cvs" componentTypes="osgi.bundle,eclipse.feature" mutable="true" source="true">
+			<uri format=":pserver:anonymous@dev.eclipse.org:/cvsroot/org.eclipse,www/buckminster/demo/epp/{0}">
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+		</provider>
+	</searchPath>
+
+	<searchPath name="galileo">
+		<provider readerType="eclipse.import" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
+			<uri format="{0}?importType=binary">
+				<bc:propertyRef key="galileo.site" />
+			</uri>
+		</provider>
+	</searchPath>
+
+	<locator searchPathRef="org.eclipse.epp.packages" pattern="^org\.eclipse\.epp\.package\..*$"/>
+	<locator searchPathRef="buckminster.demo" pattern="^org\.eclipse\.epp\.allpackages\.feature$"/>
+	<locator searchPathRef="galileo"/>
+</rmap>
