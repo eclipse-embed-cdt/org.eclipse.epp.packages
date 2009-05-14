@@ -14,7 +14,7 @@
 
 	<searchPath name="buckminster.demo">
 		<provider readerType="cvs" componentTypes="osgi.bundle,eclipse.feature" mutable="true" source="true">
-			<uri format=":pserver:anonymous@dev.eclipse.org:/cvsroot/org.eclipse,www/buckminster/demo/epp/{0}">
+			<uri format=":pserver:anonymous@dev.eclipse.org:/cvsroot/org.eclipse,www/buckminster/samples/epp/{0}">
 				<bc:propertyRef key="buckminster.component" />
 			</uri>
 		</provider>
