@@ -6,7 +6,7 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
-            description="The essential tools for any Mobile Java developer, including a Java ME IDE, a CVS client, XML Editor and Mylyn."
+            description="Pulsar is a tools platform for Mobile Java Developers. It includes the Eclipse Platform, Java Development Tools (JDT), Mobile Tools for Java (MTJ), Mylyn and Plugin Development Environment (PDE). Pulsar also makes it easy to download SDK from different handset manufacturers."
             name="Pulsar for Mobile Java Developers">
          <property
                name="preferenceCustomization"
@@ -18,17 +18,15 @@
          </property>
          <property
                name="aboutText"
-               value="Pulsar for Mobile Java Developers.\n\
-\n\
-Version: {featureVersion}\n\
-Build id: {0}\n\
-\n\
-(c) Copyright Pulsar Committers and others. 2009.  All rights reserved.\n\
-Visit http://www.eclipse.org/pulsar/">
+               value="This is the EPP Pulsar About Dialog.">
          </property>
          <property
                name="startupProgressRect"
                value="5,275,445,15">
+         </property>
+         <property
+               name="windowImages" 
+               value="eclipse.gif,eclipse32.gif,eclipse48.gif,eclipse.png,eclipse32.png,eclipse48.png" >
          </property>
       </product>
    </extension>
