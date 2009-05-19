@@ -23,14 +23,14 @@ then
 fi
 
 # Galileo Repositories
-REPO_ECLIPSE35="${BASE_URL}/eclipse/updates/3.5milestones"
+REPO_ECLIPSE35="${BASE_URL}/eclipse/updates/3.5milestones/S-3.5RC1-200905151143/"
 REPO_GALILEO="${BASE_URL}/releases/galileo/"
 REPO_STAGING="${BASE_URL}/releases/staging/"
 REPO_EPP_GALILEO="${BASE_URL}/technology/epp/packages/galileo/milestones"
 
 # Repositories (Galileo)
-METADATAREPOSITORIES="${REPO_STAGING},${REPO_EPP_GALILEO}"
-ARTIFACTREPOSITORIES="${REPO_STAGING},${REPO_EPP_GALILEO}"
+METADATAREPOSITORIES="${REPO_STAGING},${REPO_ECLIPSE35},${REPO_EPP_GALILEO}"
+ARTIFACTREPOSITORIES="${REPO_STAGING},${REPO_ECLIPSE35},${REPO_EPP_GALILEO}"
 
 OSes=( win32 linux linux macosx )
 WSes=( win32 gtk gtk cocoa )
