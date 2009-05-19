@@ -24,7 +24,7 @@
 			Description is wrapped in CDATA tags to all you to insert HTML code
 			if necessary
 		-->
-		<description><![CDATA[An IDE for PHP developers with Mylyn integration.]]></description>
+		<description><![CDATA[Tools for PHP developers creating Web applications, including PHP Development Tools (PDT), Web Tools Platform, Mylyn and others.]]></description>
 		<!--
 			packageTesters is a list of the people that are testing the package
 		-->
