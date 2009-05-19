@@ -5,30 +5,30 @@
 ## 1st: EPP package definition
 ## 2nd: feature.xml renamed
 
-cpp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.cpp.feature/eclipse_cpp_galileo.xml,HEAD,eclipse_cpp_350.xml
+cpp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.cpp.feature/eclipse_cpp_galileo.xml,HEAD,cpp.xml
 cpp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.cpp.feature/feature.xml,HEAD,cpp.feature.xml
 
-java,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.java.feature/eclipse_java_galileo.xml,HEAD,eclipse_java_350.xml
+java,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.java.feature/eclipse_java_galileo.xml,HEAD,java.xml
 java,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.java.feature/feature.xml,HEAD,java.feature.xml
 
-jee,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.jee.feature/eclipse_jee_galileo.xml,HEAD,eclipse_jee_350.xml
+jee,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.jee.feature/eclipse_jee_galileo.xml,HEAD,jee.xml
 jee,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.jee.feature/feature.xml,HEAD,jee.feature.xml
 
-modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.modeling.feature/eclipse_modeling_galileo.xml,HEAD,eclipse_modeling_350.xml
+modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.modeling.feature/eclipse_modeling_galileo.xml,HEAD,modeling.xml
 modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.modeling.feature/feature.xml,HEAD,modeling.feature.xml
 
-php,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.php.feature/eclipse_php_galileo.xml,HEAD,eclipse_php_350.xml
+php,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.php.feature/eclipse_php_galileo.xml,HEAD,php.xml
 php,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.php.feature/feature.xml,HEAD,php.feature.xml
 
-pulsar,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.pulsar.feature/eclipse_pulsar_galileo.xml,HEAD,eclipse_pulsar_350.xml
+pulsar,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.pulsar.feature/eclipse_pulsar_galileo.xml,HEAD,pulsar.xml
 pulsar,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.pulsar.feature/feature.xml,HEAD,pulsar.feature.xml
 
-rcp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.rcp.feature/eclipse_rcp_galileo.xml,HEAD,eclipse_rcp_350.xml
+rcp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.rcp.feature/eclipse_rcp_galileo.xml,HEAD,rcp.xml
 rcp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.rcp.feature/feature.xml,HEAD,rcp.feature.xml
 
-reporting,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.reporting.feature/eclipse_reporting_galileo.xml,HEAD,eclipse_reporting_350.xml
+reporting,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.reporting.feature/eclipse_reporting_galileo.xml,HEAD,reporting.xml
 reporting,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.reporting.feature/feature.xml,HEAD,reporting.feature.xml
 
 ## special case - we provide a dummy epp config file for the SDK
-sdk,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_sdk_galileo.xml,HEAD,eclipse_sdk_350.xml
+sdk,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_sdk_galileo.xml,HEAD,sdk.xml
 #where to get the SDK feature? sdk,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_sdk_galileo.xml,HEAD,eclipse_sdk_350.xml
