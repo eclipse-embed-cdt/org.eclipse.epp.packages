@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.eclipse.epp.package.jee.feature"
-      label="Java EE IDE Feature"
-      version="1.0.0.qualifier"
-      provider-name="Eclipse Packaging Project (EPP)"
+      label="%featureName"
+      version="1.1.0.qualifier"
+      provider-name="%providerName"
       plugin="org.eclipse.epp.package.jee">
 
-   <description url="http://www.example.com/description">
-      [Enter Feature Description here.]
+   <description>
+      %description
    </description>
 
-   <copyright url="http://www.example.com/copyright">
-      [Enter Copyright Description here.]
+   <copyright>
+      %copyright
    </copyright>
 
-   <license url="http://www.example.com/license">
-      [Enter License Description here.]
+   <license url="%licenseURL">
+      %license
    </license>
 
    <url>
-      <discovery label="Galileo" url="http://download.eclipse.org/releases/galileo/"/>
-      <discovery label="Eclipse Platform 3.5 Milestones" url="http://download.eclipse.org/eclipse/updates/3.5milestones/"/>
+      <discovery label="%discoverySiteName" url="http://download.eclipse.org/releases/galileo/"/>
    </url>
 
    <includes
@@ -29,19 +28,18 @@
          search-location="both"/>
 
    <requires>
-      <import feature="org.eclipse.cvs" version="1.1.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.equinox.p2.user.ui" version="1.1.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.help" version="1.1.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.jdt" version="3.5.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.platform" version="3.5.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.rcp" version="3.5.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.cvs" version="1.1.0"/>
+      <import feature="org.eclipse.equinox.p2.user.ui" version="1.1.0"/>
+      <import feature="org.eclipse.help" version="1.1.0"/>
+      <import feature="org.eclipse.jdt" version="3.5.0"/>
+      <import feature="org.eclipse.platform" version="3.5.0"/>
+      <import feature="org.eclipse.rcp" version="3.5.0"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
       <import feature="org.eclipse.mylyn.java_feature"/>
       <import feature="org.eclipse.mylyn.bugzilla_feature"/>
       <import feature="org.eclipse.mylyn.context_feature"/>
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
-<!--      <import feature="org.eclipse.ecf.core"/> -->
       <import feature="org.eclipse.epp.usagedata.feature"/>
       <import feature="org.eclipse.rse"/>
       <import feature="org.eclipse.rse.useractions"/>
@@ -57,6 +55,9 @@
       <import feature="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.wst.jsdt.feature"/>
+      <import feature="org.eclipse.persistence.jpa"/>
+      <import feature="org.eclipse.persistence.moxy"/>
+      <import feature="org.eclipse.persistence.sdo"/>
    </requires>
 
    <plugin
