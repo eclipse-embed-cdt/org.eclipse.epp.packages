@@ -34,7 +34,7 @@
       <import feature="org.eclipse.help" version="1.1.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.jdt" version="3.5.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.pde" version="3.5.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.platform" version="3.5.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.sdk" version="3.5.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.rcp" version="3.5.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
@@ -44,24 +44,29 @@
       <import feature="org.eclipse.mylyn.context_feature"/>
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
-<!--      <import feature="org.eclipse.ecf.core"/> -->
       <import feature="org.eclipse.epp.usagedata.feature"/>
       <import feature="org.eclipse.emf.sdk"/>
       <import feature="org.eclipse.xsd.sdk"/>
-<!--      <import feature="org.eclipse.emf.emfqtv.all.sdk"/>  -->
       <import feature="org.eclipse.gef.sdk"/>
       <import feature="org.eclipse.zest.sdk"/>
       <import feature="org.eclipse.uml2.sdk"/>
       <import feature="org.eclipse.uml2tools.sdk"/>
       <import feature="org.eclipse.ocl.all.sdk"/>
+      <import feature="org.eclipse.emf.query.sdk"/>
+      <import feature="org.eclipse.emf.validation.sdk"/>
+      <import feature="org.eclipse.emf.transaction.sdk"/>
+      <import feature="org.eclipse.net4j.sdk"/>
+      <import feature="org.eclipse.emf.cdo.sdk"/>
+      <import feature="org.eclipse.acceleo.sdk"/>
+      <import feature="org.eclipse.emf.teneo.sdk"/>
       <import feature="org.eclipse.gmf.sdk"/>
       <import feature="org.eclipse.m2m.qvt.oml.sdk"/>
       <import feature="org.eclipse.m2m.atl.sdk"/>
       <import feature="org.eclipse.jet.sdk"/>
-<!--      <import feature="org.eclipse.emf.teneo.sdk"/> -->
       <import feature="org.eclipse.emf.ecoretools.sdk"/>
       <import feature="org.eclipse.emf.mint.sdk"/>
       <import feature="org.eclipse.emf.compare.sdk"/>
+      <import feature="org.eclipse.xtext.sdk"/>
    </requires>
 
    <plugin
