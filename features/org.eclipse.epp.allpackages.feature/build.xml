@@ -7,8 +7,7 @@
 	<property name="build.root" location="${user.home}/epp.build"/>
 	<property file="${build.root}/build.properties" />
 	<property name="bm.headless.site" value="http://download.eclipse.org/tools/buckminster/headless-3.5/" />
-	<property name="galileo.site" value="http://download.eclipse.org/releases/galileo/" />
-
+	<property name="galileo.site" value="http://download.eclipse.org/releases/staging/" />
 	<property name="buildtools" location="${build.root}/tools" />
 	<property name="workspace" location="${build.root}/workspace" />
 	<property name="cquery.url" location="${basedir}/epp.cquery" />
@@ -110,12 +109,16 @@
 		</eclipse.launch>
 	</target>
 
-	<target name="clean.all" depends="clean.buckminster,clean.workspace">
+	<target name="clean.all" depends="clean.buckminster,clean.workspace,clean.build">
 		<delete dir="${buildtools}/director" />
 	</target>
 
 	<target name="clean.workspace">
 		<delete dir="${workspace}" />
+	</target>
+
+	<target name="clean.build">
+		<delete dir="${build.root}/buildresult" />
 	</target>
 
 	<target name="clean.buckminster">
