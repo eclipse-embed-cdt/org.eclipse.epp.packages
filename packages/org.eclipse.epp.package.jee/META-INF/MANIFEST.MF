@@ -1,9 +1,8 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Java EE IDE
+Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: org.eclipse.epp.package.jee;singleton:=true
-Bundle-Version: 1.0.0.qualifier
-Bundle-Vendor: Eclipse Packaging Project (EPP)
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Version: 1.1.0.qualifier
+Bundle-Vendor: %Bundle-Vendor
 Require-Bundle: org.eclipse.platform,
  org.eclipse.equinox.app
