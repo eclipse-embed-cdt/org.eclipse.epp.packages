@@ -36,6 +36,7 @@
       </win>
    </launcher>
 
+
    <vm>
       <linux>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</linux>
       <macos>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</macos>
@@ -43,11 +44,6 @@
       <windows>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</windows>
    </vm>
 
-   <license>
-        <text>
-   This is the EPP CPP License...
-         </text>
-   </license>
 
    <plugins>
       <plugin id="org.eclipse.epp.package.cpp"/>
