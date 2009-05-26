@@ -56,14 +56,6 @@ RELEASE_NAME="-galileo-RC2"
 
 ###############################################################################
 
-#Build the packages from the list of packages checked into CVS
-PACKAGES=""
-cvs -q -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSPROJECTPATH}
-for file in  $(ls ${CVSPROJECTPATH} | grep -v feature | grep -v CVS);  
-do
-  PACKAGES="${PACKAGES} ${file##org.eclipse.}" 
-done
-
 # only one build process allowed
 if [ -e ${LOCKFILE} ]; then
     echo "${START_TIME} EPP build - lockfile ${LOCKFILE} exists" >/dev/stderr
@@ -82,7 +74,15 @@ touch ${STATUSFILE}
 
 # log to file
 LOGFILE="${DOWNLOAD_DIR}/build.log"
-exec 1>${LOGFILE} 2>&1
+exec 2>&1 | tee ${LOGFILE}
+
+#Build the packages from the list of packages checked into CVS
+PACKAGES=""
+cvs -q -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSPROJECTPATH}
+for file in  $(ls ${CVSPROJECTPATH} | grep -v feature | grep -v CVS);  
+do
+  PACKAGES="${PACKAGES} ${file##org.eclipse.}" 
+done
 
 # load external functions
 . ${BASE_DIR}/${CVSPATH}/tools/functions.sh
