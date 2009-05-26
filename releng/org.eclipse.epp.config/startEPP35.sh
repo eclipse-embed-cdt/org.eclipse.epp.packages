@@ -26,7 +26,8 @@ fi
 REPO_ECLIPSE35="${BASE_URL}/eclipse/updates/3.5milestones/S-3.5RC2-200905221710/"
 REPO_GALILEO="${BASE_URL}/releases/galileo/"
 REPO_STAGING="${BASE_URL}/releases/staging/"
-REPO_EPP_GALILEO="${BASE_URL}/technology/epp/packages/galileo/milestones"
+#REPO_EPP_GALILEO="${BASE_URL}/technology/epp/packages/galileo/milestones"
+REPO_EPP_GALILEO="file:///shared/technology/epp/epp_repo/galileo/epp.build/buildresult/org.eclipse.epp.allpackages.feature_1.0.0-eclipse.feature/site.p2"
 
 # Repositories (Galileo)
 METADATAREPOSITORIES="${REPO_STAGING},${REPO_ECLIPSE35},${REPO_EPP_GALILEO}"
@@ -111,7 +112,7 @@ do
     PACKAGE_BUILD_DIR="${BUILD_DIR}/${PACKAGE}/${EXTENSION}"
     rm -rf ${PACKAGE_BUILD_DIR}
     mkdir -p ${PACKAGE_BUILD_DIR}
-    ${ECLIPSE} -nosplash -consoleLog -application org.eclipse.equinox.p2.director.app.application \
+    ${ECLIPSE} -nosplash -consoleLog -application org.eclipse.equinox.p2.director \
       -metadataRepositories ${METADATAREPOSITORIES} -artifactRepositories ${ARTIFACTREPOSITORIES} \
       -installIU ${PACKAGE} \
       -destination ${PACKAGE_BUILD_DIR}/eclipse \
