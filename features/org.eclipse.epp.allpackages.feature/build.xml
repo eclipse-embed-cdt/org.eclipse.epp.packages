@@ -56,6 +56,7 @@
 	<target name="install.buckminster" depends="get.director">
 		<eclipse.launch app="director">
 			<args>
+			  <jvmarg value="-Declipse.p2.mirrors=false" />
 				<arg value="-consoleLog"/>
 				<arg value="-r"/>
 				<arg value="${bm.headless.site}"/>
@@ -83,6 +84,7 @@
 		<eclipse.launch app="buckminster">
 			<args>
 				<jvmarg value="-Dgalileo.site=${galileo.site}" />
+			  <jvmarg value="-Declipse.p2.mirrors=false" />
 				<arg value="-data" />
 				<arg value="${workspace}" />
 				<arg value="import"/>
@@ -101,6 +103,7 @@
 				<jvmarg value="-Dtarget.arch=*" />
 				<jvmarg value="-Dbuckminster.output.root=${build.root}/buildresult" />
 				<jvmarg value="-Dbuckminster.temp.root=${build.root}/temp" />
+			  <jvmarg value="-Declipse.p2.mirrors=false" />
 				<arg value="-data" />
 				<arg value="${workspace}" />
 				<arg value="perform"/>
