@@ -48,7 +48,7 @@
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.java.feature" version="1.0.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.java.feature" version="1.2.0.qualifier"/>
    </features>
 
 

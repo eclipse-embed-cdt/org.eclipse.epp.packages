@@ -55,7 +55,7 @@ Visit http://www.eclipse.org/pulsar/
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.pulsar.feature" version="1.0.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.pulsar.feature" version="1.2.0.qualifier"/>
    </features>
 
 
