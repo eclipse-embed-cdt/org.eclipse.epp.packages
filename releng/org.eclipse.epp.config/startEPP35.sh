@@ -23,7 +23,7 @@ then
 fi
 
 # Galileo Repositories
-REPO_ECLIPSE35="${BASE_URL}/eclipse/updates/3.5milestones/S-3.5RC1-200905151143/"
+REPO_ECLIPSE35="${BASE_URL}/eclipse/updates/3.5milestones/S-3.5RC2-200905221710/"
 REPO_GALILEO="${BASE_URL}/releases/galileo/"
 REPO_STAGING="${BASE_URL}/releases/staging/"
 REPO_EPP_GALILEO="${BASE_URL}/technology/epp/packages/galileo/milestones"
@@ -51,7 +51,7 @@ MARKERFILENAME=".epp.nightlybuild"
 STATUSFILENAME="status.stub"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 CVSPROJECTPATH="org.eclipse.epp/packages"
-RELEASE_NAME="-galileo-RC1"
+RELEASE_NAME="-galileo-RC2"
 
 ###############################################################################
 
@@ -126,18 +126,6 @@ do
       -vmargs -Declipse.p2.mirrors=false -Declipse.p2.data.area=${PACKAGE_BUILD_DIR}/eclipse/p2 \
          2>&1 >${DOWNLOAD_DIR}/${PACKAGE}_${EXTENSION}.log
     if [ $? = "0" ]; then
-#      rm -rf ${PACKAGE_BUILD_DIR}/eclipse/p2/org.eclipse.equinox.p2.engine/profileRegistry/SDKProfile.profile
-#      ${ECLIPSE} -nosplash -consoleLog -application org.eclipse.equinox.p2.director.app.application \
-#        -metadataRepositories http://download.eclipse.org/releases/galileo \
-#        -artifactRepositories http://download.eclipse.org/releases/galileo \
-#        -destination ${PACKAGE_BUILD_DIR}/eclipse \
-#        -profile ${PACKAGE} \
-#        -p2.os ${OSes[$index]} \
-#        -p2.ws ${WSes[$index]} \
-#        -p2.arch ${ARCHes[$index]} \
-#        -vm ${JRE} \
-#        -vmargs -Declipse.p2.mirrors=false -Declipse.p2.data.area=${PACKAGE_BUILD_DIR}/eclipse/p2 -Declipse.p2.profile=${PACKAGE} \
-#           2>&1 >>${DOWNLOAD_DIR}/${PACKAGE}_${EXTENSION}.log
       cd ${PACKAGE_BUILD_DIR}
       PACKAGE_SHORT=`echo ${PACKAGE} | cut -d "." -f 3`${RELEASE_NAME}
       if [ ${OSes[$index]} = "win32" ]; then

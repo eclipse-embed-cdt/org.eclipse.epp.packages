@@ -13,7 +13,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse Classic 3.5.0 RC1"
+   packageName="Eclipse Classic 3.5.0 RC2"
    maintainer="Eclipse Platform Team"
    iconurl="http://www.eclipse.org/downloads/images/classic2.jpg"
    bugzillaComponentId=""
@@ -26,7 +26,7 @@
     </packageTesters>
     <FakePackage>True</FakePackage>
     <FakePackageLocation>
-      /eclipse/downloads/drops/S-3.5RC1-200905151143/
+      /eclipse/downloads/drops/S-3.5RC2-200905221710/
     </FakePackageLocation>
   </packageMetaData>
   <MoreInfo>
@@ -41,11 +41,11 @@
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="3.5RC1" />
+  <rcp version="3.5RC2" />
 
   <!-- name, the name of the product, used in naming the created files. -->
   <product
-    name="eclipse-SDK-3.5RC1" 
+    name="eclipse-SDK-3.5RC2" 
     eclipseProductId="org.eclipse.sdk.ide"
     initialPerspectiveId="org.eclipse.jdt.ui.JavaPerspective" />
 

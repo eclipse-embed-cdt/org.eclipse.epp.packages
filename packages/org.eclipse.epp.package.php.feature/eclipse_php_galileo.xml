@@ -37,12 +37,12 @@
 		version, the RCP version to build. This is used to determine the file
 		name of the root file archives
 	-->
-	<rcp version="3.5M7" />
+	<rcp version="3.5RC2" />
 
 	<!--
 		name, name of the product, used in naming the created files.
 	-->
-	<product name="eclipse-php-galileo-M7"
+	<product name="eclipse-php-galileo-RC2"
 		eclipseProductId="org.eclipse.platform.ide"
 		initialPerspectiveId="org.eclipse.php.perspective" />
 
