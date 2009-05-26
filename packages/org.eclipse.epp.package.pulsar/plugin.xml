@@ -6,8 +6,7 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
-            description="Pulsar is a tools platform for Mobile Java Developers. It includes the Eclipse Platform, Java Development Tools (JDT), Mobile Tools for Java (MTJ), Mylyn and Plugin Development Environment (PDE). Pulsar also makes it easy to download SDK from different handset manufacturers."
-            name="Pulsar for Mobile Java Developers">
+            name="Eclipse">
          <property
                name="preferenceCustomization"
                value="plugin_customization.ini">

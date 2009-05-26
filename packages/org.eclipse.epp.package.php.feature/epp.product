@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="EPP PHP Package" uid="epp.package.php" id="org.eclipse.epp.package.php.product" application="org.eclipse.ui.ide.workbench" version="1.2.0" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse" uid="epp.package.php" id="org.eclipse.epp.package.php.product" application="org.eclipse.ui.ide.workbench" version="1.2.0" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <text>

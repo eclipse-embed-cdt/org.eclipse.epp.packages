@@ -6,6 +6,10 @@
       provider-name="Eclipse.org - EPP"
       plugin="org.eclipse.epp.package.pulsar">
 
+   <description>
+      Pulsar is a tools platform for Mobile Java Developers. It includes the Eclipse Platform, Java Development Tools (JDT), Mobile Tools for Java (MTJ), Mylyn and Plugin Development Environment (PDE). Pulsar also makes it easy to download SDK from different handset manufacturers.
+   </description>
+
    <url>
       <discovery label="Galileo" url="http://download.eclipse.org/releases/galileo/"/>
       <discovery label="Eclipse Platform 3.5 Milestones" url="http://download.eclipse.org/eclipse/updates/3.5milestones/"/>

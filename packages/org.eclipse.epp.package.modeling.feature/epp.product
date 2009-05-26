@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="EPP Modeling Package" uid="epp.package.modeling" id="org.eclipse.epp.package.modeling.product" application="org.eclipse.ui.ide.workbench" version="1.2.0" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse" uid="epp.package.modeling" id="org.eclipse.epp.package.modeling.product" application="org.eclipse.ui.ide.workbench" version="1.2.0" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <text>
