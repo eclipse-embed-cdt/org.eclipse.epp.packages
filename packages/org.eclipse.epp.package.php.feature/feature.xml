@@ -2,8 +2,8 @@
 <feature
       id="org.eclipse.epp.package.php.feature"
       label="EPP PHP Feature"
-      version="1.0.0.qualifier"
-      provider-name="Eclipse Packaging Project (EPP)"
+      version="1.2.0.qualifier"
+      provider-name="Eclipse.org - EPP"
       plugin="org.eclipse.epp.package.php">
 
    <description url="http://www.example.com/description">
@@ -43,10 +43,6 @@
       <import feature="org.eclipse.php.sdk"/>
       <import feature="org.eclipse.wst"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
-<!--
-      <import feature="org.eclipse.dltk.core"/>
-      <import feature="org.eclipse.dltk.ui"/>
-      -->
       <import feature="org.eclipse.dltk.rse"/>
    </requires>
 

@@ -2,8 +2,8 @@
 <feature
       id="org.eclipse.epp.package.pulsar.feature"
       label="EPP Pulsar Feature"
-      version="1.0.0.qualifier"
-      provider-name="Eclipse Packaging Project (EPP)"
+      version="1.2.0.qualifier"
+      provider-name="Eclipse.org - EPP"
       plugin="org.eclipse.epp.package.pulsar">
 
    <url>

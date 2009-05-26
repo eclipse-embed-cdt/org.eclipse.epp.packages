@@ -2,8 +2,8 @@
 <feature
       id="org.eclipse.epp.package.rcp.feature"
       label="EPP RCP Feature"
-      version="1.0.0.qualifier"
-      provider-name="Eclipse Packaging Project (EPP)"
+      version="1.2.0.qualifier"
+      provider-name="Eclipse.org - EPP"
       plugin="org.eclipse.epp.package.rcp">
 
    <description url="http://www.example.com/description">
@@ -44,7 +44,6 @@
       <import feature="org.eclipse.mylyn.context_feature"/>
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
-<!--      <import feature="org.eclipse.ecf.core"/> -->
       <import feature="org.eclipse.epp.usagedata.feature"/>
       <import feature="org.eclipse.platform.source"/>
       <import feature="org.eclipse.cvs.source"/>
