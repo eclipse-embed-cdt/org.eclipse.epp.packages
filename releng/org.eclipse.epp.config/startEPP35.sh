@@ -104,7 +104,7 @@ do
   
   # Start statusfile
   echo "<td>"  >>${STATUSFILE}
-  
+
   for index in 0 1 2 3;
   do
     echo -n "...EPP building ${PACKAGE} ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]} "
@@ -113,11 +113,12 @@ do
     rm -rf ${PACKAGE_BUILD_DIR}
     mkdir -p ${PACKAGE_BUILD_DIR}
     ${ECLIPSE} -nosplash -consoleLog -application org.eclipse.equinox.p2.director \
-      -metadataRepositories ${METADATAREPOSITORIES} -artifactRepositories ${ARTIFACTREPOSITORIES} \
+      -metadatarepositories ${METADATAREPOSITORIES} -artifactrepositories ${ARTIFACTREPOSITORIES} \
       -installIU ${PACKAGE} \
       -destination ${PACKAGE_BUILD_DIR}/eclipse \
       -profile ${PACKAGE} \
-      -profileProperties org.eclipse.update.install.features=true \
+      -flavor tooling \
+      -profileproperties org.eclipse.update.install.features=true \
       -bundlepool ${PACKAGE_BUILD_DIR}/eclipse \
       -p2.os ${OSes[$index]} \
       -p2.ws ${WSes[$index]} \
