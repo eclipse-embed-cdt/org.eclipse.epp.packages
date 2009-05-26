@@ -7,7 +7,8 @@
 	<property name="build.root" location="${user.home}/epp.build"/>
 	<property file="${build.root}/build.properties" />
 	<property name="bm.headless.site" value="http://download.eclipse.org/tools/buckminster/headless-3.5/" />
-	<property name="galileo.site" value="http://download.eclipse.org/releases/staging/" />
+	<property name="galileo.site" value="http://download.eclipse.org/releases/galileo/" />
+	<property name="staging.site" value="http://download.eclipse.org/releases/staging/" />
 	<property name="buildtools" location="${build.root}/tools" />
 	<property name="workspace" location="${build.root}/workspace" />
 	<property name="cquery.url" location="${basedir}/epp.cquery" />
@@ -83,7 +84,7 @@
 	<target name="build.workspace" depends="install.buckminster">
 		<eclipse.launch app="buckminster">
 			<args>
-				<jvmarg value="-Dgalileo.site=${galileo.site}" />
+				<jvmarg value="-Dgalileo.site=${staging.site}" />
 			  <jvmarg value="-Declipse.p2.mirrors=false" />
 				<arg value="-data" />
 				<arg value="${workspace}" />
