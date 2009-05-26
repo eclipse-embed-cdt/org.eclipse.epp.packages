@@ -113,7 +113,7 @@ do
     rm -rf ${PACKAGE_BUILD_DIR}
     mkdir -p ${PACKAGE_BUILD_DIR}
     ${ECLIPSE} -nosplash -consoleLog -application org.eclipse.equinox.p2.director \
-      -metadatarepositories ${METADATAREPOSITORIES} -artifactrepositories ${ARTIFACTREPOSITORIES} \
+      -repositories ${METADATAREPOSITORIES} \
       -installIU ${PACKAGE} \
       -destination ${PACKAGE_BUILD_DIR}/eclipse \
       -profile ${PACKAGE} \
