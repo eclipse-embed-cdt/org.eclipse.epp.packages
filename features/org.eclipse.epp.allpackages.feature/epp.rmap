@@ -4,6 +4,14 @@
 	xmlns:pmp="http://www.eclipse.org/buckminster/PDEMapProvider-1.0"
 	xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0">
 
+	<searchPath name="org.eclipse.epp.allpackages">
+		<provider readerType="cvs" componentTypes="osgi.bundle,eclipse.feature" mutable="true" source="true">
+			<uri format=":pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/features/{0}">
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+		</provider>
+	</searchPath>
+
 	<searchPath name="org.eclipse.epp.packages">
 		<provider readerType="cvs" componentTypes="osgi.bundle,eclipse.feature" mutable="true" source="true">
 			<uri format=":pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/{0}">
@@ -20,14 +28,6 @@
 		</provider>
 	</searchPath>
 
-	<searchPath name="org.eclipse.epp.allpackages">
-		<provider readerType="cvs" componentTypes="osgi.bundle,eclipse.feature" mutable="true" source="true">
-			<uri format=":pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/{0}">
-				<bc:propertyRef key="buckminster.component" />
-			</uri>
-		</provider>
-	</searchPath>
-
 	<searchPath name="galileo">
 		<provider readerType="eclipse.import" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
 			<uri format="{0}?importType=binary">
@@ -36,8 +36,8 @@
 		</provider>
 	</searchPath>
 
-	<locator searchPathRef="org.eclipse.epp.allpackages" pattern="^org\.eclipse\.epp\.allpackages\.feature$"/>
+	<locator searchPathRef="org.eclipse.epp.allpackages" pattern="^org\.eclipse\.epp\.allpackages\..*$"/>
 	<locator searchPathRef="org.eclipse.epp.packages" pattern="^org\.eclipse\.epp\.package\..*$"/>
-	<locator searchPathRef="org.eclipse.wtp.epp.package" pattern="^org\.eclipse\.wtp\.epp.package\..*$"/>
+	<locator searchPathRef="org.eclipse.wtp.epp.package" pattern="^org\.eclipse\.wtp\.epp\.package\..*$"/>
 	<locator searchPathRef="galileo"/>
 </rmap>
