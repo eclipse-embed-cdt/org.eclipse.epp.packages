@@ -57,12 +57,13 @@ RELEASE_NAME="-galileo-RC2"
 ###############################################################################
 
 # only one build process allowed
-if [ -e ${LOCKFILE} ]; then
-    echo "${START_TIME} EPP build - lockfile ${LOCKFILE} exists" >/dev/stderr
-    exit 1
-fi
-trap "rm -f ${LOCKFILE}; exit" INT TERM EXIT
-touch ${LOCKFILE}
+## using the Hudson EPP lock, but leave the code in there for now
+#if [ -e ${LOCKFILE} ]; then
+#    echo "${START_TIME} EPP build - lockfile ${LOCKFILE} exists" >/dev/stderr
+#    exit 1
+#fi
+#trap "rm -f ${LOCKFILE}; exit" INT TERM EXIT
+#touch ${LOCKFILE}
 
 # create download directory and files
 DOWNLOAD_DIR=${DOWNLOAD_BASE_DIR}/${START_TIME}
@@ -177,6 +178,7 @@ cp -a ${DOWNLOAD_BASE_DIR}/${STATUSFILENAME} /home/data/httpd/download.eclipse.o
 ###############################################################################
 
 # remove lockfile
-rm ${LOCKFILE}
+## using the Hudson EPP lock, but leave the code in there for now
+#rm ${LOCKFILE}
 
 ## EOF
