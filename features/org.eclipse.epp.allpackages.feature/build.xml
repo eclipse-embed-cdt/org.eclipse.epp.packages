@@ -6,6 +6,7 @@
 	-->
 	<property name="build.root" location="${user.home}/epp.build"/>
 	<property file="${build.root}/build.properties" />
+	<property file="/home/data/users/mknauer/.epp_repo/buckminster.properties" />
 	<property name="bm.headless.site" value="http://download.eclipse.org/tools/buckminster/headless-3.5/" />
 	<property name="galileo.site" value="http://download.eclipse.org/releases/galileo/" />
 	<property name="staging.site" value="http://download.eclipse.org/releases/staging/" />
