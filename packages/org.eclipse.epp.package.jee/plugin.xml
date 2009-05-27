@@ -3,6 +3,7 @@
 <plugin>
    <extension
          id="product"
+         name="Java EE IDE"
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
@@ -17,11 +18,27 @@
          </property>
          <property
                name="aboutText"
-               value="The Java EE IDE Package.">
+               value="The Eclipse Java EE IDE.">
          </property>
          <property
                name="startupProgressRect"
                value="5,275,445,15">
+         </property>
+         <property
+               name="aboutImage"
+               value="about_gears.gif">
+         </property>
+         <property
+               name="windowImages"
+               value="WTP_icon_x16_v2.png,WTP_icon_x32_v2.png">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="000000">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="7,252,445,20">
          </property>
       </product>
    </extension>

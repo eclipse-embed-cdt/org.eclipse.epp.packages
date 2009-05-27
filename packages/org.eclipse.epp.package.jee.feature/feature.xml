@@ -29,11 +29,9 @@
 
    <requires>
       <import feature="org.eclipse.cvs" version="1.1.0"/>
-      <import feature="org.eclipse.equinox.p2.user.ui" version="1.1.0"/>
       <import feature="org.eclipse.help" version="1.1.0"/>
       <import feature="org.eclipse.jdt" version="3.5.0"/>
       <import feature="org.eclipse.platform" version="3.5.0"/>
-      <import feature="org.eclipse.rcp" version="3.5.0"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
       <import feature="org.eclipse.mylyn.java_feature"/>
       <import feature="org.eclipse.mylyn.bugzilla_feature"/>
@@ -88,6 +86,14 @@
          id="org.eclipse.epp.package.jee"
          download-size="0"
          install-size="0"
-         version="0.0.0"/>
+         version="0.0.0"
+         unpack="false"/>
+         
+   <plugin
+         id="org.eclipse.wtp.epp.package.jee.intro"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
 
 </feature>
