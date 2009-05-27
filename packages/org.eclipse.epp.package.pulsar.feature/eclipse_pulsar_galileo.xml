@@ -29,6 +29,9 @@
     url="http://download.eclipse.org/eclipse/downloads/drops/R-3.4-200806172000/whatsnew3.4/eclipse-news-part2.html"
     project="Eclipse JDT" />
   <NewAndNoteworthy
+    url="http://www.eclipse.org/dsdp/mtj/development/releasenotes/MTJ1.0/newsNoteworthy.php"
+    project="DSDP MTJ" />
+  <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
   </MoreInfo>
@@ -82,7 +85,7 @@
 		<platform os="win32" ws="win32" arch="x86">
 			<archiveFormat format="antZip"></archiveFormat>
 			<eclipseIniFileContent path="/eclipse/">-showsplash
-org.eclipse.platform
+org.eclipse.epp.package.pulsar
 --launcher.XXMaxPermSize
 256M
 -vmargs
@@ -93,7 +96,7 @@ org.eclipse.platform
 		<platform os="linux" ws="gtk" arch="x86">
 			<archiveFormat format="tar" />
       <eclipseIniFileContent path="/eclipse/">-showsplash
-org.eclipse.platform
+org.eclipse.epp.package.pulsar
 -vmargs
 -Dosgi.requiredJavaVersion=1.5
 -Dosgi.framework.extensions=org.eclipse.mtj.core.hooks
@@ -115,7 +118,7 @@ org.eclipse.platform
 		<platform os="macosx" ws="carbon" arch="ppc">
 			<archiveFormat format="tar" />
       <eclipseIniFileContent path="/eclipse/Eclipse.app/Contents/MacOS/">-showsplash
-org.eclipse.platform
+org.eclipse.epp.package.pulsar
 -startup
 ../../../plugins/org.eclipse.equinox.launcher_1.0.101.R34x_v20081125.jar
 --launcher.library
