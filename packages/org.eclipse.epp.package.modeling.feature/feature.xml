@@ -63,6 +63,8 @@
       <import feature="org.eclipse.emf.mint.sdk"/>
       <import feature="org.eclipse.emf.compare.sdk"/>
       <import feature="org.eclipse.xtext.sdk"/>
+      <import feature="org.eclipse.xpand.sdk"/>
+      <import feature="org.eclipse.emf.mwe.sdk"/>
    </requires>
 
    <plugin
