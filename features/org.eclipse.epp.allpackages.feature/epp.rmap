@@ -20,9 +20,9 @@
 		</provider>
 	</searchPath>
 
-	<searchPath name="buckminster.demo">
+	<searchPath name="org.eclipse.epp.allpackages">
 		<provider readerType="cvs" componentTypes="osgi.bundle,eclipse.feature" mutable="true" source="true">
-			<uri format=":pserver:anonymous@dev.eclipse.org:/cvsroot/org.eclipse,www/buckminster/samples/epp/{0}">
+			<uri format=":pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/{0}">
 				<bc:propertyRef key="buckminster.component" />
 			</uri>
 		</provider>
@@ -36,10 +36,8 @@
 		</provider>
 	</searchPath>
 
+	<locator searchPathRef="org.eclipse.epp.allpackages" pattern="^org\.eclipse\.epp\.allpackages\.feature$"/>
 	<locator searchPathRef="org.eclipse.epp.packages" pattern="^org\.eclipse\.epp\.package\..*$"/>
 	<locator searchPathRef="org.eclipse.wtp.epp.package" pattern="^org\.eclipse\.wtp\.epp.package\..*$"/>
-<!--
-	<locator searchPathRef="buckminster.demo" pattern="^org\.eclipse\.epp\.allpackages\.feature$"/>
-	-->
 	<locator searchPathRef="galileo"/>
 </rmap>
