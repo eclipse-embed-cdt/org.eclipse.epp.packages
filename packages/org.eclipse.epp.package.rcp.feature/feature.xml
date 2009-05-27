@@ -44,6 +44,7 @@
       <import feature="org.eclipse.mylyn.context_feature"/>
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
+      <import feature="org.eclipse.mylyn.sdk_feature"/>
       <import feature="org.eclipse.epp.usagedata.feature"/>
       <import feature="org.eclipse.platform.source"/>
       <import feature="org.eclipse.cvs.source"/>
