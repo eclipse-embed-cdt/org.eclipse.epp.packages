@@ -25,7 +25,7 @@
 -XX:MaxPermSize=256m</vmArgsMac>
    </launcherArgs>
 
-   <windowImages i16="/org.eclipse.epp.package.jee/WTP_icon_x16_v2.png" i32="/org.eclipse.epp.package.jee/WTP_icon_x32_v2.png"/>
+   <windowImages i16="/org.eclipse.epp.package.jee/javaee-ide_x16.png" i32="/org.eclipse.epp.package.jee/javaee-ide_x32.png" i48="/org.eclipse.epp.package.jee/javaee-ide_x48.png"/>
 
    <splash
       location="org.eclipse.epp.package.jee"
@@ -38,7 +38,7 @@
          <bmp/>
       </win>
    </launcher>
-   
+
    <intro introId="org.eclipse.wtp.epp.package.jee.intro.intro"/>
 
    <vm>
