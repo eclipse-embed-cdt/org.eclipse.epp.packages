@@ -6,16 +6,12 @@
       provider-name="Eclipse.org - EPP"
       plugin="org.eclipse.epp.package.rcp">
 
-   <description url="http://www.example.com/description">
-      [Enter Feature Description here.]
+   <description>
+      A complete set of tools for developers who want to create Eclipse plug-ins or Rich Client Applications. It includes a complete SDK, developer tools and source code, plus Mylyn, an XML editor and the Eclipse Communication Framework.
    </description>
 
-   <copyright url="http://www.example.com/copyright">
-      [Enter Copyright Description here.]
-   </copyright>
-
-   <license url="http://www.example.com/license">
-      [Enter License Description here.]
+   <license url="license.html">
+      %license
    </license>
 
    <url>

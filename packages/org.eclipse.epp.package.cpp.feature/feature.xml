@@ -6,16 +6,12 @@
       provider-name="Eclipse.org - EPP"
       plugin="org.eclipse.epp.package.cpp">
 
-   <description url="http://www.example.com/description">
-      [Enter Feature Description here.]
+   <description>
+      An IDE for C/C++ developers with Mylyn integration.
    </description>
 
-   <copyright url="http://www.example.com/copyright">
-      [Enter Copyright Description here.]
-   </copyright>
-
-   <license url="http://www.example.com/license">
-      [Enter License Description here.]
+   <license url="license.html">
+      %license
    </license>
 
    <url>
