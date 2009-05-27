@@ -29,6 +29,7 @@
 	</searchPath>
 
 	<locator searchPathRef="org.eclipse.epp.packages" pattern="^org\.eclipse\.epp\.package\..*$"/>
+	<locator searchPathRef="org.eclipse.epp.packages" pattern="^org\.eclipse\.wtp\.epp\.package\.jee\.intro$"/>
 	<locator searchPathRef="buckminster.demo" pattern="^org\.eclipse\.epp\.allpackages\.feature$"/>
 	<locator searchPathRef="galileo"/>
 </rmap>
