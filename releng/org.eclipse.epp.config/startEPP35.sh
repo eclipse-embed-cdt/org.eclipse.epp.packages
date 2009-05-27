@@ -33,10 +33,10 @@ REPO_EPP_GALILEO="file:///shared/technology/epp/epp_repo/galileo/epp.build/build
 METADATAREPOSITORIES="${REPO_STAGING},${REPO_ECLIPSE35},${REPO_EPP_GALILEO}"
 ARTIFACTREPOSITORIES="${REPO_STAGING},${REPO_ECLIPSE35},${REPO_EPP_GALILEO}"
 
-OSes=( win32 linux linux macosx )
-WSes=( win32 gtk gtk cocoa )
-ARCHes=( x86 x86 x86_64 x86 )
-FORMAT=( zip tar.gz tar.gz tar.gz )
+OSes=( win32 linux linux macosx macosx )
+WSes=( win32 gtk gtk cocoa carbon )
+ARCHes=( x86 x86 x86_64 x86 x86 )
+FORMAT=( zip tar.gz tar.gz tar.gz tar.gz )
 
 BASE_DIR=/shared/technology/epp/epp_build/35
 DOWNLOAD_BASE_DIR=${BASE_DIR}/download
