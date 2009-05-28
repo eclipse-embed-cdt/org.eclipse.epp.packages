@@ -97,6 +97,14 @@
 	</target>
 
 	<target name="build.site" depends="build.workspace">
+	  <eclipse.launch app="buckminster">
+	    <args>
+	      <arg value="-data" />
+	      <arg value="${workspace}" />
+	      <arg value="build"/>
+	    </args>
+	  </eclipse.launch>
+			    
 		<eclipse.launch app="buckminster">
 			<args>
 				<jvmarg value="-Dqualifier.replacement.*=generator:lastModified" />
