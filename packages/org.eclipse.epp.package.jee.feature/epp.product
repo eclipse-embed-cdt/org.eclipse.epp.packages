@@ -31,7 +31,7 @@
       location="org.eclipse.epp.package.jee"
       startupProgressRect="5,275,445,15"
       startupMessageRect="7,252,445,20"
-      startupForegroundColor="000000" />
+      startupForegroundColor="FFFFFF" />
    <launcher>
       <solaris/>
       <win useIco="false">
