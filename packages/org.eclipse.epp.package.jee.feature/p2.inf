@@ -7,12 +7,12 @@ requires.1.name=org.eclipse.platform.ide
 requires.1.range=[3.5.0.I20090522-1710,3.5.0.I20090522-1710]
 requires.1.greedy=true
 
-instructions.install=\
+instructions.configure=\
   setProgramProperty(propName:osgi.splashPath, propValue:platform:/base/plugins/org.eclipse.epp.package.rcp);\
   setProgramProperty(propName:eclipse.product,propValue:org.eclipse.epp.package.rcp.product);\
   setProgramProperty(propName:eclipse.application,propValue:org.eclipse.ui.ide.workbench);
   
-instructions.uninstall=\
+instructions.unconfigure=\
   setProgramProperty(propName:osgi.splashPath,propValue:);\
   setProgramProperty(propName:eclipse.product,propValue:);\
   setProgramProperty(propName:eclipse.application,propValue:);
