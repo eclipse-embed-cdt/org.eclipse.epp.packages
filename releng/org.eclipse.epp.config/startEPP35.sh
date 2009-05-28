@@ -175,7 +175,10 @@ done
 cp -a --no-preserve=ownership ${DOWNLOAD_BASE_DIR}/${STATUSFILENAME} /home/data/httpd/download.eclipse.org/technology/epp/downloads/testing/status35.stub
 
 
+
 ###############################################################################
+
+echo "EPP package build finished."
 
 # remove lockfile
 ## using the Hudson EPP lock, but leave the code in there for now
