@@ -30,7 +30,7 @@
          </property>
          <property
                name="windowImages"
-               value="WTP_icon_x16_v2.png,WTP_icon_x32_v2.png">
+               value="javaee-ide_x16.png,javaee-ide_x32.png,javaee-ide_x48.png">
          </property>
          <property
                name="startupForegroundColor"
