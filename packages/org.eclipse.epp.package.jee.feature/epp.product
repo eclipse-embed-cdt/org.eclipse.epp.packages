@@ -14,7 +14,8 @@
    </configIni>
 
    <launcherArgs>
-      <programArgs>-product org.eclipse.epp.package.jee.product</programArgs>
+      <programArgs>-product org.eclipse.epp.package.jee.product
+-showsplash org.eclipse.epp.package.jee</programArgs>
       <programArgsWin>--launcher.XXMaxPermSize
 256M</programArgsWin>
       <vmArgs>-Dosgi.requiredJavaVersion=1.5

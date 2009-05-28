@@ -6,13 +6,3 @@ requires.1.namespace=org.eclipse.equinox.p2.iu
 requires.1.name=org.eclipse.platform.ide
 requires.1.range=[3.5.0.I20090522-1710,3.5.0.I20090522-1710]
 requires.1.greedy=true
-
-instructions.configure=\
-  setProgramProperty(propName:osgi.splashPath, propValue:platform:/base/plugins/org.eclipse.epp.package.jee);\
-  setProgramProperty(propName:eclipse.product,propValue:org.eclipse.epp.package.jee.product);\
-  setProgramProperty(propName:eclipse.application,propValue:org.eclipse.ui.ide.workbench);
-  
-instructions.unconfigure=\
-  setProgramProperty(propName:osgi.splashPath,propValue:);\
-  setProgramProperty(propName:eclipse.product,propValue:);\
-  setProgramProperty(propName:eclipse.application,propValue:);
