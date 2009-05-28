@@ -17,7 +17,7 @@
 	<packageMetaData
 		packageName="Eclipse IDE for PHP Developers"
 		maintainer="Eclipse Packaging Project"
-		iconurl="http://www.eclipse.org/downloads/images/classic2.jpg"
+		iconurl="http://www.eclipse.org/downloads/images/php.jpg"
 		bugzillaComponentId="php-package"
 		testPlan="http://www.eclipse.org/some/url/testplan.html">
 		<!--
