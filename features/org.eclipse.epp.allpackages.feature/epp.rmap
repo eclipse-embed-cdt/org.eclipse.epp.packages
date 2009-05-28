@@ -21,7 +21,7 @@
 	</searchPath>
 
 	<searchPath name="org.eclipse.wtp.epp.package">
-		<provider readerType="cvs" componentTypes="osgi.bundle,eclipse.feature" mutable="true" source="true">
+		<provider readerType="cvs" componentTypes="osgi.bundle" mutable="true" source="true">
 			<uri format=":pserver:anonymous@dev.eclipse.org:/cvsroot/webtools,webtools.releng/plugins/{0}">
 				<bc:propertyRef key="buckminster.component" />
 			</uri>
@@ -36,19 +36,9 @@
 		</provider>
 	</searchPath>
 
-	<searchPath name="platform">
-		<provider readerType="eclipse.import" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
-			<uri format="{0}?importType=binary">
-				<bc:propertyRef key="platform.site" />
-			</uri>
-		</provider>
-	</searchPath>
-
 	<locator searchPathRef="org.eclipse.epp.allpackages" pattern="^org\.eclipse\.epp\.allpackages\..*$"/>
 	<locator searchPathRef="org.eclipse.epp.packages" pattern="^org\.eclipse\.epp\.package\..*$"/>
-	<locator searchPathRef="org.eclipse.wtp.epp.package" pattern="^org\.eclipse\.wtp\.epp\.package\..*$"/>
+	<locator searchPathRef="org.eclipse.wtp.epp.package" pattern="^org\.eclipse\.wtp\.epp\.package\.jee\.intro$"/>
 	<locator searchPathRef="galileo"/>
-	<!--
-	<locator searchPathRef="platform"/>
-	-->
+
 </rmap>
