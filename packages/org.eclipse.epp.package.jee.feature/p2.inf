@@ -6,3 +6,15 @@ requires.1.namespace=org.eclipse.equinox.p2.iu
 requires.1.name=org.eclipse.platform.ide
 requires.1.range=[3.5.0.I20090522-1710,3.5.0.I20090522-1710]
 requires.1.greedy=true
+
+instructions.configure=\
+addRepository(type:0,location:http${#58}//download.eclipse.org/technology/epp/packages/galileo,name:EPP Galileo Repository);\
+addRepository(type:1,location:http${#58}//download.eclipse.org/technology/epp/packages/galileo,name:EPP Galileo Repository);\
+  setProgramProperty(propName:osgi.splashPath, propValue:platform:/base/plugins/org.eclipse.epp.package.rcp);\
+  setProgramProperty(propName:eclipse.product,propValue:org.eclipse.epp.package.rcp.product);\
+  setProgramProperty(propName:eclipse.application,propValue:org.eclipse.ui.ide.workbench);
+  
+instructions.unconfigure=\
+  setProgramProperty(propName:osgi.splashPath,propValue:);\
+  setProgramProperty(propName:eclipse.product,propValue:);\
+  setProgramProperty(propName:eclipse.application,propValue:);
