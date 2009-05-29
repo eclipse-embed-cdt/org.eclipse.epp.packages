@@ -11,7 +11,7 @@
 	<property name="galileo.site" value="http://download.eclipse.org/releases/galileo/" />
 	<property name="staging.site" value="http://download.eclipse.org/releases/staging/" />
 	<property name="platform.site" value="http://download.eclipse.org/eclipse/updates/3.5milestones/" />
-	<property name="platformOld.site" value="http://download.eclipse.org/eclipse/updates/3.5milestones/S-3.5RC1-200905151143/" />
+	<property name="platformRC1.site" value="http://download.eclipse.org/eclipse/updates/3.5milestones/S-3.5RC1-200905151143/" />
 	<property name="buildtools" location="${build.root}/tools" />
 	<property name="workspace" location="${build.root}/workspace" />
 	<property name="cquery.url" location="${basedir}/epp.cquery" />
@@ -57,6 +57,7 @@
 
 	<!--Configure the Buckminster product with needed features
 	-->
+<!--				<arg value="${galileo.site}"/> -->
 	<target name="install.buckminster" depends="get.director">
 		<eclipse.launch app="director">
 			<args>
@@ -65,8 +66,7 @@
 				<arg value="-r"/>
 				<arg value="${bm.headless.site}"/>
 				<arg value="-r"/>
-				<arg value="${platformOld.site}"/>
-<!--				<arg value="${galileo.site}"/> -->
+				<arg value="${platformRC1.site}"/>
 				<arg value="-d"/>
 				<arg value="${buildtools}/buckminster"/>
 				<arg value="-p"/>
