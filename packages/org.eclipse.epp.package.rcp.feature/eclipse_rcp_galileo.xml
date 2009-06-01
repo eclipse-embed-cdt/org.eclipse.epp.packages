@@ -35,11 +35,11 @@
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="3.5RC2" />
+  <rcp version="3.5RC3" />
 
   <!-- name, the name of the product, used in naming the created files. -->
   <product
-    name="eclipse-rcp-galileo-RC2" 
+    name="eclipse-rcp-galileo-RC3" 
     eclipseProductId="org.eclipse.sdk.ide"
     initialPerspectiveId="org.eclipse.jdt.ui.JavaPerspective" />
 

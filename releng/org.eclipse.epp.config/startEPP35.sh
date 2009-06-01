@@ -23,7 +23,7 @@ then
 fi
 
 # Galileo Repositories
-REPO_ECLIPSE35="${BASE_URL}/eclipse/updates/3.5milestones/S-3.5RC2-200905221710/"
+REPO_ECLIPSE35="${BASE_URL}/eclipse/updates/3.5milestones/S-3.5RC3-200905282000/"
 REPO_GALILEO="${BASE_URL}/releases/galileo/"
 REPO_STAGING="${BASE_URL}/releases/staging/"
 #REPO_EPP_GALILEO="${BASE_URL}/technology/epp/packages/galileo/milestones"
@@ -52,7 +52,7 @@ MARKERFILENAME=".epp.nightlybuild"
 STATUSFILENAME="status.stub"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 CVSPROJECTPATH="org.eclipse.epp/packages"
-RELEASE_NAME="-galileo-RC2"
+RELEASE_NAME="-galileo-RC3"
 
 ###############################################################################
 
