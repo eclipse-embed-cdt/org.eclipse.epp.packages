@@ -45,40 +45,12 @@
       <windows>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</windows>
    </vm>
 
-   <license>
-        <url>license.html</url>
-        <text>
-   %license
-         </text>
-   </license>
-
    <plugins>
       <plugin id="org.eclipse.epp.package.rcp"/>
    </plugins>
 
    <features>
-      <feature id="org.eclipse.cvs" version="1.1.0" match="greaterOrEqual"/>
-      <feature id="org.eclipse.cvs.source"/>
-      <feature id="org.eclipse.epp.usagedata.feature"/>
-      <feature id="org.eclipse.equinox.p2.user.ui" version="1.1.0" match="greaterOrEqual"/>
-      <feature id="org.eclipse.help" version="1.1.0" match="greaterOrEqual"/>
-      <feature id="org.eclipse.help.source"/>
-      <feature id="org.eclipse.jdt" version="3.5.0" match="greaterOrEqual"/>
-      <feature id="org.eclipse.jdt.source"/>
-      <feature id="org.eclipse.mylyn.bugzilla_feature"/>
-      <feature id="org.eclipse.mylyn.context_feature"/>
-      <feature id="org.eclipse.mylyn.ide_feature"/>
-      <feature id="org.eclipse.mylyn.java_feature"/>
-      <feature id="org.eclipse.mylyn.pde_feature"/>
-      <feature id="org.eclipse.mylyn.sdk_feature"/>
-      <feature id="org.eclipse.mylyn.wikitext_feature"/>
-      <feature id="org.eclipse.mylyn_feature"/>
-      <feature id="org.eclipse.pde" version="3.5.0" match="greaterOrEqual"/>
-      <feature id="org.eclipse.pde.source"/>
-      <feature id="org.eclipse.platform" version="3.5.0" match="greaterOrEqual"/>
-      <feature id="org.eclipse.platform.source"/>
-      <feature id="org.eclipse.rcp" version="3.5.0" match="greaterOrEqual"/>
-      <feature id="org.eclipse.wst.xml_ui.feature"/>
+      <feature id="org.eclipse.epp.package.rcp.feature" version="1.2.0.qualifier"/>
    </features>
 
 
