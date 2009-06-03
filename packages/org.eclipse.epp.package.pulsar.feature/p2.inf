@@ -7,12 +7,3 @@ requires.1.name=org.eclipse.platform.ide
 #requires.1.range=[3.5.0.I20090522-1710,3.5.0.I20090522-1710]
 requires.1.greedy=true
 
-instructions.configure=\
-org.eclipse.equinox.p2.osgi.setProgramProperty(propName:osgi.splashPath, propValue:platform:/base/plugins/org.eclipse.epp.package.pulsar);\
-org.eclipse.equinox.p2.osgi.setProgramProperty(propName:eclipse.product,propValue:org.eclipse.epp.package.pulsar.product);\
-org.eclipse.equinox.p2.osgi.setProgramProperty(propName:eclipse.application,propValue:org.eclipse.ui.ide.workbench);
-
-instructions.unconfigure=\
-org.eclipse.equinox.p2.osgi.setProgramProperty(propName:osgi.splashPath,propValue:);\
-org.eclipse.equinox.p2.osgi.setProgramProperty(propName:eclipse.product,propValue:);\
-org.eclipse.equinox.p2.osgi.setProgramProperty(propName:eclipse.application,propValue:);
