@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse" uid="epp.package.jee" id="org.eclipse.epp.package.jee.product" application="org.eclipse.ui.ide.workbench" version="1.2.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse IDE for Java EE Developers" uid="epp.package.jee" id="org.eclipse.epp.package.jee.product" application="org.eclipse.ui.ide.workbench" version="1.2.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/org.eclipse.epp.package.jee/about_gears.gif"/>

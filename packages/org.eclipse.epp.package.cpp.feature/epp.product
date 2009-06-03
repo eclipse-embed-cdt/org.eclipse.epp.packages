@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse" uid="epp.package.cpp" id="org.eclipse.epp.package.cpp.product" application="org.eclipse.ui.ide.workbench" version="1.2.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse IDE for C/C++ Developers" uid="epp.package.cpp" id="org.eclipse.epp.package.cpp.product" application="org.eclipse.ui.ide.workbench" version="1.2.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <text>
@@ -35,7 +35,6 @@
          <bmp/>
       </win>
    </launcher>
-
 
    <vm>
       <linux>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</linux>
