@@ -7,14 +7,14 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
-            name="Eclipse IDE for Java Developers">
+            name="Eclipse">
          <property
                name="preferenceCustomization"
                value="plugin_customization.ini">
          </property>
          <property
                name="appName"
-               value="Eclipse IDE for Java Developers">
+               value="Eclipse">
          </property>
          <property
                name="aboutImage"
