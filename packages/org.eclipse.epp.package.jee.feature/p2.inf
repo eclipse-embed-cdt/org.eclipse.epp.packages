@@ -9,10 +9,7 @@ requires.1.greedy=true
 
 instructions.configure=\
 org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/technology/epp/packages/galileo,name:EPP Packages Repository);\
-org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/technology/epp/packages/galileo,name:EPP Packages Repository);\
-org.eclipse.equinox.p2.touchpoint.eclipse.setProgramProperty(propName:osgi.splashPath, propValue:platform:/base/plugins/org.eclipse.epp.package.jee);\
-org.eclipse.equinox.p2.touchpoint.eclipse.setProgramProperty(propName:eclipse.product,propValue:org.eclipse.epp.package.jee.product);\
-org.eclipse.equinox.p2.touchpoint.eclipse.setProgramProperty(propName:eclipse.application,propValue:org.eclipse.ui.ide.workbench);
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/technology/epp/packages/galileo,name:EPP Packages Repository);
 
 instructions.unconfigure=\
 org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.eclipse.org/technology/epp/packages/galileo);\
