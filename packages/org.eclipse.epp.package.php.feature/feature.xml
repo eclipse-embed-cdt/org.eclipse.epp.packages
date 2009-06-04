@@ -37,11 +37,9 @@
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
       <import feature="org.eclipse.epp.usagedata.feature"/>
       <import feature="org.eclipse.php.sdk"/>
-      <import feature="org.eclipse.wst.common.fproj"/>
       <import feature="org.eclipse.wst.jsdt.feature"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.wst.web_ui.feature"/>
-      <import feature="org.eclipse.wst.server_adapters"/>
       <import feature="org.eclipse.wst.xsl.feature"/>
       <import feature="org.eclipse.dltk.rse"/>
    </requires>
