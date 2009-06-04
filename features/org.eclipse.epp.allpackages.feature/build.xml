@@ -119,6 +119,7 @@
 				<jvmarg value="-Dbuckminster.output.root=${build.root}/buildresult" />
 				<jvmarg value="-Dbuckminster.temp.root=${build.root}/temp" />
 			  <jvmarg value="-Dbuild.id=${build.id}" />
+			  <jvmarg value="-Dcbi.include.source=false" />
 			  <jvmarg value="-Declipse.p2.mirrors=false" />
 				<arg value="-data" />
 				<arg value="${workspace}" />
