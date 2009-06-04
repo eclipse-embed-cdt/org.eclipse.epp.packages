@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.eclipse.epp.package.java.feature"
-      label="EPP Java Feature"
+      label="EPP Java Package"
       version="1.2.0.qualifier"
-      provider-name="Eclipse.org - EPP"
+      provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.java">
 
    <description>
@@ -17,6 +17,7 @@
    <url>
       <discovery label="Galileo" url="http://download.eclipse.org/releases/galileo/"/>
       <discovery label="Eclipse Platform 3.5 Milestones" url="http://download.eclipse.org/eclipse/updates/3.5milestones/"/>
+      <discovery label="Mylyn Updates" url="http://download.eclipse.org/tools/mylyn/update/e3.4/"/>
    </url>
 
    <includes

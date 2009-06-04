@@ -3,6 +3,7 @@
 <plugin>
    <extension
          id="product"
+         name="Java IDE"
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
@@ -16,8 +17,8 @@
                value="Eclipse">
          </property>
          <property
-               name="aboutText"
-               value="This is the EPP Java About Dialog.">
+               name="aboutImage"
+               value="epp-java-about.png">
          </property>
          <property
                name="startupProgressRect"
