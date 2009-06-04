@@ -4,8 +4,9 @@
 <product name="Eclipse IDE for Java and Report Developers" uid="epp.package.reporting" id="org.eclipse.epp.package.reporting.product" application="org.eclipse.ui.ide.workbench" version="1.2.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
+      <image path="/org.eclipse.epp.package.reporting/eclipse_lg.gif"/>
       <text>
-         This is the EPP Reporting About Dialog.
+         Eclipse IDE for Java and Report Developers
       </text>
    </aboutInfo>
 
@@ -24,7 +25,7 @@
 -XX:MaxPermSize=256m</vmArgsMac>
    </launcherArgs>
 
-   <windowImages/>
+   <windowImages i16="/org.eclipse.epp.package.reporting/eclipse.png" i32="/org.eclipse.epp.package.reporting/eclipse32.png" i48="/org.eclipse.epp.package.reporting/eclipse48.png"/>
 
    <splash
       location="org.eclipse.epp.package.reporting"
@@ -35,6 +36,7 @@
          <bmp/>
       </win>
    </launcher>
+
 
    <vm>
       <linux>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</linux>

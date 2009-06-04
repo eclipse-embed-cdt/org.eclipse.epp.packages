@@ -6,18 +6,24 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
-            name="Eclipse">
+            name="Pulsar for Mobile Java Developers">
          <property
                name="preferenceCustomization"
                value="plugin_customization.ini">
          </property>
          <property
                name="appName"
-               value="Eclipse">
+               value="Pulsar for Mobile Java Developers">
          </property>
          <property
                name="aboutText"
-               value="This is the EPP Pulsar About Dialog.">
+               value="Pulsar for Mobile Java Developers.\n\
+\n\
+Version: {featureVersion}\n\
+Build id: {0}\n\
+\n\
+(c) Copyright Pulsar Committers and others. 2009.  All rights reserved.\n\
+Visit http://www.eclipse.org/pulsar/">
          </property>
          <property
                name="startupProgressRect"
@@ -25,7 +31,11 @@
          </property>
          <property
                name="windowImages" 
-               value="eclipse.gif,eclipse32.gif,eclipse48.gif,eclipse.png,eclipse32.png,eclipse48.png" >
+               value="eclipse.png,eclipse32.png,eclipse48.png" >
+         </property>
+         <property
+               name="aboutImage"
+               value="eclipse_lg.gif">
          </property>
       </product>
    </extension>

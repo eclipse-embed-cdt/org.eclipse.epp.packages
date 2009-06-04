@@ -4,8 +4,9 @@
 <product name="Eclipse for RCP/Plug-in Developers" uid="epp.package.rcp" id="org.eclipse.epp.package.rcp.product" application="org.eclipse.ui.ide.workbench" version="1.2.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
+      <image path="/org.eclipse.epp.package.rcp/eclipse_lg.gif"/>
       <text>
-         This is the EPP RCP About Dialog.
+         Eclipse for RCP/Plug-in Developers
       </text>
    </aboutInfo>
 
@@ -24,7 +25,7 @@
 -XX:MaxPermSize=256m</vmArgsMac>
    </launcherArgs>
 
-   <windowImages/>
+   <windowImages i16="/org.eclipse.epp.package.rcp/eclipse.png" i32="/org.eclipse.epp.package.rcp/eclipse32.png" i48="/org.eclipse.epp.package.rcp/eclipse48.png"/>
 
    <splash
       location="org.eclipse.epp.package.rcp"

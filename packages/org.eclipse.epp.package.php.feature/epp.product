@@ -4,8 +4,9 @@
 <product name="Eclipse IDE for PHP Developers" uid="epp.package.php" id="org.eclipse.epp.package.php.product" application="org.eclipse.ui.ide.workbench" version="1.2.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
+      <image path="/org.eclipse.epp.package.pulsar/eclipse_lg.gif"/>
       <text>
-         This is the EPP PHP About Dialog.
+         Eclipse IDE for PHP Developers
       </text>
    </aboutInfo>
 
@@ -24,7 +25,7 @@
 -XX:MaxPermSize=256m</vmArgsMac>
    </launcherArgs>
 
-   <windowImages/>
+   <windowImages i16="/org.eclipse.epp.package.pulsar/eclipse.png" i32="/org.eclipse.epp.package.pulsar/eclipse32.png" i48="/org.eclipse.epp.package.pulsar/eclipse48.png"/>
 
    <splash
       location="org.eclipse.epp.package.php"
@@ -36,12 +37,14 @@
       </win>
    </launcher>
 
+
    <vm>
       <linux>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</linux>
       <macos>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</macos>
       <solaris>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</solaris>
       <windows>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</windows>
    </vm>
+
 
    <plugins>
       <plugin id="org.eclipse.epp.package.php"/>

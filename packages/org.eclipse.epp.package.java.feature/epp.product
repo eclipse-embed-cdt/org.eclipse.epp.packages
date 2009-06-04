@@ -34,7 +34,7 @@ Apache Software Foundation http://apache.org/
 -XX:MaxPermSize=256m</vmArgsMac>
    </launcherArgs>
 
-   <windowImages/>
+   <windowImages i16="/org.eclipse.epp.package.java/eclipse.png" i32="/org.eclipse.epp.package.java/eclipse32.png" i48="/org.eclipse.epp.package.java/eclipse48.png"/>
 
    <splash
       location="org.eclipse.epp.package.java"

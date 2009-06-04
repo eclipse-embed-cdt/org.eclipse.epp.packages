@@ -6,22 +6,30 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
-            name="Eclipse">
+            name="Eclipse IDE for Java and Report Developers">
          <property
                name="preferenceCustomization"
                value="plugin_customization.ini">
          </property>
          <property
                name="appName"
-               value="Eclipse">
+               value="Eclipse IDE for Java and Report Developers">
          </property>
          <property
                name="aboutText"
-               value="This is the EPP Reporting About Dialog.">
+               value="Eclipse IDE for Java and Report Developers">
          </property>
          <property
                name="startupProgressRect"
                value="5,275,445,15">
+         </property>
+         <property
+               name="aboutImage"
+               value="eclipse_lg.gif">
+         </property>
+         <property
+               name="windowImages"
+               value="eclipse.png,eclipse32.png,eclipse48.png">
          </property>
       </product>
    </extension>

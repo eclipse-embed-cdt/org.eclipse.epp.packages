@@ -4,6 +4,7 @@
 <product name="Pulsar for Mobile Java Developers" uid="epp.package.pulsar" id="org.eclipse.epp.package.pulsar.product" application="org.eclipse.ui.ide.workbench" version="1.2.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
+      <image path="/org.eclipse.epp.package.pulsar/eclipse_lg.gif"/>
       <text>
          Pulsar for Mobile Java Developers.\n\
 \n\
@@ -31,7 +32,7 @@ Visit http://www.eclipse.org/pulsar/
 -XX:MaxPermSize=256m</vmArgsMac>
    </launcherArgs>
 
-   <windowImages/>
+   <windowImages i16="/org.eclipse.epp.package.pulsar/eclipse.png" i32="/org.eclipse.epp.package.pulsar/eclipse32.png" i48="/org.eclipse.epp.package.pulsar/eclipse48.png"/>
 
    <splash
       location="org.eclipse.epp.package.pulsar"
@@ -42,6 +43,7 @@ Visit http://www.eclipse.org/pulsar/
          <bmp/>
       </win>
    </launcher>
+
 
    <vm>
       <linux>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</linux>
