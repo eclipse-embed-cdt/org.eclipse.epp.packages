@@ -7,3 +7,13 @@ requires.1.name=org.eclipse.platform.ide
 #requires.1.range=[3.5.0.I20090522-1710,3.5.0.I20090522-1710]
 requires.1.greedy=true
 
+instructions.configure=\
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/technology/epp/packages/galileo,name:EPP Packages Repository);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/technology/epp/packages/galileo,name:EPP Packages Repository);\
+org.eclipse.equinox.p2.touchpoint.eclipse.setProgramProperty(propName:osgi.splashPath, propValue:platform:/base/plugins/org.eclipse.epp.package.pulsar);\
+org.eclipse.equinox.p2.touchpoint.eclipse.setProgramProperty(propName:eclipse.product,propValue:org.eclipse.epp.package.pulsar.product);\
+org.eclipse.equinox.p2.touchpoint.eclipse.setProgramProperty(propName:eclipse.application,propValue:org.eclipse.ui.ide.workbench);
+
+instructions.unconfigure=\
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.eclipse.org/technology/epp/packages/galileo);\
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.eclipse.org/technology/epp/packages/galileo);
