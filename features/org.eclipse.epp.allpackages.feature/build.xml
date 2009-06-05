@@ -12,6 +12,7 @@
 	<property name="platform.site" value="http://download.eclipse.org/eclipse/updates/3.5milestones/" />
 	<property name="platformRC2.site" value="http://download.eclipse.org/eclipse/updates/3.5milestones/S-3.5RC2-200905221710/" />
 	<property name="platformRC3.site" value="http://download.eclipse.org/eclipse/updates/3.5milestones/S-3.5RC3-200905282000/" />
+	<property name="build.id" value="${DSTAMP}-${TSTAMP}" />
 	<property name="buildtools" location="${build.root}/tools" />
 	<property name="workspace" location="${build.root}/workspace" />
 	<property name="cquery.url" location="${basedir}/epp.cquery" />
