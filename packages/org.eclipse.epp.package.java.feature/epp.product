@@ -8,7 +8,6 @@
       <text>
          Eclipse IDE for Java Developers
 
-Version: {featureVersion}
 Build id: {0}
 
 (c) Copyright Eclipse contributors and others 2000, 2009.  All rights reserved.
@@ -53,6 +52,7 @@ Apache Software Foundation http://apache.org/
       <solaris>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</solaris>
       <windows>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</windows>
    </vm>
+
 
    <plugins>
       <plugin id="org.eclipse.epp.package.java"/>
