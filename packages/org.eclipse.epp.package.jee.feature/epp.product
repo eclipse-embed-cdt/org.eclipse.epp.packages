@@ -6,7 +6,13 @@
    <aboutInfo>
       <image path="/org.eclipse.epp.package.jee/aboutgears_115x.png"/>
       <text>
-         The Eclipse Java EE IDE.
+         Eclipse Java EE IDE for Web Developers.\n\
+\n\
+Version: {featureVersion}\n\
+Build id: {0}\n\
+\n\
+(c) Copyright Eclipse contributors and others 2005, 2009.  All rights reserved.\n\
+Visit http://www.eclipse.org/webtools
       </text>
    </aboutInfo>
 
