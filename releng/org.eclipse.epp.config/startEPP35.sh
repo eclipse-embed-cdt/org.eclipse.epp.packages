@@ -23,7 +23,7 @@ then
 fi
 
 # Galileo Repositories
-REPO_ECLIPSE35="${BASE_URL}/eclipse/updates/3.5milestones/S-3.5RC3-200905282000/"
+REPO_ECLIPSE35="${BASE_URL}/eclipse/updates/3.5milestones/S-3.5RC4-200906051444/"
 REPO_GALILEO="${BASE_URL}/releases/galileo/"
 REPO_STAGING="${BASE_URL}/releases/staging/"
 #REPO_EPP_GALILEO="${BASE_URL}/technology/epp/packages/galileo/milestones"
