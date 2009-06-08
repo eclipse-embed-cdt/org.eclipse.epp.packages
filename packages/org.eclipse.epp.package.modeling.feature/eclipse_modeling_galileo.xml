@@ -54,7 +54,7 @@
 
   <!-- name, the name of the product, used in naming the created files. -->
   <product
-    name="eclipse-modeling-galileo-RC4-incubation"
+    name="eclipse-modeling-galileo-RC4"
     eclipseProductId="org.eclipse.platform.ide"
     initialPerspectiveId="org.eclipse.jdt.ui.JavaPerspective" />
 
