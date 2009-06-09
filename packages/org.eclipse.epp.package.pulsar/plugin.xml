@@ -19,7 +19,6 @@
                name="aboutText"
                value="Pulsar for Mobile Java Developers.\n\
 \n\
-Version: {featureVersion}\n\
 Build id: {0}\n\
 \n\
 (c) Copyright Pulsar Committers and others. 2009.  All rights reserved.\n\

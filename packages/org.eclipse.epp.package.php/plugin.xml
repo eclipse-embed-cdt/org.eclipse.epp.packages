@@ -19,7 +19,6 @@
                name="aboutText"
                value="Eclipse IDE for PHP Developers
 
-Version: {featureVersion}
 Build id: {0}
 
 (c) Copyright Eclipse contributors and others 2000, 2009.  All rights reserved.
