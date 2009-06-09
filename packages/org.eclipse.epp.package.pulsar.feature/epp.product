@@ -35,7 +35,6 @@ Visit http://www.eclipse.org/pulsar/
    <windowImages i16="/org.eclipse.epp.package.pulsar/eclipse.png" i32="/org.eclipse.epp.package.pulsar/eclipse32.png" i48="/org.eclipse.epp.package.pulsar/eclipse48.png"/>
 
    <splash
-      location="org.eclipse.epp.package.pulsar"
       startupProgressRect="5,275,445,15" />
    <launcher>
       <solaris/>

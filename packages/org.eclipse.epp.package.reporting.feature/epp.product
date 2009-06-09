@@ -8,6 +8,7 @@
       <text>
          Eclipse IDE for Java and Report Developers
 
+Version: {featureVersion}
 Build id: {0}
 
 (c) Copyright Eclipse contributors and others 2000, 2009.  All rights reserved.
@@ -36,7 +37,6 @@ Apache Software Foundation http://apache.org/
    <windowImages i16="/org.eclipse.epp.package.reporting/eclipse.png" i32="/org.eclipse.epp.package.reporting/eclipse32.png" i48="/org.eclipse.epp.package.reporting/eclipse48.png"/>
 
    <splash
-      location="org.eclipse.epp.package.reporting"
       startupProgressRect="5,275,445,15" />
    <launcher>
       <solaris/>
