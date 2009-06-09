@@ -34,7 +34,6 @@ Visit http://www.eclipse.org/webtools
    <windowImages i16="/org.eclipse.epp.package.jee/javaee-ide_x16.png" i32="/org.eclipse.epp.package.jee/javaee-ide_x32.png" i48="/org.eclipse.epp.package.jee/javaee-ide_x48.png"/>
 
    <splash
-      location="org.eclipse.epp.package.jee"
       startupProgressRect="5,275,445,15"
       startupMessageRect="7,252,445,20"
       startupForegroundColor="FFFFFF" />

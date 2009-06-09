@@ -18,7 +18,13 @@
          </property>
          <property
                name="aboutText"
-               value="The Eclipse Java EE IDE.">
+               value="Eclipse Java EE IDE for Web Developers.\n\
+\n\
+Version: {featureVersion}\n\
+Build id: {0}\n\
+\n\
+(c) Copyright Eclipse contributors and others 2005, 2009.  All rights reserved.\n\
+Visit http://www.eclipse.org/webtools">
          </property>
          <property
                name="startupProgressRect"
