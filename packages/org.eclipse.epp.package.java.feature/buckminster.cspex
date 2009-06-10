@@ -3,6 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0"
 	xmlns="http://www.eclipse.org/buckminster/CSpec-1.0">
+	<!--
 	<actions>
 		<private name="peruse.about.mappings" actor="ant">
 			<actorProperties>
@@ -33,4 +34,5 @@
 			</alterPrerequisites>
 		</public>
 	</alterActions>
+	-->
 </cspecExtension>
