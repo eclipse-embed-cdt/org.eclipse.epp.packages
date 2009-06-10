@@ -25,7 +25,7 @@
          </property>
          <property
                name="windowImages" 
-               value="eclipse.png,eclipse32.png,eclipse48.png" >
+               value="pulsar_16x16.png,pulsar_32x32.png,pulsar_48x48.png" >
          </property>
          <property
                name="aboutImage"
