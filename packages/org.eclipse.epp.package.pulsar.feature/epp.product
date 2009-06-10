@@ -37,8 +37,7 @@ Visit http://www.eclipse.org/pulsar/
    <splash
       startupProgressRect="5,275,445,15" />
    <launcher>
-      <solaris/>
-      <win useIco="false">
+      <win useIco="true">
          <ico path="/org.eclipse.epp.package.pulsar/pulsar.ico"/>
          <bmp/>
       </win>
