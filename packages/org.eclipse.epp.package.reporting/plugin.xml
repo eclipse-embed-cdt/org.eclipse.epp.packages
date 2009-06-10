@@ -17,14 +17,14 @@
          </property>
          <property
                name="aboutText"
-               value="Eclipse IDE for Java and Report Developers
-
-Build id: {0}
-
-(c) Copyright Eclipse contributors and others 2000, 2009.  All rights reserved.
-Visit http://eclipse.org/
-
-This product includes software developed by the
+               value="Eclipse IDE for Java and Report Developers\n\
+\n\
+Build id: {0}\n\
+\n\
+(c) Copyright Eclipse contributors and others 2000, 2009.  All rights reserved.\n\
+Visit http://eclipse.org/\n\
+\n\
+This product includes software developed by the\n\
 Apache Software Foundation http://apache.org/">
          </property>
          <property
