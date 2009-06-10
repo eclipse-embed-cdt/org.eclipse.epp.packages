@@ -6,18 +6,18 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
-            name="Eclipse IDE for C/C++ Developers">
+            name="Eclipse">
          <property
                name="preferenceCustomization"
                value="plugin_customization.ini">
          </property>
          <property
                name="appName"
-               value="Eclipse IDE for C/C++ Developers">
+               value="Eclipse">
          </property>
          <property
                name="aboutText"
-               value="Eclipse IDE for C/C++ Developers&#x0A;&#x0A;Version: {featureVersion}&#x0A;Build id: {0}&#x0A;&#x0A;(c) Copyright Eclipse contributors and others 2000, 2009.  All rights reserved.\n\&#x0A;Visit http://eclipse.org/&#x0A;&#x0A;This product includes software developed by the&#x0A;Apache Software Foundation http://apache.org/">
+               value="Eclipse IDE for C/C++ Developers&#x0A;&#x0A;Build id: {0}&#x0A;&#x0A;(c) Copyright Eclipse contributors and others 2000, 2009.  All rights reserved.\n\&#x0A;Visit http://eclipse.org/&#x0A;&#x0A;This product includes software developed by the&#x0A;Apache Software Foundation http://apache.org/">
          </property>
          <property
                name="startupProgressRect"
