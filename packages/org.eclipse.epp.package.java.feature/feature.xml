@@ -16,7 +16,7 @@
 
    <url>
       <discovery label="Galileo" url="http://download.eclipse.org/releases/galileo/"/>
-      <discovery label="Eclipse Platform 3.5 Milestones" url="http://download.eclipse.org/eclipse/updates/3.5milestones/"/>
+      <discovery label="Eclipse Platform 3.5" url="http://download.eclipse.org/eclipse/updates/3.5"/>
       <discovery label="Mylyn Updates" url="http://download.eclipse.org/tools/mylyn/update/e3.4/"/>
    </url>
 

@@ -16,7 +16,7 @@
 
    <url>
       <discovery label="Galileo" url="http://download.eclipse.org/releases/galileo/"/>
-      <discovery label="Eclipse Platform 3.5 Milestones" url="http://download.eclipse.org/eclipse/updates/3.5milestones/"/>
+      <discovery label="Eclipse Platform 3.5" url="http://download.eclipse.org/eclipse/updates/3.5"/>
    </url>
 
    <includes
@@ -25,57 +25,57 @@
          search-location="both"/>
 
    <requires>
-       <import feature="org.eclipse.cvs" version="1.1.0"/>
-       <import feature="org.eclipse.help" version="1.1.0"/>
-       <import feature="org.eclipse.jdt" version="3.5.0"/>
-       <import feature="org.eclipse.platform" version="3.5.0"/>
-       <import feature="org.eclipse.mylyn.ide_feature"/>
-       <import feature="org.eclipse.mylyn.java_feature"/>
-       <import feature="org.eclipse.mylyn.bugzilla_feature"/>
-       <import feature="org.eclipse.mylyn.context_feature"/>
-       <import feature="org.eclipse.mylyn_feature"/>
-       <import feature="org.eclipse.mylyn.wikitext_feature"/>
-       <import feature="org.eclipse.epp.usagedata.feature"/>
-       <import feature="org.eclipse.rse"/>
-       <import feature="org.eclipse.rse.useractions"/>
-       <import feature="org.eclipse.tm.terminal"/>
-       <import feature="org.eclipse.tm.terminal.ssh"/>
-       <import feature="org.eclipse.tm.terminal.telnet"/>
-       <import feature="org.eclipse.tm.terminal.view"/>
-       <import feature="org.eclipse.datatools.modelbase.feature"/>
-       <import feature="org.eclipse.datatools.connectivity.feature"/>
-       <import feature="org.eclipse.datatools.sqldevtools.feature"/>
-       <import feature="org.eclipse.datatools.intro"/>
-       <import feature="org.eclipse.datatools.doc.user"/>
-       <import feature="org.eclipse.datatools.common.doc.user"/>
-       <import feature="org.eclipse.datatools.connectivity.doc.user"/>
-       <import feature="org.eclipse.datatools.sqltools.doc.user"/>
-       <import feature="org.eclipse.datatools.enablement.feature"/>      
-       <import feature="org.eclipse.wst.common.fproj"/>
-       <import feature="org.eclipse.wst.jsdt.feature"/>
-       <import feature="org.eclipse.wst.xml_ui.feature"/>
-       <import feature="org.eclipse.wst.web_ui.feature"/>
-       <import feature="org.eclipse.wst.server_adapters.feature"/>
-       <import feature="org.eclipse.wst.xsl.feature"/>   
-       <import feature="org.eclipse.jst.common.fproj.enablement.jdt"/>
-       <import feature="org.eclipse.jst.server_ui.feature"/>
-       <import feature="org.eclipse.jst.server_adapters.feature"/>
-       <import feature="org.eclipse.jst.server_adapters.ext.feature"/>
-       <import feature="org.eclipse.jst.web_ui.feature"/>
-       <import feature="org.eclipse.jst.enterprise_ui.feature"/>
-       <import feature="org.eclipse.jst.webpageeditor.feature"/>
-       <import feature="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature"/>
-       <import feature="org.eclipse.jst.ws.axis2tools.feature"/>  
-       <import feature="org.eclipse.jpt.feature"/>
-       <import feature="org.eclipse.jpt.eclipselink.feature"/>
-       <import feature="org.eclipse.persistence.jpa"/>
-       <import feature="org.eclipse.persistence.moxy"/>
-       <import feature="org.eclipse.persistence.sdo"/>     
-       <import feature="org.eclipse.birt"/>
-       <import feature="org.eclipse.birt.doc"/>
-       <import feature="org.eclipse.birt.example"/>
-       <import feature="org.eclipse.birt.cshelp"/>
-       <import feature="org.eclipse.birt.chart.cshelp"/>
+      <import feature="org.eclipse.cvs" version="1.1.0"/>
+      <import feature="org.eclipse.help" version="1.1.0"/>
+      <import feature="org.eclipse.jdt" version="3.5.0"/>
+      <import feature="org.eclipse.platform" version="3.5.0"/>
+      <import feature="org.eclipse.mylyn.ide_feature"/>
+      <import feature="org.eclipse.mylyn.java_feature"/>
+      <import feature="org.eclipse.mylyn.bugzilla_feature"/>
+      <import feature="org.eclipse.mylyn.context_feature"/>
+      <import feature="org.eclipse.mylyn_feature"/>
+      <import feature="org.eclipse.mylyn.wikitext_feature"/>
+      <import feature="org.eclipse.epp.usagedata.feature"/>
+      <import feature="org.eclipse.rse"/>
+      <import feature="org.eclipse.rse.useractions"/>
+      <import feature="org.eclipse.tm.terminal"/>
+      <import feature="org.eclipse.tm.terminal.ssh"/>
+      <import feature="org.eclipse.tm.terminal.telnet"/>
+      <import feature="org.eclipse.tm.terminal.view"/>
+      <import feature="org.eclipse.datatools.modelbase.feature"/>
+      <import feature="org.eclipse.datatools.connectivity.feature"/>
+      <import feature="org.eclipse.datatools.sqldevtools.feature"/>
+      <import feature="org.eclipse.datatools.intro"/>
+      <import feature="org.eclipse.datatools.doc.user"/>
+      <import feature="org.eclipse.datatools.common.doc.user"/>
+      <import feature="org.eclipse.datatools.connectivity.doc.user"/>
+      <import feature="org.eclipse.datatools.sqltools.doc.user"/>
+      <import feature="org.eclipse.datatools.enablement.feature"/>
+      <import feature="org.eclipse.wst.common.fproj"/>
+      <import feature="org.eclipse.wst.jsdt.feature"/>
+      <import feature="org.eclipse.wst.xml_ui.feature"/>
+      <import feature="org.eclipse.wst.web_ui.feature"/>
+      <import feature="org.eclipse.wst.server_adapters.feature"/>
+      <import feature="org.eclipse.wst.xsl.feature"/>
+      <import feature="org.eclipse.jst.common.fproj.enablement.jdt"/>
+      <import feature="org.eclipse.jst.server_ui.feature"/>
+      <import feature="org.eclipse.jst.server_adapters.feature"/>
+      <import feature="org.eclipse.jst.server_adapters.ext.feature"/>
+      <import feature="org.eclipse.jst.web_ui.feature"/>
+      <import feature="org.eclipse.jst.enterprise_ui.feature"/>
+      <import feature="org.eclipse.jst.webpageeditor.feature"/>
+      <import feature="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature"/>
+      <import feature="org.eclipse.jst.ws.axis2tools.feature"/>
+      <import feature="org.eclipse.jpt.feature"/>
+      <import feature="org.eclipse.jpt.eclipselink.feature"/>
+      <import feature="org.eclipse.persistence.jpa"/>
+      <import feature="org.eclipse.persistence.moxy"/>
+      <import feature="org.eclipse.persistence.sdo"/>
+      <import feature="org.eclipse.birt"/>
+      <import feature="org.eclipse.birt.doc"/>
+      <import feature="org.eclipse.birt.example"/>
+      <import feature="org.eclipse.birt.cshelp"/>
+      <import feature="org.eclipse.birt.chart.cshelp"/>
    </requires>
 
    <plugin
