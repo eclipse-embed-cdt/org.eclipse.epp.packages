@@ -31,7 +31,25 @@
                name="aboutImage"
                value="eclipse_lg.gif">
          </property>
+         <property
+              name="introBrandingImage"
+              value="product:intro-eclipse.png"/>
+         <property
+               name="introTitle"
+               value="Welcome to Pulsar for Mobile Java Developers">
+         </property>
+         <property
+               name="introBrandingImageText"
+               value="Eclipse Project">
+         </property>
       </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro">
+      <introProductBinding
+            introId="org.eclipse.ui.intro.universal"
+            productId="org.eclipse.epp.package.pulsar.product">
+      </introProductBinding>
    </extension>
 
 </plugin>

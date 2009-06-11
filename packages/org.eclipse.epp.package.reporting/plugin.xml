@@ -31,7 +31,25 @@
                name="windowImages"
                value="eclipse.png,eclipse32.png,eclipse48.png">
          </property>
+         <property
+              name="introBrandingImage"
+              value="product:intro-eclipse.png"/>
+         <property
+               name="introTitle"
+               value="Welcome to the Eclipse IDE for Java and Report Developers">
+         </property>
+         <property
+               name="introBrandingImageText"
+               value="Eclipse Project">
+         </property>
       </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro">
+      <introProductBinding
+            introId="org.eclipse.ui.intro.universal"
+            productId="org.eclipse.epp.package.reporting.product">
+      </introProductBinding>
    </extension>
 
 </plugin>
