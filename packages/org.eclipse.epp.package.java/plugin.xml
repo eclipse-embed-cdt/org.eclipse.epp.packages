@@ -33,10 +33,6 @@
                value="eclipse.png,eclipse32.png,eclipse48.png">
          </property>
          <property
-               name="windowImages"
-               value="eclipse.png,eclipse32.png,eclipse48.png">
-         </property>
-         <property
           		name="introBrandingImage"
           		value="product:intro-eclipse.png"/>
          <property
