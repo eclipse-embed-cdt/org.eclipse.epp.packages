@@ -4,18 +4,8 @@
 <product name="Eclipse IDE for Java Developers" uid="epp.package.java" id="org.eclipse.epp.package.java.product" application="org.eclipse.ui.ide.workbench" version="1.2.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
-      <image path="/org.eclipse.epp.package.java/epp-java-about.png"/>
       <text>
-         Eclipse IDE for Java Developers\n\
-\n\
-Version: {featureVersion}\n\
-Build id: {0}\n\
-\n\
-(c) Copyright Eclipse contributors and others 2000, 2009.  All rights reserved.\n\
-Visit http://eclipse.org/\n\
-\n\
-This product includes software developed by the\n\
-Apache Software Foundation http://apache.org/
+         Specified in the plugin.xml of the branding plugin.
       </text>
    </aboutInfo>
 

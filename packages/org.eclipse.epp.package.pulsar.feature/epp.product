@@ -4,15 +4,8 @@
 <product name="Pulsar for Mobile Java Developers" uid="epp.package.pulsar" id="org.eclipse.epp.package.pulsar.product" application="org.eclipse.ui.ide.workbench" version="1.2.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
-      <image path="/org.eclipse.epp.package.pulsar/eclipse_lg.gif"/>
       <text>
-         Pulsar for Mobile Java Developers.\n\
-\n\
-Version: {featureVersion}\n\
-Build id: {0}\n\
-\n\
-(c) Copyright Pulsar Committers and others. 2009.  All rights reserved.\n\
-Visit http://www.eclipse.org/pulsar/
+         Specified in the plugin.xml of the branding plugin.
       </text>
    </aboutInfo>
 
@@ -37,6 +30,7 @@ Visit http://www.eclipse.org/pulsar/
    <splash
       startupProgressRect="5,275,445,15" />
    <launcher>
+      <solaris/>
       <win useIco="true">
          <ico path="/org.eclipse.epp.package.pulsar/pulsar.ico"/>
          <bmp/>

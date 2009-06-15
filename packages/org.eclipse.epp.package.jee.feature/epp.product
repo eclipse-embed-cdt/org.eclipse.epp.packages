@@ -4,15 +4,8 @@
 <product name="Eclipse IDE for Java EE Developers" uid="epp.package.jee" id="org.eclipse.epp.package.jee.product" application="org.eclipse.ui.ide.workbench" version="1.2.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
-      <image path="/org.eclipse.epp.package.jee/aboutgears_115x.png"/>
       <text>
-         Eclipse Java EE IDE for Web Developers.\n\
-\n\
-Version: {featureVersion}\n\
-Build id: {0}\n\
-\n\
-(c) Copyright Eclipse contributors and others 2005, 2009.  All rights reserved.\n\
-Visit http://www.eclipse.org/webtools
+         Specified in the plugin.xml of the branding plugin.
       </text>
    </aboutInfo>
 
