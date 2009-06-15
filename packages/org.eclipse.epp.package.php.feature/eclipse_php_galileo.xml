@@ -30,6 +30,7 @@
 		-->
 		<packageTesters>
 			<tester>Michael Spector</tester>
+			<tester>Roy Ganor</tester>
 		</packageTesters>
 	</packageMetaData>
 
