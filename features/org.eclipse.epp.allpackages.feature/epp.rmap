@@ -38,7 +38,7 @@
 
 	<locator searchPathRef="org.eclipse.epp.allpackages" pattern="^org\.eclipse\.epp\.allpackages\..*$"/>
 	<locator searchPathRef="org.eclipse.epp.packages" pattern="^org\.eclipse\.epp\.package\..*$"/>
-	<locator searchPathRef="org.eclipse.wtp.epp.package" pattern="^org\.eclipse\.wtp\.epp\.package\.jee\.intro$"/>
+	<locator searchPathRef="org.eclipse.wtp.epp.package" pattern="^org\.eclipse\.wtp\.epp\.package\..*$"/>
 	<locator searchPathRef="galileo"/>
 
 </rmap>
