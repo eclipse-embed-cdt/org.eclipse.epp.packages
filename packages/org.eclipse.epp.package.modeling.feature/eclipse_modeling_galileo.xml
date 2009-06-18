@@ -53,6 +53,6 @@
   <rcp version="3.5RC5" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-modeling-galileo-RC5" />
+  <product name="eclipse-modeling-galileo-RC5-incubation" />
 
 </configuration>
