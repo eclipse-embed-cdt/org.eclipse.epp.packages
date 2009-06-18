@@ -30,8 +30,8 @@ REPO_STAGING="${BASE_URL}/releases/staging/"
 REPO_EPP_GALILEO="file:///shared/technology/epp/epp_repo/galileo/epp.build/buildresult/org.eclipse.epp.allpackages.feature_1.2.0-eclipse.feature/site.p2"
 
 # Repositories (Galileo)
-METADATAREPOSITORIES="${REPO_STAGING},${REPO_ECLIPSE35},${REPO_EPP_GALILEO}"
-ARTIFACTREPOSITORIES="${REPO_STAGING},${REPO_ECLIPSE35},${REPO_EPP_GALILEO}"
+METADATAREPOSITORIES="${REPO_ECLIPSE35},${REPO_STAGING},${REPO_EPP_GALILEO}"
+ARTIFACTREPOSITORIES="${REPO_ECLIPSE35},${REPO_STAGING},${REPO_EPP_GALILEO}"
 
 OSes=( win32 linux linux macosx macosx )
 WSes=( win32 gtk gtk cocoa carbon )
