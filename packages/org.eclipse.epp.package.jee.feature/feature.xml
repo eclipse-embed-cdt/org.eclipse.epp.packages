@@ -116,7 +116,7 @@
          version="0.0.0"/>   
 
    <plugin
-         id="org.eclipse.wtp.javascript.capabilities"
+         id="org.eclipse.wtp.xml.capabilities"
          download-size="0"
          install-size="0"
          version="0.0.0"/>   
@@ -129,24 +129,6 @@
 
    <plugin
          id="org.eclipse.rse.ui.capabilities"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>   
-
-   <plugin
-         id="org.eclipse.gef.examples.ui.capabilities"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>   
-
-   <plugin
-         id="org.eclipse.emf.capabilities"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>   
-
-   <plugin
-         id="org.eclipse.emf.ecoretools.ui.capabilities"
          download-size="0"
          install-size="0"
          version="0.0.0"/>   
