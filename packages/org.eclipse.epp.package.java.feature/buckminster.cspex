@@ -3,7 +3,6 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0"
 	xmlns="http://www.eclipse.org/buckminster/CSpec-1.0">
-	<!--
 	<actions>
 		<private name="peruse.about.mappings" actor="ant">
 			<actorProperties>
@@ -16,10 +15,10 @@
 		</private>
 	</actions>
 	<groups>
-		<private name="bundle.jars">
+		<public name="bundle.jars">
 			<attribute name="peruse.about.mappings" contributor="false"/>
 			<attribute name="orig.bundle.jars"/>
-		</private>
+		</public>
 	</groups>
 	<alterGroups>
 		<rename oldName="bundle.jars" newName="orig.bundle.jars"/>
@@ -34,5 +33,4 @@
 			</alterPrerequisites>
 		</public>
 	</alterActions>
-	-->
 </cspecExtension>
