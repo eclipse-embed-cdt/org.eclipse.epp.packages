@@ -134,7 +134,7 @@
          version="0.0.0"/>   
 
    <plugin
-         id="org.eclipse.mylyn.compatibility"
+         id="org.eclipse.mylyn.ide.capabilities"
          download-size="0"
          install-size="0"
          version="0.0.0"/>   
