@@ -33,17 +33,28 @@
 			<tester>Roy Ganor</tester>
 		</packageTesters>
 	</packageMetaData>
+  <MoreInfo>
+  <NewAndNoteworthy
+    url="http://www.eclipse.org/pdt/release-notes/pdt2_1.php"
+    project="Eclipse PHP Development Tools" />
+  <NewAndNoteworthy
+    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.5M7-200904302300/eclipse-news-M7.html"
+    project="Eclipse Platform" />
+  <NewAndNoteworthy
+    url="http://www.eclipse.org/mylyn/new/"
+    project="Eclipse Mylyn" />
+  </MoreInfo>
 
 	<!--
 		version, the RCP version to build. This is used to determine the file
 		name of the root file archives
 	-->
-	<rcp version="3.5RC5" />
+	<rcp version="3.5" />
 
 	<!--
 		name, name of the product, used in naming the created files.
 	-->
-	<product name="eclipse-php-galileo-RC5" />
+	<product name="eclipse-php-galileo" />
 
 </configuration>
 
