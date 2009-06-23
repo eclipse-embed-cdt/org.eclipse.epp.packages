@@ -35,10 +35,10 @@
 	</packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://www.eclipse.org/pdt/release-notes/pdt2_1.php"
+    url="http://www.eclipse.org/pdt/release-notes/"
     project="Eclipse PHP Development Tools" />
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.5M7-200904302300/eclipse-news-M7.html"
+    url="http://download.eclipse.org/eclipse/downloads/drops/R-3.5-200906111540/eclipse-news-all.html"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"

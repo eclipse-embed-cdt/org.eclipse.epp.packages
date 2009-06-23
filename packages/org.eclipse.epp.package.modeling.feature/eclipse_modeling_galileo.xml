@@ -26,22 +26,58 @@
     url="http://wiki.eclipse.org/EMF#New_.26_Noteworthy"
     project="Eclipse Modeling Framework" />
   <NewAndNoteworthy
-    url="http://wiki.eclipse.org/GMF_New_and_Noteworthy"
-    project="Graphical Modeling Framework" />
-  <NewAndNoteworthy
-    url="http://wiki.eclipse.org/MDT_1.1_New_and_Noteworthy"
-    project="Model Development Tools" />
-  <NewAndNoteworthy
-    url="http://wiki.eclipse.org/ATL_2.0.0_New_and_Noteworthy"
-    project="M2M ATL" />
+    url="http://wiki.eclipse.org/New_And_Noteworthy_for_CDO_2.0"
+    project="CDO" />
   <NewAndNoteworthy
     url="http://wiki.eclipse.org/EcoreTools_New_Noteworthy"
     project="Ecore Tools" />
   <NewAndNoteworthy
-    url="http://wiki.eclipse.org/EMF_Compare_0.8.0_New_And_Noteworthy"
+    url="http://wiki.eclipse.org/Mint_New_Noteworthy"
+    project="EMF Mint" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/MWE_New_Noteworthy"
+    project="EMF MWE" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/EMF_Compare_1.0.0_New_And_Noteworthy"
     project="EMF Compare" />
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/R-3.4-200806172000/whatsnew3.4/eclipse-news.html"
+    url="http://wiki.eclipse.org/GMF_New_and_Noteworthy"
+    project="Graphical Modeling Framework" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/ATL_3.0.0_New_and_Noteworthy"
+    project="M2M ATL" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/M2M/QVTO/New_and_Noteworthy/Galileo"
+    project="EMF M2M QVTO" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/Acceleo/New_And_Noteworthy#Code_Generation"
+    project="Acceleo" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/M2T-JET/Whats_New_in_1.0_(Galileo)"
+    project="M2M-JET" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/Xpand_New_And_Noteworthy"
+    project="M2M Xpand" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/MDT/UML2/New_and_Noteworthy/Galileo"
+    project="UML2" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/MDT/UML2Tools/New_and_Noteworthy/Galileo"
+    project="UML2Tools" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/MDT_Galileo_New_and_Noteworthy"
+    project="MDT" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/MDT/XSD/New_and_Noteworthy/Galileo"
+    project="MDT XSD" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/MDT/OCL/New_and_Noteworthy/Galileo"
+    project="MDT OCL" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/Xtext/Documentation/Xtext_New_and_Noteworthy"
+    project="Xtext" />
+  <NewAndNoteworthy
+    url="http://download.eclipse.org/eclipse/downloads/drops/R-3.5-200906111540/eclipse-news-all.html"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"

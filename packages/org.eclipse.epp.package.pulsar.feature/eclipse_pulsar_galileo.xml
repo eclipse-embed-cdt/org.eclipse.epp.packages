@@ -23,11 +23,8 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/R-3.4-200806172000/whatsnew3.4/eclipse-news-part1.html"
+    url="http://download.eclipse.org/eclipse/downloads/drops/R-3.5-200906111540/eclipse-news-all.html"
     project="Eclipse Platform" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/R-3.4-200806172000/whatsnew3.4/eclipse-news-part2.html"
-    project="Eclipse JDT" />
   <NewAndNoteworthy
     url="http://www.eclipse.org/dsdp/mtj/development/releasenotes/MTJ1.0/newsNoteworthy.php"
     project="DSDP MTJ" />
