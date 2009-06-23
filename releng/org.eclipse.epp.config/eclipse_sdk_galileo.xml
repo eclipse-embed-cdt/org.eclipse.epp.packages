@@ -13,37 +13,34 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse Classic 3.5.0 I20090611-1540"
+   packageName="Eclipse Classic 3.5.0"
    maintainer="Eclipse Platform Team"
    iconurl="http://www.eclipse.org/downloads/images/classic2.jpg"
    bugzillaComponentId=""
    testPlan="" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-     <description><![CDATA[The classic Eclipse download: the Eclipse Platform, Java Development Tools, and Plug-in Development Environment, including source and both user and programmer documentation. Note: There might be a newer release candidate available. Please look at the <a href="http://download.eclipse.org/eclipse/downloads/">Eclipse Project download page</a>.]]></description>
+     <description><![CDATA[The classic Eclipse download: the Eclipse Platform, Java Development Tools, and Plug-in Development Environment, including source and both user and programmer documentation. Please look also at the <a href="http://download.eclipse.org/eclipse/downloads/">Eclipse Project download page</a>.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
       <tester>Eclipse Project</tester>
     </packageTesters>
     <FakePackage>True</FakePackage>
     <FakePackageLocation>
-      /eclipse/downloads/drops/I20090611-1540/
+      /eclipse/downloads/drops/R-3.5-200906111540/
     </FakePackageLocation>
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.5M7-200904302300/eclipse-news-M7.html"
-    project="Eclipse Platform M7" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.5M6-200903130100/eclipse-news-M6.html"
-    project="Eclipse Platform M6" />
+    url="http://download.eclipse.org/eclipse/downloads/drops/R-3.5-200906111540/eclipse-news-all.html"
+    project="Eclipse Platform" />
   </MoreInfo>
 
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="I20090611-1540" />
+  <rcp version="3.5" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-SDK-I20090611-1540" />
+  <product name="eclipse-SDK-3.5" />
 
 </configuration>
