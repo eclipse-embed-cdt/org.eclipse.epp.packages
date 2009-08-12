@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse IDE for C/C++ Developers" uid="epp.package.cpp" id="org.eclipse.epp.package.cpp.product" application="org.eclipse.ui.ide.workbench" version="1.2.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse IDE for C/C++ Developers" uid="epp.package.cpp" id="org.eclipse.epp.package.cpp.product" application="org.eclipse.ui.ide.workbench" version="1.2.1.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <text>
@@ -49,7 +49,7 @@
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.cpp.feature" version="1.2.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.cpp.feature" version="1.2.1.qualifier"/>
    </features>
 
 

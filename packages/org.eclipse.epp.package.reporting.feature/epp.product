@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse IDE for Java and Report Developers" uid="epp.package.reporting" id="org.eclipse.epp.package.reporting.product" application="org.eclipse.ui.ide.workbench" version="1.2.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse IDE for Java and Report Developers" uid="epp.package.reporting" id="org.eclipse.epp.package.reporting.product" application="org.eclipse.ui.ide.workbench" version="1.2.1.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <text>
@@ -48,7 +48,7 @@
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.reporting.feature" version="1.2.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.reporting.feature" version="1.2.1.qualifier"/>
    </features>
 
 

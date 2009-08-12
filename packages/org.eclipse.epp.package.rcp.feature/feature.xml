@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.rcp.feature"
       label="EPP RCP Feature"
-      version="1.2.0.qualifier"
+      version="1.2.1.qualifier"
       provider-name="Eclipse.org - EPP"
       plugin="org.eclipse.epp.package.rcp">
 
