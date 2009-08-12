@@ -9,7 +9,7 @@
 	<property name="bm.headless.site" value="http://download.eclipse.org/tools/buckminster/headless-3.5/" />
 	<property name="galileo.site" value="http://download.eclipse.org/releases/galileo/" />
 	<property name="staging.site" value="http://download.eclipse.org/releases/staging/" />
-	<property name="platform.site" value="http://download.eclipse.org/eclipse/updates/3.5milestones/" />
+	<property name="platform.site" value="http://download.eclipse.org/eclipse/updates/3.5/" />
 	<property name="buildtools" location="${build.root}/tools" />
 	<property name="workspace" location="${build.root}/workspace" />
 	<property name="cquery.url" location="${basedir}/epp.cquery" />
