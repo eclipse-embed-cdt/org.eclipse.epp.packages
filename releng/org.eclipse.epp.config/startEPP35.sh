@@ -23,9 +23,9 @@ then
 fi
 
 # Galileo Repositories
-REPO_ECLIPSE35="${BASE_URL}/eclipse/updates/3.5milestones/I20090611-1540/"
+REPO_ECLIPSE35="${BASE_URL}/eclipse/updates/3.5.x/M20090807-0800/"
 REPO_GALILEO="${BASE_URL}/releases/galileo/"
-REPO_STAGING="${BASE_URL}/releases/staging/"
+REPO_STAGING="${BASE_URL}/releases/maintenance/"
 #REPO_EPP_GALILEO="${BASE_URL}/technology/epp/packages/galileo/milestones"
 REPO_EPP_GALILEO="file:///shared/technology/epp/epp_repo/galileo/epp.build/buildresult/org.eclipse.epp.allpackages.feature_1.2.0-eclipse.feature/site.p2"
 
@@ -33,10 +33,10 @@ REPO_EPP_GALILEO="file:///shared/technology/epp/epp_repo/galileo/epp.build/build
 METADATAREPOSITORIES="${REPO_ECLIPSE35},${REPO_STAGING},${REPO_EPP_GALILEO}"
 ARTIFACTREPOSITORIES="${REPO_ECLIPSE35},${REPO_STAGING},${REPO_EPP_GALILEO}"
 
-OSes=( win32 linux linux macosx macosx )
-WSes=( win32 gtk gtk cocoa carbon )
-ARCHes=( x86 x86 x86_64 x86 ppc )
-FORMAT=( zip tar.gz tar.gz tar.gz tar.gz )
+OSes=( win32 linux linux macosx macosx macosx )
+WSes=( win32 gtk gtk cocoa cocoa carbon )
+ARCHes=( x86 x86 x86_64 x86 x86_64 ppc )
+FORMAT=( zip tar.gz tar.gz tar.gz tar.gz tar.gz )
 
 BASE_DIR=/shared/technology/epp/epp_build/35
 DOWNLOAD_BASE_DIR=${BASE_DIR}/download
@@ -52,7 +52,7 @@ MARKERFILENAME=".epp.nightlybuild"
 STATUSFILENAME="status.stub"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 CVSPROJECTPATH="org.eclipse.epp/packages"
-RELEASE_NAME="-galileo-RC5"
+RELEASE_NAME="-galileo-SR1-RC1"
 
 ###############################################################################
 
@@ -106,7 +106,7 @@ do
   # Start statusfile
   echo "<td>"  >>${STATUSFILE}
 
-  for index in 0 1 2 3 4;
+  for index in 0 1 2 3 4 5;
   do
     echo -n "...EPP building ${PACKAGE} ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]} "
     EXTENSION="${OSes[$index]}.${WSes[$index]}.${ARCHes[$index]}"
