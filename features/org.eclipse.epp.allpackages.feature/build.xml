@@ -120,6 +120,7 @@
 	      <arg value="-data" />
 	      <arg value="${workspace}" />
 	      <arg value="build"/>
+	      <arg value="-thorough"/>
 	    </args>
 	  </eclipse.launch>
 			    
