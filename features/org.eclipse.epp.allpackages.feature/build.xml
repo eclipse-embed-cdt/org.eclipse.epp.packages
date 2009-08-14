@@ -70,8 +70,6 @@
 				<arg value="-p"/>
 				<arg value="Buckminster"/>
 				<arg value="-i"/>
-				<arg value="org.eclipse.platform.feature.group" />
-				<arg value="-i"/>
 				<arg value="org.eclipse.buckminster.cmdline.product"/>
 				<arg value="-i"/>
 				<arg value="org.eclipse.buckminster.core.headless.feature.feature.group" />
@@ -79,6 +77,8 @@
 				<arg value="org.eclipse.buckminster.cvs.headless.feature.feature.group" />
 				<arg value="-i"/>
 				<arg value="org.eclipse.buckminster.pde.headless.feature.feature.group" />
+				<arg value="-i"/>
+				<arg value="org.eclipse.platform.feature.group" />
 			</args>
 		</eclipse.launch>
 	</target>
@@ -109,18 +109,14 @@
 	    <args>
         <jvmarg value="-Dqualifier.replacement.*=generator:lastModified" />
         <jvmarg value="-Dgenerator.lastModified.format=yyyyMMdd-HHmm" />
+        <jvmarg value="-Dbuild.id=${build.id}" />
+        <jvmarg value="-Dcbi.include.source=false" />
         <jvmarg value="-Dtarget.os=*" />
         <jvmarg value="-Dtarget.ws=*" />
         <jvmarg value="-Dtarget.arch=*" />
-        <jvmarg value="-Dbuckminster.output.root=${build.root}/buildresult" />
-        <jvmarg value="-Dbuckminster.temp.root=${build.root}/temp" />
-        <jvmarg value="-Dbuild.id=${build.id}" />
-        <jvmarg value="-Dcbi.include.source=false" />
-        <jvmarg value="-Declipse.p2.mirrors=false" />
 	      <arg value="-data" />
 	      <arg value="${workspace}" />
 	      <arg value="build"/>
-	      <arg value="-thorough"/>
 	    </args>
 	  </eclipse.launch>
 			    
