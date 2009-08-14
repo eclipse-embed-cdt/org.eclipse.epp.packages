@@ -104,22 +104,25 @@
           pattern="yyyyMMdd-HHmm"
           timezone="GMT" />
     </tstamp>
-	  
+
+<!--
 	  <eclipse.launch app="buckminster">
 	    <args>
-        <jvmarg value="-Dqualifier.replacement.*=generator:lastModified" />
-        <jvmarg value="-Dgenerator.lastModified.format=yyyyMMdd-HHmm" />
-        <jvmarg value="-Dbuild.id=${build.id}" />
-        <jvmarg value="-Dcbi.include.source=false" />
-        <jvmarg value="-Dtarget.os=*" />
-        <jvmarg value="-Dtarget.ws=*" />
-        <jvmarg value="-Dtarget.arch=*" />
 	      <arg value="-data" />
 	      <arg value="${workspace}" />
 	      <arg value="build"/>
 	    </args>
 	  </eclipse.launch>
-			    
+-->
+
+    <eclipse.launch app="buckminster">
+      <args>
+        <arg value="-data" />
+        <arg value="${workspace}" />
+        <arg value="clean"/>
+      </args>
+    </eclipse.launch>
+	  
 		<eclipse.launch app="buckminster">
 			<args>
 				<jvmarg value="-Dqualifier.replacement.*=generator:lastModified" />
