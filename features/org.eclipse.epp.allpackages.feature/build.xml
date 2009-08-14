@@ -8,7 +8,7 @@
 	<property file="${build.root}/build.properties" />
 	<property name="bm.headless.site" value="http://download.eclipse.org/tools/buckminster/headless-3.5/" />
 	<property name="galileo.site" value="http://download.eclipse.org/releases/galileo/" />
-	<property name="staging.site" value="http://download.eclipse.org/releases/staging/" />
+	<property name="staging.site" value="http://download.eclipse.org/releases/maintenance/" />
 	<property name="platform.site" value="http://download.eclipse.org/eclipse/updates/3.5/" />
 	<property name="buildtools" location="${build.root}/tools" />
 	<property name="workspace" location="${build.root}/workspace" />
@@ -70,6 +70,8 @@
 				<arg value="-p"/>
 				<arg value="Buckminster"/>
 				<arg value="-i"/>
+				<arg value="org.eclipse.platform.feature.group" />
+				<arg value="-i"/>
 				<arg value="org.eclipse.buckminster.cmdline.product"/>
 				<arg value="-i"/>
 				<arg value="org.eclipse.buckminster.core.headless.feature.feature.group" />
@@ -77,8 +79,6 @@
 				<arg value="org.eclipse.buckminster.cvs.headless.feature.feature.group" />
 				<arg value="-i"/>
 				<arg value="org.eclipse.buckminster.pde.headless.feature.feature.group" />
-				<arg value="-i"/>
-				<arg value="org.eclipse.platform.feature.group" />
 			</args>
 		</eclipse.launch>
 	</target>
