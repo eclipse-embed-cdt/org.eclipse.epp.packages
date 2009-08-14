@@ -142,6 +142,14 @@
 			</args>
 		</eclipse.launch>
 
+    <eclipse.launch app="buckminster">
+      <args>
+        <arg value="-data" />
+        <arg value="${workspace}" />
+        <arg value="clean"/>
+      </args>
+    </eclipse.launch>
+	  
 	  <eclipse.launch app="buckminster">
       <args>
         <jvmarg value="-Dqualifier.replacement.*=generator:lastModified" />
