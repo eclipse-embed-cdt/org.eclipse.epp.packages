@@ -141,6 +141,26 @@
 				<arg value="org.eclipse.epp.allpackages.feature#site.p2.zip" />
 			</args>
 		</eclipse.launch>
+
+	  <eclipse.launch app="buckminster">
+      <args>
+        <jvmarg value="-Dqualifier.replacement.*=generator:lastModified" />
+        <jvmarg value="-Dgenerator.lastModified.format=yyyyMMdd-HHmm" />
+        <jvmarg value="-Dtarget.os=*" />
+        <jvmarg value="-Dtarget.ws=*" />
+        <jvmarg value="-Dtarget.arch=*" />
+        <jvmarg value="-Dbuckminster.output.root=${build.root}/buildresult" />
+        <jvmarg value="-Dbuckminster.temp.root=${build.root}/temp" />
+        <jvmarg value="-Dbuild.id=${build.id}" />
+        <jvmarg value="-Dcbi.include.source=false" />
+        <jvmarg value="-Declipse.p2.mirrors=false" />
+        <arg value="-data" />
+        <arg value="${workspace}" />
+        <arg value="perform"/>
+        <arg value="org.eclipse.epp.allpackages.feature#site.p2.zip" />
+      </args>
+    </eclipse.launch>
+
 	</target>
 
 	<target name="clean.all" depends="clean.buckminster,clean.workspace,clean.build">
