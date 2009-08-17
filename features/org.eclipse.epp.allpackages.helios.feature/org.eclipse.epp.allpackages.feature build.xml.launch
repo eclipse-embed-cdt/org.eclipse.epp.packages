@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.ant.AntLaunchConfigurationType">
+<stringAttribute key="bad_container_name" value="/org.eclipse.epp.allpackages.helios.feature/s"/>
+<booleanAttribute key="org.eclipse.ant.ui.DEFAULT_VM_INSTALL" value="true"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/org.eclipse.epp.allpackages.helios.feature/build.xml"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.ant.ui.AntClasspathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.eclipse.ant.internal.ui.antsupport.InternalAntRunner"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="org.eclipse.epp.allpackages.helios.feature"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.ant.ui.AntClasspathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Declipse.p2.mirrors=false"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_INSTALL_NAME" value="jdk1.5.0_15"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_INSTALL_TYPE_ID" value="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType"/>
+<mapAttribute key="org.eclipse.ui.externaltools.ATTR_ANT_PROPERTIES">
+<mapEntry key="platform.site" value="file:///home/data/httpd/download.eclipse.org/eclipse/updates/3.5milestones/I20090611-1540"/>
+<mapEntry key="eclipse.pdebuild.templates" value="/opt/eclipse/64/eclipse.3.5RC2/plugins/org.eclipse.pde.build_3.5.0.v20090527-1800/templates/"/>
+<mapEntry key="helios.site" value="file:///home/data/httpd/download.eclipse.org/releases/helios/"/>
+<mapEntry key="eclipse.pdebuild.scripts" value="/opt/eclipse/64/eclipse.3.5RC2/plugins/org.eclipse.pde.build_3.5.0.v20090527-1800/scripts/"/>
+<mapEntry key="staging.site" value="file:///home/data/httpd/download.eclipse.org/releases/staging/"/>
+<mapEntry key="build.root" value="/tmp/eppbuild"/>
+<mapEntry key="eclipse.pdebuild.home" value="/opt/eclipse/64/eclipse.3.5RC2/plugins/org.eclipse.pde.build_3.5.0.v20090527-1800/./"/>
+</mapAttribute>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_ANT_TARGETS" value="clean.workspace,build.site,"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="${workspace_loc:/org.eclipse.epp.allpackages.helios.feature/build.xml}"/>
+<stringAttribute key="process_factory_id" value="org.eclipse.ant.ui.remoteAntProcessFactory"/>
+</launchConfiguration>
