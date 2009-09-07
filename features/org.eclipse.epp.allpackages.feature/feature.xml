@@ -49,4 +49,8 @@
          id="org.eclipse.epp.package.reporting.feature"
          version="0.0.0"/>
 
+   <includes
+         id="org.eclipse.epp.package.soa.feature"
+         version="0.0.0"/>
+
 </feature>
