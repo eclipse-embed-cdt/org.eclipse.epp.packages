@@ -8,6 +8,7 @@
 
    <description>
       An IDE for SOA developers.
+Note that the SOA package includes some incubating components, as indicated by feature numbers less than 1.0.0 on the feature list.
    </description>
 
    <license url="license.html">
@@ -46,9 +47,6 @@
       <import feature="org.eclipse.swordfish.tooling.feature"/>
       <import feature="org.eclipse.epp.usagedata.feature"/>
    </requires>
-
-
-
 
    <plugin
          id="org.eclipse.epp.package.soa"
