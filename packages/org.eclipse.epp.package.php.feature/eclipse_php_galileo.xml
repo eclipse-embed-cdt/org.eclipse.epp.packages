@@ -54,7 +54,7 @@
 	<!--
 		name, name of the product, used in naming the created files.
 	-->
-	<product name="eclipse-php-galileo" />
+	<product name="eclipse-php-galileo-SR1-RC2" />
 
 </configuration>
 
