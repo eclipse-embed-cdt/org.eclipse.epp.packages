@@ -23,7 +23,7 @@ then
 fi
 
 # Galileo Repositories
-REPO_ECLIPSE35="${BASE_URL}/eclipse/updates/3.5.x/M20090807-0800/"
+REPO_ECLIPSE35="${BASE_URL}/eclipse/updates/3.5.x/M20090903-1100/"
 REPO_GALILEO="${BASE_URL}/releases/galileo/"
 REPO_STAGING="${BASE_URL}/releases/maintenance/"
 #REPO_EPP_GALILEO="${BASE_URL}/technology/epp/packages/galileo/milestones"
@@ -106,7 +106,7 @@ do
   # Start statusfile
   echo "<td>"  >>${STATUSFILE}
 
-  for index in 0 1 2 3 4 5;
+  for index in 0 1 2 3 4 5 6;
   do
     echo -n "...EPP building ${PACKAGE} ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]} "
     EXTENSION="${OSes[$index]}.${WSes[$index]}.${ARCHes[$index]}"
