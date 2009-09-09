@@ -105,6 +105,7 @@
           timezone="GMT" />
     </tstamp>
 
+<!--
 	  <eclipse.launch app="buckminster">
 	    <args>
 	      <arg value="-data" />
@@ -112,6 +113,7 @@
 	      <arg value="build"/>
 	    </args>
 	  </eclipse.launch>
+-->
 
 		<eclipse.launch app="buckminster">
 			<args>
