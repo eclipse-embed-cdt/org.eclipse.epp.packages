@@ -31,7 +31,7 @@
 	<searchPath name="galileo">
 		<provider readerType="eclipse.import" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
 			<uri format="{0}?importType=binary">
-				<bc:propertyRef key="galileo.site" />
+				<bc:propertyRef key="staging.site" />
 			</uri>
 		</provider>
 	</searchPath>
