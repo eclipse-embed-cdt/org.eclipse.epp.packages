@@ -39,6 +39,6 @@
   <rcp version="3.5" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-pulsar-galileo-SR1-RC2" />
+	<product name="eclipse-pulsar-galileo-SR1-RC4" />
 
 </configuration>
