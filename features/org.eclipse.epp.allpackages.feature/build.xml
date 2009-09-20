@@ -12,7 +12,9 @@
 	<property name="platform.site" value="http://download.eclipse.org/eclipse/updates/3.5/" />
 	<property name="buildtools" location="${build.root}/tools" />
 	<property name="workspace" location="${build.root}/workspace" />
+	<property name="targetPlatformPath" location="${build.root}/TP" />
 	<property name="cquery.url" location="${basedir}/epp.cquery" />
+	<property name="tp.mspec" location="${basedir}/epp-tp.mspec" />
 
 	<!-- This macro executes the default application of an eclipse installation that resides
 	     in the folder ${buildtools}/@app
@@ -77,17 +79,38 @@
 				<arg value="org.eclipse.buckminster.cvs.headless.feature.feature.group" />
 				<arg value="-i"/>
 				<arg value="org.eclipse.buckminster.pde.headless.feature.feature.group" />
-				<arg value="-i"/>
-				<arg value="org.eclipse.platform.feature.group" />
 			</args>
 		</eclipse.launch>
 	</target>
 
-	<target name="build.workspace" depends="install.buckminster">
+	<target name="build.tp" depends="install.buckminster">
 		<eclipse.launch app="buckminster">
 			<args>
+				<arg value="-data" />
+				<arg value="${workspace}" />
+				<arg value="setpref"/>
+				<arg value="targetPlatformPath=${targetPlatformPath}" />
+			</args>
+		</eclipse.launch>
+		<eclipse.launch app="buckminster">
+			<args>
+				<jvmarg value="-Dplatform.site=${platform.site}" />
 				<jvmarg value="-Dgalileo.site=${staging.site}" />
-			  <jvmarg value="-Declipse.p2.mirrors=false" />
+				<jvmarg value="-Declipse.p2.mirrors=false" />
+				<arg value="-data" />
+				<arg value="${workspace}" />
+				<arg value="import"/>
+				<arg value="${tp.mspec}" />
+			</args>
+		</eclipse.launch>
+	</target>
+
+	<target name="build.workspace" depends="build.tp">
+		<eclipse.launch app="buckminster">
+			<args>
+				<jvmarg value="-Dplatform.site=${platform.site}" />
+				<jvmarg value="-Dgalileo.site=${staging.site}" />
+				<jvmarg value="-Declipse.p2.mirrors=false" />
 				<arg value="-data" />
 				<arg value="${workspace}" />
 				<arg value="import"/>
