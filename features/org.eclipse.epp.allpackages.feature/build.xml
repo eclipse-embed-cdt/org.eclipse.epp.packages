@@ -65,8 +65,6 @@
 				<arg value="-consoleLog"/>
 				<arg value="-r"/>
 				<arg value="${bm.headless.site}"/>
-				<arg value="-r"/>
-				<arg value="${platform.site}"/>
 				<arg value="-d"/>
 				<arg value="${buildtools}/buckminster"/>
 				<arg value="-p"/>
