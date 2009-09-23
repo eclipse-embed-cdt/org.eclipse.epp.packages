@@ -58,6 +58,7 @@ for II in *eclipse*; do
              sed 's/linux\.gtk\.x86\_64/linux-gtk-x86\_64/' | \
              sed 's/linux\.gtk\.x86\./linux\-gtk\./' | \
              sed 's/\.win32\.x86//' | \
+             sed 's/macosx\.cocoa\.x86\_64/macosx\-cocoa-x86\_64/' | \
              sed 's/macosx\.cocoa\.x86/macosx\-cocoa/' | \
              sed 's/macosx\.carbon\.ppc/macosx\-carbon/'`
     echo Copying ${II} to ${TARGETDIR}/${NEWNAME}
