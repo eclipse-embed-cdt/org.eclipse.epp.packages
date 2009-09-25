@@ -86,9 +86,9 @@
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="3.5" />
+  <rcp version="3.5.1" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-modeling-galileo-SR1-RC4-incubation" />
+  <product name="eclipse-modeling-galileo-SR1-incubation" />
 
 </configuration>
