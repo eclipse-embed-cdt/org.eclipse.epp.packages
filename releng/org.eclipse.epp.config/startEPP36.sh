@@ -27,7 +27,7 @@ REPO_ECLIPSE36="${BASE_URL}/eclipse/updates/3.6milestones/"
 REPO_HELIOS="${BASE_URL}/releases/helios/"
 REPO_STAGING="${BASE_URL}/releases/staging/"
 #REPO_EPP_HELIOS="${BASE_URL}/technology/epp/packages/helios/milestones"
-REPO_EPP_HELIOS="file:///shared/technology/epp/epp_repo/helios/epp.build/buildresult/org.eclipse.epp.allpackages.feature_1.2.0-eclipse.feature/site.p2"
+REPO_EPP_HELIOS="file:///shared/technology/epp/epp_repo/helios/epp.build/buildresult/org.eclipse.epp.allpackages.helios.feature_1.3.0-eclipse.feature/site.p2"
 
 # Repositories (Galileo)
 METADATAREPOSITORIES="${REPO_ECLIPSE36},${REPO_STAGING},${REPO_EPP_HELIOS}"
@@ -52,7 +52,7 @@ MARKERFILENAME=".epp.nightlybuild"
 STATUSFILENAME="status.stub"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 CVSPROJECTPATH="org.eclipse.epp/packages"
-RELEASE_NAME="-helios-M1"
+RELEASE_NAME="-helios-M2"
 
 ###############################################################################
 
