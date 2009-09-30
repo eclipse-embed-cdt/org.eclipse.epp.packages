@@ -93,7 +93,7 @@
     <eclipse.launch app="buckminster">
       <args>
         <jvmarg value="-Dplatform.site=${platform.site}" />
-        <jvmarg value="-Dgalileo.site=${staging.site}" />
+        <jvmarg value="-Dhelios.site=${staging.site}" />
         <jvmarg value="-Declipse.p2.mirrors=false" />
         <arg value="-data" />
         <arg value="${workspace}" />
