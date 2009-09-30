@@ -167,7 +167,7 @@
 
 	</target>
 
-	<target name="clean.all" depends="clean.buckminster,clean.workspace,clean.build">
+	<target name="clean.all" depends="clean.buckminster,clean.workspace,clean.build,clean.tp">
 		<delete dir="${buildtools}/director" />
 	</target>
 
@@ -178,6 +178,10 @@
 	<target name="clean.build">
 		<delete dir="${build.root}/buildresult" />
 	</target>
+
+  <target name="clean.tp">
+    <delete dir="${targetPlatformPath}" />
+  </target>
 
 	<target name="clean.buckminster">
 		<delete dir="${buildtools}/buckminster" />
