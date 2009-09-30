@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<cq:componentQuery xmlns:cq="http://www.eclipse.org/buckminster/CQuery-1.0" resourceMap="epp.rmap">
-    <cq:rootRequest name="org.eclipse.epp.allpackages.helios.feature" componentType="eclipse.feature"/>
-    <cq:property key="target.arch" value="*"/>
-    <cq:property key="target.os" value="*"/>
-    <cq:property key="target.ws" value="*"/>
-    <cq:advisorNode namePattern="^org\.mortbay\.management$" allowCircularDependency="true"/>
-    <cq:advisorNode namePattern="^org\.eclipse\.ui$" componentType="osgi.bundle" allowCircularDependency="true"/>
-</cq:componentQuery>
