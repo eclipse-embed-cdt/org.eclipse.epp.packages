@@ -5,4 +5,5 @@
     <cq:property key="target.os" value="*"/>
     <cq:property key="target.ws" value="*"/>
     <cq:advisorNode namePattern="^org\.mortbay\.management$" allowCircularDependency="true"/>
+    <cq:advisorNode namePattern="^org\.eclipse\.ui$" componentType="osgi.bundle" allowCircularDependency="true"/>
 </cq:componentQuery>
