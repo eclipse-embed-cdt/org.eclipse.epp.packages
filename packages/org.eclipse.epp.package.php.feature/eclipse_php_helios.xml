@@ -49,12 +49,12 @@
 		version, the RCP version to build. This is used to determine the file
 		name of the root file archives
 	-->
-	<rcp version="3.5.1" />
+	<rcp version="3.6.0" />
 
 	<!--
 		name, name of the product, used in naming the created files.
 	-->
-	<product name="eclipse-php-galileo-SR1" />
+	<product name="eclipse-php-helios-M3" />
 
 </configuration>
 

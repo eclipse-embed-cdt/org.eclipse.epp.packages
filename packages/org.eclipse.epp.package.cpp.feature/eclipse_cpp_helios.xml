@@ -8,22 +8,23 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse SOA Platform for Java and SOA Developers"
-   maintainer="Eclipse SOA Industry Workgroup"
-   iconurl="http://www.eclipse.org/downloads/images/soa.jpg"
-   bugzillaComponentId="soa-package"
+   packageName="Eclipse IDE for C/C++ Developers"
+   maintainer="Eclipse Packaging Project"
+   iconurl="http://www.eclipse.org/downloads/images/c.jpg"
+   bugzillaComponentId="cpp-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-     <description><![CDATA[Eclipse SOA Platform is a runtimes and tools integration platform for SOA developers. It makes easy to get the environment you need for developing and executing SOA. It includes a Java IDE, Swordfish Tooling, the Plugin Development Environment (PDE), an XML Editor and a WSDL Editor. Note that the SOA package includes some <a href="http://www.eclipse.org/projects/dev_process/validation-phase.php">incubating</a> components, as indicated by feature numbers less than 1.0.0 on the feature list.]]></description>
+     <description><![CDATA[An IDE for C/C++ developers with Mylyn integration.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
-      <tester> Zsolt Beothy-Elo</tester>
+      <tester>Doug Schaefer</tester>
+      <tester>Markus Knauer</tester>
     </packageTesters>
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://www.eclipse.org/swordfish/downloads//whats-new-0.9.1.html"
-    project="Eclipse Swordfish" />
+    url="http://wiki.eclipse.org/CDT/User/NewIn60"
+    project="Eclipse CDT" />
   <NewAndNoteworthy
     url="http://download.eclipse.org/eclipse/downloads/drops/R-3.5-200906111540/eclipse-news-all.html"
     project="Eclipse Platform" />
@@ -35,9 +36,9 @@
 
 	<!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-	<rcp version="3.5.1" />
+	<rcp version="3.6.0" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-soa-galileo-SR1-incubation" />
+	<product name="eclipse-cpp-helios-M3" />
 
 </configuration>

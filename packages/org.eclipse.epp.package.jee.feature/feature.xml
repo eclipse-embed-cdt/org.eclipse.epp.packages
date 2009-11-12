@@ -19,7 +19,7 @@
    </license>
 
    <url>
-      <discovery label="%discoverySiteName" url="http://download.eclipse.org/releases/galileo/"/>
+      <discovery label="%discoverySiteName" url="http://download.eclipse.org/releases/helios/"/>
    </url>
 
    <includes
