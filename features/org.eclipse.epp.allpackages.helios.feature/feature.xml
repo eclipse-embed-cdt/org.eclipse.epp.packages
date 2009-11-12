@@ -30,6 +30,10 @@
          version="0.0.0"/>
 
    <includes
+         id="org.eclipse.epp.package.javascript.feature"
+         version="0.0.0"/>
+
+   <includes
          id="org.eclipse.epp.package.modeling.feature"
          version="0.0.0"/>
 
