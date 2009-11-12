@@ -1,0 +1,24 @@
+#tell pde.build not to generate start levels
+org.eclipse.pde.build.append.startlevels=false
+
+#add requirement on org.eclipse.platform.ide
+requires.1.namespace=org.eclipse.equinox.p2.iu
+requires.1.name=org.eclipse.platform.ide
+#requires.1.range=[3.5.0.I20090522-1710,3.5.0.I20090522-1710]
+requires.1.greedy=true
+
+instructions.configure=\
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/technology/epp/packages/galileo,name:EPP Packages Repository);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/technology/epp/packages/galileo,name:EPP Packages Repository);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/webtools/updates,name:The Eclipse Web Tools Platform (WTP) Project update site);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/webtools/updates,name:The Eclipse Web Tools Platform (WTP) Project update site);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/tools/mylyn/update/e3.4/,name:Mylyn for Eclipse 3.4 and 3.5);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/tools/mylyn/update/e3.4/,name:Mylyn for Eclipse 3.4 and 3.5);
+
+instructions.unconfigure=\
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.eclipse.org/technology/epp/packages/galileo);\
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.eclipse.org/technology/epp/packages/galileo);\
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.eclipse.org/webtools/updates);\
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.eclipse.org/webtools/updates);\
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.eclipse.org/tools/mylyn/update/e3.4/);\
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.eclipse.org/tools/mylyn/update/e3.4/);

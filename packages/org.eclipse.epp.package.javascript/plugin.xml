@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="product"
+         name="JavaScript IDE"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.ui.ide.workbench"
+            name="Eclipse">
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+         <property
+               name="appName"
+               value="Eclipse">
+         </property>
+         <property
+               name="aboutText"
+               value="Eclipse IDE for JavaScript Web Developers.&#x0A;&#x0A;Build id: {0}&#x0A;&#x0A;(c) Copyright Eclipse contributors and others 2005, 2009.  All rights reserved.&#x0A;Visit http://www.eclipse.org/webtools">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="5,275,445,15">
+         </property>
+         <property
+               name="aboutImage"
+               value="aboutgears_115x.png">
+         </property>
+         <property
+               name="windowImages"
+               value="javascript-ide_x16.png,javascript-ide_x32.png,javascript-ide_x48.png">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="FFFFFF">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="7,220,441,20">
+         </property>
+         <property
+               name="buildIdLocation"
+               value="303,190">
+         </property>         
+      </product>
+   </extension>
+
+</plugin>
