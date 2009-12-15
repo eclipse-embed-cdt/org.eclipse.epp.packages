@@ -13,7 +13,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse Classic 3.6.0"
+   packageName="Eclipse Classic 3.6.0 M4"
    maintainer="Eclipse Platform Team"
    iconurl="http://www.eclipse.org/downloads/images/classic2.jpg"
    bugzillaComponentId=""
@@ -26,21 +26,30 @@
     </packageTesters>
     <FakePackage>True</FakePackage>
     <FakePackageLocation>
-      /eclipse/downloads/drops/R-3.6.0-200909170800/
+      /eclipse/downloads/drops/S-3.6M4-200912101301/
     </FakePackageLocation>
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/R-3.5-200906111540/eclipse-news-all.html"
-    project="Eclipse Platform" />
+    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M1-200908061400/eclipse-news-M1.html"
+    project="Eclipse Platform M1" />
+  <NewAndNoteworthy
+    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M2-200909170100/eclipse-news-M2.html"
+    project="Eclipse Platform M2" />
+  <NewAndNoteworthy
+    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M3-200910301201/eclipse-news-M3.html"
+    project="Eclipse Platform M3" />
+  <NewAndNoteworthy
+    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M4-200912101301/eclipse-news-M4.html"
+    project="Eclipse Platform M4" />
   </MoreInfo>
 
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="3.6.0" />
+  <rcp version="3.6M4" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-SDK-3.6.0" />
+  <product name="eclipse-SDK-3.6M4" />
 
 </configuration>
