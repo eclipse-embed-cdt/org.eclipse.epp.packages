@@ -52,7 +52,7 @@ MARKERFILENAME=".epp.nightlybuild"
 STATUSFILENAME="status.stub"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 CVSPROJECTPATH="org.eclipse.epp/packages"
-RELEASE_NAME="-helios-M3"
+RELEASE_NAME="-helios-M4"
 
 ###############################################################################
 
