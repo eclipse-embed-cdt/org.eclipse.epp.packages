@@ -33,10 +33,10 @@ REPO_EPP_HELIOS="file:///shared/technology/epp/epp_repo/helios/epp.build/buildre
 METADATAREPOSITORIES="${REPO_ECLIPSE36},${REPO_STAGING},${REPO_EPP_HELIOS}"
 ARTIFACTREPOSITORIES="${REPO_ECLIPSE36},${REPO_STAGING},${REPO_EPP_HELIOS}"
 
-OSes=( win32 linux linux macosx macosx macosx )
-WSes=( win32 gtk gtk cocoa cocoa carbon )
-ARCHes=( x86 x86 x86_64 x86 x86_64 ppc )
-FORMAT=( zip tar.gz tar.gz tar.gz tar.gz tar.gz )
+OSes=( win32 win32 linux linux macosx macosx )
+WSes=( win32 win32 gtk gtk cocoa cocoa )
+ARCHes=( x86 x86_64 x86 x86_64 x86 x86_64 )
+FORMAT=( zip zip tar.gz tar.gz tar.gz tar.gz )
 
 BASE_DIR=/shared/technology/epp/epp_build/36
 DOWNLOAD_BASE_DIR=${BASE_DIR}/download
@@ -52,7 +52,7 @@ MARKERFILENAME=".epp.nightlybuild"
 STATUSFILENAME="status.stub"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 CVSPROJECTPATH="org.eclipse.epp/packages"
-RELEASE_NAME="-helios-M4"
+RELEASE_NAME="-helios-M5"
 
 ###############################################################################
 
