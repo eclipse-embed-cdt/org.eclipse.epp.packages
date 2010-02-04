@@ -42,15 +42,15 @@
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
       <import feature="org.eclipse.epp.usagedata.feature"/>
       <import feature="org.eclipse.emf.sdk"/>
-      <import feature="org.eclipse.xsd.sdk"/>
       <import feature="org.eclipse.gef.sdk"/>
       <import feature="org.eclipse.uml2.sdk"/>
       <import feature="org.eclipse.ocl.all.sdk"/>
-      <import feature="org.eclipse.emf.query.sdk"/>
-      <import feature="org.eclipse.emf.validation.sdk"/>
       <import feature="org.eclipse.emf.transaction.sdk"/>
       <!-- disabled while it's not available from the helios repository      
       <import feature="org.eclipse.emf.ecoretools.sdk"/>
+      <import feature="org.eclipse.emf.query.sdk"/>
+      <import feature="org.eclipse.xsd.sdk"/>
+      <import feature="org.eclipse.emf.validation.sdk"/>
       -->
       <import feature="org.eclipse.emf.mint.sdk"/>
       <import feature="org.eclipse.emf.compare.sdk"/>
