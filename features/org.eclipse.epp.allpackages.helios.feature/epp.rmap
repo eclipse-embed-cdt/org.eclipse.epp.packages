@@ -44,10 +44,20 @@
     </provider>
   </searchPath>
 
+	<searchPath name="eppmpc">
+		<provider readerType="eclipse.import" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
+			<uri format="{0}?importType=binary">
+				<bc:propertyRef key="eppmpc.site" />
+			</uri>
+		</provider>
+	</searchPath>
+
+
 	<locator searchPathRef="org.eclipse.epp.allpackages.helios" pattern="^org\.eclipse\.epp\.allpackages\.helios\..*$"/>
 	<locator searchPathRef="org.eclipse.epp.packages" pattern="^org\.eclipse\.epp\.package\..*$"/>
 	<locator searchPathRef="org.eclipse.wtp.epp.package" pattern="^org\.eclipse\.wtp\.epp\.package\..*$"/>
-  <locator searchPathRef="platform" failOnError="false"/>
+    <locator searchPathRef="platform" failOnError="false" />
 	<locator searchPathRef="helios"/>
+	<locator searchPathRef="eppmpc"/>
 
 </rmap>
