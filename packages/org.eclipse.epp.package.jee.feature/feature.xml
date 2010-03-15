@@ -74,9 +74,7 @@
       <import feature="org.eclipse.jpt.eclipselink.feature"/>
       <import feature="org.eclipse.jst.webpageeditor.feature"/>
       <import feature="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature"/>
-      <import feature="org.eclipse.persistence.jpa"/>
-      <import feature="org.eclipse.persistence.moxy"/>
-      <import feature="org.eclipse.persistence.sdo"/>
+
    </requires>
 
    <plugin
