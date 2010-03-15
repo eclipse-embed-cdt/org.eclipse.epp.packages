@@ -41,6 +41,7 @@
       <import feature="org.eclipse.cdt.mylyn"/>
       <import feature="org.eclipse.epp.usagedata.feature"/>
       <import feature="org.eclipse.cdt.p2"/>
+      <import feature="org.eclipse.cdt.debug.ui.memory"/>
    </requires>
 
    <plugin
