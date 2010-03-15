@@ -35,6 +35,6 @@
   <rcp version="3.6.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-javascript-helios-M5" />
+  <product name="eclipse-javascript-helios-M6" />
 
 </configuration>
