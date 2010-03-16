@@ -17,7 +17,7 @@
          </property>
          <property
                name="aboutText"
-               value="Pulsar for Mobile Java Developers.&#x0A;&#x0A;Build id: {0}&#x0A;&#x0A;(c) Copyright Pulsar Committers and others. 2009.  All rights reserved.&#x0A;Visit http://www.eclipse.org/pulsar/">
+               value="Pulsar for Mobile Developers.&#x0A;&#x0A;Build id: {0}&#x0A;&#x0A;(c) Copyright Pulsar Committers and others. 2009.  All rights reserved.&#x0A;Visit http://www.eclipse.org/pulsar/">
          </property>
          <property
                name="startupProgressRect"
@@ -36,7 +36,7 @@
               value="product:intro-eclipse.png"/>
          <property
                name="introTitle"
-               value="Welcome to Pulsar for Mobile Java Developers">
+               value="Welcome to Pulsar for Mobile Developers">
          </property>
          <property
                name="introBrandingImageText"
