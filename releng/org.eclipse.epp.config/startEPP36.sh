@@ -113,7 +113,7 @@ do
   # Start statusfile
   echo "<td>"  >>${STATUSFILE}
 
-  for index in 0 1 2 3 4 5;
+  for index in 0 1 2 3 4 5 6;
   do
     echo -n "...EPP building ${PACKAGE} ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]} "
     EXTENSION="${OSes[$index]}.${WSes[$index]}.${ARCHes[$index]}"
