@@ -32,7 +32,6 @@
       <import feature="org.eclipse.pde" version="3.6.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.sdk" version="3.6.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.rcp" version="3.6.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
       <import feature="org.eclipse.mylyn.java_feature"/>
       <import feature="org.eclipse.mylyn.pde_feature"/>
@@ -48,13 +47,14 @@
       <import feature="org.eclipse.emf.transaction.sdk"/>
       <!-- disabled while it's not available from the helios repository      
       <import feature="org.eclipse.emf.ecoretools.sdk"/>
+      -->
       <import feature="org.eclipse.emf.query.sdk"/>
       <import feature="org.eclipse.xsd.sdk"/>
       <import feature="org.eclipse.emf.validation.sdk"/>
-      -->
       <import feature="org.eclipse.emf.mint.sdk"/>
       <import feature="org.eclipse.emf.compare.sdk"/>
       <import feature="org.eclipse.amalgam.discovery"/>
+      <import feature="org.eclipse.emf.cdo.epp" />
    </requires>
 
    <plugin
