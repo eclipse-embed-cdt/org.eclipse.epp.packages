@@ -28,11 +28,11 @@ REPO_HELIOS="${BASE_URL}/releases/helios/"
 REPO_STAGING="${BASE_URL}/releases/staging/"
 #REPO_EPP_HELIOS="${BASE_URL}/technology/epp/packages/helios/milestones"
 REPO_EPP_HELIOS="file:///shared/technology/epp/epp_repo/helios/epp.build/buildresult/org.eclipse.epp.allpackages.helios.feature_1.3.0-eclipse.feature/site.p2"
-REPO_EPP_MPV="http://download.eclipse.org/mpc/repo"
+#REPO_EPP_MPV="http://download.eclipse.org/mpc/repo"
 
 # Repositories (Helios)
-METADATAREPOSITORIES="${REPO_ECLIPSE36},${REPO_STAGING},${REPO_EPP_HELIOS},${REPO_EPP_MPV}"
-ARTIFACTREPOSITORIES="${REPO_ECLIPSE36},${REPO_STAGING},${REPO_EPP_HELIOS},${REPO_EPP_MPV}"
+METADATAREPOSITORIES="${REPO_ECLIPSE36},${REPO_STAGING},${REPO_EPP_HELIOS}"
+ARTIFACTREPOSITORIES="${REPO_ECLIPSE36},${REPO_STAGING},${REPO_EPP_HELIOS}"
 
 #OSes=( win32 linux linux macosx macosx macosx )
 #WSes=( win32 gtk gtk cocoa cocoa carbon )
