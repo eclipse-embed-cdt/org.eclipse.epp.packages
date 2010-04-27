@@ -17,6 +17,9 @@ javascript,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclips
 jee,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.jee.feature/eclipse_jee_helios.xml,HEAD,jee.xml
 jee,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.jee.feature/feature.xml,HEAD,jee.feature.xml
 
+linuxtools,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.linuxtools.feature/eclipse_linuxtools_helios.xml,HEAD,linuxtools.xml
+linuxtools,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.linuxtools.feature/feature.xml,HEAD,linuxtools.feature.xml
+
 modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.modeling.feature/eclipse_modeling_helios.xml,HEAD,modeling.xml
 modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.modeling.feature/feature.xml,HEAD,modeling.feature.xml
 
