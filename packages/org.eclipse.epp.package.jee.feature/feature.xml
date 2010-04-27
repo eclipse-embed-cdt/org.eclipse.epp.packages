@@ -83,14 +83,13 @@
          install-size="0"
          version="0.0.0"/>
 
+<!-- mk these bundles cause problems... removing them for test purposes
    <plugin
          id="org.eclipse.wtp.epp.package.jee.intro"
          download-size="0"
          install-size="0"
          version="0.0.0"/>
          
-
-<!-- mk these bundles cause problems... removing them for test purposes
    <plugin
          id="org.eclipse.wtp.javascript.capabilities"
          download-size="0"
