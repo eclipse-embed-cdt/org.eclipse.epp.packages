@@ -90,6 +90,7 @@
          version="0.0.0"/>
          
 
+<!-- mk these bundles cause problems... removing them for test purposes
    <plugin
          id="org.eclipse.wtp.javascript.capabilities"
          download-size="0"
@@ -115,7 +116,6 @@
          version="0.0.0"/>   
 
 
-<!-- mk this bundle causes problems... removing it for test purposes
    <plugin
          id="org.eclipse.wtp.epp.package.capabilities"
          download-size="0"
