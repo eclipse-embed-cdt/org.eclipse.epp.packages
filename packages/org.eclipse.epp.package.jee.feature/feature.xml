@@ -115,12 +115,14 @@
          version="0.0.0"/>   
 
 
-
+<!-- mk this bundle causes problems... removing it for test purposes
    <plugin
          id="org.eclipse.wtp.epp.package.capabilities"
          download-size="0"
          install-size="0"
          version="0.0.0"/>         
+
+-->
 
 <!-- need to confirm if these plugins in repository, or if I need to cut/copy paste their contents in our capabilities plugin.
 See also https://bugs.eclipse.org/bugs/show_bug.cgi?id=299344
