@@ -29,18 +29,18 @@
          </property>
          <property
                name="windowImages"
-               value="eclipse.png,eclipse32.png,eclipse48.png">
+               value="eclipsesoa.png,eclipsesoa32.png,eclipsesoa48.png">
          </property>
          <property
               name="introBrandingImage"
-              value="product:intro-eclipse.png"/>
+              value="product:intro-eclipsesoa.png"/>
          <property
                name="introTitle"
                value="Welcome to the Eclipse IDE for SOA Developers">
          </property>
          <property
                name="introBrandingImageText"
-               value="Eclipse Project">
+               value="Eclipse SOA">
          </property>
       </product>
    </extension>

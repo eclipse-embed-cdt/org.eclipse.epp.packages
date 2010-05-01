@@ -47,6 +47,7 @@ Note that the SOA package includes some incubating components, as indicated by f
       <import feature="org.eclipse.swordfish.tooling.feature"/>
       <import feature="org.eclipse.epp.usagedata.feature"/>
       <import feature="org.eclipse.ecf.remoteservice.sdk.feature"/>
+      <import feature="org.eclipse.swordfish.tutorial.discovery.feature"/>
    </requires>
 
    <plugin
