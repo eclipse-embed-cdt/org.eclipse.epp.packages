@@ -45,6 +45,12 @@
   <NewAndNoteworthy
     url="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M5-201001291300/eclipse-news-M5.html"
     project="Eclipse Platform M5" />
+  <NewAndNoteworthy
+    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M6-201003121448/eclipse-news-M6.html"
+    project="Eclipse Platform M6" />
+  <NewAndNoteworthy
+    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M7-201004291549/eclipse-news-M7.html"
+    project="Eclipse Platform M7" />
   </MoreInfo>
 
   <!-- version, the RCP version to build. This is used to determine the file 
