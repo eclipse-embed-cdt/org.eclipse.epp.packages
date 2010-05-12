@@ -75,6 +75,10 @@
       <import feature="org.eclipse.jst.webpageeditor.feature"/>
       <import feature="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature"/>
 
+      <import feature="org.eclipse.jst.ws.jaxws.feature" />
+      <import feature="org.eclipse.jst.ws.cxf.feature" />
+      <import feature="org.eclipse.jst.ws.jaxws.dom.feature" />
+
    </requires>
 
    <plugin
