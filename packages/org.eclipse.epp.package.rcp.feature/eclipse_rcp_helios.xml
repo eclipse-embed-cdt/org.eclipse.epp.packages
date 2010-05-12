@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+h<?xml version="1.0" encoding="UTF-8"?>
 <configuration>
   <!-- Package Description information to be picked up by www.eclipse.org/packages -->
   <!-- PackageName is the title of your package 
@@ -8,7 +8,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse for RCP/Plug-in Developers"
+   packageName="Eclipse for RCP and RAP Developers"
    maintainer="Eclipse Packaging Project"
    iconurl="http://www.eclipse.org/downloads/images/rcp.jpg"
    bugzillaComponentId="rcp-package"
