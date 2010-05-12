@@ -8,6 +8,18 @@
       <product
             application="org.eclipse.ui.ide.workbench"
             name="Eclipse">
+            
+         <property
+               name="introTitle"
+               value="Eclipse Java EE IDE for Web Developers"/>
+         <property
+               name="introBrandingImage"
+               value="product:wtp_logo_96.png"/>
+         <property
+               name="introBrandingImageText"
+       	       value="Eclipse Web Tools Platform"/>
+            
+            
          <property
                name="preferenceCustomization"
                value="plugin_customization.ini">
