@@ -38,6 +38,6 @@ h<?xml version="1.0" encoding="UTF-8"?>
   <rcp version="3.6.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-rcp-helios-M7" />
+  <product name="eclipse-rcp-helios-RC1" />
 
 </configuration>
