@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.epp.package.common.feature"
+      label="EPP Common Package Feature"
+      version="1.3.0.qualifier"
+      provider-name="Eclipse.org - EPP"
+      plugin="org.eclipse.epp.package.common">
+
+   <description>
+      This feature is a collection of dependencies that are common
+to all EPP packages and general configurations.
+   </description>
+
+   <license url="license.html">
+      %license
+   </license>
+
+   <url>
+      <discovery label="Helios" url="http://download.eclipse.org/releases/helios/"/>
+      <discovery label="Eclipse Platform 3.6" url="http://download.eclipse.org/eclipse/updates/3.6"/>
+   </url>
+
+   <requires>
+      <import feature="org.eclipse.epp.usagedata.feature"/>
+      <import feature="org.eclipse.equinox.p2.discovery.feature"/>
+      <import feature="org.eclipse.epp.mpc"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.epp.package.common"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

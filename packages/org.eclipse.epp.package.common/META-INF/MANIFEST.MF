@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: EPP Common Bundle
+Bundle-SymbolicName: org.eclipse.epp.package.common;singleton:=true
+Bundle-Version: 1.3.0.qualifier
+Bundle-Vendor: Eclipse.org - EPP
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Require-Bundle: org.eclipse.epp.mpc.ui;bundle-version="1.0.0"
