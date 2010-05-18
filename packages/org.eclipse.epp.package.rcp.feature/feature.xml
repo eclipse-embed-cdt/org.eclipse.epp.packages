@@ -49,6 +49,9 @@
       <import feature="org.eclipse.jgit"/>
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.rap.tooling"/>
+      <import feature="org.eclipse.epp.usagedata.feature"/>
+      <import feature="org.eclipse.epp.mpc"/>
+      <import feature="org.eclipse.equinox.p2.discovery.feature"/>
    </requires>
 
    <plugin
@@ -56,5 +59,12 @@
          download-size="0"
          install-size="0"
          version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.epp.package.common"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
 
 </feature>
