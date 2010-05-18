@@ -87,7 +87,7 @@ exec 2>&1 | tee ${LOGFILE}
 #Build the packages from the list of packages checked into CVS
 PACKAGES=""
 cvs -q -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSPROJECTPATH}
-for file in  $(ls ${CVSPROJECTPATH} | grep -v feature | grep -v CVS);  
+for file in  $(ls ${CVSPROJECTPATH} | grep -v feature | grep -v common | grep -v CVS);  
 do
   PACKAGES="${PACKAGES} ${file##org.eclipse.}" 
 done
