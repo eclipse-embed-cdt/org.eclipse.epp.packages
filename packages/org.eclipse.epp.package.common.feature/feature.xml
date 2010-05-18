@@ -24,6 +24,11 @@ to all EPP packages and general configurations.
       <import feature="org.eclipse.epp.usagedata.feature"/>
       <import feature="org.eclipse.equinox.p2.discovery.feature"/>
       <import feature="org.eclipse.epp.mpc"/>
+      <!-- workaround start -->
+      <import feature="org.eclipse.mylyn.ide_feature"/>
+      <import feature="org.eclipse.mylyn.context_feature"/>
+      <import feature="org.eclipse.mylyn_feature"/>
+      <!-- workaround end -->
    </requires>
 
    <plugin
