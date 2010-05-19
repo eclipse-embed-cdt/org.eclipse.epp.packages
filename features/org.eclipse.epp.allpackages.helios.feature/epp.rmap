@@ -20,16 +20,6 @@
 		</provider>
 	</searchPath>
 
-<!--
-	<searchPath name="org.eclipse.wtp.epp.package">
-		<provider readerType="cvs" componentTypes="osgi.bundle" mutable="true" source="true">
-			<uri format=":pserver:anonymous@dev.eclipse.org:/cvsroot/webtools,webtools.releng/plugins/{0}">
-				<bc:propertyRef key="buckminster.component" />
-			</uri>
-		</provider>
-	</searchPath>
--->
-
 	<searchPath name="helios">
 		<provider readerType="eclipse.import" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
 			<uri format="{0}?importType=binary">
@@ -48,10 +38,8 @@
 
 
 	<locator searchPathRef="org.eclipse.epp.allpackages.helios" pattern="^org\.eclipse\.epp\.allpackages\.helios\..*$"/>
+	<locator searchPathRef="org.eclipse.epp.allpackages.helios" pattern="^org\.eclipse\.epp\.targetplatform\..*$"/>
 	<locator searchPathRef="org.eclipse.epp.packages" pattern="^org\.eclipse\.epp\.package\..*$"/>
-<!--
-	<locator searchPathRef="org.eclipse.wtp.epp.package" pattern="^org\.eclipse\.wtp\.epp\.package\..*$"/>
--->
     <locator searchPathRef="platform" failOnError="false" />
 	<locator searchPathRef="helios"/>
 
