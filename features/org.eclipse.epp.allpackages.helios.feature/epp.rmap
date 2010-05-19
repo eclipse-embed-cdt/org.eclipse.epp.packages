@@ -44,10 +44,10 @@
 		</provider>
 	</searchPath>
 
-	<locator searchPathRef="org.eclipse.epp.allpackages.helios" pattern="^org\.eclipse\.epp\.allpackages\.helios\..*$"/>
-	<locator searchPathRef="org.eclipse.epp.targetplatform" pattern="^org\.eclipse\.epp\.targetplatform\..*$"/>
-	<locator searchPathRef="org.eclipse.epp.packages" pattern="^org\.eclipse\.epp\.package\..*$"/>
+	<locator searchPathRef="org.eclipse.epp.allpackages.helios" pattern="^org\.eclipse\.epp\.allpackages\.helios\..*$" />
+	<locator searchPathRef="org.eclipse.epp.targetplatform" pattern="^org\.eclipse\.epp\.targetplatform\..*$" />
+	<locator searchPathRef="org.eclipse.epp.packages" pattern="^org\.eclipse\.epp\.package\..*$" />
     <locator searchPathRef="platform" failOnError="false" />
-	<locator searchPathRef="helios"/>
+	<locator searchPathRef="helios" />
 
 </rmap>
