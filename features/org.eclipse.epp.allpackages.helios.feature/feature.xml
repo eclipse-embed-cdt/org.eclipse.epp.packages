@@ -18,11 +18,11 @@
    </license>
 
    <includes
-         id="org.eclipse.epp.package.cpp.feature"
+         id="org.eclipse.epp.package.common.feature"
          version="0.0.0"/>
 
    <includes
-         id="org.eclipse.epp.package.common.feature"
+         id="org.eclipse.epp.package.cpp.feature"
          version="0.0.0"/>
 
    <includes
