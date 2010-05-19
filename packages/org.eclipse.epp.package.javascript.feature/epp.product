@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse IDE for Java EE Developers" uid="epp.package.javascript" id="org.eclipse.epp.package.javascript.product" application="org.eclipse.ui.ide.workbench" version="1.3.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse IDE for Javascript Developers" uid="epp.package.javascript" id="org.eclipse.epp.package.javascript.product" application="org.eclipse.ui.ide.workbench" version="1.3.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <text>
@@ -151,7 +151,7 @@ Java and all Java-based trademarks are trademarks of Sun Microsystems, Inc. in t
 
    <plugins>
       <plugin id="org.eclipse.epp.package.jee"/>
-      <plugin id="org.eclipse.wtp.epp.package.jee.intro"/>
+      <plugin id="org.eclipse.wtp.epp.package.jee.intro" fragment=""/>
    </plugins>
 
    <features>
