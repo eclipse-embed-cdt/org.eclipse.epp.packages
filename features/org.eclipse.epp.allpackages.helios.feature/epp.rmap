@@ -28,6 +28,14 @@
 		</provider>
 	</searchPath>
 
+	<searchPath name="platform">
+		<provider readerType="eclipse.import" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
+			<uri format="{0}?importType=binary">
+				<bc:propertyRef key="platform.site" />
+			</uri>
+		</provider>
+	</searchPath>
+
 	<searchPath name="helios">
 		<provider readerType="eclipse.import" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
 			<uri format="{0}?importType=binary">
@@ -35,15 +43,6 @@
 			</uri>
 		</provider>
 	</searchPath>
-
-  <searchPath name="platform">
-    <provider readerType="eclipse.import" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
-      <uri format="{0}?importType=binary">
-        <bc:propertyRef key="platform.site" />
-      </uri>
-    </provider>
-  </searchPath>
-
 
 	<locator searchPathRef="org.eclipse.epp.allpackages.helios" pattern="^org\.eclipse\.epp\.allpackages\.helios\..*$"/>
 	<locator searchPathRef="org.eclipse.epp.targetplatform" pattern="^org\.eclipse\.epp\.targetplatform\..*$"/>
