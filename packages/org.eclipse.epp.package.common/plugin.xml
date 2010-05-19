@@ -2,8 +2,6 @@
 <?eclipse version="3.4"?>
 <plugin>
 
-<!--
-
    <extension
          point="org.eclipse.epp.mpc.ui.catalog">
      <catalog
@@ -13,7 +11,5 @@
            url="http://market.eclipsesource.com/yoxos">
      </catalog>
    </extension>
-
--->
 
 </plugin>
