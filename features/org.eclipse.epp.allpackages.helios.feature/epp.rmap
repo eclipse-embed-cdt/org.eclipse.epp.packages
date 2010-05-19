@@ -12,6 +12,14 @@
 		</provider>
 	</searchPath>
 
+	<searchPath name="org.eclipse.epp.targetplatform">
+		<provider readerType="cvs" componentTypes="osgi.bundle,eclipse.feature" mutable="true" source="true">
+			<uri format=":pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/features/{0}">
+				<bc:propertyRef key="buckminster.component" />
+			</uri>
+		</provider>
+	</searchPath>
+
 	<searchPath name="org.eclipse.epp.packages">
 		<provider readerType="cvs" componentTypes="osgi.bundle,eclipse.feature" mutable="true" source="true">
 			<uri format=":pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/{0}">
@@ -38,7 +46,7 @@
 
 
 	<locator searchPathRef="org.eclipse.epp.allpackages.helios" pattern="^org\.eclipse\.epp\.allpackages\.helios\..*$"/>
-	<locator searchPathRef="org.eclipse.epp.allpackages.helios" pattern="^org\.eclipse\.epp\.targetplatform\..*$"/>
+	<locator searchPathRef="org.eclipse.epp.targetplatform" pattern="^org\.eclipse\.epp\.targetplatform\..*$"/>
 	<locator searchPathRef="org.eclipse.epp.packages" pattern="^org\.eclipse\.epp\.package\..*$"/>
     <locator searchPathRef="platform" failOnError="false" />
 	<locator searchPathRef="helios"/>
