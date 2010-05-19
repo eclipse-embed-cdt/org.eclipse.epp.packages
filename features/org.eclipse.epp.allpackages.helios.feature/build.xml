@@ -115,8 +115,8 @@
     </eclipse.launch>
   	<copy todir="${targetPlatformPath}/plugins">
   	  <fileset dir="/home/data/httpd/download.eclipse.org/releases/staging/aggregate/plugins">
-  	    <include name="**/plugins/org.eclipse*intro*"/>
-  	    <include name="**/plugins/org.eclipse*capabilities*"/>
+  	    <include name="**/org.eclipse*intro*"/>
+  	    <include name="**/org.eclipse*capabilities*"/>
   	  </fileset>
   	</copy>
   </target>
