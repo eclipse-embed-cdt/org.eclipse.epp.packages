@@ -14,9 +14,8 @@
 	<property name="workspace" location="${build.root}/workspace" />
 	<property name="targetPlatformPath" location="${build.root}/TP" />
 	<property name="cquery.url" location="${basedir}/epp.cquery" />
-	<property name="tp.mspec" location="${basedir}/epp-tp.cquery" />
-	<!--
 	<property name="tp.mspec" location="${basedir}/epp-tp.mspec" />
+	<!--
 	<property name="tp-mpc.mspec" location="${basedir}/epp-tp-mpc.mspec" />
 	-->
   
