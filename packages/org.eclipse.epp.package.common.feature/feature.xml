@@ -3,8 +3,7 @@
       id="org.eclipse.epp.package.common.feature"
       label="EPP Common Package Feature"
       version="1.3.0.qualifier"
-      provider-name="Eclipse.org - EPP"
-      plugin="org.eclipse.epp.package.common">
+      provider-name="Eclipse.org - EPP">
 
    <description>
       This feature is a collection of dependencies that are common
@@ -21,14 +20,12 @@ to all EPP packages and general configurations.
    </url>
 
    <requires>
-      <!-- workaround start -->
       <import feature="org.eclipse.platform" version="3.6.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.rcp" version="3.6.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.team_feature"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
       <import feature="org.eclipse.mylyn.bugzilla_feature"/>
-      <!-- workaround end -->
       <import feature="org.eclipse.epp.usagedata.feature"/>
       <import feature="org.eclipse.epp.mpc"/>
       <import feature="org.eclipse.equinox.p2.discovery.feature"/>
