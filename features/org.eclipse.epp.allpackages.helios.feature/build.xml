@@ -15,9 +15,7 @@
 	<property name="targetPlatformPath" location="${build.root}/TP" />
 	<property name="cquery.url" location="${basedir}/epp.cquery" />
 	<property name="tp.mspec" location="${basedir}/epp-tp.mspec" />
-	<!--
 	<property name="tp-mpc.mspec" location="${basedir}/epp-tp-mpc.mspec" />
-	-->
   
 	<!-- This macro executes the default application of an eclipse installation that resides
 	     in the folder ${buildtools}/@app
@@ -104,7 +102,6 @@
         <arg value="${tp.mspec}" />
       </args>
     </eclipse.launch>
-  	<!--
     <eclipse.launch app="buckminster">
       <args>
         <jvmarg value="-Dplatform.site=${platform.site}" />
@@ -116,7 +113,12 @@
         <arg value="${tp-mpc.mspec}" />
       </args>
     </eclipse.launch>
-    -->
+  	<copy todir="${targetPlatformPath}/plugins">
+  	  <fileset dir="${staging.site}">
+  	    <include name="**/plugins/org.eclipse*intro*"/>
+  	    <include name="**/plugins/org.eclipse*capabilities*"/>
+  	  </fileset>
+  	</copy>
   </target>
 
 	<target name="build.workspace" depends="build.tp">
