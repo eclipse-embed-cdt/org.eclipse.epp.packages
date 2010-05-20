@@ -33,8 +33,16 @@
       <import feature="org.eclipse.pde" version="3.6.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.rcp" version="3.6.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.mtj" version="1.1.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.sequoyah.pulsar" version="1.1.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.sequoyah.feature" version="1.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.sequoyah.device.common.feature"/>
+      <import feature="org.eclipse.sequoyah.device.examples.feature"/>
+      <import feature="org.eclipse.sequoyah.device.feature"/>
+      <import feature="org.eclipse.sequoyah.localization.android.feature"/>
+      <import feature="org.eclipse.sequoyah.localization.tools.feature"/>
+      <import feature="org.eclipse.sequoyah.pulsar"/>
+      <import feature="org.eclipse.sequoyah.vnc.feature"/>
+      <import feature="org.eclipse.sequoyah.vnc.protocol.examples.feature"/>
+      <import feature="org.eclipse.sequoyah.vnc.protocol.feature"/>
+      <import feature="org.eclipse.sequoyah.vnc.vncviewer.feature"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
       <import feature="org.eclipse.mylyn.java_feature"/>
