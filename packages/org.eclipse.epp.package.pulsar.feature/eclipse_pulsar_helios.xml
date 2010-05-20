@@ -27,7 +27,10 @@
     url="http://download.eclipse.org/eclipse/downloads/drops/R-3.5-200906111540/eclipse-news-all.html"
     project="Eclipse Platform" />
   <NewAndNoteworthy
-    url="http://www.eclipse.org/dsdp/mtj/development/releasenotes/MTJ1.0/newsNoteworthy.php"
+    url="http://wiki.eclipse.org/Sequoyah/New_Noteworthy"
+    project="Sequoyah" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/DSDP/MTJ#MTJ_1.1.0_New_.26_Noteworthy"
     project="DSDP MTJ" />
   <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"
