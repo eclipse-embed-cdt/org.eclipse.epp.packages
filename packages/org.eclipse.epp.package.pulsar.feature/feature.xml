@@ -32,7 +32,7 @@
       <import feature="org.eclipse.jdt" version="3.6.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.pde" version="3.6.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.rcp" version="3.6.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.mtj" version="1.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.mtj"/>
       <import feature="org.eclipse.sequoyah.device.common.feature"/>
       <import feature="org.eclipse.sequoyah.device.examples.feature"/>
       <import feature="org.eclipse.sequoyah.device.feature"/>
