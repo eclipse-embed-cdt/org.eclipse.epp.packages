@@ -59,7 +59,7 @@ MARKERFILENAME=".epp.nightlybuild"
 STATUSFILENAME="status.stub"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 CVSPROJECTPATH="org.eclipse.epp/packages"
-RELEASE_NAME="-helios-RC1"
+RELEASE_NAME="-helios-RC2"
 
 ###############################################################################
 
