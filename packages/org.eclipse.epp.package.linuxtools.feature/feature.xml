@@ -39,9 +39,6 @@
       <import feature="org.eclipse.mylyn.bugzilla_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
       <import feature="org.eclipse.cdt.mylyn"/>
-      <import feature="org.eclipse.epp.usagedata.feature"/>
-      <import feature="org.eclipse.equinox.p2.discovery.feature"/>
-      <import feature="org.eclipse.epp.mpc"/>
       <import feature="org.eclipse.cdt.p2"/>
       <import feature="org.eclipse.cdt.debug.ui.memory"/>
       <import feature="org.eclipse.linuxtools.cdt.autotools"/>
@@ -57,6 +54,7 @@
       <import feature="org.eclipse.linuxtools.valgrind"/>
       <import feature="org.eclipse.linuxtools.gcov"/>
       <import feature="org.eclipse.linuxtools.lttng"/>
+      <import feature="org.eclipse.epp.package.common.feature"/>
    </requires>
 
    <plugin

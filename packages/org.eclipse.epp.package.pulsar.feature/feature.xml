@@ -51,10 +51,8 @@
       <import feature="org.eclipse.mylyn.context_feature"/>
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
-      <import feature="org.eclipse.epp.usagedata.feature"/>
-      <import feature="org.eclipse.equinox.p2.discovery.feature"/>
-      <import feature="org.eclipse.epp.mpc"/>
       <import plugin="org.eclipse.equinox.app"/>
+      <import feature="org.eclipse.epp.package.common.feature"/>
    </requires>
 
    <plugin
