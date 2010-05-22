@@ -22,44 +22,48 @@ then
    JRE="java"
 fi
 
-# Helios Repositories
-REPO_ECLIPSE36="${BASE_URL}/eclipse/updates/3.6milestones/"
-REPO_HELIOS="${BASE_URL}/releases/helios/"
-REPO_STAGING="${BASE_URL}/releases/staging/"
-#REPO_EPP_HELIOS="${BASE_URL}/technology/epp/packages/helios/milestones"
-REPO_EPP_HELIOS="file:///shared/technology/epp/epp_repo/helios/epp.build/buildresult/org.eclipse.epp.allpackages.helios.feature_1.3.0-eclipse.feature/site.p2"
-#REPO_EPP_MPV="http://download.eclipse.org/mpc/repo"
-
-# Repositories (Helios)
-METADATAREPOSITORIES="${REPO_ECLIPSE36},${REPO_STAGING},${REPO_EPP_HELIOS}"
-ARTIFACTREPOSITORIES="${REPO_ECLIPSE36},${REPO_STAGING},${REPO_EPP_HELIOS}"
-
-#OSes=( win32 linux linux macosx macosx macosx )
-#WSes=( win32 gtk gtk cocoa cocoa carbon )
-#ARCHes=( x86 x86 x86_64 x86 x86_64 ppc )
-#FORMAT=( zip tar.gz tar.gz tar.gz tar.gz tar.gz )
-
-
-OSes=( win32 win32 linux linux macosx macosx macosx )
-WSes=( win32 win32 gtk gtk cocoa cocoa carbon )
-ARCHes=( x86 x86_64 x86 x86_64 x86 x86_64 ppc )
-FORMAT=( zip zip tar.gz tar.gz tar.gz tar.gz tar.gz )
-
-BASE_DIR=/shared/technology/epp/epp_build/36
-DOWNLOAD_BASE_DIR=${BASE_DIR}/download
-DOWNLOAD_BASE_URL="http://build.eclipse.org/technology/epp/epp_build/36/download"
-BUILD_DIR=${BASE_DIR}/build
-
 ###############################################################################
+
+# variables to adjust
+BASE_DIR=/shared/technology/epp/epp_build/36
+RELEASE_NAME="-helios-RC2"
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
-LOCKFILE="/tmp/epp.build36.lock"
 MARKERFILENAME=".epp.nightlybuild"
 STATUSFILENAME="status.stub"
 CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
 CVSPROJECTPATH="org.eclipse.epp/packages"
-RELEASE_NAME="-helios-RC2"
+DOWNLOAD_BASE_URL="http://build.eclipse.org/technology/epp/epp_build/36/download"
+
+# directories and files
+DOWNLOAD_BASE_DIR="${BASE_DIR}/download"
+BUILD_DIR="${BASE_DIR}/build"
+DOWNLOAD_DIR="${DOWNLOAD_BASE_DIR}/${START_TIME}"
+EPPREPO_INPUT_DIR="/shared/technology/epp/epp_repo/helios/epp.build/buildresult/org.eclipse.epp.allpackages.helios.feature_1.3.0-eclipse.feature/site.p2"
+EPPREPO_WORKINGCOPY_DIR="${DOWNLOAD_DIR}/repository"
+MARKERFILE="${DOWNLOAD_DIR}/${MARKERFILENAME}"
+STATUSFILE="${DOWNLOAD_DIR}/${STATUSFILENAME}"
+LOGFILE="${DOWNLOAD_DIR}/build.log"
+LOCKFILE="/tmp/epp.build36.lock"
+
+# repository locations
+REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/3.6milestones/"
+REPO_SIMRELEASE_URL="${BASE_URL}/releases/helios/"
+REPO_STAGING_URL="${BASE_URL}/releases/staging/"
+#REPO_EPP_URL="${BASE_URL}/technology/epp/packages/helios"
+REPO_EPP_URL="file://${EPPREPO_INPUT_DIR}"
+REPO_EPP_WORKINGCOPY_URL="file://${EPPREPO_WORKINGCOPY_DIR}"
+
+# repositories used in the build
+METADATAREPOSITORIES="${REPO_ECLIPSE_URL},${REPO_STAGING_URL},${REPO_EPP_WORKINGCOPY_URL}"
+ARTIFACTREPOSITORIES="${REPO_ECLIPSE_URL},${REPO_STAGING_URL},${REPO_EPP_WORKINGCOPY_URL}"
+
+# definition of OS, WS, ARCH, FORMAT combinations
+OSes=(   win32  win32   linux   linux   macosx  macosx  macosx )
+WSes=(   win32  win32   gtk     gtk     cocoa   cocoa   carbon )
+ARCHes=( x86    x86_64  x86     x86_64  x86     x86_64  ppc    )
+FORMAT=( zip    zip     tar.gz  tar.gz  tar.gz  tar.gz  tar.gz )
 
 ###############################################################################
 
@@ -72,25 +76,31 @@ RELEASE_NAME="-helios-RC2"
 #trap "rm -f ${LOCKFILE}; exit" INT TERM EXIT
 #touch ${LOCKFILE}
 
-# create download directory and files
-DOWNLOAD_DIR=${DOWNLOAD_BASE_DIR}/${START_TIME}
+# create download directory and files, copy p2 repo to working location
 mkdir -p ${DOWNLOAD_DIR}
-MARKERFILE="${DOWNLOAD_DIR}/${MARKERFILENAME}"
 touch ${MARKERFILE}
-STATUSFILE="${DOWNLOAD_DIR}/${STATUSFILENAME}"
 touch ${STATUSFILE}
+cp -a ${EPPREPO_INPUT_DIR} ${EPPREPO_WORKINGCOPY_DIR}
 
 # log to file
-LOGFILE="${DOWNLOAD_DIR}/build.log"
 exec 2>&1 | tee ${LOGFILE}
 
-#Build the packages from the list of packages checked into CVS
+# determine which packages to build
 PACKAGES=""
-cvs -q -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSPROJECTPATH}
-for file in  $(ls ${CVSPROJECTPATH} | grep -v feature | grep -v common | grep -v CVS);  
-do
-  PACKAGES="${PACKAGES} ${file##org.eclipse.}" 
-done
+if [ $# = "0" ]; then
+  # generate the list from the packages checked into CVS
+  cvs -q -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSPROJECTPATH}
+  for file in  $(ls ${CVSPROJECTPATH} | grep -v feature | grep -v common | grep -v CVS);  
+  do
+    PACKAGES="${PACKAGES} ${file##org.eclipse.}" 
+  done
+else
+  # take the package names from the command lines if any given
+  PACKAGES="$@"
+fi
+echo "...building the following packages: ${PACKAGES}"
+echo "...using metadata repositories: ${METADATAREPOSITORIES}"
+echo "...using artifact repositories: ${ARTIFACTREPOSITORIES}"
 
 # load external functions
 . ${BASE_DIR}/${CVSPATH}/tools/functions.sh
