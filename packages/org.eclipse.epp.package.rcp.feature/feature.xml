@@ -24,90 +24,26 @@
          version="0.0.0"
          search-location="both"/>
 
-   <includes
-         id="org.eclipse.cvs"
-         version="0.0.0"
-         search-location="both"/>
-
-   <includes
-         id="org.eclipse.equinox.p2.user.ui"
-         version="0.0.0"
-         search-location="both"/>
-
-   <includes
-         id="org.eclipse.help"
-         version="0.0.0"
-         search-location="both"/>
-
-   <includes
-         id="org.eclipse.jdt"
-         version="0.0.0"
-         search-location="both"/>
-
-   <includes
-         id="org.eclipse.pde"
-         version="0.0.0"
-         search-location="both"/>
-
-   <includes
-         id="org.eclipse.rcp"
-         version="0.0.0"
-         search-location="both"/>
-
-   <includes
-         id="org.eclipse.wst.xml_ui.feature"
-         version="0.0.0"
-         search-location="both"/>
-
-   <includes
-         id="org.eclipse.mylyn.ide_feature"
-         version="0.0.0"
-         search-location="both"/>
-
-   <includes
-         id="org.eclipse.mylyn.java_feature"
-         version="0.0.0"
-         search-location="both"/>
-
-   <includes
-         id="org.eclipse.mylyn.pde_feature"
-         version="0.0.0"
-         search-location="both"/>
-
-   <includes
-         id="org.eclipse.mylyn.bugzilla_feature"
-         version="0.0.0"
-         search-location="both"/>
-
-   <includes
-         id="org.eclipse.mylyn.context_feature"
-         version="0.0.0"
-         search-location="both"/>
-
-   <includes
-         id="org.eclipse.mylyn_feature"
-         version="0.0.0"
-         search-location="both"/>
-
-   <includes
-         id="org.eclipse.mylyn.wikitext_feature"
-         version="0.0.0"
-         search-location="both"/>
-
-   <includes
-         id="org.eclipse.platform.source"
-         version="0.0.0"
-         search-location="both"/>
-
-   <includes
-         id="org.eclipse.rap.tooling"
-         version="0.0.0"
-         search-location="both"/>
-
-   <includes
-         id="org.eclipse.epp.package.common.feature"
-         version="0.0.0"
-         search-location="both"/>
+   <requires>
+      <import feature="org.eclipse.cvs" version="1.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.equinox.p2.user.ui" version="1.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.help" version="1.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.jdt" version="3.6.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.pde" version="3.6.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.platform" version="3.6.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.rcp" version="3.6.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.wst.xml_ui.feature"/>
+      <import feature="org.eclipse.mylyn.ide_feature"/>
+      <import feature="org.eclipse.mylyn.java_feature"/>
+      <import feature="org.eclipse.mylyn.pde_feature"/>
+      <import feature="org.eclipse.mylyn.bugzilla_feature"/>
+      <import feature="org.eclipse.mylyn.context_feature"/>
+      <import feature="org.eclipse.mylyn_feature"/>
+      <import feature="org.eclipse.mylyn.wikitext_feature"/>
+      <import feature="org.eclipse.platform.source"/>
+      <import feature="org.eclipse.rap.tooling"/>
+      <import feature="org.eclipse.epp.package.common.feature"/>
+   </requires>
 
    <plugin
          id="org.eclipse.epp.package.rcp"
