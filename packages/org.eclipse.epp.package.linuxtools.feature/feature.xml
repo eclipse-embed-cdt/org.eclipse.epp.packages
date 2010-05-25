@@ -4,7 +4,10 @@
       label="EPP Linuxtools Feature"
       version="1.3.0.qualifier"
       provider-name="Eclipse.org - EPP"
-      plugin="org.eclipse.epp.package.linuxtools">
+      plugin="org.eclipse.epp.package.linuxtools"
+      os="linux"
+      ws="gtk"
+      arch="x86,x86_64">
 
    <description>
       An IDE for Linux developers with Mylyn integration.
