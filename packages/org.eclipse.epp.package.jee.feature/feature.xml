@@ -71,6 +71,8 @@
       <import feature="org.eclipse.jpt.feature"/>
       <import feature="org.eclipse.jst.ws.axis2tools.feature"/>
       <import feature="org.eclipse.jpt.eclipselink.feature"/>
+      
+      <import feature="org.eclipse.jsf.feature" />
       <import feature="org.eclipse.jst.webpageeditor.feature"/>
       <import feature="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature"/>
 
