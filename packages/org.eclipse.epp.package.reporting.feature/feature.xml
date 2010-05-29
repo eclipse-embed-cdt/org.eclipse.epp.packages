@@ -61,6 +61,7 @@
       <import feature="org.eclipse.jst.server_adapters.feature"/>
       <import feature="org.eclipse.jst.server_adapters.ext.feature"/>
       <import feature="org.eclipse.jst.web_ui.feature"/>
+      <import feature="org.eclipse.jsf.feature" />
       <import feature="org.eclipse.jst.enterprise_ui.feature"/>
       <import feature="org.eclipse.jst.webpageeditor.feature"/>
       <import feature="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature"/>
