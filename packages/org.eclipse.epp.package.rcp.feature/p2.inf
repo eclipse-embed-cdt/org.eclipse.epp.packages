@@ -1,11 +1,15 @@
-#tell pde.build not to generate start levels
+# tell pde.build not to generate start levels
 org.eclipse.pde.build.append.startlevels=false
 
-#add requirement on org.eclipse.platform.ide
+# add requirement on org.eclipse.platform.ide
 requires.1.namespace=org.eclipse.equinox.p2.iu
 requires.1.name=org.eclipse.platform.ide
 #requires.1.range=[3.5.0.I20090522-1710,3.5.0.I20090522-1710]
 requires.1.greedy=true
+
+# add requirement to EPP common feature
+requires.2.namespace=org.eclipse.equinox.p2.iu
+requires.2.name=org.eclipse.epp.package.common.feature.feature.group
 
 # disable listing of feature in any category
 properties.1.name=org.eclipse.equinox.p2.type.category
