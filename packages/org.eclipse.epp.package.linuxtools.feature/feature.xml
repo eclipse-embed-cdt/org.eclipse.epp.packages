@@ -48,7 +48,6 @@
       <import feature="org.eclipse.linuxtools.cdt.libhover"/>
       <import feature="org.eclipse.linuxtools.changelog"/>
       <import feature="org.eclipse.linuxtools.gprof"/>
-      <import feature="org.eclipse.linuxtools.man"/>
       <import feature="org.eclipse.linuxtools.oprofile"/>
       <import feature="org.eclipse.linuxtools.rpm"/>
       <import feature="org.eclipse.linuxtools.rpm.ui.editor"/>
