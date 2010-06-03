@@ -10,7 +10,7 @@
   <packageMetaData
    packageName="Eclipse IDE for C/C++ Developers"
    maintainer="Eclipse Packaging Project"
-   iconurl="http://www.eclipse.org/downloads/images/c.jpg"
+   iconurl="http://www.eclipse.org/cdt/images/cdt_logo_icon.png"
    bugzillaComponentId="cpp-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
