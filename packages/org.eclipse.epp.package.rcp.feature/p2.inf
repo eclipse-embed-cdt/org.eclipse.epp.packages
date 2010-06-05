@@ -8,8 +8,8 @@ requires.1.name=org.eclipse.platform.ide
 requires.1.greedy=true
 
 # add requirement to EPP common feature
-requires.2.namespace=org.eclipse.equinox.p2.iu
-requires.2.name=org.eclipse.epp.package.common.feature.feature.group
+#requires.2.namespace=org.eclipse.equinox.p2.iu
+#requires.2.name=org.eclipse.epp.package.common.feature.feature.group
 
 # disable listing of feature in any category
 properties.1.name=org.eclipse.equinox.p2.type.category

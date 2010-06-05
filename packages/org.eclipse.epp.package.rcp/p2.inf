@@ -1,0 +1,4 @@
+# add requirement to EPP common feature
+requires.1.namespace=org.eclipse.equinox.p2.iu
+requires.1.name=org.eclipse.epp.package.common.feature.feature.group
+
