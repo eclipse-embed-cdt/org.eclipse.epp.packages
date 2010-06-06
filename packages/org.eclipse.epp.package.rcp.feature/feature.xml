@@ -41,9 +41,9 @@
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
       <import feature="org.eclipse.platform.source"/>
-      <!-- 
       <import feature="org.eclipse.rap.tooling"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
+      <!-- 
       -->
    </requires>
 
