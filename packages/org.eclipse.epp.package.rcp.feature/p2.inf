@@ -12,6 +12,8 @@ properties.1.name=org.eclipse.equinox.p2.type.category
 properties.1.value=false
 
 instructions.configure=\
+org.eclipse.equinox.p2.touchpoint.eclipse.installFeature(feature:org.eclipse.epp.package.common.feature.feature.group,featureId:default,version:default);\
+org.eclipse.equinox.p2.touchpoint.eclipse.installFeature(feature:org.eclipse.rap.tooling.feature.group,featureId:default,version:default);\
 org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/tools/mylyn/update/e3.4/,name:Mylyn for Eclipse 3.4 and 3.5);\
 org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/tools/mylyn/update/e3.4/,name:Mylyn for Eclipse 3.4 and 3.5);
 
