@@ -25,7 +25,7 @@
 -XX:MaxPermSize=256m</vmArgsMac>
    </launcherArgs>
 
-   <windowImages i16="/org.eclipse.epp.package.javascript/javaee-ide_x16.png" i32="/org.eclipse.epp.package.javascript/javaee-ide_x32.png" i48="/org.eclipse.epp.package.javascript/javaee-ide_x48.png"/>
+   <windowImages i16="/org.eclipse.epp.package.javascript/javascript-ide_x16.png" i32="/org.eclipse.epp.package.javascript/javascript-ide_x32.png" i48="/org.eclipse.epp.package.javascript/javascript-ide_x48.png"/>
 
    <splash
       startupProgressRect="5,275,445,15"
