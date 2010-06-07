@@ -25,7 +25,7 @@
 -XX:MaxPermSize=256m</vmArgsMac>
    </launcherArgs>
 
-   <windowImages i16="/org.eclipse.epp.package.cpp/eclipse.png" i32="/org.eclipse.epp.package.cpp/cdt_logo_icon32.png" i48="/org.eclipse.epp.package.cpp/eclipse48.png"/>
+   <windowImages i16="/org.eclipse.epp.package.cpp/eclipse.png" i32="/org.eclipse.epp.package.cpp/eclipse32.png" i48="/org.eclipse.epp.package.cpp/eclipse48.png"/>
 
    <splash
       startupProgressRect="5,275,445,15" />

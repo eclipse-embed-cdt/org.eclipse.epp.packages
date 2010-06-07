@@ -29,7 +29,7 @@
          </property>
          <property
                name="windowImages"
-               value="eclipse.png,cdt_logo_icon32.png,eclipse48.png">
+               value="eclipse.png,eclipse32.png,eclipse48.png">
          </property>
          <property
               name="introBrandingImage"
