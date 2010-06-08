@@ -8,9 +8,9 @@ requires.1.name=org.eclipse.platform.ide
 requires.1.greedy=true
 
 instructions.configure=\
-org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/tools/mylyn/update/e3.4/,name:Mylyn for Eclipse 3.4${#44} 3.5 and 3.6);\
-org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/tools/mylyn/update/e3.4/,name:Mylyn for Eclipse 3.4${#44} 3.5 and 3.6);
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/tools/mylyn/update/helios,name:Mylyn for Eclipse Helios);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/tools/mylyn/update/helios,name:Mylyn for Eclipse Helios);
 
 instructions.unconfigure=\
-org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.eclipse.org/tools/mylyn/update/e3.4/);\
-org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.eclipse.org/tools/mylyn/update/e3.4/);
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.eclipse.org/tools/mylyn/update/helios);\
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.eclipse.org/tools/mylyn/update/helios);
