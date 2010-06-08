@@ -8,7 +8,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse SOA Platform for Java and SOA Developers"
+   packageName="Eclipse SOA Platform for Java and SOA Developers (includes Incubating components)"
    maintainer="Eclipse SOA Industry Workgroup"
    iconurl="http://www.eclipse.org/downloads/images/soa.jpg"
    bugzillaComponentId="soa-package"
@@ -22,7 +22,7 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://www.eclipse.org/swordfish/downloads//whats-new-0.9.1.html"
+    url="http://www.eclipse.org/swordfish/downloads/whats-new-0.10.html"
     project="Eclipse Swordfish" />
   <NewAndNoteworthy
     url="http://download.eclipse.org/eclipse/downloads/drops/R-3.5-200906111540/eclipse-news-all.html"
