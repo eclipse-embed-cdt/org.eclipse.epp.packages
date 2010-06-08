@@ -23,6 +23,9 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
+    url="http://www.eclipse.org/linuxtools/new"
+    project="Eclipse Linux Tools" />
+  <NewAndNoteworthy
     url="http://wiki.eclipse.org/CDT/User/NewIn60"
     project="Eclipse CDT" />
   <NewAndNoteworthy
