@@ -138,6 +138,7 @@ do
       -flavor tooling \
       -profileproperties org.eclipse.update.install.features=true \
       -bundlepool ${PACKAGE_BUILD_DIR}/eclipse \
+      -purgeHistory \
       -p2.os ${OSes[$index]} \
       -p2.ws ${WSes[$index]} \
       -p2.arch ${ARCHes[$index]} \
