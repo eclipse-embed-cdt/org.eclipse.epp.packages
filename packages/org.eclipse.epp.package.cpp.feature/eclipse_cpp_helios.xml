@@ -39,6 +39,6 @@
 	<rcp version="3.6.0" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-cpp-helios-RC4" />
+	<product name="eclipse-cpp-helios-RC5" />
 
 </configuration>
