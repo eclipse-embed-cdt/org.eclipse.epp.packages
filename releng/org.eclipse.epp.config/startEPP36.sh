@@ -48,7 +48,7 @@ LOGFILE="${DOWNLOAD_DIR}/build.log"
 LOCKFILE="/tmp/epp.build36.lock"
 
 # repository locations
-REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/3.6-I-builds/3.6.0.I20100608-0911"
+REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/3.6-I-builds/I20100608-0911/"
 #REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/3.6milestones/"
 REPO_SIMRELEASE_URL="${BASE_URL}/releases/helios/"
 REPO_STAGING_URL="${BASE_URL}/releases/staging/"
