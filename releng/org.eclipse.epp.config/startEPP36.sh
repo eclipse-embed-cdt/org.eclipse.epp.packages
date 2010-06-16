@@ -61,10 +61,10 @@ METADATAREPOSITORIES="${REPO_ECLIPSE_URL},${REPO_STAGING_URL},${REPO_EPP_WORKING
 ARTIFACTREPOSITORIES="${REPO_ECLIPSE_URL},${REPO_STAGING_URL},${REPO_EPP_WORKINGCOPY_URL}"
 
 # definition of OS, WS, ARCH, FORMAT combinations
-OSes=(   win32  win32   linux   linux   macosx  macosx  macosx )
-WSes=(   win32  win32   gtk     gtk     cocoa   cocoa   carbon )
-ARCHes=( x86    x86_64  x86     x86_64  x86     x86_64  ppc    )
-FORMAT=( zip    zip     tar.gz  tar.gz  tar.gz  tar.gz  tar.gz )
+OSes=(   win32  win32   linux   linux   macosx  macosx  )
+WSes=(   win32  win32   gtk     gtk     cocoa   cocoa   )
+ARCHes=( x86    x86_64  x86     x86_64  x86     x86_64  )
+FORMAT=( zip    zip     tar.gz  tar.gz  tar.gz  tar.gz  )
 
 ###############################################################################
 
