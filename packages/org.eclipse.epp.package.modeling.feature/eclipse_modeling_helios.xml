@@ -77,7 +77,7 @@
     url="http://wiki.eclipse.org/Xtext/Documentation/Xtext_New_and_Noteworthy"
     project="Xtext" />
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/R-3.5-200906111540/eclipse-news-all.html"
+    url="http://download.eclipse.org/eclipse/downloads/drops/R-3.6-201006080911/eclipse-news.html"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"

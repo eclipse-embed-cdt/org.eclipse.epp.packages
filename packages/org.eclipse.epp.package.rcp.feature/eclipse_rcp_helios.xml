@@ -22,7 +22,7 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/R-3.5-200906111540/eclipse-news-all.html"
+    url="http://download.eclipse.org/eclipse/downloads/drops/R-3.6-201006080911/eclipse-news.html"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="http://www.eclipse.org/rap/noteworthy/news_13.php"
@@ -30,9 +30,6 @@
   <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
-  <NewAndNoteworthy
-    url="http://www.eclipse.org/ecf/NewAndNoteworthy.html"
-    project="Eclipse Communication Framework" />
   </MoreInfo>
 
 

@@ -38,7 +38,7 @@
     url="http://www.eclipse.org/pdt/release-notes/"
     project="Eclipse PHP Development Tools" />
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/R-3.5-200906111540/eclipse-news-all.html"
+    url="http://download.eclipse.org/eclipse/downloads/drops/R-3.6-201006080911/eclipse-news.html"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"
