@@ -26,7 +26,7 @@ fi
 
 # variables to adjust
 BASE_DIR=/shared/technology/epp/epp_build/36
-RELEASE_NAME="-helios-RC5"
+RELEASE_NAME="-helios-SR1-RC0"
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
@@ -40,7 +40,7 @@ DOWNLOAD_BASE_URL="http://build.eclipse.org/technology/epp/epp_build/36/download
 DOWNLOAD_BASE_DIR="${BASE_DIR}/download"
 BUILD_DIR="${BASE_DIR}/build"
 DOWNLOAD_DIR="${DOWNLOAD_BASE_DIR}/${START_TIME}"
-EPPREPO_INPUT_DIR="/shared/technology/epp/epp_repo/helios/epp.build/buildresult/org.eclipse.epp.allpackages.helios.feature_1.3.0-eclipse.feature/site.p2"
+EPPREPO_INPUT_DIR="/shared/technology/epp/epp_repo/helios/epp.build/buildresult/org.eclipse.epp.allpackages.helios.feature_1.3.1-eclipse.feature/site.p2"
 EPPREPO_WORKINGCOPY_DIR="${DOWNLOAD_DIR}/repository"
 MARKERFILE="${DOWNLOAD_DIR}/${MARKERFILENAME}"
 STATUSFILE="${DOWNLOAD_DIR}/${STATUSFILENAME}"
@@ -48,10 +48,10 @@ LOGFILE="${DOWNLOAD_DIR}/build.log"
 LOCKFILE="/tmp/epp.build36.lock"
 
 # repository locations
-REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/3.6-I-builds/I20100608-0911/"
+REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/3.6.x/"
 #REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/3.6milestones/"
 REPO_SIMRELEASE_URL="${BASE_URL}/releases/helios/"
-REPO_STAGING_URL="${BASE_URL}/releases/staging/"
+REPO_STAGING_URL="${BASE_URL}/releases/maintenance/"
 #REPO_EPP_URL="${BASE_URL}/technology/epp/packages/helios"
 REPO_EPP_URL="file://${EPPREPO_INPUT_DIR}"
 REPO_EPP_WORKINGCOPY_URL="file://${EPPREPO_WORKINGCOPY_DIR}"
