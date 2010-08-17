@@ -41,6 +41,7 @@
       <import feature="org.eclipse.wst.web_ui.feature"/>
       <import feature="org.eclipse.wst.xsl.feature"/>
       <import feature="org.eclipse.dltk.rse"/>
+      <import feature="org.eclipse.rse"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
    </requires>
 
