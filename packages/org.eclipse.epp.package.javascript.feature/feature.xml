@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.javascript.feature"
       label="%featureName"
-      version="1.3.1.qualifier"
+      version="1.4.0.qualifier"
       provider-name="%providerName"
       plugin="org.eclipse.epp.package.javascript">
 
@@ -19,7 +19,7 @@
    </license>
 
    <url>
-      <discovery label="%discoverySiteName" url="http://download.eclipse.org/releases/helios/"/>
+      <discovery label="%discoverySiteName" url="http://download.eclipse.org/releases/indigo/"/>
    </url>
 
    <includes

@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.php.feature"
       label="EPP PHP Feature"
-      version="1.3.1.qualifier"
+      version="1.4.0.qualifier"
       provider-name="Eclipse.org - EPP"
       plugin="org.eclipse.epp.package.php">
 
@@ -15,8 +15,8 @@
    </license>
 
    <url>
-      <discovery label="Helios" url="http://download.eclipse.org/releases/helios/"/>
-      <discovery label="Eclipse Platform 3.6" url="http://download.eclipse.org/eclipse/updates/3.6"/>
+      <discovery label="Indigo" url="http://download.eclipse.org/releases/indigo/"/>
+      <discovery label="Eclipse Platform 3.7" url="http://download.eclipse.org/eclipse/updates/3.7"/>
    </url>
 
    <includes
@@ -28,8 +28,8 @@
       <import feature="org.eclipse.cvs" version="1.1.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.equinox.p2.user.ui" version="1.1.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.help" version="1.1.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.platform" version="3.6.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.rcp" version="3.6.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.platform" version="3.7.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.rcp" version="3.7.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
       <import feature="org.eclipse.mylyn.bugzilla_feature"/>
       <import feature="org.eclipse.mylyn.context_feature"/>
