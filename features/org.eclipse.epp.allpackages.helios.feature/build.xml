@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <project name="project" default="build.site">
-	<property name="director.url" value="http://www.eclipse.org/downloads/download.php?file=/tools/buckminster/products/director_1.0.0.r10307.zip&amp;r=1" />
+	<property name="director.url" value="http://www.eclipse.org/downloads/download.php?file=/tools/buckminster/products/org.eclipse.equinox.p2.director.product_1.0.0.v20100203-1557.zip&amp;r=1" />
 
 	<!--Property file containing overrides for the default properties
 	-->
