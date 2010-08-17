@@ -191,7 +191,7 @@ do
   echo "......adding $FILE"
   cat ${FILE} >>${DOWNLOAD_BASE_DIR}/${STATUSFILENAME}
 done
-cp -a --no-preserve=ownership ${DOWNLOAD_BASE_DIR}/${STATUSFILENAME} /home/data/httpd/download.eclipse.org/technology/epp/downloads/testing/status36.stub
+cp -a --no-preserve=ownership ${DOWNLOAD_BASE_DIR}/${STATUSFILENAME} /home/data/httpd/download.eclipse.org/technology/epp/downloads/testing/statusIndigo.stub
 
 
 
