@@ -8,7 +8,7 @@
 	<property file="${build.root}/build.properties" />
 	<property name="bm.headless.site" value="http://download.eclipse.org/tools/buckminster/headless-3.5/" />
 	<property name="helios.site" value="http://download.eclipse.org/releases/helios/" />
-	<property name="staging.site" value="http://download.eclipse.org/releases/staging/" />
+	<property name="staging.site" value="http://download.eclipse.org/releases/maintenance/" />
 	<property name="platform.site" value="http://download.eclipse.org/eclipse/updates/3.6milestones/" />
 	<property name="buildtools" location="${build.root}/tools" />
 	<property name="workspace" location="${build.root}/workspace" />
@@ -114,7 +114,7 @@
       </args>
     </eclipse.launch>
   	<copy todir="${targetPlatformPath}/plugins">
-  	  <fileset dir="/home/data/httpd/download.eclipse.org/releases/staging/aggregate/plugins">
+  	  <fileset dir="/home/data/httpd/download.eclipse.org/releases/maintenance/aggregate/plugins">
   	    <include name="**/org.eclipse*intro*"/>
   	    <include name="**/org.eclipse*capabilities*"/>
   	  </fileset>
