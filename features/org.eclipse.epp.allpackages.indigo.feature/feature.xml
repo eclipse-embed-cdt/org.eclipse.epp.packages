@@ -29,15 +29,15 @@
          id="org.eclipse.epp.package.java.feature"
          version="0.0.0"/>
 
+<!--
    <includes
          id="org.eclipse.epp.package.jee.feature"
          version="0.0.0"/>
 
-<!--
    <includes
          id="org.eclipse.epp.package.javascript.feature"
          version="0.0.0"/>
--->
+
    <includes
          id="org.eclipse.epp.package.linuxtools.feature"
          version="0.0.0"/>
@@ -54,10 +54,12 @@
          id="org.eclipse.epp.package.pulsar.feature"
          version="0.0.0"/>
 
+-->
    <includes
          id="org.eclipse.epp.package.rcp.feature"
          version="0.0.0"/>
 
+<!--
    <includes
          id="org.eclipse.epp.package.reporting.feature"
          version="0.0.0"/>
@@ -65,5 +67,6 @@
    <includes
          id="org.eclipse.epp.package.soa.feature"
          version="0.0.0"/>
+-->
 
 </feature>
