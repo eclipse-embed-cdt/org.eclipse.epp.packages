@@ -33,10 +33,11 @@
          id="org.eclipse.epp.package.jee.feature"
          version="0.0.0"/>
 
+<!--
    <includes
          id="org.eclipse.epp.package.javascript.feature"
          version="0.0.0"/>
-
+-->
    <includes
          id="org.eclipse.epp.package.linuxtools.feature"
          version="0.0.0"/>
