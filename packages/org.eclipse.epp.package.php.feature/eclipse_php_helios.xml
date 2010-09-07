@@ -54,7 +54,7 @@
 	<!--
 		name, name of the product, used in naming the created files.
 	-->
-	<product name="eclipse-php-helios-SR1-RC2" />
+	<product name="eclipse-php-helios-SR1-RC3" />
 
 </configuration>
 
