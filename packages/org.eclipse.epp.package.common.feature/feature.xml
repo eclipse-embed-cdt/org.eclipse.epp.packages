@@ -22,6 +22,7 @@ to all EPP packages and general configurations.
    <requires>
       <import feature="org.eclipse.epp.usagedata.feature"/>
       <import feature="org.eclipse.epp.mpc"/>
+      <import plugin="org.slf4j.api"/>
    </requires>
 
    <plugin
