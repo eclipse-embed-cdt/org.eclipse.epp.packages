@@ -19,11 +19,6 @@ to all EPP packages and general configurations.
       <discovery label="Eclipse Platform 3.6" url="http://download.eclipse.org/eclipse/updates/3.6"/>
    </url>
 
-   <includes
-         id="org.eclipse.epp.package.transition.feature"
-         version="0.0.0"
-         optional="true"/>
-
    <requires>
       <import feature="org.eclipse.epp.usagedata.feature"/>
       <import feature="org.eclipse.epp.mpc"/>
