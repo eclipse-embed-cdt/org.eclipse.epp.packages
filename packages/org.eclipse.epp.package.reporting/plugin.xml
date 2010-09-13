@@ -51,5 +51,6 @@
             productId="org.eclipse.epp.package.reporting.product">
       </introProductBinding>
    </extension>
+   
 
 </plugin>

@@ -52,5 +52,6 @@
             productId="org.eclipse.epp.package.java.product">
       </introProductBinding>
    </extension>
+   
 </plugin>
 
