@@ -43,6 +43,6 @@
   <rcp version="3.6.1" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-reporting-helios-SR1-RC3" />
+  <product name="eclipse-reporting-helios-SR1-RC4" />
 
 </configuration>
