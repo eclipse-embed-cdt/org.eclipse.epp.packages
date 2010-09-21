@@ -15,7 +15,7 @@ if [ ${BUILDLOCATION} = "server" ]
 then
    BASE_URL=${FILESYSTEM_BASE}
    ECLIPSE="/shared/technology/epp/epp_build/36/eclipse/eclipse"
-   JRE="/opt/ibm/java2-ppc-50/bin/java"
+   JRE="/shared/common/jdk-1.5.0-22.x86_64/bin/java"
  else
    BASE_URL=${HTTP_BASE}
    ECLIPSE="eclipse"
