@@ -17,9 +17,11 @@
       [Enter License Description here.]
    </license>
 
+<!--
    <includes
          id="org.eclipse.epp.package.cpp.feature"
          version="0.0.0"/>
+-->
 
    <includes
          id="org.eclipse.epp.package.common.feature"
@@ -29,6 +31,7 @@
          id="org.eclipse.epp.package.java.feature"
          version="0.0.0"/>
 
+<!--
    <includes
          id="org.eclipse.epp.package.jee.feature"
          version="0.0.0"/>
@@ -64,5 +67,6 @@
    <includes
          id="org.eclipse.epp.package.soa.feature"
          version="0.0.0"/>
+-->
 
 </feature>

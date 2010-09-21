@@ -18,7 +18,7 @@
          </property>
          <property
                name="aboutText"
-               value="Eclipse IDE for JavaScript Web Developers.&#x0A;&#x0A;Version: Helios Release&#x0A;Build id: {0}&#x0A;&#x0A;(c) Copyright Eclipse contributors and others 2005, 2010.  All rights reserved.&#x0A;Visit http://www.eclipse.org/webtools">
+               value="Eclipse IDE for JavaScript Web Developers.&#x0A;&#x0A;Version: Helios Service Release 1&#x0A;Build id: {0}&#x0A;&#x0A;(c) Copyright Eclipse contributors and others 2005, 2010.  All rights reserved.&#x0A;Visit http://www.eclipse.org/webtools">
          </property>
          <property
                name="startupProgressRect"
@@ -43,8 +43,27 @@
          <property
                name="buildIdLocation"
                value="303,190">
+         </property>
+         <property
+              name="introBrandingImage"
+              value="product:intro-eclipse.png"/>
+         <property
+               name="introTitle"
+               value="Welcome to Eclipse IDE for JavaScript Developers">
+         </property>
+         <property
+               name="introBrandingImageText"
+               value="Eclipse Project">
          </property>         
       </product>
    </extension>
+   <extension
+         point="org.eclipse.ui.intro">
+      <introProductBinding
+            introId="org.eclipse.ui.intro.universal"
+            productId="org.eclipse.epp.package.javascript.product">
+      </introProductBinding>
+   </extension>
+
 
 </plugin>

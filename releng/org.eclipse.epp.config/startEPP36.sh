@@ -15,7 +15,7 @@ if [ ${BUILDLOCATION} = "server" ]
 then
    BASE_URL=${FILESYSTEM_BASE}
    ECLIPSE="/shared/technology/epp/epp_build/36/eclipse/eclipse"
-   JRE="/opt/ibm/java2-ppc-50/bin/java"
+   JRE="/shared/common/jdk-1.5.0-22.x86_64/bin/java"
  else
    BASE_URL=${HTTP_BASE}
    ECLIPSE="eclipse"
@@ -26,7 +26,7 @@ fi
 
 # variables to adjust
 BASE_DIR=/shared/technology/epp/epp_build/36
-RELEASE_NAME="-helios-SR1-RC2"
+RELEASE_NAME="-helios-SR1-RC4"
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
@@ -138,14 +138,13 @@ do
       -profile ${PACKAGE} \
       -flavor tooling \
       -profileproperties org.eclipse.update.install.features=true \
-      -bundlepool ${PACKAGE_BUILD_DIR}/eclipse \
       -purgeHistory \
       -p2.os ${OSes[$index]} \
       -p2.ws ${WSes[$index]} \
       -p2.arch ${ARCHes[$index]} \
       -roaming \
       -vm ${JRE} \
-      -vmargs -Declipse.p2.mirrors=false -Declipse.p2.data.area=${PACKAGE_BUILD_DIR}/eclipse/p2 \
+      -vmargs -Declipse.p2.mirrors=false \
          2>&1 >${DOWNLOAD_DIR}/${PACKAGE}_${EXTENSION}.log
     if [ $? = "0" ]; then
       cd ${PACKAGE_BUILD_DIR}
