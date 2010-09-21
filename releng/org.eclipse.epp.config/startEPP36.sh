@@ -138,13 +138,14 @@ do
       -profile ${PACKAGE} \
       -flavor tooling \
       -profileproperties org.eclipse.update.install.features=true \
+      -bundlepool ${PACKAGE_BUILD_DIR}/eclipse \
       -purgeHistory \
       -p2.os ${OSes[$index]} \
       -p2.ws ${WSes[$index]} \
       -p2.arch ${ARCHes[$index]} \
       -roaming \
       -vm ${JRE} \
-      -vmargs -Declipse.p2.mirrors=false \
+      -vmargs -Declipse.p2.mirrors=false -Declipse.p2.data.area=${PACKAGE_BUILD_DIR}/eclipse/p2 \
          2>&1 >${DOWNLOAD_DIR}/${PACKAGE}_${EXTENSION}.log
     if [ $? = "0" ]; then
       cd ${PACKAGE_BUILD_DIR}
