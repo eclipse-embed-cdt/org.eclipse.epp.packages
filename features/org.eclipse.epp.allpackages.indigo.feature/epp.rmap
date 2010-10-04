@@ -36,7 +36,7 @@
     </provider>
   </searchPath>
 
-	<locator searchPathRef="org.eclipse.epp.allpackages.indigo" pattern="^org\.eclipse\.epp\.allpackages\.indigo\..*$"/>
+	<locator searchPathRef="org.eclipse.epp.allpackages.indigo" pattern="^org\.eclipse\.epp\.allpackages\..*$"/>
 	<locator searchPathRef="org.eclipse.epp.allpackages.indigo" pattern="^org\.eclipse\.epp\.targetplatform\..*$"/>
 	<locator searchPathRef="org.eclipse.epp.packages" pattern="^org\.eclipse\.epp\.package\..*$"/>
     <locator searchPathRef="platform" failOnError="false" />
