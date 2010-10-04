@@ -6,7 +6,7 @@
 
 	<searchPath name="org.eclipse.epp.allpackages.indigo">
 		<provider readerType="cvs" componentTypes="eclipse.feature" mutable="true" source="true">
-			<uri format=":local:/cvsroot/technology,org.eclipse.epp/features/{0}">
+			<uri format=":pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/features/{0}">
 				<bc:propertyRef key="buckminster.component" />
 			</uri>
 		</provider>
@@ -14,7 +14,7 @@
 
 	<searchPath name="org.eclipse.epp.packages">
 		<provider readerType="cvs" componentTypes="osgi.bundle,eclipse.feature" mutable="true" source="true">
-			<uri format=":local:/cvsroot/technology,org.eclipse.epp/packages/{0}">
+			<uri format=":pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/{0}">
 				<bc:propertyRef key="buckminster.component" />
 			</uri>
 		</provider>
