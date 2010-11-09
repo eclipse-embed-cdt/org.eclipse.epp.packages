@@ -102,6 +102,17 @@
         <arg value="${tp.mspec}" />
       </args>
     </eclipse.launch>
+    <eclipse.launch app="buckminster">
+      <args>
+        <jvmarg value="-Dplatform.site=${platform.site}" />
+        <jvmarg value="-Dhelios.site=${staging.site}" />
+        <jvmarg value="-Declipse.p2.mirrors=false" />
+        <arg value="-data" />
+        <arg value="${workspace}" />
+        <arg value="import"/>
+        <arg value="${tp-mpc.mspec}" />
+      </args>
+    </eclipse.launch>
   	<copy todir="${targetPlatformPath}/plugins">
   	  <fileset dir="/home/data/httpd/download.eclipse.org/releases/staging/aggregate/plugins">
   	    <include name="**/org.eclipse*intro*"/>
