@@ -155,7 +155,6 @@
         <jvmarg value="-Dbuckminster.temp.root=${build.root}/temp" />
         <jvmarg value="-Dbuild.id=${build.id}" />
         <jvmarg value="-Dcbi.include.source=false" />
-        <jvmarg value="-Dpde.consider.about.mappings=false" />
         <jvmarg value="-Declipse.p2.mirrors=false" />
         <arg value="-data" />
         <arg value="${workspace}" />
@@ -176,7 +175,6 @@
 				<jvmarg value="-Dbuckminster.temp.root=${build.root}/temp" />
 			  <jvmarg value="-Dbuild.id=${build.id}" />
 			  <jvmarg value="-Dcbi.include.source=false" />
-		      <jvmarg value="-Dpde.consider.about.mappings=false" />
 			  <jvmarg value="-Declipse.p2.mirrors=false" />
 				<arg value="-data" />
 				<arg value="${workspace}" />
