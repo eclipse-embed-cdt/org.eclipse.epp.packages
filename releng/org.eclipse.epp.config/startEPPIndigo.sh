@@ -1,6 +1,6 @@
 #!/bin/bash
 set -x
-umask 0022
+umask 0002
 ulimit -n 2048
 
 # Change this if building on build.eclipse.org to "server"; "local" otherwise
