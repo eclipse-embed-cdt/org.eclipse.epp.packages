@@ -15,7 +15,7 @@ if [ ${BUILDLOCATION} = "server" ]
 then
    BASE_URL=${FILESYSTEM_BASE}
    ECLIPSE="/shared/technology/epp/epp_build/indigo/eclipse/eclipse"
-   JRE="/opt/ibm/java2-ppc-50/bin/java"
+   JRE="/usr/local/bin/java"
  else
    BASE_URL=${HTTP_BASE}
    ECLIPSE="eclipse"
@@ -26,7 +26,7 @@ fi
 
 # variables to adjust
 BASE_DIR=/shared/technology/epp/epp_build/indigo
-RELEASE_NAME="-indigo-M1"
+RELEASE_NAME="-indigo-M3"
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
