@@ -38,7 +38,7 @@
       </win>
    </launcher>
 
-   <intro introId="org.eclipse.wtp.epp.package.javascript.intro.intro"/>
+   <intro introId="org.eclipse.ui.intro.universal"/>
 
    <vm>
       <linux include="true">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</linux>
@@ -151,7 +151,7 @@ Java and all Java-based trademarks are trademarks of Sun Microsystems, Inc. in t
    </license>
 
    <plugins>
-      <plugin id="org.eclipse.epp.package.jee"/>
+      <plugin id="org.eclipse.epp.package.javascript"/>
       <plugin id="org.eclipse.wtp.epp.package.jee.intro" fragment=""/>
    </plugins>
 

@@ -43,8 +43,27 @@
          <property
                name="buildIdLocation"
                value="303,190">
+         </property>
+         <property
+              name="introBrandingImage"
+              value="product:intro-eclipse.png"/>
+         <property
+               name="introTitle"
+               value="Welcome to Eclipse IDE for JavaScript Developers">
+         </property>
+         <property
+               name="introBrandingImageText"
+               value="Eclipse Project">
          </property>         
       </product>
    </extension>
+   <extension
+         point="org.eclipse.ui.intro">
+      <introProductBinding
+            introId="org.eclipse.ui.intro.universal"
+            productId="org.eclipse.epp.package.javascript.product">
+      </introProductBinding>
+   </extension>
+
 
 </plugin>
