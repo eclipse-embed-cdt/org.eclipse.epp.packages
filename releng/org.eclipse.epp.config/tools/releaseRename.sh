@@ -1,8 +1,8 @@
 #!/bin/bash
 
 RELEASEDIRECTORY=/home/data/httpd/download.eclipse.org/technology/epp/downloads/release
-TESTDIRECTORY=/shared/technology/epp/epp_build/36/download
-RELEASETRAIN=helios
+TESTDIRECTORY=/shared/technology/epp/epp_build/indigo/download
+RELEASETRAIN=indigo
 CURRENTDIR=${PWD}
 
 
