@@ -39,5 +39,5 @@ soa,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/p
 soa,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.soa.feature/feature.xml,HEAD,soa.feature.xml
 
 ## special case - we provide a dummy epp config file for the SDK
-sdk,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_sdk_helios.xml,HEAD,sdk.xml
+sdk,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_sdk_indigo.xml,HEAD,sdk.xml
 #where to get the SDK feature? sdk,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_sdk_helios.xml,HEAD,eclipse_sdk_360.xml
