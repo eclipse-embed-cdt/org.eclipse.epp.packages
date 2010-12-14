@@ -23,6 +23,9 @@ linuxtools,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclips
 modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.modeling.feature/eclipse_modeling_indigo.xml,HEAD,modeling.xml
 modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.modeling.feature/feature.xml,HEAD,modeling.feature.xml
 
+parallel,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.modeling.feature/eclipse_parallel_indigo.xml,HEAD,parallel.xml
+parallel,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.modeling.feature/feature.xml,HEAD,parallel.feature.xml
+
 php,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.php.feature/eclipse_php_indigo.xml,HEAD,php.xml
 php,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.php.feature/feature.xml,HEAD,php.feature.xml
 
