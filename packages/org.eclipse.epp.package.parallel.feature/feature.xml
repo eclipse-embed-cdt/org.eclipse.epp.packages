@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.epp.package.parallel.feature"
+      label="EPP Parallel Feature"
+      version="1.0.0.qualifier"
+      provider-name="Eclipse.org - EPP"
+      plugin="org.eclipse.epp.package.parallel">
+
+   <description>
+      An IDE for C/C++ developers with Mylyn integration.
+   </description>
+
+   <license url="license.html">
+      %license
+   </license>
+
+   <url>
+      <discovery label="Indigo" url="http://download.eclipse.org/releases/indigo/"/>
+      <discovery label="Eclipse Platform 3.7" url="http://download.eclipse.org/eclipse/updates/3.7"/>
+   </url>
+
+   <includes
+         id="org.eclipse.platform"
+         version="0.0.0"
+         search-location="both"/>
+
+   <requires>
+      <import feature="org.eclipse.cvs" version="1.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.equinox.p2.user.ui" version="1.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.help" version="1.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.platform" version="3.7.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.rcp" version="3.7.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.cdt.platform" version="7.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.cdt" version="7.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.mylyn_feature"/>
+      <import feature="org.eclipse.mylyn.context_feature"/>
+      <import feature="org.eclipse.mylyn.team_feature"/>
+      <import feature="org.eclipse.mylyn.ide_feature"/>
+      <import feature="org.eclipse.mylyn.bugzilla_feature"/>
+      <import feature="org.eclipse.mylyn.wikitext_feature"/>
+      <import feature="org.eclipse.cdt.mylyn"/>
+      <import feature="org.eclipse.cdt.p2"/>
+      <import feature="org.eclipse.cdt.debug.ui.memory"/>
+      <import feature="org.eclipse.epp.package.common.feature"/>
+      <import feature="org.eclipse.cdt.bupc" version="1.0.3.201012031515"/>
+      <import feature="org.eclipse.cdt.core.parser.upc.feature" version="5.1.0.qualifier"/>
+      <import feature="org.eclipse.cdt.core.parser.upc.sdk" version="5.1.0.201012031515"/>
+      <import feature="org.eclipse.rse.feature.group"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.epp.package.parallel"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>
