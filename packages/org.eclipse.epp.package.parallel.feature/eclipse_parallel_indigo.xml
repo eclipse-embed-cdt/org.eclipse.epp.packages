@@ -18,7 +18,6 @@
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
       <tester>Beth Tibbitts</tester>
-      <tester>Markus Knauer</tester>
     </packageTesters>
   </packageMetaData>
   <MoreInfo>
