@@ -35,6 +35,6 @@
   <rcp version="3.7.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-javascript-indigo-M3" />
+  <product name="eclipse-javascript-indigo-M4" />
 
 </configuration>
