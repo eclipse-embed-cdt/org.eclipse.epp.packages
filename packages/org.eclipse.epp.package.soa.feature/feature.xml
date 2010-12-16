@@ -44,10 +44,7 @@ Note that the SOA package includes some incubating components, as indicated by f
       <import feature="org.eclipse.mylyn.sdk_feature"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.wst.ws_ui.feature"/>
-      <import feature="org.eclipse.swordfish.tooling.development.feature"/>
-      <import feature="org.eclipse.swordfish.tooling.deployment.feature"/>  
       <import feature="org.eclipse.ecf.remoteservice.sdk.feature"/>
-      <import feature="org.eclipse.swordfish.tutorial.discovery.feature"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
    </requires>
 
