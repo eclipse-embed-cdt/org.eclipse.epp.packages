@@ -42,9 +42,9 @@
       <import feature="org.eclipse.cdt.p2"/>
       <import feature="org.eclipse.cdt.debug.ui.memory"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
-      <import feature="org.eclipse.ptp.pldt.upc"/>
       <import feature="org.eclipse.cdt.core.parser.upc.feature" version="5.1.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.rse"/>
+      <import feature="org.eclipse.ptp.platform" version="5.0.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin
