@@ -44,7 +44,7 @@
       <import feature="org.eclipse.epp.package.common.feature"/>
       <import feature="org.eclipse.cdt.core.parser.upc.feature" version="5.1.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.rse"/>
-      <import feature="org.eclipse.ptp.platform" version="5.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.ptp" version="5.0.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin
