@@ -13,7 +13,7 @@
    </configIni>
 
    <launcherArgs>
-      <programArgs>-product org.eclipse.epp.package.cpp.product
+      <programArgs>-product org.eclipse.epp.package.parallel.product
 --launcher.defaultAction openFile</programArgs>
       <programArgsWin>--launcher.XXMaxPermSize
 256M</programArgsWin>
@@ -44,7 +44,7 @@
    </vm>
 
    <plugins>
-      <plugin id="org.eclipse.epp.package.cpp"/>
+      <plugin id="org.eclipse.epp.package.parallel"/>
    </plugins>
 
    <features>
