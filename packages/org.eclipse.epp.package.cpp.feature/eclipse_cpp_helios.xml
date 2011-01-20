@@ -23,7 +23,7 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://wiki.eclipse.org/CDT/User/NewIn60"
+    url="http://wiki.eclipse.org/CDT/User/NewIn70"
     project="Eclipse CDT" />
   <NewAndNoteworthy
     url="http://download.eclipse.org/eclipse/downloads/drops/R-3.6-201006080911/eclipse-news.html"
@@ -36,9 +36,9 @@
 
 	<!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-	<rcp version="3.6.1" />
+	<rcp version="3.6.2" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-cpp-helios-SR1-RC4" />
+	<product name="eclipse-cpp-helios-SR2-RC1" />
 
 </configuration>

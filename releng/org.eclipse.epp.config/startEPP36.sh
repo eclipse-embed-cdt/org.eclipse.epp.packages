@@ -26,7 +26,7 @@ fi
 
 # variables to adjust
 BASE_DIR=/shared/technology/epp/epp_build/36
-RELEASE_NAME="-helios-SR1-RC4"
+RELEASE_NAME="-helios-SR2-RC1"
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
@@ -40,7 +40,7 @@ DOWNLOAD_BASE_URL="http://build.eclipse.org/technology/epp/epp_build/36/download
 DOWNLOAD_BASE_DIR="${BASE_DIR}/download"
 BUILD_DIR="${BASE_DIR}/build"
 DOWNLOAD_DIR="${DOWNLOAD_BASE_DIR}/${START_TIME}"
-EPPREPO_INPUT_DIR="/shared/technology/epp/epp_repo/helios/epp.build/buildresult/org.eclipse.epp.allpackages.helios.feature_1.3.1-eclipse.feature/site.p2"
+EPPREPO_INPUT_DIR="/shared/technology/epp/epp_repo/helios/epp.build/buildresult/org.eclipse.epp.allpackages.helios.feature_1.3.2-eclipse.feature/site.p2"
 EPPREPO_WORKINGCOPY_DIR="${DOWNLOAD_DIR}/repository"
 MARKERFILE="${DOWNLOAD_DIR}/${MARKERFILENAME}"
 STATUSFILE="${DOWNLOAD_DIR}/${STATUSFILENAME}"
