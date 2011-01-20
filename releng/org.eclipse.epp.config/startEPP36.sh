@@ -1,6 +1,6 @@
 #!/bin/bash
-#set -x
-umask 0022
+set -x
+umask 0002
 ulimit -n 2048
 
 # Change this if building on build.eclipse.org to "server"; "local" otherwise
@@ -15,7 +15,7 @@ if [ ${BUILDLOCATION} = "server" ]
 then
    BASE_URL=${FILESYSTEM_BASE}
    ECLIPSE="/shared/technology/epp/epp_build/36/eclipse/eclipse"
-   JRE="/shared/common/jdk-1.5.0-22.x86_64/bin/java"
+   JRE="/usr/local/bin/java"
  else
    BASE_URL=${HTTP_BASE}
    ECLIPSE="eclipse"
