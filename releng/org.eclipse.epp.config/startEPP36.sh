@@ -26,7 +26,7 @@ fi
 
 # variables to adjust
 BASE_DIR=/shared/technology/epp/epp_build/36
-RELEASE_NAME="-helios-SR2-RC1"
+RELEASE_NAME="-helios-SR2-RC2"
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
