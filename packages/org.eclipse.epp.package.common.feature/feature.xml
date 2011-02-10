@@ -23,6 +23,7 @@ to all EPP packages and general configurations.
       <import feature="org.eclipse.epp.usagedata.feature"/>
       <import feature="org.eclipse.epp.mpc"/>
    </requires>
+   
 
    <plugin
          id="org.eclipse.epp.package.common"
