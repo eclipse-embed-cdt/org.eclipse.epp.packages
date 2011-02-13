@@ -21,7 +21,7 @@
 	</searchPath>
 
 	<searchPath name="helios">
-		<provider readerType="eclipse.import" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
+		<provider readerType="p2" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
 			<uri format="{0}?importType=binary">
 				<bc:propertyRef key="helios.site" />
 			</uri>
@@ -29,7 +29,7 @@
 	</searchPath>
 
   <searchPath name="platform">
-    <provider readerType="eclipse.import" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
+    <provider readerType="p2" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
       <uri format="{0}?importType=binary">
         <bc:propertyRef key="platform.site" />
       </uri>
