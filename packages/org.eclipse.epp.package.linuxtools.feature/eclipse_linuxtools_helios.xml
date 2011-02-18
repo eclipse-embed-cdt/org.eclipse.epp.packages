@@ -42,6 +42,6 @@
 	<rcp version="3.6.2" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-linuxtools-helios-SR2-RC3-incubation" />
+	<product name="eclipse-linuxtools-helios-SR2-RC4-incubation" />
 
 </configuration>
