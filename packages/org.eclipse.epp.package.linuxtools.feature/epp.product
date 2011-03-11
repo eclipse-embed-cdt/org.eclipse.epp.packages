@@ -29,7 +29,7 @@
 
    <splash
       startupProgressRect="5,275,445,15" />
-   <launcher>
+   <launcher name="eclipse">
       <solaris/>
       <win useIco="false">
          <bmp/>

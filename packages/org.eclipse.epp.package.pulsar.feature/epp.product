@@ -30,7 +30,7 @@
 
    <splash
       startupProgressRect="5,275,445,15" />
-   <launcher>
+   <launcher name="eclipse">
       <solaris/>
       <win useIco="true">
          <ico path="/org.eclipse.epp.package.pulsar/pulsar.ico"/>
