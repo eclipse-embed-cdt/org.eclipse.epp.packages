@@ -7,7 +7,7 @@
       plugin="org.eclipse.epp.package.parallel">
 
    <description>
-      An IDE for C/C++ developers with Mylyn integration.
+      An IDE for Parallel Application developers.
    </description>
 
    <license url="license.html">
@@ -25,26 +25,35 @@
          search-location="both"/>
 
    <requires>
-      <import feature="org.eclipse.cvs" version="1.1.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.equinox.p2.user.ui" version="1.1.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.help" version="1.1.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.platform" version="3.7.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.rcp" version="3.7.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.cdt.platform" version="8.0.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.cdt" version="8.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.epp.package.common.feature"/>
+      <import feature="org.eclipse.platform" />
+      <import feature="org.eclipse.cvs" />
+      <import feature="org.eclipse.equinox.p2.user.ui" />
+      <import feature="org.eclipse.help"/>
+      <import feature="org.eclipse.rcp" />
+      <import feature="org.eclipse.cdt.platform" />
+      <import feature="org.eclipse.cdt" />
+      <import feature="org.eclipse.cdt.mylyn"/>
+      <import feature="org.eclipse.cdt.p2"/>
+      <import feature="org.eclipse.cdt.debug.ui.memory"/>
+      <import feature="org.eclipse.cdt.core.parser.upc.feature" />
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.context_feature"/>
       <import feature="org.eclipse.mylyn.team_feature"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
       <import feature="org.eclipse.mylyn.bugzilla_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
-      <import feature="org.eclipse.cdt.mylyn"/>
-      <import feature="org.eclipse.cdt.p2"/>
-      <import feature="org.eclipse.cdt.debug.ui.memory"/>
-      <import feature="org.eclipse.epp.package.common.feature"/>
-      <import feature="org.eclipse.cdt.core.parser.upc.feature" version="5.1.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.rse"/>
-      <import feature="org.eclipse.ptp" version="5.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.ptp" />
+      <import feature="org.eclipse.ptp.rdt" />
+      <import feature="org.eclipse.ptp.rdt.sync" />
+      <import feature="org.eclipse.ptp.remote.rse" />
+      <import feature="org.eclipse.ptp.pldt.upc" />
+      <import feature="org.eclipse.photran"/>
+      <import feature="org.eclipse.photran.intel" />
+      <import feature="org.eclipse.photran.xlf" />
+      <import feature="org.eclipse.rephraserengine" />
+
    </requires>
 
    <plugin
