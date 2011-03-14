@@ -46,16 +46,12 @@
       <import feature="org.eclipse.rse"/>
       <import feature="org.eclipse.ptp" />
       <import feature="org.eclipse.ptp.rdt" />
-      <!--
       <import feature="org.eclipse.ptp.rdt.sync" />
-      -->
       <import feature="org.eclipse.ptp.remote.rse" />
       <import feature="org.eclipse.ptp.pldt.upc" />
       <import feature="org.eclipse.photran"/>
-      <!--
       <import feature="org.eclipse.photran.intel" />
       <import feature="org.eclipse.photran.xlf" />
-      -->
       <import feature="org.eclipse.rephraserengine" />
 
    </requires>
