@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature
-      id="org.eclipse.epp.package.parallel.feature"
-      label="EPP Parallel Feature"
-      version="1.0.0.qualifier"
-      provider-name="Eclipse.org - EPP"
-      plugin="org.eclipse.epp.package.parallel">
+<feature id="org.eclipse.epp.package.parallel.feature" label="EPP Parallel Feature" version="1.0.0.qualifier" provider-name="Eclipse.org - EPP" plugin="org.eclipse.epp.package.parallel">
 
    <description>
       An IDE for Parallel Application developers.
@@ -19,24 +14,22 @@
       <discovery label="Eclipse Platform 3.7" url="http://download.eclipse.org/eclipse/updates/3.7"/>
    </url>
 
-   <includes
-         id="org.eclipse.platform"
-         version="0.0.0"
-         search-location="both"/>
+   <includes id="org.eclipse.platform" version="0.0.0" search-location="both"/>
 
    <requires>
       <import feature="org.eclipse.epp.package.common.feature"/>
-      <import feature="org.eclipse.platform" />
-      <import feature="org.eclipse.cvs" />
-      <import feature="org.eclipse.equinox.p2.user.ui" />
+      <import feature="org.eclipse.platform"/>
+      <import feature="org.eclipse.cvs"/>
+      <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.help"/>
-      <import feature="org.eclipse.rcp" />
-      <import feature="org.eclipse.cdt.platform" />
-      <import feature="org.eclipse.cdt" />
+      <import feature="org.eclipse.rcp"/>
+      <import feature="org.eclipse.cdt.platform"/>
+      <import feature="org.eclipse.cdt"/>
       <import feature="org.eclipse.cdt.mylyn"/>
       <import feature="org.eclipse.cdt.p2"/>
       <import feature="org.eclipse.cdt.debug.ui.memory"/>
-      <import feature="org.eclipse.cdt.core.parser.upc.feature" />
+      <import feature="org.eclipse.cdt.core.parser.upc.feature"/>
+      <import feature="org.eclipse.cdt.xlc.feature"/>
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.context_feature"/>
       <import feature="org.eclipse.mylyn.team_feature"/>
@@ -44,22 +37,18 @@
       <import feature="org.eclipse.mylyn.bugzilla_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
       <import feature="org.eclipse.rse"/>
-      <import feature="org.eclipse.ptp" />
-      <import feature="org.eclipse.ptp.rdt" />
-      <import feature="org.eclipse.ptp.rdt.sync" />
-      <import feature="org.eclipse.ptp.remote.rse" />
-      <import feature="org.eclipse.ptp.pldt.upc" />
+      <import feature="org.eclipse.ptp"/>
+      <import feature="org.eclipse.ptp.rdt"/>
+      <import feature="org.eclipse.ptp.rdt.sync"/>
+      <import feature="org.eclipse.ptp.remote.rse"/>
+      <import feature="org.eclipse.ptp.pldt.upc"/>
       <import feature="org.eclipse.photran"/>
-      <import feature="org.eclipse.photran.intel" />
-      <import feature="org.eclipse.photran.xlf" />
-      <import feature="org.eclipse.rephraserengine" />
+      <import feature="org.eclipse.photran.intel"/>
+      <import feature="org.eclipse.photran.xlf"/>
+      <import feature="org.eclipse.rephraserengine"/>
 
    </requires>
 
-   <plugin
-         id="org.eclipse.epp.package.parallel"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
+   <plugin id="org.eclipse.epp.package.parallel" download-size="0" install-size="0" version="0.0.0"/>
 
 </feature>
