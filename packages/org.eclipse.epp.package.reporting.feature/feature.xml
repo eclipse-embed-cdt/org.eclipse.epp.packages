@@ -66,8 +66,11 @@
       <import feature="org.eclipse.jst.webpageeditor.feature"/>
       <import feature="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature"/>
       <import feature="org.eclipse.jst.ws.axis2tools.feature"/>
-      <import feature="org.eclipse.jpt.feature"/>
-      <import feature="org.eclipse.jpt.eclipselink.feature"/>
+      <import feature="org.eclipse.jpt.dbws.eclipselink.feature"/>
+      <import feature="org.eclipse.jpt.jaxb.eclipselink.feature"/>
+      <import feature="org.eclipse.jpt.jaxb.feature"/>
+      <import feature="org.eclipse.jpt.jpa.eclipselink.feature"/>
+      <import feature="org.eclipse.jpt.jpa.feature"/>
       <import feature="org.eclipse.persistence.jpa"/>
       <import feature="org.eclipse.persistence.moxy"/>
       <import feature="org.eclipse.persistence.sdo"/>
