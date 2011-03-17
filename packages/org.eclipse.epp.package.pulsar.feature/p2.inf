@@ -12,3 +12,4 @@ org.eclipse.equinox.p2.touchpoint.eclipse.setProgramProperty(propName:osgi.splas
 org.eclipse.equinox.p2.touchpoint.eclipse.setProgramProperty(propName:eclipse.product,propValue:org.eclipse.epp.package.pulsar.product);\
 org.eclipse.equinox.p2.touchpoint.eclipse.setProgramProperty(propName:eclipse.application,propValue:org.eclipse.ui.ide.workbench);
 
+
