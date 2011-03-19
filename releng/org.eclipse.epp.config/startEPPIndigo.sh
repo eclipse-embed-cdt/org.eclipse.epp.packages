@@ -26,7 +26,7 @@ fi
 
 # variables to adjust
 BASE_DIR=/shared/technology/epp/epp_build/indigo
-RELEASE_NAME="-indigo-M6"
+RELEASE_NAME="-indigo-M6a"
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
@@ -49,7 +49,7 @@ LOCKFILE="/tmp/epp.build.indigo.lock"
 
 # repository locations
 #REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/3.7.x/"
-REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/3.7milestones/"
+REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/3.7milestones/S-3.7M6-201103101119"
 REPO_SIMRELEASE_URL="${BASE_URL}/releases/indigo/"
 REPO_STAGING_URL="${BASE_URL}/releases/staging/"
 #REPO_EPP_URL="${BASE_URL}/technology/epp/packages/indigo"
@@ -57,8 +57,8 @@ REPO_EPP_URL="file://${EPPREPO_INPUT_DIR}"
 REPO_EPP_WORKINGCOPY_URL="file://${EPPREPO_WORKINGCOPY_DIR}"
 
 # repositories used in the build
-METADATAREPOSITORIES="${REPO_ECLIPSE_URL},${REPO_STAGING_URL},${REPO_EPP_WORKINGCOPY_URL}"
-ARTIFACTREPOSITORIES="${REPO_ECLIPSE_URL},${REPO_STAGING_URL},${REPO_EPP_WORKINGCOPY_URL}"
+METADATAREPOSITORIES="${REPO_ECLIPSE_URL},${REPO_STAGING_URL},${REPO_EPP_WORKINGCOPY_URL},${BASE_URL}/tools/ptp/updates/indigo"
+ARTIFACTREPOSITORIES="${REPO_ECLIPSE_URL},${REPO_STAGING_URL},${REPO_EPP_WORKINGCOPY_URL},${BASE_URL}/tools/ptp/updates/indigo"
 
 # definition of OS, WS, ARCH, FORMAT combinations - DO NOT FORGET to adjust the for loop
 OSes=(   win32  win32   linux   linux   macosx  macosx  )
