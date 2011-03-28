@@ -46,10 +46,6 @@
          version="0.0.0"/>
 
    <includes
-         id="org.eclipse.epp.package.pulsar.feature"
-         version="0.0.0"/>
-
-   <includes
          id="org.eclipse.epp.package.rcp.feature"
          version="0.0.0"/>
 
