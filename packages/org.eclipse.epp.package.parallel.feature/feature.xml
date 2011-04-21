@@ -55,6 +55,7 @@
       <import feature="org.eclipse.photran.intel"/>
       <import feature="org.eclipse.photran.xlf"/>
       <import feature="org.eclipse.rephraserengine"/>
+      <import feature="org.eclipse.jgit"/>
    </requires>
 
    <plugin
