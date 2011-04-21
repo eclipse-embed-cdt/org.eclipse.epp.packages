@@ -71,6 +71,8 @@
       <import feature="org.eclipse.jst.ws.axis2tools.feature"/>
       <import feature="org.eclipse.jst.ws.axis2tools.feature"/>
       
+      <import feature="org.eclipse.jpt.common.feature"/>
+      <import feature="org.eclipse.jpt.common.eclipselink.feature"/>
       <import feature="org.eclipse.jpt.dbws.eclipselink.feature"/>
       <import feature="org.eclipse.jpt.jaxb.eclipselink.feature"/>
       <import feature="org.eclipse.jpt.jaxb.feature"/>
