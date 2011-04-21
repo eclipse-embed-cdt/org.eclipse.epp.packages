@@ -1,0 +1,2 @@
+#add requirement for specific linux platforms
+requires.1.filter=(&(osgi.os=linux)(osgi.ws=gtk)(|(osgi.arch=x86)(osgi.arch=x86_64)))
