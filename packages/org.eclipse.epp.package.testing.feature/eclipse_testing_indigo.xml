@@ -10,15 +10,18 @@
   <packageMetaData
    packageName="Eclipse for Testers"
    maintainer="Eclipse Jubula Project"
-   iconurl="http://www.eclipse.org/downloads/images/testing.jpg"
+   iconurl="http://www.eclipse.org/downloads/images/testing.png"
    bugzillaComponentId="testing-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-     <description><![CDATA[Testing applications is supported by this Testing Package.]]></description>
+     <description><![CDATA[This package contains Eclipse features that support the software development quality assurance process, such as the Jubula test specification client and Mylyn.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
       <tester>Achim L&ouml;rke</tester>
       <tester>Markus Tiede</tester>
+      <tester>Zeb Ford-Reitz</tester>
+      <tester>Alexandra Imrie</tester>
+      <tester>Tim Winselmann</tester>
     </packageTesters>
   </packageMetaData>
   <MoreInfo>
@@ -28,6 +31,9 @@
   <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
+  <NewAndNoteworthy
+    url="http://www.eclipse.org/jubula/new/"
+    project="Eclipse Jubula" />
   </MoreInfo>
 
 
