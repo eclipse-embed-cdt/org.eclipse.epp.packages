@@ -19,3 +19,4 @@ properties.1.value=false
 #org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.eclipse.org/tools/mylyn/update/e3.4/);\
 #org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.eclipse.org/tools/mylyn/update/e3.4/);
 
+

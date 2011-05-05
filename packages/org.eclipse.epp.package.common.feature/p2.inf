@@ -10,3 +10,5 @@ properties.1.value=false
 #org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.eclipse.org/technology/epp/packages/indigo);\
 #org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.eclipse.org/technology/epp/packages/indigo);
 
+
+
