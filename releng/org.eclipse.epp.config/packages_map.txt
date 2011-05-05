@@ -26,8 +26,8 @@ modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.
 parallel,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.parallel.feature/eclipse_parallel_indigo.xml,HEAD,parallel.xml
 parallel,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.parallel.feature/feature.xml,HEAD,parallel.feature.xml
 
-php,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.php.feature/eclipse_php_indigo.xml,HEAD,php.xml
-php,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.php.feature/feature.xml,HEAD,php.feature.xml
+#php,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.php.feature/eclipse_php_indigo.xml,HEAD,php.xml
+#php,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.php.feature/feature.xml,HEAD,php.feature.xml
 
 #pulsar,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.pulsar.feature/eclipse_pulsar_indigo.xml,HEAD,pulsar.xml
 #pulsar,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.pulsar.feature/feature.xml,HEAD,pulsar.feature.xml
@@ -43,6 +43,9 @@ reporting,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse
 
 scout,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.scout.feature/eclipse_scout_indigo.xml,HEAD,scout.xml
 scout,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.scout.feature/feature.xml,HEAD,scout.feature.xml
+
+testing,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.testing.feature/eclipse_testing_indigo.xml,HEAD,testing.xml
+testing,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.testing.feature/feature.xml,HEAD,testing.feature.xml
 
 ## special case - we provide a dummy epp config file for the SDK
 sdk,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_sdk_indigo.xml,HEAD,sdk.xml
