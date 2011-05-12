@@ -26,7 +26,7 @@ fi
 
 # variables to adjust
 BASE_DIR=/shared/technology/epp/epp_build/indigo
-RELEASE_NAME="-indigo-M7"
+RELEASE_NAME="-indigo-RC1"
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`

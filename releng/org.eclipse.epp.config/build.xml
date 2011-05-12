@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     EPP Package Build                                                        
+     ====================================================================== -->
+<project name="EPP Package Build" default="default">
+	<description>
+    	EPP Package Build
+    </description>
+
+	<!-- Change this if building on build.eclipse.org to "server"; "local" otherwise -->
+	<property name="org.eclipse.epp.buildlocation" value="server"/>
+
+	<!-- ================================= 
+          target: default              
+         ================================= -->
+	<target name="default" depends="depends" description="description">
+
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - - 
+          target: depends                      
+         - - - - - - - - - - - - - - - - - -->
+	<target name="depends">
+	</target>
+
+</project>
