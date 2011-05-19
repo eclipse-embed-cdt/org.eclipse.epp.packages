@@ -17,7 +17,7 @@
      <description><![CDATA[This package contains Eclipse features that support the software development quality assurance process, such as the Jubula test specification client and Mylyn.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
-      <tester>Achim L&ouml;rke</tester>
+      <tester><![CDATA[Achim L&ouml;rke]]></tester>
       <tester>Markus Tiede</tester>
       <tester>Zeb Ford-Reitz</tester>
       <tester>Alexandra Imrie</tester>
