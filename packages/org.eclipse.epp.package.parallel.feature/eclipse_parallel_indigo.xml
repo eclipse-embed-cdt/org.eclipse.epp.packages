@@ -38,6 +38,6 @@
 	<rcp version="3.7.0" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-parallel-indigo-RC1" />
+	<product name="eclipse-parallel-indigo-RC2" />
 
 </configuration>
