@@ -7,7 +7,7 @@
       plugin="org.eclipse.epp.package.reporting">
 
    <description>
-      JEE tools and BIRT reporting tool for Java developers to create JEE and Web applications that also have reporting needs.
+      Java EE tools and BIRT reporting tool for Java developers to create Java EE and Web applications that also have reporting needs.
    </description>
 
    <license url="license.html">
