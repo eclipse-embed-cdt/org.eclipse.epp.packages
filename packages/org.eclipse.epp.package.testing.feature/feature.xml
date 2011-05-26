@@ -3,7 +3,7 @@
       id="org.eclipse.epp.package.testing.feature"
       label="EPP Testing Feature"
       version="1.4.0.qualifier"
-      provider-name="Eclipse.org - EPP"
+      provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.testing">
 
    <description>
