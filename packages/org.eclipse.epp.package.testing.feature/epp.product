@@ -28,7 +28,9 @@
    <windowImages i16="/org.eclipse.epp.package.testing/eclipse.png" i32="/org.eclipse.epp.package.testing/eclipse32.png" i48="/org.eclipse.epp.package.testing/eclipse48.png"/>
 
    <splash
-      startupProgressRect="5,275,445,15" />
+      startupProgressRect="0,280,455,15"
+      startupMessageRect="7,220,441,20"
+      startupForegroundColor="C8D5EA" />
    <launcher name="eclipse">
       <solaris/>
       <win useIco="false">

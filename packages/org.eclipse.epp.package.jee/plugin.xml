@@ -33,8 +33,16 @@
                value="Eclipse Java EE IDE for Web Developers.&#x0A;&#x0A;Version: Indigo Release&#x0A;Build id: {0}&#x0A;&#x0A;(c) Copyright Eclipse contributors and others 2005, 2011.  All rights reserved.&#x0A;Visit http://www.eclipse.org/webtools">
          </property>
          <property
+               name="startupForegroundColor"
+               value="C8D5EA">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="7,220,441,20">
+         </property>
+         <property
                name="startupProgressRect"
-               value="5,275,445,15">
+               value="0,280,455,15">
          </property>
          <property
                name="aboutImage"
