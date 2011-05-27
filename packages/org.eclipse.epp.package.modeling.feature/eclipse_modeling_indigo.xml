@@ -89,6 +89,6 @@
   <rcp version="3.7.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-modeling-indigo-RC2" />
+  <product name="eclipse-modeling-indigo-RC3" />
 
 </configuration>
