@@ -40,6 +40,7 @@
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
       <import feature="org.eclipse.m2e.feature"/>
+      <import feature="org.eclipse.m2e.logback.feature"/>
       <import feature="org.eclipse.wb.core.feature"/>
       <import feature="org.eclipse.wb.core.ui.feature"/>
       <import feature="org.eclipse.wb.layout.group.feature"/>
