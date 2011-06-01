@@ -7,6 +7,16 @@ requires.1.name=org.eclipse.platform.ide
 #requires.1.range=[3.5.0.I20090522-1710,3.5.0.I20090522-1710]
 requires.1.greedy=true
 
+#      <import feature="org.eclipse.photran.intel"/>
+requires.2.namespace=org.eclipse.equinox.p2.iu
+requires.2.name=org.eclipse.photran.intel.feature.group
+requires.2.optional=true
+ 
+#      <import feature="org.eclipse.photran.xlf"/>
+requires.3.namespace=org.eclipse.equinox.p2.iu
+requires.3.name=org.eclipse.photran.xlf.feature.group
+requires.3.optional=true
+
 # Preload ptp update site / repository
 instructions.configure=\
 org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/tools/ptp/updates/indigo,name:PTP);\
