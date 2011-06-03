@@ -82,6 +82,8 @@ mkdir -p ${DOWNLOAD_DIR}
 touch ${MARKERFILE}
 touch ${STATUSFILE}
 cp -a ${EPPREPO_INPUT_DIR} ${EPPREPO_WORKINGCOPY_DIR}
+sed "s/XXXXXXXXXXXXXXXXXXXXXXXXXXXXX/EPP Build ${START_TIME}${RELEASE_NAME}/" web/novaHeader.html >${DOWNLOAD_DIR}/novaHeader.html
+cp web/novaFooter.html ${DOWNLOAD_DIR}
 
 # log to file
 exec 2>&1 | tee ${LOGFILE}
