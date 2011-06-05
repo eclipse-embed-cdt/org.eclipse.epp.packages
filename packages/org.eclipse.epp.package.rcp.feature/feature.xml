@@ -24,8 +24,19 @@
          version="0.0.0"
          search-location="both"/>
 
+   <includes
+         id="org.eclipse.cvs"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.epp.package.common.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.rap.tooling"
+         version="0.0.0"/>
+
    <requires>
-      <import feature="org.eclipse.cvs" version="1.1.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.equinox.p2.user.ui" version="1.1.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.help" version="1.1.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.jdt" version="3.7.0" match="greaterOrEqual"/>
@@ -41,8 +52,6 @@
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
       <import feature="org.eclipse.platform.source"/>
-      <import feature="org.eclipse.rap.tooling"/>
-      <import feature="org.eclipse.epp.package.common.feature"/>
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.jgit"/>
    </requires>
