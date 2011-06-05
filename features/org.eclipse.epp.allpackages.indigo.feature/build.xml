@@ -6,8 +6,7 @@
 	<property name="build.root" location="${user.home}/epp.build" />
 	<property file="${build.root}/build.properties" />
 	<property name="bm.headless.site" value="http://download.eclipse.org/tools/buckminster/headless-3.5/" />
-	<property name="indigo.site" value="http://download.eclipse.org/releases/indigo/" />
-	<property name="staging.site" value="http://download.eclipse.org/releases/staging/" />
+	<property name="indigo.site" value="http://download.eclipse.org/releases/staging" />
 	<property name="platform.site" value="http://download.eclipse.org/eclipse/updates/3.7milestones/" />
 	<property name="buildtools" location="${build.root}/tools" />
 	<property name="workspace" location="${build.root}/workspace" />
@@ -89,26 +88,28 @@
 		<eclipse.launch app="buckminster">
 			<args>
 				<jvmarg value="-Dplatform.site=${platform.site}" />
-				<jvmarg value="-Dindigo.site=${staging.site}" />
+				<jvmarg value="-Dindigo.site=${indigo.site}" />
 				<arg value="-data" />
 				<arg value="${workspace}" />
 				<arg value="import" />
 				<arg value="${tp.mspec}" />
 			</args>
 		</eclipse.launch>
+	    <!--
 		<copy todir="${targetPlatformPath}/plugins">
 			<fileset dir="/home/data/httpd/download.eclipse.org/releases/staging/aggregate/plugins">
 				<include name="**/org.eclipse*intro*" />
 				<include name="**/org.eclipse*capabilities*" />
 			</fileset>
 		</copy>
+		-->
 	</target>
 
 	<target name="build.workspace" depends="build.tp">
 		<eclipse.launch app="buckminster">
 			<args>
 				<jvmarg value="-Dplatform.site=${platform.site}" />
-				<jvmarg value="-Dindigo.site=${staging.site}" />
+				<jvmarg value="-Dindigo.site=${indigo.site}" />
 				<arg value="-data" />
 				<arg value="${workspace}" />
 				<arg value="import" />
