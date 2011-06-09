@@ -47,6 +47,7 @@ scout,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp
 testing,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.testing.feature/eclipse_testing_indigo.xml,HEAD,testing.xml
 testing,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.testing.feature/feature.xml,HEAD,testing.feature.xml
 
-## special case - we provide a dummy epp config file for the SDK
+## special case - we provide dummy epp config file for the SDK and RT packages
 sdk,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_sdk_indigo.xml,HEAD,sdk.xml
 #where to get the SDK feature? sdk,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_sdk_indigo.xml,HEAD,eclipse_sdk_360.xml
+rt,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/rtp_basic.xml,HEAD,rt.xml

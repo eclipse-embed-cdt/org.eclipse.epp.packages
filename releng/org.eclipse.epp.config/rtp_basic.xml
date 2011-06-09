@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+  <!-- IMPORTANT: This is a fake package definition to show the Eclipse Classic, 
+       i.e. the Eclipse SDK download on the packages website. This package definition
+       is not used to build the Eclipse SDK download! -->
+
+  <!-- Package Description information to be picked up by www.eclipse.org/packages -->
+  <!-- PackageName is the title of your package 
+       maintainer is the project or persons that are maintaining the package
+       iconurl is the fully qualified URL to the icon you wish to use on the site (48x48)
+       bugzillaComponentID is used to gather bugzilla information about your package.  This should be given to you after provisioning of the package is finished
+       testPlan is the fully qualified URL to the test plan for this package
+   -->
+  <packageMetaData
+   packageName="EclipseRT Basic Package"
+   maintainer="Eclipse Runtime Packaging Project (includes Incubating components)"
+   iconurl="http://eclipse.org/rtp/images/rt-icon.png"
+   bugzillaComponentId=""
+   testPlan="" >
+    <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
+     <description><![CDATA[This package contains the minimal configuration to get started with <a class="download-continue" href="/rt/">EclipseRT</a>. The package includes Eclipse Equinox and p2 only. <a class="download-continue" href="/rtp/getting-started/">Read more...</a>]]></description>
+    <!-- packageTesters is a list of the people that are testing the package -->
+     <packageTesters>
+      <tester>Holger Staudacher</tester>
+    </packageTesters>
+    <FakePackage>True</FakePackage>
+    <FakePackageLocation>
+      /rtp/incubation/updates/3.7milestones/0.1.0.v20110608-0924-RC4/
+    </FakePackageLocation>
+  </packageMetaData>
+  <MoreInfo>
+  	<NewAndNoteworthy
+    	url="http://eclipse.org/rtp/noteworthy/"
+    	project="RTP 0.1" />
+  </MoreInfo>
+
+  <!-- version, the RCP version to build. This is used to determine the file name of the root file archives -->
+  <rcp version="RC4" />
+
+  <!-- name, the name of the product, used in naming the created files. -->
+  <product name="rt-basic-incubation-0.1.0.v20110608-0924-RC4" />
+
+</configuration>
