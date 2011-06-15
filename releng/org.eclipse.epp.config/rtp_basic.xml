@@ -26,7 +26,7 @@
     </packageTesters>
     <FakePackage>True</FakePackage>
     <FakePackageLocation>
-      /rtp/incubation/updates/3.7milestones/0.1.0.v20110608-0924-RC5/
+      /rtp/incubation/updates/3.7/0.1.0.v20110615-1503-R
     </FakePackageLocation>
   </packageMetaData>
   <MoreInfo>
@@ -39,6 +39,6 @@
   <rcp version="RC5" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="rt-basic-incubation-0.1.0.v20110608-0924-RC5" />
+  <product name="rt-basic-incubation-0.1.0.v20110615-1503-R" />
 
 </configuration>
