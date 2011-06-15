@@ -26,7 +26,7 @@
     </packageTesters>
     <FakePackage>True</FakePackage>
     <FakePackageLocation>
-      /rtp/incubation/updates/3.7milestones/0.1.0.v20110608-0924-RC4/
+      /rtp/incubation/updates/3.7milestones/0.1.0.v20110608-0924-RC5/
     </FakePackageLocation>
   </packageMetaData>
   <MoreInfo>
@@ -36,9 +36,9 @@
   </MoreInfo>
 
   <!-- version, the RCP version to build. This is used to determine the file name of the root file archives -->
-  <rcp version="RC4" />
+  <rcp version="RC5" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="rt-basic-incubation-0.1.0.v20110608-0924-RC4" />
+  <product name="rt-basic-incubation-0.1.0.v20110608-0924-RC5" />
 
 </configuration>
