@@ -82,8 +82,9 @@ for II in ${INCUBATION}; do
   echo ".. Renaming ${II} incubating packages"
   for INCUBATIONPACKAGE in `ls *${II}* | grep -v "\.md5$" | grep -v "\.sha1$" | grep -v "incubation"`; do
     INCUBATIONPACKAGE_FILE=`echo ${INCUBATIONPACKAGE} | sed 's:\(.*\)\('${II}'\)\(.*\):\1\2-incubation\3:'`
-    echo ".... Moving ${INCUBATIONPACKAGE} to ${INCUBATIONPACKAGE_FILE}"
-    # mv ${INCUBATIONPACKAGE} ${INCUBATIONPACKAGE_FILE}
+    echo -n ".... Moving ${INCUBATIONPACKAGE} to ${INCUBATIONPACKAGE_FILE}"
+    mv ${INCUBATIONPACKAGE} ${INCUBATIONPACKAGE_FILE}
+    echo " done."
   done
 done
 
@@ -94,6 +95,7 @@ for II in `ls *eclipse-*.tar.gz *eclipse-*.zip`; do
   # eclipse-parallel-indigo-RC4-incubation-macosx-cocoa-x86_64.tar.gz
   NEWNAME=`echo $II | sed 's:^\(.*eclipse\-\)\([a-z]*\-\)\([a-z]*\-\)\([A-Z,0-9]*\)\(\-.*\)$:\1\2\3'${TARGETVERSION}'\5:'`
   echo -n ".. Updating $II with $NEWNAME"
+  mv ${II} ${NEWNAME}
   echo " done."
 done
 
