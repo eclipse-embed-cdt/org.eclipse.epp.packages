@@ -83,12 +83,21 @@ for II in ${INCUBATION}; do
   for INCUBATIONPACKAGE in `ls *${II}* | grep -v "\.md5$" | grep -v "\.sha1$" | grep -v "incubation"`; do
     INCUBATIONPACKAGE_FILE=`echo ${INCUBATIONPACKAGE} | sed 's:\(.*\)\('${II}'\)\(.*\):\1\2-incubation\3:'`
     echo ".... Moving ${INCUBATIONPACKAGE} to ${INCUBATIONPACKAGE_FILE}"
-    mv ${INCUBATIONPACKAGE} ${INCUBATIONPACKAGE_FILE}
+    # mv ${INCUBATIONPACKAGE} ${INCUBATIONPACKAGE_FILE}
   done
 done
 
+echo "6th: Update release string in archive file names"
+cd ${TARGETDIR}
+for II in `ls *eclipse-*.tar.gz *eclipse-*.zip`; do
+  # 20110615-0608_eclipse-testing-indigo-RC5-macosx.cocoa.x86_64.tar.gz
+  # eclipse-parallel-indigo-RC4-incubation-macosx-cocoa-x86_64.tar.gz
+  NEWNAME=`echo $II | sed 's:^\(.*eclipse\-\)\([a-z]*\-\)\([a-z]*\-\)\([A-Z,0-9]*\)\(\-.*\)$:\1\2\3'${TARGETVERSION}'\5:'`
+  echo -n ".. Updating $II with $NEWNAME"
+  echo " done."
+done
 
-echo 6th: Re-calculate checksum files
+echo 7th: Re-calculate checksum files
 cd ${TARGETDIR}
 for II in eclipse*.zip eclipse*.tar.gz; do 
   echo .. $II
