@@ -45,7 +45,7 @@ mkdir ${TARGETDIR}
 echo 2nd: Copy logfiles
 cp -a ${SOURCEDIR}/*.log ${TARGETDIR}
 
-echo 3rd: Copy XML config files (renamed feature.xml and package configuration file)
+echo 3rd: Copy XML config files: renamed feature.xml and package configuration files
 cp -a ${SOURCEDIR}/*.xml ${TARGETDIR}
 
 echo 4th: Copy and rename packages
