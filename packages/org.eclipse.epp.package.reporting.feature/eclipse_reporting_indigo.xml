@@ -28,14 +28,14 @@
     url="http://www.eclipse.org/webtools/development/news/main.php"
     project="Eclipse Webtools Project" />
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/R-3.6-201006080911/eclipse-news.html"
+    url="http://download.eclipse.org/eclipse/downloads/drops/R-3.7-201106131736/eclipse-news.html"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
   <NewAndNoteworthy
-    url="http://www.eclipse.org/dsdp/tm/development/relnotes/3.1/tm-news-3.1.html"
-    project="Eclipse DSDP Target Management" />
+    url="http://www.eclipse.org/tm/"
+    project="Eclipse Target Management (RSE)" />
   </MoreInfo>
 
   <!-- version, the RCP version to build. This is used to determine the file 
