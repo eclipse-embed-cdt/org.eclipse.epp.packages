@@ -34,8 +34,8 @@
     url="http://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
   <NewAndNoteworthy
-    url="http://www.eclipse.org/dsdp/tm/development/relnotes/3.1/tm-news-3.1.html"
-    project="Eclipse DSDP Target Management" />
+    url="http://www.eclipse.org/tm/"
+    project="Eclipse Target Management (RSE)" />
   </MoreInfo>
 
   <!-- version, the RCP version to build. This is used to determine the file 
