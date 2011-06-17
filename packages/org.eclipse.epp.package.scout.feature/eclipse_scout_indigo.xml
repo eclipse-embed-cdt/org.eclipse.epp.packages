@@ -23,14 +23,11 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/R-3.6-201006080911/eclipse-news.html"
+    url="http://download.eclipse.org/eclipse/downloads/drops/R-3.7-201106131736/eclipse-news.html"
     project="Eclipse Platform" />
   <NewAndNoteworthy
-    url="http://www.eclipse.org/rap/noteworthy/news_13.php"
-    project="Eclipse RAP" />
-  <NewAndNoteworthy
-    url="http://www.eclipse.org/mylyn/new/"
-    project="Eclipse Mylyn" />
+    url="http://wiki.eclipse.org/Scout/Release/Indigo#New_and_Noteworthy"
+    project="Eclipse Scout" />
   </MoreInfo>
 
 
