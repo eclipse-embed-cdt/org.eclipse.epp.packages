@@ -31,6 +31,9 @@
   <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/EGit/New_and_Noteworthy/1.0.0"
+    project="Eclipse EGit" />
   </MoreInfo>
   
 
