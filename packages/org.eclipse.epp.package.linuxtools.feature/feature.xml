@@ -28,9 +28,9 @@
          search-location="both"/>
 
    <requires>
-      <import feature="org.eclipse.cvs" version="1.1.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.equinox.p2.user.ui" version="1.1.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.help" version="1.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.cvs"/>
+      <import feature="org.eclipse.equinox.p2.user.ui"/>
+      <import feature="org.eclipse.help"/>
       <import feature="org.eclipse.platform" version="3.7.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.rcp" version="3.7.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.cdt.platform"/>

@@ -25,8 +25,8 @@
          search-location="both"/>
 
    <requires>
-      <import feature="org.eclipse.cvs" version="1.1.0"/>
-      <import feature="org.eclipse.help" version="1.1.0"/>
+      <import feature="org.eclipse.cvs"/>
+      <import feature="org.eclipse.help"/>
       <import feature="org.eclipse.jdt" version="3.7.0"/>
       <import feature="org.eclipse.platform" version="3.7.0"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
