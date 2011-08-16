@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.epp.allpackages.juno.feature"
+      label="Feature"
+      version="1.5.0.qualifier"
+      provider-name="Eclipse.org - EPP">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <includes
+         id="org.eclipse.epp.package.cpp.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.epp.package.common.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.epp.package.java.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.epp.package.jee.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.epp.package.javascript.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.epp.package.linuxtools.feature"
+         version="0.0.0"
+         os="linux"
+         arch="x86,x86_64"/>
+
+   <includes
+         id="org.eclipse.epp.package.modeling.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.epp.package.rcp.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.epp.package.reporting.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.epp.package.parallel.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.epp.package.scout.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.epp.package.testing.feature"
+         version="0.0.0"/>
+
+</feature>

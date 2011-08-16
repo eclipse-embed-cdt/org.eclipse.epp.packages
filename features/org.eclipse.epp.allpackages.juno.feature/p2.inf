@@ -1,0 +1,3 @@
+# disable listing of feature in any category
+properties.1.name=org.eclipse.equinox.p2.type.category
+properties.1.value=false
