@@ -26,7 +26,7 @@ fi
 
 # variables to adjust
 BASE_DIR=/shared/technology/epp/epp_build/indigo
-RELEASE_NAME="-indigo-RC5"
+RELEASE_NAME="-indigo-SR1-RC1"
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
@@ -40,7 +40,7 @@ DOWNLOAD_BASE_URL="http://build.eclipse.org/technology/epp/epp_build/indigo/down
 DOWNLOAD_BASE_DIR="${BASE_DIR}/download"
 BUILD_DIR="${BASE_DIR}/build"
 DOWNLOAD_DIR="${DOWNLOAD_BASE_DIR}/${START_TIME}"
-EPPREPO_INPUT_DIR="/shared/technology/epp/epp_repo/indigo/epp.build/buildresult/org.eclipse.epp.allpackages.indigo.feature_1.4.0-eclipse.feature/site.p2"
+EPPREPO_INPUT_DIR="/shared/technology/epp/epp_repo/indigo/epp.build/buildresult/org.eclipse.epp.allpackages.indigo.feature_1.4.1-eclipse.feature/site.p2"
 EPPREPO_WORKINGCOPY_DIR="${DOWNLOAD_DIR}/repository"
 MARKERFILE="${DOWNLOAD_DIR}/${MARKERFILENAME}"
 STATUSFILE="${DOWNLOAD_DIR}/${STATUSFILENAME}"
