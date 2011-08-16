@@ -8,33 +8,41 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse IDE for JavaScript Web Developers"
-   maintainer="WTP and the Eclipse Packaging Project"
-   iconurl="http://www.eclipse.org/downloads/images/javascript.png"
-   bugzillaComponentId="javascript-package"
+   packageName="Eclipse IDE for Java and Report Developers"
+   maintainer="Eclipse BIRT Project and the Eclipse Packaging Project"
+   iconurl="http://www.eclipse.org/birt/images/jee-birt.jpg"
+   bugzillaComponentId="reporting-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-     <description><![CDATA[Tools for JavaScript developers creating Web applications, including a JavaScript IDE, tools for JavaScript, HTML, CSS, and XML.]]></description>
+     <description><![CDATA[Java EE tools and BIRT reporting tool for Java developers to create Java EE and Web applications that also have reporting needs.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
-      <tester>David Williams</tester>
-      <tester>Markus Knauer</tester>
+      <tester>Xiaoying Gu</tester>
     </packageTesters>
   </packageMetaData>
   <MoreInfo>
+  <NewAndNoteworthy
+    url="http://www.eclipse.org/birt/phoenix/whatsnew.php"
+    project="Eclipse BIRT Project" />
   <NewAndNoteworthy
     url="http://www.eclipse.org/webtools/development/news/main.php"
     project="Eclipse Webtools Project" />
   <NewAndNoteworthy
     url="http://download.eclipse.org/eclipse/downloads/drops/R-3.7-201106131736/eclipse-news.html"
     project="Eclipse Platform" />
+  <NewAndNoteworthy
+    url="http://www.eclipse.org/mylyn/new/"
+    project="Eclipse Mylyn" />
+  <NewAndNoteworthy
+    url="http://www.eclipse.org/tm/"
+    project="Eclipse Target Management (RSE)" />
   </MoreInfo>
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="3.7.0" />
+  <rcp version="4.2.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-javascript-indigo-RC5" />
+  <product name="eclipse-reporting-juno-M1" />
 
 </configuration>

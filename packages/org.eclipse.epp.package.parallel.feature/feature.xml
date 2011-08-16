@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.parallel.feature"
       label="EPP Parallel Feature"
-      version="1.4.0.qualifier"
+      version="1.5.0.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.parallel">
 
@@ -15,9 +15,9 @@
    </license>
 
    <url>
-      <discovery label="Indigo" url="http://download.eclipse.org/releases/indigo/"/>
-      <discovery label="Eclipse Platform 3.7" url="http://download.eclipse.org/eclipse/updates/3.7"/>
-      <discovery label="PTP" url="http://download.eclipse.org/tools/ptp/updates/indigo/"/>
+      <discovery label="Juno" url="http://download.eclipse.org/releases/juno/"/>
+      <discovery label="Eclipse Platform 4.2" url="http://download.eclipse.org/eclipse/updates/4.2"/>
+      <discovery label="PTP" url="http://download.eclipse.org/tools/ptp/updates/juno/"/>
    </url>
 
    <includes

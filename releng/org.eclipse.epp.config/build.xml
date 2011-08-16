@@ -41,7 +41,7 @@
 	            latestversiononly="false"/>
 	        <source>
 	                <sort>
-			            <fileset dir="/tmp/indigo">
+			            <fileset dir="/tmp/juno">
     						<include name="*"/>
 						</fileset>
 						<reverse xmlns="antlib:org.apache.tools.ant.types.resources.comparators">
@@ -49,7 +49,7 @@
 						</reverse>
 	                </sort>
 	        </source>
-	        <destination location="${targetRepository}" name="EPP Indigo Package Repository" append="true" compressed="true" />
+	        <destination location="${targetRepository}" name="EPP Juno Package Repository" append="true" compressed="true" />
 	    </p2.mirror>
 	</target>
 

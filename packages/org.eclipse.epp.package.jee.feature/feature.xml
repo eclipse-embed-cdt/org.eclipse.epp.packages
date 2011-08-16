@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.jee.feature"
       label="%featureName"
-      version="1.4.0.qualifier"
+      version="1.5.0.qualifier"
       provider-name="%providerName"
       plugin="org.eclipse.epp.package.jee">
 
@@ -19,7 +19,7 @@
    </license>
 
    <url>
-      <discovery label="%discoverySiteName" url="http://download.eclipse.org/releases/indigo/"/>
+      <discovery label="%discoverySiteName" url="http://download.eclipse.org/releases/juno/"/>
    </url>
 
    <includes

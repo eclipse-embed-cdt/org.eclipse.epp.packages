@@ -48,7 +48,7 @@ LOGFILE="${DOWNLOAD_DIR}/build.log"
 LOCKFILE="/tmp/epp.build.juno.lock"
 
 # repository locations
-#REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/3.7.x/"
+#REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/4.2.x/"
 REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/4.2milestones/S-4.2M1-201108051200"
 REPO_SIMRELEASE_URL="${BASE_URL}/releases/juno/"
 REPO_STAGING_URL="${BASE_URL}/releases/staging/"

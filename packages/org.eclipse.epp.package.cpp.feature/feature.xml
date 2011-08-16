@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.cpp.feature"
       label="EPP CPP Feature"
-      version="1.4.0.qualifier"
+      version="1.5.0.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.cpp">
 
@@ -15,8 +15,8 @@
    </license>
 
    <url>
-      <discovery label="Indigo" url="http://download.eclipse.org/releases/indigo/"/>
-      <discovery label="Eclipse Platform 3.7" url="http://download.eclipse.org/eclipse/updates/3.7"/>
+      <discovery label="Juno" url="http://download.eclipse.org/releases/juno/"/>
+      <discovery label="Eclipse Platform 4.2" url="http://download.eclipse.org/eclipse/updates/4.2"/>
    </url>
 
    <includes
@@ -28,8 +28,8 @@
       <import feature="org.eclipse.cvs"/>
       <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.help"/>
-      <import feature="org.eclipse.platform" version="3.7.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.rcp" version="3.7.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.platform" version="4.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.rcp" version="4.1.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.cdt.platform"/>
       <import feature="org.eclipse.cdt"/>
       <import feature="org.eclipse.cdt.p2"/>

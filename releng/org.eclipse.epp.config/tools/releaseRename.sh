@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RELEASETRAIN=indigo
+RELEASETRAIN=juno
 RELEASEDIRECTORY=/home/data/httpd/download.eclipse.org/technology/epp/downloads/release
 TESTDIRECTORY=/shared/technology/epp/epp_build/${RELEASETRAIN}/download
 CURRENTDIR=${PWD}
@@ -75,7 +75,7 @@ done
 
 echo 5th: Adjust package names with incubating components
 cd ${TARGETDIR}
-# pattern to match: <product name="eclipse-linuxtools-indigo-RC5-incubation" /> -> "eclipse-linuxtools-indigo-RC5"
+# pattern to match: <product name="eclipse-linuxtools-juno-RC5-incubation" /> -> "eclipse-linuxtools-juno-RC5"
 INCUBATION=`ls *.xml | grep -v feature | xargs grep "product name=\"eclipse.*incubation" | sed 's/^.*\(eclipse-.*\)-incubation.*/\1/'`
 echo Found ${INCUBATION} in incubation
 for II in ${INCUBATION}; do
@@ -91,8 +91,8 @@ done
 echo "6th: Update release string in archive file names"
 cd ${TARGETDIR}
 for II in `ls *eclipse-*.tar.gz *eclipse-*.zip`; do
-  # 20110615-0608_eclipse-testing-indigo-RC5-macosx.cocoa.x86_64.tar.gz
-  # eclipse-parallel-indigo-RC4-incubation-macosx-cocoa-x86_64.tar.gz
+  # 20110615-0608_eclipse-testing-juno-RC5-macosx.cocoa.x86_64.tar.gz
+  # eclipse-parallel-juno-RC4-incubation-macosx-cocoa-x86_64.tar.gz
   NEWNAME=`echo $II | sed 's:^\(.*eclipse\-\)\([a-z]*\-\)\([a-z]*\-\)\([A-Z,0-9]*\)\(\-.*\)$:\1\2\3'${TARGETVERSION}'\5:'`
   echo -n ".. Updating $II with $NEWNAME"
   mv ${II} ${NEWNAME}

@@ -22,7 +22,7 @@ Gregoire Dupe
 	<xsl:template match="repository/properties">
 		<properties size='{@size+1}'>
 			<xsl:copy-of select="property" />
-			<property name='p2.statsURI' value='http://download.eclipse.org/stats/technology/epp/packages/indigo' />
+			<property name='p2.statsURI' value='http://download.eclipse.org/stats/technology/epp/packages/juno' />
 		</properties>
 	</xsl:template>
 
