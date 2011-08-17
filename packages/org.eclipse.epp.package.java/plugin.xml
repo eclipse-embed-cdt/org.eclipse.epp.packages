@@ -50,7 +50,15 @@
          <property
                name="introBrandingImageText"
                value="Eclipse Project">
-         </property>     
+         </property>
+         <property 
+               name="cssTheme"
+               value="org.eclipse.e4.ui.css.theme.e4_default">
+         </property>
+         <property
+               name="applicationCSSResources" 
+               value="platform:/plugin/org.eclipse.platform/images/"> 
+         </property>
       </product>
    </extension>
    <extension
