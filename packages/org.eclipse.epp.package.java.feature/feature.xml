@@ -17,7 +17,7 @@
    <url>
       <discovery label="Indigo" url="http://download.eclipse.org/releases/indigo/"/>
       <discovery label="Eclipse Platform 3.7" url="http://download.eclipse.org/eclipse/updates/3.7"/>
-      <discovery label="Mylyn Updates" url="http://download.eclipse.org/tools/mylyn/update/e3.4/"/>
+      <discovery label="Mylyn for Eclipse Indigo" url="http://download.eclipse.org/mylyn/releases/indigo/"/>
    </url>
 
    <includes
