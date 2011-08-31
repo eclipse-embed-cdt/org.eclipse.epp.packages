@@ -17,7 +17,7 @@
    <url>
       <discovery label="Juno" url="http://download.eclipse.org/releases/juno/"/>
       <discovery label="Eclipse Platform 4.2" url="http://download.eclipse.org/eclipse/updates/4.2"/>
-      <discovery label="Mylyn Updates" url="http://download.eclipse.org/tools/mylyn/update/e3.4/"/>
+      <discovery label="Mylyn for Eclipse Juno" url="http://download.eclipse.org/mylyn/releases/juno/"/>
    </url>
 
    <includes
