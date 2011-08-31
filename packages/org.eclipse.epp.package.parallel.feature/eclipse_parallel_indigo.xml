@@ -41,6 +41,6 @@
 	<rcp version="3.7.1" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-parallel-indigo-SR1-RC1-incubation" />
+	<product name="eclipse-parallel-indigo-SR1-RC2-incubation" />
 
 </configuration>
