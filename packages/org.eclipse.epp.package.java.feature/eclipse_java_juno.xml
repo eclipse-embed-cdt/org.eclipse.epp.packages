@@ -14,7 +14,7 @@
    bugzillaComponentId="java-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-     <description><![CDATA[The essential tools for any Java developer, including a Java IDE, a CVS client, XML Editor, Mylyn, Maven integration and WindowBuilder]]></description>
+     <description><![CDATA[The essential tools for any Java developer, including a Java IDE, a CVS client, Git client, XML Editor, Mylyn, Maven integration and WindowBuilder]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
       <tester>Mik Kersten</tester>
@@ -28,6 +28,9 @@
   <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/EGit/New_and_Noteworthy/1.1.0"
+    project="EGit" />
   </MoreInfo>
 
 
