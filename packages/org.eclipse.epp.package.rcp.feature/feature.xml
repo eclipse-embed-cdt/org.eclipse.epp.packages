@@ -44,6 +44,7 @@
       <import feature="org.eclipse.rap.tooling"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
       <import feature="org.eclipse.egit"/>
+      <import feature="org.eclipse.egit.mylyn"/>
       <import feature="org.eclipse.jgit"/>
    </requires>
 
