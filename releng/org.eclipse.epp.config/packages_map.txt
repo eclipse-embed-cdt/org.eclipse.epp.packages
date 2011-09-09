@@ -11,8 +11,8 @@ cpp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/p
 java,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.java.feature/eclipse_java_juno.xml,HEAD,java.xml
 java,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.java.feature/feature.xml,HEAD,java.feature.xml
 
-javascript,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.javascript.feature/eclipse_javascript_juno.xml,HEAD,javascript.xml
-javascript,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.javascript.feature/feature.xml,HEAD,javascript.feature.xml
+#javascript,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.javascript.feature/eclipse_javascript_juno.xml,HEAD,javascript.xml
+#javascript,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.javascript.feature/feature.xml,HEAD,javascript.feature.xml
 
 jee,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.jee.feature/eclipse_jee_juno.xml,HEAD,jee.xml
 jee,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.jee.feature/feature.xml,HEAD,jee.feature.xml
