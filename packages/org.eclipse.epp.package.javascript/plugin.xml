@@ -18,7 +18,7 @@
          </property>
          <property
                name="aboutText"
-               value="Eclipse IDE for JavaScript Web Developers.&#x0A;&#x0A;Version: Indigo Release&#x0A;Build id: {0}&#x0A;&#x0A;(c) Copyright Eclipse contributors and others 2005, 2011.  All rights reserved.&#x0A;Visit http://www.eclipse.org/webtools">
+               value="Eclipse IDE for JavaScript Web Developers.&#x0A;&#x0A;Version: Indigo Service Release 1&#x0A;Build id: {0}&#x0A;&#x0A;(c) Copyright Eclipse contributors and others 2005, 2011.  All rights reserved.&#x0A;Visit http://www.eclipse.org/webtools">
          </property>
          <property
                name="startupProgressRect"

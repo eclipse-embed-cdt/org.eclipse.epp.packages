@@ -17,7 +17,7 @@
          </property>
          <property
                name="aboutText"
-               value="Eclipse for RCP and RAP Developers&#x0A;&#x0A;Version: Indigo Release&#x0A;Build id: {0}&#x0A;&#x0A;(c) Copyright Eclipse contributors and others 2000, 2011.  All rights reserved.&#x0A;Visit http://eclipse.org/&#x0A;&#x0A;This product includes software developed by the&#x0A;Apache Software Foundation http://apache.org/">
+               value="Eclipse for RCP and RAP Developers&#x0A;&#x0A;Version: Indigo Service Release 1&#x0A;Build id: {0}&#x0A;&#x0A;(c) Copyright Eclipse contributors and others 2000, 2011.  All rights reserved.&#x0A;Visit http://eclipse.org/&#x0A;&#x0A;This product includes software developed by the&#x0A;Apache Software Foundation http://apache.org/">
          </property>
          <property
                name="startupForegroundColor"
