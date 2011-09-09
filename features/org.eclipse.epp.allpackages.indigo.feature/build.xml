@@ -13,6 +13,7 @@
 	<property name="targetPlatformPath" location="${build.root}/TP" />
 	<property name="cquery.url" location="${basedir}/epp.cquery" />
 	<property name="tp.mspec" location="${basedir}/epp-tp.mspec" />
+    <property file="/home/data/users/mknauer/.p/.properties" />
 
 	<!-- This macro executes the default application of an eclipse installation that resides
 	     in the folder ${buildtools}/@app
@@ -154,6 +155,12 @@
 				<jvmarg value="-Dbuckminster.temp.root=${build.root}/temp" />
 				<jvmarg value="-Dbuild.id=${build.id}" />
 				<jvmarg value="-Dcbi.include.source=false" />
+                <jvmarg value="-Dstaging.area=/home/data/httpd/download-staging.priv/technology/epp/" />
+                <jvmarg value="-Declipse.committer.name=${build.uid}" />
+                <jvmarg value="-Declipse.committer.password=${build.pw}" />
+                <jvmarg value="-Dsite.pack200=true" />
+                <jvmarg value="-Dsite.signing=true" />
+                <jvmarg value="-Dsigning.type=eclipse.remote" />
 				<arg value="-data" />
 				<arg value="${workspace}" />
 				<arg value="perform" />
