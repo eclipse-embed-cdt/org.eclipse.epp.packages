@@ -4,4 +4,6 @@
     <cq:property key="target.os" value="*"/>
     <cq:property key="target.ws" value="*"/>
     <cq:advisorNode namePattern="org\.eclipse\.equinox\.launcher\.carbon\..*" componentType="osgi.bundle" skipComponent="true"/>
+    <cq:advisorNode namePattern="org\.eclipse\.swt\.carbon\..*" componentType="osgi.bundle" skipComponent="true"/>
+    <cq:advisorNode namePattern="org\.eclipse\.ui\.carbon\.*" componentType="osgi.bundle" skipComponent="true"/>
 </cq:componentQuery>
