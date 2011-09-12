@@ -9,4 +9,5 @@
     <cq:advisorNode namePattern="org\.eclipse\.equinox\.launcher\.carbon\..*" componentType="osgi.bundle" skipComponent="true"/>
     <cq:advisorNode namePattern="org\.eclipse\.swt\.carbon\..*" componentType="osgi.bundle" skipComponent="true"/>
     <cq:advisorNode namePattern="org\.eclipse\.ui\.carbon\.*" componentType="osgi.bundle" skipComponent="true"/>
+    <cq:advisorNode namePattern=".*\.carbon\.*" componentType="unknown" skipComponent="true"/>
 </cq:componentQuery>
