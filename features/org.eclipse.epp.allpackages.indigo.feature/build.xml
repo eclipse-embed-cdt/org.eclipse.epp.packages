@@ -160,7 +160,7 @@
                 <jvmarg value="-Declipse.committer.password=${build.pw}" />
                 <jvmarg value="-Dsite.pack200=true" />
                 <jvmarg value="-Dsite.signing=true" />
-                <jvmarg value="-Dsigning.type=eclipse.remote" />
+                <jvmarg value="-Dsigning.type=eclipse.local" />
 				<arg value="-data" />
 				<arg value="${workspace}" />
 				<arg value="perform" />
