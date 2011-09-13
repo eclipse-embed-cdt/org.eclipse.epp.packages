@@ -135,6 +135,7 @@
 				<jvmarg value="-Dbuckminster.temp.root=${build.root}/temp" />
 				<jvmarg value="-Dbuild.id=${build.id}" />
 				<jvmarg value="-Dcbi.include.source=false" />
+				<jvmarg value="-Dsigning.type=eclipse.local" />
 				<arg value="-data" />
 				<arg value="${workspace}" />
 				<arg value="build" />
