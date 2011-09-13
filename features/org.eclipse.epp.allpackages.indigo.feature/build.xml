@@ -120,8 +120,6 @@
 
 	<target name="build.site" depends="build.workspace">
 
-		<echoproperties />
-		
 		<tstamp>
 			<format property="build.id" pattern="yyyyMMdd-HHmm" timezone="GMT" />
 		</tstamp>
@@ -137,7 +135,6 @@
 				<jvmarg value="-Dbuckminster.temp.root=${build.root}/temp" />
 				<jvmarg value="-Dbuild.id=${build.id}" />
 				<jvmarg value="-Dcbi.include.source=false" />
-				<jvmarg value="-Dsite.signing=false" />
 				<arg value="-data" />
 				<arg value="${workspace}" />
 				<arg value="build" />
@@ -157,7 +154,6 @@
 				<jvmarg value="-Dbuckminster.temp.root=${build.root}/temp" />
 				<jvmarg value="-Dbuild.id=${build.id}" />
 				<jvmarg value="-Dcbi.include.source=false" />
-				<jvmarg value="-Dsite.signing=false" />
 				<arg value="-data" />
 				<arg value="${workspace}" />
 				<arg value="perform" />
