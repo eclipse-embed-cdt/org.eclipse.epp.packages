@@ -120,6 +120,8 @@
 
 	<target name="build.site" depends="build.workspace">
 
+		<echoproperties />
+		
 		<tstamp>
 			<format property="build.id" pattern="yyyyMMdd-HHmm" timezone="GMT" />
 		</tstamp>
