@@ -156,6 +156,7 @@
 				<jvmarg value="-Dcbi.include.source=false" />
                 <jvmarg value="-Dsite.pack200=true" />
                 <jvmarg value="-Dsite.signing=true" />
+                <jvmarg value="-Dstaging.area=/home/data/httpd/download-staging.priv/technology/epp/" />
                 <jvmarg value="-Dsigning.type=eclipse.local" />
 				<arg value="-data" />
 				<arg value="${workspace}" />
