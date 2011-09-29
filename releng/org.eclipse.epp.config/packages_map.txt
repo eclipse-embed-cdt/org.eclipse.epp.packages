@@ -50,4 +50,4 @@ testing,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.e
 ## special case - we provide dummy epp config file for the SDK and RT packages
 sdk,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_sdk_juno.xml,HEAD,sdk.xml
 #where to get the SDK feature? sdk,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_sdk_juno.xml,HEAD,eclipse_sdk_360.xml
-rt,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/rtp_basic.xml,HEAD,rt.xml
+#rt,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/rtp_basic.xml,HEAD,rt.xml
