@@ -20,7 +20,7 @@ to all EPP packages and general configurations.
    </url>
 
    <requires>
-      <import feature="org.eclipse.epp.usagedata.feature"/>
+<!--      <import feature="org.eclipse.epp.usagedata.feature"/> -->
       <import feature="org.eclipse.epp.mpc"/>
    </requires>
 
