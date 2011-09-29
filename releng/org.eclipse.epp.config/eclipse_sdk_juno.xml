@@ -13,7 +13,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse Classic 4.2 M1"
+   packageName="Eclipse Classic 4.2 M2"
    maintainer="Eclipse Platform Team"
    iconurl="http://www.eclipse.org/downloads/images/classic2.jpg"
    bugzillaComponentId=""
@@ -26,7 +26,7 @@
     </packageTesters>
     <FakePackage>True</FakePackage>
     <FakePackageLocation>
-      /e4/sdk/drops/S-4.2M1-201108051200/
+      /e4/sdk/drops/S-4.2M2-xxxxxxxxxxxx/
     </FakePackageLocation>
   </packageMetaData>
   <MoreInfo>
@@ -40,6 +40,6 @@
   <rcp version="4.2" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-SDK-4.2M1" />
+  <product name="eclipse-SDK-4.2M2" />
 
 </configuration>
