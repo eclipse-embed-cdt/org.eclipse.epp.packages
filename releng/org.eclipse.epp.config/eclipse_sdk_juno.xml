@@ -26,7 +26,7 @@
     </packageTesters>
     <FakePackage>True</FakePackage>
     <FakePackageLocation>
-      /e4/sdk/drops/S-4.2M2-xxxxxxxxxxxx/
+      /eclipse/downloads/drops4/S-4.2M2-201109161615/
     </FakePackageLocation>
   </packageMetaData>
   <MoreInfo>
