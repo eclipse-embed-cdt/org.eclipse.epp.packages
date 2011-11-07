@@ -45,6 +45,8 @@
       <import feature="org.eclipse.epp.package.common.feature"/>
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.jgit"/>
+      <import feature="org.eclipse.m2e.feature"/>
+      <import feature="org.eclipse.m2e.logback.feature"/>
    </requires>
 
    <plugin
