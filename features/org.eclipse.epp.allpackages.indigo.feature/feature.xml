@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.allpackages.indigo.feature"
       label="Feature"
-      version="1.4.1.qualifier"
+      version="1.4.2.qualifier"
       provider-name="Eclipse.org - EPP">
 
    <description url="http://www.example.com/description">
