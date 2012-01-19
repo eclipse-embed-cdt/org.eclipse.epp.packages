@@ -40,7 +40,7 @@ DOWNLOAD_BASE_URL="http://build.eclipse.org/technology/epp/epp_build/indigo/down
 DOWNLOAD_BASE_DIR="${BASE_DIR}/download"
 BUILD_DIR="${BASE_DIR}/build"
 DOWNLOAD_DIR="${DOWNLOAD_BASE_DIR}/${START_TIME}"
-EPPREPO_INPUT_DIR="/shared/technology/epp/epp_repo/indigo/epp.build/buildresult/org.eclipse.epp.allpackages.indigo.feature_1.4.1-eclipse.feature/site.p2"
+EPPREPO_INPUT_DIR="/shared/technology/epp/epp_repo/indigo/epp.build/buildresult/org.eclipse.epp.allpackages.indigo.feature_1.4.2-eclipse.feature/site.p2"
 EPPREPO_WORKINGCOPY_DIR="${DOWNLOAD_DIR}/repository"
 MARKERFILE="${DOWNLOAD_DIR}/${MARKERFILENAME}"
 STATUSFILE="${DOWNLOAD_DIR}/${STATUSFILENAME}"
@@ -49,7 +49,6 @@ LOCKFILE="/tmp/epp.build.indigo.lock"
 
 # repository locations
 #REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/3.7.x/"
-REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/3.7milestones/S-3.7RC5-201106131736"
 REPO_SIMRELEASE_URL="${BASE_URL}/releases/indigo/"
 REPO_STAGING_URL="${BASE_URL}/releases/maintenance/"
 #REPO_EPP_URL="${BASE_URL}/technology/epp/packages/indigo"

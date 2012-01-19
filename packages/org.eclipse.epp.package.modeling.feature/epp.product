@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse Modeling Tools" uid="epp.package.modeling" id="org.eclipse.epp.package.modeling.product" application="org.eclipse.ui.ide.workbench" version="1.4.1.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse Modeling Tools" uid="epp.package.modeling" id="org.eclipse.epp.package.modeling.product" application="org.eclipse.ui.ide.workbench" version="1.4.2.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <text>
@@ -50,7 +50,7 @@
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.modeling.feature" version="1.4.1.qualifier"/>
+      <feature id="org.eclipse.epp.package.modeling.feature" version="1.4.2.qualifier"/>
    </features>
 
 

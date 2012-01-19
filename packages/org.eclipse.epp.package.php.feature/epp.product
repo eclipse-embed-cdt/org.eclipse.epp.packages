@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse IDE for PHP Developers" uid="epp.package.php" id="org.eclipse.epp.package.php.product" application="org.eclipse.ui.ide.workbench" version="1.4.1.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse IDE for PHP Developers" uid="epp.package.php" id="org.eclipse.epp.package.php.product" application="org.eclipse.ui.ide.workbench" version="1.4.2.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <text>
@@ -48,7 +48,7 @@
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.php.feature" version="1.4.1.qualifier"/>
+      <feature id="org.eclipse.epp.package.php.feature" version="1.4.2.qualifier"/>
    </features>
 
 
