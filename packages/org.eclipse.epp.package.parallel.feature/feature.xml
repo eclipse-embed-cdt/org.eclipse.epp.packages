@@ -58,10 +58,10 @@
       <import feature="org.eclipse.photran"/>
       <import feature="org.eclipse.rephraserengine"/>
       <import feature="org.eclipse.jgit"/>
-      <import feature="org.eclipse.linuxtools.cdt.libhover"/>
+      <import feature="org.eclipse.linuxtools.cdt.libhover.feature"/>
       <import feature="org.eclipse.linuxtools.changelog"/>
       <import feature="org.eclipse.linuxtools.gcov"/>
-      <import feature="org.eclipse.linuxtools.gprof"/>
+      <import feature="org.eclipse.linuxtools.gprof.feature"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
    </requires>
 
