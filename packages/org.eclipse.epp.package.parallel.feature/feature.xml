@@ -35,15 +35,11 @@
       <import feature="org.eclipse.cdt.platform"/>
       <import feature="org.eclipse.cdt"/>
       <import feature="org.eclipse.cdt.mylyn"/>
-      <!--
       <import feature="org.eclipse.cdt.p2"/>
-      -->
       <import feature="org.eclipse.cdt.debug.ui.memory"/>
       <import feature="org.eclipse.cdt.core.parser.upc.feature"/>
       <import feature="org.eclipse.cdt.xlc.feature"/>
-      <!--
       <import feature="org.eclipse.linuxtools.cdt.autotools"/>
-      -->
       <import feature="org.eclipse.cdt.bupc"/>
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.context_feature"/>
@@ -61,12 +57,10 @@
       <import feature="org.eclipse.photran"/>
       <import feature="org.eclipse.rephraserengine"/>
       <import feature="org.eclipse.jgit"/>
-      <!--
       <import feature="org.eclipse.linuxtools.cdt.libhover.feature"/>
       <import feature="org.eclipse.linuxtools.changelog"/>
       <import feature="org.eclipse.linuxtools.gcov"/>
       <import feature="org.eclipse.linuxtools.gprof.feature"/>
-      -->
       <import feature="org.eclipse.wst.xml_ui.feature"/>
    </requires>
 
