@@ -17,7 +17,7 @@
          </property>
          <property
                name="aboutText"
-               value="Pulsar for Mobile Developers.&#x0A;&#x0A;Version: Indigo Service Release 1&#x0A;Build id: {0}&#x0A;&#x0A;(c) Copyright Pulsar Committers and others. 2011.  All rights reserved.&#x0A;Visit http://www.eclipse.org/pulsar/">
+               value="Pulsar for Mobile Developers.&#x0A;&#x0A;Version: Indigo Service Release 2&#x0A;Build id: {0}&#x0A;&#x0A;(c) Copyright Pulsar Committers and others. 2012.  All rights reserved.&#x0A;Visit http://www.eclipse.org/pulsar/">
          </property>
          <property
                name="startupProgressRect"
