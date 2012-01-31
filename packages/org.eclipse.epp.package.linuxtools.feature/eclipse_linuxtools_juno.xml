@@ -45,6 +45,6 @@
 	<rcp version="4.2.0" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-linuxtools-juno-M4-incubation" />
+	<product name="eclipse-linuxtools-juno-M5-incubation" />
 
 </configuration>
