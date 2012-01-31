@@ -49,11 +49,11 @@ LOCKFILE="/tmp/epp.build.juno.lock"
 
 # repository locations
 #REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/4.2.x/"
-REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/4.2milestones/S-4.2M1-201108051200"
-REPO_SIMRELEASE_URL="${BASE_URL}/releases/juno/"
+#REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/4.2milestones/"
+#REPO_SIMRELEASE_URL="${BASE_URL}/releases/juno/"
 REPO_STAGING_URL="${BASE_URL}/releases/staging/"
 #REPO_EPP_URL="${BASE_URL}/technology/epp/packages/juno"
-REPO_EPP_URL="file://${EPPREPO_INPUT_DIR}"
+#REPO_EPP_URL="file://${EPPREPO_INPUT_DIR}"
 REPO_EPP_WORKINGCOPY_URL="file://${EPPREPO_WORKINGCOPY_DIR}"
 
 # repositories used in the build
