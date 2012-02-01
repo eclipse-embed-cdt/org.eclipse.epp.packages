@@ -7,7 +7,7 @@
       plugin="org.eclipse.epp.package.rcp">
 
    <description>
-      A complete set of tools for developers who want to create Eclipse plug-ins, Rich Client or Rich Ajax Applications (RCP+RAP), plus Mylyn, and an XML editor.
+      A complete set of tools for developers who want to create Eclipse plug-ins, Rich Client or Rich Ajax Applications (RCP+RAP), plus Mylyn, plus WindowBuilder, plus Code Recommenders, and an XML editor.
    </description>
 
    <license url="license.html">
