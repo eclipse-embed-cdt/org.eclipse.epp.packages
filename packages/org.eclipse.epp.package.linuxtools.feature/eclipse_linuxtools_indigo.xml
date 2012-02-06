@@ -45,6 +45,6 @@
 	<rcp version="3.7.1" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-linuxtools-indigo-SR2-RC2-incubation" />
+	<product name="eclipse-linuxtools-indigo-SR2-RC3-incubation" />
 
 </configuration>
