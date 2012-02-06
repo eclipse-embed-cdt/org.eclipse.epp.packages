@@ -43,12 +43,10 @@
       <import feature="org.eclipse.egit.mylyn"/>
       <import feature="org.eclipse.m2e.feature"/>
       <import feature="org.eclipse.m2e.logback.feature"/>
-      <!--
       <import feature="org.eclipse.wb.core.feature"/>
       <import feature="org.eclipse.wb.core.ui.feature"/>
       <import feature="org.eclipse.wb.layout.group.feature"/>
       <import feature="org.eclipse.wb.swing.feature"/>
-      -->
       <import feature="org.eclipse.epp.package.common.feature"/>
    </requires>
 
