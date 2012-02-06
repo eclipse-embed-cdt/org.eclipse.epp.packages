@@ -8,7 +8,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse IDE for C/C++ Developers (includes Incubating components)"
+   packageName="Eclipse IDE for C/C++ Developers"
    maintainer="Eclipse Packaging Project"
    iconurl="http://www.eclipse.org/downloads/images/cdt.png"
    bugzillaComponentId="cpp-package"
