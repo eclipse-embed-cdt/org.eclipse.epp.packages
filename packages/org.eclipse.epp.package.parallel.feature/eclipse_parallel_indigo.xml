@@ -38,9 +38,9 @@
 
 	<!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-	<rcp version="3.7.1" />
+	<rcp version="3.7.2" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-parallel-indigo-SR2-RC3-incubation" />
+	<product name="eclipse-parallel-indigo-SR2-RC4-incubation" />
 
 </configuration>

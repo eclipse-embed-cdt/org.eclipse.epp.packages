@@ -26,7 +26,7 @@ fi
 
 # variables to adjust
 BASE_DIR=/shared/technology/epp/epp_build/indigo
-RELEASE_NAME="-indigo-SR2-RC3"
+RELEASE_NAME="-indigo-SR2-RC4"
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
@@ -48,7 +48,7 @@ LOGFILE="${DOWNLOAD_DIR}/build.log"
 LOCKFILE="/tmp/epp.build.indigo.lock"
 
 # repository locations
-REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/3.7.x/M20120127-0800"
+REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/3.7.x/M20120208-0800"
 REPO_SIMRELEASE_URL="${BASE_URL}/releases/indigo/"
 REPO_STAGING_URL="${BASE_URL}/releases/maintenance/"
 #REPO_EPP_URL="${BASE_URL}/technology/epp/packages/indigo"
