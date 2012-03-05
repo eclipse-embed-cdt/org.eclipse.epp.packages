@@ -69,7 +69,7 @@
 				<arg value="-i" />
 				<arg value="org.eclipse.buckminster.core.headless.feature.feature.group" />
 				<arg value="-i" />
-				<arg value="org.eclipse.buckminster.cvs.headless.feature.feature.group" />
+				<arg value="org.eclipse.buckminster.git.headless.feature.feature.group" />
 				<arg value="-i" />
 				<arg value="org.eclipse.buckminster.pde.headless.feature.feature.group" />
 			</args>

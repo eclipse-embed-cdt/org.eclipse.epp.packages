@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rmap xmlns="http://www.eclipse.org/buckminster/RMap-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:mp="http://www.eclipse.org/buckminster/MavenProvider-1.0"
-	xmlns:pmp="http://www.eclipse.org/buckminster/PDEMapProvider-1.0"
-	xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0">
-
-	<searchPath name="org.eclipse.epp.allpackages.juno">
-		<provider readerType="cvs" componentTypes="eclipse.feature" mutable="true" source="true">
-			<uri format=":pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/features/{0}">
-				<bc:propertyRef key="buckminster.component" />
-			</uri>
-		</provider>
-	</searchPath>
-
-	<searchPath name="org.eclipse.epp.packages">
-		<provider readerType="cvs" componentTypes="osgi.bundle" mutable="true" source="true">
-			<uri format=":pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/{0}">
-				<bc:propertyRef key="buckminster.component" />
-			</uri>
-		</provider>
-	</searchPath>
-
-	<searchPath name="org.eclipse.epp.packages.feature">
-		<provider readerType="cvs" componentTypes="eclipse.feature" mutable="true" source="true">
-			<uri format=":pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/{0}">
-				<bc:propertyRef key="buckminster.component" />
-			</uri>
-		</provider>
-	</searchPath>
-
-	<searchPath name="juno">
-		<provider readerType="p2" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
-			<uri format="{0}?importType=binary">
-				<bc:propertyRef key="juno.site" />
-			</uri>
-		</provider>
-	</searchPath>
-
-  <searchPath name="platform">
-    <provider readerType="p2" componentTypes="osgi.bundle,eclipse.feature" mutable="false" source="false">
-      <uri format="{0}?importType=binary">
-        <bc:propertyRef key="platform.site" />
-      </uri>
-    </provider>
-  </searchPath>
-
-	<locator searchPathRef="org.eclipse.epp.allpackages.juno" pattern="^org\.eclipse\.epp\.allpackages\..*$"/>
-	<locator searchPathRef="org.eclipse.epp.packages.feature" pattern="^org\.eclipse\.epp\.package\..*\.feature$"/>
-	<locator searchPathRef="org.eclipse.epp.packages" pattern="^org\.eclipse\.epp\.package\..*$"/>
-    <locator searchPathRef="platform" failOnError="false" />
-	<locator searchPathRef="juno"/>
-
-</rmap>
+<rm:rmap xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0" xmlns:rm="http://www.eclipse.org/buckminster/RMap-1.0">
+  <rm:locator pattern="^org\.eclipse\.epp\.allpackages\..*$" searchPathRef="org.eclipse.epp.allpackages.juno"/>
+  <rm:locator pattern="^org\.eclipse\.epp\.package\..*\.feature$" searchPathRef="org.eclipse.epp.packages.feature"/>
+  <rm:locator pattern="^org\.eclipse\.epp\.package\..*$" searchPathRef="org.eclipse.epp.packages"/>
+  <rm:locator searchPathRef="platform" failOnError="false"/>
+  <rm:locator searchPathRef="juno"/>
+  <rm:searchPath name="org.eclipse.epp.allpackages.juno">
+    <rm:provider componentTypes="eclipse.feature" readerType="git">
+      <rm:property key="git.remote.uri" value="git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git"/>
+      <rm:uri format="{0},features/{1}">
+        <bc:propertyRef key="workspace.root"/>
+        <bc:propertyRef key="buckminster.component"/>
+      </rm:uri>
+    </rm:provider>
+  </rm:searchPath>
+  <rm:searchPath name="org.eclipse.epp.packages">
+    <rm:provider componentTypes="osgi.bundle" readerType="git">
+      <rm:property key="git.remote.uri" value="git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git"/>
+      <rm:uri format="{0},packages/{1}">
+        <bc:propertyRef key="workspace.root"/>
+        <bc:propertyRef key="buckminster.component"/>
+      </rm:uri>
+    </rm:provider>
+  </rm:searchPath>
+  <rm:searchPath name="org.eclipse.epp.packages.feature">
+    <rm:provider componentTypes="eclipse.feature" readerType="git">
+      <rm:property key="git.remote.uri" value="git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git"/>
+      <rm:uri format="{0},packages/{1}">
+        <bc:propertyRef key="workspace.root"/>
+        <bc:propertyRef key="buckminster.component"/>
+      </rm:uri>
+    </rm:provider>
+  </rm:searchPath>
+  <rm:searchPath name="juno">
+    <rm:provider componentTypes="osgi.bundle,eclipse.feature" readerType="p2" source="false" mutable="false">
+      <rm:property key="buckminster.mutable" value="false"/>
+      <rm:property key="buckminster.source" value="false"/>
+      <rm:uri format="{0}?importType=binary">
+        <bc:propertyRef key="juno.site"/>
+      </rm:uri>
+    </rm:provider>
+  </rm:searchPath>
+  <rm:searchPath name="platform">
+    <rm:provider componentTypes="osgi.bundle,eclipse.feature" readerType="p2" source="false" mutable="false">
+      <rm:property key="buckminster.mutable" value="false"/>
+      <rm:property key="buckminster.source" value="false"/>
+      <rm:uri format="{0}?importType=binary">
+        <bc:propertyRef key="platform.site"/>
+      </rm:uri>
+    </rm:provider>
+  </rm:searchPath>
+</rm:rmap>
