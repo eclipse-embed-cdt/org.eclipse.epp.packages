@@ -7,47 +7,47 @@
   <rm:locator searchPathRef="juno"/>
   <rm:searchPath name="org.eclipse.epp.allpackages.juno">
     <rm:provider componentTypes="eclipse.feature" readerType="git">
-      <rm:property key="git.remote.uri" value="git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git"/>
       <rm:uri format="{0},features/{1}">
         <bc:propertyRef key="workspace.root"/>
         <bc:propertyRef key="buckminster.component"/>
       </rm:uri>
+      <rm:property key="git.remote.uri" value="git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git"/>
     </rm:provider>
   </rm:searchPath>
   <rm:searchPath name="org.eclipse.epp.packages">
     <rm:provider componentTypes="osgi.bundle" readerType="git">
-      <rm:property key="git.remote.uri" value="git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git"/>
       <rm:uri format="{0},packages/{1}">
         <bc:propertyRef key="workspace.root"/>
         <bc:propertyRef key="buckminster.component"/>
       </rm:uri>
+      <rm:property key="git.remote.uri" value="git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git"/>
     </rm:provider>
   </rm:searchPath>
   <rm:searchPath name="org.eclipse.epp.packages.feature">
     <rm:provider componentTypes="eclipse.feature" readerType="git">
-      <rm:property key="git.remote.uri" value="git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git"/>
       <rm:uri format="{0},packages/{1}">
         <bc:propertyRef key="workspace.root"/>
         <bc:propertyRef key="buckminster.component"/>
       </rm:uri>
+      <rm:property key="git.remote.uri" value="git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git"/>
     </rm:provider>
   </rm:searchPath>
   <rm:searchPath name="juno">
     <rm:provider componentTypes="osgi.bundle,eclipse.feature" readerType="p2" source="false" mutable="false">
-      <rm:property key="buckminster.mutable" value="false"/>
-      <rm:property key="buckminster.source" value="false"/>
       <rm:uri format="{0}?importType=binary">
         <bc:propertyRef key="juno.site"/>
       </rm:uri>
+      <rm:property	 key="buckminster.mutable" value="false" />
+      <rm:property key="buckminster.source" value="false" />
     </rm:provider>
   </rm:searchPath>
   <rm:searchPath name="platform">
     <rm:provider componentTypes="osgi.bundle,eclipse.feature" readerType="p2" source="false" mutable="false">
-      <rm:property key="buckminster.mutable" value="false"/>
-      <rm:property key="buckminster.source" value="false"/>
       <rm:uri format="{0}?importType=binary">
         <bc:propertyRef key="platform.site"/>
       </rm:uri>
+      <rm:property key="buckminster.mutable" value="false"/>
+      <rm:property key="buckminster.source" value="false"/>
     </rm:provider>
   </rm:searchPath>
 </rm:rmap>
