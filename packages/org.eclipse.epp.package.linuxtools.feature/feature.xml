@@ -4,7 +4,6 @@
       label="EPP Linux Tools Feature"
       version="1.5.0.qualifier"
       provider-name="Eclipse Packaging Project"
-      plugin="org.eclipse.epp.package.linuxtools"
       os="linux"
       ws="gtk"
       arch="x86,x86_64">
@@ -62,11 +61,5 @@
       <import feature="org.eclipse.rse"/>
       <import feature="org.eclipse.egit"/>
    </requires>
-
-   <plugin
-         id="org.eclipse.epp.package.linuxtools"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
 
 </feature>

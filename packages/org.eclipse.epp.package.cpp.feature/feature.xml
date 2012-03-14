@@ -24,6 +24,12 @@
          version="0.0.0"
          search-location="both"/>
 
+   <includes
+         id="org.eclipse.epp.package.linuxtools.feature"
+         version="0.0.0"
+         optional="true"
+         search-location="both"/>
+
    <requires>
       <import feature="org.eclipse.cvs"/>
       <import feature="org.eclipse.equinox.p2.user.ui"/>
