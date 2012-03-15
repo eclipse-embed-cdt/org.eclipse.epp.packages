@@ -19,13 +19,69 @@
       <discovery label="Eclipse Platform 4.2" url="http://download.eclipse.org/eclipse/updates/4.2"/>
    </url>
 
-   <includes
-         id="org.eclipse.platform"
-         version="0.0.0"
-         search-location="both"/>
-
+   <!-- Optionally include the Linux Tools features -->
    <includes
          id="org.eclipse.epp.package.linuxtools.feature"
+         version="0.0.0"
+         optional="true"
+         search-location="both"/>
+   <includes 
+         id="org.eclipse.linuxtools.cdt.autotools"
+         version="0.0.0"
+         optional="true"
+         search-location="both"/>
+   <includes 
+         id="org.eclipse.linuxtools.cdt.libhover.feature"
+         version="0.0.0"
+         optional="true"
+         search-location="both"/>
+   <includes 
+         id="org.eclipse.linuxtools.changelog"
+         version="0.0.0"
+         optional="true"
+         search-location="both"/>
+   <includes 
+         id="org.eclipse.linuxtools.gprof.feature"
+         version="0.0.0"
+         optional="true"
+         search-location="both"/>
+   <includes 
+         id="org.eclipse.linuxtools.oprofile.feature"
+         version="0.0.0"
+         optional="true"
+         search-location="both"/>
+   <includes 
+         id="org.eclipse.linuxtools.rpm"
+         version="0.0.0"
+         optional="true"
+         search-location="both"/>
+   <includes 
+         id="org.eclipse.linuxtools.rpm.ui.editor.feature"
+         version="0.0.0"
+         optional="true"
+         search-location="both"/>
+   <includes 
+         id="org.eclipse.linuxtools.systemtap"
+         version="0.0.0"
+         optional="true"
+         search-location="both"/>
+   <includes 
+         id="org.eclipse.linuxtools.callgraph.feature"
+         version="0.0.0"
+         optional="true"
+         search-location="both"/>
+   <includes 
+         id="org.eclipse.linuxtools.valgrind"
+         version="0.0.0"
+         optional="true"
+         search-location="both"/>
+   <includes 
+         id="org.eclipse.linuxtools.gcov"
+         version="0.0.0"
+         optional="true"
+         search-location="both"/>
+   <includes 
+         id="org.eclipse.linuxtools.lttng"
          version="0.0.0"
          optional="true"
          search-location="both"/>
@@ -53,9 +109,6 @@
       <import feature="org.eclipse.mylyn.bugzilla_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
       <import feature="org.eclipse.rse"/>
-      <!--
-      <import feature="org.eclipse.linuxtools.cdt.autotools"/>
-      -->
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
    </requires>
