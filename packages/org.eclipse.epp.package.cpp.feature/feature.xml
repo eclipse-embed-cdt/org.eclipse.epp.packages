@@ -20,11 +20,6 @@
    </url>
 
    <!-- Optionally include the Linux Tools features -->
-   <includes
-         id="org.eclipse.epp.package.linuxtools.feature"
-         version="0.0.0"
-         optional="true"
-         search-location="both"/>
    <includes 
          id="org.eclipse.linuxtools.cdt.autotools"
          version="0.0.0"
