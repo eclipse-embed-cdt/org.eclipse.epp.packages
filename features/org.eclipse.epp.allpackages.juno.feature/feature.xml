@@ -34,12 +34,6 @@
          version="0.0.0"/>
 
    <includes
-         id="org.eclipse.epp.package.linuxtools.feature"
-         version="0.0.0"
-         os="linux"
-         arch="x86,x86_64"/>
-
-   <includes
          id="org.eclipse.epp.package.modeling.feature"
          version="0.0.0"/>
 
