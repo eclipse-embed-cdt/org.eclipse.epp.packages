@@ -7,7 +7,7 @@
   <rm:locator searchPathRef="juno"/>
   <rm:searchPath name="org.eclipse.epp.allpackages.juno">
     <rm:provider componentTypes="eclipse.feature" readerType="git">
-      <rm:uri format="{0},features/{1}">
+      <rm:uri format="{0}/org.eclipse.epp.packages,features/{1}">
         <bc:propertyRef key="workspace.root"/>
         <bc:propertyRef key="buckminster.component"/>
       </rm:uri>
@@ -16,7 +16,7 @@
   </rm:searchPath>
   <rm:searchPath name="org.eclipse.epp.packages">
     <rm:provider componentTypes="osgi.bundle" readerType="git">
-      <rm:uri format="{0},packages/{1}">
+      <rm:uri format="{0}/org.eclipse.epp.packages,packages/{1}">
         <bc:propertyRef key="workspace.root"/>
         <bc:propertyRef key="buckminster.component"/>
       </rm:uri>
@@ -25,7 +25,7 @@
   </rm:searchPath>
   <rm:searchPath name="org.eclipse.epp.packages.feature">
     <rm:provider componentTypes="eclipse.feature" readerType="git">
-      <rm:uri format="{0},packages/{1}">
+      <rm:uri format="{0}/org.eclipse.epp.packages,packages/{1}">
         <bc:propertyRef key="workspace.root"/>
         <bc:propertyRef key="buckminster.component"/>
       </rm:uri>
