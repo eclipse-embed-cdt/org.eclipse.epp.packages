@@ -32,8 +32,9 @@ RELEASE_NAME="-juno-M6"
 START_TIME=`date -u +%Y%m%d-%H%M`
 MARKERFILENAME=".epp.nightlybuild"
 STATUSFILENAME="status.stub"
-CVSPATH="org.eclipse.epp/releng/org.eclipse.epp.config"
-CVSPROJECTPATH="org.eclipse.epp/packages"
+GITURL="/gitroot/epp/org.eclipse.epp.packages.git"
+GITBRANCH="HEAD"
+GITPROJECTPATH="packages"
 DOWNLOAD_BASE_URL="http://build.eclipse.org/technology/epp/epp_build/juno/download"
 
 # directories and files
@@ -93,6 +94,8 @@ exec 2>&1 | tee ${LOGFILE}
 PACKAGES=""
 if [ $# = "0" ]; then
   # generate the list from the packages checked into CVS
+  echo "CVS CHECKOUT NOT WORKING ANY MORE... THIS PART NEEDS TO BE MIGRATED TO GIT"
+  exit 1
   cvs -q -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSPROJECTPATH}
   for file in  $(ls ${CVSPROJECTPATH} | grep -v feature | grep -v common | grep -v CVS);  
   do
@@ -106,13 +109,15 @@ echo "...building the following packages: ${PACKAGES}"
 echo "...using metadata repositories: ${METADATAREPOSITORIES}"
 echo "...using artifact repositories: ${ARTIFACTREPOSITORIES}"
 
-# load external functions
-. ${BASE_DIR}/${CVSPATH}/tools/functions.sh
+echo "...loading external functions"
+git archive --format=tar --remote=${GITURL} ${GITBRANCH} releng/org.eclipse.epp.config/tools/functions.sh | tar xf - --to-stdout >functions.sh
+. functions.sh
 
 # check-out configuration
-echo "...checking out configuration to ${BASE_DIR}"
-cvs -q -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology checkout -P ${CVSPATH}
-pullAllConfigFiles ${BASE_DIR}/${CVSPATH}/packages_map.txt ${DOWNLOAD_DIR}
+PACKAGES_MAP_FILE=packages_map.txt
+echo "...checking out configuration map to ${PACKAGES_MAP_FILE}"
+git archive --format=tar --remote=${GITURL} ${GITBRANCH} releng/org.eclipse.epp.config/packages_map.txt | tar xf - --to-stdout >${PACKAGES_MAP_FILE}
+pullAllConfigFiles ${PACKAGES_MAP_FILE} ${DOWNLOAD_DIR}
 
 # start statusfile
 echo "<tr>" >>${STATUSFILE}

@@ -1,53 +1,55 @@
 # EPP package definitions
-# name, [CVS], repository string, path to file, version [HEAD], EPP local filename
+# name, [CVS,GIT], repository string, path to file, version [HEAD], EPP local filename
 
 # package definitions provided by EPP
 ## 1st: EPP package definition
 ## 2nd: feature.xml renamed
 
-cpp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.cpp.feature/eclipse_cpp_juno.xml,HEAD,cpp.xml
-cpp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.cpp.feature/feature.xml,HEAD,cpp.feature.xml
+automotive,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.automotive.feature/eclipse_automotive_juno.xml,HEAD,automotive.xml
+automotive,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.automotive.feature/feature.xml,HEAD,automotive.feature.xml
 
-java,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.java.feature/eclipse_java_juno.xml,HEAD,java.xml
-java,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.java.feature/feature.xml,HEAD,java.feature.xml
+cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/eclipse_cpp_juno.xml,HEAD,cpp.xml
+cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/feature.xml,HEAD,cpp.feature.xml
 
-#javascript,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.javascript.feature/eclipse_javascript_juno.xml,HEAD,javascript.xml
-#javascript,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.javascript.feature/feature.xml,HEAD,javascript.feature.xml
+java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/eclipse_java_juno.xml,HEAD,java.xml
+java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/feature.xml,HEAD,java.feature.xml
 
-jee,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.jee.feature/eclipse_jee_juno.xml,HEAD,jee.xml
-jee,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.jee.feature/feature.xml,HEAD,jee.feature.xml
+#javascript,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.javascript.feature/eclipse_javascript_juno.xml,HEAD,javascript.xml
+#javascript,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.javascript.feature/feature.xml,HEAD,javascript.feature.xml
 
-linuxtools,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.linuxtools.feature/eclipse_linuxtools_juno.xml,HEAD,linuxtools.xml
-linuxtools,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.linuxtools.feature/feature.xml,HEAD,linuxtools.feature.xml
+jee,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.jee.feature/eclipse_jee_juno.xml,HEAD,jee.xml
+jee,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.jee.feature/feature.xml,HEAD,jee.feature.xml
 
-modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.modeling.feature/eclipse_modeling_juno.xml,HEAD,modeling.xml
-modeling,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.modeling.feature/feature.xml,HEAD,modeling.feature.xml
+#linuxtools,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.linuxtools.feature/eclipse_linuxtools_juno.xml,HEAD,linuxtools.xml
+#linuxtools,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.linuxtools.feature/feature.xml,HEAD,linuxtools.feature.xml
 
-parallel,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.parallel.feature/eclipse_parallel_juno.xml,HEAD,parallel.xml
-parallel,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.parallel.feature/feature.xml,HEAD,parallel.feature.xml
+modeling,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.modeling.feature/eclipse_modeling_juno.xml,HEAD,modeling.xml
+modeling,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.modeling.feature/feature.xml,HEAD,modeling.feature.xml
 
-#php,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.php.feature/eclipse_php_juno.xml,HEAD,php.xml
-#php,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.php.feature/feature.xml,HEAD,php.feature.xml
+parallel,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.parallel.feature/eclipse_parallel_juno.xml,HEAD,parallel.xml
+parallel,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.parallel.feature/feature.xml,HEAD,parallel.feature.xml
 
-#pulsar,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.pulsar.feature/eclipse_pulsar_juno.xml,HEAD,pulsar.xml
-#pulsar,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.pulsar.feature/feature.xml,HEAD,pulsar.feature.xml
+#php,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.php.feature/eclipse_php_juno.xml,HEAD,php.xml
+#php,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.php.feature/feature.xml,HEAD,php.feature.xml
 
-rcp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.rcp.feature/eclipse_rcp_juno.xml,HEAD,rcp.xml
-rcp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.rcp.feature/feature.xml,HEAD,rcp.feature.xml
+#pulsar,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.pulsar.feature/eclipse_pulsar_juno.xml,HEAD,pulsar.xml
+#pulsar,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.pulsar.feature/feature.xml,HEAD,pulsar.feature.xml
 
-reporting,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.reporting.feature/eclipse_reporting_juno.xml,HEAD,reporting.xml
-reporting,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.reporting.feature/feature.xml,HEAD,reporting.feature.xml
+rcp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rcp.feature/eclipse_rcp_juno.xml,HEAD,rcp.xml
+rcp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rcp.feature/feature.xml,HEAD,rcp.feature.xml
 
-#soa,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.soa.feature/eclipse_soa_juno.xml,HEAD,soa.xml
-#soa,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.soa.feature/feature.xml,HEAD,soa.feature.xml
+reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.feature/eclipse_reporting_juno.xml,HEAD,reporting.xml
+reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.feature/feature.xml,HEAD,reporting.feature.xml
 
-scout,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.scout.feature/eclipse_scout_juno.xml,HEAD,scout.xml
-scout,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.scout.feature/feature.xml,HEAD,scout.feature.xml
+#soa,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.soa.feature/eclipse_soa_juno.xml,HEAD,soa.xml
+#soa,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.soa.feature/feature.xml,HEAD,soa.feature.xml
 
-testing,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.testing.feature/eclipse_testing_juno.xml,HEAD,testing.xml
-testing,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.testing.feature/feature.xml,HEAD,testing.feature.xml
+scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.feature/eclipse_scout_juno.xml,HEAD,scout.xml
+scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.feature/feature.xml,HEAD,scout.feature.xml
 
-## special case - we provide dummy epp config file for the SDK and RT packages
-sdk,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_sdk_juno.xml,HEAD,sdk.xml
-#where to get the SDK feature? sdk,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/eclipse_sdk_juno.xml,HEAD,eclipse_sdk_360.xml
-#rt,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/releng/org.eclipse.epp.config/rtp_basic.xml,HEAD,rt.xml
+testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.feature/eclipse_testing_juno.xml,HEAD,testing.xml
+testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.feature/feature.xml,HEAD,testing.feature.xml
+
+## special cases - we provide dummy epp config file for the SDK and RT packages
+sdk,GIT,/gitroot/epp/org.eclipse.epp.packages.git,releng/org.eclipse.epp.config/eclipse_sdk_juno.xml,HEAD,sdk.xml
+rt,GIT,/gitroot/epp/org.eclipse.epp.packages.git,releng/org.eclipse.epp.config/rtp_basic.xml,HEAD,rt.xml

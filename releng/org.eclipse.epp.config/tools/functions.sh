@@ -16,6 +16,22 @@ function cvsCheckout {
 }
 
 
+function gitCheckout {
+  if [ -z $4 ]
+  then
+    echo "No parameters passed to function gitCheckout()."
+    return 0
+  fi
+  GITURL=$1
+  GITPATH=$2
+  GITBRANCH=$3
+  FILENAME=$4
+
+  echo "Checking out ${GITPATH} to ${FILENAME}"
+  git archive --format=tar \
+    --remote=${GITURL} ${GITBRANCH} ${GITPATH} | tar xf - --to-stdout >${FILENAME}
+}
+
 function pullAllConfigFiles {
   if [ -z $2 ]
   then
@@ -32,6 +48,11 @@ function pullAllConfigFiles {
   # read relevant (non comment, non empty) lines from package definition map file
   ALL_PACKAGES=`grep -v '^#' $1 | grep -v '^\s*$'`
 
+
+  # name, [CVS,GIT], repository string, path to file, version [HEAD], EPP local filename
+  # cpp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.cpp.feature/eclipse_cpp_juno.xml,HEAD,cpp.xml
+  # cpp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.cpp.feature/feature.xml,HEAD,cpp.feature.xml
+
   for II in ${ALL_PACKAGES};
   do
     PACKAGE_NAME=`echo ${II} | cut -d "," -f 1`
@@ -43,6 +64,8 @@ function pullAllConfigFiles {
     
     if [ "${REPTYPE}" = "CVS" ]; then
       cvsCheckout ${REPSTRING} ${FILEPATH} ${VERSION} ${2}/${FILENAME}
+    elif [ "${REPTYPE}" = "GIT" ]; then
+      gitCheckout ${REPSTRING} ${FILEPATH} ${VERSION} ${2}/${FILENAME}
     fi
     ALL_PACKAGE_NAMES="${ALL_PACKAGE_NAMES} ${PACKAGE_NAME}"
   done
