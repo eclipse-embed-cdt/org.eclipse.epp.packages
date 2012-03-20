@@ -26,11 +26,7 @@
          search-location="both"/>
          
    <!-- Optionally include the Linux Tools features - as does CPP package -->
-   <includes 
-         id="org.eclipse.linuxtools.cdt.autotools"
-         version="0.0.0"
-         optional="true"
-         search-location="both"/>
+
    <includes 
          id="org.eclipse.linuxtools.cdt.libhover.feature"
          version="0.0.0"
@@ -97,7 +93,7 @@
       <import feature="org.eclipse.rcp"/>
       <import feature="org.eclipse.cdt.platform"/>
       <import feature="org.eclipse.cdt"/>
-
+      <import feature="org.eclipse.cdt.autotools">
       <import feature="org.eclipse.cdt.debug.ui.memory"/>
       <import feature="org.eclipse.cdt.core.parser.upc.feature"/>
       <import feature="org.eclipse.cdt.xlc.feature"/>
