@@ -35,9 +35,6 @@
       <import feature="org.eclipse.cdt.platform"/>
       <import feature="org.eclipse.cdt"/>
       <import feature="org.eclipse.cdt.mylyn"/>
-      <!-- feature not available Juno M5
-      <import feature="org.eclipse.cdt.p2"/>
-      -->
       <import feature="org.eclipse.cdt.debug.ui.memory"/>
       <import feature="org.eclipse.cdt.core.parser.upc.feature"/>
       <import feature="org.eclipse.cdt.xlc.feature"/>
@@ -64,6 +61,10 @@
       <import feature="org.eclipse.linuxtools.gcov"/>
       <import feature="org.eclipse.linuxtools.gprof.feature"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
+      <import feature="org.eclipse.ptp.pldt.fortran" version="6.0.0.qualifier"/>
+      <import feature="org.eclipse.ptp.pldt.openacc" version="6.0.0.qualifier"/>
+      <import feature="org.eclipse.ptp.cdt.compilers" version="6.0.0.qualifier"/>
+      <import feature="org.eclipse.ptp.rm.jaxb.contrib" version="6.0.0.qualifier"/>
    </requires>
 
    <plugin
