@@ -33,7 +33,9 @@
       <import feature="org.eclipse.emf.transaction.sdk" />
       <import feature="org.eclipse.emf.validation.sdk" />
       <import feature="org.eclipse.epp.package.common.feature"/>
+      <!--
       <import feature="org.eclipse.equinox.executable" />
+      -->
       <import feature="org.eclipse.gef.sdk" />
       <import feature="org.eclipse.gmf.runtime.notation.sdk" />
       <import feature="org.eclipse.gmf.runtime.sdk" />
@@ -42,7 +44,9 @@
       <import feature="org.eclipse.xpand.sdk" />
       <import feature="org.eclipse.xsd.sdk" />
       <import feature="org.eclipse.xtext.sdk" />
+      <!--
       <import feature="org.eclipse.xtext.xtend2.sdk" />
+      -->
       <import feature="org.eclipse.uml2.sdk" />
       <import feature="org.eclipse.graphiti.sdk.feature" />
    </requires>
