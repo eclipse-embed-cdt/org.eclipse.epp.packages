@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.epp.package.automotive.feature"
+      label="EPP Automotive Feature"
+      version="1.5.0.qualifier"
+      provider-name="Eclipse Packaging Project"
+      plugin="org.eclipse.epp.package.automotive">
+
+   <description>
+      This package contains frameworks and tools used for the development of embedded automotive software: In addition to Eclipse Platform, Java Development Tools, and Plug-in Development Environment, it includes EMF, GMF, Xtext, Xpand, UML2, selected other modeling components, C/C++ development tools, and XML/XSD editors and tools. It comes with the complete SDKs, i.e., provides runtime binaries, source code, and documentation.
+   </description>
+
+   <license url="license.html">
+      %license
+   </license>
+
+   <url>
+      <discovery label="Juno" url="http://download.eclipse.org/releases/juno/"/>
+      <discovery label="Eclipse Platform 4.2" url="http://download.eclipse.org/eclipse/updates/4.2"/>
+   </url>
+
+
+   <includes
+         id="org.eclipse.platform"
+         version="0.0.0"
+         search-location="both"/>
+
+   <requires>
+      <import feature="org.eclipse.cdt.sdk" />
+      <import feature="org.eclipse.emf.compare.sdk" />
+      <import feature="org.eclipse.emf.mwe.sdk" />
+      <import feature="org.eclipse.emf.sdk" />
+      <import feature="org.eclipse.emf.transaction.sdk" />
+      <import feature="org.eclipse.emf.validation.sdk" />
+      <import feature="org.eclipse.epp.mpc" />
+      <import feature="org.eclipse.equinox.executable" />
+      <import feature="org.eclipse.gef.sdk" />
+      <import feature="org.eclipse.gmf.runtime.notation.sdk" />
+      <import feature="org.eclipse.gmf.runtime.sdk" />
+      <import feature="org.eclipse.sdk" />
+      <import feature="org.eclipse.wst.xml_ui.feature" />
+      <import feature="org.eclipse.xpand.sdk" />
+      <import feature="org.eclipse.xsd.sdk" />
+      <import feature="org.eclipse.xtext.sdk" />
+      <import feature="org.eclipse.xtext.xtend2.sdk" />
+      <import feature="org.eclipse.uml2.sdk" />
+      <import feature="org.eclipse.graphiti.sdk.feature" />
+   </requires>
+
+   <plugin
+         id="org.eclipse.epp.package.automotive"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>
