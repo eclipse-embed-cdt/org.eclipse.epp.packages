@@ -48,7 +48,7 @@
       <import feature="org.eclipse.emf.query.sdk"/>
       <import feature="org.eclipse.xsd.sdk"/>
       <import feature="org.eclipse.emf.validation.sdk"/>
-      <import feature="org.eclipse.emf.compare.sdk"/>
+      <import feature="org.eclipse.emf.compare.runtime"/>
       <import feature="org.eclipse.amalgam.discovery"/>
       <import feature="org.eclipse.emf.cdo.epp" />
       <import feature="org.eclipse.gmf.runtime.sdk"/>
