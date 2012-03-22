@@ -43,6 +43,8 @@
       <import feature="org.eclipse.epp.package.common.feature"/>
       <import feature="org.eclipse.scout.sdk.feature"/>
       <import feature="org.eclipse.scout.rt.feature"/>
+      <import feature="org.eclipse.scout.sdk.rap.feature"/>
+      <import feature="org.eclipse.scout.rt.rap.target.feature"/>
    </requires>
 
    <plugin
