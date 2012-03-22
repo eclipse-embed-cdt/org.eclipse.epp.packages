@@ -112,10 +112,12 @@
       <import feature="org.eclipse.ptp.rdt.xlc"/>
       <import feature="org.eclipse.ptp.remote.rse"/>
       <import feature="org.eclipse.ptp.pldt.upc"/>
+      <!-- disabled, see bug 375095
       <import feature="org.eclipse.ptp.pldt.fortran"/>
       <import feature="org.eclipse.ptp.pldt.openacc"/>
       <import feature="org.eclipse.ptp.cdt.compilers"/>
       <import feature="org.eclipse.ptp.rm.jaxb.contrib"/>
+      -->
       <import feature="org.eclipse.photran"/>
       <import feature="org.eclipse.rephraserengine"/>
       <import feature="org.eclipse.jgit"/>
