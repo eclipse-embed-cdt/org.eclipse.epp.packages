@@ -19,26 +19,26 @@
    bugzillaComponentId=""
    testPlan="" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-     <description><![CDATA[This package contains the minimal configuration to get started with <a class="download-continue" href="/rt/">EclipseRT</a>. The package includes Eclipse Equinox and p2 only. <a class="download-continue" href="/rtp/getting-started/">Read more...</a>]]></description>
+     <description><![CDATA[This package contains the minimal configuration to get started with <a href="/rt/">EclipseRT</a> and a configuration UI. The package includes Eclipse Equinox, RAP and p2 only. <a class="download-continue" href="/rtp/getting-started/">Read more...</a>]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
       <tester>Holger Staudacher</tester>
     </packageTesters>
     <FakePackage>True</FakePackage>
     <FakePackageLocation>
-      /rtp/incubation/updates/3.7/0.1.0.v20110615-1503-R
+      /rtp/updates/3.8milestones/1.0.0.v20120321-1233
     </FakePackageLocation>
   </packageMetaData>
   <MoreInfo>
   	<NewAndNoteworthy
     	url="http://eclipse.org/rtp/noteworthy/"
-    	project="RTP 0.1" />
+    	project="RTP 1.0.0" />
   </MoreInfo>
 
   <!-- version, the RCP version to build. This is used to determine the file name of the root file archives -->
-  <rcp version="RC5" />
+  <rcp version="1.0.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="rt-basic-incubation-0.1.0.v20110615-1503-R" />
+  <product name="rt-incubation-1.0.0.v20120321-1233-S.zip" />
 
 </configuration>
