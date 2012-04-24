@@ -45,6 +45,8 @@
       <import feature="org.eclipse.scout.rt.feature"/>
       <import feature="org.eclipse.scout.sdk.rap.feature"/>
       <import feature="org.eclipse.scout.rt.rap.target.feature"/>
+      <import feature="org.eclipse.team.svn"/>
+      <import feature="org.eclipse.team.svn.resource.ignore.rules.jdt"/>
    </requires>
 
    <plugin
