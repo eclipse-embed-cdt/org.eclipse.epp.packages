@@ -32,6 +32,7 @@
       <import feature="org.eclipse.pde" version="3.8.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.platform" version="4.1.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.rcp" version="4.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.jst.web_ui.feature" version="3.4.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
       <import feature="org.eclipse.mylyn.java_feature"/>
       <import feature="org.eclipse.mylyn.pde_feature"/>
