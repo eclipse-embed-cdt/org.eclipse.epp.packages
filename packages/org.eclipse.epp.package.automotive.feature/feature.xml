@@ -19,32 +19,63 @@
       <discovery label="Eclipse Platform 4.2" url="http://download.eclipse.org/eclipse/updates/4.2"/>
    </url>
 
-
    <includes
          id="org.eclipse.platform"
          version="0.0.0"
          search-location="both"/>
 
    <requires>
-      <import feature="org.eclipse.cdt.sdk" />
-      <import feature="org.eclipse.emf.compare.sdk" />
-      <import feature="org.eclipse.emf.mwe.sdk" />
-      <import feature="org.eclipse.emf.sdk" />
-      <import feature="org.eclipse.emf.transaction.sdk" />
-      <import feature="org.eclipse.emf.validation.sdk" />
+      <import feature="org.eclipse.cdt"/>
+      <import feature="org.eclipse.cdt.autotools"/>
+      <import feature="org.eclipse.cdt.build.crossgcc"/>
+      <import feature="org.eclipse.cdt.debug.ui.memory"/>
+      <import feature="org.eclipse.cdt.launch.remote"/>
+      <import feature="org.eclipse.cdt.msw"/>
+      <import feature="org.eclipse.draw2d"/>
+      <import feature="org.eclipse.emf"/>
+      <import feature="org.eclipse.emf.compare"/>
+      <import feature="org.eclipse.emf.compare.ui.capabilities"/>
+      <import feature="org.eclipse.emf.mwe.core"/>
+      <import feature="org.eclipse.emf.mwe.ui"/>
+      <import feature="org.eclipse.emf.transaction"/>
+      <import feature="org.eclipse.emf.validation"/>
+      <import feature="org.eclipse.emf.validation.ocl"/>
+      <import feature="org.eclipse.emf.workspace"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
-      <import feature="org.eclipse.equinox.executable" />
-      <import feature="org.eclipse.gef.sdk" />
-      <import feature="org.eclipse.gmf.runtime.notation.sdk" />
-      <import feature="org.eclipse.gmf.runtime.sdk" />
-      <import feature="org.eclipse.sdk" />
-      <import feature="org.eclipse.wst.xml_ui.feature" />
-      <import feature="org.eclipse.xpand.sdk" />
-      <import feature="org.eclipse.xsd.sdk" />
-      <import feature="org.eclipse.xtend.sdk" />
-      <import feature="org.eclipse.xtext.sdk" />
-      <import feature="org.eclipse.uml2.sdk" />
-      <import feature="org.eclipse.graphiti.sdk.feature" />
+      <import feature="org.eclipse.gef"/>
+      <import feature="org.eclipse.gmf"/>
+      <import feature="org.eclipse.gmf.runtime.notation"/>
+      <import feature="org.eclipse.graphiti.feature"/>
+      <import feature="org.eclipse.jdt"/>
+      <import feature="org.eclipse.pde"/>
+      <import feature="org.eclipse.platform"/>
+      <import feature="org.eclipse.uml2"/>
+      <import feature="org.eclipse.wst.xml_ui.feature"/>
+      <import feature="org.eclipse.xpand"/>
+      <import feature="org.eclipse.xpand.incremental"/>
+      <import feature="org.eclipse.xpand.ui"/>
+      <import feature="org.eclipse.xsd"/>
+      <import feature="org.eclipse.xsd.ecore.converter"/>
+      <import feature="org.eclipse.xsd.edit"/>
+      <import feature="org.eclipse.xsd.editor"/>
+      <import feature="org.eclipse.xsd.mapping"/>
+      <import feature="org.eclipse.xsd.mapping.editor"/>
+      <import feature="org.eclipse.xtend"/>
+      <import feature="org.eclipse.xtend.typesystem.emf"/>
+      <import feature="org.eclipse.xtend.typesystem.uml2"/>
+      <import feature="org.eclipse.xtend.typesystem.xsd"/>
+      <import feature="org.eclipse.xtext.runtime"/>
+      <import feature="org.eclipse.xtext.ui"/>
+      <import feature="org.eclipse.xtext.xbase"/>
+      <import feature="org.eclipse.xtext.xtext.ui"/>
+      <import plugin="org.eclipse.xtend.core"/>
+      <import plugin="org.eclipse.xtend.ide"/>
+      <import plugin="org.eclipse.xtend.util.stdlib"/>
+      <import plugin="org.eclipse.xtext.junit"/>
+      <import plugin="org.eclipse.xtext.junit4"/>
+      <import plugin="org.eclipse.xtext.purexbase"/>
+      <import plugin="org.eclipse.xtext.purexbase.ui"/>
+      <import plugin="org.eclipse.xtext.ui.junit"/>
    </requires>
 
    <plugin
