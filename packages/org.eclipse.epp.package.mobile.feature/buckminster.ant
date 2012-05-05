@@ -1,0 +1,26 @@
+<project>
+	<import file="${buckminster.pdetasks}"/>
+	<target name="peruse.about.mappings">
+		<!-- action.input appoints a directory. Convert it to the single file that it contains -->
+		<pathconvert property="jarfile">
+			<buckminster.valuefileset value="${fs:action.input}"/>
+		</pathconvert>
+		
+		<!-- Extract the feature version from the feature manifest -->
+		<extractFeatureVersion file="${sp:manifest}" property="feature.version"/>
+
+		<!-- Obtain the build.id property from the build context and assign it to an ant
+		     property with the same name -->
+		<buckminster.contextProperty name="build.id"/>
+
+		<!-- Unzip, replace tokens, an rezip -->
+		<property name="jartmp" location="${buckminster.temp}/jartmp"/>
+		<delete dir="${jartmp}"/>
+		<mkdir dir="${jartmp}"/>
+		<unzip dest="${jartmp}" src="${jarfile}"/>
+		<replace token="@build@" value="${build.id}" file="${jartmp}/about.mappings"/>
+		<replace token="@featureVersion@" value="${feature.version}" file="${jartmp}/about.mappings"/>
+		<zip destfile="${jarfile}" basedir="${jartmp}"/>
+		<delete dir="${jartmp}"/>
+	</target>
+</project>

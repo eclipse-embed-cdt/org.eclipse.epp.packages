@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.epp.package.mobile.feature"
+      label="EPP Mobile Package"
+      version="1.5.0.qualifier"
+      provider-name="Eclipse Packaging Project"
+      plugin="org.eclipse.epp.package.mobile">
+
+   <description>
+      The essential tools for any Mobile developer, including a Java IDE, a CVS client, XML Editor and Mylyn.
+   </description>
+
+   <license url="license.html">
+      %license
+   </license>
+
+   <url>
+      <discovery label="Juno" url="http://download.eclipse.org/releases/juno/"/>
+      <discovery label="Eclipse Platform 4.2" url="http://download.eclipse.org/eclipse/updates/4.2"/>
+      <discovery label="Mylyn for Eclipse Juno" url="http://download.eclipse.org/mylyn/releases/juno/"/>
+   </url>
+
+   <includes
+         id="org.eclipse.platform"
+         version="0.0.0"
+         search-location="both"/>
+
+   <requires>
+      <import feature="org.eclipse.egit"/>
+      <import feature="org.eclipse.epp.package.common.feature"/>
+      <import feature="org.eclipse.equinox.p2.user.ui"/>
+      <import feature="org.eclipse.help"/>
+      <import feature="org.eclipse.jdt" version="3.8.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.platform" version="4.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.rcp" version="4.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.m2e.feature"/>
+      <import feature="org.eclipse.m2e.logback.feature"/>
+      <import feature="org.eclipse.mylyn_feature"/>
+      <import feature="org.eclipse.mylyn"/>
+      <import feature="org.eclipse.wb.core.feature"/>
+      <import feature="org.eclipse.wb.core.ui.feature"/>
+      <import feature="org.eclipse.wb.layout.group.feature"/>
+      <import feature="org.eclipse.wb.swing.feature"/>
+      <import feature="org.eclipse.wst.xml_ui.feature"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.epp.package.mobile"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>
