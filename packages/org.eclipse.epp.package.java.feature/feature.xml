@@ -52,6 +52,7 @@
       <import feature="org.eclipse.wb.layout.group.feature"/>
       <import feature="org.eclipse.wb.swing.feature"/>
       -->
+      <import feature="org.eclipse.recommenders.feature.rcp"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
    </requires>
 
