@@ -7,7 +7,7 @@
       plugin="org.eclipse.epp.package.mobile">
 
    <description>
-      The essential tools for any Mobile developer, including a Java IDE, a CVS client, XML Editor and Mylyn.
+      The essential starting point for Mobile developers, including a Java IDE, C language support, a Git client, XML Editor and Mylyn.
    </description>
 
    <license url="license.html">
@@ -30,6 +30,7 @@
       <import feature="org.eclipse.epp.package.common.feature"/>
       <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.help"/>
+      <import feature="org.eclipse.cdt"/>
       <import feature="org.eclipse.jdt" version="3.8.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.platform" version="4.1.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.rcp" version="4.1.0" match="greaterOrEqual"/>
@@ -39,10 +40,6 @@
       <import feature="org.eclipse.mylyn.context_feature"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
       <import feature="org.eclipse.mylyn.java_feature"/>
-      <import feature="org.eclipse.wb.core.feature"/>
-      <import feature="org.eclipse.wb.core.ui.feature"/>
-      <import feature="org.eclipse.wb.layout.group.feature"/>
-      <import feature="org.eclipse.wb.swing.feature"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
    </requires>
 
