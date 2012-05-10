@@ -58,8 +58,8 @@ REPO_STAGING_URL="${BASE_URL}/releases/staging/"
 REPO_EPP_WORKINGCOPY_URL="file://${EPPREPO_WORKINGCOPY_DIR}"
 
 # repositories used in the build
-METADATAREPOSITORIES="${REPO_STAGING_URL},${REPO_EPP_WORKINGCOPY_URL}"
-ARTIFACTREPOSITORIES="${REPO_STAGING_URL},${REPO_EPP_WORKINGCOPY_URL}"
+METADATAREPOSITORIES="${REPO_STAGING_URL},${REPO_EPP_WORKINGCOPY_URL},file:///shared/technology/epp/ptp"
+ARTIFACTREPOSITORIES="${REPO_STAGING_URL},${REPO_EPP_WORKINGCOPY_URL},file:///shared/technology/epp/ptp"
 
 # definition of OS, WS, ARCH, FORMAT combinations - DO NOT FORGET to adjust the for loop
 OSes=(   win32  win32   linux   linux   macosx  macosx  )
