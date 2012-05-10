@@ -26,6 +26,11 @@
          optional="true"
          search-location="both"/>
    <includes 
+         id="org.eclipse.linuxtools.cdt.libhover.devhelp.feature"
+         version="0.0.0"
+         optional="true"
+         search-location="both"/>
+   <includes 
          id="org.eclipse.linuxtools.changelog"
          version="0.0.0"
          optional="true"
