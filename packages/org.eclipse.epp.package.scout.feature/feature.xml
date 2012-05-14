@@ -25,14 +25,24 @@
          search-location="both"/>
 
    <requires>
+      <import feature="org.eclipse.scout.sdk.feature"/>
+      <import feature="org.eclipse.scout.rt.feature"/>
+      <import feature="org.eclipse.scout.sdk.rap.feature"/>
+      <import feature="org.eclipse.scout.rt.rap.target.feature"/>
       <import feature="org.eclipse.cvs"/>
       <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.help"/>
+      <import feature="org.eclipse.help.source"/>
       <import feature="org.eclipse.jdt" version="3.8.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.jdt.source" version="3.8.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.pde" version="3.8.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.pde.source" version="3.8.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.platform" version="4.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.platform.source"/>
       <import feature="org.eclipse.rcp" version="4.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.rcp.source" version="4.1.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.jst.web_ui.feature" version="3.4.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.epp.package.common.feature"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
       <import feature="org.eclipse.mylyn.java_feature"/>
       <import feature="org.eclipse.mylyn.pde_feature"/>
@@ -40,12 +50,6 @@
       <import feature="org.eclipse.mylyn.context_feature"/>
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
-      <import feature="org.eclipse.platform.source"/>
-      <import feature="org.eclipse.epp.package.common.feature"/>
-      <import feature="org.eclipse.scout.sdk.feature"/>
-      <import feature="org.eclipse.scout.rt.feature"/>
-      <import feature="org.eclipse.scout.sdk.rap.feature"/>
-      <import feature="org.eclipse.scout.rt.rap.target.feature"/>
    </requires>
 
    <plugin
