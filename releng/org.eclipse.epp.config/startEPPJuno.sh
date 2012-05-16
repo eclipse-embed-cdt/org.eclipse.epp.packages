@@ -26,7 +26,7 @@ fi
 
 # variables to adjust
 BASE_DIR=/shared/technology/epp/epp_build/juno
-RELEASE_NAME="-juno-M7"
+RELEASE_NAME="-juno-RC1"
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
@@ -58,8 +58,8 @@ REPO_STAGING_URL="${BASE_URL}/releases/staging/"
 REPO_EPP_WORKINGCOPY_URL="file://${EPPREPO_WORKINGCOPY_DIR}"
 
 # repositories used in the build
-METADATAREPOSITORIES="${REPO_STAGING_URL},${REPO_EPP_WORKINGCOPY_URL},file:///shared/technology/epp/ptp"
-ARTIFACTREPOSITORIES="${REPO_STAGING_URL},${REPO_EPP_WORKINGCOPY_URL},file:///shared/technology/epp/ptp"
+METADATAREPOSITORIES="${REPO_STAGING_URL},${REPO_EPP_WORKINGCOPY_URL}"
+ARTIFACTREPOSITORIES="${REPO_STAGING_URL},${REPO_EPP_WORKINGCOPY_URL}"
 
 # definition of OS, WS, ARCH, FORMAT combinations - DO NOT FORGET to adjust the for loop
 OSes=(   win32  win32   linux   linux   macosx  macosx  )

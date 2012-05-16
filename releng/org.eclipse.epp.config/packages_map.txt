@@ -14,14 +14,11 @@ cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.packa
 java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/eclipse_java_juno.xml,HEAD,java.xml
 java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/feature.xml,HEAD,java.feature.xml
 
-#javascript,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.javascript.feature/eclipse_javascript_juno.xml,HEAD,javascript.xml
-#javascript,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.javascript.feature/feature.xml,HEAD,javascript.feature.xml
-
 jee,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.jee.feature/eclipse_jee_juno.xml,HEAD,jee.xml
 jee,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.jee.feature/feature.xml,HEAD,jee.feature.xml
 
-#linuxtools,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.linuxtools.feature/eclipse_linuxtools_juno.xml,HEAD,linuxtools.xml
-#linuxtools,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.linuxtools.feature/feature.xml,HEAD,linuxtools.feature.xml
+mobile,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.mobile.feature/eclipse_mobile_juno.xml,HEAD,mobile.xml
+mobile,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.mobile.feature/feature.xml,HEAD,mobile.feature.xml
 
 modeling,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.modeling.feature/eclipse_modeling_juno.xml,HEAD,modeling.xml
 modeling,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.modeling.feature/feature.xml,HEAD,modeling.feature.xml
@@ -52,4 +49,4 @@ testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.p
 
 ## special cases - we provide dummy epp config file for the SDK and RT packages
 sdk,GIT,/gitroot/epp/org.eclipse.epp.packages.git,releng/org.eclipse.epp.config/eclipse_sdk_juno.xml,HEAD,sdk.xml
-rt,GIT,/gitroot/epp/org.eclipse.epp.packages.git,releng/org.eclipse.epp.config/rtp_basic.xml,HEAD,rt.xml
+# rt,GIT,/gitroot/epp/org.eclipse.epp.packages.git,releng/org.eclipse.epp.config/rtp_basic.xml,HEAD,rt.xml
