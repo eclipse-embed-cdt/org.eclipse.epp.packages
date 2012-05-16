@@ -9,7 +9,7 @@
    -->
   <packageMetaData
    packageName="Eclipse IDE for Automotive Software Developers"
-   maintainer="Eclipse Packaging Project"
+   maintainer="Eclipse Automotive Industry Working Group"
    iconurl="http://www.eclipse.org/downloads/images/automotive.png"
    bugzillaComponentId="automotive-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
