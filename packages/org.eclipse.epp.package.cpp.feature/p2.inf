@@ -7,5 +7,67 @@ requires.1.name=org.eclipse.platform.ide
 #requires.1.range=[3.5.0.I20090522-1710,3.5.0.I20090522-1710]
 requires.1.greedy=true
 
+#      <import feature="org.eclipse.linuxtools.cdt.libhover.feature"/>
+requires.2.namespace=org.eclipse.equinox.p2.iu
+requires.2.name=org.eclipse.linuxtools.cdt.libhover.feature.feature.group
+requires.2.optional=true
 
+#      <import feature="org.eclipse.linuxtools.cdt.libhover.devhelp.feature"/>
+requires.3.namespace=org.eclipse.equinox.p2.iu
+requires.3.name=org.eclipse.linuxtools.cdt.libhover.devhelp.feature.feature.group
+requires.3.optional=true
 
+#      <import feature="org.eclipse.linuxtools.changelog"/>
+requires.4.namespace=org.eclipse.equinox.p2.iu
+requires.4.name=org.eclipse.linuxtools.changelog.feature.group
+requires.4.optional=true
+
+#      <import feature="org.eclipse.linuxtools.gprof.feature"/>
+requires.5.namespace=org.eclipse.equinox.p2.iu
+requires.5.name=org.eclipse.linuxtools.gprof.feature.feature.group
+requires.5.optional=true
+
+#      <import feature="org.eclipse.linuxtools.oprofile.feature"/>
+requires.6.namespace=org.eclipse.equinox.p2.iu
+requires.6.name=org.eclipse.linuxtools.oprofile.feature.feature.group
+requires.6.optional=true
+
+#      <import feature="org.eclipse.linuxtools.perf.feature"/>
+requires.7.namespace=org.eclipse.equinox.p2.iu
+requires.7.name=org.eclipse.linuxtools.perf.feature.feature.group
+requires.7.optional=true
+
+#      <import feature="org.eclipse.linuxtools.rpm"/>
+requires.8.namespace=org.eclipse.equinox.p2.iu
+requires.8.name=org.eclipse.linuxtools.rpm.feature.group
+requires.8.optional=true
+
+#      <import feature="org.eclipse.linuxtools.rpm.ui.editor.feature"/>
+requires.9.namespace=org.eclipse.equinox.p2.iu
+requires.9.name=org.eclipse.linuxtools.rpm.ui.editor.feature.feature.group
+requires.9.optional=true
+
+#      <import feature="org.eclipse.linuxtools.systemtap"/>
+requires.10.namespace=org.eclipse.equinox.p2.iu
+requires.10.name=org.eclipse.linuxtools.systemtap.feature.group
+requires.10.optional=true
+
+#      <import feature="org.eclipse.linuxtools.callgraph.feature"/>
+requires.11.namespace=org.eclipse.equinox.p2.iu
+requires.11.name=org.eclipse.linuxtools.callgraph.feature.feature.group
+requires.11.optional=true
+
+#      <import feature="org.eclipse.linuxtools.valgrind"/>
+requires.12.namespace=org.eclipse.equinox.p2.iu
+requires.12.name=org.eclipse.linuxtools.valgrind.feature.group
+requires.12.optional=true
+
+#      <import feature="org.eclipse.linuxtools.gcov"/>
+requires.13.namespace=org.eclipse.equinox.p2.iu
+requires.13.name=org.eclipse.linuxtools.gcov.feature.group
+requires.13.optional=true
+
+#      <import feature="org.eclipse.linuxtools.lttng"/>
+requires.14.namespace=org.eclipse.equinox.p2.iu
+requires.14.name=org.eclipse.linuxtools.lttng.feature.group
+requires.14.optional=true
