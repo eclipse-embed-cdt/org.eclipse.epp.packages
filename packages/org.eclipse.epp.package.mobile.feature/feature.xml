@@ -34,8 +34,6 @@
       <import feature="org.eclipse.jdt" version="3.8.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.platform" version="4.1.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.rcp" version="4.1.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.m2e.feature"/>
-      <import feature="org.eclipse.m2e.logback.feature"/>
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.context_feature"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
