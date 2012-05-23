@@ -24,60 +24,68 @@
          id="org.eclipse.platform"
          version="0.0.0"
          search-location="both"/>
-         
-   <!-- Optionally include the Linux Tools features - as does CPP package -->
 
-   <includes 
+   <includes
          id="org.eclipse.linuxtools.cdt.libhover.feature"
          version="0.0.0"
          optional="true"
          search-location="both"/>
-   <includes 
+
+   <includes
          id="org.eclipse.linuxtools.changelog"
          version="0.0.0"
          optional="true"
          search-location="both"/>
-   <includes 
+
+   <includes
          id="org.eclipse.linuxtools.gprof.feature"
          version="0.0.0"
          optional="true"
          search-location="both"/>
-   <includes 
+
+   <includes
          id="org.eclipse.linuxtools.oprofile.feature"
          version="0.0.0"
          optional="true"
          search-location="both"/>
-   <includes 
+
+   <includes
          id="org.eclipse.linuxtools.rpm"
          version="0.0.0"
          optional="true"
          search-location="both"/>
-   <includes 
+
+   <includes
          id="org.eclipse.linuxtools.rpm.ui.editor.feature"
          version="0.0.0"
          optional="true"
          search-location="both"/>
-   <includes 
+
+   <includes
          id="org.eclipse.linuxtools.systemtap"
          version="0.0.0"
          optional="true"
          search-location="both"/>
-   <includes 
+
+   <includes
          id="org.eclipse.linuxtools.callgraph.feature"
          version="0.0.0"
          optional="true"
          search-location="both"/>
-   <includes 
+
+   <includes
          id="org.eclipse.linuxtools.valgrind"
          version="0.0.0"
          optional="true"
          search-location="both"/>
-   <includes 
+
+   <includes
          id="org.eclipse.linuxtools.gcov"
          version="0.0.0"
          optional="true"
          search-location="both"/>
-   <includes 
+
+   <includes
          id="org.eclipse.linuxtools.lttng"
          version="0.0.0"
          optional="true"
@@ -85,7 +93,6 @@
 
    <requires>
       <import feature="org.eclipse.epp.package.common.feature"/>
-      
       <import feature="org.eclipse.cvs"/>
       <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.help"/>
@@ -112,17 +119,12 @@
       <import feature="org.eclipse.ptp.rdt.xlc"/>
       <import feature="org.eclipse.ptp.remote.rse"/>
       <import feature="org.eclipse.ptp.pldt.upc"/>
-      <!-- disabled, see bug 375095
-      <import feature="org.eclipse.ptp.pldt.fortran"/>
-      <import feature="org.eclipse.ptp.pldt.openacc"/> omit; now part of ptp.pldt
-      <import feature="org.eclipse.ptp.cdt.compilers"/> omit; now part of ptp.core
-      -->
-      <import feature="org.eclipse.ptp.rm.jaxb.contrib"/>     
+      <import feature="org.eclipse.ptp.rm.jaxb.contrib"/>
       <import feature="org.eclipse.photran"/>
       <import feature="org.eclipse.rephraserengine"/>
       <import feature="org.eclipse.jgit"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
-
+      <import feature="org.eclipse.egit"/>
    </requires>
 
    <plugin
