@@ -10,7 +10,7 @@
   <packageMetaData
    packageName="Eclipse IDE for Automotive Software Developers"
    maintainer="Eclipse Automotive Industry Working Group"
-   iconurl="http://www.eclipse.org/downloads/images/automotive.png"
+   iconurl="http://www.eclipse.org/downloads/images/classic.jpg"
    bugzillaComponentId="automotive-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
