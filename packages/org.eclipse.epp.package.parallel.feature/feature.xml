@@ -121,10 +121,10 @@
       <import feature="org.eclipse.ptp.pldt.upc"/>
       <import feature="org.eclipse.ptp.rm.jaxb.contrib"/>
       <import feature="org.eclipse.photran"/>
-      <import feature="org.eclipse.rephraserengine"/>
       <import feature="org.eclipse.jgit"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.egit"/>
+      <import feature="org.eclipse.ptp.fortran"/>
    </requires>
 
    <plugin
