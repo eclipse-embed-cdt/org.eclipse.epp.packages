@@ -120,7 +120,6 @@
       <import feature="org.eclipse.ptp.remote.rse"/>
       <import feature="org.eclipse.ptp.pldt.upc"/>
       <import feature="org.eclipse.ptp.rm.jaxb.contrib"/>
-      <import feature="org.eclipse.photran"/>
       <import feature="org.eclipse.jgit"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.egit"/>
