@@ -3,8 +3,7 @@
   <rm:locator pattern="^org\.eclipse\.epp\.allpackages\..*$" searchPathRef="org.eclipse.epp.allpackages.juno"/>
   <rm:locator pattern="^org\.eclipse\.epp\.package\..*\.feature$" searchPathRef="org.eclipse.epp.packages.feature"/>
   <rm:locator pattern="^org\.eclipse\.epp\.package\..*$" searchPathRef="org.eclipse.epp.packages"/>
-  <rm:locator searchPathRef="platform" failOnError="false"/>
-  <rm:locator searchPathRef="juno"/>
+  <rm:locator searchPathRef="juno" failOnError="false"/>
   <rm:searchPath name="org.eclipse.epp.allpackages.juno">
     <rm:provider componentTypes="eclipse.feature" readerType="git">
       <rm:uri format="{0}/org.eclipse.epp.packages,features/{1}">
@@ -39,15 +38,6 @@
       </rm:uri>
       <rm:property	 key="buckminster.mutable" value="false" />
       <rm:property key="buckminster.source" value="false" />
-    </rm:provider>
-  </rm:searchPath>
-  <rm:searchPath name="platform">
-    <rm:provider componentTypes="osgi.bundle,eclipse.feature" readerType="p2" source="false" mutable="false">
-      <rm:uri format="{0}?importType=binary">
-        <bc:propertyRef key="platform.site"/>
-      </rm:uri>
-      <rm:property key="buckminster.mutable" value="false"/>
-      <rm:property key="buckminster.source" value="false"/>
     </rm:provider>
   </rm:searchPath>
 </rm:rmap>
