@@ -7,7 +7,6 @@
 	<property file="${build.root}/build.properties" />
 	<property name="bm.headless.site" value="http://download.eclipse.org/tools/buckminster/headless-3.5/" />
 	<property name="juno.site" value="http://download.eclipse.org/releases/staging" />
-	<property name="platform.site" value="http://download.eclipse.org/eclipse/updates/4.2milestones/" />
 	<property name="buildtools" location="${build.root}/tools" />
 	<property name="workspace" location="${build.root}/ws" />
 	<property name="targetPlatformPath" location="${build.root}/TP" />
@@ -87,7 +86,6 @@
 		</eclipse.launch>
 		<eclipse.launch app="buckminster">
 			<args>
-				<jvmarg value="-Dplatform.site=${platform.site}" />
 				<jvmarg value="-Djuno.site=${juno.site}" />
 				<arg value="-data" />
 				<arg value="${workspace}" />
@@ -108,7 +106,6 @@
 	<target name="build.workspace" depends="build.tp">
 		<eclipse.launch app="buckminster">
 			<args>
-				<jvmarg value="-Dplatform.site=${platform.site}" />
 				<jvmarg value="-Djuno.site=${juno.site}" />
 				<arg value="-data" />
 				<arg value="${workspace}" />
