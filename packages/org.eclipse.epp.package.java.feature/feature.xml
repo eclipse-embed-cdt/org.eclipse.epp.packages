@@ -43,6 +43,7 @@
       <import feature="org.eclipse.mylyn.git"/>
       <import feature="org.eclipse.mylyn.hudson"/>
       <import feature="org.eclipse.egit"/>
+      <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.egit.mylyn"/>
       <import feature="org.eclipse.m2e.feature"/>
       <import feature="org.eclipse.m2e.logback.feature"/>
