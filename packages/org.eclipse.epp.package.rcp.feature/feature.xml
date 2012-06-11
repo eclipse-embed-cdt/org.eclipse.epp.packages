@@ -44,6 +44,7 @@
       <import feature="org.eclipse.mylyn.hudson"/>
       <import feature="org.eclipse.mylyn.gerrit.feature"/>
       <import feature="org.eclipse.egit"/>
+      <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.egit.mylyn"/>
       <import feature="org.eclipse.jgit"/>
       <import feature="org.eclipse.platform.source"/>

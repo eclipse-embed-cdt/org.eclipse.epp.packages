@@ -53,6 +53,7 @@
       <import feature="org.eclipse.emf.cdo.epp" />
       <import feature="org.eclipse.gmf.runtime.sdk"/>
       <import feature="org.eclipse.egit"/>
+      <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.emf.eef.codegen.ecore-feature"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
    
