@@ -25,8 +25,8 @@
       <import feature="org.eclipse.cvs"/>
       <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.help"/>
-      <import feature="org.eclipse.platform" version="4.1.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.rcp" version="4.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.platform"/>
+      <import feature="org.eclipse.rcp"/>
       <import feature="org.eclipse.cdt"/>
       <import feature="org.eclipse.cdt.debug.ui.memory"/>
       <import feature="org.eclipse.cdt.msw"/>
@@ -42,6 +42,7 @@
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
       <import feature="org.eclipse.rse"/>
       <import feature="org.eclipse.egit"/>
+      <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
    </requires>
 

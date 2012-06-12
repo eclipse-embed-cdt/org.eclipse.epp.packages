@@ -28,10 +28,10 @@
       <import feature="org.eclipse.cvs"/>
       <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.help"/>
-      <import feature="org.eclipse.jdt" version="3.8.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.pde" version="3.8.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.sdk" version="4.1.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.rcp" version="4.1.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.jdt"/>
+      <import feature="org.eclipse.pde"/>
+      <import feature="org.eclipse.sdk"/>
+      <import feature="org.eclipse.rcp"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
       <import feature="org.eclipse.mylyn.java_feature"/>
       <import feature="org.eclipse.mylyn.pde_feature"/>
@@ -53,6 +53,7 @@
       <import feature="org.eclipse.emf.cdo.epp" />
       <import feature="org.eclipse.gmf.runtime.sdk"/>
       <import feature="org.eclipse.egit"/>
+      <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.emf.eef.codegen.ecore-feature"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
    

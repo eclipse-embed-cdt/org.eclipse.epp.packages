@@ -29,6 +29,6 @@
   <rcp version="4.2.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-automotive-juno-RC3" />
+  <product name="eclipse-automotive-juno-RC4" />
 
 </configuration>
