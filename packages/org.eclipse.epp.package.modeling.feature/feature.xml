@@ -50,7 +50,10 @@
       <import feature="org.eclipse.emf.validation.sdk"/>
       <import feature="org.eclipse.emf.compare"/>
       <import feature="org.eclipse.amalgam.discovery"/>
+      <!--
+	   disabling cdo because of bug #383063
       <import feature="org.eclipse.emf.cdo.epp" />
+      -->
       <import feature="org.eclipse.gmf.runtime.sdk"/>
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
