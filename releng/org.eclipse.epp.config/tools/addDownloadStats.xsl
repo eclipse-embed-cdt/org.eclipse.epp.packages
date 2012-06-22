@@ -26,6 +26,10 @@ Gregoire Dupe
 		</properties>
 	</xsl:template>
 
+	<xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.automotive']/properties">
+		<xsl:call-template name="artifact_properties"/>
+	</xsl:template>
+
 	<xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.cpp']/properties">
 		<xsl:call-template name="artifact_properties"/>
 	</xsl:template>
@@ -34,15 +38,11 @@ Gregoire Dupe
 		<xsl:call-template name="artifact_properties"/>
 	</xsl:template>
 	
-	<xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.javascript']/properties">
-		<xsl:call-template name="artifact_properties"/>
-	</xsl:template>
-	
 	<xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.jee']/properties">
 		<xsl:call-template name="artifact_properties"/>
 	</xsl:template>
 	
-	<xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.linuxtools']/properties">
+	<xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.mobile']/properties">
 		<xsl:call-template name="artifact_properties"/>
 	</xsl:template>
 	
@@ -78,6 +78,10 @@ Gregoire Dupe
 	</xsl:template>
 	
 	
+	<xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.automotive.feature']/properties">
+		<xsl:call-template name="artifact_properties_feature"/>
+	</xsl:template>
+	
 	<xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.common.feature']/properties">
 		<xsl:call-template name="artifact_properties_feature"/>
 	</xsl:template>
@@ -90,15 +94,11 @@ Gregoire Dupe
 		<xsl:call-template name="artifact_properties_feature"/>
 	</xsl:template>
 	
-	<xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.javascript.feature']/properties">
-		<xsl:call-template name="artifact_properties_feature"/>
-	</xsl:template>
-	
 	<xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.jee.feature']/properties">
 		<xsl:call-template name="artifact_properties_feature"/>
 	</xsl:template>
 	
-	<xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.linuxtools.feature']/properties">
+	<xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.mobile.feature']/properties">
 		<xsl:call-template name="artifact_properties_feature"/>
 	</xsl:template>
 	
