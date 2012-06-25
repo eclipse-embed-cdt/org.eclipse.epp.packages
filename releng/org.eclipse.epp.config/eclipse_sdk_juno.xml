@@ -13,7 +13,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse Classic 4.2 RC4"
+   packageName="Eclipse Classic 4.2"
    maintainer="Eclipse Platform Team"
    iconurl="http://www.eclipse.org/downloads/images/classic2.jpg"
    bugzillaComponentId=""
@@ -26,31 +26,13 @@
     </packageTesters>
     <FakePackage>True</FakePackage>
     <FakePackageLocation>
-      /eclipse/downloads/drops4/S-4.2RC2-201205242100/
+      /eclipse/downloads/drops4/R-4.2-201206081400/
     </FakePackageLocation>
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.2M7-201205031800/eclipse-news-M7.html"
-    project="Eclipse 3.8 and 4.2 M7 - New and Noteworthy" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.2M6-201203151300/eclipse-news-M6.html"
-    project="Eclipse 3.8 and 4.2 M6 - New and Noteworthy" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.2M5-201201271145/eclipse-news-M5.html"
-    project="Eclipse 3.8 and 4.2 M5 (January 27, 2012) - New and Noteworthy" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.2M4-201112092100/eclipse-news-M4.html"
-    project="Eclipse 3.8 and 4.2 M4 (December 9, 2011) - New and Noteworthy" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.2M3-201110281100/eclipse-news-M3.html"
-    project="Eclipse 3.8 and 4.2 M3 (October 28, 2011) - New and Noteworthy" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.2M2-201109161615/eclipse-news-M2.html"
-    project="Eclipse 3.8 and 4.2 M2 (September 16, 2011) - New and Noteworthy" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops/S-3.8M1-201108031800/eclipse-news-M1.html"
-    project="Eclipse 3.8 and 4.2 M1 (August 5, 2011) - New and Noteworthy" />
+    url="http://download.eclipse.org/eclipse/downloads/drops4/R-4.2-201206081400/news/index.html"
+    project="Eclipse 4.2" />
   </MoreInfo>
     
   <!-- version, the RCP version to build. This is used to determine the file 
@@ -58,6 +40,6 @@
   <rcp version="4.2" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-SDK-4.2RC4" />
+  <product name="eclipse-SDK-4.2" />
 
 </configuration>
