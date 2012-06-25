@@ -9,7 +9,7 @@
    -->
   <packageMetaData
    packageName="Eclipse for Mobile Developers"
-   maintainer="Eclipse Mobile Industry Working Group"
+   maintainer="Eclipse Packaging Project"
    iconurl="http://www.eclipse.org/downloads/images/mobile.jpg"
    bugzillaComponentId="mobile-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
