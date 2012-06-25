@@ -40,7 +40,7 @@
     url="http://wiki.eclipse.org/ATL_3.2.0_New_and_Noteworthy"
     project="M2M ATL" />            
   <NewAndNoteworthy
-    url="http://wiki.eclipse.org/MDT/OCL/New_and_Noteworthy/Indigo"
+    url="http://wiki.eclipse.org/MDT/OCL/New_and_Noteworthy/Juno"
     project="MDT OCL" />    
   </MoreInfo>
 
@@ -49,6 +49,6 @@
   <rcp version="4.2.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-modeling-juno-RC4" />
+  <product name="eclipse-modeling-juno" />
 
 </configuration>

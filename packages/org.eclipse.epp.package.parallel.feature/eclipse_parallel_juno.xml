@@ -26,11 +26,14 @@
     project="Eclipse PTP" />
     <!--  Update for 4.2 final-->
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.2M5-201201271145/eclipse-news-M5.html"
+    url="http://download.eclipse.org/eclipse/downloads/drops4/R-4.2-201206081400/news/index.html"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="http://wiki.eclipse.org/CDT/User/NewIn90"
     project="Eclipse CDT" />
+  <NewAndNoteworthy
+    url="http://www.eclipse.org/linuxtools/new/"
+    project="Eclipse Linux Tools" />
   <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
@@ -42,6 +45,6 @@
 	<rcp version="4.2.0" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-parallel-juno-RC4" />
+	<product name="eclipse-parallel-juno" />
 
 </configuration>
