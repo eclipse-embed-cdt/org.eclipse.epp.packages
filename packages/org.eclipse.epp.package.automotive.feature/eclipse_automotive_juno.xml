@@ -8,7 +8,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse IDE for Automotive Software Developers"
+   packageName="Eclipse IDE for Automotive Software Developers (includes Incubating components)"
    maintainer="Eclipse Automotive Industry Working Group"
    iconurl="http://www.eclipse.org/downloads/images/classic.jpg"
    bugzillaComponentId="automotive-package"
@@ -32,6 +32,6 @@
   <rcp version="4.2.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-automotive-juno" />
+  <product name="eclipse-automotive-juno-incubation" />
 
 </configuration>
