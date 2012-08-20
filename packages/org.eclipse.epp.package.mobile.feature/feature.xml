@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.mobile.feature"
       label="EPP Mobile Package"
-      version="1.5.0.qualifier"
+      version="1.5.1.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.mobile">
 

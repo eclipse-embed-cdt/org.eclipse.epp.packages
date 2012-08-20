@@ -169,7 +169,7 @@
          ================================= -->
     <target name="archiveArtifacts" description="Copy artifacts to central location.">
 		<copy todir="${env.WORKSPACE}/repositories/${env.BUILD_NUMBER}" preservelastmodified="true" verbose="true">
-			<fileset dir="${build.root}/buildresult/org.eclipse.epp.allpackages.juno.feature_1.5.0-eclipse.feature/site.p2/**" />
+			<fileset dir="${build.root}/buildresult/org.eclipse.epp.allpackages.juno.feature_1.5.1-eclipse.feature/site.p2/**" />
 		</copy>
     </target>
 

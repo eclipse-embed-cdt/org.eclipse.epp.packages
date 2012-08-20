@@ -45,6 +45,6 @@
 	<rcp version="4.2.0" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-parallel-juno" />
+	<product name="eclipse-parallel-juno-SR1-RC1" />
 
 </configuration>

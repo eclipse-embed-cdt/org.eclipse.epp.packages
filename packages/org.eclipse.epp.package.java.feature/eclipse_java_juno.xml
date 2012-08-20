@@ -42,6 +42,6 @@
   <rcp version="4.2.0" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-java-juno" />
+	<product name="eclipse-java-juno-SR1-RC1" />
 
 </configuration>
