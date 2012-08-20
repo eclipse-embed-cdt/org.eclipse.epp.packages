@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse for Testers" uid="epp.package.testing" id="org.eclipse.epp.package.testing.product" application="org.eclipse.ui.ide.workbench" version="1.5.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse for Testers" uid="epp.package.testing" id="org.eclipse.epp.package.testing.product" application="org.eclipse.ui.ide.workbench" version="2.0.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <text>
@@ -53,7 +53,7 @@
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.testing.feature" version="1.5.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.testing.feature" version="2.0.0.qualifier"/>
    </features>
 
 

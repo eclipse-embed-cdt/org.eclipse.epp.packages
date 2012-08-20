@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse IDE for Automotive Software Developers" uid="epp.package.automotive" id="org.eclipse.epp.package.automotive.product" application="org.eclipse.ui.ide.workbench" version="1.5.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse IDE for Automotive Software Developers" uid="epp.package.automotive" id="org.eclipse.epp.package.automotive.product" application="org.eclipse.ui.ide.workbench" version="2.0.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <text>
@@ -52,7 +52,7 @@
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.automotive.feature" version="1.5.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.automotive.feature" version="2.0.0.qualifier"/>
    </features>
 
 

@@ -5,48 +5,48 @@
 ## 1st: EPP package definition
 ## 2nd: feature.xml renamed
 
-automotive,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.automotive.feature/eclipse_automotive_juno.xml,HEAD,automotive.xml
+automotive,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.automotive.feature/epp.website.xml,HEAD,automotive.xml
 automotive,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.automotive.feature/feature.xml,HEAD,automotive.feature.xml
 
-cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/eclipse_cpp_juno.xml,HEAD,cpp.xml
+cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/epp.website.xml,HEAD,cpp.xml
 cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/feature.xml,HEAD,cpp.feature.xml
 
-java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/eclipse_java_juno.xml,HEAD,java.xml
+java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/epp.website.xml,HEAD,java.xml
 java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/feature.xml,HEAD,java.feature.xml
 
-jee,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.jee.feature/eclipse_jee_juno.xml,HEAD,jee.xml
+jee,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.jee.feature/epp.website.xml,HEAD,jee.xml
 jee,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.jee.feature/feature.xml,HEAD,jee.feature.xml
 
-mobile,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.mobile.feature/eclipse_mobile_juno.xml,HEAD,mobile.xml
+mobile,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.mobile.feature/epp.website.xml,HEAD,mobile.xml
 mobile,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.mobile.feature/feature.xml,HEAD,mobile.feature.xml
 
-modeling,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.modeling.feature/eclipse_modeling_juno.xml,HEAD,modeling.xml
+modeling,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.modeling.feature/epp.website.xml,HEAD,modeling.xml
 modeling,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.modeling.feature/feature.xml,HEAD,modeling.feature.xml
 
-parallel,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.parallel.feature/eclipse_parallel_juno.xml,HEAD,parallel.xml
+parallel,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.parallel.feature/epp.website.xml,HEAD,parallel.xml
 parallel,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.parallel.feature/feature.xml,HEAD,parallel.feature.xml
 
-#php,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.php.feature/eclipse_php_juno.xml,HEAD,php.xml
+#php,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.php.feature/epp.website.xml,HEAD,php.xml
 #php,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.php.feature/feature.xml,HEAD,php.feature.xml
 
-#pulsar,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.pulsar.feature/eclipse_pulsar_juno.xml,HEAD,pulsar.xml
+#pulsar,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.pulsar.feature/epp.website.xml,HEAD,pulsar.xml
 #pulsar,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.pulsar.feature/feature.xml,HEAD,pulsar.feature.xml
 
-rcp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rcp.feature/eclipse_rcp_juno.xml,HEAD,rcp.xml
+rcp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rcp.feature/epp.website.xml,HEAD,rcp.xml
 rcp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rcp.feature/feature.xml,HEAD,rcp.feature.xml
 
-reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.feature/eclipse_reporting_juno.xml,HEAD,reporting.xml
+reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.feature/epp.website.xml,HEAD,reporting.xml
 reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.feature/feature.xml,HEAD,reporting.feature.xml
 
-#soa,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.soa.feature/eclipse_soa_juno.xml,HEAD,soa.xml
+#soa,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.soa.feature/epp.website.xml,HEAD,soa.xml
 #soa,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.soa.feature/feature.xml,HEAD,soa.feature.xml
 
-scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.feature/eclipse_scout_juno.xml,HEAD,scout.xml
+scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.feature/epp.website.xml,HEAD,scout.xml
 scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.feature/feature.xml,HEAD,scout.feature.xml
 
-testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.feature/eclipse_testing_juno.xml,HEAD,testing.xml
+testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.feature/epp.website.xml,HEAD,testing.xml
 testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.feature/feature.xml,HEAD,testing.feature.xml
 
 ## special cases - we provide dummy epp config file for the SDK and RT packages
-sdk,GIT,/gitroot/epp/org.eclipse.epp.packages.git,releng/org.eclipse.epp.config/eclipse_sdk.xml,HEAD,sdk.xml
+sdk,GIT,/gitroot/epp/org.eclipse.epp.packages.git,releng/org.eclipse.epp.config/epp.sdk.website.xml,HEAD,sdk.xml
 # rt,GIT,/gitroot/epp/org.eclipse.epp.packages.git,releng/org.eclipse.epp.config/rtp_basic.xml,HEAD,rt.xml
