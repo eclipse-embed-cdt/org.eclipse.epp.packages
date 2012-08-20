@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.eclipse.epp.allpackages.juno.feature"
+      id="org.eclipse.epp.allpackages.feature"
       label="Feature"
-      version="1.5.0.qualifier"
+      version="2.0.0.qualifier"
       provider-name="Eclipse.org - EPP">
 
    <description url="http://www.example.com/description">
