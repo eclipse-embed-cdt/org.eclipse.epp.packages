@@ -7,6 +7,6 @@
   </properties>
   <children size='2'>
     <child location='file:///home/data/httpd/download.eclipse.org/releases/staging/aggregate'/>
-    <child location='file:///home/data/httpd/download.eclipse.org/eclipse/updates/4.2milestones'/>
+    <child location='file:///home/data/httpd/download.eclipse.org/eclipse/updates/4.3milestones'/>
   </children>
 </repository>
