@@ -48,5 +48,5 @@ testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.p
 testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.feature/feature.xml,HEAD,testing.feature.xml
 
 ## special cases - we provide dummy epp config file for the SDK and RT packages
-sdk,GIT,/gitroot/epp/org.eclipse.epp.packages.git,releng/org.eclipse.epp.config/eclipse_sdk_juno.xml,HEAD,sdk.xml
+sdk,GIT,/gitroot/epp/org.eclipse.epp.packages.git,releng/org.eclipse.epp.config/eclipse_sdk.xml,HEAD,sdk.xml
 # rt,GIT,/gitroot/epp/org.eclipse.epp.packages.git,releng/org.eclipse.epp.config/rtp_basic.xml,HEAD,rt.xml

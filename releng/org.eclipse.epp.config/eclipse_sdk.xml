@@ -13,7 +13,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse Classic 4.2"
+   packageName="Eclipse Classic 4.3 M1"
    maintainer="Eclipse Platform Team"
    iconurl="http://www.eclipse.org/downloads/images/classic2.jpg"
    bugzillaComponentId=""
@@ -26,20 +26,20 @@
     </packageTesters>
     <FakePackage>True</FakePackage>
     <FakePackageLocation>
-      /eclipse/downloads/drops4/R-4.2-201206081400/
+      /eclipse/downloads/drops4/S-4.3M1-201208101300/
     </FakePackageLocation>
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/R-4.2-201206081400/news/index.html"
-    project="Eclipse 4.2" />
+    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.3M1-201208101300/news/"
+    project="Eclipse 4.3" />
   </MoreInfo>
     
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="4.2" />
+  <rcp version="4.3" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-SDK-4.2" />
+  <product name="eclipse-SDK-4.3M1" />
 
 </configuration>
