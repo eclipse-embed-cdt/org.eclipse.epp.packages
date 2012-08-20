@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rm:rmap xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0" xmlns:rm="http://www.eclipse.org/buckminster/RMap-1.0">
-  <rm:locator pattern="^org\.eclipse\.epp\.allpackages\..*$" searchPathRef="org.eclipse.epp.allpackages.juno"/>
+  <rm:locator pattern="^org\.eclipse\.epp\.allpackages\..*$" searchPathRef="org.eclipse.epp.allpackages"/>
   <rm:locator pattern="^org\.eclipse\.epp\.package\..*\.feature$" searchPathRef="org.eclipse.epp.packages.feature"/>
   <rm:locator pattern="^org\.eclipse\.epp\.package\..*$" searchPathRef="org.eclipse.epp.packages"/>
-  <rm:locator searchPathRef="juno" failOnError="false"/>
-  <rm:searchPath name="org.eclipse.epp.allpackages.juno">
+  <rm:locator searchPathRef="simrelease" failOnError="false"/>
+  <rm:searchPath name="org.eclipse.epp.allpackages">
     <rm:provider componentTypes="eclipse.feature" readerType="git">
       <rm:uri format="{0}/org.eclipse.epp.packages,features/{1}">
         <bc:propertyRef key="workspace.root"/>
@@ -31,10 +31,10 @@
       <rm:property key="git.remote.uri" value="git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git"/>
     </rm:provider>
   </rm:searchPath>
-  <rm:searchPath name="juno">
+  <rm:searchPath name="simrelease">
     <rm:provider componentTypes="osgi.bundle,eclipse.feature" readerType="p2" source="false" mutable="false">
       <rm:uri format="{0}?importType=binary">
-        <bc:propertyRef key="juno.site"/>
+        <bc:propertyRef key="simrelease.site"/>
       </rm:uri>
       <rm:property	 key="buckminster.mutable" value="false" />
       <rm:property key="buckminster.source" value="false" />

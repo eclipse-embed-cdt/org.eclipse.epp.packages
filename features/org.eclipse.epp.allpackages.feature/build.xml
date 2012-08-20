@@ -6,7 +6,7 @@
 	<property name="build.root" location="${user.home}/epp.build" />
 	<property file="${build.root}/build.properties" />
 	<property name="bm.headless.site" value="http://download.eclipse.org/tools/buckminster/headless-3.5/" />
-	<property name="juno.site" value="http://download.eclipse.org/releases/staging" />
+	<property name="simrelease.site" value="http://download.eclipse.org/releases/staging" />
 	<property name="buildtools" location="${build.root}/tools" />
 	<property name="workspace" location="${build.root}/ws" />
 	<property name="targetPlatformPath" location="${build.root}/TP" />
@@ -86,7 +86,7 @@
 		</eclipse.launch>
 		<eclipse.launch app="buckminster">
 			<args>
-				<jvmarg value="-Djuno.site=${juno.site}" />
+				<jvmarg value="-Dsimrelease.site=${simrelease.site}" />
 				<arg value="-data" />
 				<arg value="${workspace}" />
 				<arg value="import" />
@@ -106,7 +106,7 @@
 	<target name="build.workspace" depends="build.tp">
 		<eclipse.launch app="buckminster">
 			<args>
-				<jvmarg value="-Djuno.site=${juno.site}" />
+				<jvmarg value="-Dsimrelease.site=${simrelease.site}" />
 				<arg value="-data" />
 				<arg value="${workspace}" />
 				<arg value="import" />
@@ -158,7 +158,7 @@
 				<arg value="-data" />
 				<arg value="${workspace}" />
 				<arg value="perform" />
-				<arg value="org.eclipse.epp.allpackages.juno.feature#site.p2.zip" />
+				<arg value="org.eclipse.epp.allpackages.feature#site.p2.zip" />
 			</args>
 		</eclipse.launch>
 
