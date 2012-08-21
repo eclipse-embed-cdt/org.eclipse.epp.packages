@@ -40,7 +40,7 @@
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="4.2.0" />
+  <rcp version="4.3.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
   <product name="eclipse-reporting-juno" />
