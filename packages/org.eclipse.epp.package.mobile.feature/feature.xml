@@ -15,9 +15,9 @@
    </license>
 
    <url>
-      <discovery label="Juno" url="http://download.eclipse.org/releases/juno/"/>
+      <discovery label="Kepler" url="http://download.eclipse.org/releases/kepler/"/>
       <discovery label="Eclipse Platform 4.3" url="http://download.eclipse.org/eclipse/updates/4.3"/>
-      <discovery label="Mylyn for Eclipse Juno" url="http://download.eclipse.org/mylyn/releases/juno/"/>
+      <discovery label="Mylyn for Eclipse Kepler" url="http://download.eclipse.org/mylyn/releases/kepler/"/>
    </url>
 
    <includes

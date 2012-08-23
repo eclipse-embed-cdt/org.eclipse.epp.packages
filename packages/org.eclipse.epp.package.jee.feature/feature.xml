@@ -19,7 +19,7 @@
    </license>
 
    <url>
-      <discovery label="%discoverySiteName" url="http://download.eclipse.org/releases/juno/"/>
+      <discovery label="%discoverySiteName" url="http://download.eclipse.org/releases/kepler/"/>
    </url>
 
    <includes

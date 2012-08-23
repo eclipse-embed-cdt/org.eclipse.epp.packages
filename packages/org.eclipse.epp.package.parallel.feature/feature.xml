@@ -15,9 +15,9 @@
    </license>
 
    <url>
-      <discovery label="Juno" url="http://download.eclipse.org/releases/juno/"/>
+      <discovery label="Kepler" url="http://download.eclipse.org/releases/kepler/"/>
       <discovery label="Eclipse Platform 4.3" url="http://download.eclipse.org/eclipse/updates/4.3"/>
-      <discovery label="PTP" url="http://download.eclipse.org/tools/ptp/updates/juno/"/>
+      <discovery label="PTP" url="http://download.eclipse.org/tools/ptp/updates/kepler/"/>
    </url>
 
    <includes
