@@ -48,7 +48,7 @@
       <import feature="org.eclipse.egit.mylyn"/>
       <import feature="org.eclipse.jgit"/>
       <import feature="org.eclipse.platform.source"/>
-      <import feature="org.eclipse.rap.tools"/>
+      <import feature="org.eclipse.rap.tools.feature"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
       <import feature="org.eclipse.m2e.feature"/>
       <import feature="org.eclipse.m2e.logback.feature"/>
