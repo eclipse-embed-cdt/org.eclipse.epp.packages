@@ -33,7 +33,7 @@ START_TIME=`date -u +%Y%m%d-%H%M`
 MARKERFILENAME=".epp.nightlybuild"
 STATUSFILENAME="status.stub"
 GITURL="/gitroot/epp/org.eclipse.epp.packages.git"
-GITBRANCH="HEAD"
+GITBRANCH="JUNO"
 GITPROJECTPATH="packages"
 DOWNLOAD_BASE_URL="http://build.eclipse.org/technology/epp/epp_build/juno/download"
 
