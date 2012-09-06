@@ -11,6 +11,9 @@ automotive,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.ep
 cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/eclipse_cpp_juno.xml,JUNO,cpp.xml
 cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/feature.xml,JUNO,cpp.feature.xml
 
+dsl,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.dsl.feature/eclipse_dsl_juno.xml,JUNO,dsl.xml
+dsl,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.dsl.feature/feature.xml,JUNO,dsl.feature.xml
+
 java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/eclipse_java_juno.xml,JUNO,java.xml
 java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/feature.xml,JUNO,java.feature.xml
 
