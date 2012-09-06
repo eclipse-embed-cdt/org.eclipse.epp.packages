@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <!-- Package Description information to be picked up by www.eclipse.org/packages -->
+  <!-- PackageName is the title of your package 
+       maintainer is the project or persons that are maintaining the package
+       iconurl is the fully qualified URL to the icon you wish to use on the site (48x48)
+       bugzillaComponentID is used to gather bugzilla information about your package.  This should be given to you after provisioning of the package is finished
+       testPlan is the fully qualified URL to the test plan for this package
+   -->
+  <packageMetaData
+   packageName="Eclipse Java and DSL Tools"
+   maintainer="Xtext Project"
+   iconurl="http://www.eclipse.org/modeling/images/modeling_about.png"
+   bugzillaComponentId="dsl-package"
+   testPlan="http://www.eclipse.org/epp/testplan.php" >
+    <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
+     <description><![CDATA[This package contains framework and tools to leverage models : an Ecore graphical modeler (class-like diagram), Java code generation utility for RCP applications and the EMF Framework, model comparison support, support for XSD schemas, OCL and graphical modeler runtimes. It includes a complete SDK, developer tools and source code.]]></description>
+    <!-- packageTesters is a list of the people that are testing the package -->
+     <packageTesters>
+      <tester>Dennis Huebner</tester>
+    </packageTesters>
+  </packageMetaData>
+  <MoreInfo>
+  </MoreInfo>
+
+  <!-- version, the RCP version to build. This is used to determine the file 
+    name of the root file archives -->
+  <rcp version="4.3.0" />
+
+  <!-- name, the name of the product, used in naming the created files. -->
+  <product name="eclipse-dsl-kepler" />
+
+</configuration>

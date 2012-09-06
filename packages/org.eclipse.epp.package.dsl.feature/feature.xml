@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.epp.package.dsl.feature"
+      label="EPP DSL Feature"
+      version="2.0.0.qualifier"
+      provider-name="Eclipse Packaging Project"
+      plugin="org.eclipse.epp.package.dsl">
+
+   <description>
+      This package contains a collection of Eclipse DSL Project components, including Xtend, Xtext, Xcore, EMF and EMFT elements. It includes a complete SDK, developer tools and source code. Note that the DSL package includes some incubating components, as indicated by feature numbers less than 1.0.0 on the feature list.
+   </description>
+
+   <license url="license.html">
+      %license
+   </license>
+
+   <url>
+      <discovery label="Kepler" url="http://download.eclipse.org/releases/kepler/"/>
+      <discovery label="Eclipse Platform 4.3" url="http://download.eclipse.org/eclipse/updates/4.3"/>
+   </url>
+
+   <includes
+         id="org.eclipse.platform"
+         version="0.0.0"
+         search-location="both"/>
+
+   <requires>
+      <import feature="org.eclipse.cvs"/>
+      <import feature="org.eclipse.equinox.p2.user.ui"/>
+      <import feature="org.eclipse.help"/>
+      <import feature="org.eclipse.jdt"/>
+      <import feature="org.eclipse.pde"/>
+      <import feature="org.eclipse.sdk"/>
+      <import feature="org.eclipse.rcp"/>
+      <import feature="org.eclipse.xtend.sdk"/>
+      <import feature="org.eclipse.xtext.sdk"/>
+      <import feature="org.eclipse.emf.sdk"/>
+      <import feature="org.eclipse.emf.ecore.xcore.sdk"/>
+      <import feature="org.eclipse.egit"/>
+      <import feature="org.eclipse.epp.mpc"/>
+      <import feature="org.eclipse.m2e.feature"/>
+      <import feature="org.eclipse.epp.package.common.feature"/>
+      <import feature="org.eclipse.recommenders.feature.rcp"/>
+      <import feature="org.eclipse.wst.xml_ui.feature"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.epp.package.dsl"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>
