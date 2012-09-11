@@ -26,7 +26,7 @@ fi
 
 # variables to adjust
 BASE_DIR=/shared/technology/epp/epp_build/juno
-RELEASE_NAME="-juno-SR1-RC2"
+RELEASE_NAME="-juno-SR1-RC3"
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
