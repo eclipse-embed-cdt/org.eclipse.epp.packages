@@ -20,7 +20,7 @@
       <vmArgs>-Dosgi.requiredJavaVersion=1.5
 -Dhelp.lucene.tokenizer=standard
 -Xms40m
--Xmx256m</vmArgs>
+-Xmx512m</vmArgs>
       <vmArgsLin>-XX:MaxPermSize=256m</vmArgsLin>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
 -XX:MaxPermSize=256m</vmArgsMac>
