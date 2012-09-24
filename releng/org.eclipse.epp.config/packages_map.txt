@@ -11,6 +11,9 @@ automotive,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.ep
 cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/epp.website.xml,HEAD,cpp.xml
 cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/feature.xml,HEAD,cpp.feature.xml
 
+dsl,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.dsl.feature/epp.website.xml,HEAD,dsl.xml
+dsl,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.dsl.feature/feature.xml,HEAD,dsl.feature.xml
+
 java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/epp.website.xml,HEAD,java.xml
 java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/feature.xml,HEAD,java.feature.xml
 
