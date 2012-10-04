@@ -105,9 +105,7 @@
       <import feature="org.eclipse.cdt.core.parser.upc.feature"/>
       <import feature="org.eclipse.cdt.xlc.feature"/>
       <import feature="org.eclipse.cdt.bupc"/>
-      <!-- disabled Kepler M2
       <import feature="org.eclipse.cdt.mylyn"/>
-      -->
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.context_feature"/>
       <import feature="org.eclipse.mylyn.team_feature"/>

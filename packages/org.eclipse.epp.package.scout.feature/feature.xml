@@ -25,12 +25,10 @@
          search-location="both"/>
 
    <requires>
-      <import feature="org.eclipse.scout.sdk.feature"/>
-      <import feature="org.eclipse.scout.rt.feature"/>
-      <!-- disabled Kepler M2
-      <import feature="org.eclipse.scout.sdk.rap.feature"/>
-      -->
+      <import feature="org.eclipse.scout.rt"/>
       <import feature="org.eclipse.scout.rt.rap.target.feature"/>
+      <import feature="org.eclipse.scout.sdk"/>
+      <import feature="org.eclipse.scout.sdk.rap"/>
       <import feature="org.eclipse.cvs"/>
       <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.help"/>
