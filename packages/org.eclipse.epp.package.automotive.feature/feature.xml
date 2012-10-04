@@ -34,7 +34,9 @@
       <import feature="org.eclipse.draw2d"/>
       <import feature="org.eclipse.emf"/>
       <import feature="org.eclipse.emf.compare"/>
+      <!--  disabled Kepler M2
       <import feature="org.eclipse.emf.compare.ui.capabilities"/>
+      -->
       <import feature="org.eclipse.emf.mwe.core"/>
       <import feature="org.eclipse.emf.mwe.ui"/>
       <import feature="org.eclipse.emf.transaction"/>
