@@ -33,7 +33,9 @@
       <import feature="org.eclipse.cdt.build.crossgcc"/>
       <import feature="org.eclipse.cdt.launch.remote"/>
       <import feature="org.eclipse.cdt.autotools"/>
+      <!-- disabled Kepler M2
       <import feature="org.eclipse.cdt.mylyn"/>
+      -->
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.context_feature"/>
       <import feature="org.eclipse.mylyn.team_feature"/>

@@ -27,7 +27,9 @@
    <requires>
       <import feature="org.eclipse.scout.sdk.feature"/>
       <import feature="org.eclipse.scout.rt.feature"/>
+      <!-- disabled Kepler M2
       <import feature="org.eclipse.scout.sdk.rap.feature"/>
+      -->
       <import feature="org.eclipse.scout.rt.rap.target.feature"/>
       <import feature="org.eclipse.cvs"/>
       <import feature="org.eclipse.equinox.p2.user.ui"/>

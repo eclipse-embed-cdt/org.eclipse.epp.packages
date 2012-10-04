@@ -52,7 +52,9 @@
       <import feature="org.eclipse.uml2"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.xpand"/>
+      <!-- disabled Kepler M2
       <import feature="org.eclipse.xpand.incremental"/>
+      -->
       <import feature="org.eclipse.xpand.ui"/>
       <import feature="org.eclipse.xsd"/>
       <import feature="org.eclipse.xsd.ecore.converter"/>
