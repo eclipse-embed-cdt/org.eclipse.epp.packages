@@ -29,7 +29,6 @@
       <import feature="org.eclipse.scout.rt.rap.target.feature"/>
       <import feature="org.eclipse.scout.sdk"/>
       <import feature="org.eclipse.scout.sdk.rap"/>
-      <import feature="org.eclipse.cvs"/>
       <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.help"/>
       <import feature="org.eclipse.help.source"/>
@@ -50,6 +49,10 @@
       <import feature="org.eclipse.mylyn.context_feature"/>
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
+      <import feature="org.eclipse.egit"/>
+      <import feature="org.eclipse.egit.import"/>
+      <import feature="org.eclipse.egit.mylyn"/>
+      <import feature="org.eclipse.jgit"/>
    </requires>
 
    <plugin
