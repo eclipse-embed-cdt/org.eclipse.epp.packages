@@ -33,11 +33,9 @@
   <NewAndNoteworthy
     url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.3M3-201210312000/news/"
     project="Eclipse 4.3M3" />
-  </MoreInfo>
   <NewAndNoteworthy
     url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.3M2-201209201300/news/"
     project="Eclipse 4.3M2" />
-  </MoreInfo>
   <NewAndNoteworthy
     url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.3M1-201208101300/news/"
     project="Eclipse 4.3M1" />
