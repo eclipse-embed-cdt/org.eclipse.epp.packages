@@ -32,7 +32,7 @@
          search-location="both"/>
 
    <includes
-         id="org.eclipse.linuxtools.changelog"
+         id="org.eclipse.linuxtools.changelog.c"
          version="0.0.0"
          optional="true"
          search-location="both"/>
