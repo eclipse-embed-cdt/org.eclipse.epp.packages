@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cq:componentQuery xmlns:cq="http://www.eclipse.org/buckminster/CQuery-1.0" resourceMap="epp.rmap">
     <cq:rootRequest name="org.eclipse.epp.allpackages.feature" componentType="eclipse.feature"/>
-    <cq:property key="target.arch" value="*"/>
+    <cq:property key="target.arch" value="x86,PA_RISC,ppc,sparc,x86_64,ia64,ia64_32,win32"/>
     <cq:property key="target.os" value="*"/>
     <cq:property key="target.ws" value="*"/>
     <cq:advisorNode namePattern="^org\.mortbay\.management$" allowCircularDependency="true"/>
