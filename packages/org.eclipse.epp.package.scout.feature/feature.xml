@@ -25,9 +25,7 @@
          search-location="both"/>
 
    <requires>
-      <import feature="org.eclipse.scout.rt"/>
-      <import feature="org.eclipse.scout.sdk"/>
-      <import feature="org.eclipse.scout.sdk.rap"/>
+      <import feature="org.eclipse.scout"/>
       <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.help"/>
       <import feature="org.eclipse.help.source"/>
