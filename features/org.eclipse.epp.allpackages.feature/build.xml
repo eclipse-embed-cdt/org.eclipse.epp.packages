@@ -125,9 +125,9 @@
 			<args>
 				<jvmarg value="-Dqualifier.replacement.*=generator:lastModified" />
 				<jvmarg value="-Dgenerator.lastModified.format=yyyyMMdd-HHmm" />
-				<jvmarg value="-Dtarget.os=win32,linux,macosx" />
+				<jvmarg value="-Dtarget.os=*" />
 				<jvmarg value="-Dtarget.ws=*" />
-				<jvmarg value="-Dtarget.arch=x86,x86_64" />
+				<jvmarg value="-Dtarget.arch=*" />
 				<jvmarg value="-Dbuckminster.output.root=${build.root}/buildresult" />
 				<jvmarg value="-Dbuckminster.temp.root=${build.root}/temp" />
 				<jvmarg value="-Dbuild.id=${build.id}" />
@@ -144,9 +144,9 @@
 			<args>
 				<jvmarg value="-Dqualifier.replacement.*=generator:lastModified" />
 				<jvmarg value="-Dgenerator.lastModified.format=yyyyMMdd-HHmm" />
-                <jvmarg value="-Dtarget.os=win32,linux,macosx" />
+                <jvmarg value="-Dtarget.os=*" />
                 <jvmarg value="-Dtarget.ws=*" />
-                <jvmarg value="-Dtarget.arch=x86,x86_64" />
+                <jvmarg value="-Dtarget.arch=*" />
 				<jvmarg value="-Dbuckminster.output.root=${build.root}/buildresult" />
 				<jvmarg value="-Dbuckminster.temp.root=${build.root}/temp" />
 				<jvmarg value="-Dbuild.id=${build.id}" />
