@@ -14,7 +14,7 @@
    bugzillaComponentId="jee-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-     <description><![CDATA[Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java EE, JPA, JSF, Mylyn and others.]]></description>
+     <description><![CDATA[Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java EE, JPA, JSF, Mylyn, EGit and others.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
       <tester>David Williams</tester>
@@ -32,6 +32,9 @@
   <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
+  <NewAndNoteworthy
+    url="http://wiki.eclipse.org/EGit/New_and_Noteworthy/2.2"
+    project="EGit" />
   <NewAndNoteworthy
     url="http://www.eclipse.org/tm/"
     project="Eclipse Target Management (RSE)" />
