@@ -26,6 +26,7 @@
 
    <requires>
       <import feature="org.eclipse.scout"/>
+      <import feature="org.eclipse.scout.rt.rap.target"/>
       <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.help"/>
       <import feature="org.eclipse.help.source"/>
