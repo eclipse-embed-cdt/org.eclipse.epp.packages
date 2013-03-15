@@ -13,7 +13,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse Classic 4.3 M5"
+   packageName="Eclipse Classic 4.3 M6"
    maintainer="Eclipse Platform Team"
    iconurl="http://www.eclipse.org/downloads/images/classic2.jpg"
    bugzillaComponentId=""
@@ -49,6 +49,6 @@
   <rcp version="4.3" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-SDK-4.3M5" />
+  <product name="eclipse-SDK-4.3M6" />
 
 </configuration>
