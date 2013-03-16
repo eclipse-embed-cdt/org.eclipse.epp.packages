@@ -11,6 +11,9 @@ automotive,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.ep
 cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/epp.website.xml,HEAD,cpp.xml
 cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/feature.xml,HEAD,cpp.feature.xml
 
+classic,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.classic.feature/epp.website.xml,HEAD,classic.xml
+classic,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.classic.feature/feature.xml,HEAD,classic.feature.xml
+
 dsl,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.dsl.feature/epp.website.xml,HEAD,dsl.xml
 dsl,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.dsl.feature/feature.xml,HEAD,dsl.feature.xml
 
@@ -20,8 +23,8 @@ java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.pack
 jee,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.jee.feature/epp.website.xml,HEAD,jee.xml
 jee,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.jee.feature/feature.xml,HEAD,jee.feature.xml
 
-mobile,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.mobile.feature/epp.website.xml,HEAD,mobile.xml
-mobile,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.mobile.feature/feature.xml,HEAD,mobile.feature.xml
+#mobile,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.mobile.feature/epp.website.xml,HEAD,mobile.xml
+#mobile,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.mobile.feature/feature.xml,HEAD,mobile.feature.xml
 
 modeling,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.modeling.feature/epp.website.xml,HEAD,modeling.xml
 modeling,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.modeling.feature/feature.xml,HEAD,modeling.feature.xml
@@ -51,5 +54,5 @@ testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.p
 testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.feature/feature.xml,HEAD,testing.feature.xml
 
 ## special cases - we provide dummy epp config file for the SDK and RT packages
-sdk,GIT,/gitroot/epp/org.eclipse.epp.packages.git,releng/org.eclipse.epp.config/epp.sdk.website.xml,HEAD,sdk.xml
+# sdk,GIT,/gitroot/epp/org.eclipse.epp.packages.git,releng/org.eclipse.epp.config/epp.sdk.website.xml,HEAD,sdk.xml
 # rt,GIT,/gitroot/epp/org.eclipse.epp.packages.git,releng/org.eclipse.epp.config/rtp_basic.xml,HEAD,rt.xml
