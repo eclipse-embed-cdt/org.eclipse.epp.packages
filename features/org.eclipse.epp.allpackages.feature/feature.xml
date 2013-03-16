@@ -22,6 +22,10 @@
          version="0.0.0"/>
 
    <includes
+         id="org.eclipse.epp.package.classic.feature"
+         version="0.0.0"/>
+
+   <includes
          id="org.eclipse.epp.package.common.feature"
          version="0.0.0"/>
 
