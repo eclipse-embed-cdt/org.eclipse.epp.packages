@@ -6,3 +6,4 @@ Bundle-Version: 2.0.0.qualifier
 Bundle-Vendor: %Bundle-Vendor
 Require-Bundle: org.eclipse.platform,
  org.eclipse.equinox.app
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
