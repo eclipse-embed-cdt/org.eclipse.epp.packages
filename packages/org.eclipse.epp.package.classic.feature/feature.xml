@@ -25,21 +25,22 @@
          search-location="both"/>
 
    <requires>
+      <import feature="org.eclipse.platform"/>
+      <import feature="org.eclipse.platform.source"/>
+      <import feature="org.eclipse.rcp"/>
+      <import feature="org.eclipse.rcp.source"/>
+      <import feature="org.eclipse.jdt"/>
+      <import feature="org.eclipse.jdt.source"/>
+      <import feature="org.eclipse.pde"/>
+      <import feature="org.eclipse.pde.source"/>
       <import feature="org.eclipse.cvs"/>
+      <import feature="org.eclipse.cvs.source"/>
       <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.help"/>
-      <import feature="org.eclipse.jdt"/>
-      <import feature="org.eclipse.pde"/>
-      <import feature="org.eclipse.platform"/>
-      <import feature="org.eclipse.rcp"/>
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.jgit"/>
-      <import feature="org.eclipse.platform.source"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
-      <import feature="org.eclipse.jdt.source"/>
-      <import feature="org.eclipse.pde.source"/>
-      <import feature="org.eclipse.rcp.source" version="4.3.0.v20130104-140745-7IAVA7Bs3QkjV0iZQpdvdBowpAQ1"/>
    </requires>
 
    <plugin
