@@ -19,7 +19,19 @@
    bugzillaComponentId=""
    testPlan="" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-     <description><![CDATA[The classic Eclipse download: the Eclipse Platform, Java Development Tools, and Plug-in Development Environment, including source and both user and programmer documentation. Please look also at the <a href="http://download.eclipse.org/eclipse/downloads/">Eclipse Project download page</a>.]]></description>
+     <description><![CDATA[
+The classic Eclipse download: the Eclipse Platform, Java Development Tools, and Plug-in Development Environment,
+including source and both user and programmer documentation.
+<br/>
+<b>New in M6:</b> Now also includes egit and MPC, see 
+<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=397896">bug 397896</a> for details.
+If you want the original Eclipse SDK instead, please get it from the 
+<a href="http://download.eclipse.org/eclipse/downloads/">Eclipse Project download page</a>.
+<br/>
+Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?component=package content&form_name=enter_bug&product=EPP">here</a>
+to file a bug against the new packaging / branding, or
+<a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">here</a> to file a bug against Eclipse Platform.
+]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
       <tester>Eclipse Project</tester>
