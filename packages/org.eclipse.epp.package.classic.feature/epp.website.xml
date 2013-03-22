@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
-  <!-- IMPORTANT: This is a fake package definition to show the Eclipse Classic, 
-       i.e. the Eclipse SDK download on the packages website. This package definition
-       is not used to build the Eclipse SDK download! -->
-
   <!-- Package Description information to be picked up by www.eclipse.org/packages -->
   <!-- PackageName is the title of your package 
        maintainer is the project or persons that are maintaining the package
@@ -14,9 +10,9 @@
    -->
   <packageMetaData
    packageName="Eclipse Classic 4.3 M6"
-   maintainer="Eclipse Platform Team"
+   maintainer="Eclipse Packaging Project"
    iconurl="http://www.eclipse.org/downloads/images/classic2.jpg"
-   bugzillaComponentId=""
+   bugzillaComponentId="classic-package"
    testPlan="" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
      <description><![CDATA[
@@ -34,7 +30,7 @@ to file a bug against the new packaging / branding, or
 ]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
-      <tester>Eclipse Project</tester>
+      <tester>Martin Oberhuber</tester>
     </packageTesters>
   </packageMetaData>
   <MoreInfo>
