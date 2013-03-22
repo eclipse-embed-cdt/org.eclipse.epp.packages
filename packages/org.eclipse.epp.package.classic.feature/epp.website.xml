@@ -16,17 +16,13 @@
    testPlan="" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
      <description><![CDATA[
-The classic Eclipse download: the Eclipse Platform, Java Development Tools, and Plug-in Development Environment,
-including source and both user and programmer documentation.
+The classic Eclipse download: the Eclipse Platform, Java Development Tools, and Plug-in Development Environment, including source and both user and programmer documentation.
 <br/>
-<b>New in M6:</b> Now also includes egit and MPC, see 
-<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=397896">bug 397896</a> for details.
-If you want the original Eclipse SDK instead, please get it from the 
-<a href="http://download.eclipse.org/eclipse/downloads/">Eclipse Project download page</a>.
+<b>New in M6:</b> Now also includes egit and MPC, see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=397896">bug 397896</a> for details.
 <br/>
-Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?component=package content&form_name=enter_bug&product=EPP">here</a>
-to file a bug against the new packaging / branding, or
-<a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">here</a> to file a bug against Eclipse Platform.
+If you want the original Eclipse SDK instead, please get it from the <a href="http://download.eclipse.org/eclipse/downloads/">Eclipse Project download page</a>.
+<br/>
+Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?component=package content&form_name=enter_bug&product=EPP">here</a> to file a bug against the new packaging / branding, or <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">here</a> to file a bug against Eclipse Platform.
 ]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
@@ -59,6 +55,6 @@ to file a bug against the new packaging / branding, or
   <rcp version="4.3" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-classic-4.3M6" />
+  <product name="eclipse-classic-kepler-M6" />
 
 </configuration>
