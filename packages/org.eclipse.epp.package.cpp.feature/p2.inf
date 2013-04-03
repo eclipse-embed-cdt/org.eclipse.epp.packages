@@ -76,3 +76,8 @@ requires.14.optional=true
 requires.15.namespace=org.eclipse.equinox.p2.iu
 requires.15.name=org.eclipse.linuxtools.lttng2.kernel.feature.group
 requires.15.optional=true
+
+#      <import feature="org.eclipse.linuxtools.gdbtrace"/>
+requires.16.namespace=org.eclipse.equinox.p2.iu
+requires.16.name=org.eclipse.linuxtools.gdbtrace.feature.group
+requires.16.optional=true
