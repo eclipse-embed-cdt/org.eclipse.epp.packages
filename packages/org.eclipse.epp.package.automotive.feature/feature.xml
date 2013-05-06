@@ -34,9 +34,9 @@
       <import feature="org.eclipse.draw2d"/>
       <import feature="org.eclipse.emf"/>
       <import feature="org.eclipse.emf.compare"/>
-      <!--  disabled Kepler M2
-      <import feature="org.eclipse.emf.compare.ui.capabilities"/>
-      -->
+      <import feature="org.eclipse.emf.compare.uml2"/>
+      <import feature="org.eclipse.emf.compare.ide.ui"/>
+      <import feature="org.eclipse.emf.compare.diagram.gmf"/>
       <import feature="org.eclipse.emf.mwe.core"/>
       <import feature="org.eclipse.emf.mwe.ui"/>
       <import feature="org.eclipse.emf.transaction"/>
@@ -54,9 +54,6 @@
       <import feature="org.eclipse.uml2"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.xpand"/>
-      <!-- disabled Kepler M2
-      <import feature="org.eclipse.xpand.incremental"/>
-      -->
       <import feature="org.eclipse.xpand.ui"/>
       <import feature="org.eclipse.xsd"/>
       <import feature="org.eclipse.xsd.ecore.converter"/>
