@@ -18,7 +18,6 @@
       <programArgsWin>--launcher.XXMaxPermSize
 256M</programArgsWin>
       <vmArgs>-Dosgi.requiredJavaVersion=1.6
--Dhelp.lucene.tokenizer=standard
 -Xms512m
 -Xmx2048m</vmArgs>
       <vmArgsLin>-XX:MaxPermSize=256m</vmArgsLin>
