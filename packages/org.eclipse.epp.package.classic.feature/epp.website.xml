@@ -9,7 +9,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse Classic 4.3 M6"
+   packageName="Eclipse Classic 4.3 M7"
    maintainer="Eclipse Packaging Project"
    iconurl="http://www.eclipse.org/downloads/images/classic2.jpg"
    bugzillaComponentId="classic-package"
@@ -18,7 +18,7 @@
      <description><![CDATA[
 The classic Eclipse download: the Eclipse Platform, Java Development Tools, and Plug-in Development Environment, including source and both user and programmer documentation.
 <br/>
-<b>New in M6:</b> Now also includes egit and MPC, see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=397896">bug 397896</a> for details.
+<b>New since M6:</b> Now also includes egit and MPC, see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=397896">bug 397896</a> for details.
 <br/>
 If you want the original Eclipse SDK instead, please get it from the <a href="http://download.eclipse.org/eclipse/downloads/">Eclipse Project download page</a>.
 <br/>
@@ -30,6 +30,9 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?component=package con
     </packageTesters>
   </packageMetaData>
   <MoreInfo>
+  <NewAndNoteworthy
+    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.3M7-201305020800/news/"
+    project="Eclipse 4.3M7" />
   <NewAndNoteworthy
     url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.3M6-201303141330/news/"
     project="Eclipse 4.3M6" />
@@ -55,6 +58,6 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?component=package con
   <rcp version="4.3" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-classic-kepler-M6" />
+  <product name="eclipse-classic-kepler-M7" />
 
 </configuration>
