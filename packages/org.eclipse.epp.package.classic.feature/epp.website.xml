@@ -9,7 +9,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse Classic 4.3 M7"
+   packageName="Eclipse Classic 4.3 RC1"
    maintainer="Eclipse Packaging Project"
    iconurl="http://www.eclipse.org/downloads/images/classic2.jpg"
    bugzillaComponentId="classic-package"
@@ -30,8 +30,8 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EPP&component
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.3M7-201305020800/news/"
-    project="Eclipse 4.3M7" />
+    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.3RC1-201305020800/news/"
+    project="Eclipse 4.3RC1" />
   <NewAndNoteworthy
     url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.3M6-201303141330/news/"
     project="Eclipse 4.3M6" />
@@ -57,6 +57,6 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EPP&component
   <rcp version="4.3" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-classic-kepler-M7" />
+  <product name="eclipse-classic-kepler-RC1" />
 
 </configuration>
