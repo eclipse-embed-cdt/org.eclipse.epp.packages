@@ -125,6 +125,7 @@
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.ptp.fortran"/>
+       <import feature="org.eclipse.ptp.sdm"/>
    </requires>
 
    <plugin
