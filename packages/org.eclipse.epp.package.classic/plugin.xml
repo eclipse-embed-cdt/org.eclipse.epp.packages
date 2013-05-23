@@ -6,7 +6,8 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
-            name="%productName">
+            name="%productName"
+            description="%productBlurb">
          <property
                name="preferenceCustomization"
                value="plugin_customization.ini">
@@ -283,6 +284,10 @@
             activityId="org.eclipse.team.egit"
             pattern="org\.eclipse\.egit\.core/.*GitProvider">
       </activityPatternBinding>
+      <activityPatternBinding
+            activityId="org.eclipse.team.egit"
+            pattern="org\.eclipse\.egit\.doc/.*">
+      </activityPatternBinding>
       <categoryActivityBinding
             activityId="org.eclipse.team.egit"
             categoryId="org.eclipse.categories.teamCategory">
@@ -333,7 +338,7 @@
    
    <extension
    		point="org.eclipse.help.base.activitySupport">
-      <support productId="org.eclipse.sdk.ide">
+      <support productId="org.eclipse.epp.package.classic.product">
          <showAllMessage>
             %helpActivitySupport.showAllMessage
          </showAllMessage>
@@ -342,6 +347,9 @@
                pluginId="org.eclipse.help.ui">
             %helpActivitySupport.documentMessage
          </documentMessage>
+         <localScopeCheckbox>
+            %helpActivitySupport.localScopeCheckbox
+         </localScopeCheckbox>
       </support>
    </extension>
    
@@ -361,7 +369,7 @@
    <extension
          point="org.eclipse.ui.activitySupport">
       <triggerPointAdvisorProductBinding
-            productId="org.eclipse.sdk.ide"
+            productId="org.eclipse.epp.package.classic.product"
             triggerPointAdvisorId="org.eclipse.ui.ide.triggerPointAdvisor"/>
    </extension>
    
