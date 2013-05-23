@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.eclipse.epp.package.classic.feature"
-      label="EPP Classic/SDK Feature"
+      label="Eclipse Standard/SDK Feature"
       version="2.0.0.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.classic">
 
    <description>
-      The classic Eclipse download: the Eclipse Platform, Java Development Tools, and Plug-in Development Environment, and EGit, including source and both user and programmer documentation.
+      The Eclipse Platform, and all the tools needed to develop and debug it: Java and Plug-in Development Tooling, Git and CVS support, including source and developer documentation.
    </description>
 
    <license url="license.html">

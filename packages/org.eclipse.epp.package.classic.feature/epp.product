@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse Classic/SDK" uid="epp.package.classic" id="org.eclipse.epp.package.classic.product" application="org.eclipse.ui.ide.workbench" version="2.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse Standard/SDK" uid="epp.package.classic" id="org.eclipse.epp.package.classic.product" application="org.eclipse.ui.ide.workbench" version="2.0.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <text>
@@ -25,7 +25,7 @@
 -XX:MaxPermSize=256m</vmArgsMac>
    </launcherArgs>
 
-   <windowImages i16="/org.eclipse.epp.package.classic/eclipse.png" i32="/org.eclipse.epp.package.classic/eclipse32.png" i48="/org.eclipse.epp.package.classic/eclipse48.png"/>
+   <windowImages i16="/org.eclipse.epp.package.classic/eclipse16.png" i32="/org.eclipse.epp.package.classic/eclipse32.png" i48="/org.eclipse.epp.package.classic/eclipse48.png"/>
 
    <splash
       startupProgressRect="0,280,455,15"
