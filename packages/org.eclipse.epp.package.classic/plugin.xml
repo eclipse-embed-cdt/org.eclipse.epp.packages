@@ -265,6 +265,35 @@
        <defaultEnablement
              id="org.eclipse.antDevelopment">
        </defaultEnablement>
+      
+      <!-- A Capability definition to hide Egit support in an Eclipse product. -->
+      <!-- The recommended workflow to enable Egit support in a product is:    -->
+      <!-- Open Perspective : Show All : Git Repository Exploring (enable)     -->
+      <activity
+            name="%activity.team.egit"
+            description="%activity.team.egit.desc"
+            id="org.eclipse.team.egit">
+      </activity>
+      <!-- Only bind org.* due to bug 405237: team.main must remain unbound -->
+      <activityPatternBinding
+            activityId="org.eclipse.team.egit"
+            pattern="org\.eclipse\.egit\.ui/org.*">
+      </activityPatternBinding>
+      <activityPatternBinding
+            activityId="org.eclipse.team.egit"
+            pattern="org\.eclipse\.egit\.core/.*GitProvider">
+      </activityPatternBinding>
+      <categoryActivityBinding
+            activityId="org.eclipse.team.egit"
+            categoryId="org.eclipse.categories.teamCategory">
+      </categoryActivityBinding>
+      <activityRequirementBinding
+            activityId="org.eclipse.team.egit"
+            requiredActivityId="org.eclipse.team">
+      </activityRequirementBinding>
+      <defaultEnablement
+            id="org.eclipse.team.egit">
+      </defaultEnablement>
    </extension>
    
    <extension
