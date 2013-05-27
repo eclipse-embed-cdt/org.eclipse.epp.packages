@@ -1,6 +1,12 @@
 # tell pde.build not to generate start levels
 org.eclipse.pde.build.append.startlevels=false
 
+# remove inclusion of javax.transaction - see bug #409122 for further information
+requires.0.namespace = org.eclipse.equinox.p2.iu
+requires.0.name = javax.transaction
+requires.0.min = 0
+requires.0.max = 0
+
 # add requirement on org.eclipse.platform.ide
 requires.1.namespace=org.eclipse.equinox.p2.iu
 requires.1.name=org.eclipse.platform.ide
