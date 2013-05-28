@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse Standard/SDK" uid="epp.package.classic" id="org.eclipse.epp.package.classic.product" application="org.eclipse.ui.ide.workbench" version="2.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse Standard/SDK" uid="epp.package.standard" id="org.eclipse.epp.package.standard.product" application="org.eclipse.ui.ide.workbench" version="2.0.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <text>
@@ -13,7 +13,7 @@
    </configIni>
 
    <launcherArgs>
-      <programArgs>-product org.eclipse.epp.package.classic.product
+      <programArgs>-product org.eclipse.epp.package.standard.product
 --launcher.defaultAction openFile</programArgs>
       <programArgsWin>--launcher.XXMaxPermSize
 256M</programArgsWin>
@@ -25,7 +25,7 @@
 -XX:MaxPermSize=256m</vmArgsMac>
    </launcherArgs>
 
-   <windowImages i16="/org.eclipse.epp.package.classic/eclipse16.png" i32="/org.eclipse.epp.package.classic/eclipse32.png" i48="/org.eclipse.epp.package.classic/eclipse48.png"/>
+   <windowImages i16="/org.eclipse.epp.package.standard/eclipse16.png" i32="/org.eclipse.epp.package.standard/eclipse32.png" i48="/org.eclipse.epp.package.standard/eclipse48.png"/>
 
    <splash
       startupProgressRect="0,280,455,15"
@@ -48,11 +48,11 @@
    </vm>
 
    <plugins>
-      <plugin id="org.eclipse.epp.package.classic"/>
+      <plugin id="org.eclipse.epp.package.standard"/>
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.classic.feature" version="2.0.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.standard.feature" version="2.0.0.qualifier"/>
    </features>
 
 

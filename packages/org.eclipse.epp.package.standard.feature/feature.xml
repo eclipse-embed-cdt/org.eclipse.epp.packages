@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.eclipse.epp.package.classic.feature"
+      id="org.eclipse.epp.package.standard.feature"
       label="Eclipse Standard/SDK Feature"
       version="2.0.0.qualifier"
       provider-name="Eclipse Packaging Project"
-      plugin="org.eclipse.epp.package.classic">
+      plugin="org.eclipse.epp.package.standard">
 
    <description>
       The Eclipse Platform, and all the tools needed to develop and debug it: Java and Plug-in Development Tooling, Git and CVS support, including source and developer documentation.
@@ -44,7 +44,7 @@
    </requires>
 
    <plugin
-         id="org.eclipse.epp.package.classic"
+         id="org.eclipse.epp.package.standard"
          download-size="0"
          install-size="0"
          version="0.0.0"/>

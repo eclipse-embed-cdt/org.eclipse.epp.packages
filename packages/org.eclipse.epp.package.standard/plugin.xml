@@ -87,7 +87,7 @@
          point="org.eclipse.ui.intro">
       <introProductBinding
             introId="org.eclipse.ui.intro.universal"
-            productId="org.eclipse.epp.package.classic.product">
+            productId="org.eclipse.epp.package.standard.product">
       </introProductBinding>
    </extension>
    
@@ -338,7 +338,7 @@
    
    <extension
    		point="org.eclipse.help.base.activitySupport">
-      <support productId="org.eclipse.epp.package.classic.product">
+      <support productId="org.eclipse.epp.package.standard.product">
          <showAllMessage>
             %helpActivitySupport.showAllMessage
          </showAllMessage>
@@ -369,7 +369,7 @@
    <extension
          point="org.eclipse.ui.activitySupport">
       <triggerPointAdvisorProductBinding
-            productId="org.eclipse.epp.package.classic.product"
+            productId="org.eclipse.epp.package.standard.product"
             triggerPointAdvisorId="org.eclipse.ui.ide.triggerPointAdvisor"/>
    </extension>
    
