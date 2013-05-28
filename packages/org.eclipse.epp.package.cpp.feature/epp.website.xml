@@ -45,6 +45,6 @@
 	<rcp version="4.3.0" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-cpp-kepler-RC1" />
+	<product name="eclipse-cpp-kepler-RC2" />
 
 </configuration>
