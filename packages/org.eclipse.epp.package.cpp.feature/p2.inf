@@ -17,9 +17,9 @@ requires.3.namespace=org.eclipse.equinox.p2.iu
 requires.3.name=org.eclipse.linuxtools.cdt.libhover.devhelp.feature.feature.group
 requires.3.optional=true
 
-#      <import feature="org.eclipse.linuxtools.changelog"/>
+#      <import feature="org.eclipse.linuxtools.changelog.c"/>
 requires.4.namespace=org.eclipse.equinox.p2.iu
-requires.4.name=org.eclipse.linuxtools.changelog.feature.group
+requires.4.name=org.eclipse.linuxtools.changelog.c.feature.group
 requires.4.optional=true
 
 #      <import feature="org.eclipse.linuxtools.gprof.feature"/>
