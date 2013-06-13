@@ -17,12 +17,17 @@
 --launcher.defaultAction openFile</programArgs>
       <programArgsWin>--launcher.XXMaxPermSize
 256M</programArgsWin>
-      <vmArgs>-Dosgi.requiredJavaVersion=1.6
+      <vmArgs>-Dosgi.requiredJavaVersion=1.6</vmArgs>
+      <vmArgsLin>-Xms512m
+-Xmx2048m
+-XX:MaxPermSize=256m</vmArgsLin>
+      <vmArgsMac>-Dorg.eclipse.swt.internal.carbon.smallFonts
+-XstartOnFirstThread
 -Xms512m
--Xmx2048m</vmArgs>
-      <vmArgsLin>-XX:MaxPermSize=256m</vmArgsLin>
-      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+-Xmx2048m
 -XX:MaxPermSize=256m</vmArgsMac>
+      <vmArgsSol>-Xms512m
+-Xmx2048m</vmArgsSol>
       <vmArgsWin>-Xms512m
 -Xmx1024m</vmArgsWin>
    </launcherArgs>
