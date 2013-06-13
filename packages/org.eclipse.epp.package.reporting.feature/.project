@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>org.eclipse.epp.package.reporting.feature</name>
-	<comment></comment>
+	<comment></comment> 
 	<projects>
 	</projects>
 	<buildSpec>
