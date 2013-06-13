@@ -23,6 +23,8 @@
       <vmArgsLin>-XX:MaxPermSize=256m</vmArgsLin>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
 -XX:MaxPermSize=256m</vmArgsMac>
+      <vmArgsWin>-Xms512m
+-Xmx1024m</vmArgsWin>
    </launcherArgs>
 
    <windowImages i16="/org.eclipse.epp.package.parallel/eclipse.png" i32="/org.eclipse.epp.package.parallel/eclipse32.png" i48="/org.eclipse.epp.package.parallel/eclipse48.png"/>
