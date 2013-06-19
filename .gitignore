@@ -12,3 +12,4 @@ Icon?
 *.swp
 Thumbs.db
 *.tmp
+target/

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2012, 2013 Eclipse Foundation and others.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the Eclipse Distribution License v1.0
+  which accompanies this distribution, and is available at
+  http://www.eclipse.org/org/documents/edl-v10.php
+
+  Contributors:
+     Igor Fedorenko - initial implementation
+-->
+
+<project
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+  xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.eclipse.epp</groupId>
+  <artifactId>epp-parent</artifactId>
+  <version>2.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <properties>
+    <tycho.version>0.18.0</tycho.version>
+  </properties>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>tycho</id>
+      <url>https://oss.sonatype.org/content/groups/public/</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <repositories>
+    <repository>
+      <id>eclipse</id>
+      <layout>p2</layout>
+      <url>http://download.eclipse.org/releases/kepler</url>
+    </repository>
+  </repositories>
+
+  <modules>
+    <module>features/org.eclipse.epp.allpackages.feature</module>
+
+    <module>packages/org.eclipse.epp.package.common</module>
+    <module>packages/org.eclipse.epp.package.common.feature</module>
+
+    <module>packages/org.eclipse.epp.package.automotive</module>
+    <module>packages/org.eclipse.epp.package.automotive.feature</module>
+    <module>packages/org.eclipse.epp.package.automotive.product</module>
+
+    <module>packages/org.eclipse.epp.package.cpp</module>
+    <module>packages/org.eclipse.epp.package.cpp.feature</module>
+    <module>packages/org.eclipse.epp.package.cpp.product</module>
+
+    <module>packages/org.eclipse.epp.package.dsl</module>
+    <module>packages/org.eclipse.epp.package.dsl.feature</module>
+    <module>packages/org.eclipse.epp.package.dsl.product</module>
+
+    <module>packages/org.eclipse.epp.package.java</module>
+    <module>packages/org.eclipse.epp.package.java.feature</module>
+    <module>packages/org.eclipse.epp.package.java.product</module>
+
+    <module>packages/org.eclipse.epp.package.jee</module>
+    <module>packages/org.eclipse.epp.package.jee.feature</module>
+    <module>packages/org.eclipse.epp.package.jee.product</module>
+
+    <module>packages/org.eclipse.epp.package.mobile</module>
+    <module>packages/org.eclipse.epp.package.mobile.feature</module>
+    <module>packages/org.eclipse.epp.package.mobile.product</module>
+
+    <module>packages/org.eclipse.epp.package.modeling</module>
+    <module>packages/org.eclipse.epp.package.modeling.feature</module>
+    <module>packages/org.eclipse.epp.package.modeling.product</module>
+
+    <!--
+    <module>packages/org.eclipse.epp.package.parallel</module>
+    <module>packages/org.eclipse.epp.package.parallel.feature</module>
+    <module>packages/org.eclipse.epp.package.parallel.product</module>
+    -->
+
+    <module>packages/org.eclipse.epp.package.rcp</module>
+    <module>packages/org.eclipse.epp.package.rcp.feature</module>
+    <module>packages/org.eclipse.epp.package.rcp.product</module>
+
+    <module>packages/org.eclipse.epp.package.reporting</module>
+    <module>packages/org.eclipse.epp.package.reporting.feature</module>
+    <module>packages/org.eclipse.epp.package.reporting.product</module>
+
+    <module>packages/org.eclipse.epp.package.scout</module>
+    <module>packages/org.eclipse.epp.package.scout.feature</module>
+    <module>packages/org.eclipse.epp.package.scout.product</module>
+
+    <module>packages/org.eclipse.epp.package.testing</module>
+    <module>packages/org.eclipse.epp.package.testing.feature</module>
+    <module>packages/org.eclipse.epp.package.testing.product</module>
+  </modules>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho.version}</version>
+        <extensions>true</extensions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>target-platform-configuration</artifactId>
+        <configuration>
+          <environments>
+            <environment>
+              <os>linux</os>
+              <ws>gtk</ws>
+              <arch>x86</arch>
+            </environment>
+            <environment>
+              <os>linux</os>
+              <ws>gtk</ws>
+              <arch>x86_64</arch>
+            </environment>
+            <environment>
+              <os>win32</os>
+              <ws>win32</ws>
+              <arch>x86</arch>
+            </environment>
+            <environment>
+              <os>win32</os>
+              <ws>win32</ws>
+              <arch>x86_64</arch>
+            </environment>
+            <environment>
+              <os>macosx</os>
+              <ws>cocoa</ws>
+              <arch>x86_64</arch>
+            </environment>
+          </environments>
+        </configuration>
+      </plugin>
+    </plugins>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>target-platform-configuration</artifactId>
+          <version>${tycho.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>tycho-compiler-plugin</artifactId>
+          <version>${tycho.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>tycho-packaging-plugin</artifactId>
+          <version>${tycho.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>tycho-surefire-plugin</artifactId>
+          <version>${tycho.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>tycho-source-plugin</artifactId>
+          <version>${tycho.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>tycho-p2-director-plugin</artifactId>
+          <version>${tycho.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+</project>
