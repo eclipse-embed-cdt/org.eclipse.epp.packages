@@ -32,16 +32,16 @@
     project="Eclipse Modeling Framework" />
   <NewAndNoteworthy
     url="http://wiki.eclipse.org/EMF_Compare_1.2.0_New_And_Noteworthy"
-    project="EMF Compare" />     
+    project="EMF Compare" />
   <NewAndNoteworthy
     url="http://wiki.eclipse.org/GMF_New_and_Noteworthy"
     project="Graphical Modeling Framework" />
   <NewAndNoteworthy
     url="http://wiki.eclipse.org/ATL_3.2.0_New_and_Noteworthy"
-    project="M2M ATL" />            
+    project="M2M ATL" />
   <NewAndNoteworthy
     url="http://wiki.eclipse.org/MDT/OCL/New_and_Noteworthy/Juno"
-    project="MDT OCL" />    
+    project="MDT OCL" />
   </MoreInfo>
 
   <!-- version, the RCP version to build. This is used to determine the file 
@@ -49,6 +49,6 @@
   <rcp version="4.3.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-modeling-kepler-RC4" />
+  <product name="eclipse-modeling-kepler-R" />
 
 </configuration>

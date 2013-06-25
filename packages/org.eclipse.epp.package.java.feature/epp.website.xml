@@ -23,13 +23,13 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/R-4.2-201206081400/news/index.html"
+    url="http://download.eclipse.org/eclipse/downloads/drops4/R-4.3-201306052000/news/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
   <NewAndNoteworthy
-    url="http://wiki.eclipse.org/EGit/New_and_Noteworthy/2.0"
+    url="http://wiki.eclipse.org/EGit/New_and_Noteworthy/3.0"
     project="EGit" />
   <NewAndNoteworthy
     url="http://eclipse.org/recommenders/documentation/changes.html"
@@ -42,6 +42,6 @@
   <rcp version="4.3.0" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-java-kepler-RC4" />
+	<product name="eclipse-java-kepler-R" />
 
 </configuration>

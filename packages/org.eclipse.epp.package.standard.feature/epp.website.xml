@@ -9,7 +9,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse Standard 4.3 RC4"
+   packageName="Eclipse Standard 4.3"
    maintainer="Eclipse Packaging Project"
    iconurl="http://www.eclipse.org/downloads/images/classic2.jpg"
    bugzillaComponentId="classic-package"
@@ -27,33 +27,15 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">her
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.3RC1-201305020800/news/"
-    project="Eclipse 4.3RC1" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.3M6-201303141330/news/"
-    project="Eclipse 4.3M6" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.3M5a-201302041400/news/"
-    project="Eclipse 4.3M5a" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.3M4-201212140730/news/"
-    project="Eclipse 4.3M4" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.3M3-201210312000/news/"
-    project="Eclipse 4.3M3" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.3M2-201209201300/news/"
-    project="Eclipse 4.3M2" />
-  <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.3M1-201208101300/news/"
-    project="Eclipse 4.3M1" />
+    url="http://download.eclipse.org/eclipse/downloads/drops4/R-4.3-201306052000/news/"
+    project="Eclipse Platform" />
   </MoreInfo>
-    
+
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
   <rcp version="4.3" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-standard-kepler-RC4" />
+  <product name="eclipse-standard-kepler-R" />
 
 </configuration>

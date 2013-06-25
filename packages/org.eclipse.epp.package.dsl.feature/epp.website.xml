@@ -21,6 +21,9 @@
     </packageTesters>
   </packageMetaData>
   <MoreInfo>
+  <NewAndNoteworthy
+    url="http://download.eclipse.org/eclipse/downloads/drops4/R-4.3-201306052000/news/"
+    project="Eclipse Platform" />
   </MoreInfo>
 
   <!-- version, the RCP version to build. This is used to determine the file 
@@ -28,6 +31,6 @@
   <rcp version="4.3.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-dsl-kepler-RC4" />
+  <product name="eclipse-dsl-kepler-R" />
 
 </configuration>
