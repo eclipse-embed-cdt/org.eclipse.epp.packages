@@ -22,7 +22,7 @@ Gregoire Dupe
 	<xsl:template match="repository/properties">
 		<properties size='{@size+1}'>
 			<xsl:copy-of select="property" />
-			<property name='p2.statsURI' value='http://download.eclipse.org/stats/technology/epp/packages/juno' />
+			<property name='p2.statsURI' value='http://download.eclipse.org/stats/technology/epp/packages/kepler' />
 		</properties>
 	</xsl:template>
 
@@ -70,6 +70,10 @@ Gregoire Dupe
 		<xsl:call-template name="artifact_properties"/>
 	</xsl:template>
 	
+    <xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.standard']/properties">
+        <xsl:call-template name="artifact_properties"/>
+    </xsl:template>
+
 	<xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.testing']/properties">
 		<xsl:call-template name="artifact_properties"/>
 	</xsl:template>
@@ -129,6 +133,10 @@ Gregoire Dupe
 	<xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.scout.feature']/properties">
 		<xsl:call-template name="artifact_properties_feature"/>
 	</xsl:template>
+
+    <xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.standard.feature']/properties">
+        <xsl:call-template name="artifact_properties_feature"/>
+    </xsl:template>
 	
 	<xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.testing.feature']/properties">
 		<xsl:call-template name="artifact_properties_feature"/>
