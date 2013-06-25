@@ -22,26 +22,14 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://wiki.eclipse.org/Acceleo/ReleaseReview/Indigo#New_and_noteworthy"
-    project="Acceleo" />
+      url="http://projects.eclipse.org/projects/modeling.emft.ecoretools/releases/1.2.0"
+   project="EcoreTools" />
   <NewAndNoteworthy
-   url="http://wiki.eclipse.org/EEF_New_and_Noteworthy"
-   project="EEF" />
-  <NewAndNoteworthy
-    url="http://wiki.eclipse.org/EMF#New_.26_Noteworthy"
-    project="Eclipse Modeling Framework" />
-  <NewAndNoteworthy
-    url="http://wiki.eclipse.org/EMF_Compare_1.2.0_New_And_Noteworthy"
+      url="http://wiki.eclipse.org/EMF_Compare/ReleaseReview/Kepler#New_and_noteworthy"
     project="EMF Compare" />
   <NewAndNoteworthy
-    url="http://wiki.eclipse.org/GMF_New_and_Noteworthy"
-    project="Graphical Modeling Framework" />
-  <NewAndNoteworthy
-    url="http://wiki.eclipse.org/ATL_3.2.0_New_and_Noteworthy"
-    project="M2M ATL" />
-  <NewAndNoteworthy
-    url="http://wiki.eclipse.org/MDT/OCL/New_and_Noteworthy/Juno"
-    project="MDT OCL" />
+      url="http://projects.eclipse.org/projects/modeling.mmt.atl/releases/3.4.0"
+    project="ATL" />
   </MoreInfo>
 
   <!-- version, the RCP version to build. This is used to determine the file 
