@@ -36,6 +36,9 @@
     url="http://wiki.eclipse.org/EGit/New_and_Noteworthy/3.0"
     project="EGit" />
   <NewAndNoteworthy
+    url="http://wiki.eclipse.org/M2E-WTP/New_and_Noteworthy/1.0.0"
+    project="M2E-WTP" />
+  <NewAndNoteworthy
     url="http://www.eclipse.org/tm/"
     project="Eclipse Target Management (RSE)" />
   </MoreInfo>
