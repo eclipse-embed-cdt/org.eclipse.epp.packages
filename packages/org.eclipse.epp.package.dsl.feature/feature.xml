@@ -40,7 +40,6 @@
       <import feature="org.eclipse.epp.mpc"/>
       <import feature="org.eclipse.m2e.feature"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
-      <import feature="org.eclipse.recommenders.feature.rcp"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
    </requires>
 
