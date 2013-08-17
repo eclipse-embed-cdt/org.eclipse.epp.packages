@@ -65,19 +65,13 @@
     <module>packages/org.eclipse.epp.package.jee.feature</module>
     <module>packages/org.eclipse.epp.package.jee.product</module>
 
-    <module>packages/org.eclipse.epp.package.mobile</module>
-    <module>packages/org.eclipse.epp.package.mobile.feature</module>
-    <module>packages/org.eclipse.epp.package.mobile.product</module>
-
     <module>packages/org.eclipse.epp.package.modeling</module>
     <module>packages/org.eclipse.epp.package.modeling.feature</module>
     <module>packages/org.eclipse.epp.package.modeling.product</module>
 
-    <!--
     <module>packages/org.eclipse.epp.package.parallel</module>
     <module>packages/org.eclipse.epp.package.parallel.feature</module>
     <module>packages/org.eclipse.epp.package.parallel.product</module>
-    -->
 
     <module>packages/org.eclipse.epp.package.rcp</module>
     <module>packages/org.eclipse.epp.package.rcp.feature</module>
