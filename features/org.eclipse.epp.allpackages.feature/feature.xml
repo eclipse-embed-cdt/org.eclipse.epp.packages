@@ -66,10 +66,6 @@
          version="0.0.0"/>
 
    <includes
-         id="org.eclipse.epp.package.mobile.feature"
-         version="0.0.0"/>
-
-   <includes
          id="org.eclipse.epp.package.dsl.feature"
          version="0.0.0"/>
 
