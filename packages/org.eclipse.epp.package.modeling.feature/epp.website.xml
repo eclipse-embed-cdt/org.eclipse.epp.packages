@@ -25,7 +25,7 @@
       url="http://projects.eclipse.org/projects/modeling.emft.ecoretools/releases/1.2.0"
    project="EcoreTools" />
   <NewAndNoteworthy
-      url="http://wiki.eclipse.org/EMF_Compare/ReleaseReview/Kepler#New_and_noteworthy"
+      url="http://wiki.eclipse.org/EMF_Compare/ReleaseReview/Luna#New_and_noteworthy"
     project="EMF Compare" />
   <NewAndNoteworthy
       url="http://projects.eclipse.org/projects/modeling.mmt.atl/releases/3.4.0"
@@ -37,6 +37,6 @@
   <rcp version="4.3.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-modeling-kepler-R" />
+  <product name="eclipse-modeling-luna-M0" />
 
 </configuration>

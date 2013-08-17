@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.jee.feature"
       label="%featureName"
-      version="2.0.0.qualifier"
+      version="2.1.0.qualifier"
       provider-name="%providerName"
       plugin="org.eclipse.epp.package.jee">
 
@@ -19,7 +19,7 @@
    </license>
 
    <url>
-      <discovery label="%discoverySiteName" url="http://download.eclipse.org/releases/kepler/"/>
+      <discovery label="%discoverySiteName" url="http://download.eclipse.org/releases/luna/"/>
    </url>
 
    <includes

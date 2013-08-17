@@ -61,7 +61,7 @@ function pullAllConfigFiles {
     FILEPATH=`echo ${II}     | cut -d "," -f 4`
     VERSION=`echo ${II}      | cut -d "," -f 5`
     FILENAME=`echo ${II}     | cut -d "," -f 6`
-    
+
     if [ "${REPTYPE}" = "CVS" ]; then
       cvsCheckout ${REPSTRING} ${FILEPATH} ${VERSION} ${2}/${FILENAME}
     elif [ "${REPTYPE}" = "GIT" ]; then

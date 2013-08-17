@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.dsl.feature"
       label="EPP DSL Feature"
-      version="2.0.0.qualifier"
+      version="2.1.0.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.dsl">
 
@@ -15,8 +15,8 @@
    </license>
 
    <url>
-      <discovery label="Kepler" url="http://download.eclipse.org/releases/kepler/"/>
-      <discovery label="Eclipse Platform 4.3" url="http://download.eclipse.org/eclipse/updates/4.3"/>
+      <discovery label="Luna" url="http://download.eclipse.org/releases/luna/"/>
+      <discovery label="Eclipse Platform 4.4" url="http://download.eclipse.org/eclipse/updates/4.4"/>
    </url>
 
    <includes

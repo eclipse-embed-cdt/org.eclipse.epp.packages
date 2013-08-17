@@ -9,7 +9,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse Standard 4.3"
+   packageName="Eclipse Standard 4.4"
    maintainer="Eclipse Packaging Project"
    iconurl="http://www.eclipse.org/downloads/images/classic2.jpg"
    bugzillaComponentId="classic-package"
@@ -33,9 +33,9 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">her
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="4.3" />
+  <rcp version="4.4" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-standard-kepler-R" />
+  <product name="eclipse-standard-luna-M0" />
 
 </configuration>

@@ -24,7 +24,6 @@
   <NewAndNoteworthy
     url="http://wiki.eclipse.org/PTP/new_and_noteworthy/7.0.0"
     project="Eclipse PTP" />
-    <!--  Update for 4.2 final-->
   <NewAndNoteworthy
     url="http://download.eclipse.org/eclipse/downloads/drops4/R-4.2-201206081400/news/index.html"
     project="Eclipse Platform" />
@@ -45,6 +44,6 @@
 	<rcp version="4.3.0" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-parallel-kepler-R" />
+	<product name="eclipse-parallel-luna-M0" />
 
 </configuration>

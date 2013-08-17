@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RELEASETRAIN=kepler
+RELEASETRAIN=luna
 RELEASEDIRECTORY=/home/data/httpd/download.eclipse.org/technology/epp/downloads/release
 TESTDIRECTORY=/shared/technology/epp/epp_build/${RELEASETRAIN}/download
 CURRENTDIR=${PWD}

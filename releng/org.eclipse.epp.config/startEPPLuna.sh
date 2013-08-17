@@ -14,7 +14,7 @@ FILESYSTEM_BASE="file:///home/data/httpd/download.eclipse.org"
 if [ ${BUILDLOCATION} = "server" ]
 then
    BASE_URL=${FILESYSTEM_BASE}
-   ECLIPSE="/shared/technology/epp/epp_build/kepler/eclipse/eclipse"
+   ECLIPSE="/shared/technology/epp/epp_build/luna/eclipse/eclipse"
    JRE="/usr/local/bin/java"
  else
    BASE_URL=${HTTP_BASE}
@@ -25,8 +25,8 @@ fi
 ###############################################################################
 
 # variables to adjust
-BASE_DIR=/shared/technology/epp/epp_build/kepler
-RELEASE_NAME="-kepler-RC4"
+BASE_DIR=/shared/technology/epp/epp_build/luna
+RELEASE_NAME="-luna-M1"
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
@@ -35,25 +35,25 @@ STATUSFILENAME="status.stub"
 GITURL="/gitroot/epp/org.eclipse.epp.packages.git"
 GITBRANCH="HEAD"
 GITPROJECTPATH="packages"
-DOWNLOAD_BASE_URL="http://build.eclipse.org/technology/epp/epp_build/kepler/download"
+DOWNLOAD_BASE_URL="http://build.eclipse.org/technology/epp/epp_build/luna/download"
 
 # directories and files
 DOWNLOAD_BASE_DIR="${BASE_DIR}/download"
 BUILD_DIR="${BASE_DIR}/build"
 DOWNLOAD_DIR="${DOWNLOAD_BASE_DIR}/${START_TIME}"
-EPPREPO_INPUT_DIR="/shared/technology/epp/epp_repo/kepler/epp.build/buildresult/org.eclipse.epp.allpackages.feature_2.0.0-eclipse.feature/site.p2"
+EPPREPO_INPUT_DIR="/shared/technology/epp/epp_repo/luna/epp.build/buildresult/org.eclipse.epp.allpackages.feature_2.1.0-eclipse.feature/site.p2"
 EPPREPO_WORKINGCOPY_DIR="${DOWNLOAD_DIR}/repository"
 MARKERFILE="${DOWNLOAD_DIR}/${MARKERFILENAME}"
 STATUSFILE="${DOWNLOAD_DIR}/${STATUSFILENAME}"
 LOGFILE="${DOWNLOAD_DIR}/build.log"
-LOCKFILE="/tmp/epp.build.kepler.lock"
+LOCKFILE="/tmp/epp.build.luna.lock"
 
 # repository locations
-#REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/4.3.x/"
-#REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/4.3milestones/"
-#REPO_SIMRELEASE_URL="${BASE_URL}/releases/kepler/"
+#REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/4.4.x/"
+#REPO_ECLIPSE_URL="${BASE_URL}/eclipse/updates/4.4milestones/"
+#REPO_SIMRELEASE_URL="${BASE_URL}/releases/luna/"
 REPO_STAGING_URL="${BASE_URL}/releases/staging/"
-#REPO_EPP_URL="${BASE_URL}/technology/epp/packages/kepler"
+#REPO_EPP_URL="${BASE_URL}/technology/epp/packages/luna"
 #REPO_EPP_URL="file://${EPPREPO_INPUT_DIR}"
 REPO_EPP_WORKINGCOPY_URL="file://${EPPREPO_WORKINGCOPY_DIR}"
 
@@ -199,7 +199,7 @@ do
   echo "......adding $FILE"
   cat ${FILE} >>${DOWNLOAD_BASE_DIR}/${STATUSFILENAME}
 done
-cp -a --no-preserve=ownership ${DOWNLOAD_BASE_DIR}/${STATUSFILENAME} /home/data/httpd/download.eclipse.org/technology/epp/downloads/testing/statusKepler.stub
+cp -a --no-preserve=ownership ${DOWNLOAD_BASE_DIR}/${STATUSFILENAME} /home/data/httpd/download.eclipse.org/technology/epp/downloads/testing/statusLuna.stub
 
 
 

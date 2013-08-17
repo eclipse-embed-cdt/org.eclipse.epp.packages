@@ -43,6 +43,6 @@
   <rcp version="4.3.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-reporting-kepler-R" />
+  <product name="eclipse-reporting-luna-M0" />
 
 </configuration>

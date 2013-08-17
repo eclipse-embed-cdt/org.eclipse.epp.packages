@@ -41,7 +41,7 @@
 	            latestversiononly="false"/>
 	        <source>
 	                <sort>
-			            <fileset dir="/tmp/juno">
+			            <fileset dir="/tmp/luna">
     						<include name="*"/>
 						</fileset>
 						<reverse xmlns="antlib:org.apache.tools.ant.types.resources.comparators">
@@ -49,7 +49,7 @@
 						</reverse>
 	                </sort>
 	        </source>
-	        <destination location="${targetRepository}" name="EPP Juno Package Repository" append="true" compressed="true" />
+	        <destination location="${targetRepository}" name="EPP Luna Package Repository" append="true" compressed="true" />
 	    </p2.mirror>
 	</target>
 
