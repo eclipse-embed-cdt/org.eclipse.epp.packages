@@ -92,6 +92,9 @@
       <import feature="org.eclipse.m2e.feature"/>
       <import feature="org.eclipse.m2e.logback.feature"/>
       <import feature="org.eclipse.m2e.wtp.feature"/>
+      <import feature="org.eclipse.m2e.wtp.jaxrs.feature"/>
+      <import feature="org.eclipse.m2e.wtp.jpa.feature"/>
+      <import feature="org.eclipse.m2e.wtp.jsf.feature"/>
 
       <import feature="org.eclipse.epp.package.common.feature"/>
    </requires>
