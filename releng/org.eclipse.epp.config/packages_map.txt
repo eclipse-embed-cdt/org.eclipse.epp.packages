@@ -1,0 +1,45 @@
+# EPP package definitions
+# name, [CVS,GIT], repository string, path to file, version [HEAD], EPP local filename
+
+# package definitions provided by EPP
+## 1st: EPP package definition
+## 2nd: feature.xml renamed
+
+automotive,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.automotive.feature/epp.website.xml,HEAD,automotive.xml
+automotive,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.automotive.feature/feature.xml,HEAD,automotive.feature.xml
+
+cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/epp.website.xml,HEAD,cpp.xml
+cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/feature.xml,HEAD,cpp.feature.xml
+
+#classic,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.classic.feature/epp.website.xml,HEAD,classic.xml
+#classic,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.classic.feature/feature.xml,HEAD,classic.feature.xml
+
+dsl,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.dsl.feature/epp.website.xml,HEAD,dsl.xml
+dsl,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.dsl.feature/feature.xml,HEAD,dsl.feature.xml
+
+java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/epp.website.xml,HEAD,java.xml
+java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/feature.xml,HEAD,java.feature.xml
+
+jee,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.jee.feature/epp.website.xml,HEAD,jee.xml
+jee,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.jee.feature/feature.xml,HEAD,jee.feature.xml
+
+modeling,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.modeling.feature/epp.website.xml,HEAD,modeling.xml
+modeling,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.modeling.feature/feature.xml,HEAD,modeling.feature.xml
+
+parallel,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.parallel.feature/epp.website.xml,HEAD,parallel.xml
+parallel,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.parallel.feature/feature.xml,HEAD,parallel.feature.xml
+
+rcp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rcp.feature/epp.website.xml,HEAD,rcp.xml
+rcp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rcp.feature/feature.xml,HEAD,rcp.feature.xml
+
+reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.feature/epp.website.xml,HEAD,reporting.xml
+reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.feature/feature.xml,HEAD,reporting.feature.xml
+
+scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.feature/epp.website.xml,HEAD,scout.xml
+scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.feature/feature.xml,HEAD,scout.feature.xml
+
+standard,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.standard.feature/epp.website.xml,HEAD,standard.xml
+standard,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.standard.feature/feature.xml,HEAD,standard.feature.xml
+
+testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.feature/epp.website.xml,HEAD,testing.xml
+testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.feature/feature.xml,HEAD,testing.feature.xml
