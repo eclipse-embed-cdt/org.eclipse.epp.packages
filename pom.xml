@@ -21,13 +21,18 @@
   <packaging>pom</packaging>
 
   <properties>
-    <tycho.version>0.18.0</tycho.version>
+    <tycho.version>0.18.1</tycho.version>
+    <cbi.version>1.0.4</cbi.version>
   </properties>
 
   <pluginRepositories>
     <pluginRepository>
       <id>tycho</id>
-      <url>https://oss.sonatype.org/content/groups/public/</url>
+      <url>https://oss.sonatype.org/content/repositories/public/</url>
+    </pluginRepository>
+    <pluginRepository>
+      <id>cbi</id>
+      <url>https://repo.eclipse.org/content/repositories/releases/</url>
     </pluginRepository>
   </pluginRepositories>
 
@@ -35,7 +40,7 @@
     <repository>
       <id>eclipse</id>
       <layout>p2</layout>
-      <url>http://download.eclipse.org/releases/kepler</url>
+      <url>http://download.eclipse.org/releases/luna</url>
     </repository>
   </repositories>
 

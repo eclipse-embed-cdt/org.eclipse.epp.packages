@@ -40,6 +40,7 @@
           </execution>
           <execution>
             <id>archive-products</id>
+            <phase>pre-integration-test</phase>
             <goals>
               <goal>archive-products</goal>
             </goals>
@@ -49,4 +50,54 @@
     </plugins>
   </build>
 
+  <profiles>
+    <profile>
+      <id>eclipse-sign</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.eclipse.cbi.maven.plugins</groupId>
+            <artifactId>eclipse-macsigner-plugin</artifactId>
+            <version>${cbi.version}</version>
+            <executions>
+              <execution>
+                <id>sign</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+                <configuration>
+                  <baseSearchDir>${project.build.directory}/products/epp.package.testing</baseSearchDir>
+                  <fileNames>
+                    <fileName>Eclipse.app</fileName>
+                  </fileNames>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.eclipse.cbi.maven.plugins</groupId>
+            <artifactId>eclipse-winsigner-plugin</artifactId>
+            <version>${cbi.version}</version>
+            <executions>
+              <execution>
+                <id>sign</id>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+                <phase>package</phase>
+                <configuration>
+                  <baseSearchDir>${project.build.directory}/products/epp.package.testing</baseSearchDir>
+                  <fileNames>
+                    <fileName>eclipse.exe</fileName>
+                    <fileName>eclipsec.exe</fileName>
+                  </fileNames>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
