@@ -26,14 +26,14 @@ fi
 
 # variables to adjust
 BASE_DIR=/shared/technology/epp/epp_build/kepler
-RELEASE_NAME="-kepler-SR1-RC1"
+RELEASE_NAME="-kepler-SR1-RC2"
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
 MARKERFILENAME=".epp.nightlybuild"
 STATUSFILENAME="status.stub"
 GITURL="/gitroot/epp/org.eclipse.epp.packages.git"
-GITBRANCH="HEAD"
+GITBRANCH="KEPLER"
 GITPROJECTPATH="packages"
 DOWNLOAD_BASE_URL="http://build.eclipse.org/technology/epp/epp_build/kepler/download"
 
