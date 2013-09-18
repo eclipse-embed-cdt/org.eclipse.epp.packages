@@ -37,6 +37,6 @@
   <rcp version="4.3.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-modeling-kepler-SR1-RC3" />
+  <product name="eclipse-modeling-kepler-SR1-RC4" />
 
 </configuration>
