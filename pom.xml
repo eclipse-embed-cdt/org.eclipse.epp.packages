@@ -22,7 +22,7 @@
 
   <properties>
     <tycho.version>0.18.1</tycho.version>
-    <cbi.version>1.0.4</cbi.version>
+    <cbi.version>1.0.5</cbi.version>
   </properties>
 
   <pluginRepositories>
