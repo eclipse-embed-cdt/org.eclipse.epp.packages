@@ -18,8 +18,8 @@
       <programArgsWin>--launcher.XXMaxPermSize
 256M</programArgsWin>
       <vmArgs>-Dosgi.requiredJavaVersion=1.6
--Xms40m
--Xmx512m</vmArgs>
+-Xms128m
+-Xmx1024m</vmArgs>
       <vmArgsLin>-XX:MaxPermSize=256m</vmArgsLin>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
 -XX:MaxPermSize=256m</vmArgsMac>
