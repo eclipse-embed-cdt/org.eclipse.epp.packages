@@ -40,16 +40,19 @@
     <repository>
       <id>eclipse</id>
       <layout>p2</layout>
-      <url>http://download.eclipse.org/releases/staging</url>
+      <url>http://download.eclipse.org/releases/staging/</url>
     </repository>
   </repositories>
 
   <modules>
+<!--
     <module>features/org.eclipse.epp.allpackages.feature</module>
-
     <module>packages/org.eclipse.epp.package.common</module>
+-->
+
     <module>packages/org.eclipse.epp.package.common.feature</module>
 
+<!--
     <module>packages/org.eclipse.epp.package.automotive</module>
     <module>packages/org.eclipse.epp.package.automotive.feature</module>
     <module>packages/org.eclipse.epp.package.automotive.product</module>
@@ -77,11 +80,11 @@
     <module>packages/org.eclipse.epp.package.parallel</module>
     <module>packages/org.eclipse.epp.package.parallel.feature</module>
     <module>packages/org.eclipse.epp.package.parallel.product</module>
-
+-->
     <module>packages/org.eclipse.epp.package.rcp</module>
     <module>packages/org.eclipse.epp.package.rcp.feature</module>
     <module>packages/org.eclipse.epp.package.rcp.product</module>
-
+<!--
     <module>packages/org.eclipse.epp.package.reporting</module>
     <module>packages/org.eclipse.epp.package.reporting.feature</module>
     <module>packages/org.eclipse.epp.package.reporting.product</module>
@@ -93,6 +96,7 @@
     <module>packages/org.eclipse.epp.package.testing</module>
     <module>packages/org.eclipse.epp.package.testing.feature</module>
     <module>packages/org.eclipse.epp.package.testing.product</module>
+-->
   </modules>
 
   <build>
