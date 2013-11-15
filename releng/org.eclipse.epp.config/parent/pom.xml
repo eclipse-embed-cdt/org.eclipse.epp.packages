@@ -121,6 +121,7 @@
         </dependencies>
         <configuration>
           <timestampProvider>jgit</timestampProvider>
+          <jgit.dirtyWorkingTree>warning</jgit.dirtyWorkingTree>
           <format>yyyyMMdd-HHmm</format>
           <sourceReferences> 
             <generate>true</generate> 
