@@ -235,7 +235,7 @@
           <plugin>
             <groupId>org.eclipse.tycho.extras</groupId>
             <artifactId>tycho-pack200b-plugin</artifactId>
-            <version>${cbi.version}</version>
+            <version>${tycho.extras.version}</version>
             <executions>
               <execution>
                 <id>pack200-pack</id>
