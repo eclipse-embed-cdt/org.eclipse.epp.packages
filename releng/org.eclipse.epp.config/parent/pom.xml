@@ -72,10 +72,10 @@
                features that are marked as optional, and unfortunately they
                seem to be missing in Luna. Ignoring these options features
                for now.
-            -->
           <dependency-resolution>
             <optionalDependencies>ignore</optionalDependencies>
           </dependency-resolution>
+            -->
           <environments>
             <environment>
               <os>linux</os>
