@@ -29,24 +29,4 @@
   <version>2.1.0-SNAPSHOT</version>
   <packaging>eclipse-feature</packaging>
 
-  <build>
-    <plugins>
-      <!-- The Parallel Package feature.xml includes a number of other
-           features that are marked as optional, and unfortunately they
-           seem to be missing in Luna. Ignoring these options features
-           for now.
-        -->
-      <plugin>
-        <groupId>org.eclipse.tycho</groupId>
-        <artifactId>target-platform-configuration</artifactId>
-        <version>${tycho.version}</version>
-        <configuration>
-          <dependency-resolution>
-            <optionalDependencies>ignore</optionalDependencies>
-          </dependency-resolution>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-
 </project>
