@@ -8,18 +8,6 @@
       <product
             application="org.eclipse.ui.ide.workbench"
             name="Eclipse">
-            
-         <property
-               name="introTitle"
-               value="Eclipse Java EE IDE for Web Developers"/>
-         <property
-               name="introBrandingImage"
-               value="product:wtp_logo_96.png"/>
-         <property
-               name="introBrandingImageText"
-       	       value="Eclipse Web Tools Platform"/>
-            
-            
          <property
                name="preferenceCustomization"
                value="plugin_customization.ini">
@@ -34,15 +22,15 @@
          </property>
          <property
                name="startupForegroundColor"
-               value="C8D5EA">
+               value="FFFFFF">
          </property>
          <property
                name="startupMessageRect"
-               value="7,220,441,20">
+               value="7,225,320,20">
          </property>
          <property
                name="startupProgressRect"
-               value="0,280,455,15">
+               value="2,290,448,10">
          </property>
          <property
                name="aboutImage"
@@ -53,16 +41,24 @@
                value="javaee-ide_x16.png,javaee-ide_x32.png,javaee-ide_x48.png">
          </property>
          <property
-               name="startupForegroundColor"
-               value="FFFFFF">
+              name="introBrandingImage"
+              value="product:wtp_logo_96.png">
          </property>
          <property
-               name="startupMessageRect"
-               value="7,220,441,20">
+               name="introTitle"
+               value="Eclipse Java EE IDE for Web Developers">
+         </property>
+         <property
+               name="introBrandingImageText"
+               value="Eclipse Web Tools Platform">
          </property>
          <property
                name="buildIdLocation"
                value="303,190">
+         </property>
+         <property
+               name="applicationXMI"
+               value="org.eclipse.platform/LegacyIDE.e4xmi">
          </property>
          <property 
                name="cssTheme"

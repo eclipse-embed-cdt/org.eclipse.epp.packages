@@ -3,6 +3,7 @@
 <plugin>
    <extension
          id="product"
+         name="Modeling IDE"
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
@@ -21,15 +22,15 @@
          </property>
          <property
                name="startupForegroundColor"
-               value="C8D5EA">
+               value="FFFFFF">
          </property>
          <property
                name="startupMessageRect"
-               value="7,220,441,20">
+               value="7,225,320,20">
          </property>
          <property
                name="startupProgressRect"
-               value="0,280,455,15">
+               value="2,290,448,10">
          </property>
          <property
                name="aboutImage"
@@ -37,11 +38,12 @@
          </property>
          <property
                name="windowImages"
-               value="eclipse.png,eclipse32.png,eclipse48.png">
+               value="eclipse16.gif,eclipse32.gif,eclipse48.gif,eclipse16.png,eclipse32.png,eclipse48.png,eclipse256.png">
          </property>
          <property
               name="introBrandingImage"
-              value="product:intro-eclipse.png"/>
+              value="product:intro-eclipse.png">
+         </property>
          <property
                name="introTitle"
                value="Welcome to the Eclipse Modeling Tools">
@@ -49,6 +51,10 @@
          <property
                name="introBrandingImageText"
                value="Eclipse Project">
+         </property>
+         <property
+               name="applicationXMI"
+               value="org.eclipse.platform/LegacyIDE.e4xmi">
          </property>
          <property 
                name="cssTheme"

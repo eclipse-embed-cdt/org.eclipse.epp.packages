@@ -3,6 +3,7 @@
 <plugin>
    <extension
          id="product"
+         name="Standard IDE"
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
@@ -22,15 +23,15 @@
          </property>
          <property
                name="startupForegroundColor"
-               value="C8D5EA">
+               value="FFFFFF">
          </property>
          <property
                name="startupMessageRect"
-               value="7,220,441,20">
+               value="7,225,320,20">
          </property>
          <property
                name="startupProgressRect"
-               value="0,280,455,15">
+               value="2,290,448,10">
          </property>
          <property
                name="aboutImage"
@@ -38,11 +39,12 @@
          </property>
          <property
                name="windowImages"
-               value="eclipse16.gif,eclipse32.gif,eclipse48.gif,eclipse16.png,eclipse32.png,eclipse48.png,eclipse256.pngs">
+               value="eclipse16.gif,eclipse32.gif,eclipse48.gif,eclipse16.png,eclipse32.png,eclipse48.png,eclipse256.png">
          </property>
          <property
               name="introBrandingImage"
-              value="product:intro-eclipse.png"/>
+              value="product:intro-eclipse.png">
+         </property>
          <property
                name="introTitle"
                value="%productIntroTitle">
@@ -50,19 +52,19 @@
          <property
                name="introBrandingImageText"
                value="%productIntroBrandingText"/>
-		  <property
-				name="introDescription-overview"
-				value="%introDescription-overview"/>
-		  <property
-				name="introDescription-tutorials"
-				value="%introDescription-tutorials"/>
-		  <property
-				name="introDescription-samples"
-				value="%introDescription-samples"/>
-		  <property
-				name="applicationXMI"
-				value="org.eclipse.platform/LegacyIDE.e4xmi">
-		  </property>
+         <property
+               name="introDescription-overview"
+               value="%introDescription-overview"/>
+         <property
+               name="introDescription-tutorials"
+               value="%introDescription-tutorials"/>
+         <property
+               name="introDescription-samples"
+               value="%introDescription-samples"/>
+         <property
+               name="applicationXMI"
+               value="org.eclipse.platform/LegacyIDE.e4xmi">
+         </property>
          <property 
                name="cssTheme"
                value="org.eclipse.e4.ui.css.theme.e4_default">
@@ -71,16 +73,16 @@
                name="applicationCSSResources" 
                value="platform:/plugin/org.eclipse.platform/images/"> 
          </property>
-	<!-- Build ID in startup splash - only for nightlies and milestones, not for releases -->
-    <property
-          name="buildIdLocation"
-          value="300,180">
-    </property>
-    <property
-          name="buildIdSize"
-          value="140,40">
-    </property>
-	<!-- END of Build ID in startup splash -->
+         <!-- Build ID in startup splash - only for nightlies and milestones, not for releases -->
+         <property
+               name="buildIdLocation"
+               value="300,180">
+         </property>
+         <property
+               name="buildIdSize"
+               value="140,40">
+         </property>
+         <!-- END of Build ID in startup splash -->
       </product>
    </extension>
    <extension
@@ -90,16 +92,16 @@
             productId="org.eclipse.epp.package.standard.product">
       </introProductBinding>
    </extension>
-   
+
     <extension
          point="org.eclipse.ui.activities">
-  
+
       <activity
             name="%activity.java"
             description="%activity.java.desc"
             id="org.eclipse.javaDevelopment">
       </activity>
-      
+
       <activity
             name="%activity.plugin"
             description="%activity.plugin.desc"
@@ -114,51 +116,50 @@
             id="org.eclipse.debugSupport"
             name="%activity.debug">
       </activity>
-      
-  
+
       <activity
             name="%activity.team.cvs"
             description="%activity.team.cvs.desc"
             id="org.eclipse.team.cvs">
       </activity> 
-      
+
       <activity
             name="%activity.team"
             description="%activity.team.desc"
             id="org.eclipse.team">
       </activity>
-      
+
       <activityRequirementBinding
             activityId="org.eclipse.team.cvs"
             requiredActivityId="org.eclipse.team">
       </activityRequirementBinding>
-      
+
       <activityPatternBinding
             activityId="org.eclipse.javaDevelopment"
             pattern="org\.eclipse\.jdt\.debug/debugModel">
       </activityPatternBinding>
-      
+
       <activityPatternBinding
             activityId="org.eclipse.javaDevelopment"
             pattern="org\.eclipse\.jdt\..*/.*">
       </activityPatternBinding>
-      
+
       <activityPatternBinding
             activityId="org.eclipse.javaDevelopment"
             pattern="org\.eclipse\.jdt/.*">
       </activityPatternBinding>
-      
+
       <activityPatternBinding
             activityId="org.eclipse.javaDevelopment"
             pattern="org\.eclipse\.jdt\.core/javanature">
 
       </activityPatternBinding>
-      
+
       <activityPatternBinding
             activityId="org.eclipse.plugInDevelopment"
             pattern="org\.eclipse\.pde\..*/.*">
       </activityPatternBinding>
-      
+
       <activityPatternBinding
             activityId="org.eclipse.plugInDevelopment"
             pattern="org\.eclipse\.pde/.*">
@@ -167,7 +168,7 @@
             activityId="org.eclipse.debugSupport"
             pattern="org\.eclipse\.debug\.ui/.*">
       </activityPatternBinding>
-      
+
       <activityPatternBinding
             activityId="org.eclipse.plugInDevelopment"
             pattern="org\.eclipse\.pde/PluginNature">
@@ -188,25 +189,25 @@
             activityId="org.eclipse.team.cvs"
             pattern="org\.eclipse\.team\.cvs\.core/.*cvsnature">
       </activityPatternBinding>
-      
+
       <category
             name="%activity.cat.development"
             description="%activity.cat.development.desc"
             id="org.eclipse.categories.developmentCategory">
       </category>
 
- 	  <category
+      <category
             name="%activity.cat.team"
             description="%activity.cat.team.desc"
             id="org.eclipse.categories.teamCategory">
 
       </category>
-      
+
       <categoryActivityBinding
             activityId="org.eclipse.javaDevelopment"
             categoryId="org.eclipse.categories.developmentCategory">
       </categoryActivityBinding>
-      
+
       <categoryActivityBinding
             activityId="org.eclipse.plugInDevelopment"
             categoryId="org.eclipse.categories.developmentCategory">
@@ -220,29 +221,28 @@
             activityId="org.eclipse.team"
             categoryId="org.eclipse.categories.teamCategory">
       </categoryActivityBinding>        
-      
+
       <categoryActivityBinding
             activityId="org.eclipse.team.cvs"
             categoryId="org.eclipse.categories.teamCategory">
       </categoryActivityBinding>
-  
+
       <!-- bind all elements that start with "org" -->      
-       
       <defaultEnablement
             id="org.eclipse.javaDevelopment">
       </defaultEnablement>
-      
+
       <defaultEnablement
             id="org.eclipse.plugInDevelopment">
       </defaultEnablement>
        <defaultEnablement
              id="org.eclipse.debugSupport">
        </defaultEnablement>
-      
+
       <defaultEnablement
             id="org.eclipse.team">
       </defaultEnablement>     
-      
+
       <defaultEnablement
             id="org.eclipse.team.cvs">
       </defaultEnablement>
@@ -266,7 +266,7 @@
        <defaultEnablement
              id="org.eclipse.antDevelopment">
        </defaultEnablement>
-      
+
       <!-- A Capability definition to hide Egit support in an Eclipse product. -->
       <!-- The recommended workflow to enable Egit support in a product is:    -->
       <!-- Open Perspective : Show All : Git Repository Exploring (enable)     -->
@@ -300,7 +300,7 @@
             id="org.eclipse.team.egit">
       </defaultEnablement>
    </extension>
-   
+
    <extension
          point="org.eclipse.ui.newWizards">
       <primaryWizard
@@ -321,23 +321,23 @@
    </extension>
    <extension
          point="org.eclipse.ui.preferencePages">
-	  <page            
+	  <page
             category="org.eclipse.ui.preferencePages.Workbench"
             name="%PreferencePages.Capabilities"
             id="org.eclipse.sdk.capabilities">
             <class class="org.eclipse.ui.activities.ActivityCategoryPreferencePage">
                 <parameter name="allowAdvanced" value="true"/>
                 <parameter name="captionMessage" value="%PreferencePages.Capabilities.captionMessage" />
-            	<parameter name="activityName" value="%PreferencePages.Capabilities.activityName" />
+                <parameter name="activityName" value="%PreferencePages.Capabilities.activityName" />
                 <parameter name="categoryName" value="%PreferencePages.Capabilities.categoryName" />
-            	<parameter name="activityPromptButton" value="%PreferencePages.Capabilities.activityPromptButton"/>
-            	<parameter name="activityPromptButtonTooltip" value="%PreferencePages.Capabilities.activityPromptButtonTooltip"/>
+                <parameter name="activityPromptButton" value="%PreferencePages.Capabilities.activityPromptButton"/>
+                <parameter name="activityPromptButtonTooltip" value="%PreferencePages.Capabilities.activityPromptButtonTooltip"/>
             </class>
-      </page>   
+      </page>
    </extension>
-   
+
    <extension
-   		point="org.eclipse.help.base.activitySupport">
+         point="org.eclipse.help.base.activitySupport">
       <support productId="org.eclipse.epp.package.standard.product">
          <showAllMessage>
             %helpActivitySupport.showAllMessage
@@ -352,27 +352,27 @@
          </localScopeCheckbox>
       </support>
    </extension>
-   
+
       <extension
             point="org.eclipse.ui.activitySupport">
       <triggerPointAdvisor
             id="org.eclipse.ui.ide.triggerPointAdvisor">
             <class class="org.eclipse.ui.activities.WorkbenchTriggerPointAdvisor">
-            	<parameter name="proceedMulti" value="%TriggerPointAdvisor.proceedMulti" />
-            	<parameter name="proceedSingle" value="%TriggerPointAdvisor.proceedSingle" />
-            	<parameter name="dontAsk" value="%TriggerPointAdvisor.dontAsk" />
-            	<parameter name="noDetails" value="%TriggerPointAdvisor.noDetails" />
+                <parameter name="proceedMulti" value="%TriggerPointAdvisor.proceedMulti" />
+                <parameter name="proceedSingle" value="%TriggerPointAdvisor.proceedSingle" />
+                <parameter name="dontAsk" value="%TriggerPointAdvisor.dontAsk" />
+                <parameter name="noDetails" value="%TriggerPointAdvisor.noDetails" />
             </class>
       </triggerPointAdvisor>
    </extension>   
-   
+
    <extension
          point="org.eclipse.ui.activitySupport">
       <triggerPointAdvisorProductBinding
             productId="org.eclipse.epp.package.standard.product"
             triggerPointAdvisorId="org.eclipse.ui.ide.triggerPointAdvisor"/>
    </extension>
-   
+
    <extension
          point="org.eclipse.help.ui.searchEngine">
       <engine
@@ -380,13 +380,13 @@
             engineTypeId="org.eclipse.help.ui.web"
             id="org.eclipse.sdk.Eclipse"
             label="%search.Eclipse.label">
-      		<description>
-	      		%search.Eclipse.desc
-      		</description>
-      		<param 
-      			name="url" 
-      			value="http://eclipse.org/search/search.cgi?q={expression}&amp;ul=&amp;ps=20&amp;m=all">
-      		</param>
+            <description>
+                %search.Eclipse.desc
+            </description>
+            <param 
+                name="url" 
+                value="http://eclipse.org/search/search.cgi?q={expression}&amp;ul=&amp;ps=20&amp;m=all">
+            </param>
       </engine>
     </extension>
 
