@@ -30,58 +30,105 @@
 
   <modules>
     <module>packages/org.eclipse.epp.package.common.feature</module>
-
-<!-- 
-    <module>packages/org.eclipse.epp.package.automotive</module>
-    <module>packages/org.eclipse.epp.package.automotive.feature</module>
-    <module>packages/org.eclipse.epp.package.automotive.product</module>
-
-    <module>packages/org.eclipse.epp.package.cpp</module>
-    <module>packages/org.eclipse.epp.package.cpp.feature</module>
-    <module>packages/org.eclipse.epp.package.cpp.product</module>
-
-    <module>packages/org.eclipse.epp.package.dsl</module>
-    <module>packages/org.eclipse.epp.package.dsl.feature</module>
-    <module>packages/org.eclipse.epp.package.dsl.product</module>
-
-    <module>packages/org.eclipse.epp.package.java</module>
-    <module>packages/org.eclipse.epp.package.java.feature</module>
-    <module>packages/org.eclipse.epp.package.java.product</module>
-
-    <module>packages/org.eclipse.epp.package.jee</module>
-    <module>packages/org.eclipse.epp.package.jee.feature</module>
-    <module>packages/org.eclipse.epp.package.jee.product</module>
-
-    <module>packages/org.eclipse.epp.package.modeling</module>
-    <module>packages/org.eclipse.epp.package.modeling.feature</module>
-    <module>packages/org.eclipse.epp.package.modeling.product</module>
-
-    <module>packages/org.eclipse.epp.package.parallel</module>
-    <module>packages/org.eclipse.epp.package.parallel.feature</module>
-    <module>packages/org.eclipse.epp.package.parallel.product</module>
- -->
-
-    <module>packages/org.eclipse.epp.package.rcp</module>
-    <module>packages/org.eclipse.epp.package.rcp.feature</module>
-    <module>packages/org.eclipse.epp.package.rcp.product</module>
-
-<!-- 
-    <module>packages/org.eclipse.epp.package.reporting</module>
-    <module>packages/org.eclipse.epp.package.reporting.feature</module>
-    <module>packages/org.eclipse.epp.package.reporting.product</module>
-
-    <module>packages/org.eclipse.epp.package.scout</module>
-    <module>packages/org.eclipse.epp.package.scout.feature</module>
-    <module>packages/org.eclipse.epp.package.scout.product</module>
-
-    <module>packages/org.eclipse.epp.package.standard</module>
-    <module>packages/org.eclipse.epp.package.standard.feature</module>
-    <module>packages/org.eclipse.epp.package.standard.product</module>
-
-    <module>packages/org.eclipse.epp.package.testing</module>
-    <module>packages/org.eclipse.epp.package.testing.feature</module>
-    <module>packages/org.eclipse.epp.package.testing.product</module>
- -->
   </modules>
+
+  <profiles>
+    <profile>
+      <id>epp.package.automotive</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.automotive</module>
+        <module>packages/org.eclipse.epp.package.automotive.feature</module>
+        <module>packages/org.eclipse.epp.package.automotive.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.cpp</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.cpp</module>
+        <module>packages/org.eclipse.epp.package.cpp.feature</module>
+        <module>packages/org.eclipse.epp.package.cpp.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.dsl</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.dsl</module>
+        <module>packages/org.eclipse.epp.package.dsl.feature</module>
+        <module>packages/org.eclipse.epp.package.dsl.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.java</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.java</module>
+        <module>packages/org.eclipse.epp.package.java.feature</module>
+        <module>packages/org.eclipse.epp.package.java.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.jee</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.jee</module>
+        <module>packages/org.eclipse.epp.package.jee.feature</module>
+        <module>packages/org.eclipse.epp.package.jee.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.modeling</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.modeling</module>
+        <module>packages/org.eclipse.epp.package.modeling.feature</module>
+        <module>packages/org.eclipse.epp.package.modeling.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.parallel</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.parallel</module>
+        <module>packages/org.eclipse.epp.package.parallel.feature</module>
+        <module>packages/org.eclipse.epp.package.parallel.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.rcp</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.rcp</module>
+        <module>packages/org.eclipse.epp.package.rcp.feature</module>
+        <module>packages/org.eclipse.epp.package.rcp.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.reporting</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.reporting</module>
+        <module>packages/org.eclipse.epp.package.reporting.feature</module>
+        <module>packages/org.eclipse.epp.package.reporting.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.scout</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.scout</module>
+        <module>packages/org.eclipse.epp.package.scout.feature</module>
+        <module>packages/org.eclipse.epp.package.scout.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.standard</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.standard</module>
+        <module>packages/org.eclipse.epp.package.standard.feature</module>
+        <module>packages/org.eclipse.epp.package.standard.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.testing</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.testing</module>
+        <module>packages/org.eclipse.epp.package.testing.feature</module>
+        <module>packages/org.eclipse.epp.package.testing.product</module>
+      </modules>
+    </profile>
+  </profiles>
 
 </project>
