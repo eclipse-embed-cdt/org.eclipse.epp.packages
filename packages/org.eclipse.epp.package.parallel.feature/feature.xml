@@ -55,11 +55,13 @@
          optional="true"
          search-location="both"/>
 
+<!-- TODO [mk] 20131128 feature not available
    <includes
          id="org.eclipse.linuxtools.rpm.ui.editor.feature"
          version="0.0.0"
          optional="true"
          search-location="both"/>
+  -->
 
    <includes
          id="org.eclipse.linuxtools.systemtap"
