@@ -105,9 +105,6 @@
          install-size="0"
          version="0.0.0"/>
 
-<!-- These bundles need to be enabled as soon as they are available from the 
-     Simultaneous Release repository again. Disabling them for now [mknauer].
-
    <plugin
          id="org.eclipse.wtp.epp.package.jee.intro"
          download-size="0"
@@ -143,7 +140,6 @@
          download-size="0"
          install-size="0"
          version="0.0.0"/>
--->
 
 <!-- need to confirm if these plugins in repository, or if I need to cut/copy paste their contents in our capabilities plugin.
 See also https://bugs.eclipse.org/bugs/show_bug.cgi?id=299344

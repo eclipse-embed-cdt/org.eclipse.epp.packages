@@ -53,13 +53,11 @@
       <import feature="org.eclipse.m2e.feature"/>
       <import feature="org.eclipse.m2e.logback.feature"/>
       <import feature="org.eclipse.recommenders.rcp.feature"/>
-      <!--
       <import feature="org.eclipse.wb.core.feature"/>
       <import feature="org.eclipse.wb.core.ui.feature"/>
       <import feature="org.eclipse.wb.layout.group.feature"/>
       <import feature="org.eclipse.wb.swt.feature"/>
       <import feature="org.eclipse.wb.rcp.feature"/>
-      -->
    </requires>
 
    <plugin

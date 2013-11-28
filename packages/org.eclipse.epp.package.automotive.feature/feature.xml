@@ -36,9 +36,7 @@
       <import feature="org.eclipse.emf.compare"/>
       <import feature="org.eclipse.emf.compare.uml2"/>
       <import feature="org.eclipse.emf.compare.ide.ui"/>
-      <!-- disabled for Luna M2, should be enabled for M3
       <import feature="org.eclipse.emf.compare.diagram.gmf"/>
-      -->
       <import feature="org.eclipse.emf.mwe.core"/>
       <import feature="org.eclipse.emf.mwe.ui"/>
       <import feature="org.eclipse.emf.transaction"/>
