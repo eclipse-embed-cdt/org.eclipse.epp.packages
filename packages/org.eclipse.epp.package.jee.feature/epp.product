@@ -4,6 +4,7 @@
 <product name="Eclipse IDE for Java EE Developers" uid="epp.package.jee" id="org.eclipse.epp.package.jee.product" application="org.eclipse.ui.ide.workbench" version="2.1.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
+      <image path="/org.eclipse.epp.package.jee/aboutgears_115x.png"/>
       <text>
          Specified in the plugin.xml of the branding plugin.
       </text>
@@ -28,8 +29,8 @@
    <windowImages i16="/org.eclipse.epp.package.jee/javaee-ide_x16.png" i32="/org.eclipse.epp.package.jee/javaee-ide_x32.png" i48="/org.eclipse.epp.package.jee/javaee-ide_x48.png"/>
 
    <splash
-      startupProgressRect="0,280,455,15"
-      startupMessageRect="7,252,445,20"
+      startupProgressRect="2,290,448,10"
+      startupMessageRect="7,225,320,20"
       startupForegroundColor="FFFFFF" />
    <launcher name="eclipse">
       <solaris/>
@@ -41,10 +42,10 @@
    <intro introId="org.eclipse.wtp.epp.package.jee.intro.intro"/>
 
    <vm>
-      <linux include="true">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</linux>
-      <macos include="true">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</macos>
-      <solaris include="true">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</solaris>
-      <windows include="true">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5</windows>
+      <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</linux>
+      <macos include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</macos>
+      <solaris include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</solaris>
+      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</windows>
    </vm>
 
    <license>
@@ -151,8 +152,6 @@ Java and all Java-based trademarks are trademarks of Sun Microsystems, Inc. in t
    </license>
 
    <plugins>
-      <plugin id="org.eclipse.epp.package.jee"/>
-      <plugin id="org.eclipse.wtp.epp.package.jee.intro" fragment=""/>
    </plugins>
 
    <features>
