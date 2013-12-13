@@ -34,9 +34,9 @@
       <import feature="org.eclipse.draw2d"/>
       <import feature="org.eclipse.emf"/>
       <import feature="org.eclipse.emf.compare"/>
-      <import feature="org.eclipse.emf.compare.uml2"/>
-      <import feature="org.eclipse.emf.compare.ide.ui"/>
       <import feature="org.eclipse.emf.compare.diagram.gmf"/>
+      <import feature="org.eclipse.emf.compare.ide.ui"/>
+      <import feature="org.eclipse.emf.compare.uml2"/>
       <import feature="org.eclipse.emf.mwe.core"/>
       <import feature="org.eclipse.emf.mwe.ui"/>
       <import feature="org.eclipse.emf.transaction"/>
@@ -69,6 +69,7 @@
       <import feature="org.eclipse.xtext.ui"/>
       <import feature="org.eclipse.xtext.xbase"/>
       <import feature="org.eclipse.xtext.xtext.ui"/>
+      <import plugin="org.eclipse.sphinx"/>
       <import plugin="org.eclipse.xtend.core"/>
       <import plugin="org.eclipse.xtend.ide"/>
       <import plugin="org.eclipse.xtend.util.stdlib"/>
