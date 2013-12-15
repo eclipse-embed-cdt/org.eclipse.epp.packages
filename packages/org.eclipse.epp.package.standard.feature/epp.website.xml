@@ -9,7 +9,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse Standard 4.4"
+   packageName="Eclipse Standard 4.4 M4"
    maintainer="Eclipse Packaging Project"
    iconurl="http://www.eclipse.org/downloads/images/classic2.jpg"
    bugzillaComponentId="classic-package"
@@ -22,6 +22,7 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">her
 ]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
+      <tester>Gunnar Wagenknecht</tester>
       <tester>Martin Oberhuber</tester>
     </packageTesters>
   </packageMetaData>
@@ -36,6 +37,6 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">her
   <rcp version="4.4" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-standard-luna-M3" />
+  <product name="eclipse-standard-luna-M4" />
 
 </configuration>
