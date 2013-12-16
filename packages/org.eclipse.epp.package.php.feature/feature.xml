@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.epp.package.php.feature"
+      label="EPP PHP Feature"
+      version="4.4.0.qualifier"
+      provider-name="Eclipse Packaging Project"
+      plugin="org.eclipse.epp.package.php">
+
+   <description>
+      The essential starting point for PHP developers, including a PHP language support, a Git client, XML Editor and Mylyn.
+   </description>
+
+   <license url="license.html">
+      %license
+   </license>
+
+   <url>
+      <discovery label="Luna" url="http://download.eclipse.org/releases/luna/"/>
+      <discovery label="Eclipse Platform 4.4" url="http://download.eclipse.org/eclipse/updates/4.4"/>
+   </url>
+
+   <includes
+         id="org.eclipse.platform"
+         version="0.0.0"
+         search-location="both"/>
+
+   <requires>
+      <import feature="org.eclipse.egit"/>
+      <import feature="org.eclipse.egit.import"/>
+      <import feature="org.eclipse.epp.package.common.feature"/>
+      <import feature="org.eclipse.equinox.p2.user.ui"/>
+      <import feature="org.eclipse.help"/>
+      <import feature="org.eclipse.platform"/>
+      <import feature="org.eclipse.rcp"/>
+      <import feature="org.eclipse.mylyn_feature"/>
+      <import feature="org.eclipse.mylyn.bugzilla_feature"/>
+      <import feature="org.eclipse.mylyn.context_feature"/>
+      <import feature="org.eclipse.mylyn.ide_feature"/>
+      <import feature="org.eclipse.wst.xml_ui.feature"/>
+      <import feature="org.eclipse.php" version="3.2.0.qualifier"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.epp.package.php"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>

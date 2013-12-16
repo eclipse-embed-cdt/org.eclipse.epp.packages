@@ -1,0 +1,25 @@
+# tell pde.build not to generate start levels
+org.eclipse.pde.build.append.startlevels=false
+
+# add requirement on org.eclipse.platform.ide
+requires.1.namespace=org.eclipse.equinox.p2.iu
+requires.1.name=org.eclipse.platform.ide
+#requires.1.range=[3.5.0.I20090522-1710,3.5.0.I20090522-1710]
+requires.1.greedy=true
+
+# disable listing of feature in any category
+properties.1.name=org.eclipse.equinox.p2.type.category
+properties.1.value=false
+
+#instructions.configure=\
+#org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/mylyn/releases/luna/,name:Mylyn for Eclipse Luna);\
+#org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/mylyn/releases/luna/,name:Mylyn for Eclipse Luna);
+
+#instructions.unconfigure=\
+#org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.eclipse.org/mylyn/releases/luna/);\
+#org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.eclipse.org/mylyn/releases/luna/);
+
+properties.0.name = org.eclipse.equinox.p2.type.product
+properties.0.value = true
+
+

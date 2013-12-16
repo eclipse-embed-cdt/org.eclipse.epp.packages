@@ -90,6 +90,14 @@
       </modules>
     </profile>
     <profile>
+      <id>epp.package.php</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.php</module>
+        <module>packages/org.eclipse.epp.package.php.feature</module>
+        <module>packages/org.eclipse.epp.package.php.product</module>
+      </modules>
+    </profile>
+    <profile>
       <id>epp.package.rcp</id>
       <modules>
         <module>packages/org.eclipse.epp.package.rcp</module>

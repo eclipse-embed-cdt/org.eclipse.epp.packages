@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="product"
+         name="PHP IDE"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.ui.ide.workbench"
+            name="Eclipse">
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+         <property
+               name="appName"
+               value="Eclipse">
+         </property>
+         <property
+               name="aboutText"
+               value="Eclipse for PHP Developers&#x0A;&#x0A;Version: Luna Release&#x0A;Build id: {0}&#x0A;&#x0A;(c) Copyright Eclipse contributors and others 2000, 2014.  All rights reserved.&#x0A;Visit http://eclipse.org/&#x0A;&#x0A;This product includes software developed by the&#x0A;Apache Software Foundation http://apache.org/">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="FFFFFF">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="7,225,320,20">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="2,290,448,10">
+         </property>
+         <property
+               name="aboutImage"
+               value="epp-php-about.png">
+         </property>
+         <property
+               name="windowImages"
+               value="eclipse16.gif,eclipse32.gif,eclipse48.gif,eclipse16.png,eclipse32.png,eclipse48.png,eclipse256.png">
+         </property>
+         <property
+              name="introBrandingImage"
+              value="product:intro-eclipse.png">
+         </property>
+         <property
+               name="introTitle"
+               value="Welcome to Eclipse for PHP Developers">
+         </property>
+         <property
+               name="introBrandingImageText"
+               value="Eclipse Project">
+         </property>
+         <property
+               name="applicationXMI"
+               value="org.eclipse.platform/LegacyIDE.e4xmi">
+         </property>
+         <property 
+               name="cssTheme"
+               value="org.eclipse.e4.ui.css.theme.e4_default">
+         </property>
+         <property
+               name="applicationCSSResources" 
+               value="platform:/plugin/org.eclipse.platform/images/"> 
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro">
+      <introProductBinding
+            introId="org.eclipse.ui.intro.universal"
+            productId="org.eclipse.epp.package.php.product">
+      </introProductBinding>
+   </extension>
+
+</plugin>
