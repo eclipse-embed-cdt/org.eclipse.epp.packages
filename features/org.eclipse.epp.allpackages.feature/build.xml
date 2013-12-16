@@ -169,7 +169,7 @@
          ================================= -->
     <target name="archiveArtifacts" description="Copy artifacts to central location.">
 		<copy todir="${env.WORKSPACE}/repositories/${env.BUILD_NUMBER}" preservelastmodified="true" verbose="true">
-			<fileset dir="${build.root}/buildresult/org.eclipse.epp.allpackages.feature_2.1.0-eclipse.feature/site.p2/**" />
+			<fileset dir="${build.root}/buildresult/org.eclipse.epp.allpackages.feature_4.4.0-eclipse.feature/site.p2/**" />
 		</copy>
     </target>
 
