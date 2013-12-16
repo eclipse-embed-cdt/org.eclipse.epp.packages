@@ -50,7 +50,7 @@
               <ius>
                 <iu>
                   <query>
-                    <expression>id ~= /*epp*/ &amp;&amp; !(id ~= /*org.eclipse.epp.mpc*/)</expression>
+                    <expression>id ~= /*epp*/ &amp;&amp; !(id ~= /*org.eclipse.epp.mpc*/) &amp;&amp; !(id ~= /*org.eclipse.emf.cdo.epp*/)</expression>
                   </query>
                 </iu>
               </ius>
