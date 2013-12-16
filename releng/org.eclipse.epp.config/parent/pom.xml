@@ -24,13 +24,15 @@
   <properties>
     <tycho.version>0.19.0</tycho.version>
     <tycho.extras.version>${tycho.version}</tycho.extras.version>
+    <tycho.scmUrl>scm:git:git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git</tycho.scmUrl>
     <cbi.version>1.0.5</cbi.version>
     <maven.resources.version>2.6</maven.resources.version>
     <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
     <build>${maven.build.timestamp}</build>
-    <releaseName>Luna</releaseName>
-    <eclipse.simultaneous.release>http://download.eclipse.org/releases/staging/</eclipse.simultaneous.release>
-    <tycho.scmUrl>scm:git:git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git</tycho.scmUrl>
+    <eclipse.epp.targetRepository>${basedir}/../../repository/</eclipse.epp.targetRepository>
+    <eclipse.simultaneous.release.id>luna-m4</eclipse.simultaneous.release.id>
+    <eclipse.simultaneous.release.name>Luna M4</eclipse.simultaneous.release.name>
+    <eclipse.simultaneous.release.repository>http://download.eclipse.org/releases/staging/</eclipse.simultaneous.release.repository>
   </properties>
 
   <prerequisites>
@@ -52,7 +54,7 @@
     <repository>
       <id>eclipse-simultaneous-release</id>
       <layout>p2</layout>
-      <url>${eclipse.simultaneous.release}</url>
+      <url>${eclipse.simultaneous.release.repository}</url>
     </repository>
   </repositories>
 
@@ -146,7 +148,7 @@
         <artifactId>tycho-p2-repository-plugin</artifactId>
         <version>${tycho.version}</version>
         <configuration>
-          <includeAllDependencies>false</includeAllDependencies>
+          <includeAllDependencies>true</includeAllDependencies>
           <compress>true</compress>
         </configuration>
       </plugin>
@@ -165,10 +167,36 @@
         </executions>
       </plugin>
 
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>1.8</version>
+        <executions>
+          <execution>
+            <id>regex-property</id>
+            <goals>
+              <goal>regex-property</goal>
+            </goals>
+            <configuration>
+              <name>eclipse.epp.id</name>
+              <value>${project.artifactId}</value>
+              <regex>epp\.package\.(\d*)</regex>
+              <replacement>$1</replacement>
+              <failIfNoMatch>false</failIfNoMatch>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
     </plugins>
 
     <pluginManagement>
       <plugins>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>build-helper-maven-plugin</artifactId>
+          <version>1.8</version>
+        </plugin>
         <plugin>
           <groupId>org.eclipse.tycho</groupId>
           <artifactId>target-platform-configuration</artifactId>
@@ -197,6 +225,11 @@
         <plugin>
           <groupId>org.eclipse.tycho</groupId>
           <artifactId>tycho-p2-director-plugin</artifactId>
+          <version>${tycho.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.eclipse.tycho.extras</groupId>
+          <artifactId>tycho-p2-extras-plugin</artifactId>
           <version>${tycho.version}</version>
         </plugin>
       </plugins>

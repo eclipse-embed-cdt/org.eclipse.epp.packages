@@ -30,6 +30,41 @@
 
   <build>
     <plugins>
+
+      <plugin>
+        <groupId>org.eclipse.tycho.extras</groupId>
+        <artifactId>tycho-p2-extras-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>mirror-to-central-epp-repository</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>mirror</goal>
+            </goals>
+            <configuration>
+              <source>
+                <repository>
+                  <url>${project.build.directory}/repository</url>
+                </repository>
+              </source>
+              <ius>
+                <iu>
+                  <query>
+                    <expression>id ~= /*epp*/ &amp;&amp; !(id ~= /*org.eclipse.epp.mpc*/)</expression>
+                  </query>
+                </iu>
+              </ius>
+              <destination>${eclipse.epp.targetRepository}</destination>
+              <followOnlyFilteredRequirements>true</followOnlyFilteredRequirements>
+              <includeOptional>false</includeOptional>
+              <includeNonGreedy>false</includeNonGreedy>
+              <includePacked>true</includePacked>
+              <append>true</append>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>tycho-p2-director-plugin</artifactId>
@@ -59,6 +94,7 @@
             <product>
               <id>${project.artifactId}</id>
               <rootFolder>eclipse</rootFolder>
+              <archiveFileName>${build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}</archiveFileName>
             </product>
           </products>
           <profile>${project.artifactId}</profile>
