@@ -44,7 +44,7 @@
       <import feature="org.eclipse.uml2.sdk"/>
       <import feature="org.eclipse.ocl.all.sdk"/>
       <import feature="org.eclipse.emf.transaction.sdk"/>
-      <import feature="org.eclipse.emf.ecoretools.sdk"/>
+      <import feature="org.eclipse.emf.ecoretools.design"/>
       <import feature="org.eclipse.emf.query.sdk"/>
       <import feature="org.eclipse.xsd.sdk"/>
       <import feature="org.eclipse.emf.validation.sdk"/>
