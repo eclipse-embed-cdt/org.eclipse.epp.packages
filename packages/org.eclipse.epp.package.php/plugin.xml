@@ -34,7 +34,7 @@
          </property>
          <property
                name="aboutImage"
-               value="epp-php-about.png">
+               value="eclipse_lg.gif">
          </property>
          <property
                name="windowImages"
