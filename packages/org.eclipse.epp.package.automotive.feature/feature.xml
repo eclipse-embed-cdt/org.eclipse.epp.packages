@@ -69,7 +69,7 @@
       <import feature="org.eclipse.xtext.ui"/>
       <import feature="org.eclipse.xtext.xbase"/>
       <import feature="org.eclipse.xtext.xtext.ui"/>
-      <import plugin="org.eclipse.sphinx"/>
+      <import feature="org.eclipse.sphinx"/>
       <import plugin="org.eclipse.xtend.core"/>
       <import plugin="org.eclipse.xtend.ide"/>
       <import plugin="org.eclipse.xtend.util.stdlib"/>
