@@ -42,11 +42,6 @@ requires.8.namespace=org.eclipse.equinox.p2.iu
 requires.8.name=org.eclipse.linuxtools.rpm.feature.group
 requires.8.optional=true
 
-#      <import feature="org.eclipse.linuxtools.rpm.ui.editor.feature"/>
-requires.9.namespace=org.eclipse.equinox.p2.iu
-requires.9.name=org.eclipse.linuxtools.rpm.ui.editor.feature.feature.group
-requires.9.optional=true
-
 #      <import feature="org.eclipse.linuxtools.systemtap"/>
 requires.10.namespace=org.eclipse.equinox.p2.iu
 requires.10.name=org.eclipse.linuxtools.systemtap.feature.group
