@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
   <!-- Package Description information to be picked up by www.eclipse.org/packages -->
-  <!-- PackageName is the title of your package 
+  <!-- PackageName is the title of your package
        maintainer is the project or persons that are maintaining the package
        iconurl is the fully qualified URL to the icon you wish to use on the site (48x48)
        bugzillaComponentID is used to gather bugzilla information about your package.  This should be given to you after provisioning of the package is finished
@@ -14,7 +14,7 @@
    bugzillaComponentId="scout-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-     <description><![CDATA[This package contains framework and tools to develop <a href="http://www.eclipse.org/scout">Eclipse Scout</a> applications. It includes a complete SDK, useful developer tools and source code.]]></description>
+     <description><![CDATA[<a href="http://www.eclipse.org/scout">Eclipse Scout</a> is a framework to develop Java/Eclipse based business applications that run on the desktop, in browsers, and on mobile devices. This package includes a complete SDK, useful developer tools and source code.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
       <tester>Andreas Hoegger</tester>
@@ -37,7 +37,7 @@
   </MoreInfo>
 
 
-  <!-- version, the RCP version to build. This is used to determine the file 
+  <!-- version, the RCP version to build. This is used to determine the file
     name of the root file archives -->
   <rcp version="4.3.0" />
 
