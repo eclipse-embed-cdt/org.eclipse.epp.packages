@@ -46,10 +46,6 @@ Gregoire Dupe
 		<xsl:call-template name="artifact_properties"/>
 	</xsl:template>
 	
-	<xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.mobile']/properties">
-		<xsl:call-template name="artifact_properties"/>
-	</xsl:template>
-	
 	<xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.modeling']/properties">
 		<xsl:call-template name="artifact_properties"/>
 	</xsl:template>
@@ -107,10 +103,6 @@ Gregoire Dupe
 	</xsl:template>
 	
 	<xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.jee.feature']/properties">
-		<xsl:call-template name="artifact_properties_feature"/>
-	</xsl:template>
-	
-	<xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.mobile.feature']/properties">
 		<xsl:call-template name="artifact_properties_feature"/>
 	</xsl:template>
 	

@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: EPP Mobile Package
-Bundle-SymbolicName: org.eclipse.epp.package.mobile;singleton:=true
-Bundle-Version: 2.0.0.qualifier
-Bundle-Vendor: Eclipse Packaging Project
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Require-Bundle: org.eclipse.platform,
- org.eclipse.equinox.app
