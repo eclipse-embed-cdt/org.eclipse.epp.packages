@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.allpackages.feature"
       label="Feature"
-      version="2.0.1.qualifier"
+      version="2.0.2.qualifier"
       provider-name="Eclipse.org - EPP">
 
    <description url="http://www.example.com/description">
