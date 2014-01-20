@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.automotive.feature"
       label="EPP Automotive Feature"
-      version="2.0.1.qualifier"
+      version="2.0.2.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.automotive">
 

@@ -57,7 +57,7 @@
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.parallel.feature" version="2.0.1.qualifier"/>
+      <feature id="org.eclipse.epp.package.parallel.feature" version="2.0.2.qualifier"/>
    </features>
 
 
