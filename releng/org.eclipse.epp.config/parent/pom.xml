@@ -30,8 +30,8 @@
     <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
     <build>${maven.build.timestamp}</build>
     <eclipse.epp.targetRepository>${basedir}/../../repository/</eclipse.epp.targetRepository>
-    <eclipse.simultaneous.release.id>luna-m4</eclipse.simultaneous.release.id>
-    <eclipse.simultaneous.release.name>Luna M4</eclipse.simultaneous.release.name>
+    <eclipse.simultaneous.release.id>luna-M5</eclipse.simultaneous.release.id>
+    <eclipse.simultaneous.release.name>Luna M5</eclipse.simultaneous.release.name>
     <eclipse.simultaneous.release.repository>http://download.eclipse.org/releases/staging/</eclipse.simultaneous.release.repository>
   </properties>
 
