@@ -4,4 +4,5 @@
 # This file does not need to be translated.
 
 0=@build@
+1=@eclipse.simultaneous.release.name@
 featureVersion=@featureVersion@

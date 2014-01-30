@@ -5,3 +5,4 @@
 
 0=@build@
 featureVersion=@featureVersion@
+1=@eclipse.simultaneous.release.name@

@@ -18,7 +18,7 @@
          </property>
          <property
                name="aboutText"
-               value="Eclipse Java EE IDE for Web Developers.&#x0A;&#x0A;Version: Luna Release&#x0A;Build id: {0}&#x0A;&#x0A;(c) Copyright Eclipse contributors and others 2005, 2014.  All rights reserved.&#x0A;Visit http://www.eclipse.org/webtools">
+               value="Eclipse Java EE IDE for Web Developers.&#x0A;&#x0A;Version: {1}&#x0A;Build id: {0}&#x0A;&#x0A;(c) Copyright Eclipse contributors and others 2005, 2014.  All rights reserved.&#x0A;Visit http://www.eclipse.org/webtools">
          </property>
          <property
                name="startupForegroundColor"
