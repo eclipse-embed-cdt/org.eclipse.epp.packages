@@ -33,7 +33,7 @@
 -Xmx1024m</vmArgsWin>
    </launcherArgs>
 
-   <windowImages i16="/org.eclipse.epp.package.parallel/eclipse16.png" i32="/org.eclipse.epp.package.parallel/eclipse32.png" i48="/org.eclipse.epp.package.parallel/eclipse48.png"/>
+   <windowImages i16="/org.eclipse.epp.package.parallel/eclipse16.png" i32="/org.eclipse.epp.package.parallel/eclipse32.png" i48="/org.eclipse.epp.package.parallel/eclipse48.png" i256="/org.eclipse.epp.package.parallel/eclipse256.png"/>
 
    <splash
       startupProgressRect="2,290,448,10"
@@ -54,7 +54,6 @@
       <solaris include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</solaris>
       <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</windows>
    </vm>
-
 
    <plugins>
    </plugins>
