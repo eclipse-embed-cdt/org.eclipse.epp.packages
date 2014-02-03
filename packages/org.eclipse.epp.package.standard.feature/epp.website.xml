@@ -36,6 +36,6 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">her
   <rcp version="4.3" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-standard-kepler-SR2-RC1" />
+  <product name="eclipse-standard-kepler-SR2-RC2" />
 
 </configuration>
