@@ -45,6 +45,6 @@
 	<rcp version="4.3.0" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-parallel-kepler-SR2-RC3" />
+	<product name="eclipse-parallel-kepler-SR2-RC4" />
 
 </configuration>
