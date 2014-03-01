@@ -71,7 +71,7 @@
          </property>
          <property
                name="applicationCSSResources" 
-               value="platform:/plugin/org.eclipse.platform/images/"> 
+               value="platform:/plugin/org.eclipse.ui.themes/images/"> 
          </property>
          <!-- Build ID in startup splash - only for nightlies and milestones, not for releases -->
          <property
