@@ -30,11 +30,11 @@
     <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
     <eclipse.epp.targetRepository>${basedir}/../../repository/</eclipse.epp.targetRepository>
     <!-- ID used to generate the filename of the packages -->
-    <eclipse.simultaneous.release.id>luna-M5</eclipse.simultaneous.release.id>
+    <eclipse.simultaneous.release.id>luna-M6</eclipse.simultaneous.release.id>
     <!-- timestamp used in various places, e.g. the about dialog (see about.mappings) -->
     <eclipse.simultaneous.release.build>${maven.build.timestamp}</eclipse.simultaneous.release.build>
     <!-- human readable name of the release, e.g. used in the about dialog (see about.mappings) -->
-    <eclipse.simultaneous.release.name>Luna M5 Release</eclipse.simultaneous.release.name>
+    <eclipse.simultaneous.release.name>Luna M6 Release</eclipse.simultaneous.release.name>
     <!-- upstream p2 repository, used as a source for pre-compiled build artifacts -->
     <eclipse.simultaneous.release.repository>http://download.eclipse.org/releases/staging/</eclipse.simultaneous.release.repository>
   </properties>
