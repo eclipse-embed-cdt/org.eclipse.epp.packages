@@ -34,7 +34,7 @@
     <!-- timestamp used in various places, e.g. the about dialog (see about.mappings) -->
     <eclipse.simultaneous.release.build>${maven.build.timestamp}</eclipse.simultaneous.release.build>
     <!-- human readable name of the release, e.g. used in the about dialog (see about.mappings) -->
-    <eclipse.simultaneous.release.name>Luna M6 Release</eclipse.simultaneous.release.name>
+    <eclipse.simultaneous.release.name>Luna M6 Release (4.4.0M6)</eclipse.simultaneous.release.name>
     <!-- upstream p2 repository, used as a source for pre-compiled build artifacts -->
     <eclipse.simultaneous.release.repository>http://download.eclipse.org/releases/staging/</eclipse.simultaneous.release.repository>
   </properties>
