@@ -57,6 +57,8 @@
       <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.emf.eef.codegen.ecore-feature"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
+      <import feature="org.eclipse.emf.ecp.sdk.feature"/>
+      <import feature="org.eclipse.emf.emfstore.sdk.feature"/>
    </requires>
 
    <plugin
