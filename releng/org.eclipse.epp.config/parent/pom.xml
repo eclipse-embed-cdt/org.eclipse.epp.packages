@@ -28,6 +28,9 @@
     <cbi.version>1.0.5</cbi.version>
     <maven.resources.version>2.6</maven.resources.version>
     <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
+    <!-- The location that is used to assemble the single EPP configuration p2 repository -->
+    <eclipse.epp.archiveDirectory>${basedir}/../../archive/</eclipse.epp.archiveDirectory>
+    <!-- The location that is used to assemble the single EPP configuration p2 repository -->
     <eclipse.epp.targetRepository>${basedir}/../../repository/</eclipse.epp.targetRepository>
     <!-- ID used to generate the filename of the packages -->
     <eclipse.simultaneous.release.id>luna-M6</eclipse.simultaneous.release.id>
