@@ -13,11 +13,13 @@ if [[ ! -d "${TARGET_DIR}" ]]; then
     echo "Creating target directory ${TARGET_DIR}"
     mkdir -p ${TARGET_DIR}
 fi
+echo "Starting archive creation in target directory ${TARGET_DIR}"
 
 if [[ ! -d "${SOURCE_DIR}" ]]; then
     echo "Source directory ${SOURCE_DIR} does not exist"
     exit 1
 fi
+echo "Using packages from source directory ${SOURCE_DIR}"
 
 # definition of OS, WS, ARCH, FORMAT combinations - DO NOT FORGET to adjust the for loop
 OSes=(   win32  win32   linux   linux   macosx  macosx  )
@@ -27,18 +29,20 @@ FORMAT=( zip    zip     tar.gz  tar.gz  tar.gz  tar.gz  )
 
 for index in 0 1 2 3 4 5;
 do
-    echo -n "...EPP building ${BASENAME} for ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]} "
     EXTENSION="${OSes[$index]}.${WSes[$index]}.${ARCHes[$index]}"
+    echo -n "Building archive ${BASENAME} for ${EXTENSION} : "
     PACKAGE_DIR="${SOURCE_DIR}/${OSes[$index]}/${WSes[$index]}/${ARCHes[$index]}"
-    # TODO check existence of directory
     cd "${PACKAGE_DIR}"
     if [[ ${OSes[$index]} = "win32" ]]; then
         PACKAGEFILE="${BASENAME}-${EXTENSION}.zip"
-        zip -r -o -q ${TARGET_DIR}/${PACKAGEFILE} eclipse
+        zip -r -o -q ${TARGET_DIR}/${PACKAGEFILE} eclipse || exit 1
     else
         PACKAGEFILE="${BASENAME}-${EXTENSION}.tar.gz"
-        tar zc --owner=100 --group=100 -f ${TARGET_DIR}/${PACKAGEFILE} eclipse
+        tar zc --owner=100 --group=100 -f ${TARGET_DIR}/${PACKAGEFILE} eclipse || exit 1
     fi
-    echo "...successfully finished ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]} package build: ${PACKAGEFILE}"
+    echo "${PACKAGEFILE}"
 done
+
+echo "Package archive creation in target directory ${TARGET_DIR} finished successfully"
+exit 0
 

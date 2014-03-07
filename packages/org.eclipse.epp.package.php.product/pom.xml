@@ -75,25 +75,12 @@
               <goal>materialize-products</goal>
             </goals>
           </execution>
-          <execution>
-            <id>archive-products</id>
-            <phase>pre-integration-test</phase>
-            <goals>
-              <goal>archive-products</goal>
-            </goals>
-          </execution>
         </executions>
         <configuration>
-          <formats>
-            <win32>zip</win32>
-            <linux>tar.gz</linux>
-            <macosx>tar.gz</macosx>
-          </formats>
           <products>
             <product>
               <id>${project.artifactId}</id>
               <rootFolder>eclipse</rootFolder>
-              <archiveFileName>${build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}</archiveFileName>
             </product>
           </products>
           <profile>${project.artifactId}</profile>
@@ -103,6 +90,42 @@
   </build>
 
   <profiles>
+    <profile>
+      <id>archiving</id>
+      <!-- This profile is only activated when running the build on a Unix-like OS where we can expect a working Bash -->
+      <activation>
+        <activeByDefault>false</activeByDefault>
+        <os>
+          <family>unix</family>
+        </os>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>1.2.1</version>
+            <executions>
+              <execution>
+                <id>archive-products</id>
+                <phase>pre-integration-test</phase>
+                <goals>
+                  <goal>exec</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <executable>${basedir}/../../releng/org.eclipse.epp.config/tools/createArchives.sh</executable>
+              <arguments>
+                <argument>${eclipse.epp.archiveDirectory}</argument>
+                <argument>${project.build.directory}/products/epp.package.${eclipse.epp.id}</argument>
+                <argument>${build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}</argument>
+              </arguments>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
     <profile>
       <id>eclipse-sign</id>
       <build>

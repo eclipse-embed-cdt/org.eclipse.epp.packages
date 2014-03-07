@@ -76,31 +76,12 @@
               <goal>materialize-products</goal>
             </goals>
           </execution>
-          <!-- 
-          <execution>
-            <id>archive-products</id>
-            <phase>pre-integration-test</phase>
-            <goals>
-              <goal>archive-products</goal>
-            </goals>
-          </execution>
-           -->
         </executions>
         <configuration>
-        <!-- 
-          <formats>
-            <win32>zip</win32>
-            <linux>tar.gz</linux>
-            <macosx>tar.gz</macosx>
-          </formats>
-         -->
           <products>
             <product>
               <id>${project.artifactId}</id>
               <rootFolder>eclipse</rootFolder>
-              <!-- 
-              <archiveFileName>${project.build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}</archiveFileName>
-               -->
             </product>
           </products>
           <profile>${project.artifactId}</profile>
@@ -139,7 +120,7 @@
               <arguments>
                 <argument>${eclipse.epp.archiveDirectory}</argument>
                 <argument>${project.build.directory}/products/epp.package.${eclipse.epp.id}</argument>
-                <argument>${project.build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}</argument>
+                <argument>${build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}</argument>
               </arguments>
             </configuration>
           </plugin>
