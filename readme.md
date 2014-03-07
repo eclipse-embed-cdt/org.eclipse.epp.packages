@@ -18,8 +18,8 @@ the Simultaneous Release staging p2 repository:
 
 This build creates output in two places:
 
-1. tar.gz/zip archives with the packages in `packages/org.eclipse.epp.package.rcp.product/target/products/` and
-2. a p2 repository with the EPP artifacts in `repository/`.
+1. tar.gz/zip archives with the packages in `archive/` and
+2. a p2 repository with the EPP artifacts in `archive/repository/`.
 
 Windows users
 ------------- 
@@ -32,6 +32,12 @@ At the moment it is advised to run the build command on Windows with `package`
 only:
 
     mvn clean package -Pepp.package.rcp
+
+In addition to that it is not possible to create zip and tar.gz archives on 
+Windows due to missing Bash scripting capabilities. On Windows, the output of the
+build is the `eclipse` directory that contains the usual content from the zip
+archive. This directory can be found below (e.g. RCP package) 
+`packages/org.eclipse.epp.package.rcp.product/target/products/`.
 
 Available Profiles
 ------------------
