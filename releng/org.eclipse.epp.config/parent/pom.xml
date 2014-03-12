@@ -28,6 +28,7 @@
     <cbi.version>1.0.5</cbi.version>
     <maven.resources.version>2.6</maven.resources.version>
     <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
+    <build>${maven.build.timestamp}</build>
     <!-- The location that is used to assemble the single EPP configuration p2 repository -->
     <eclipse.epp.archiveDirectory>${basedir}/../../archive/</eclipse.epp.archiveDirectory>
     <!-- The location that is used to assemble the single EPP configuration p2 repository -->
