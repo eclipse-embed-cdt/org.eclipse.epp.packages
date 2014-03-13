@@ -14,7 +14,7 @@
    bugzillaComponentId="rcp-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-     <description><![CDATA[A complete set of tools for developers who want to create Eclipse plug-ins, Rich Client or Rich Ajax Applications (RCP+RAP), plus Mylyn, and an XML editor. In addition to the CVS Eclipse Team provider, it also contains the EGit tooling for accessing Git version control systems.]]></description>
+     <description><![CDATA[A complete set of tools for developers who want to create Eclipse plug-ins, Rich Client Applications or Remote Application Platform (RCP+RAP), plus Mylyn, and an XML editor. In addition to the CVS Eclipse Team provider, it also contains the EGit tooling for accessing Git version control systems.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
       <tester>Markus Knauer</tester>
@@ -22,10 +22,10 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/R-4.3-201306052000/news/"
+    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.4M6-201403061200/news/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
-    url="http://www.eclipse.org/rap/noteworthy/2.1/"
+    url="http://www.eclipse.org/rap/noteworthy/"
     project="Eclipse RAP" />
   <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"
@@ -44,6 +44,6 @@
   <rcp version="4.3.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-rcp-luna-M5" />
+  <product name="eclipse-rcp-luna-M6" />
 
 </configuration>

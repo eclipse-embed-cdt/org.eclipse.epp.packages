@@ -25,7 +25,7 @@
     url="http://wiki.eclipse.org/PHP/NewInJuno"
     project="Eclipse for PHP Developers" />
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/R-4.3-201306052000/news/"
+    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.4M6-201403061200/news/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"
@@ -41,6 +41,6 @@
   <rcp version="4.3.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-php-luna-M5" />
+  <product name="eclipse-php-luna-M6" />
 
 </configuration>
