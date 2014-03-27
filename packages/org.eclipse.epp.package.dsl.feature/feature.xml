@@ -19,12 +19,8 @@
       <discovery label="Eclipse Platform 4.4" url="http://download.eclipse.org/eclipse/updates/4.4"/>
    </url>
 
-   <includes
-         id="org.eclipse.platform"
-         version="0.0.0"
-         search-location="both"/>
-
    <requires>
+      <import feature="org.eclipse.platform"/>
       <import feature="org.eclipse.cvs"/>
       <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.help"/>
