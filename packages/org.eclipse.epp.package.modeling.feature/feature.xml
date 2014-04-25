@@ -57,11 +57,8 @@
       <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.emf.eef.codegen.ecore-feature"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
-      <!--
-           Exclude ECP and EMFStore while the fixes for Bug 430256 are not in the aggregation repo
       <import feature="org.eclipse.emf.ecp.sdk.feature"/>
       <import feature="org.eclipse.emf.emfstore.sdk.feature"/>
-      --> 
    </requires>
 
    <plugin
