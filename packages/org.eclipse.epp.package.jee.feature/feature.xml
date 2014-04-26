@@ -4,9 +4,11 @@
       label="%featureName"
       version="4.4.0.qualifier"
       provider-name="%providerName"
-      plugin="org.eclipse.epp.package.jee">
+      plugin="org.eclipse.epp.package.jee"
+      license-feature="org.eclipse.license"
+      license-feature-version="0.0.0">
 
-   <description>
+   <description url="http://eclipse.org/epp">
       %description
    </description>
 

@@ -4,13 +4,19 @@
       label="EPP Parallel Feature"
       version="4.4.0.qualifier"
       provider-name="Eclipse Packaging Project"
-      plugin="org.eclipse.epp.package.parallel">
+      plugin="org.eclipse.epp.package.parallel"
+      license-feature="org.eclipse.license"
+      license-feature-version="0.0.0">
 
-   <description>
-      An IDE for Parallel Application developers.
+   <description url="http://eclipse.org/epp">
+      %description
    </description>
 
-   <license url="license.html">
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
       %license
    </license>
 

@@ -4,13 +4,19 @@
       label="EPP RCP/RAP Feature"
       version="4.4.0.qualifier"
       provider-name="Eclipse Packaging Project"
-      plugin="org.eclipse.epp.package.rcp">
+      plugin="org.eclipse.epp.package.rcp"
+      license-feature="org.eclipse.license"
+      license-feature-version="0.0.0">
 
-   <description>
-      A complete set of tools for developers who want to create Eclipse plug-ins, Rich Client or Rich Ajax Applications (RCP+RAP), plus Mylyn, plus WindowBuilder, plus Code Recommenders, and an XML editor.
+   <description url="http://eclipse.org/epp">
+      %description
    </description>
 
-   <license url="license.html">
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
       %license
    </license>
 

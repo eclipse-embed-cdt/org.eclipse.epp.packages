@@ -4,13 +4,19 @@
       label="EPP Automotive Feature"
       version="4.4.0.qualifier"
       provider-name="Eclipse Packaging Project"
-      plugin="org.eclipse.epp.package.automotive">
+      plugin="org.eclipse.epp.package.automotive"
+      license-feature="org.eclipse.license"
+      license-feature-version="0.0.0">
 
-   <description>
-      This package contains frameworks and tools used for the development of embedded automotive software: In addition to Eclipse Platform, Java Development Tools, and Plug-in Development Environment, it includes EMF, GMF, Xtext, Xpand, UML2, selected other modeling components, C/C++ development tools, and XML/XSD editors and tools. It comes with the complete SDKs, i.e., provides runtime binaries, source code, and documentation.
+   <description url="http://eclipse.org/epp">
+      %description
    </description>
 
-   <license url="license.html">
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
       %license
    </license>
 

@@ -4,13 +4,19 @@
       label="EPP Scout Feature"
       version="4.4.0.qualifier"
       provider-name="Eclipse Packaging Project"
-      plugin="org.eclipse.epp.package.scout">
+      plugin="org.eclipse.epp.package.scout"
+      license-feature="org.eclipse.license"
+      license-feature-version="0.0.0">
 
-   <description>
-      Developing Scout applications is supported by the Eclipse Scout Package, a plug-in set built on top of Eclipse PDE and Eclipse JDT. The Eclipse Scout Package works directly on the bare Java resources and assists the development task by providing an augmented view on the underlying Java code. Additionally, it comes with a rich set of wizards and operations for modifying the Scout application project just by editing the underlying Java code.
+   <description url="http://eclipse.org/epp">
+      %description
    </description>
 
-   <license url="license.html">
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
       %license
    </license>
 

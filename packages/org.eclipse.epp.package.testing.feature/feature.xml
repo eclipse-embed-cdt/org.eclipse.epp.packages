@@ -4,13 +4,19 @@
       label="EPP Testing Feature"
       version="4.4.0.qualifier"
       provider-name="Eclipse Packaging Project"
-      plugin="org.eclipse.epp.package.testing">
+      plugin="org.eclipse.epp.package.testing"
+      license-feature="org.eclipse.license"
+      license-feature-version="0.0.0">
 
-   <description>
-      Functional testing applications is supported by the Eclipse Testing Package, a plug-in set built on top of the Eclipse Platform.
+   <description url="http://eclipse.org/epp">
+      %description
    </description>
 
-   <license url="license.html">
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
       %license
    </license>
 

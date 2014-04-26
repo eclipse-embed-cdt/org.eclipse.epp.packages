@@ -4,13 +4,19 @@
       label="EPP Java Package"
       version="4.4.0.qualifier"
       provider-name="Eclipse Packaging Project"
-      plugin="org.eclipse.epp.package.java">
+      plugin="org.eclipse.epp.package.java"
+      license-feature="org.eclipse.license"
+      license-feature-version="0.0.0">
 
-   <description>
-      The essential tools for any Java developer, including a Java IDE, a CVS client, XML Editor and Mylyn.
+   <description url="http://eclipse.org/epp">
+      %description
    </description>
 
-   <license url="license.html">
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
       %license
    </license>
 
