@@ -2,7 +2,7 @@
 <configuration>
 
   <!-- Package Description information to be picked up by www.eclipse.org/packages -->
-  <!-- PackageName is the title of your package 
+  <!-- PackageName is the title of your package
        maintainer is the project or persons that are maintaining the package
        iconurl is the fully qualified URL to the icon you wish to use on the site (48x48)
        bugzillaComponentID is used to gather bugzilla information about your package.  This should be given to you after provisioning of the package is finished
@@ -16,7 +16,7 @@
    testPlan="" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
      <description><![CDATA[
-The Eclipse Platform, and all the tools needed to develop and debug it: Java and Plug-in Development Tooling, Git and CVS support, including source and developer documentation.
+Standard Eclipse package suited for Java and plug-in development plus adding new plugins; already includes Git, Marketplace Client, source code and developer documentation.
 <br/>
 Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">here</a> to file a bug against Eclipse Platform.
 ]]></description>
@@ -32,7 +32,7 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">her
     project="Eclipse Platform" />
   </MoreInfo>
 
-  <!-- version, the RCP version to build. This is used to determine the file 
+  <!-- version, the RCP version to build. This is used to determine the file
     name of the root file archives -->
   <rcp version="4.4" />
 
