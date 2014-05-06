@@ -61,7 +61,7 @@
       <import feature="org.eclipse.gmf.runtime.sdk"/>
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
-      <import feature="org.eclipse.emf.eef.codegen.ecore-feature"  version="1.3.0.qualifier" match="compatible"/>
+      <import feature="org.eclipse.emf.eef.codegen.ecore-feature"  version="1.2.0.qualifier" match="compatible"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
       <import feature="org.eclipse.emf.ecp.sdk.feature"/>
       <import feature="org.eclipse.emf.emfstore.sdk.feature"/>
