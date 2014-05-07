@@ -86,7 +86,7 @@
          search-location="both"/>
 
    <includes
-         id="org.eclipse.linuxtools.lttng2"
+         id="org.eclipse.linuxtools.lttng2.control"
          version="0.0.0"
          optional="true"
          search-location="both"/>
