@@ -35,7 +35,7 @@
          </property>
          <property
                name="aboutImage"
-               value="eclipse_lg.gif">
+               value="eclipse_lg.png">
          </property>
          <property
                name="windowImages"

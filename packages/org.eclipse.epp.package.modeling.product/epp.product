@@ -4,7 +4,7 @@
 <product name="Eclipse Modeling Tools" uid="epp.package.modeling" id="org.eclipse.epp.package.modeling.product" application="org.eclipse.ui.ide.workbench" version="4.4.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
-      <image path="/org.eclipse.epp.package.modeling/eclipse_lg.gif"/>
+      <image path="/org.eclipse.epp.package.modeling/eclipse_lg.png"/>
       <text>
          Specified in the plugin.xml of the branding plugin.
       </text>

@@ -4,7 +4,7 @@
 <product name="Eclipse IDE for Automotive Software Developers" uid="epp.package.automotive" id="org.eclipse.epp.package.automotive.product" application="org.eclipse.ui.ide.workbench" version="4.4.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
-      <image path="/org.eclipse.epp.package.automotive/eclipse_lg.gif"/>
+      <image path="/org.eclipse.epp.package.automotive/eclipse_lg.png"/>
       <text>
          Specified in the plugin.xml of the branding plugin.
       </text>
