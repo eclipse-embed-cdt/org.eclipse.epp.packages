@@ -62,9 +62,9 @@ requires.13.namespace=org.eclipse.equinox.p2.iu
 requires.13.name=org.eclipse.linuxtools.gcov.feature.group
 requires.13.optional=true
 
-#      <import feature="org.eclipse.linuxtools.lttng2"/>
+#      <import feature="org.eclipse.linuxtools.lttng2.control"/>
 requires.14.namespace=org.eclipse.equinox.p2.iu
-requires.14.name=org.eclipse.linuxtools.lttng2.feature.group
+requires.14.name=org.eclipse.linuxtools.lttng2.control.feature.group
 requires.14.optional=true
 
 #      <import feature="org.eclipse.linuxtools.lttng2.kernel"/>
