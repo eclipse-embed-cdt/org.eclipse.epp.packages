@@ -27,13 +27,13 @@
     url="http://www.eclipse.org/webtools/development/news/main.php"
     project="Eclipse Webtools Project" />
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.4M6-201403061200/news/"
+    url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.4M7-201405010200/news/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="http://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
   <NewAndNoteworthy
-    url="http://wiki.eclipse.org/EGit/New_and_Noteworthy/3.0"
+    url="http://wiki.eclipse.org/EGit/New_and_Noteworthy/3.4"
     project="EGit" />
   <NewAndNoteworthy
     url="http://wiki.eclipse.org/M2E-WTP/New_and_Noteworthy/1.0.0"
@@ -45,9 +45,9 @@
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="4.3.0" />
+  <rcp version="4.4.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-jee-luna-M6" />
+  <product name="eclipse-jee-luna-M7" />
 
 </configuration>
