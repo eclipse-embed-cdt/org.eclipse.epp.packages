@@ -55,6 +55,7 @@
       <import feature="org.eclipse.rcp"/>
       <import feature="org.eclipse.rcp.source"/>
       <import feature="org.eclipse.recommenders.rcp.feature"/>
+      <import feature="org.eclipse.recommenders.mylyn.rcp.feature"/>
       <import feature="org.eclipse.wb.core.feature"/>
       <import feature="org.eclipse.wb.core.ui.feature"/>
       <import feature="org.eclipse.wb.layout.group.feature"/>
