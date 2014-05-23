@@ -381,6 +381,31 @@
       </build>
     </profile>
 
+    <!--
+       This profile needs to stay disabled for release builds, but may serve as a testing
+       facility when carrying out tests with various p2 repositories. One possible use case
+       is to add a p2 repository to the build that provides newer or different artifacts.
+       In order to do this one needs to activate this profile explicitely and provide the
+       p2 repository URL with a Java property.
+
+       Example: -Depp.wormhole.repository=file:///tmp/myown.p2.repo/
+      -->
+    <profile>
+      <id>p2.wormhole</id>
+      <activation>
+        <property>
+          <name>epp.wormhole.repository</name>
+        </property>
+      </activation>
+      <repositories>
+        <repository>
+          <id>epp.wormhole.repository</id>
+          <layout>p2</layout>
+          <url>${epp.wormhole.repository}</url>
+        </repository>
+      </repositories>
+    </profile>
+
   </profiles>
 
 </project>
