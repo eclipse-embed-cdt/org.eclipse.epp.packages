@@ -26,39 +26,44 @@
       <discovery label="Mylyn for Eclipse Luna" url="http://download.eclipse.org/mylyn/releases/luna/"/>
    </url>
 
-   <includes
-         id="org.eclipse.platform"
-         version="0.0.0"
-         search-location="both"/>
 
    <requires>
       <import feature="org.eclipse.cvs"/>
-      <import feature="org.eclipse.equinox.p2.user.ui"/>
-      <import feature="org.eclipse.help"/>
-      <import feature="org.eclipse.jdt"/>
-      <import feature="org.eclipse.platform"/>
-      <import feature="org.eclipse.rcp"/>
-      <import feature="org.eclipse.wst.xml_ui.feature"/>
-      <import feature="org.eclipse.mylyn.ide_feature"/>
-      <import feature="org.eclipse.mylyn.java_feature"/>
-      <import feature="org.eclipse.mylyn.bugzilla_feature"/>
-      <import feature="org.eclipse.mylyn.context_feature"/>
-      <import feature="org.eclipse.mylyn_feature"/>
-      <import feature="org.eclipse.mylyn.wikitext_feature"/>
-      <import feature="org.eclipse.mylyn.cvs"/>
-      <import feature="org.eclipse.mylyn.git"/>
-      <import feature="org.eclipse.mylyn.hudson"/>
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.egit.mylyn"/>
+      <!--
+
+        Disable EPP Common feature temporarily in order to remove the
+        Marketplace Client (MPC) from the package for Luna RC2.
+        Bug 436002 - Eclipse Luna RC1 shows blank window after launch
+        https://bugs.eclipse.org/bugs/show_bug.cgi?id=436002
+
+      <import feature="org.eclipse.epp.package.common.feature"/>
+      -->
+      <import feature="org.eclipse.equinox.p2.user.ui"/>
+      <import feature="org.eclipse.help"/>
+      <import feature="org.eclipse.jdt"/>
+      <import feature="org.eclipse.jgit"/>
       <import feature="org.eclipse.m2e.feature"/>
       <import feature="org.eclipse.m2e.logback.feature"/>
+      <import feature="org.eclipse.mylyn.bugzilla_feature"/>
+      <import feature="org.eclipse.mylyn.context_feature"/>
+      <import feature="org.eclipse.mylyn.cvs"/>
+      <import feature="org.eclipse.mylyn_feature"/>
+      <import feature="org.eclipse.mylyn.git"/>
+      <import feature="org.eclipse.mylyn.hudson"/>
+      <import feature="org.eclipse.mylyn.ide_feature"/>
+      <import feature="org.eclipse.mylyn.java_feature"/>
+      <import feature="org.eclipse.mylyn.wikitext_feature"/>
+      <import feature="org.eclipse.platform"/>
+      <import feature="org.eclipse.rcp"/>
+      <import feature="org.eclipse.recommenders.rcp.feature"/>
       <import feature="org.eclipse.wb.core.feature"/>
       <import feature="org.eclipse.wb.core.ui.feature"/>
       <import feature="org.eclipse.wb.layout.group.feature"/>
       <import feature="org.eclipse.wb.swing.feature"/>
-      <import feature="org.eclipse.recommenders.rcp.feature"/>
-      <import feature="org.eclipse.epp.package.common.feature"/>
+      <import feature="org.eclipse.wst.xml_ui.feature"/>
    </requires>
 
    <plugin
