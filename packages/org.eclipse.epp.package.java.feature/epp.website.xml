@@ -10,7 +10,7 @@
   <packageMetaData
    packageName="Eclipse IDE for Java Developers"
    maintainer="Eclipse Mylyn Project"
-   iconurl="http://www.eclipse.org/downloads/images/java.jpg"
+   iconurl="http://www.eclipse.org/downloads/images/java.png"
    bugzillaComponentId="java-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
