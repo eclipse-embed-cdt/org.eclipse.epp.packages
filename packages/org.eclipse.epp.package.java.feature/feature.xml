@@ -32,15 +32,7 @@
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.egit.mylyn"/>
-      <!--
-
-        Disable EPP Common feature temporarily in order to remove the
-        Marketplace Client (MPC) from the package for Luna RC2.
-        Bug 436002 - Eclipse Luna RC1 shows blank window after launch
-        https://bugs.eclipse.org/bugs/show_bug.cgi?id=436002
-
       <import feature="org.eclipse.epp.package.common.feature"/>
-      -->
       <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.help"/>
       <import feature="org.eclipse.jdt"/>
