@@ -34,7 +34,7 @@
     url="http://wiki.eclipse.org/EGit/New_and_Noteworthy/3.4"
     project="EGit" />
   <NewAndNoteworthy
-    url="http://eclipse.org/recommenders/documentation/changes.html"
+    url="http://eclipse.org/recommenders/manual/"
     project="Eclipse Code Recommenders" />
   </MoreInfo>
 
