@@ -28,7 +28,7 @@
     url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.4M7-201405010200/news/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
-    url="http://wiki.eclipse.org/CDT/User/NewIn90"
+    url="https://wiki.eclipse.org/CDT/User/NewIn84"
     project="Eclipse CDT" />
   <NewAndNoteworthy
     url="http://www.eclipse.org/linuxtools/new/"
