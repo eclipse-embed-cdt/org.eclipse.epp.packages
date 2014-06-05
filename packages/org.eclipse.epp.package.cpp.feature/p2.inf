@@ -77,6 +77,10 @@ requires.16.namespace=org.eclipse.equinox.p2.iu
 requires.16.name=org.eclipse.linuxtools.gdbtrace.feature.group
 requires.16.optional=true
 
+#      <import feature="org.eclipse.linuxtools.lttng2.ust"/>
+requires.17.namespace=org.eclipse.equinox.p2.iu
+requires.17.name=org.eclipse.linuxtools.lttng2.ust.feature.group
+requires.17.optional=true
 
 properties.0.name = org.eclipse.equinox.p2.type.product
 properties.0.value = true
