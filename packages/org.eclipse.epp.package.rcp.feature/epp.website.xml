@@ -44,6 +44,6 @@
   <rcp version="4.4.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-rcp-luna-RC4" />
+  <product name="eclipse-rcp-luna-R" />
 
 </configuration>
