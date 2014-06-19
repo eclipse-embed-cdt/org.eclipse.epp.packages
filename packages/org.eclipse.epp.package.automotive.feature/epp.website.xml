@@ -14,17 +14,23 @@
    bugzillaComponentId="automotive-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-     <description><![CDATA[This package contains frameworks and tools used for the development of embedded automotive software: In addition to Eclipse Platform, Java Development Tools, and Plug-in Development Environment, it includes EMF, Sphinx, GMF, Xtext, Xpand, UML2, selected other modeling components, C/C++ development tools, and XML/XSD editors and tools. It comes with the complete SDKs, i.e., provides runtime binaries, source code, and documentation.]]></description>
+     <description><![CDATA[This package contains frameworks and tools used for the development of embedded automotive software: In addition to Eclipse Platform, Java Development Tools, and Plug-in Development Environment, it includes EMF, Sphinx, GMF, Xtext, Xtend, Xpand, UML2, selected other modeling components, C/C++ development tools, and XML/XSD editors and tools. To keep the package at a reasonable size, it includes only the runtime binaries but no source code and no developer documentation.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
       <tester>Stephan Eberle</tester>
-      <tester>Amine Lajmi</tester>
+      <tester>Idrissa Dieng</tester>
     </packageTesters>
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
     url="http://download.eclipse.org/eclipse/downloads/drops4/S-4.4M7-201405010200/news/"
     project="Eclipse Platform" />
+  <NewAndNoteworthy
+    url="https://wiki.eclipse.org/CDT/User/NewIn84"
+    project="Eclipse CDT" />
+  <NewAndNoteworthy
+      url="https://wiki.eclipse.org/EMF_Compare/ReleaseReview/Luna#New_.26_Noteworthy"
+    project="EMF Compare" />
   </MoreInfo>
 
   <!-- version, the RCP version to build. This is used to determine the file
