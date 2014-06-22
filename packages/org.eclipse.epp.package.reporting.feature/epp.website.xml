@@ -17,7 +17,7 @@
      <description><![CDATA[Java EE tools and BIRT reporting tool for Java developers to create Java EE and Web applications that also have reporting needs.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
-      <tester>Xiaoying Gu</tester>
+      <tester>Roshanak Afsarifard</tester>
     </packageTesters>
   </packageMetaData>
   <MoreInfo>

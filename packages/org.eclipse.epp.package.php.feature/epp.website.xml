@@ -18,6 +18,7 @@
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
       <tester>Jacek Pospychala</tester>
+      <tester>Kaloyan Raev</tester>
     </packageTesters>
   </packageMetaData>
   <MoreInfo>
