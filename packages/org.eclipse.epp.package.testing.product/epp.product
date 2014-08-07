@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse for Testers" uid="epp.package.testing" id="org.eclipse.epp.package.testing.product" application="org.eclipse.ui.ide.workbench" version="4.4.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse for Testers" uid="epp.package.testing" id="org.eclipse.epp.package.testing.product" application="org.eclipse.ui.ide.workbench" version="4.4.1.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/org.eclipse.epp.package.testing/eclipse_lg.png"/>
@@ -181,7 +181,7 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.testing.feature" version="4.4.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.testing.feature" version="4.4.1.qualifier"/>
    </features>
 
 

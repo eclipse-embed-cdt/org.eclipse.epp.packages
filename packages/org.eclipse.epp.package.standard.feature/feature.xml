@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.standard.feature"
       label="EPP Eclipse Standard/SDK Feature"
-      version="4.4.0.qualifier"
+      version="4.4.1.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.standard"
       license-feature="org.eclipse.license"

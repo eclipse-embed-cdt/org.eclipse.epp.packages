@@ -40,6 +40,6 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">her
   <rcp version="4.4" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-standard-luna-R" />
+  <product name="eclipse-standard-luna-SR1" />
 
 </configuration>
