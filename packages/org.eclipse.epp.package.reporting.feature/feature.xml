@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.reporting.feature"
       label="EPP Reporting Feature"
-      version="4.4.0.qualifier"
+      version="4.5.0.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.reporting"
       license-feature="org.eclipse.license"
@@ -21,8 +21,8 @@
    </license>
 
    <url>
-      <discovery label="Luna" url="http://download.eclipse.org/releases/luna/"/>
-      <discovery label="Eclipse Platform 4.4" url="http://download.eclipse.org/eclipse/updates/4.4"/>
+      <discovery label="Mars" url="http://download.eclipse.org/releases/mars/"/>
+      <discovery label="Eclipse Platform 4.5" url="http://download.eclipse.org/eclipse/updates/4.5"/>
    </url>
 
    <includes

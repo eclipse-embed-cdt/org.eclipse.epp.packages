@@ -8,12 +8,12 @@ requires.1.name=org.eclipse.platform.ide
 requires.1.greedy=true
 
 instructions.configure=\
-org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/mylyn/releases/luna,name:Mylyn for Eclipse Luna);\
-org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/mylyn/releases/luna,name:Mylyn for Eclipse Luna);
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/mylyn/releases/mars,name:Mylyn for Eclipse Mars);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/mylyn/releases/mars,name:Mylyn for Eclipse Mars);
 
 instructions.unconfigure=\
-org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.eclipse.org/mylyn/releases/luna);\
-org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.eclipse.org/mylyn/releases/luna);
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.eclipse.org/mylyn/releases/mars);\
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.eclipse.org/mylyn/releases/mars);
 
 
 properties.0.name = org.eclipse.equinox.p2.type.product

@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.java.feature"
       label="EPP Java Package"
-      version="4.4.0.qualifier"
+      version="4.5.0.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.java"
       license-feature="org.eclipse.license"
@@ -21,9 +21,9 @@
    </license>
 
    <url>
-      <discovery label="Luna" url="http://download.eclipse.org/releases/luna/"/>
-      <discovery label="Eclipse Platform 4.4" url="http://download.eclipse.org/eclipse/updates/4.4"/>
-      <discovery label="Mylyn for Eclipse Luna" url="http://download.eclipse.org/mylyn/releases/luna/"/>
+      <discovery label="Mars" url="http://download.eclipse.org/releases/mars/"/>
+      <discovery label="Eclipse Platform 4.5" url="http://download.eclipse.org/eclipse/updates/4.5"/>
+      <discovery label="Mylyn for Eclipse Mars" url="http://download.eclipse.org/mylyn/releases/mars/"/>
    </url>
 
 
