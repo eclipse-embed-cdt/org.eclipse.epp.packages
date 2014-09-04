@@ -79,9 +79,11 @@
       <import feature="org.eclipse.jpt.jaxb.feature"/>
       <import feature="org.eclipse.jpt.jpa.eclipselink.feature"/>
       <import feature="org.eclipse.jpt.jpa.feature"/>
+      <!-- disabled in Luna SR1 RC2 https://bugs.eclipse.org/bugs/show_bug.cgi?id=443269
       <import feature="org.eclipse.persistence.jpa"/>
       <import feature="org.eclipse.persistence.moxy"/>
       <import feature="org.eclipse.persistence.sdo"/>
+      -->
       <import feature="org.eclipse.birt"/>
       <import feature="org.eclipse.birt.doc"/>
       <import feature="org.eclipse.birt.example"/>
