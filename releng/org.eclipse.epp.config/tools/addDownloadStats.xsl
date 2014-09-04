@@ -30,6 +30,10 @@ Contributors:
     <xsl:call-template name="artifact_properties" />
   </xsl:template>
 
+  <xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.committers']/properties">
+    <xsl:call-template name="artifact_properties" />
+  </xsl:template>
+
   <xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.cpp']/properties">
     <xsl:call-template name="artifact_properties" />
   </xsl:template>
@@ -70,10 +74,6 @@ Contributors:
     <xsl:call-template name="artifact_properties" />
   </xsl:template>
 
-  <xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.standard']/properties">
-    <xsl:call-template name="artifact_properties" />
-  </xsl:template>
-
   <xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.testing']/properties">
     <xsl:call-template name="artifact_properties" />
   </xsl:template>
@@ -87,6 +87,10 @@ Contributors:
 
 
   <xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.automotive.feature']/properties">
+    <xsl:call-template name="artifact_properties_feature" />
+  </xsl:template>
+
+  <xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.committers.feature']/properties">
     <xsl:call-template name="artifact_properties_feature" />
   </xsl:template>
 
@@ -131,10 +135,6 @@ Contributors:
   </xsl:template>
 
   <xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.scout.feature']/properties">
-    <xsl:call-template name="artifact_properties_feature" />
-  </xsl:template>
-
-  <xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.standard.feature']/properties">
     <xsl:call-template name="artifact_properties_feature" />
   </xsl:template>
 

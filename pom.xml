@@ -122,11 +122,11 @@
       </modules>
     </profile>
     <profile>
-      <id>epp.package.standard</id>
+      <id>epp.package.committers</id>
       <modules>
-        <module>packages/org.eclipse.epp.package.standard</module>
-        <module>packages/org.eclipse.epp.package.standard.feature</module>
-        <module>packages/org.eclipse.epp.package.standard.product</module>
+        <module>packages/org.eclipse.epp.package.committers</module>
+        <module>packages/org.eclipse.epp.package.committers.feature</module>
+        <module>packages/org.eclipse.epp.package.committers.product</module>
       </modules>
     </profile>
     <profile>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.eclipse.epp.package.standard.feature"
-      label="EPP Eclipse Standard/SDK Feature"
+      id="org.eclipse.epp.package.committers.feature"
+      label="EPP Eclipse IDE for Eclipse Committers Feature"
       version="4.5.0.qualifier"
       provider-name="Eclipse Packaging Project"
-      plugin="org.eclipse.epp.package.standard"
+      plugin="org.eclipse.epp.package.committers"
       license-feature="org.eclipse.license"
       license-feature-version="0.0.0">
 
@@ -50,7 +50,7 @@
    </requires>
 
    <plugin
-         id="org.eclipse.epp.package.standard"
+         id="org.eclipse.epp.package.committers"
          download-size="0"
          install-size="0"
          version="0.0.0"/>

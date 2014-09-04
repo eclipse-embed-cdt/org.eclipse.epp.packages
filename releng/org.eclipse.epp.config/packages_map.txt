@@ -8,6 +8,9 @@
 automotive,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.automotive.feature/epp.website.xml,HEAD,automotive.xml
 automotive,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.automotive.feature/feature.xml,HEAD,automotive.feature.xml
 
+committers,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.committers.feature/epp.website.xml,HEAD,committers.xml
+committers,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.committers.feature/feature.xml,HEAD,committers.feature.xml
+
 cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/epp.website.xml,HEAD,cpp.xml
 cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/feature.xml,HEAD,cpp.feature.xml
 
@@ -37,9 +40,6 @@ reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp
 
 scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.feature/epp.website.xml,HEAD,scout.xml
 scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.feature/feature.xml,HEAD,scout.feature.xml
-
-standard,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.standard.feature/epp.website.xml,HEAD,standard.xml
-standard,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.standard.feature/feature.xml,HEAD,standard.feature.xml
 
 testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.feature/epp.website.xml,HEAD,testing.xml
 testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.feature/feature.xml,HEAD,testing.feature.xml

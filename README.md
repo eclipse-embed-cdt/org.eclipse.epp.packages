@@ -45,6 +45,7 @@ Available Profiles
 Each package uses its own profile:
 
 - epp.package.automotive
+- epp.package.committers
 - epp.package.cpp
 - epp.package.dsl
 - epp.package.java
@@ -55,7 +56,6 @@ Each package uses its own profile:
 - epp.package.rcp
 - epp.package.reporting
 - epp.package.scout
-- epp.package.standard
 - epp.package.testing
 
 With the signing profile enabled, the build artifacts (bundles, features) and the

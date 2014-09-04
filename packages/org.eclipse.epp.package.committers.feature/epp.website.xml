@@ -9,16 +9,17 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse Standard 4.5.0 M1"
+   packageName="Eclipse IDE for Eclipse Committers 4.5.0 M1"
    maintainer="Eclipse Packaging Project"
    iconurl="http://www.eclipse.org/downloads/images/classic2.jpg"
-   bugzillaComponentId="classic-package"
+   bugzillaComponentId="committers-package"
    testPlan="" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
      <description><![CDATA[
-Standard Eclipse package suited for Java and plug-in development plus adding new plugins; already includes Git, Marketplace Client, source code and developer documentation.
+Package suited for development of Eclipse itself at Eclipse.org; based on the Eclipse Platform adding PDE, Git, Marketplace Client, source code and developer documentation.<br/>
 <br/>
-Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">here</a> to file a bug against Eclipse Platform.
+Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">here</a> to file a bug against Eclipse Platform.<br/>
+Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EGit">here</a> to file a bug against Eclipse Git team provider.
 ]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
@@ -40,6 +41,6 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">her
   <rcp version="4.5.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-standard-mars-M1" />
+  <product name="eclipse-committers-mars-M1" />
 
 </configuration>

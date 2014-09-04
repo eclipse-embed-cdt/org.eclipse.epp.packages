@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse Standard/SDK" uid="epp.package.standard" id="org.eclipse.epp.package.standard.product" application="org.eclipse.ui.ide.workbench" version="4.5.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse IDE for Eclipse Committers" uid="epp.package.committers" id="org.eclipse.epp.package.committers.product" application="org.eclipse.ui.ide.workbench" version="4.5.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
-      <image path="/org.eclipse.epp.package.standard/eclipse_lg.png"/>
+      <image path="/org.eclipse.epp.package.committers/eclipse_lg.png"/>
       <text>
          Specified in the plugin.xml of the branding plugin.
       </text>
@@ -14,19 +14,24 @@
    </configIni>
 
    <launcherArgs>
-      <programArgs>-product org.eclipse.epp.package.standard.product
---launcher.defaultAction openFile</programArgs>
+      <programArgs>-product org.eclipse.epp.package.committers.product
+--launcher.defaultAction openFile
+      </programArgs>
       <programArgsWin>--launcher.XXMaxPermSize
-256M</programArgsWin>
+256M
+      </programArgsWin>
       <vmArgs>-Dosgi.requiredJavaVersion=1.7
 -Xms40m
--Xmx512m</vmArgs>
-      <vmArgsLin>-XX:MaxPermSize=256m</vmArgsLin>
+-Xmx512m
+      </vmArgs>
+      <vmArgsLin>-XX:MaxPermSize=256m
+      </vmArgsLin>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
--XX:MaxPermSize=256m</vmArgsMac>
+-XX:MaxPermSize=256m
+      </vmArgsMac>
    </launcherArgs>
 
-   <windowImages i16="/org.eclipse.epp.package.standard/eclipse16.png" i32="/org.eclipse.epp.package.standard/eclipse32.png" i48="/org.eclipse.epp.package.standard/eclipse48.png" i256="/org.eclipse.epp.package.standard/eclipse256.png"/>
+   <windowImages i16="/org.eclipse.epp.package.committers/eclipse16.png" i32="/org.eclipse.epp.package.committers/eclipse32.png" i48="/org.eclipse.epp.package.committers/eclipse48.png" i256="/org.eclipse.epp.package.committers/eclipse256.png"/>
 
    <splash
       startupProgressRect="2,290,448,10"
@@ -181,7 +186,7 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.standard.feature" version="4.5.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.committers.feature" version="4.5.0.qualifier"/>
    </features>
 
 
