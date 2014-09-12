@@ -63,6 +63,9 @@
       <import feature="org.eclipse.wb.rcp.feature"/>
       <import feature="org.eclipse.wb.swt.feature"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
+      <import feature="org.eclipse.swtbot.eclipse"/>
+      <import feature="org.eclipse.swtbot.eclipse.gef"/>
+      <import feature="org.eclipse.swtbot.ide"/>
    </requires>
 
    <plugin
