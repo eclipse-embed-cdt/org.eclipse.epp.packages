@@ -59,9 +59,7 @@ for II in *eclipse*; do
              sed 's/linux\.gtk\.x86\./linux\-gtk\./' | \
              sed 's/win32\.win32\.x86\./win32\./' | \
              sed 's/win32\.win32\.x86\_64\./win32\-x86\_64\./' | \
-             sed 's/macosx\.cocoa\.x86\_64/macosx\-cocoa-x86\_64/' | \
-             sed 's/macosx\.cocoa\.x86/macosx\-cocoa/' | \
-             sed 's/macosx\.carbon\.ppc/macosx\-carbon/'`
+             sed 's/macosx\.cocoa\.x86\_64/macosx\-cocoa-x86\_64/'`
     echo .. Copying ${II} to ${TARGETDIR}/${NEWNAME}
     rsync -av ${II} ${TARGETDIR}/${NEWNAME}
     if [ $? = "0" ]; then

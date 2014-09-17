@@ -62,10 +62,10 @@ METADATAREPOSITORIES="${REPO_STAGING_URL},${REPO_EPP_WORKINGCOPY_URL}"
 ARTIFACTREPOSITORIES="${REPO_STAGING_URL},${REPO_EPP_WORKINGCOPY_URL}"
 
 # definition of OS, WS, ARCH, FORMAT combinations - DO NOT FORGET to adjust the for loop
-OSes=(   win32  win32   linux   linux   macosx  macosx  )
-WSes=(   win32  win32   gtk     gtk     cocoa   cocoa   )
-ARCHes=( x86    x86_64  x86     x86_64  x86     x86_64  )
-FORMAT=( zip    zip     tar.gz  tar.gz  tar.gz  tar.gz  )
+OSes=(   win32  win32   linux   linux   macosx  )
+WSes=(   win32  win32   gtk     gtk     cocoa   )
+ARCHes=( x86    x86_64  x86     x86_64  x86_64  )
+FORMAT=( zip    zip     tar.gz  tar.gz  tar.gz  )
 
 ###############################################################################
 
@@ -132,7 +132,7 @@ do
   # Start statusfile
   echo "<td>"  >>${STATUSFILE}
 
-  for index in 0 1 2 3 4 5;
+  for index in 0 1 2 3 4;
   do
     echo -n "...EPP building ${PACKAGE} ${OSes[$index]} ${WSes[$index]} ${ARCHes[$index]} "
     EXTENSION="${OSes[$index]}.${WSes[$index]}.${ARCHes[$index]}"

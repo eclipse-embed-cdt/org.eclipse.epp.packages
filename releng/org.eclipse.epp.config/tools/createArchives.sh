@@ -22,12 +22,12 @@ fi
 echo "Using packages from source directory ${SOURCE_DIR}"
 
 # definition of OS, WS, ARCH, FORMAT combinations - DO NOT FORGET to adjust the for loop
-OSes=(   win32  win32   linux   linux   macosx  macosx  )
-WSes=(   win32  win32   gtk     gtk     cocoa   cocoa   )
-ARCHes=( x86    x86_64  x86     x86_64  x86     x86_64  )
-FORMAT=( zip    zip     tar.gz  tar.gz  tar.gz  tar.gz  )
+OSes=(   win32  win32   linux   linux   macosx  )
+WSes=(   win32  win32   gtk     gtk     cocoa   )
+ARCHes=( x86    x86_64  x86     x86_64  x86_64  )
+FORMAT=( zip    zip     tar.gz  tar.gz  tar.gz  )
 
-for index in 0 1 2 3 4 5;
+for index in 0 1 2 3 4;
 do
     EXTENSION="${OSes[$index]}.${WSes[$index]}.${ARCHes[$index]}"
     echo -n "Building archive ${BASENAME} for ${EXTENSION} : "
