@@ -65,6 +65,7 @@
       <import feature="org.eclipse.epp.package.common.feature"/>
       <import feature="org.eclipse.emf.ecp.sdk.feature"/>
       <import feature="org.eclipse.emf.emfstore.sdk.feature"/>
+      <import feature="org.eclipse.recommenders.stacktraces.rcp.feature"/>
    </requires>
 
    <plugin
