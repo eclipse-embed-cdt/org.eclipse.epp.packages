@@ -50,7 +50,7 @@
       <import feature="org.eclipse.uml2.sdk"/>
       <import feature="org.eclipse.ocl.all.sdk"/>
       <import feature="org.eclipse.emf.transaction.sdk"/>
-      <import feature="org.eclipse.emf.ecoretools.design" version="2.0.0" match="compatible"/>
+      <import feature="org.eclipse.emf.ecoretools.design" version="3.0.0" match="compatible"/>
       <import feature="org.eclipse.emf.query.sdk"/>
       <import feature="org.eclipse.xsd.sdk"/>
       <import feature="org.eclipse.emf.validation.sdk"/>
