@@ -27,7 +27,6 @@
 
 
    <requires>
-      <import feature="org.eclipse.cvs"/>
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.egit.mylyn"/>
