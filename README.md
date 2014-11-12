@@ -58,11 +58,13 @@ Each package uses its own profile:
 - epp.package.scout
 - epp.package.testing
 
-With the signing profile enabled, the build artifacts (bundles, features) and the
+With the signing profiles enabled, the build artifacts (bundles, features) and the
 Windows and Mac OSX executables are signed. This is done by using the Eclipse Foundation 
 internal signing service and can be activated only if the build is running there.
 
-- eclipse-sign
+- eclipse-sign-jar profile enables signing of the EPP bundles and jar files
+- eclipse-sign-mac profile enables usage of Mac OSX signing service
+- eclipse-sign-windows profile enables usage of Windows signing service
 
 Additional Configuration Possibilities
 --------------------------------------

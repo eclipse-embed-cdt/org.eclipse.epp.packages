@@ -247,7 +247,7 @@
   <profiles>
 
     <profile>
-      <id>eclipse-sign</id>
+      <id>eclipse-sign-jar</id>
 
       <pluginRepositories>
         <pluginRepository>
