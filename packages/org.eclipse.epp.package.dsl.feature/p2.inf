@@ -7,5 +7,5 @@ requires.1.name=org.eclipse.platform.ide
 requires.1.greedy=true
 
 
-properties.0.name = org.eclipse.equinox.p2.type.product
-properties.0.value = true
+
+

@@ -22,7 +22,7 @@
   <packaging>pom</packaging>
 
   <properties>
-    <tycho.version>0.20.0</tycho.version>
+    <tycho.version>0.23.0-SNAPSHOT</tycho.version>
     <tycho.extras.version>${tycho.version}</tycho.extras.version>
     <tycho.scmUrl>scm:git:git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git</tycho.scmUrl>
     <cbi.version>1.1.1</cbi.version>
@@ -57,6 +57,10 @@
       <id>eclipse-cbi</id>
       <url>https://repo.eclipse.org/content/repositories/releases/</url>
     </pluginRepository>
+   <pluginRepository>
+     <id>tycho-snapshots</id>
+     <url>https://repo.eclipse.org/content/repositories/tycho-snapshots/</url>
+   </pluginRepository>
   </pluginRepositories>
 
   <repositories>
@@ -196,7 +200,6 @@
           </execution>
         </executions>
       </plugin>
-
     </plugins>
 
     <pluginManagement>
@@ -232,14 +235,61 @@
           <version>${tycho.version}</version>
         </plugin>
         <plugin>
-          <groupId>org.eclipse.tycho</groupId>
-          <artifactId>tycho-p2-director-plugin</artifactId>
-          <version>${tycho.version}</version>
-        </plugin>
-        <plugin>
           <groupId>org.eclipse.tycho.extras</groupId>
           <artifactId>tycho-p2-extras-plugin</artifactId>
           <version>${tycho.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>tycho-p2-director-plugin</artifactId>
+          <version>${tycho.version}</version>
+          <executions>
+            <execution>
+              <id>materialize-products</id>
+              <goals>
+                <goal>materialize-products</goal>
+                <goal>archive-products</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <formats>
+              <linux>tar.gz</linux>
+              <macosx>tar.gz</macosx>
+              <win32>zip</win32>
+            </formats>
+            <products>
+              <product>
+                <id>${project.artifactId}</id>
+                <rootFolder>eclipse</rootFolder>
+                <archiveFileName>${build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}</archiveFileName>
+              </product>
+            </products>
+            <profile>${project.artifactId}</profile>
+          </configuration>
+        </plugin>
+        <plugin>
+          <artifactId>maven-antrun-plugin</artifactId>
+          <version>1.6</version>
+          <executions>
+            <execution>
+              <id>copy-zips-to-archive-folder</id>
+              <phase>pre-integration-test</phase>
+              <configuration>
+                <target>
+                  <copy todir="${basedir}/../../archive">
+                    <fileset dir="${project.build.directory}/products">
+                      <include name="*.zip" />
+                      <include name="*.tar.gz" />
+                    </fileset>
+                  </copy>
+                </target>
+              </configuration>
+              <goals>
+                <goal>run</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
       </plugins>
     </pluginManagement>

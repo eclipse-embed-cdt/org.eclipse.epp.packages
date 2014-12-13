@@ -28,5 +28,5 @@ properties.1.value=false
 
 
 
-properties.0.name = org.eclipse.equinox.p2.type.product
-properties.0.value = true
+
+
