@@ -27,6 +27,9 @@
    <requires>
       <import feature="org.eclipse.epp.mpc"/>
       <import feature="org.eclipse.recommenders.stacktraces.rcp.feature"/>
+      <!-- Bug 455645: Integrate Oomph into all EPP packages
+           https://bugs.eclipse.org/bugs/show_bug.cgi?id=455645 -->
+      <import feature="org.eclipse.oomph.setup"/>
    </requires>
 
 </feature>
