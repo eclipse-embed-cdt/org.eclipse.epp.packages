@@ -131,6 +131,7 @@
       <id>eclipse-sign</id>
       <build>
         <plugins>
+<!-- DISABLE SIGNING on MAC OSX
           <plugin>
             <groupId>org.eclipse.cbi.maven.plugins</groupId>
             <artifactId>eclipse-macsigner-plugin</artifactId>
@@ -151,6 +152,7 @@
               </execution>
             </executions>
           </plugin>
+-->
           <plugin>
             <groupId>org.eclipse.cbi.maven.plugins</groupId>
             <artifactId>eclipse-winsigner-plugin</artifactId>
