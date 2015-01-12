@@ -57,7 +57,6 @@
       <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.egit.mylyn"/>
       <import feature="org.eclipse.jgit"/>
-      <import feature="org.eclipse.recommenders.stacktraces.rcp.feature"/>
    </requires>
 
    <plugin

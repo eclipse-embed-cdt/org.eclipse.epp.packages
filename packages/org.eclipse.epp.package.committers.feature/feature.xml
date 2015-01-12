@@ -46,7 +46,6 @@
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.jgit"/>
-      <import feature="org.eclipse.recommenders.stacktraces.rcp.feature"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
    </requires>
 

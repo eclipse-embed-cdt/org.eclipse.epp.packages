@@ -26,6 +26,7 @@
 
    <requires>
       <import feature="org.eclipse.epp.mpc"/>
+      <import feature="org.eclipse.recommenders.stacktraces.rcp.feature"/>
    </requires>
 
 </feature>
