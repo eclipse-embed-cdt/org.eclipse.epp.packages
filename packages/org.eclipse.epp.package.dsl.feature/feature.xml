@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.dsl.feature"
       label="EPP DSL Feature"
-      version="4.4.1.qualifier"
+      version="4.4.2.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.dsl"
       license-feature="org.eclipse.license"
