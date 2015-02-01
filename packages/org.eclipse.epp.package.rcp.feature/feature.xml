@@ -27,19 +27,17 @@
 
 
    <requires>
+   <!--
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.egit.mylyn"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
-      <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.help"/>
       <import feature="org.eclipse.jdt"/>
-      <import feature="org.eclipse.jgit"/>
       <import feature="org.eclipse.m2e.feature"/>
       <import feature="org.eclipse.m2e.logback.feature"/>
       <import feature="org.eclipse.mylyn.bugzilla_feature"/>
       <import feature="org.eclipse.mylyn.context_feature"/>
-      <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.gerrit.feature"/>
       <import feature="org.eclipse.mylyn.git"/>
       <import feature="org.eclipse.mylyn.hudson"/>
@@ -48,23 +46,30 @@
       <import feature="org.eclipse.mylyn.pde_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
       <import feature="org.eclipse.pde"/>
-      <import feature="org.eclipse.platform"/>
       <import feature="org.eclipse.platform.source"/>
       <import feature="org.eclipse.rap.tools.feature"/>
-      <import feature="org.eclipse.rcp"/>
       <import feature="org.eclipse.rcp.source"/>
       <import feature="org.eclipse.recommenders.rcp.feature"/>
       <import feature="org.eclipse.recommenders.mylyn.rcp.feature"/>
       <import feature="org.eclipse.recommenders.snipmatch.rcp.feature"/>
-      <import feature="org.eclipse.wb.core.feature"/>
       <import feature="org.eclipse.wb.core.ui.feature"/>
-      <import feature="org.eclipse.wb.layout.group.feature"/>
       <import feature="org.eclipse.wb.rcp.feature"/>
-      <import feature="org.eclipse.wb.swt.feature"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.swtbot.eclipse"/>
       <import feature="org.eclipse.swtbot.eclipse.gef"/>
       <import feature="org.eclipse.swtbot.ide"/>
+   -->
+
+<!-- redundant features (already included in other features
+      <import feature="org.eclipse.mylyn_feature"/>
+      <import feature="org.eclipse.rcp"/>
+      <import feature="org.eclipse.wb.core.feature"/>
+      <import feature="org.eclipse.wb.swt.feature"/>
+      <import feature="org.eclipse.wb.layout.group.feature"/>
+      <import feature="org.eclipse.jgit"/>
+      <import feature="org.eclipse.platform"/>
+      <import feature="org.eclipse.equinox.p2.user.ui"/>
+  -->
    </requires>
 
    <plugin
