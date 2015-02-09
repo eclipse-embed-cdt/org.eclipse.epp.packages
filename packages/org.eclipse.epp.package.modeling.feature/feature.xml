@@ -50,18 +50,18 @@
       <import feature="org.eclipse.uml2.sdk"/>
       <import feature="org.eclipse.ocl.all.sdk"/>
       <import feature="org.eclipse.emf.transaction.sdk"/>
-      <import feature="org.eclipse.emf.ecoretools.design" version="2.0.0" match="compatible"/>
+      <import feature="org.eclipse.emf.ecoretools.design" version="2.0.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.emf.query.sdk"/>
       <import feature="org.eclipse.xsd.sdk"/>
       <import feature="org.eclipse.emf.validation.sdk"/>
       <import feature="org.eclipse.emf.compare.source"/>
       <import feature="org.eclipse.emf.compare.ide.ui.source"/>
       <import feature="org.eclipse.amalgam.discovery"/>
-      <import feature="org.eclipse.emf.cdo.epp" />
+      <import feature="org.eclipse.emf.cdo.epp" version="4.0.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.gmf.runtime.sdk"/>
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
-      <import feature="org.eclipse.emf.eef.codegen.ecore-feature"  version="1.2.0.qualifier" match="compatible"/>
+      <import feature="org.eclipse.emf.eef.codegen.ecore-feature" version="1.2.0.qualifier" match="greaterOrEqual"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
       <import feature="org.eclipse.emf.ecp.sdk.feature"/>
       <import feature="org.eclipse.emf.emfstore.sdk.feature"/>
