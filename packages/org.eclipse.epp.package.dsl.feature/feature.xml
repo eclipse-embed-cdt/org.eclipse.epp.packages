@@ -27,7 +27,6 @@
 
    <requires>
       <import feature="org.eclipse.platform"/>
-      <import feature="org.eclipse.cvs"/>
       <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.help"/>
       <import feature="org.eclipse.jdt"/>
