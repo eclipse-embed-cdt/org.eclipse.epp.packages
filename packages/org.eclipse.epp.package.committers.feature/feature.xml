@@ -46,7 +46,25 @@
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.jgit"/>
+      <import feature="org.eclipse.mylyn.bugzilla_feature"/>
+      <import feature="org.eclipse.mylyn.builds"/>
+      <import feature="org.eclipse.mylyn.commons.identity"/>
+      <import feature="org.eclipse.mylyn.commons.notifications"/>
+      <import feature="org.eclipse.mylyn.commons.repositories.http"/>
+      <import feature="org.eclipse.mylyn.commons.repositories"/>
+      <import feature="org.eclipse.mylyn.commons"/>
+      <import feature="org.eclipse.mylyn.discovery"/>
+      <import feature="org.eclipse.mylyn.gerrit.feature"/>
+      <import feature="org.eclipse.mylyn.git"/>
+      <import feature="org.eclipse.mylyn.hudson"/>
+      <import feature="org.eclipse.mylyn.monitor"/>
+      <import feature="org.eclipse.mylyn.reviews.feature"/>
+      <import feature="org.eclipse.mylyn.team_feature"/>
+      <import feature="org.eclipse.mylyn.versions"/>
+      <import feature="org.eclipse.mylyn.wikitext_feature"/>
+      <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
+
    </requires>
 
    <plugin
