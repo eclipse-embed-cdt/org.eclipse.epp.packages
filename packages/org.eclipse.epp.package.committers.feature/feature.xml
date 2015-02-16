@@ -63,6 +63,9 @@
       <import feature="org.eclipse.mylyn.versions"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
       <import feature="org.eclipse.mylyn_feature"/>
+      <import feature="org.eclipse.recommenders.rcp.feature"/>
+      <import feature="org.eclipse.recommenders.snipmatch.rcp.feature"/>
+      <import feature="org.eclipse.recommenders.mylyn.rcp.feature"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
 
    </requires>
