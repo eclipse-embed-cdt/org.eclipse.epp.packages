@@ -43,10 +43,6 @@
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
       <import feature="org.eclipse.rse"/>
       <import feature="org.eclipse.rse.useractions"/>
-      <import feature="org.eclipse.tm.terminal"/>
-      <import feature="org.eclipse.tm.terminal.ssh"/>
-      <import feature="org.eclipse.tm.terminal.telnet"/>
-      <import feature="org.eclipse.tm.terminal.view"/>
       <import feature="org.eclipse.datatools.modelbase.feature"/>
       <import feature="org.eclipse.datatools.connectivity.feature"/>
       <import feature="org.eclipse.datatools.sqldevtools.feature"/>
