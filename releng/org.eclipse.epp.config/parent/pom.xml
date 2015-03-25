@@ -263,7 +263,7 @@
                 <id>${project.artifactId}</id>
                 <rootFolder>eclipse</rootFolder>
                 <rootFolders>
-                  <macosx>Eclipse.app/Contents</macosx>
+                  <macosx>Eclipse.app</macosx>
                 </rootFolders>
                 <archiveFileName>${build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}</archiveFileName>
               </product>
