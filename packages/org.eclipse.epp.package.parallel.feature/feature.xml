@@ -115,10 +115,12 @@
       <import feature="org.eclipse.remote"/>
       <import feature="org.eclipse.rse"/>
       <import feature="org.eclipse.ptp"/>
-      <import feature="org.eclipse.ptp.rdt"/>
       <import feature="org.eclipse.ptp.rdt.sync"/>
+      <!-- TODO Mars M6: disabled because feature not available from repo
+      <import feature="org.eclipse.ptp.rdt"/>
       <import feature="org.eclipse.ptp.rdt.xlc"/>
       <import feature="org.eclipse.ptp.remote.rse"/>
+      -->
       <import feature="org.eclipse.ptp.pldt.upc"/>
       <import feature="org.eclipse.ptp.rm.jaxb.contrib"/>
       <import feature="org.eclipse.jgit"/>
