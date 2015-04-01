@@ -55,6 +55,7 @@
       <import feature="org.eclipse.mylyn.commons"/>
       <import feature="org.eclipse.mylyn.discovery"/>
       <import feature="org.eclipse.mylyn.gerrit.feature"/>
+      <import feature="org.eclipse.mylyn.gerrit.dashboard.feature"/>
       <import feature="org.eclipse.mylyn.git"/>
       <import feature="org.eclipse.mylyn.hudson"/>
       <import feature="org.eclipse.mylyn.monitor"/>
