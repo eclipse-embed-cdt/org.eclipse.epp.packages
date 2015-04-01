@@ -45,7 +45,9 @@
       <import feature="org.eclipse.help"/>
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
+      <import feature="org.eclipse.egit.mylyn"/>
       <import feature="org.eclipse.jgit"/>
+      <import feature="org.eclipse.jgit.http.apache"/>
       <import feature="org.eclipse.mylyn.bugzilla_feature"/>
       <import feature="org.eclipse.mylyn.builds"/>
       <import feature="org.eclipse.mylyn.commons.identity"/>
@@ -68,7 +70,6 @@
       <import feature="org.eclipse.recommenders.snipmatch.rcp.feature"/>
       <import feature="org.eclipse.recommenders.mylyn.rcp.feature"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
-
    </requires>
 
    <plugin
