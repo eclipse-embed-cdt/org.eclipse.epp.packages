@@ -42,6 +42,7 @@
       <import feature="org.eclipse.mylyn.bugzilla_feature"/>
       <import feature="org.eclipse.mylyn.context_feature"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
+      <import feature="org.eclipse.mylyn.wikitext_feature"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.wst.jsdt.feature" />
       <import feature="org.eclipse.php" version="3.2.0.qualifier"/>
