@@ -43,6 +43,7 @@
       <import feature="org.eclipse.mylyn.context_feature"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
+      <import feature="org.eclipse.wst.jsdt.feature" />
       <import feature="org.eclipse.php" version="3.2.0.qualifier"/>
       <import feature="org.eclipse.php.mylyn" />
    </requires>
