@@ -96,6 +96,9 @@
       <import feature="org.eclipse.m2e.wtp.jpa.feature"/>
       <import feature="org.eclipse.m2e.wtp.jsf.feature"/>
 
+      <import feature="org.eclipse.recommenders.rcp.feature"/>
+      <import feature="org.eclipse.recommenders.mylyn.rcp.feature"/>
+
       <import feature="org.eclipse.epp.package.common.feature"/>
    </requires>
 
