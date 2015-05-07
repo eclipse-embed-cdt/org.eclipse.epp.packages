@@ -21,9 +21,8 @@
 256M
       </programArgsWin>
       <vmArgs>-Dosgi.requiredJavaVersion=1.7
--Xms40m
--Xmx512m
-      </vmArgs>
+-Xms256m
+-Xmx1024m</vmArgs>
       <vmArgsLin>-XX:MaxPermSize=256m
       </vmArgsLin>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
