@@ -30,7 +30,6 @@
          search-location="both"/>
 
    <requires>
-      <import feature="org.eclipse.cvs"/>
       <import feature="org.eclipse.help"/>
       <import feature="org.eclipse.jdt"/>
       <import feature="org.eclipse.platform"/>
