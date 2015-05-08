@@ -35,6 +35,7 @@
       <import feature="org.eclipse.rcp"/>
       <import feature="org.eclipse.xtend.sdk"/>
       <import feature="org.eclipse.xtext.sdk"/>
+      <import feature="org.eclipse.emf.mwe2.language.sdk"/>
       <import feature="org.eclipse.emf.sdk"/>
       <import feature="org.eclipse.emf.ecore.xcore.sdk"/>
       <import feature="org.eclipse.egit"/>
