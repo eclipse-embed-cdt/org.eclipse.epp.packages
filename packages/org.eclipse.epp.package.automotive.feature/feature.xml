@@ -25,12 +25,8 @@
       <discovery label="Eclipse Platform 4.5" url="http://download.eclipse.org/eclipse/updates/4.5"/>
    </url>
 
-   <includes
-         id="org.eclipse.platform"
-         version="0.0.0"
-         search-location="both"/>
-
    <requires>
+      <import feature="org.eclipse.platform"/>
       <import feature="org.eclipse.cdt"/>
       <import feature="org.eclipse.cdt.autotools"/>
       <import feature="org.eclipse.cdt.build.crossgcc"/>
@@ -84,6 +80,8 @@
       <import plugin="org.eclipse.xtext.purexbase"/>
       <import plugin="org.eclipse.xtext.purexbase.ui"/>
       <import plugin="org.eclipse.xtext.ui.junit"/>
+      <import plugin="org.eclipse.emf.mwe2.launch"/>
+      <import plugin="org.eclipse.emf.mwe2.launch.ui"/>
    </requires>
 
    <plugin
