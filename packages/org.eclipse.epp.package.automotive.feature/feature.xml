@@ -26,7 +26,6 @@
    </url>
 
    <requires>
-      <import feature="org.eclipse.platform"/>
       <import feature="org.eclipse.cdt"/>
       <import feature="org.eclipse.cdt.autotools"/>
       <import feature="org.eclipse.cdt.build.crossgcc"/>
@@ -53,6 +52,8 @@
       <import feature="org.eclipse.jdt"/>
       <import feature="org.eclipse.pde"/>
       <import feature="org.eclipse.platform"/>
+      <import feature="org.eclipse.platform"/>
+      <import feature="org.eclipse.sphinx"/>
       <import feature="org.eclipse.uml2"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.xpand"/>
@@ -71,17 +72,19 @@
       <import feature="org.eclipse.xtext.ui"/>
       <import feature="org.eclipse.xtext.xbase"/>
       <import feature="org.eclipse.xtext.xtext.ui"/>
-      <import feature="org.eclipse.sphinx"/>
+      <import plugin="org.eclipse.emf.mwe2.launch"/>
+      <import plugin="org.eclipse.emf.mwe2.launch.ui"/>
       <import plugin="org.eclipse.xtend.core"/>
       <import plugin="org.eclipse.xtend.ide"/>
-      <import plugin="org.eclipse.xtend.util.stdlib"/>
+      <import plugin="org.eclipse.xtend.lib"/>
+      <import plugin="org.eclipse.xtend.lib.macro"/>
+      <import plugin="org.eclipse.xtend.standalone"/>
+      <import plugin="org.eclipse.xtend2.lib"/>
       <import plugin="org.eclipse.xtext.junit"/>
       <import plugin="org.eclipse.xtext.junit4"/>
       <import plugin="org.eclipse.xtext.purexbase"/>
       <import plugin="org.eclipse.xtext.purexbase.ui"/>
       <import plugin="org.eclipse.xtext.ui.junit"/>
-      <import plugin="org.eclipse.emf.mwe2.launch"/>
-      <import plugin="org.eclipse.emf.mwe2.launch.ui"/>
    </requires>
 
    <plugin
