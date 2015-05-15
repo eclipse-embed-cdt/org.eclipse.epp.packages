@@ -72,8 +72,6 @@
       <import feature="org.eclipse.xtext.ui"/>
       <import feature="org.eclipse.xtext.xbase"/>
       <import feature="org.eclipse.xtext.xtext.ui"/>
-      <import plugin="org.eclipse.emf.mwe2.launch"/>
-      <import plugin="org.eclipse.emf.mwe2.launch.ui"/>
       <import plugin="org.eclipse.xtend.core"/>
       <import plugin="org.eclipse.xtend.ide"/>
       <import plugin="org.eclipse.xtend.lib"/>
