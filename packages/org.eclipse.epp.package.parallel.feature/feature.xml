@@ -111,19 +111,22 @@
       <import feature="org.eclipse.mylyn.ide_feature"/>
       <import feature="org.eclipse.mylyn.bugzilla_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
-      <import feature="org.eclipse.remote"/>
-      <import feature="org.eclipse.tm.terminal.feature"/>
-      <import feature="org.eclipse.ptp"/>
-      <import feature="org.eclipse.ptp.rdt.sync"/>
-      <import feature="org.eclipse.ptp.pldt.upc"/>
-      <import feature="org.eclipse.ptp.rm.jaxb.contrib"/>
       <import feature="org.eclipse.jgit"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
+      <import feature="org.eclipse.remote"/>
+      <import feature="org.eclipse.remote.console"/>
+      <import feature="org.eclipse.ptp"/>
+      <import feature="org.eclipse.ptp.rdt.sync"/>
+      <import feature="org.eclipse.ptp.pldt.upc"/>
+      <import feature="org.eclipse.ptp.rm.jaxb.contrib"/>
       <import feature="org.eclipse.ptp.fortran"/>
       <import feature="org.eclipse.ptp.debug.sdm"/>
-      <import feature="org.eclipse.remote.console"/>
+      <import feature="org.eclipse.ptp.remote.terminal"/>
+      <import feature="org.eclipse.tm.terminal.view.feature"/>
+      <import feature="org.eclipse.tm.terminal.control.feature"/>
+      <import feature="org.eclipse.tm.terminal.connector.remote.feature"/>
    </requires>
 
    <plugin
