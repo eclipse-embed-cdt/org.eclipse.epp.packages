@@ -38,6 +38,6 @@
   <rcp version="4.5.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-automotive-mars-M7-incubation" />
+  <product name="eclipse-automotive-mars-RC1-incubation" />
 
 </configuration>
