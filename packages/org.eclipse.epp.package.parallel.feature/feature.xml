@@ -124,9 +124,6 @@
       <import feature="org.eclipse.ptp.fortran"/>
       <import feature="org.eclipse.ptp.debug.sdm"/>
       <import feature="org.eclipse.ptp.remote.terminal"/>
-      <import feature="org.eclipse.tm.terminal.view.feature"/>
-      <import feature="org.eclipse.tm.terminal.control.feature"/>
-      <import feature="org.eclipse.tm.terminal.connector.remote.feature"/>
    </requires>
 
    <plugin
