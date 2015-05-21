@@ -52,6 +52,7 @@
       <import feature="org.eclipse.recommenders.rcp.feature"/>
       <import feature="org.eclipse.recommenders.mylyn.rcp.feature"/>
       <import feature="org.eclipse.recommenders.snipmatch.rcp.feature"/>
+      WB disabled in Mars RC1 https://bugs.eclipse.org/bugs/show_bug.cgi?id=467800
       <import feature="org.eclipse.wb.core.ui.feature"/>
       <import feature="org.eclipse.wb.rcp.feature"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
@@ -63,6 +64,7 @@
 <!-- redundant features (already included in other features
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.rcp"/>
+      WB disabled in Mars RC1 https://bugs.eclipse.org/bugs/show_bug.cgi?id=467800
       <import feature="org.eclipse.wb.core.feature"/>
       <import feature="org.eclipse.wb.swt.feature"/>
       <import feature="org.eclipse.wb.layout.group.feature"/>
