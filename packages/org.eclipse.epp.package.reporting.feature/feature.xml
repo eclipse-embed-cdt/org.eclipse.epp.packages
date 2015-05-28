@@ -81,10 +81,12 @@
       <import feature="org.eclipse.persistence.sdo"/>
       -->
       <import feature="org.eclipse.birt"/>
-      <import feature="org.eclipse.birt.doc"/>
       <import feature="org.eclipse.birt.example"/>
+      <!-- disabled in Mars SR2 https://bugs.eclipse.org/bugs/show_bug.cgi?id=468567
+      <import feature="org.eclipse.birt.doc"/>
       <import feature="org.eclipse.birt.cshelp"/>
       <import feature="org.eclipse.birt.chart.cshelp"/>
+      -->
       <import feature="org.eclipse.epp.package.common.feature"/>
    </requires>
 
