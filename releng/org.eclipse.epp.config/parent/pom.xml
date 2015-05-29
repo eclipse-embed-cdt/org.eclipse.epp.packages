@@ -281,8 +281,14 @@
               <id>materialize-products</id>
               <goals>
                 <goal>materialize-products</goal>
-                <goal>archive-products</goal>
               </goals>
+            </execution>
+            <execution>
+              <id>archive-products</id>
+                <phase>pre-integration-test</phase>
+                <goals>
+                  <goal>archive-products</goal>
+                </goals>
             </execution>
           </executions>
           <configuration>
