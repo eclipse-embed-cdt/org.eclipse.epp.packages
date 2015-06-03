@@ -10,7 +10,7 @@
   <packageMetaData
    packageName="Eclipse for RCP and RAP Developers"
    maintainer="Eclipse Packaging Project"
-   iconurl="http://www.eclipse.org/downloads/images/rcp.jpg"
+   iconurl="http://www.eclipse.org/downloads/images/rcp.png"
    bugzillaComponentId="rcp-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
      <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->

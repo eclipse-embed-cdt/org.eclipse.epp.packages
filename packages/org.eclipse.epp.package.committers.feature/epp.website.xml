@@ -11,7 +11,7 @@
   <packageMetaData
    packageName="Eclipse IDE for Eclipse Committers 4.5.0 RC3"
    maintainer="Eclipse Packaging Project"
-   iconurl="http://www.eclipse.org/downloads/images/classic2.jpg"
+   iconurl="http://www.eclipse.org/downloads/images/committers.png"
    bugzillaComponentId="committers-package"
    testPlan="" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
