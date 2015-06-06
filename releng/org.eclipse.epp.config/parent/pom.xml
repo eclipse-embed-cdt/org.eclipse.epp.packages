@@ -24,7 +24,7 @@
   <properties>
     <java.version>1.7</java.version>
     <maven.version>3.1.1</maven.version>
-    <tycho.version>0.23.0-SNAPSHOT</tycho.version>
+    <tycho.version>0.23.0</tycho.version>
     <tycho.extras.version>${tycho.version}</tycho.extras.version>
     <tycho.scmUrl>scm:git:git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git</tycho.scmUrl>
     <cbi.version>1.1.2</cbi.version>
@@ -65,10 +65,6 @@
       <id>eclipse-cbi</id>
       <url>https://repo.eclipse.org/content/repositories/releases/</url>
     </pluginRepository>
-   <pluginRepository>
-     <id>tycho-snapshots</id>
-     <url>https://repo.eclipse.org/content/repositories/tycho-snapshots/</url>
-   </pluginRepository>
   </pluginRepositories>
 
   <repositories>
