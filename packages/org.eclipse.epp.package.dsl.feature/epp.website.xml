@@ -31,6 +31,6 @@
   <rcp version="4.5.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-dsl-mars-RC3" />
+  <product name="eclipse-dsl-mars-RC4" />
 
 </configuration>
