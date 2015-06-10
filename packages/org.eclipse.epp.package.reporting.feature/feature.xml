@@ -84,9 +84,7 @@
       <import feature="org.eclipse.birt.chart.cshelp"/>
       <import feature="org.eclipse.birt.cshelp"/>
       <import feature="org.eclipse.birt.example"/>
-      <!-- disabled in Mars RC3 https://bugs.eclipse.org/bugs/show_bug.cgi?id=468567
       <import feature="org.eclipse.birt.doc"/>
-      -->
       <import feature="org.eclipse.epp.package.common.feature"/>
    </requires>
 
