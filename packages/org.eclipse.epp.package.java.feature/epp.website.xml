@@ -14,7 +14,7 @@
    bugzillaComponentId="java-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-     <description><![CDATA[The essential tools for any Java developer, including a Java IDE, a Git client, XML Editor, Mylyn, and Maven integration]]></description>
+     <description><![CDATA[The essential tools for any Java developer, including a Java IDE, a Git client, XML Editor, Mylyn, Maven integration and WindowBuilder]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
       <tester>Tomasz Zarna</tester>
