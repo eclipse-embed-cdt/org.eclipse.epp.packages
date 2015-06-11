@@ -26,7 +26,7 @@ fi
 
 # variables to adjust
 BASE_DIR=/shared/technology/epp/epp_build/mars
-RELEASE_NAME="-mars-RC4"
+RELEASE_NAME="-mars-R"
 
 # variables
 START_TIME=`date -u +%Y%m%d-%H%M`
