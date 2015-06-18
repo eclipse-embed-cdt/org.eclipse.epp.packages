@@ -33,6 +33,8 @@
    <requires>
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
+      <import feature="org.eclipse.egit.mylyn" />
+      <import feature="org.eclipse.egit.gitflow.feature" />
       <import feature="org.eclipse.epp.package.common.feature"/>
       <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.help"/>
@@ -43,6 +45,7 @@
       <import feature="org.eclipse.mylyn.context_feature"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
       <import feature="org.eclipse.mylyn.wikitext_feature"/>
+      <import feature="org.eclipse.mylyn.github.feature" />
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.wst.jsdt.feature" />
       <import feature="org.eclipse.php" version="3.2.0.qualifier"/>
