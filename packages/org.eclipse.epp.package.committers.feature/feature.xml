@@ -43,6 +43,7 @@
       <import feature="org.eclipse.cvs.source"/>
       <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.help"/>
+      <import feature="org.eclipse.e4.core.tools.feature"/>
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.egit.mylyn"/>
