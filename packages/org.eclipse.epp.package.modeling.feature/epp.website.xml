@@ -24,16 +24,16 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-      url="https://www.eclipse.org/modeling/amalgam/new-noteworthy/luna/"
-   project="Modeling Package" />
+    url="https://projects.eclipse.org/projects/modeling.amalgam/releases/1.6.0"
+    project="Modeling Package" />
   <NewAndNoteworthy
-      url="https://wiki.eclipse.org/Ecore_Tools/New_and_Noteworthy"
-   project="EcoreTools" />
+    url="https://wiki.eclipse.org/Ecore_Tools/New_and_Noteworthy"
+    project="EcoreTools" />
   <NewAndNoteworthy
-      url="https://wiki.eclipse.org/EMF_Compare/ReleaseReview/Luna#New_.26_Noteworthy"
+    url="https://wiki.eclipse.org/EMF_Compare/New_and_Noteworthy/3.1.0"
     project="EMF Compare" />
   <NewAndNoteworthy
-      url="http://projects.eclipse.org/projects/modeling.mmt.atl/releases/3.4.0"
+    url="https://projects.eclipse.org/projects/modeling.mmt.atl/releases/3.6.0"
     project="ATL" />
   </MoreInfo>
 

@@ -24,23 +24,20 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://www.eclipse.org/webtools/development/news/main.php"
+    url="https://www.eclipse.org/webtools/development/news/main.php"
     project="Eclipse Webtools Project" />
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/R-4.4-201406061215/news/"
+    url="https://www.eclipse.org/eclipse/news/4.5/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
-    url="http://www.eclipse.org/mylyn/new/"
+    url="https://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
   <NewAndNoteworthy
-    url="http://wiki.eclipse.org/EGit/New_and_Noteworthy/3.4"
-    project="EGit" />
+    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/4.0"
+    project="Eclipse EGit" />
   <NewAndNoteworthy
-    url="http://wiki.eclipse.org/M2E-WTP/New_and_Noteworthy/1.1.0"
+    url="https://wiki.eclipse.org/M2E-WTP/New_and_Noteworthy/1.2.0"
     project="M2E-WTP" />
-  <NewAndNoteworthy
-    url="http://www.eclipse.org/tm/"
-    project="Eclipse Target Management (RSE)" />
   </MoreInfo>
 
   <!-- version, the RCP version to build. This is used to determine the file 

@@ -29,10 +29,10 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EGit">here</a
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="http://download.eclipse.org/eclipse/downloads/drops4/R-4.4-201406061215/news/"
+    url="https://www.eclipse.org/eclipse/news/4.5/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
-    url="http://wiki.eclipse.org/EGit/New_and_Noteworthy/3.4"
+    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/4.0"
     project="Eclipse EGit" />
   </MoreInfo>
 
