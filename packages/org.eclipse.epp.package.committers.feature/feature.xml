@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.committers.feature"
       label="EPP Eclipse IDE for Eclipse Committers Feature"
-      version="4.5.0.qualifier"
+      version="4.5.1.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.committers"
       license-feature="org.eclipse.license"
