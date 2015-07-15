@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.jee.feature"
       label="%featureName"
-      version="4.5.0.qualifier"
+      version="4.6.0.qualifier"
       provider-name="%providerName"
       plugin="org.eclipse.epp.package.jee"
       license-feature="org.eclipse.license"
@@ -21,7 +21,7 @@
    </license>
 
    <url>
-      <discovery label="%discoverySiteName" url="http://download.eclipse.org/releases/mars/"/>
+      <discovery label="%discoverySiteName" url="http://download.eclipse.org/releases/neon/"/>
    </url>
 
    <includes

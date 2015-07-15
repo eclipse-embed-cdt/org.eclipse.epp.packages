@@ -75,6 +75,6 @@ desired to build against another release (e.g. a different milestone), or agains
 mirror of this repository. This can be achieved by setting the Java property
 `eclipse.simultaneous.release.repository`to another URL. As an example, by adding the
 following argument to the Maven command line, the EPP build will read its input from the
-composite Eclipse Mars repository:
+composite Eclipse Neon repository:
 
-    -Declipse.simultaneous.release.repository="http://download.eclipse.org/releases/mars"
+    -Declipse.simultaneous.release.repository="http://download.eclipse.org/releases/neon"

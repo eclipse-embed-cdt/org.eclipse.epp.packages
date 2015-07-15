@@ -9,7 +9,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse IDE for Eclipse Committers 4.5.0"
+   packageName="Eclipse IDE for Eclipse Committers 4.6.0 M0"
    maintainer="Eclipse Packaging Project"
    iconurl="http://www.eclipse.org/downloads/images/committers.png"
    bugzillaComponentId="committers-package"
@@ -38,9 +38,9 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EGit">here</a
 
   <!-- version, the RCP version to build. This is used to determine the file
     name of the root file archives -->
-  <rcp version="4.5.0" />
+  <rcp version="4.6.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-committers-mars-R" />
+  <product name="eclipse-committers-neon-M0" />
 
 </configuration>

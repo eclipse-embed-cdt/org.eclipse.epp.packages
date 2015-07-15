@@ -22,7 +22,7 @@ Contributors:
   <xsl:template match="repository/properties">
     <properties size='{@size+1}'>
       <xsl:copy-of select="property" />
-      <property name='p2.statsURI' value='http://download.eclipse.org/stats/technology/epp/packages/mars' />
+      <property name='p2.statsURI' value='http://download.eclipse.org/stats/technology/epp/packages/neon' />
     </properties>
   </xsl:template>
 

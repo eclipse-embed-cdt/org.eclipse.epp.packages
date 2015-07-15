@@ -81,4 +81,3 @@ requires.16.optional=true
 requires.17.namespace=org.eclipse.equinox.p2.iu
 requires.17.name=org.eclipse.tracecompass.lttng2.ust.feature.group
 requires.17.optional=true
-
