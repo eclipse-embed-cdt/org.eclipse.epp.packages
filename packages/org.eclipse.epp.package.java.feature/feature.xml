@@ -37,6 +37,7 @@
       <import feature="org.eclipse.jgit"/>
       <import feature="org.eclipse.m2e.feature"/>
       <import feature="org.eclipse.m2e.logback.feature"/>
+      <import feature="org.eclipse.buildship"/>
       <import feature="org.eclipse.mylyn.context_feature"/>
       <import feature="org.eclipse.mylyn_feature"/>
       <import feature="org.eclipse.mylyn.bugzilla_feature"/>
