@@ -9,7 +9,7 @@
    -->
   <packageMetaData
    packageName="Eclipse IDE for Java Developers"
-   maintainer="Eclipse Mylyn Project"
+   maintainer="Eclipse Packaging Project"
    iconurl="http://www.eclipse.org/downloads/images/java.png"
    bugzillaComponentId="java-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
@@ -17,6 +17,7 @@
      <description><![CDATA[The essential tools for any Java developer, including a Java IDE, a Git client, XML Editor, Mylyn, Maven integration and WindowBuilder]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
+      <tester>Andreas Sewe</tester>
       <tester>Tomasz Zarna</tester>
     </packageTesters>
   </packageMetaData>
@@ -41,6 +42,6 @@
   <rcp version="4.5.1" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-java-mars-1-RC3" />
+	<product name="eclipse-java-mars-1" />
 
 </configuration>
