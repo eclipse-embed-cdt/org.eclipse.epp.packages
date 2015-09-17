@@ -42,6 +42,6 @@
   <rcp version="4.5.1" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-php-mars-1-RC3" />
+  <product name="eclipse-php-mars-1" />
 
 </configuration>
