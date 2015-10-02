@@ -26,24 +26,13 @@
    </url>
 
    <requires>
-      <import feature="org.eclipse.platform"/>
-      <import feature="org.eclipse.equinox.p2.user.ui"/>
-      <import feature="org.eclipse.help"/>
-      <import feature="org.eclipse.jdt"/>
-      <import feature="org.eclipse.pde"/>
       <import feature="org.eclipse.sdk"/>
-      <import feature="org.eclipse.rcp"/>
-      <import feature="org.eclipse.xtend.sdk"/>
-      <import feature="org.eclipse.xtext.sdk"/>
-      <import feature="org.eclipse.emf.mwe2.language.sdk"/>
-      <import feature="org.eclipse.emf.sdk"/>
-      <import feature="org.eclipse.emf.ecore.xcore.sdk"/>
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
-      <import feature="org.eclipse.epp.mpc"/>
       <import feature="org.eclipse.m2e.feature"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
+      <import feature="org.eclipse.buildship"/>
    </requires>
 
    <plugin
