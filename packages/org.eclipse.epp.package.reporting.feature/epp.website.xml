@@ -40,6 +40,6 @@
   <rcp version="4.6.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-reporting-neon-M2" />
+  <product name="eclipse-reporting-neon-M3" />
 
 </configuration>
