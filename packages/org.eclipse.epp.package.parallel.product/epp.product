@@ -15,20 +15,22 @@
 
    <launcherArgs>
       <programArgs>-product org.eclipse.epp.package.parallel.product
---launcher.defaultAction openFile</programArgs>
-      <programArgsWin>--launcher.XXMaxPermSize
-256M</programArgsWin>
-      <vmArgs>-Dosgi.requiredJavaVersion=1.7</vmArgs>
-      <vmArgsLin>-Xms512m
--Xmx2048m
--XX:MaxPermSize=256m</vmArgsLin>
-      <vmArgsMac>-Dorg.eclipse.swt.internal.carbon.smallFonts
--XstartOnFirstThread
+--launcher.defaultAction openFile
+      </programArgs>
+      <vmArgs>-Dosgi.requiredJavaVersion=1.8
+      </vmArgs>
+      <vmArgsLin>
 -Xms512m
 -Xmx2048m
--XX:MaxPermSize=256m</vmArgsMac>
+      </vmArgsLin>
+      <vmArgsMac>-XstartOnFirstThread
+-Xms512m
+-Xmx2048m
+-Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
       <vmArgsSol>-Xms512m
--Xmx2048m</vmArgsSol>
+-Xmx2048m
+      </vmArgsSol>
       <vmArgsWin>-Xms512m
 -Xmx1024m</vmArgsWin>
    </launcherArgs>
@@ -49,10 +51,10 @@
    <intro introId="org.eclipse.ui.intro.universal"/>
 
    <vm>
-      <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7</linux>
-      <macos include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7</macos>
-      <solaris include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7</solaris>
-      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7</windows>
+      <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</linux>
+      <macos include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</macos>
+      <solaris include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</solaris>
+      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</windows>
    </vm>
 
    <license>

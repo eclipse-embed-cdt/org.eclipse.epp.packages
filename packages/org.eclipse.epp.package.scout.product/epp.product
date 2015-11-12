@@ -15,11 +15,19 @@
 
    <launcherArgs>
       <programArgs>-product org.eclipse.epp.package.scout.product
---launcher.defaultAction openFile</programArgs>
+--launcher.defaultAction openFile
+      </programArgs>
       <vmArgs>-Dosgi.requiredJavaVersion=1.8
 -Xms256m
--Xmx1024m</vmArgs>
-      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+-Xmx1024m
+      </vmArgs>
+      <vmArgsLin>
+      </vmArgsLin>
+      <vmArgsMac>-XstartOnFirstThread
+-Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+      <vmArgsWin>
+      </vmArgsWin>
    </launcherArgs>
 
    <windowImages i16="/org.eclipse.epp.package.scout/eclipse16.png" i32="/org.eclipse.epp.package.scout/eclipse32.png" i48="/org.eclipse.epp.package.scout/eclipse48.png" i256="/org.eclipse.epp.package.scout/eclipse256.png"/>
