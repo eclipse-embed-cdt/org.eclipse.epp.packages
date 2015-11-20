@@ -30,6 +30,7 @@
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.m2e.feature"/>
+      <import feature="org.eclipse.m2e.logback.feature"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.buildship"/>
