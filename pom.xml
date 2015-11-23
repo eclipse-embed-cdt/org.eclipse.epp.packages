@@ -34,6 +34,14 @@
 
   <profiles>
     <profile>
+      <id>epp.package.android</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.android</module>
+        <module>packages/org.eclipse.epp.package.android.feature</module>
+        <module>packages/org.eclipse.epp.package.android.product</module>
+      </modules>
+    </profile>
+    <profile>
       <id>epp.package.automotive</id>
       <modules>
         <module>packages/org.eclipse.epp.package.automotive</module>

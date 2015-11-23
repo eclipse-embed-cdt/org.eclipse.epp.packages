@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.epp.package.android.feature"
+      label="EPP Android Feature"
+      version="4.6.0.qualifier"
+      provider-name="Eclipse Packaging Project"
+      plugin="org.eclipse.epp.package.android"
+      license-feature="org.eclipse.license"
+      license-feature-version="0.0.0">
+
+   <description url="http://eclipse.org/epp">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <discovery label="Neon" url="http://download.eclipse.org/releases/neon/"/>
+      <discovery label="Eclipse Platform 4.6" url="http://download.eclipse.org/eclipse/updates/4.6"/>
+      <discovery label="Mylyn for Eclipse Neon" url="http://download.eclipse.org/mylyn/releases/neon/"/>
+   </url>
+
+   <requires>
+      <import feature="org.eclipse.andmore.android.basic.feature"/>
+      <import feature="org.eclipse.andmore.ndk.feature"/>
+      <import feature="org.eclipse.andmore.hierarchyviewer.feature"/>
+      <import feature="org.eclipse.andmore.traceview.feature"/>
+      <import feature="org.eclipse.andmore.gldebugger.feature"/>
+      <import feature="org.eclipse.buildship"/>
+      <import feature="org.eclipse.egit"/>
+      <import feature="org.eclipse.egit.import"/>
+      <import feature="org.eclipse.egit.mylyn"/>
+      <import feature="org.eclipse.epp.package.common.feature"/>
+      <import feature="org.eclipse.equinox.p2.user.ui"/>
+      <import feature="org.eclipse.help"/>
+      <import feature="org.eclipse.jdt"/>
+      <import feature="org.eclipse.jgit"/>
+      <import feature="org.eclipse.m2e.feature"/>
+      <import feature="org.eclipse.m2e.logback.feature"/>
+      <import feature="org.eclipse.mylyn.context_feature"/>
+      <import feature="org.eclipse.mylyn_feature"/>
+      <import feature="org.eclipse.mylyn.bugzilla_feature"/>
+      <import feature="org.eclipse.mylyn.git"/>
+      <import feature="org.eclipse.mylyn.hudson"/>
+      <import feature="org.eclipse.mylyn.ide_feature"/>
+      <import feature="org.eclipse.mylyn.java_feature"/>
+      <import feature="org.eclipse.mylyn.wikitext_feature"/>
+      <import feature="org.eclipse.platform"/>
+      <import feature="org.eclipse.rcp"/>
+      <import feature="org.eclipse.recommenders.rcp.feature"/>
+      <import feature="org.eclipse.recommenders.snipmatch.rcp.feature"/>
+      <import feature="org.eclipse.recommenders.mylyn.rcp.feature"/>
+      <import feature="org.eclipse.wst.xml_ui.feature"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.epp.package.android"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>
