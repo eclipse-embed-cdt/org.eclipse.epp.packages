@@ -57,6 +57,7 @@
       <import feature="org.eclipse.egit.mylyn"/>
       <import feature="org.eclipse.jgit"/>
       <import feature="org.eclipse.m2e.feature"/>
+      <import feature="org.eclipse.wst.xml_ui.feature"/>
    </requires>
 
    <plugin
