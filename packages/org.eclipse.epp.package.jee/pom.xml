@@ -20,13 +20,13 @@
   <parent>
     <groupId>org.eclipse.epp</groupId>
     <artifactId>org.eclipse.epp-parent</artifactId>
-    <version>4.5.1-SNAPSHOT</version>
+    <version>4.5.2-SNAPSHOT</version>
     <relativePath>../../releng/org.eclipse.epp.config/parent/</relativePath>
   </parent>
 
   <groupId>org.eclipse.epp</groupId>
   <artifactId>org.eclipse.epp.package.jee</artifactId>
-  <version>4.5.1-SNAPSHOT</version>
+  <version>4.5.2-SNAPSHOT</version>
   <packaging>eclipse-plugin</packaging>
 
 </project>
