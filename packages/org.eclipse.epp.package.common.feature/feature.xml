@@ -27,6 +27,9 @@
    <requires>
       <import feature="org.eclipse.epp.mpc"/>
       <import feature="org.eclipse.epp.logging.aeri.feature"/>
+      <!-- TODO Workaround for Bug 484629. remove after Neon M4. -->
+      <!-- This makes org.eclipse.jdt.annotation [1.0.0,2.0.0) available which AERI depends on. -->
+      <import plugin="org.eclipse.jdt.annotation" version="1.0.0" match="compatible"/>
       <!-- Bug 455645: Integrate Oomph into all EPP packages
            https://bugs.eclipse.org/bugs/show_bug.cgi?id=455645 -->
       <import feature="org.eclipse.oomph.setup"/>
