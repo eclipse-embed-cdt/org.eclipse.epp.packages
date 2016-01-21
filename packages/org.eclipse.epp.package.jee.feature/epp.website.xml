@@ -45,6 +45,6 @@
   <rcp version="4.5.2" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-jee-mars-2-RC0" />
+  <product name="eclipse-jee-mars-2-RC1" />
 
 </configuration>
