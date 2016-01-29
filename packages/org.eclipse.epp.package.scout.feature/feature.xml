@@ -41,8 +41,6 @@
       <import feature="org.eclipse.pde.source"/>
       <import feature="org.eclipse.platform"/>
       <import feature="org.eclipse.platform.source"/>
-      <import feature="org.eclipse.rcp"/>
-      <import feature="org.eclipse.rcp.source"/>
       <import feature="org.eclipse.jst.web_ui.feature"/>
       <import feature="org.eclipse.epp.package.common.feature"/>
       <import feature="org.eclipse.mylyn.ide_feature"/>
