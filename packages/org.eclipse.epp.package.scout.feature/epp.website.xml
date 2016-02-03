@@ -43,6 +43,6 @@
   <rcp version="4.5.2" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-scout-mars-2-RC1" />
+  <product name="eclipse-scout-mars-2-RC2" />
 
 </configuration>
