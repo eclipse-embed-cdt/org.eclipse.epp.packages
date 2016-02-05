@@ -78,11 +78,9 @@
       <import plugin="org.eclipse.xtend.lib.macro"/>
       <import plugin="org.eclipse.xtend.standalone"/>
       <import plugin="org.eclipse.xtend2.lib"/>
-      <import plugin="org.eclipse.xtext.junit"/>
       <import plugin="org.eclipse.xtext.junit4"/>
       <import plugin="org.eclipse.xtext.purexbase"/>
       <import plugin="org.eclipse.xtext.purexbase.ui"/>
-      <import plugin="org.eclipse.xtext.ui.junit"/>
    </requires>
 
    <plugin
