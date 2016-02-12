@@ -17,13 +17,10 @@
      <description><![CDATA[An IDE for developers creating Android applications.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
-      <tester>Beth Tibbitts</tester>
+      <tester>Kaloyan Raev</tester>
     </packageTesters>
   </packageMetaData>
   <MoreInfo>
-  <NewAndNoteworthy
-    url="https://wiki.eclipse.org/PTP/new_and_noteworthy/9.0.0"
-    project="Eclipse PTP" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/eclipse/news/4.5/"
     project="Eclipse Platform" />
