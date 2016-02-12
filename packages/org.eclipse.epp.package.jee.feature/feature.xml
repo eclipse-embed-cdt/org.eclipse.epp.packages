@@ -20,10 +20,6 @@
       %license
    </license>
 
-   <url>
-      <discovery label="%discoverySiteName" url="http://download.eclipse.org/releases/neon/"/>
-   </url>
-
    <includes
          id="org.eclipse.platform"
          version="0.0.0"

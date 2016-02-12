@@ -20,11 +20,6 @@
       %license
    </license>
 
-   <url>
-      <discovery label="Neon" url="http://download.eclipse.org/releases/neon/"/>
-      <discovery label="Eclipse Platform 4.6" url="http://download.eclipse.org/eclipse/updates/4.6"/>
-   </url>
-
    <requires>
       <import feature="org.eclipse.cdt"/>
       <import feature="org.eclipse.cdt.autotools"/>

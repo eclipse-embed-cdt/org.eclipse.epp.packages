@@ -4,9 +4,4 @@ org.eclipse.pde.build.append.startlevels=false
 # add requirement on org.eclipse.platform.ide
 requires.1.namespace=org.eclipse.equinox.p2.iu
 requires.1.name=org.eclipse.platform.ide
-#requires.1.range=[3.5.0.I20090522-1710,3.5.0.I20090522-1710]
 requires.1.greedy=true
-
-# disable listing of feature in any category
-properties.1.name=org.eclipse.equinox.p2.type.category
-properties.1.value=false
