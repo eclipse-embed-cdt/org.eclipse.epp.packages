@@ -186,22 +186,23 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
 
    <features>
       <feature id="org.eclipse.epp.package.rcp.feature" version="4.6.0.qualifier"/>
-      <feature id="org.eclipse.epp.package.common.feature"/>
-      <feature id="org.eclipse.help"/>
+      <feature id="org.eclipse.epp.package.common.feature" version="4.6.0.qualifier"/>
+      <feature id="org.eclipse.platform" version="4.6.0.qualifier"/>
+
       <feature id="org.eclipse.jdt"/>
       <feature id="org.eclipse.pde"/>
       <feature id="org.eclipse.platform.source"/>
       <feature id="org.eclipse.rcp.source"/>
 
+      <feature id="org.eclipse.buildship" installMode="root"/>
       <feature id="org.eclipse.e4.core.tools.feature" installMode="root"/>
-      <feature id="org.eclipse.egit" installMode="root"/>
-      <!--
+      <!-- not available in Neon on 2016-02-21
       <feature id="org.eclipse.egit.import"/>
       -->
+      <feature id="org.eclipse.egit" installMode="root"/>
       <feature id="org.eclipse.egit.mylyn" installMode="root"/>
       <feature id="org.eclipse.m2e.feature" installMode="root"/>
       <feature id="org.eclipse.m2e.logback.feature" installMode="root"/>
-      <feature id="org.eclipse.buildship" installMode="root"/>
       <feature id="org.eclipse.mylyn.bugzilla_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.context_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.gerrit.feature" installMode="root"/>
@@ -212,16 +213,15 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.mylyn.pde_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
       <feature id="org.eclipse.rap.tools.feature" installMode="root"/>
-      <feature id="org.eclipse.recommenders.rcp.feature" installMode="root"/>
       <feature id="org.eclipse.recommenders.mylyn.rcp.feature" installMode="root"/>
+      <feature id="org.eclipse.recommenders.rcp.feature" installMode="root"/>
       <feature id="org.eclipse.recommenders.snipmatch.rcp.feature" installMode="root"/>
+      <feature id="org.eclipse.swtbot.eclipse.gef" installMode="root"/>
+      <feature id="org.eclipse.swtbot.eclipse" installMode="root"/>
+      <feature id="org.eclipse.swtbot.ide" installMode="root"/>
       <feature id="org.eclipse.wb.core.ui.feature" installMode="root"/>
       <feature id="org.eclipse.wb.rcp.feature" installMode="root"/>
       <feature id="org.eclipse.wst.xml_ui.feature" installMode="root"/>
-      <feature id="org.eclipse.swtbot.eclipse" installMode="root"/>
-      <feature id="org.eclipse.swtbot.eclipse.gef" installMode="root"/>
-      <feature id="org.eclipse.swtbot.ide" installMode="root"/>
-
    </features>
 
 
