@@ -186,6 +186,15 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
 
    <features>
       <feature id="org.eclipse.epp.package.testing.feature" version="4.6.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.common.feature" version="4.6.0.qualifier"/>
+      <feature id="org.eclipse.platform" version="4.6.0.qualifier"/>
+
+      <feature id="org.eclipse.jubula.feature" installMode="root"/>
+      <feature id="org.eclipse.mylyn.bugzilla_feature" installMode="root"/>
+      <feature id="org.eclipse.mylyn.context_feature" installMode="root"/>
+      <feature id="org.eclipse.mylyn_feature" installMode="root"/>
+      <feature id="org.eclipse.mylyn.ide_feature" installMode="root"/>
+      <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
    </features>
 
 

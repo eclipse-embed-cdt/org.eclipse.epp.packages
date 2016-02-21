@@ -26,17 +26,14 @@
          search-location="both"/>
 
    <requires>
-      <import feature="org.eclipse.equinox.p2.user.ui"/>
-      <import feature="org.eclipse.help"/>
-      <import feature="org.eclipse.platform"/>
-      <import feature="org.eclipse.rcp"/>
-      <import feature="org.eclipse.mylyn.ide_feature"/>
-      <import feature="org.eclipse.mylyn.bugzilla_feature"/>
-      <import feature="org.eclipse.mylyn.context_feature"/>
-      <import feature="org.eclipse.mylyn_feature"/>
-      <import feature="org.eclipse.mylyn.wikitext_feature"/>
-      <import feature="org.eclipse.epp.package.common.feature"/>
-      <import feature="org.eclipse.jubula.feature"/>
+   <!--
+        All requirements to features and the content of the product are defined 
+        in the product configuration epp.product since Eclipse Neon. For further
+        details see the following bug:
+
+        Bug 332989 - Allow parts of a package to upgraded or removed
+        https://bugs.eclipse.org/bugs/show_bug.cgi?id=332989
+     -->
    </requires>
 
    <plugin
