@@ -186,6 +186,28 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
 
    <features>
       <feature id="org.eclipse.epp.package.cpp.feature" version="4.6.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.common.feature" version="4.6.0.qualifier"/>
+      <feature id="org.eclipse.platform" version="4.6.0.qualifier"/>
+
+      <feature id="org.eclipse.cdt" installMode="root"/>
+      <feature id="org.eclipse.cdt.autotools" installMode="root"/>
+      <feature id="org.eclipse.cdt.build.crossgcc" installMode="root"/>
+      <feature id="org.eclipse.cdt.debug.standalone" installMode="root"/>
+      <feature id="org.eclipse.cdt.debug.ui.memory" installMode="root"/>
+      <feature id="org.eclipse.cdt.launch.remote" installMode="root"/>
+      <feature id="org.eclipse.cdt.msw" installMode="root"/>
+      <feature id="org.eclipse.cdt.mylyn" installMode="root"/>
+      <feature id="org.eclipse.egit" installMode="root"/>
+      <!-- not available in Neon on 2016-02-21
+      <feature id="org.eclipse.egit.import" installMode="root"/>
+      -->
+      <feature id="org.eclipse.mylyn.bugzilla_feature" installMode="root"/>
+      <feature id="org.eclipse.mylyn.context_feature" installMode="root"/>
+      <feature id="org.eclipse.mylyn_feature" installMode="root"/>
+      <feature id="org.eclipse.mylyn.ide_feature" installMode="root"/>
+      <feature id="org.eclipse.mylyn.team_feature" installMode="root"/>
+      <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
+      <feature id="org.eclipse.rse" installMode="root"/>
    </features>
 
 
