@@ -21,12 +21,22 @@
    </license>
 
    <requires>
+   <!--
+        All requirements to features and the content of the product are defined 
+        in the product configuration epp.product since Eclipse Neon. For further
+        details see the following bug:
+
+        Bug 332989 - Allow parts of a package to upgraded or removed
+        https://bugs.eclipse.org/bugs/show_bug.cgi?id=332989
+
+        Since the DSL package already moved some of the dependencies to the product
+        definition, no need to change anything here.
+     -->
       <import feature="org.eclipse.sdk"/>
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.m2e.feature"/>
       <import feature="org.eclipse.m2e.logback.feature"/>
-      <import feature="org.eclipse.epp.package.common.feature"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.buildship"/>
    </requires>
