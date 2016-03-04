@@ -42,6 +42,10 @@ Contributors:
     <xsl:call-template name="artifact_properties" />
   </xsl:template>
 
+  <xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.javascript']/properties">
+    <xsl:call-template name="artifact_properties" />
+  </xsl:template>
+
   <xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.jee']/properties">
     <xsl:call-template name="artifact_properties" />
   </xsl:template>
@@ -99,6 +103,10 @@ Contributors:
   </xsl:template>
 
   <xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.java.feature']/properties">
+    <xsl:call-template name="artifact_properties_feature" />
+  </xsl:template>
+
+  <xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.javascript.feature']/properties">
     <xsl:call-template name="artifact_properties_feature" />
   </xsl:template>
 
