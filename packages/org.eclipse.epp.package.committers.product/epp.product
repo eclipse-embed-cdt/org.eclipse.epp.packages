@@ -227,6 +227,7 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.pde.source" installMode="root"/>
       <feature id="org.eclipse.platform.source" installMode="root"/>
       <feature id="org.eclipse.rcp.source" installMode="root"/>
+      <feature id="org.eclipse.recommenders.news.rcp.feature" installMode="root"/>
       <feature id="org.eclipse.recommenders.mylyn.rcp.feature" installMode="root"/>
       <feature id="org.eclipse.recommenders.rcp.feature" installMode="root"/>
       <feature id="org.eclipse.recommenders.snipmatch.rcp.feature" installMode="root"/>
