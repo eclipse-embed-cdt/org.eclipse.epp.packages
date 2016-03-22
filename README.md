@@ -45,7 +45,6 @@ Available Profiles
 Each package uses its own profile:
 
 - epp.package.android
-- epp.package.automotive
 - epp.package.committers
 - epp.package.cpp
 - epp.package.dsl

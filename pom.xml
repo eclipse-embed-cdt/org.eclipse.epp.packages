@@ -42,14 +42,6 @@
       </modules>
     </profile>
     <profile>
-      <id>epp.package.automotive</id>
-      <modules>
-        <module>packages/org.eclipse.epp.package.automotive</module>
-        <module>packages/org.eclipse.epp.package.automotive.feature</module>
-        <module>packages/org.eclipse.epp.package.automotive.product</module>
-      </modules>
-    </profile>
-    <profile>
       <id>epp.package.cpp</id>
       <modules>
         <module>packages/org.eclipse.epp.package.cpp</module>

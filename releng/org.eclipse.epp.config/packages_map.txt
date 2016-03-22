@@ -8,9 +8,6 @@
 android,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.android.feature/epp.website.xml,HEAD,android.xml
 android,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.android.feature/feature.xml,HEAD,android.feature.xml
 
-automotive,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.automotive.feature/epp.website.xml,HEAD,automotive.xml
-automotive,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.automotive.feature/feature.xml,HEAD,automotive.feature.xml
-
 committers,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.committers.feature/epp.website.xml,HEAD,committers.xml
 committers,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.committers.feature/feature.xml,HEAD,committers.feature.xml
 
