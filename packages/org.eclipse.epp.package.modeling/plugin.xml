@@ -42,7 +42,7 @@
          </property>
          <property
               name="introBrandingImage"
-              value="product:intro-eclipse.png">
+              value="product:intro-eclipse-bw.png">
          </property>
          <property
                name="introTitle"
@@ -64,6 +64,10 @@
                name="applicationCSSResources" 
                value="platform:/plugin/org.eclipse.ui.themes/images/"> 
          </property>
+         <property
+               name="introDescription-root"
+               value="Get Started...">
+         </property>
       </product>
    </extension>
    <extension
@@ -73,5 +77,43 @@
             productId="org.eclipse.epp.package.modeling.product">
       </introProductBinding>
    </extension>
-
+	<extension
+         point="org.eclipse.ui.intro.quicklinks">
+       <url
+            location="http://org.eclipse.ui.intro/showHelpTopic?id=/org.eclipse.emf.ecoretools.doc/doc/EcoreTools%20User%20Manual.html"
+            label="%ql.ecoreHelp.label"
+            description="%ql.ecoreHelp.description"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/start-cheatsheet.png"
+            importance="high">
+      </url>      
+      <command
+            id="org.eclipse.ui.newWizard(newWizardId=org.eclipse.ecoretools.emf.design.wizardID)"
+            description="%ql.newEcoreProject.description"
+            label="%ql.newEcoreProject.label"
+            importance="high"
+            resolution="launchbar">
+      </command>      
+      <command
+            id="org.eclipse.oomph.setup.ui.questionnaire"
+            importance="medium"
+            label="%ql.setupQuestionnaire.label">
+      </command>
+      <override
+            command="org.eclipse.ui.newWizard*"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
+            theme="org.eclipse.ui.intro.universal.solstice">
+      </override>
+      <command
+            id="org.eclipse.amalgam.discovery.modeling.commands.discoveryCommand"
+            label="%ql.discovery.label"
+            description="%ql.discovery.description"
+            icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
+      </command>
+      <command
+            id="org.eclipse.epp.mpc.ui.command.showMarketplaceWizard"
+            label="%ql.mpc.label"
+            description="%ql.mpc.description"
+            icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
+      </command>
+   </extension>
 </plugin>
