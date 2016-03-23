@@ -182,6 +182,28 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
 
    <features>
       <feature id="org.eclipse.epp.package.javascript.feature" version="4.6.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.common.feature" version="4.6.0.qualifier"/>
+      <feature id="org.eclipse.platform" version="4.6.0.qualifier"/>
+      
+      <feature id="org.eclipse.egit" installMode="root"/>
+      <feature id="org.eclipse.egit.mylyn" installMode="root"/>
+      <feature id="org.eclipse.egit.gitflow.feature" installMode="root"/>
+      <feature id="org.eclipse.epp.package.common.feature" installMode="root"/>
+      <feature id="org.eclipse.equinox.p2.user.ui" installMode="root"/>
+      <feature id="org.eclipse.help" installMode="root"/>
+      <feature id="org.eclipse.mylyn_feature" installMode="root"/>
+      <feature id="org.eclipse.mylyn.bugzilla_feature" installMode="root"/>
+      <feature id="org.eclipse.mylyn.context_feature" installMode="root"/>
+      <feature id="org.eclipse.mylyn.ide_feature" installMode="root"/>
+      <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
+      <feature id="org.eclipse.mylyn.github.feature" installMode="root"/>
+      <feature id="org.eclipse.wst.web_ui.feature" installMode="root"/>
+      <feature id="org.eclipse.wst.xml_ui.feature" installMode="root"/>
+      <feature id="org.eclipse.wst.json_ui.feature" installMode="root"/>
+      <feature id="org.eclipse.wst.jsdt.feature" installMode="root"/>
+      <feature id="org.eclipse.wst.server_ui.feature" installMode="root"/>
+      <feature id="org.eclipse.wst.server_adapters.feature" installMode="root"/>
+      <feature id="org.eclipse.thym.feature" installMode="root"/>
    </features>
 
 
