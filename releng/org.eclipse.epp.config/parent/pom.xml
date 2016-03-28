@@ -37,11 +37,11 @@
     <!-- The location that is used to assemble the single EPP configuration p2 repository -->
     <eclipse.epp.targetRepository>${eclipse.epp.archiveDirectory}/repository/</eclipse.epp.targetRepository>
     <!-- ID used to generate the filename of the packages -->
-    <eclipse.simultaneous.release.id>neon-M5</eclipse.simultaneous.release.id>
+    <eclipse.simultaneous.release.id>neon-M6</eclipse.simultaneous.release.id>
     <!-- Timestamp used in various places, e.g. the about dialog (see about.mappings) -->
     <eclipse.simultaneous.release.build>${maven.build.timestamp}</eclipse.simultaneous.release.build>
     <!-- Human readable name of the release, e.g. used in the about dialog (see about.mappings) -->
-    <eclipse.simultaneous.release.name>Neon Milestone 4 (4.6.0M5)</eclipse.simultaneous.release.name>
+    <eclipse.simultaneous.release.name>Neon Milestone 6 (4.6.0M6)</eclipse.simultaneous.release.name>
     <!-- Upstream p2 repository, used as a source for pre-compiled build artifacts -->
     <eclipse.simultaneous.release.repository>http://download.eclipse.org/releases/staging/</eclipse.simultaneous.release.repository>
   </properties>
