@@ -49,6 +49,7 @@ Each package uses its own profile:
 - epp.package.cpp
 - epp.package.dsl
 - epp.package.java
+- epp.package.javascript
 - epp.package.jee
 - epp.package.modeling
 - epp.package.parallel
