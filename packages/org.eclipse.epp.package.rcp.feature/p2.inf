@@ -5,3 +5,19 @@ org.eclipse.pde.build.append.startlevels=false
 requires.1.namespace=org.eclipse.equinox.p2.iu
 requires.1.name=org.eclipse.platform.ide
 requires.1.greedy=true
+
+# Bug 490515 - Prevent upgrade from old to new EPP package layout
+# https://bugs.eclipse.org/bugs/show_bug.cgi?id=490515
+#
+# With Eclipse Neon (4.6.0) all packages changed their structure from a single
+# feature to a product with multiple independent root features. Upgrades from
+# older versions to the new structure would result in an unexpected uninstall
+# of everything below the old main package feature. In order to prevent such
+# upgrades we add an artificial lower limit of the IU to the p2 metadata.
+#
+# RCP/RAP package had been changed in Eclipse Mars (4.5)
+
+update.id = org.eclipse.epp.package.rcp.feature.feature.group
+update.range = [4.5, $version$)
+update.severity = 0
+update.description = Eclipse package upgrade from versions before Eclipse Mars (4.5) is not possible. See bug 332989.

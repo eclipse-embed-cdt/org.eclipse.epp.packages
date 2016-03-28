@@ -24,3 +24,17 @@ org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#5
 instructions.unconfigure=\
 org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.eclipse.org/tools/ptp/updates/neon);\
 org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.eclipse.org/tools/ptp/updates/neon);
+
+# Bug 490515 - Prevent upgrade from old to new EPP package layout
+# https://bugs.eclipse.org/bugs/show_bug.cgi?id=490515
+#
+# With Eclipse Neon (4.6.0) all packages changed their structure from a single
+# feature to a product with multiple independent root features. Upgrades from
+# older versions to the new structure would result in an unexpected uninstall
+# of everything below the old main package feature. In order to prevent such
+# upgrades we add an artificial lower limit of the IU to the p2 metadata.
+
+update.id = org.eclipse.epp.package.parallel.feature.feature.group
+update.range = [4.6.0.20160301-1200, $version$)
+update.severity = 0
+update.description = Eclipse package upgrade from versions before Eclipse Neon (4.6) is not possible. See bug 332989.

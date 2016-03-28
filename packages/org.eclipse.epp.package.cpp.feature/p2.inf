@@ -80,3 +80,17 @@ requires.16.optional=true
 requires.17.namespace=org.eclipse.equinox.p2.iu
 requires.17.name=org.eclipse.tracecompass.lttng2.ust.feature.group
 requires.17.optional=true
+
+# Bug 490515 - Prevent upgrade from old to new EPP package layout
+# https://bugs.eclipse.org/bugs/show_bug.cgi?id=490515
+#
+# With Eclipse Neon (4.6.0) all packages changed their structure from a single
+# feature to a product with multiple independent root features. Upgrades from
+# older versions to the new structure would result in an unexpected uninstall
+# of everything below the old main package feature. In order to prevent such
+# upgrades we add an artificial lower limit of the IU to the p2 metadata.
+
+update.id = org.eclipse.epp.package.cpp.feature.feature.group
+update.range = [4.6.0.20160301-1200, $version$)
+update.severity = 0
+update.description = Eclipse package upgrade from versions before Eclipse Neon (4.6) is not possible. See bug 332989.
