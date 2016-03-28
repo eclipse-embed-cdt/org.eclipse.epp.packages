@@ -1,0 +1,11 @@
+# Bug 458776 - Let's be sure to "describe" future "updates"
+# https://bugs.eclipse.org/bugs/show_bug.cgi?id=458776
+
+properties.0.name = org.eclipse.equinox.p2.type.product
+properties.0.value = true
+
+properties.1.name = org.eclipse.equinox.p2.description
+properties.1.value = Neon Release of the Eclipse Java EE Developers package.
+
+properties.2.name = org.eclipse.equinox.p2.provider
+properties.2.value = Eclipse Packaging Project
