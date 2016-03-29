@@ -42,7 +42,7 @@
          </property>
          <property
               name="introBrandingImage"
-              value="product:intro-eclipse.png">
+              value="product:intro-eclipse-bw.png">
          </property>
          <property
                name="introTitle"
@@ -74,4 +74,53 @@
       </introProductBinding>
    </extension>
 
+   <extension
+         point="org.eclipse.ui.intro.quicklinks">
+      <command
+            id="org.eclipse.ui.newWizard(newWizardId=org.eclipse.scout.sdk.s2e.ui.newScoutProjectWizard)"
+            description="%ql.newScoutProject.description"
+            label="%ql.newScoutProject.label"
+            importance="medium"
+            resolution="launchbar">
+      </command>
+      <command
+            id="org.eclipse.ui.file.import(importWizardId=org.eclipse.egit.ui.internal.clone.GitCloneWizard)"
+            description="%ql.checkoutGitProject.description"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/egit-checkout.png"
+            label="%ql.checkoutGitProject.label"
+            importance="medium"
+            resolution="launchbar">
+      </command>
+      <command
+            id="org.eclipse.ui.file.import(importWizardId=org.eclipse.ui.wizards.import.ExternalProject)"
+            description="%ql.importExistingProjects.description"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/import-existing-project.png"
+            label="%ql.importExistingProjects.label"
+            resolution="launchbar">
+      </command>
+      <command
+            id="org.eclipse.ui.edit.text.openLocalFile"
+            description="%ql.openExistingFile.description"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/open-file.png"
+            importance="low"
+            label="%ql.openExistingFile.label"
+            resolution="launchbar">
+      </command>
+      <command
+            id="org.eclipse.oomph.setup.ui.questionnaire"
+            importance="high"
+            label="%ql.setupQuestionnaire.label">
+      </command>
+      <override
+            command="org.eclipse.ui.newWizard*"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
+            theme="org.eclipse.ui.intro.universal.solstice">
+      </override>
+      <command
+            id="org.eclipse.epp.mpc.ui.command.showMarketplaceWizard"
+            label="%ql.mpc.label"
+            description="%ql.mpc.description"
+            icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
+      </command>
+   </extension>
 </plugin>
