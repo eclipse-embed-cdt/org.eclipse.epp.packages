@@ -21,7 +21,7 @@ java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.pack
 java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/feature.xml,HEAD,java.feature.xml
 
 javascript,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.javascript.feature/epp.website.xml,HEAD,javascript.xml
-javascript,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.javascript.feature/feature.xml,HEAD,java.featurescript.xml
+javascript,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.javascript.feature/feature.xml,HEAD,javascript.feature.xml
 
 jee,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.jee.feature/epp.website.xml,HEAD,jee.xml
 jee,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.jee.feature/feature.xml,HEAD,jee.feature.xml
