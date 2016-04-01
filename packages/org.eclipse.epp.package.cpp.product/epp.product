@@ -201,6 +201,15 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <!-- not available in Neon on 2016-02-21
       <feature id="org.eclipse.egit.import" installMode="root"/>
       -->
+
+      <feature id="org.eclipse.linuxtools.cdt.libhover.feature" installMode="root"/>
+      <feature id="org.eclipse.linuxtools.cdt.libhover.devhelp.feature" installMode="root"/>
+      <feature id="org.eclipse.linuxtools.changelog.c" installMode="root"/>
+      <feature id="org.eclipse.linuxtools.gcov" installMode="root"/>
+      <feature id="org.eclipse.linuxtools.gprof.feature" installMode="root"/>
+      <feature id="org.eclipse.linuxtools.rpm" installMode="root"/>
+      <feature id="org.eclipse.linuxtools.valgrind" installMode="root"/>
+
       <feature id="org.eclipse.mylyn.bugzilla_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.context_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn_feature" installMode="root"/>
@@ -208,6 +217,11 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.mylyn.team_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
       <feature id="org.eclipse.rse" installMode="root"/>
+
+      <feature id="org.eclipse.tracecompass.gdbtrace" installMode="root"/>
+      <feature id="org.eclipse.tracecompass.lttng2.control" installMode="root"/>
+      <feature id="org.eclipse.tracecompass.lttng2.kernel" installMode="root"/>
+      <feature id="org.eclipse.tracecompass.lttng2.ust" installMode="root"/>
    </features>
 
 
