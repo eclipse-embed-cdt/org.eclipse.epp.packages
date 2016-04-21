@@ -19,20 +19,24 @@
       </programArgs>
       <vmArgs>-Dosgi.requiredJavaVersion=1.8
       </vmArgs>
-      <vmArgsLin>
--Xms512m
+      <vmArgsLin>-Xms512m
 -Xmx2048m
-      </vmArgsLin>
+-XX:+UseG1GC
+-XX:+UseStringDeduplication</vmArgsLin>
       <vmArgsMac>-XstartOnFirstThread
 -Xms512m
 -Xmx2048m
--Dorg.eclipse.swt.internal.carbon.smallFonts
-      </vmArgsMac>
+-XX:+UseG1GC
+-XX:+UseStringDeduplication
+-Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
       <vmArgsSol>-Xms512m
 -Xmx2048m
-      </vmArgsSol>
+-XX:+UseG1GC
+-XX:+UseStringDeduplication</vmArgsSol>
       <vmArgsWin>-Xms512m
--Xmx1024m</vmArgsWin>
+-Xmx1024m
+-XX:+UseG1GC
+-XX:+UseStringDeduplication</vmArgsWin>
    </launcherArgs>
 
    <windowImages i16="/org.eclipse.epp.package.parallel/eclipse16.png" i32="/org.eclipse.epp.package.parallel/eclipse32.png" i48="/org.eclipse.epp.package.parallel/eclipse48.png" i256="/org.eclipse.epp.package.parallel/eclipse256.png"/>
