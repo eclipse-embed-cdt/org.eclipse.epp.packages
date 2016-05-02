@@ -55,6 +55,8 @@
               </ius>
               <destination>${eclipse.epp.targetRepository}</destination>
               <followOnlyFilteredRequirements>true</followOnlyFilteredRequirements>
+              <followStrictOnly>true</followStrictOnly>
+              <includeFeatures>false</includeFeatures>
               <includeOptional>false</includeOptional>
               <includeNonGreedy>false</includeNonGreedy>
               <includePacked>true</includePacked>
