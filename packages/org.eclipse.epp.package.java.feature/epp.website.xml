@@ -41,6 +41,6 @@
   <rcp version="4.6.0" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-java-neon-M6" />
+	<product name="eclipse-java-neon-M7" />
 
 </configuration>
