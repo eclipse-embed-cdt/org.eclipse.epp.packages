@@ -80,7 +80,15 @@
             id="org.eclipse.ui.newWizard(newWizardId=org.eclipse.scout.sdk.s2e.ui.newScoutProjectWizard)"
             description="%ql.newScoutProject.description"
             label="%ql.newScoutProject.label"
-            importance="medium"
+            importance="high"
+            resolution="launchbar">
+      </command>
+      <command
+            id="org.eclipse.ui.file.import(importWizardId=org.eclipse.oomph.setup.ui.ImportWizard)"
+            description="%ql.importScoutDemoProjects.description"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/import-existing-project.png"
+            label="%ql.importScoutDemoProjects.label"
+            importance="high"
             resolution="launchbar">
       </command>
       <command
@@ -92,35 +100,14 @@
             resolution="launchbar">
       </command>
       <command
-            id="org.eclipse.ui.file.import(importWizardId=org.eclipse.ui.wizards.import.ExternalProject)"
-            description="%ql.importExistingProjects.description"
-            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/import-existing-project.png"
-            label="%ql.importExistingProjects.label"
-            resolution="launchbar">
-      </command>
-      <command
-            id="org.eclipse.ui.edit.text.openLocalFile"
-            description="%ql.openExistingFile.description"
-            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/open-file.png"
-            importance="low"
-            label="%ql.openExistingFile.label"
-            resolution="launchbar">
-      </command>
-      <command
             id="org.eclipse.oomph.setup.ui.questionnaire"
-            importance="high"
-            label="%ql.setupQuestionnaire.label">
+            label="%ql.setupQuestionnaire.label"
+            importance="low">
       </command>
       <override
             command="org.eclipse.ui.newWizard*"
             icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
             theme="org.eclipse.ui.intro.universal.solstice">
       </override>
-      <command
-            id="org.eclipse.epp.mpc.ui.command.showMarketplaceWizard"
-            label="%ql.mpc.label"
-            description="%ql.mpc.description"
-            icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
-      </command>
    </extension>
 </plugin>
