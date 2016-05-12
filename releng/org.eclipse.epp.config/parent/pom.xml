@@ -43,7 +43,7 @@
     <!-- Human readable name of the release, e.g. used in the about dialog (see about.mappings) -->
     <eclipse.simultaneous.release.name>Neon Milestone 7 (4.6.0M7)</eclipse.simultaneous.release.name>
     <!-- Upstream p2 repository, used as a source for pre-compiled build artifacts -->
-    <eclipse.simultaneous.release.repository>http://download.eclipse.org/releases/staging/</eclipse.simultaneous.release.repository>
+    <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/neon/</eclipse.simultaneous.release.repository>
   </properties>
 
   <!--
