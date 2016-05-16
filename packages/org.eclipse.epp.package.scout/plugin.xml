@@ -102,6 +102,7 @@
       <command
             id="org.eclipse.oomph.setup.ui.questionnaire"
             label="%ql.setupQuestionnaire.label"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/settings.png"
             importance="low">
       </command>
       <override
