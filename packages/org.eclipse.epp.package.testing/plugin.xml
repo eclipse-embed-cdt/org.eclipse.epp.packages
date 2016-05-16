@@ -74,4 +74,34 @@
       </introProductBinding>
    </extension>
 
+   <extension
+         point="org.eclipse.ui.intro.quicklinks">
+      <command
+            id="org.eclipse.jubula.client.ui.rcp.commands.NewProject"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
+            label="%ql.newTestProject.label"
+            description="%ql.newTestProject.description"
+            importance="medium"
+            resolution="launchbar">
+      </command>
+      <command
+            id="org.eclipse.jubula.client.ui.rcp.commands.OpenProject"
+            description="%ql.openTestProject.description"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/open-file.png"
+            importance="low"
+            label="%ql.openTestProject.label"
+            resolution="launchbar">
+      </command>
+      <override
+            command="org.eclipse.ui.newWizard*"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
+            theme="org.eclipse.ui.intro.universal.solstice">
+      </override>
+      <command
+            id="org.eclipse.epp.mpc.ui.command.showMarketplaceWizard"
+            label="%ql.mpc.label"
+            description="%ql.mpc.description"
+            icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
+      </command>
+   </extension>
 </plugin>
