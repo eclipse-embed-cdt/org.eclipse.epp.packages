@@ -25,17 +25,11 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/Scout/NewAndNoteworthy/5.0"
+    url="https://wiki.eclipse.org/Scout/NewAndNoteworthy/6.0"
     project="Eclipse Scout" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.5/"
+    url="https://www.eclipse.org/eclipse/news/4.6/"
     project="Eclipse Platform" />
-  <NewAndNoteworthy
-    url="https://www.eclipse.org/mylyn/new/"
-    project="Eclipse Mylyn" />
-  <NewAndNoteworthy
-    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/4.0"
-    project="Eclipse EGit" />
   </MoreInfo>
 
 
