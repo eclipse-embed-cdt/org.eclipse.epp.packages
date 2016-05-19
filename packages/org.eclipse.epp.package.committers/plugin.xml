@@ -425,10 +425,7 @@
       <command
             id="org.eclipse.oomph.setup.ui.questionnaire"
             importance="high"
-<<<<<<< Updated upstream
-=======
             icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/settings.png"
->>>>>>> Stashed changes
             label="%ql.setupQuestionnaire.label">
       </command>
       <override
