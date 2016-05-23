@@ -91,6 +91,13 @@
             label="%ql.importPhpProjects.label">
       </command>
       <command
+            description="%ql.addPhpExecutables.description"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
+            id="org.eclipse.ui.window.preferences(preferencePageId=org.eclipse.php.debug.ui.preferencesphps.PHPsPreferencePage)"
+            importance="medium"
+            label="%ql.addPhpExecutables.label">
+      </command>
+      <command
             id="org.eclipse.ui.file.import(importWizardId=org.eclipse.egit.ui.internal.clone.GitCloneWizard)"
             description="%ql.checkoutGitProject.description"
             icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/egit-checkout.png"
