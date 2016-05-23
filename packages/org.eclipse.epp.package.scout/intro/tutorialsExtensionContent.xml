@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<introContent>
+    <extensionContent id="org.eclipse.scout.package.tutorials" name="Eclipse Scout" style="css/scout_intro.css" path="tutorials/@">
+        <group style-id="content-group" id="content-group" label="Eclipse Scout Applications">
+            <link label="Read the Scout User Guide" url="http://org.eclipse.ui.intro/showHelpTopic?id=/org.eclipse.scout.sdk.s2e.doc/html/scout_user_guide.html" id="scout" style-id="content-link">
+                <text>Learn about programming Scout applications</text>
+            </link>
+        </group>
+    </extensionContent>
+</introContent>

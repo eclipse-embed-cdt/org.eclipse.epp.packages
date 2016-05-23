@@ -3,7 +3,7 @@
 <plugin>
    <extension
          id="product"
-         name="Scout IDE"
+         name="Scout SDK"
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
@@ -56,22 +56,37 @@
                name="applicationXMI"
                value="org.eclipse.platform/LegacyIDE.e4xmi">
          </property>
-         <property 
+         <property
                name="cssTheme"
                value="org.eclipse.e4.ui.css.theme.e4_default">
          </property>
          <property
-               name="applicationCSSResources" 
-               value="platform:/plugin/org.eclipse.ui.themes/images/"> 
+               name="applicationCSSResources"
+               value="platform:/plugin/org.eclipse.ui.themes/images/">
          </property>
       </product>
    </extension>
+
+   <!-- link with universal intro implementation -->
    <extension
          point="org.eclipse.ui.intro">
       <introProductBinding
             introId="org.eclipse.ui.intro.universal"
             productId="org.eclipse.epp.package.scout.product">
       </introProductBinding>
+   </extension>
+
+   <!-- links configured intro content -->
+   <extension point="org.eclipse.ui.intro.configExtension">
+      <configExtension
+            configId="org.eclipse.ui.intro.universalConfig"
+            content="$nl$/intro/whatsnewExtensionContent.xml"/>
+      <configExtension
+            configId="org.eclipse.ui.intro.universalConfig"
+            content="$nl$/intro/overviewExtensionContent.xml"/>
+      <configExtension
+            configId="org.eclipse.ui.intro.universalConfig"
+            content="$nl$/intro/tutorialsExtensionContent.xml"/>
    </extension>
 
    <extension
