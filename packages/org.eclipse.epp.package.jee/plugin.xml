@@ -82,16 +82,16 @@
    <extension
          point="org.eclipse.ui.intro.quicklinks">
       <command
-            id="org.eclipse.ui.newWizard(newWizardId=org.eclipse.wst.common.project.facet.ui.BasicFacetedProjectWizard)"
-            description="%ql.newFacetedProject.description"
-            label="%ql.newFacetedProject.label"
+            id="org.eclipse.ui.newWizard(newWizardId=org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard)"
+            description="%ql.newJEEWebProject.description"
+            label="%ql.newJEEWebProject.label"
             importance="medium"
             resolution="launchbar">
       </command>
       <command
-            id="org.eclipse.ui.newWizard(newWizardId=org.eclipse.wst.web.ui.internal.wizards.SimpleWebProjectWizard)"
-            description="%ql.newStaticWebProject.description"
-            label="%ql.newStaticWebProject.label"
+            id="org.eclipse.ui.newWizard(newWizardId=org.eclipse.wst.jsdt.ui.wizards.JavaProjectWizard)"
+            description="%ql.newJSDTProject.description"
+            label="%ql.newJSDTProject.label"
             importance="medium"
             resolution="launchbar">
       </command>
