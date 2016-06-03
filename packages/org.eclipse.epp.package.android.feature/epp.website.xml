@@ -8,7 +8,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse for Android Developers"
+   packageName="Eclipse for Android Developers (includes Incubating components)"
    maintainer="Eclipse Packaging Project"
    iconurl="http://www.eclipse.org/downloads/images/mobile.jpg"
    bugzillaComponentId="android-package"
@@ -41,6 +41,6 @@
 	<rcp version="4.6.0" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-android-neon-RC3" />
+	<product name="eclipse-android-neon-RC3-incubation" />
 
 </configuration>
