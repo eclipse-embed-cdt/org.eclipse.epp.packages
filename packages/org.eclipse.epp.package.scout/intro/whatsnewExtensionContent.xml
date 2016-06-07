@@ -2,8 +2,8 @@
 <introContent>
     <extensionContent id="org.eclipse.scout.package.news" name="Eclipse Scout" style="css/scout_intro.css" path="whatsnew/@">
         <group style-id="content-group" id="content-group">
-            <link label="Eclipse Scout" url="https://wiki.eclipse.org/Scout/NewAndNoteworthy/6.0#Eclipse_Scout_becomes_a_Java_Web_Framework" id="scout" style-id="content-link">
-                <text>New features and changes in the latest Scout release</text>
+            <link label="Eclipse Scout" url="https://eclipsescout.github.io/6.0/release-notes.html#what-s-new" id="scout" style-id="content-link">
+                <text>New features and release notes for the latest Scout release</text>
             </link>
         </group>
     </extensionContent>
