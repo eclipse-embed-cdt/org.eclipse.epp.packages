@@ -39,3 +39,11 @@ update.id = org.eclipse.epp.package.cpp.feature.feature.group
 update.range = [4.6.0.20160301-1200, $version$)
 update.severity = 0
 update.description = Eclipse package upgrade from versions before Eclipse Neon (4.6) is not possible. See bug 332989.
+
+instructions.configure=\
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(location:http${#58}//download.eclipse.org/tools/cdt/releases/9.0,type:0,name:CDT,enabled:true); \
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(location:http${#58}//download.eclipse.org/tools/cdt/releases/9.0,type:1,name:CDT,enabled:true); 
+
+instructions.unconfigure=\
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(location:http${#58}//download.eclipse.org/tools/cdt/releases/9.0,type:0); \
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(location:http${#58}//download.eclipse.org/tools/cdt/releases/9.0,type:1); 
