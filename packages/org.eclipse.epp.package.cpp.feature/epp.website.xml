@@ -44,6 +44,6 @@
   <rcp version="4.6.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-cpp-neon-RC3" />
+  <product name="eclipse-cpp-neon-R" />
 
 </configuration>
