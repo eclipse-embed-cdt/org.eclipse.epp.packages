@@ -24,17 +24,17 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="https://projects.eclipse.org/projects/modeling.amalgam/releases/1.6.0"
+    url="https://projects.eclipse.org/projects/modeling.amalgam/releases/1.7.0"
     project="Modeling Package" />
   <NewAndNoteworthy
     url="https://wiki.eclipse.org/Ecore_Tools/New_and_Noteworthy"
-    project="EcoreTools" />
+    project="Eclipse EcoreTools" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/EMF_Compare/New_and_Noteworthy/3.1.0"
-    project="EMF Compare" />
+    url="https://wiki.eclipse.org/EMF_Compare/New_and_Noteworthy/3.2.0"
+    project="Eclipse EMF Compare" />
   <NewAndNoteworthy
-    url="https://projects.eclipse.org/projects/modeling.mmt.atl/releases/3.6.0"
-    project="ATL" />
+    url="https://projects.eclipse.org/projects/modeling.mmt.atl/releases/3.7.0"
+    project="Eclipse ATL" />
   </MoreInfo>
 
   <!-- version, the RCP version to build. This is used to determine the file 

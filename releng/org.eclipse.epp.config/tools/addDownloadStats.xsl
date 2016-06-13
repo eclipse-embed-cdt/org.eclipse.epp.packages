@@ -26,6 +26,10 @@ Contributors:
     </properties>
   </xsl:template>
 
+  <xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.android']/properties">
+    <xsl:call-template name="artifact_properties" />
+  </xsl:template>
+
   <xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.committers']/properties">
     <xsl:call-template name="artifact_properties" />
   </xsl:template>
@@ -85,6 +89,10 @@ Contributors:
     </properties>
   </xsl:template>
 
+
+  <xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.android.feature']/properties">
+    <xsl:call-template name="artifact_properties_feature" />
+  </xsl:template>
 
   <xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.committers.feature']/properties">
     <xsl:call-template name="artifact_properties_feature" />

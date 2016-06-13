@@ -17,9 +17,8 @@
      <description><![CDATA[Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java EE, JPA, JSF, Mylyn, EGit and others.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
-      <tester>David Williams</tester>
       <tester>Chuck Bridgham</tester>
-      <tester>Martin Oberhuber</tester>
+      <tester>David Williams</tester>
     </packageTesters>
   </packageMetaData>
   <MoreInfo>
@@ -33,11 +32,11 @@
     url="https://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/4.0"
+    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/4.4"
     project="Eclipse EGit" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/M2E-WTP/New_and_Noteworthy/1.2.0"
-    project="M2E-WTP" />
+    url="https://wiki.eclipse.org/M2E-WTP/New_and_Noteworthy/1.7.0"
+    project="Eclipse M2E-WTP" />
   </MoreInfo>
 
   <!-- version, the RCP version to build. This is used to determine the file 
