@@ -6,6 +6,7 @@ Bundle-Version: 4.7.0.qualifier
 Bundle-Vendor: Eclipse Packaging Project
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Require-Bundle: org.eclipse.platform,
- org.eclipse.equinox.app
+ org.eclipse.equinox.app,
+ org.eclipse.ui.workbench
 Eclipse-BundleShape: dir
 Bundle-Localization: plugin
