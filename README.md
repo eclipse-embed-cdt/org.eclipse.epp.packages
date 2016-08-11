@@ -71,11 +71,11 @@ Additional Configuration Possibilities
 --------------------------------------
 
 By default, the EPP build uses the content of the Eclipse Simultaneous Release *Staging*
-repository at <http://download.eclipse.org/releases/staging/> as input. Sometimes it is
+repository at <http://download.eclipse.org/staging/oxygen/> as input. Sometimes it is
 desired to build against another release (e.g. a different milestone), or against a local
 mirror of this repository. This can be achieved by setting the Java property
 `eclipse.simultaneous.release.repository`to another URL. As an example, by adding the
 following argument to the Maven command line, the EPP build will read its input from the
-composite Eclipse Neon repository:
+composite Eclipse Oxygen repository:
 
-    -Declipse.simultaneous.release.repository="http://download.eclipse.org/releases/neon"
+    -Declipse.simultaneous.release.repository="http://download.eclipse.org/releases/oxygen"

@@ -2,7 +2,7 @@
 
 # directory that points to an Eclipse SDK or similar
 ECLIPSE_DIR="/opt/eclipse/64/eclipse.rcp.kepler.m7"
-#ECLIPSE_DIR="/shared/technology/epp/epp_build/neon/eclipse"
+#ECLIPSE_DIR="/shared/technology/epp/epp_build/oxygen/eclipse"
 
 ECLIPSE="${ECLIPSE_DIR}/eclipse"
 
