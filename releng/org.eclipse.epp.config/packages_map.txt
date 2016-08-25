@@ -5,59 +5,59 @@
 ## 1st: EPP package definition
 ## 2nd: feature.xml renamed
 
-android,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.android.feature/epp.website.xml,HEAD,android.xml
-android,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.android.feature/feature.xml,HEAD,android.feature.xml
-android,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.android.product/epp.product,HEAD,android.product.xml
+android,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.android.feature/epp.website.xml,NEON,android.xml
+android,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.android.feature/feature.xml,NEON,android.feature.xml
+android,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.android.product/epp.product,NEON,android.product.xml
 
-committers,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.committers.feature/epp.website.xml,HEAD,committers.xml
-committers,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.committers.feature/feature.xml,HEAD,committers.feature.xml
-committers,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.committers.product/epp.product,HEAD,committers.product.xml
+committers,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.committers.feature/epp.website.xml,NEON,committers.xml
+committers,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.committers.feature/feature.xml,NEON,committers.feature.xml
+committers,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.committers.product/epp.product,NEON,committers.product.xml
 
-cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/epp.website.xml,HEAD,cpp.xml
-cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/feature.xml,HEAD,cpp.feature.xml
-cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.product/epp.product,HEAD,cpp.product.xml
+cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/epp.website.xml,NEON,cpp.xml
+cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/feature.xml,NEON,cpp.feature.xml
+cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.product/epp.product,NEON,cpp.product.xml
 
-dsl,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.dsl.feature/epp.website.xml,HEAD,dsl.xml
-dsl,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.dsl.feature/feature.xml,HEAD,dsl.feature.xml
-dsl,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.dsl.product/epp.product,HEAD,dsl.product.xml
+dsl,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.dsl.feature/epp.website.xml,NEON,dsl.xml
+dsl,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.dsl.feature/feature.xml,NEON,dsl.feature.xml
+dsl,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.dsl.product/epp.product,NEON,dsl.product.xml
 
-java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/epp.website.xml,HEAD,java.xml
-java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/feature.xml,HEAD,java.feature.xml
-java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.product/epp.product,HEAD,java.product.xml
+java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/epp.website.xml,NEON,java.xml
+java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/feature.xml,NEON,java.feature.xml
+java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.product/epp.product,NEON,java.product.xml
 
-javascript,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.javascript.feature/epp.website.xml,HEAD,javascript.xml
-javascript,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.javascript.feature/feature.xml,HEAD,javascript.feature.xml
-javascript,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.javascript.product/epp.product,HEAD,javascript.product.xml
+javascript,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.javascript.feature/epp.website.xml,NEON,javascript.xml
+javascript,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.javascript.feature/feature.xml,NEON,javascript.feature.xml
+javascript,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.javascript.product/epp.product,NEON,javascript.product.xml
 
-jee,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.jee.feature/epp.website.xml,HEAD,jee.xml
-jee,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.jee.feature/feature.xml,HEAD,jee.feature.xml
-jee,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.jee.product/epp.product,HEAD,jee.product.xml
+jee,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.jee.feature/epp.website.xml,NEON,jee.xml
+jee,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.jee.feature/feature.xml,NEON,jee.feature.xml
+jee,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.jee.product/epp.product,NEON,jee.product.xml
 
-modeling,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.modeling.feature/epp.website.xml,HEAD,modeling.xml
-modeling,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.modeling.feature/feature.xml,HEAD,modeling.feature.xml
-modeling,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.modeling.product/epp.product,HEAD,modeling.product.xml
+modeling,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.modeling.feature/epp.website.xml,NEON,modeling.xml
+modeling,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.modeling.feature/feature.xml,NEON,modeling.feature.xml
+modeling,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.modeling.product/epp.product,NEON,modeling.product.xml
 
-parallel,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.parallel.feature/epp.website.xml,HEAD,parallel.xml
-parallel,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.parallel.feature/feature.xml,HEAD,parallel.feature.xml
-parallel,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.parallel.product/epp.product,HEAD,parallel.product.xml
+parallel,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.parallel.feature/epp.website.xml,NEON,parallel.xml
+parallel,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.parallel.feature/feature.xml,NEON,parallel.feature.xml
+parallel,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.parallel.product/epp.product,NEON,parallel.product.xml
 
-php,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.php.feature/epp.website.xml,HEAD,php.xml
-php,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.php.feature/feature.xml,HEAD,php.feature.xml
-php,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.php.product/epp.product,HEAD,php.product.xml
+php,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.php.feature/epp.website.xml,NEON,php.xml
+php,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.php.feature/feature.xml,NEON,php.feature.xml
+php,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.php.product/epp.product,NEON,php.product.xml
 
-rcp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rcp.feature/epp.website.xml,HEAD,rcp.xml
-rcp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rcp.feature/feature.xml,HEAD,rcp.feature.xml
-rcp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rcp.product/epp.product,HEAD,rcp.product.xml
+rcp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rcp.feature/epp.website.xml,NEON,rcp.xml
+rcp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rcp.feature/feature.xml,NEON,rcp.feature.xml
+rcp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rcp.product/epp.product,NEON,rcp.product.xml
 
-reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.feature/epp.website.xml,HEAD,reporting.xml
-reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.feature/feature.xml,HEAD,reporting.feature.xml
-reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.product/epp.product,HEAD,reporting.product.xml
+reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.feature/epp.website.xml,NEON,reporting.xml
+reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.feature/feature.xml,NEON,reporting.feature.xml
+reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.product/epp.product,NEON,reporting.product.xml
 
-scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.feature/epp.website.xml,HEAD,scout.xml
-scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.feature/feature.xml,HEAD,scout.feature.xml
-scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.product/epp.product,HEAD,scout.product.xml
+scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.feature/epp.website.xml,NEON,scout.xml
+scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.feature/feature.xml,NEON,scout.feature.xml
+scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.product/epp.product,NEON,scout.product.xml
 
-testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.feature/epp.website.xml,HEAD,testing.xml
-testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.feature/feature.xml,HEAD,testing.feature.xml
-testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.product/epp.product,HEAD,testing.product.xml
+testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.feature/epp.website.xml,NEON,testing.xml
+testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.feature/feature.xml,NEON,testing.feature.xml
+testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.product/epp.product,NEON,testing.product.xml
 
