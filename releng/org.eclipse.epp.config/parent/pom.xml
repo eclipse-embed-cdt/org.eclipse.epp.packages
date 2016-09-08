@@ -37,11 +37,11 @@
     <!-- The location that is used to assemble the single EPP configuration p2 repository -->
     <eclipse.epp.targetRepository>${eclipse.epp.archiveDirectory}/repository/</eclipse.epp.targetRepository>
     <!-- ID used to generate the filename of the packages -->
-    <eclipse.simultaneous.release.id>neon-1-RC2</eclipse.simultaneous.release.id>
+    <eclipse.simultaneous.release.id>neon-1-RC3</eclipse.simultaneous.release.id>
     <!-- Timestamp used in various places, e.g. the about dialog (see about.mappings) -->
     <eclipse.simultaneous.release.build>${maven.build.timestamp}</eclipse.simultaneous.release.build>
     <!-- Human readable name of the release, e.g. used in the about dialog (see about.mappings) -->
-    <eclipse.simultaneous.release.name>Neon.1 Release RC1 (4.6.1RC2)</eclipse.simultaneous.release.name>
+    <eclipse.simultaneous.release.name>Neon.1 Release RC3 (4.6.1RC3)</eclipse.simultaneous.release.name>
     <!-- Upstream p2 repository, used as a source for pre-compiled build artifacts -->
     <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/neon/</eclipse.simultaneous.release.repository>
   </properties>
