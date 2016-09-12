@@ -41,6 +41,6 @@
 	<rcp version="4.6.1" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-android-neon-1-RC3-incubation" />
+	<product name="eclipse-android-neon-1-incubation" />
 
 </configuration>
