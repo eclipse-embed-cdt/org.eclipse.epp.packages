@@ -113,7 +113,7 @@ including, but not limited to the following locations:
     - Feature directories
 
 Note: if a Feature made available by the Eclipse Foundation is installed using the
-Provisioning Technology (as defined below), you must agree to a license ("Feature 
+Provisioning Technology (as defined below), you must agree to a license ("Feature
 Update License") during the installation process. If the Feature contains
 Included Features, the Feature Update License should either provide you
 with the terms and conditions governing the Included Features or inform
@@ -191,22 +191,27 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.epp.package.common.feature" version="4.7.0.qualifier"/>
       <feature id="org.eclipse.platform" version="4.7.0.qualifier"/>
 
-      <feature id="org.eclipse.buildship" installMode="root"/>
-      <feature id="org.eclipse.cvs" installMode="root"/>
-      <feature id="org.eclipse.cvs.source" installMode="root"/>
-      <feature id="org.eclipse.e4.core.tools.feature" installMode="root"/>
-      <feature id="org.eclipse.egit" installMode="root"/>
-      <!-- not available in since Neon / 2016-02-21
-      <feature id="org.eclipse.egit.import" installMode="root"/>
-      -->
-      <feature id="org.eclipse.egit.mylyn" installMode="root"/>
-      <feature id="org.eclipse.epp.package.common.feature" installMode="root"/>
-      <feature id="org.eclipse.equinox.p2.user.ui" installMode="root"/>
-      <feature id="org.eclipse.help" installMode="root"/>
+      <feature id="org.eclipse.equinox.p2.user.ui"/>
+      <feature id="org.eclipse.help" version="4.7.0.qualifier"/>
+
       <feature id="org.eclipse.jdt" installMode="root"/>
+      <feature id="org.eclipse.pde" installMode="root"/>
+      <feature id="org.eclipse.e4.core.tools.feature" installMode="root"/>
+
+      <feature id="org.eclipse.platform.source" installMode="root"/>
+      <feature id="org.eclipse.rcp.source" installMode="root"/>
       <feature id="org.eclipse.jdt.source" installMode="root"/>
-      <feature id="org.eclipse.jgit" installMode="root"/>
+      <feature id="org.eclipse.pde.source" installMode="root"/>
+
+      <feature id="org.eclipse.buildship" installMode="root"/>
+      <feature id="org.eclipse.m2e.feature" installMode="root"/>
+
+      <feature id="org.eclipse.cvs" installMode="root"/>
+      <feature id="org.eclipse.egit" installMode="root"/>
+      <feature id="org.eclipse.egit.mylyn" installMode="root"/>
+      <feature id="org.eclipse.egit.gitflow.feature" installMode="root"/>
       <feature id="org.eclipse.jgit.http.apache" installMode="root"/>
+
       <feature id="org.eclipse.mylyn.bugzilla_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.builds" installMode="root"/>
       <feature id="org.eclipse.mylyn.commons" installMode="root"/>
@@ -225,14 +230,14 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.mylyn.team_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.versions" installMode="root"/>
       <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
-      <feature id="org.eclipse.pde" installMode="root"/>
-      <feature id="org.eclipse.pde.source" installMode="root"/>
-      <feature id="org.eclipse.platform.source" installMode="root"/>
-      <feature id="org.eclipse.rcp.source" installMode="root"/>
+
       <feature id="org.eclipse.recommenders.news.rcp.feature" installMode="root"/>
       <feature id="org.eclipse.recommenders.mylyn.rcp.feature" installMode="root"/>
       <feature id="org.eclipse.recommenders.rcp.feature" installMode="root"/>
       <feature id="org.eclipse.recommenders.snipmatch.rcp.feature" installMode="root"/>
+
+      <feature id="org.eclipse.wst.xml_ui.feature" installMode="root"/>
+      <feature id="org.eclipse.wst.json_ui.feature" installMode="root"/>
    </features>
 
 
