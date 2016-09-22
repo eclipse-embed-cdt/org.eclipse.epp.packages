@@ -41,6 +41,6 @@
 	<rcp version="4.7.0" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-android-oxygen-M1-incubation" />
+	<product name="eclipse-android-oxygen-M2-incubation" />
 
 </configuration>
