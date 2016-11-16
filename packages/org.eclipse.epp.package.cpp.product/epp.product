@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse IDE for C/C++ Developers" uid="epp.package.cpp" id="org.eclipse.epp.package.cpp.product" application="org.eclipse.ui.ide.workbench" version="4.6.1.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse IDE for C/C++ Developers" uid="epp.package.cpp" id="org.eclipse.epp.package.cpp.product" application="org.eclipse.ui.ide.workbench" version="4.6.2.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/org.eclipse.epp.package.cpp/eclipse_lg.png"/>
@@ -187,9 +187,9 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.cpp.feature" version="4.6.1.qualifier"/>
-      <feature id="org.eclipse.epp.package.common.feature" version="4.6.1.qualifier"/>
-      <feature id="org.eclipse.platform" version="4.6.1.qualifier"/>
+      <feature id="org.eclipse.epp.package.cpp.feature" version="4.6.2.qualifier"/>
+      <feature id="org.eclipse.epp.package.common.feature" version="4.6.2.qualifier"/>
+      <feature id="org.eclipse.platform" version="4.6.2.qualifier"/>
 
       <feature id="org.eclipse.cdt" installMode="root"/>
       <feature id="org.eclipse.cdt.autotools" installMode="root"/>
