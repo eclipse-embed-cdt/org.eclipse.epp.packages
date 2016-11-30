@@ -31,6 +31,6 @@
   <rcp version="4.6.2" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-dsl-neon-2-RC2" />
+  <product name="eclipse-dsl-neon-2-RC3" />
 
 </configuration>
