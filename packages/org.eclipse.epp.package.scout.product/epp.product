@@ -15,6 +15,7 @@
 
    <launcherArgs>
       <programArgs>-product org.eclipse.epp.package.scout.product
+-showsplash org.eclipse.epp.package.common
 --launcher.defaultAction openFile
       </programArgs>
       <vmArgs>-Dosgi.requiredJavaVersion=1.8
@@ -35,6 +36,7 @@
    <windowImages i16="/org.eclipse.epp.package.scout/eclipse16.png" i32="/org.eclipse.epp.package.scout/eclipse32.png" i48="/org.eclipse.epp.package.scout/eclipse48.png" i256="/org.eclipse.epp.package.scout/eclipse256.png"/>
 
    <splash
+      location="org.eclipse.epp.package.scout"
       startupProgressRect="2,290,448,10"
       startupMessageRect="7,265,320,20"
       startupForegroundColor="9c9696" />

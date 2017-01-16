@@ -30,6 +30,7 @@
   <packaging>pom</packaging>
 
   <modules>
+    <module>packages/org.eclipse.epp.package.common</module>
     <module>packages/org.eclipse.epp.package.common.feature</module>
   </modules>
 

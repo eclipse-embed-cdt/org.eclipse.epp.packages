@@ -15,6 +15,7 @@
 
    <launcherArgs>
       <programArgs>-product org.eclipse.epp.package.javascript.product
+-showsplash org.eclipse.epp.package.common
 --launcher.defaultAction openFile
       </programArgs>
       <vmArgs>-Dosgi.requiredJavaVersion=1.8
@@ -31,6 +32,7 @@
    <windowImages i16="/org.eclipse.epp.package.javascript/eclipse16.png" i32="/org.eclipse.epp.package.javascript/eclipse32.png" i48="/org.eclipse.epp.package.javascript/eclipse48.png" i256="/org.eclipse.epp.package.javascript/eclipse256.png"/>
 
    <splash
+      location="org.eclipse.epp.package.javascript"
       startupProgressRect="2,290,448,10"
       startupMessageRect="7,265,320,20"
       startupForegroundColor="9c9696" />
@@ -186,7 +188,7 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.epp.package.javascript.feature" version="4.7.0.qualifier"/>
       <feature id="org.eclipse.epp.package.common.feature" version="4.7.0.qualifier"/>
       <feature id="org.eclipse.platform" version="4.7.0.qualifier"/>
-      
+
       <feature id="org.eclipse.egit" installMode="root"/>
       <feature id="org.eclipse.egit.mylyn" installMode="root"/>
       <feature id="org.eclipse.egit.gitflow.feature" installMode="root"/>

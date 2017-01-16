@@ -27,4 +27,11 @@
       <import feature="org.eclipse.oomph.setup"/>
    </requires>
 
+   <plugin
+         id="org.eclipse.epp.package.common"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="true"/>
+
 </feature>
