@@ -84,21 +84,6 @@
             resolution="launchbar">
       </command>
       <command
-            id="org.eclipse.ui.newWizard(newWizardId=org.eclipse.thym.ui.NewHybridProjectWizard)"
-            label="%ql.newThymHybridProject.label"
-            description="%ql.newThymHybridProject.description"
-            importance="medium"
-            resolution="launchbar">
-      </command>
-      <command
-            id="org.eclipse.ui.file.import(importWizardId=org.eclipse.thym.ui.HybridMobileProjectImportWizard)"
-            label="%ql.importThymHybridProject.label"
-            description="%ql.importThymHybridProject.description"
-            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/import-existing-project.png"
-            importance="medium"
-            resolution="launchbar">
-      </command>
-      <command
             id="org.eclipse.ui.file.import(importWizardId=org.eclipse.egit.ui.internal.clone.GitCloneWizard)"
             description="%ql.checkoutGitProject.description"
             icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/egit-checkout.png"
