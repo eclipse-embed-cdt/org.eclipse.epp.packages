@@ -20,13 +20,13 @@
   <parent>
     <groupId>org.eclipse.epp</groupId>
     <artifactId>org.eclipse.epp-parent</artifactId>
-    <version>4.6.2-SNAPSHOT</version>
+    <version>4.6.3-SNAPSHOT</version>
     <relativePath>../../releng/org.eclipse.epp.config/parent/</relativePath>
   </parent>
 
   <groupId>org.eclipse.epp</groupId>
   <artifactId>org.eclipse.epp.package.javascript.tests</artifactId>
-  <version>4.6.2-SNAPSHOT</version>
+  <version>4.6.3-SNAPSHOT</version>
   <packaging>eclipse-test-plugin</packaging>
   
   <build>

@@ -18,13 +18,13 @@
   <parent>
     <groupId>org.eclipse.epp</groupId>
     <artifactId>org.eclipse.epp-parent</artifactId>
-    <version>4.6.2-SNAPSHOT</version>
+    <version>4.6.3-SNAPSHOT</version>
     <relativePath>../../releng/org.eclipse.epp.config/parent/</relativePath>
   </parent>
 
   <groupId>org.eclipse.epp</groupId>
   <artifactId>epp.package.php</artifactId>
-  <version>4.6.2-SNAPSHOT</version>
+  <version>4.6.3-SNAPSHOT</version>
   <packaging>eclipse-repository</packaging>
 
   <build>
