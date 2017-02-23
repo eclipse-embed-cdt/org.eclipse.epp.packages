@@ -41,6 +41,6 @@
   <rcp version="4.6.3" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-javascript-neon-3-RC1" />
+  <product name="eclipse-javascript-neon-3-RC2" />
 
 </configuration>
