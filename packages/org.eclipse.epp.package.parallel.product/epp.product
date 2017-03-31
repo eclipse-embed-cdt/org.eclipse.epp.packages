@@ -19,6 +19,7 @@
 --launcher.defaultAction openFile
       </programArgs>
       <vmArgs>-Dosgi.requiredJavaVersion=1.8
+-Dosgi.instance.area.default=@user.home/eclipse-workspace
       </vmArgs>
       <vmArgsLin>-Xms512m
 -Xmx2048m
