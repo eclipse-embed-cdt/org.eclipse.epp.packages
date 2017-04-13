@@ -10,6 +10,7 @@
     Igor Fedorenko - initial implementation
     Thanh Ha (Eclipse Foundation) - initial implementation
     EclipseSource - ongoing development
+    Mikael Barbero (Eclipse Foundation) - clean-up and parent factorization
 -->
 
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -19,9 +20,9 @@
 
   <parent>
     <groupId>org.eclipse.epp</groupId>
-    <artifactId>org.eclipse.epp-parent</artifactId>
+    <artifactId>org.eclipse.epp-bundle-parent</artifactId>
     <version>4.7.0-SNAPSHOT</version>
-    <relativePath>../../releng/org.eclipse.epp.config/parent/</relativePath>
+    <relativePath>../../releng/org.eclipse.epp.config/parent/bundle</relativePath>
   </parent>
 
   <artifactId>org.eclipse.epp.package.modeling</artifactId>
