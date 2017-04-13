@@ -28,7 +28,7 @@
     <tycho.version>0.25.0</tycho.version>
     <tycho.extras.version>${tycho.version}</tycho.extras.version>
     <tycho.scmUrl>scm:git:git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git</tycho.scmUrl>
-    <cbi.version>1.1.2</cbi.version>
+    <cbi.version>1.1.4</cbi.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
     <build>${maven.build.timestamp}</build>
@@ -63,7 +63,7 @@
     </pluginRepository>
     <pluginRepository>
       <id>eclipse-cbi</id>
-      <url>https://repo.eclipse.org/content/repositories/releases/</url>
+      <url>https://repo.eclipse.org/content/groups/cbi/</url>
     </pluginRepository>
   </pluginRepositories>
 
@@ -354,6 +354,11 @@
           </configuration>
         </plugin>
         <plugin>
+          <groupId>org.eclipse.cbi.maven.plugins</groupId>
+          <artifactId>eclipse-dmg-packager</artifactId>
+          <version>${cbi.version}</version>
+        </plugin>
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-antrun-plugin</artifactId>
           <version>1.6</version>
@@ -366,7 +371,8 @@
                   <copy todir="${basedir}/../../archive">
                     <fileset dir="${project.build.directory}/products">
                       <include name="*.zip" />
-                      <include name="*.tar.gz" />
+                      <include name="*linux*.tar.gz" />
+                      <include name="*.dmg" />
                     </fileset>
                   </copy>
                 </target>

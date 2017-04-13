@@ -31,13 +31,6 @@
     <profile>
       <id>eclipse-sign-jar</id>
 
-      <pluginRepositories>
-        <pluginRepository>
-          <id>eclipse-cbi</id>
-          <url>https://repo.eclipse.org/content/groups/cbi/</url>
-        </pluginRepository>
-      </pluginRepositories>
-
       <build>
         <plugins>
           <plugin>
