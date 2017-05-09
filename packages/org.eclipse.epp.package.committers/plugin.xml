@@ -23,7 +23,7 @@
          </property>
          <property
                name="startupForegroundColor"
-               value="9c9696">
+               value="e6e8ff">
          </property>
          <property
                name="startupMessageRect"
@@ -76,11 +76,11 @@
          <!-- Build ID in startup splash - only for nightlies and milestones, not for releases -->
          <property
                name="buildIdLocation"
-               value="300,180">
+               value="0,220">
          </property>
          <property
                name="buildIdSize"
-               value="140,40">
+               value="293,40">
          </property>
          <!-- END of Build ID in startup splash -->
       </product>

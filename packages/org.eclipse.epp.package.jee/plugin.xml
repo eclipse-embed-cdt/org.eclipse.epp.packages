@@ -22,7 +22,7 @@
          </property>
          <property
                name="startupForegroundColor"
-               value="9c9696">
+               value="e6e8ff">
          </property>
          <property
                name="startupMessageRect"
@@ -67,6 +67,14 @@
          <property
                name="applicationCSSResources" 
                value="platform:/plugin/org.eclipse.ui.themes/images/"> 
+         </property>
+         <property
+               name="buildIdLocation"
+               value="0,220">
+         </property>
+         <property
+               name="buildIdSize"
+               value="293,40">
          </property>
       </product>
    </extension>
