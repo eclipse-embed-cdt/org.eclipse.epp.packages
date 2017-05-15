@@ -119,7 +119,7 @@
             icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
       </command>
       <command
-            id="org.eclipse.epp.mpc.ui.command.showMarketplaceWizard"
+            id="org.eclipse.epp.mpc.ui.command.showMarketplaceWizard(trigger=welcome)"
             label="%ql.mpc.label"
             description="%ql.mpc.description"
             icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">

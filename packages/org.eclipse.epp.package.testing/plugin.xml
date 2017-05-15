@@ -106,7 +106,7 @@
             theme="org.eclipse.ui.intro.universal.solstice">
       </override>
       <command
-            id="org.eclipse.epp.mpc.ui.command.showMarketplaceWizard"
+            id="org.eclipse.epp.mpc.ui.command.showMarketplaceWizard(trigger=welcome)"
             label="%ql.mpc.label"
             description="%ql.mpc.description"
             icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
