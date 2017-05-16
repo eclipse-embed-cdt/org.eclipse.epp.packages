@@ -223,6 +223,7 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.rse" installMode="root"/>
 
       <feature id="org.eclipse.tm.terminal.feature" installMode="root"/>
+      <feature id="org.eclipse.tm.terminal.connector.cdtserial.feature" installMode="root"/>
 
       <feature id="org.eclipse.tracecompass.gdbtrace" installMode="root"/>
       <feature id="org.eclipse.tracecompass.lttng2.control" installMode="root"/>
