@@ -47,6 +47,7 @@
 
     <!-- TODO: Use the v4-neon-updates when available -->
     <gnumcueclipse.repository>http://gnu-mcu-eclipse.sourceforge.io/v4-neon-updates-experimental</gnumcueclipse.repository>
+    <gnumcueclipse.version>4.1.1</gnumcueclipse.version>
   </properties>
 
   <!--
@@ -308,7 +309,8 @@
                 <rootFolders>
                   <macosx>Eclipse.app</macosx>
                 </rootFolders>
-                <archiveFileName>${build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}</archiveFileName>
+                <!-- <archiveFileName>${build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}</archiveFileName> -->
+                <archiveFileName>${build}-gnumcueclipse-${gnumcueclipse.version}-${eclipse.simultaneous.release.id}</archiveFileName>
               </product>
             </products>
             <profile>${project.artifactId}</profile>
