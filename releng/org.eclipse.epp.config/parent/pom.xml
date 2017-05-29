@@ -44,6 +44,9 @@
     <eclipse.simultaneous.release.name>Neon.3 Release (4.6.3)</eclipse.simultaneous.release.name>
     <!-- Upstream p2 repository, used as a source for pre-compiled build artifacts -->
     <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/neon/</eclipse.simultaneous.release.repository>
+
+    <!-- TODO: Use the v4-neon-updates when available -->
+    <gnumcueclipse.repository>http://gnu-mcu-eclipse.sourceforge.io/v4-neon-updates-experimental</gnumcueclipse.repository>
   </properties>
 
   <!--
@@ -77,6 +80,11 @@
       <id>license-feature</id>
       <url>http://download.eclipse.org/cbi/updates/license/</url>
       <layout>p2</layout>
+    </repository>
+    <repository>
+      <id>gnu-mcu-eclipse</id>
+      <layout>p2</layout>
+      <url>${gnumcueclipse.repository}</url>
     </repository>
   </repositories>
 
