@@ -14,3 +14,4 @@ Thumbs.db
 *.tmp
 target/
 /archive
+vscode.mac.command
