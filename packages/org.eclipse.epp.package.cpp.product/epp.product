@@ -225,19 +225,19 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.tracecompass.lttng2.ust" installMode="root"/>
 
       <!-- Add GNU MCU Eclipse features. -->
-      <feature id="ilg.gnumcueclipse.managedbuild.cross.arm" installMode="root"/>
-      <feature id="ilg.gnumcueclipse.managedbuild.cross.riscv" installMode="root"/>
-      <feature id="ilg.gnumcueclipse.codered" installMode="root"/>
-      <feature id="ilg.gnumcueclipse.debug.gdbjtag.jlink" installMode="root"/>
-      <feature id="ilg.gnumcueclipse.debug.gdbjtag.openocd" installMode="root"/>
-      <feature id="ilg.gnumcueclipse.debug.gdbjtag.pyocd" installMode="root"/>
-      <feature id="ilg.gnumcueclipse.debug.gdbjtag.qemu" installMode="root"/>
-      <feature id="ilg.gnumcueclipse.packs" installMode="root"/>
-      <feature id="ilg.gnumcueclipse.doc.user" installMode="root"/>
-      <feature id="ilg.gnumcueclipse.templates.ad" installMode="root"/>
-      <feature id="ilg.gnumcueclipse.templates.cortexm" installMode="root"/>
-      <feature id="ilg.gnumcueclipse.templates.freescale" installMode="root"/>
-      <feature id="ilg.gnumcueclipse.templates.stm" installMode="root"/>
+      <feature id="ilg.gnumcueclipse.managedbuild.cross.arm.feature" installMode="root"/>
+      <feature id="ilg.gnumcueclipse.managedbuild.cross.riscv.feature" installMode="root"/>
+      <feature id="ilg.gnumcueclipse.codered.feature" installMode="root"/>
+      <feature id="ilg.gnumcueclipse.debug.gdbjtag.jlink.feature" installMode="root"/>
+      <feature id="ilg.gnumcueclipse.debug.gdbjtag.openocd.feature" installMode="root"/>
+      <feature id="ilg.gnumcueclipse.debug.gdbjtag.pyocd.feature" installMode="root"/>
+      <feature id="ilg.gnumcueclipse.debug.gdbjtag.qemu.feature" installMode="root"/>
+      <feature id="ilg.gnumcueclipse.packs.feature" installMode="root"/>
+      <feature id="ilg.gnumcueclipse.doc.user.feature" installMode="root"/>
+      <feature id="ilg.gnumcueclipse.templates.ad.feature" installMode="root"/>
+      <feature id="ilg.gnumcueclipse.templates.cortexm.feature" installMode="root"/>
+      <feature id="ilg.gnumcueclipse.templates.freescale.feature" installMode="root"/>
+      <feature id="ilg.gnumcueclipse.templates.stm.feature" installMode="root"/>
 
    </features>
 
