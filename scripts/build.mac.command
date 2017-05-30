@@ -37,7 +37,11 @@ project_root_folder=$(dirname ${scripts_folder})
 cd ${project_root_folder}
 
 # Add maven path to environment.
-export PATH=${HOME}/opt/apache-maven-3.3.9/bin:${PATH}
+export PATH=${HOME}/opt/apache-maven-3.5.0/bin:${PATH}
+
+# Remove ilg plugins and artefacts from cache.
+echo "clearing cache..."
+rm -rfv ~/m2/repository/ilg
 
 bash scripts/build.sh
 
