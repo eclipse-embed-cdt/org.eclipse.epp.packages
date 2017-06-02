@@ -24,21 +24,25 @@
       <vmArgsLin>-Xms512m
 -Xmx2048m
 -XX:+UseG1GC
--XX:+UseStringDeduplication</vmArgsLin>
+-XX:+UseStringDeduplication
+      </vmArgsLin>
       <vmArgsMac>-XstartOnFirstThread
 -Xms512m
 -Xmx2048m
 -XX:+UseG1GC
 -XX:+UseStringDeduplication
--Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+-Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
       <vmArgsSol>-Xms512m
 -Xmx2048m
 -XX:+UseG1GC
--XX:+UseStringDeduplication</vmArgsSol>
+-XX:+UseStringDeduplication
+      </vmArgsSol>
       <vmArgsWin>-Xms512m
 -Xmx1024m
 -XX:+UseG1GC
--XX:+UseStringDeduplication</vmArgsWin>
+-XX:+UseStringDeduplication
+      </vmArgsWin>
    </launcherArgs>
 
    <windowImages i16="/org.eclipse.epp.package.parallel/eclipse16.png" i32="/org.eclipse.epp.package.parallel/eclipse32.png" i48="/org.eclipse.epp.package.parallel/eclipse48.png" i256="/org.eclipse.epp.package.parallel/eclipse256.png"/>
@@ -67,13 +71,13 @@
    <license>
         <url>http://eclipse.org/legal/epl/notice.php</url>
         <text>
-Eclipse Foundation Software User Agreement
+   Eclipse Foundation Software User Agreement
 April 9, 2014
 
 Usage Of Content
 
 THE ECLIPSE FOUNDATION MAKES AVAILABLE SOFTWARE, DOCUMENTATION, INFORMATION AND/OR
-OTHER MATERIALS FOR OPEN SOURCE PROJECTS (COLLECTIVELY "CONTENT").
+OTHER MATERIALS FOR OPEN SOURCE PROJECTS (COLLECTIVELY &quot;CONTENT&quot;).
 USE OF THE CONTENT IS GOVERNED BY THE TERMS AND CONDITIONS OF THIS
 AGREEMENT AND/OR THE TERMS AND CONDITIONS OF LICENSE AGREEMENTS OR
 NOTICES INDICATED OR REFERENCED BELOW.  BY USING THE CONTENT, YOU
@@ -88,47 +92,47 @@ Applicable Licenses
 
 Unless otherwise indicated, all Content made available by the
 Eclipse Foundation is provided to you under the terms and conditions of
-the Eclipse Public License Version 1.0 ("EPL"). A copy of the EPL is
+the Eclipse Public License Version 1.0 (&quot;EPL&quot;). A copy of the EPL is
 provided with this Content and is also available at http://www.eclipse.org/legal/epl-v10.html.
-For purposes of the EPL, "Program" will mean the Content.
+For purposes of the EPL, &quot;Program&quot; will mean the Content.
 
 Content includes, but is not limited to, source code, object code,
 documentation and other files maintained in the Eclipse Foundation source code
-repository ("Repository") in software modules ("Modules") and made available
-as downloadable archives ("Downloads").
+repository (&quot;Repository&quot;) in software modules (&quot;Modules&quot;) and made available
+as downloadable archives (&quot;Downloads&quot;).
 
     - Content may be structured and packaged into modules to facilitate delivering,
-      extending, and upgrading the Content. Typical modules may include plug-ins ("Plug-ins"),
-      plug-in fragments ("Fragments"), and features ("Features").
+      extending, and upgrading the Content. Typical modules may include plug-ins (&quot;Plug-ins&quot;),
+      plug-in fragments (&quot;Fragments&quot;), and features (&quot;Features&quot;).
     - Each Plug-in or Fragment may be packaged as a sub-directory or JAR (Java(TM) ARchive)
-      in a directory named "plugins".
+      in a directory named &quot;plugins&quot;.
     - A Feature is a bundle of one or more Plug-ins and/or Fragments and associated material.
-      Each Feature may be packaged as a sub-directory in a directory named "features".
-      Within a Feature, files named "feature.xml" may contain a list of the names and version
+      Each Feature may be packaged as a sub-directory in a directory named &quot;features&quot;.
+      Within a Feature, files named &quot;feature.xml&quot; may contain a list of the names and version
       numbers of the Plug-ins and/or Fragments associated with that Feature.
-    - Features may also include other Features ("Included Features"). Within a Feature, files
-      named "feature.xml" may contain a list of the names and version numbers of Included Features.
+    - Features may also include other Features (&quot;Included Features&quot;). Within a Feature, files
+      named &quot;feature.xml&quot; may contain a list of the names and version numbers of Included Features.
 
 The terms and conditions governing Plug-ins and Fragments should be
-contained in files named "about.html" ("Abouts"). The terms and
+contained in files named &quot;about.html&quot; (&quot;Abouts&quot;). The terms and
 conditions governing Features and Included Features should be contained
-in files named "license.html" ("Feature Licenses"). Abouts and Feature
+in files named &quot;license.html&quot; (&quot;Feature Licenses&quot;). Abouts and Feature
 Licenses may be located in any directory of a Download or Module
 including, but not limited to the following locations:
 
     - The top-level (root) directory
     - Plug-in and Fragment directories
     - Inside Plug-ins and Fragments packaged as JARs
-    - Sub-directories of the directory named "src" of certain Plug-ins
+    - Sub-directories of the directory named &quot;src&quot; of certain Plug-ins
     - Feature directories
 
 Note: if a Feature made available by the Eclipse Foundation is installed using the
-Provisioning Technology (as defined below), you must agree to a license ("Feature 
-Update License") during the installation process. If the Feature contains
+Provisioning Technology (as defined below), you must agree to a license (&quot;Feature 
+Update License&quot;) during the installation process. If the Feature contains
 Included Features, the Feature Update License should either provide you
 with the terms and conditions governing the Included Features or inform
 you where you can locate them. Feature Update Licenses may be found in
-the "license" property of files named "feature.properties" found within a Feature.
+the &quot;license&quot; property of files named &quot;feature.properties&quot; found within a Feature.
 Such Abouts, Feature Licenses, and Feature Update Licenses contain the
 terms and conditions (or references to such terms and conditions) that
 govern your use of the associated Content in that directory.
@@ -152,12 +156,12 @@ govern that particular Content.
 Use of Provisioning Technology
 
 The Eclipse Foundation makes available provisioning software, examples of which include,
-but are not limited to, p2 and the Eclipse Update Manager ("Provisioning Technology") for
+but are not limited to, p2 and the Eclipse Update Manager (&quot;Provisioning Technology&quot;) for
 the purpose of allowing users to install software, documentation, information and/or
-other materials (collectively "Installable Software"). This capability is provided with
+other materials (collectively &quot;Installable Software&quot;). This capability is provided with
 the intent of allowing such users to install, extend and update Eclipse-based products.
 Information about packaging Installable Software is available at
-http://eclipse.org/equinox/p2/repository_packaging.html ("Specification").
+http://eclipse.org/equinox/p2/repository_packaging.html (&quot;Specification&quot;).
 
 You may use Provisioning Technology to allow other parties to install Installable Software.
 You shall be responsible for enabling the applicable license agreements relating to the
@@ -166,13 +170,13 @@ in accordance with the Specification. By using Provisioning Technology in such a
 making it available in accordance with the Specification, you further acknowledge your
 agreement to, and the acquisition of all necessary rights to permit the following:
 
-    1. A series of actions may occur ("Provisioning Process") in which a user may execute
-       the Provisioning Technology on a machine ("Target Machine") with the intent of installing,
+    1. A series of actions may occur (&quot;Provisioning Process&quot;) in which a user may execute
+       the Provisioning Technology on a machine (&quot;Target Machine&quot;) with the intent of installing,
        extending or updating the functionality of an Eclipse-based product.
     2. During the Provisioning Process, the Provisioning Technology may cause third party
        Installable Software or a portion thereof to be accessed and copied to the Target Machine.
     3. Pursuant to the Specification, you will provide to the user the terms and conditions that
-       govern the use of the Installable Software ("Installable Software Agreement") and such
+       govern the use of the Installable Software (&quot;Installable Software Agreement&quot;) and such
        Installable Software Agreement shall be accessed from the Target Machine in accordance
        with the Specification. Such Installable Software Agreement must inform the user of the
        terms and conditions that govern the Installable Software and must solicit acceptance by
@@ -185,7 +189,7 @@ Cryptography
 Content may contain encryption software. The country in which you are
 currently may have restrictions on the import, possession, and use,
 and/or re-export to another country, of encryption software. BEFORE
-using any encryption software, please check the country's laws,
+using any encryption software, please check the country&apos;s laws,
 regulations and policies concerning the import, possession, or use, and
 re-export of encryption software, to see if this is permitted.
 
@@ -200,7 +204,6 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.epp.package.parallel.feature" version="4.7.0.qualifier"/>
       <feature id="org.eclipse.epp.package.common.feature" version="4.7.0.qualifier"/>
       <feature id="org.eclipse.platform" version="4.7.0.qualifier"/>
-
       <feature id="org.eclipse.cdt" installMode="root"/>
       <feature id="org.eclipse.cdt.autotools" installMode="root"/>
       <feature id="org.eclipse.cdt.bupc" installMode="root"/>
@@ -210,9 +213,6 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.cdt.platform" installMode="root"/>
       <feature id="org.eclipse.cdt.xlc.feature" installMode="root"/>
       <feature id="org.eclipse.egit" installMode="root"/>
-      <!-- not available in Neon on 2016-02-21
-      <feature id="org.eclipse.egit.import" installMode="root"/>
-      -->
       <feature id="org.eclipse.jgit" installMode="root"/>
       <feature id="org.eclipse.mylyn.bugzilla_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.context_feature" installMode="root"/>
@@ -229,6 +229,7 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.ptp.rm.jaxb.contrib" installMode="root"/>
       <feature id="org.eclipse.remote" installMode="root"/>
       <feature id="org.eclipse.remote.console" installMode="root"/>
+      <feature id="org.eclipse.remote.proxy"/>
       <feature id="org.eclipse.wst.xml_ui.feature" installMode="root"/>
    </features>
 
