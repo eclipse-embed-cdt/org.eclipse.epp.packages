@@ -21,7 +21,7 @@
       <vmArgs>-Dosgi.requiredJavaVersion=1.8
 -Dosgi.instance.area.default=@user.home/eclipse-workspace
 -Xms256m
--Xmx1024m
+-Xmx2024m
 -XX:+UseG1GC
 -XX:+UseStringDeduplication
       </vmArgs>
@@ -198,6 +198,7 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.emf.mwe2.language.sdk" installMode="root"/>
       <feature id="org.eclipse.emf.sdk" installMode="root"/>
       <feature id="org.eclipse.xtext.sdk" installMode="root"/>
+      <feature id="org.eclipse.lsp4j.sdk" installMode="root"/>
    </features>
 
 
