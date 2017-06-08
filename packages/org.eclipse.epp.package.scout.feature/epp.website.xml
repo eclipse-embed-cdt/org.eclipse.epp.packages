@@ -38,6 +38,6 @@
   <rcp version="4.7.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-scout-oxygen-RC2" />
+  <product name="eclipse-scout-oxygen-RC3" />
 
 </configuration>
