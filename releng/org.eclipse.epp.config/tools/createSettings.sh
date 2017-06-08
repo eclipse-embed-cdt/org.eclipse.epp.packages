@@ -35,6 +35,14 @@ echo "<settings xmlns=\"http://maven.apache.org/SETTINGS/1.0.0\"" >>$SETTINGS_FI
 echo "          xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"" >>$SETTINGS_FILE
 echo "          xsi:schemaLocation=\"http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd\">" >>$SETTINGS_FILE
 echo "" >>$SETTINGS_FILE
+echo "  <mirrors>" >>$SETTINGS_FILE
+echo "    <mirror>" >>$SETTINGS_FILE
+echo "      <id>eclipse.maven.central.mirror</id>" >>$SETTINGS_FILE
+echo "      <name>Eclipse Central Proxy</name>" >>$SETTINGS_FILE
+echo "      <url>https://repo.eclipse.org/content/repositories/maven_central/</url>" >>$SETTINGS_FILE
+echo "      <mirrorOf>central</mirrorOf>" >>$SETTINGS_FILE
+echo "    </mirror>" >>$SETTINGS_FILE
+echo "  </mirrors>" >>$SETTINGS_FILE
 echo "  <proxies>" >>$SETTINGS_FILE
 echo "    <proxy>" >>$SETTINGS_FILE
 echo "      <id>httpproxy</id>" >>$SETTINGS_FILE
@@ -53,6 +61,9 @@ echo "      <port>9898</port>" >>$SETTINGS_FILE
 echo "      <nonProxyHosts>localhost|hudson.eclipse.org|127.0.0.1|172.30.206.*</nonProxyHosts>" >>$SETTINGS_FILE
 echo "    </proxy>" >>$SETTINGS_FILE
 echo "  </proxies>" >>$SETTINGS_FILE
+
+
+
 echo "  <activeProfiles>" >>$SETTINGS_FILE
 
 ### use the HEAD commit to find out which package directories contain a change
