@@ -5,10 +5,6 @@
 ## 1st: EPP package definition
 ## 2nd: feature.xml renamed
 
-android,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.android.feature/epp.website.xml,HEAD,android.xml
-android,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.android.feature/feature.xml,HEAD,android.feature.xml
-android,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.android.product/epp.product,HEAD,android.product.xml
-
 committers,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.committers.feature/epp.website.xml,HEAD,committers.xml
 committers,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.committers.feature/feature.xml,HEAD,committers.feature.xml
 committers,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.committers.product/epp.product,HEAD,committers.product.xml
