@@ -125,4 +125,11 @@
             icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
       </command>
    </extension>
+    <!-- Make sure the 'launch' action sets are available with the modeling perspective, see bug 518086 -->
+   <extension point="org.eclipse.ui.perspectiveExtensions">
+	<perspectiveExtension targetID="org.eclipse.sirius.ui.tools.perspective.modeling">
+		<actionSet id="org.eclipse.debug.ui.launchActionSet">
+		</actionSet>
+	</perspectiveExtension>
+	</extension>
 </plugin>
