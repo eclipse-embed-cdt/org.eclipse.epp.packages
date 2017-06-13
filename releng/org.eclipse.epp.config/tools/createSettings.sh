@@ -43,26 +43,6 @@ echo "      <url>https://repo.eclipse.org/content/repositories/maven_central/</u
 echo "      <mirrorOf>central</mirrorOf>" >>$SETTINGS_FILE
 echo "    </mirror>" >>$SETTINGS_FILE
 echo "  </mirrors>" >>$SETTINGS_FILE
-echo "  <proxies>" >>$SETTINGS_FILE
-echo "    <proxy>" >>$SETTINGS_FILE
-echo "      <id>httpproxy</id>" >>$SETTINGS_FILE
-echo "      <active>true</active>" >>$SETTINGS_FILE
-echo "      <protocol>http</protocol>" >>$SETTINGS_FILE
-echo "      <host>proxy.eclipse.org</host>" >>$SETTINGS_FILE
-echo "      <port>9898</port>" >>$SETTINGS_FILE
-echo "      <nonProxyHosts>localhost|hudson.eclipse.org|127.0.0.1|172.30.206.*</nonProxyHosts>" >>$SETTINGS_FILE
-echo "    </proxy>" >>$SETTINGS_FILE
-echo "    <proxy>" >>$SETTINGS_FILE
-echo "      <id>httpsproxy</id>" >>$SETTINGS_FILE
-echo "      <active>true</active>" >>$SETTINGS_FILE
-echo "      <protocol>https</protocol>" >>$SETTINGS_FILE
-echo "      <host>proxy.eclipse.org</host>" >>$SETTINGS_FILE
-echo "      <port>9898</port>" >>$SETTINGS_FILE
-echo "      <nonProxyHosts>localhost|hudson.eclipse.org|127.0.0.1|172.30.206.*</nonProxyHosts>" >>$SETTINGS_FILE
-echo "    </proxy>" >>$SETTINGS_FILE
-echo "  </proxies>" >>$SETTINGS_FILE
-
-
 
 echo "  <activeProfiles>" >>$SETTINGS_FILE
 
