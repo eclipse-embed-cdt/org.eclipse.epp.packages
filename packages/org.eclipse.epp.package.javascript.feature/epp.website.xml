@@ -41,6 +41,6 @@
   <rcp version="4.7.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-javascript-oxygen-RC3" />
+  <product name="eclipse-javascript-oxygen-RC4" />
 
 </configuration>
