@@ -42,6 +42,13 @@ echo "      <name>Eclipse Central Proxy</name>" >>$SETTINGS_FILE
 echo "      <url>https://repo.eclipse.org/content/repositories/maven_central/</url>" >>$SETTINGS_FILE
 echo "      <mirrorOf>central</mirrorOf>" >>$SETTINGS_FILE
 echo "    </mirror>" >>$SETTINGS_FILE
+echo "    <mirror>" >>$SETTINGS_FILE
+echo "      <id>example-mirror</id>" >>$SETTINGS_FILE
+echo "      <mirrorOf>http://download.eclipse.org/</mirrorOf>" >>$SETTINGS_FILE
+echo "      <url>file:/home/data/httpd/download.eclipse.org/</url>" >>$SETTINGS_FILE
+echo "      <layout>p2</layout>" >>$SETTINGS_FILE
+echo "      <mirrorOfLayouts>p2</mirrorOfLayouts>" >>$SETTINGS_FILE
+echo "    </mirror>" >>$SETTINGS_FILE 
 echo "  </mirrors>" >>$SETTINGS_FILE
 
 echo "  <activeProfiles>" >>$SETTINGS_FILE
