@@ -41,6 +41,7 @@
       <plugin>
         <groupId>org.eclipse.tycho.extras</groupId>
         <artifactId>tycho-p2-extras-plugin</artifactId>
+        <version>1.1.0-SNAPSHOT</version>
         <executions>
           <execution>
             <id>mirror-to-central-epp-repository</id>
@@ -49,15 +50,13 @@
               <goal>mirror</goal>
             </goals>
             <configuration>
-              <source>
-                <repository>
-                  <url>${project.build.directory}/repository</url>
-                </repository>
-              </source>
+              <targetPlatformAsSource>true</targetPlatformAsSource>
+              <currentModuleAsSource>true</currentModuleAsSource>
+              <source/>
               <ius>
                 <iu>
                   <query>
-                    <expression>id ~= /*epp*/ &amp;&amp; !(id ~= /*org.eclipse.epp.mpc*/) &amp;&amp; !(id ~= /*org.eclipse.epp.logging.aeri*/)</expression>
+                    <expression>id ~= /*epp.package*/</expression>
                   </query>
                 </iu>
               </ius>
@@ -68,6 +67,7 @@
               <includeOptional>false</includeOptional>
               <includeNonGreedy>false</includeNonGreedy>
               <includePacked>true</includePacked>
+              <mirrorMetadataOnly>false</mirrorMetadataOnly>
               <append>true</append>
             </configuration>
           </execution>
@@ -79,7 +79,7 @@
         <artifactId>tycho-p2-director-plugin</artifactId>
       </plugin>
 
-      <plugin>
+      <!-- plugin>
         <groupId>org.eclipse.cbi.maven.plugins</groupId>
         <artifactId>eclipse-dmg-packager</artifactId>
         <executions>
@@ -91,11 +91,11 @@
             <configuration>
               <source>${project.build.directory}/products/${build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}-macosx.cocoa.x86_64.tar.gz</source>
               <sign>${eclipse-sign-dmg-property}</sign>
-              <connectTimeoutMillis>600000</connectTimeoutMillis> <!-- 10 min -->
+              <connectTimeoutMillis>600000</connectTimeoutMillis>
             </configuration>
           </execution>
         </executions>
-      </plugin>
+      </plugin-->
 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
