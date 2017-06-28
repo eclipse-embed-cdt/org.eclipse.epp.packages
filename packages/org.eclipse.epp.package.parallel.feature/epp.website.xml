@@ -25,13 +25,13 @@
     url="https://wiki.eclipse.org/PTP/new_and_noteworthy/9.1.0"
     project="Eclipse PTP" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.6/"
+    url="https://www.eclipse.org/eclipse/news/4.7/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/CDT/User/NewIn90"
+    url="https://wiki.eclipse.org/CDT/User/NewIn93"
     project="Eclipse CDT" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/Linux_Tools_Project/News/NewIn50"
+    url="https://wiki.eclipse.org/Linux_Tools_Project/News/NewIn60"
     project="Eclipse Linux Tools" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/mylyn/new/"
@@ -44,6 +44,6 @@
 	<rcp version="4.7.0" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-parallel-oxygen-RC4" />
+	<product name="eclipse-parallel-oxygen-R" />
 
 </configuration>

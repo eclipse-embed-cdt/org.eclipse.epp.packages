@@ -28,7 +28,7 @@
     url="https://wiki.eclipse.org/Scout/NewAndNoteworthy/6.0"
     project="Eclipse Scout" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.6/"
+    url="https://www.eclipse.org/eclipse/news/4.7/"
     project="Eclipse Platform" />
   </MoreInfo>
 
@@ -38,6 +38,6 @@
   <rcp version="4.7.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-scout-oxygen-RC4" />
+  <product name="eclipse-scout-oxygen-R" />
 
 </configuration>

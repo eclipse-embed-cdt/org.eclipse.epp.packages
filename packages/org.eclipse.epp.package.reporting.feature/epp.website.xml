@@ -28,7 +28,7 @@
     url="https://www.eclipse.org/webtools/development/news/main.php"
     project="Eclipse Webtools Project" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.6/"
+    url="https://www.eclipse.org/eclipse/news/4.7/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/mylyn/new/"
@@ -40,6 +40,6 @@
   <rcp version="4.7.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-reporting-oxygen-RC4" />
+  <product name="eclipse-reporting-oxygen-R" />
 
 </configuration>

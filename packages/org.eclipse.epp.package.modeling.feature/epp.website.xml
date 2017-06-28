@@ -24,16 +24,16 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="https://projects.eclipse.org/projects/modeling.amalgam/releases/1.7.0"
+    url="https://projects.eclipse.org/projects/modeling.amalgam/releases/1.8.0"
     project="Modeling Package" />
   <NewAndNoteworthy
     url="https://wiki.eclipse.org/Ecore_Tools/New_and_Noteworthy"
     project="Eclipse EcoreTools" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/EMF_Compare/New_and_Noteworthy/3.2.0"
+    url="https://wiki.eclipse.org/EMF_Compare/New_and_Noteworthy/3.3.0"
     project="Eclipse EMF Compare" />
   <NewAndNoteworthy
-    url="https://projects.eclipse.org/projects/modeling.mmt.atl/releases/3.7.0"
+    url="https://projects.eclipse.org/projects/modeling.mmt.atl/releases/3.8.0"
     project="Eclipse ATL" />
   </MoreInfo>
 
@@ -42,6 +42,6 @@
   <rcp version="4.7.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-modeling-oxygen-RC4" />
+  <product name="eclipse-modeling-oxygen-R" />
 
 </configuration>

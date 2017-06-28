@@ -23,16 +23,16 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/PDT/NewIn40"
+    url="https://wiki.eclipse.org/PDT/NewIn50"
     project="Eclipse PHP Development Tools" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.6/"
+    url="https://www.eclipse.org/eclipse/news/4.7/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/4.4"
+    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/4.8"
     project="Eclipse EGit" />
   </MoreInfo>
 
@@ -42,6 +42,6 @@
   <rcp version="4.7.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-php-oxygen-RC4" />
+  <product name="eclipse-php-oxygen-R" />
 
 </configuration>
