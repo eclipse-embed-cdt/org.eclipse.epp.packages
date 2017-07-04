@@ -215,6 +215,9 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.wst.jsdt.feature" installMode="root"/>
       <feature id="org.eclipse.wst.xml_ui.feature" installMode="root"/>
    </features>
-
+   
+   <repositories>
+      <repository location="http://download.eclipse.org/tools/pdt/updates/oxygen" enabled="true" />
+   </repositories>
 
 </product>
