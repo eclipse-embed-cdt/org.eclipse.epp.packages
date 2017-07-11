@@ -46,7 +46,7 @@
     <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/neon/</eclipse.simultaneous.release.repository>
 
     <!-- TODO: Use the v4-neon-updates when available -->
-    <gnumcueclipse.repository>http://gnu-mcu-eclipse.sourceforge.io/v4-neon-updates-experimental</gnumcueclipse.repository>
+    <gnumcueclipse.repository>http://gnu-mcu-eclipse.netlify.com/v4-neon-updates</gnumcueclipse.repository>
     <gnumcueclipse.version>4.1.1</gnumcueclipse.version>
   </properties>
 
