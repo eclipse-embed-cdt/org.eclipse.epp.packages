@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #*******************************************************************************
-# Copyright (c) 2016 IBM Corporation and others.
+# Copyright (c) 2016, 2017 IBM Corporation and others.
 # All rights reserved. This program and the accompanying materials
 # are made available under the terms of the Eclipse Public License v1.0
 # which accompanies this distribution, and is available at
@@ -35,7 +35,7 @@ function usage ()
   printf "\n\t\t%s\n" "Example: ${0##*/} 'trainName' 'checkpoint'" >&2
   printf "\n\t%s" "Both arguments are required." >&2
   printf "\n\t%s" "'trainName' is the final directory segment of where the composite files reside," >&2
-  printf "\n\t\t%s\n" "such as neon, oxygen, etc." >&2
+  printf "\n\t\t%s\n" "such as neon, oxygen, photon, etc." >&2
   printf "\n\t%s" "'checkpoint' is the pre-visibility label given to the metadata files," >&2
   printf "\n\t\t%s\n" "such as M4, RC1, etc. or simply R for final release, 1 for Update 1, etc.." >&2
   printf "\n\t\t%s\n" "For example, for Neon.1 the file content1.jar is copied to content.jar " >&2

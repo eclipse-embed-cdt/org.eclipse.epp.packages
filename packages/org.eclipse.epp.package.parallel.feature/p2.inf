@@ -18,12 +18,12 @@ requires.3.optional=true
 
 # Preload PTP update site / repository
 instructions.configure=\
-org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/tools/ptp/updates/oxygen,name:PTP);\
-org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/tools/ptp/updates/oxygen,name:PTP);
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/tools/ptp/updates/photon,name:PTP);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/tools/ptp/updates/photon,name:PTP);
 
 instructions.unconfigure=\
-org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.eclipse.org/tools/ptp/updates/oxygen);\
-org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.eclipse.org/tools/ptp/updates/oxygen);
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.eclipse.org/tools/ptp/updates/photon);\
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.eclipse.org/tools/ptp/updates/photon);
 
 # Bug 490515 - Prevent upgrade from old to new EPP package layout
 # https://bugs.eclipse.org/bugs/show_bug.cgi?id=490515
