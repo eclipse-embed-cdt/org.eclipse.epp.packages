@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse IDE for JavaScript and Web Developers" uid="epp.package.javascript" id="org.eclipse.epp.package.javascript.product" application="org.eclipse.ui.ide.workbench" version="4.7.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse IDE for JavaScript and Web Developers" uid="epp.package.javascript" id="org.eclipse.epp.package.javascript.product" application="org.eclipse.ui.ide.workbench" version="4.7.1.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/org.eclipse.epp.package.javascript/eclipse_lg.png"/>
@@ -186,9 +186,9 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.javascript.feature" version="4.7.0.qualifier"/>
-      <feature id="org.eclipse.epp.package.common.feature" version="4.7.0.qualifier"/>
-      <feature id="org.eclipse.platform" version="4.7.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.javascript.feature" version="4.7.1.qualifier"/>
+      <feature id="org.eclipse.epp.package.common.feature" version="4.7.1.qualifier"/>
+      <feature id="org.eclipse.platform" version="4.7.1.qualifier"/>
 
       <feature id="org.eclipse.egit" installMode="root"/>
       <feature id="org.eclipse.egit.mylyn" installMode="root"/>

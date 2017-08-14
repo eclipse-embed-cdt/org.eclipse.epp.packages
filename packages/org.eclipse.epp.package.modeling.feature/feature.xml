@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.modeling.feature"
       label="EPP Modeling Feature"
-      version="4.7.0.qualifier"
+      version="4.7.1.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.modeling"
       license-feature="org.eclipse.license"
