@@ -203,8 +203,10 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.egit.mylyn" installMode="root"/>
       <feature id="org.eclipse.jdt" installMode="root"/>
       <feature id="org.eclipse.jgit" installMode="root"/>
+
       <feature id="org.eclipse.m2e.feature" installMode="root"/>
       <feature id="org.eclipse.m2e.logback.feature" installMode="root"/>
+
       <feature id="org.eclipse.mylyn.bugzilla_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.context_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn_feature" installMode="root"/>
@@ -213,9 +215,12 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.mylyn.ide_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.java_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
+
+      <feature id="org.eclipse.recommenders.news.rcp.feature" installMode="root"/>
       <feature id="org.eclipse.recommenders.mylyn.rcp.feature" installMode="root"/>
       <feature id="org.eclipse.recommenders.rcp.feature" installMode="root"/>
       <feature id="org.eclipse.recommenders.snipmatch.rcp.feature" installMode="root"/>
+
       <feature id="org.eclipse.wst.xml_ui.feature" installMode="root"/>
    </features>
 

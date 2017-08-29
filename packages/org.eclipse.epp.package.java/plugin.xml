@@ -139,5 +139,15 @@
             icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
       </command>
    </extension>
+   <extension
+         point="org.eclipse.recommenders.news.rcp.feed">
+      <feed
+            id="org.eclipse.epp.package.feed.eclipseNews"
+            name="%feed.eclipseNews.name"
+            pollingInterval="10080"
+            uri="http://www.eclipse.org/home/eclipsenews.rss"
+            enabledByDefault="false">
+      </feed>
+   </extension>
 </plugin>
 
