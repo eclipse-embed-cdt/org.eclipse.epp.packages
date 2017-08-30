@@ -46,10 +46,10 @@ echo "  </mirrors>" >>$SETTINGS_FILE
 
 echo "  <activeProfiles>" >>$SETTINGS_FILE
 
-### use the OXYGEN commit to find out which package directories contain a change
+### use the parent commit to find out which package directories contain a change
 PACKAGES="${IGNORED_PACKAGES}"
 cd ${WORKSPACE}/${GIT_REPOSITORY}
-for II in `git diff-tree --name-only --no-commit-id -r OXYGEN | cut -d "/" -f 2 | cut -d "." -f 5 | sort | uniq`; do
+for II in `git diff-tree --name-only --no-commit-id -r HEAD | cut -d "/" -f 2 | cut -d "." -f 5 | sort | uniq`; do
   if [[ "common" =~ ${II} ]]
   then
     echo "${II} found; will trigger a full package build."
@@ -70,7 +70,7 @@ cd ${WORKSPACE}
 
 ### if there are changes in other areas of the Git repo then build everything
 cd ${WORKSPACE}/${GIT_REPOSITORY}
-OTHERCHANGES="xxx`git diff-tree --name-only --no-commit-id -r OXYGEN | grep -v "^packages"`xxx"
+OTHERCHANGES="xxx`git diff-tree --name-only --no-commit-id -r HEAD | grep -v "^packages"`xxx"
 if [ "${OTHERCHANGES}" != "xxxxxx" ] || [ "${FULL_BUILD}" == "true" ]
 then
   echo "Full build required. Adding all packages"
