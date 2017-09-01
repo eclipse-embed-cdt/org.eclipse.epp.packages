@@ -92,7 +92,7 @@
             <configuration>
               <source>${project.build.directory}/products/${build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}-macosx.cocoa.x86_64.tar.gz</source>
               <sign>${eclipse-sign-dmg-property}</sign>
-              <connectTimeoutMillis>600000</connectTimeoutMillis> <!-- 10 min -->
+              <connectTimeoutMillis>600000</connectTimeoutMillis>
             </configuration>
           </execution>
         </executions>
