@@ -353,11 +353,13 @@
             <profile>${project.artifactId}</profile>
           </configuration>
         </plugin>
+<!--
         <plugin>
           <groupId>org.eclipse.cbi.maven.plugins</groupId>
           <artifactId>eclipse-dmg-packager</artifactId>
           <version>${cbi.version}</version>
         </plugin>
+-->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-antrun-plugin</artifactId>
@@ -372,7 +374,9 @@
                     <fileset dir="${project.build.directory}/products">
                       <include name="*.zip" />
                       <include name="*linux*.tar.gz" />
+<!--
                       <include name="*.dmg" />
+-->
                     </fileset>
                   </copy>
                 </target>
