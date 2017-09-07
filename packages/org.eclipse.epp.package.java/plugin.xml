@@ -146,8 +146,7 @@
             id="org.eclipse.epp.package.feed.eclipseNews"
             name="%feed.eclipseNews.name"
             pollingInterval="11520"
-            uri="http://www.eclipse.org/home/eclipsenews.rss"
-            enabledByDefault="false">
+            uri="http://www.eclipse.org/home/eclipsenews.rss">
       </feed>
    </extension>
 </plugin>
