@@ -20,7 +20,10 @@
    </license>
 
    <requires>
+      <!-- TODO Enable MPC again when available in Photon.
+           Disabled since Photon M2
       <import feature="org.eclipse.epp.mpc"/>
+       -->
       <import feature="org.eclipse.epp.logging.aeri.feature"/>
       <!-- Bug 455645: Integrate Oomph into all EPP packages
            https://bugs.eclipse.org/bugs/show_bug.cgi?id=455645 -->
