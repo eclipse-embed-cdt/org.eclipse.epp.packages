@@ -24,6 +24,7 @@
 -Xmx2024m
 -XX:+UseG1GC
 -XX:+UseStringDeduplication
+--add-modules=ALL-SYSTEM
       </vmArgs>
       <vmArgsLin>
       </vmArgsLin>

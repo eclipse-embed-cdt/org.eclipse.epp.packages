@@ -24,6 +24,7 @@
 -Xmx1024m
 -XX:+UseG1GC
 -XX:+UseStringDeduplication
+--add-modules=ALL-SYSTEM
       </vmArgs>
       <vmArgsMac>-XstartOnFirstThread
 -Dorg.eclipse.swt.internal.carbon.smallFonts
