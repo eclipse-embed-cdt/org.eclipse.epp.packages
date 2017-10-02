@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="org.eclipse.epp.common.ContributeHandler"
+            description="%contribute.command.desc"
+            id="org.eclipse.epp.package.common.contribute"
+            name="%contribute.command.label">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:help?after=about">
+         <command
+               commandId="org.eclipse.epp.package.common.contribute"
+               style="push">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commandImages">
+      <image
+            commandId="org.eclipse.epp.package.common.contribute"
+            icon="icons/star.png">
+      </image>
+   </extension>
+
+</plugin>
