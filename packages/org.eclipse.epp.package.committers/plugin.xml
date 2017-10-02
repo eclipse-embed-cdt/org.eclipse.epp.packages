@@ -15,7 +15,7 @@
          </property>
          <property
                name="appName"
-               value="Eclipse">
+               value="Eclipse IDE">
          </property>
          <property
                name="aboutText"

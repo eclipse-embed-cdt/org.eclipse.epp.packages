@@ -7,14 +7,14 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
-            name="Eclipse">
+            name="Eclipse IDE">
          <property
                name="preferenceCustomization"
                value="plugin_customization.ini">
          </property>
          <property
                name="appName"
-               value="Eclipse">
+               value="Eclipse IDE">
          </property>
          <property
                name="aboutText"
