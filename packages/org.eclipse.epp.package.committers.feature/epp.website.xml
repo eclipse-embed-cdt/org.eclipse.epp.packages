@@ -41,6 +41,6 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EGit">here</a
   <rcp version="4.8.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-committers-photon-M2" />
+  <product name="eclipse-committers-photon-M3" />
 
 </configuration>
