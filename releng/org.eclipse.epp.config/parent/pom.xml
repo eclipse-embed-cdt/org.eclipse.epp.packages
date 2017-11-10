@@ -47,7 +47,7 @@
 
     <!-- TODO: Use the v4-neon-updates when available -->
     <gnumcueclipse.repository>http://gnu-mcu-eclipse.netlify.com/v4-neon-updates</gnumcueclipse.repository>
-    <gnumcueclipse.version>4.1.1</gnumcueclipse.version>
+    <gnumcueclipse.version>4.2.1</gnumcueclipse.version>
   </properties>
 
   <!--
