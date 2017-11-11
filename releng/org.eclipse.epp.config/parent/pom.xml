@@ -44,6 +44,9 @@
     <eclipse.simultaneous.release.name>Oxygen.1a Release (4.7.1a)</eclipse.simultaneous.release.name>
     <!-- Upstream p2 repository, used as a source for pre-compiled build artifacts -->
     <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/oxygen/</eclipse.simultaneous.release.repository>
+
+    <gnumcueclipse.repository>http://gnu-mcu-eclipse.netlify.com/v4-neon-updates</gnumcueclipse.repository>
+    <gnumcueclipse.version>4.2.1</gnumcueclipse.version>
   </properties>
 
   <!--
@@ -77,6 +80,11 @@
       <id>license-feature</id>
       <url>http://download.eclipse.org/cbi/updates/license/</url>
       <layout>p2</layout>
+    </repository>
+    <repository>
+      <id>gnu-mcu-eclipse</id>
+      <layout>p2</layout>
+      <url>${gnumcueclipse.repository}</url>
     </repository>
   </repositories>
 
