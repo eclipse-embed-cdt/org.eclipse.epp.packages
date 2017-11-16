@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.testing.feature"
       label="EPP Testing Feature"
-      version="4.7.1.qualifier"
+      version="4.7.2.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.testing"
       license-feature="org.eclipse.license"
