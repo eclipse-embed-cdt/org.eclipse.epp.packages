@@ -43,7 +43,7 @@
     <!-- Human readable name of the release, e.g. used in the about dialog (see about.mappings) -->
     <eclipse.simultaneous.release.name>Oxygen.1a Release (4.7.1a)</eclipse.simultaneous.release.name>
     <!-- Upstream p2 repository, used as a source for pre-compiled build artifacts -->
-    <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/oxygen/</eclipse.simultaneous.release.repository>
+    <eclipse.simultaneous.release.repository>http://download.eclipse.org/releases/oxygen/</eclipse.simultaneous.release.repository>
 
     <gnumcueclipse.repository>http://gnu-mcu-eclipse.netlify.com/v4-neon-updates</gnumcueclipse.repository>
     <gnumcueclipse.version>4.2.1</gnumcueclipse.version>
@@ -355,17 +355,20 @@
                 <rootFolders>
                   <macosx>Eclipse.app</macosx>
                 </rootFolders>
-                <archiveFileName>${build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}</archiveFileName>
+                <!-- <archiveFileName>${build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}</archiveFileName> -->
+                <archiveFileName>${build}-gnumcueclipse-${gnumcueclipse.version}-${eclipse.simultaneous.release.id}</archiveFileName>
               </product>
             </products>
             <profile>${project.artifactId}</profile>
           </configuration>
         </plugin>
+        <!--
         <plugin>
           <groupId>org.eclipse.cbi.maven.plugins</groupId>
           <artifactId>eclipse-dmg-packager</artifactId>
           <version>${cbi.version}</version>
         </plugin>
+        -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-antrun-plugin</artifactId>
@@ -379,7 +382,7 @@
                   <copy todir="${basedir}/../../archive">
                     <fileset dir="${project.build.directory}/products">
                       <include name="*.zip" />
-                      <include name="*linux*.tar.gz" />
+                      <include name="*.tar.gz" />
                       <include name="*.dmg" />
                     </fileset>
                   </copy>

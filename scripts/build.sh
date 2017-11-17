@@ -48,6 +48,7 @@ do_compute_sha() {
 
 mvn clean verify -Pepp.package.cpp
 
+
 pushd archive
 for f in *.zip *.gz 
 do

@@ -1,6 +1,13 @@
 The EPP Build with GNU MCU Eclipse plug-ins
 ==========================================
 
+The GNU MCU Eclipse EPP project
+-------------------------------
+
+The [GNU MCU Eclipse EPP](https://github.com/gnu-mcu-eclipse/org.eclipse.epp.packages) project is a fork of the original Eclipse EPP project that adds the [GNU MCU Eclipse](https://github.com/gnu-mcu-eclipse) plug-ins and intentionally **does not** go into further customisations, so that installing these binary packages is equivalent to installing the original Eclipse distribution followed by adding new software from the GNU MCU Eclipse update site.
+
+The GNU MCU Eclipse binaries are available from the [GitHub Releases](https://github.com/gnu-mcu-eclipse/org.eclipse.epp.packages/releases); the release schedule generally follows the Eclipse release schedule.
+
 The original Eclipse EPP project
 --------------------------------
 
@@ -9,19 +16,12 @@ the download packages based on the content of the yearly Simultaneous Release.
 The download packages are provided from 
 [www.eclipse.org/downloads/](http://www.eclipse.org/downloads/).
 
-The GNU MCU Eclipse EPP project
--------------------------------
-
-The [GNU MCU Eclipse EPP](https://github.com/gnu-mcu-eclipse/org.eclipse.epp.packages) project is a fork of the original Eclipse EPP project that adds the [GNU MCU Eclipse](https://github.com/gnu-mcu-eclipse) plug-ins and intentionally **does not** go into further customisations, so that installing these binary packages is equivalent to installing the original Eclipse distribution followed by adding new software from the GNU MCU Eclipse update site.
-
-The GNU MCU Eclipse binaries are available from the [GitHub Releases](https://github.com/gnu-mcu-eclipse/org.eclipse.epp.packages/releases); the release schedule generally follows the Eclipse release schedule.
-
 Build a Package Locally
 -----------------------
 
 It's *easy* to run the build locally! All you need is Maven and then you need 
 to tell Maven which package(s) to build via profile. As an example, the following 
-command from the root of the Git repository builds the RCP/RAP package against 
+command from the root of the Git repository builds the CPP, RCP/RAP package against 
 the Simultaneous Release staging p2 repository:
 
     mvn clean verify -Pepp.package.ccp
