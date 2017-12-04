@@ -44,6 +44,6 @@
   <rcp version="4.8.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-cpp-photon-M3" />
+  <product name="eclipse-cpp-photon-M4" />
 
 </configuration>
