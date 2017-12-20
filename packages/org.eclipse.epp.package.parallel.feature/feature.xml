@@ -85,7 +85,6 @@
          optional="true"
          search-location="both"/>
 
-   <requires>
    <!--
         All requirements to features and the content of the product are defined 
         in the product configuration epp.product since Eclipse Neon. For further
@@ -97,7 +96,6 @@
         The (optional) plug-in dependencies within this feature.xml have been
         left as they are.
      -->
-   </requires>
 
    <plugin
          id="org.eclipse.epp.package.parallel"

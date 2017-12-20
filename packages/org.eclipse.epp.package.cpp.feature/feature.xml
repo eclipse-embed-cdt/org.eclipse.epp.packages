@@ -22,7 +22,6 @@
 
    <!-- see p2.inf file for optionally imported Linux Tools features -->
 
-   <requires>
    <!--
         All requirements to features and the content of the product are defined 
         in the product configuration epp.product since Eclipse Neon. For further
@@ -35,7 +34,6 @@
         the CPP feature; this hasn't been touched and could be part of another
         change.
      -->
-   </requires>
 
    <plugin
          id="org.eclipse.epp.package.cpp"

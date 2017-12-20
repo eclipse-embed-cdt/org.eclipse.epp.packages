@@ -25,7 +25,6 @@
          version="0.0.0"
          search-location="both"/>
 
-   <requires>
    <!--
         All requirements to features and the content of the product are defined 
         in the product configuration epp.product since Eclipse Neon. For further
@@ -38,7 +37,6 @@
         plugins defined within this feature; these dependencies haven't been
         changed.
      -->
-   </requires>
 
    <plugin
          id="org.eclipse.epp.package.jee"
