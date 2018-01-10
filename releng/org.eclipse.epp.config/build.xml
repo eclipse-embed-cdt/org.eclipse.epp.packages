@@ -49,7 +49,7 @@
 						</reverse>
 	                </sort>
 	        </source>
-	        <destination location="${targetRepository}" name="EPP Oxygen.1a Package Repository" append="true" compressed="true" />
+	        <destination location="${targetRepository}" name="EPP Oxygen.2 Package Repository" append="true" compressed="true" />
 	    </p2.mirror>
 	</target>
 

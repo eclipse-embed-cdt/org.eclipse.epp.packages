@@ -21,7 +21,7 @@
   <parent>
     <groupId>org.eclipse.epp</groupId>
     <artifactId>org.eclipse.epp-bundle-parent</artifactId>
-    <version>4.7.1-SNAPSHOT</version>
+    <version>4.7.2-SNAPSHOT</version>
     <relativePath>../../releng/org.eclipse.epp.config/parent/bundle</relativePath>
   </parent>
 

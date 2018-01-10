@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.reporting.feature"
       label="EPP Reporting Feature"
-      version="4.7.1.qualifier"
+      version="4.7.2.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.reporting"
       license-feature="org.eclipse.license"

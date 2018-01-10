@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.rcp.feature"
       label="EPP RCP/RAP Feature"
-      version="4.7.1.qualifier"
+      version="4.7.2.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.rcp"
       license-feature="org.eclipse.license"
