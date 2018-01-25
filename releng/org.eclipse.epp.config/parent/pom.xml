@@ -45,8 +45,9 @@
     <!-- Upstream p2 repository, used as a source for pre-compiled build artifacts -->
     <eclipse.simultaneous.release.repository>http://download.eclipse.org/releases/oxygen/</eclipse.simultaneous.release.repository>
 
+    <!-- <gnumcueclipse.repository>http://gnu-mcu-eclipse.netlify.com/v4-neon-updates-test</gnumcueclipse.repository> -->
     <gnumcueclipse.repository>http://gnu-mcu-eclipse.netlify.com/v4-neon-updates</gnumcueclipse.repository>
-    <gnumcueclipse.version>4.3.1</gnumcueclipse.version>
+    <gnumcueclipse.version>4.3.2</gnumcueclipse.version>
   </properties>
 
   <!--
