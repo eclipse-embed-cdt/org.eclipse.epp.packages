@@ -23,13 +23,3 @@ update.id = epp.package.cpp
 update.range = [4.6.0.20160301-1200, $version$)
 update.severity = 0
 update.description = Eclipse package upgrade from versions before Eclipse Neon (4.6) is not possible. See bug 332989.
-
-# add requirement on a.jre.javase
-requires.0.namespace=org.eclipse.equinox.p2.iu
-requires.0.name=a.jre.javase
-requires.0.version=9.0.0
-
-# add requirement on config.a.jre.javase
-requires.1.namespace=org.eclipse.equinox.p2.iu
-requires.1.name=config.a.jre.javase
-requires.1.version=9.0.0
