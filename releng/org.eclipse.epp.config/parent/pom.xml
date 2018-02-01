@@ -84,11 +84,6 @@
       <url>${eclipse.simultaneous.release.repository}</url>
     </repository>
     <repository>
-      <id>eclipse-platform-release</id>
-      <layout>p2</layout>
-      <url>${eclipse.platform.release.repository}</url>
-    </repository>
-    <repository>
       <id>license-feature</id>
       <url>http://download.eclipse.org/cbi/updates/license/</url>
       <layout>p2</layout>
