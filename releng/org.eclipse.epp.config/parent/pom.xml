@@ -252,6 +252,22 @@
             <includeAllDependencies>true</includeAllDependencies>
             <compress>true</compress>
           </configuration>
+          <executions>
+            <execution>
+              <id>default-assemble-repository</id>
+              <phase></phase>
+              <configuration>
+                <skip>true</skip>
+              </configuration>
+            </execution>
+            <execution>
+              <id>default-archive-repository</id>
+              <phase></phase>
+              <configuration>
+                <skip>true</skip>
+              </configuration>
+            </execution>
+          </executions>
         </plugin>
         <plugin>
           <groupId>org.eclipse.tycho</groupId>
@@ -324,26 +340,6 @@
           <groupId>org.eclipse.tycho.extras</groupId>
           <artifactId>tycho-p2-extras-plugin</artifactId>
           <version>${tycho.version}</version>
-        </plugin>
-        <plugin>
-          <groupId>org.eclipse.tycho</groupId>
-          <artifactId>tycho-p2-repository-plugin</artifactId>
-          <executions>
-            <execution>
-              <id>default-assemble-repository</id>
-              <phase></phase>
-              <configuration>
-                <skip>true</skip>
-              </configuration>
-            </execution>
-            <execution>
-              <id>default-archive-repository</id>
-              <phase></phase>
-              <configuration>
-                <skip>true</skip>
-              </configuration>
-            </execution>
-          </executions>
         </plugin>
         <plugin>
           <groupId>org.eclipse.tycho</groupId>
