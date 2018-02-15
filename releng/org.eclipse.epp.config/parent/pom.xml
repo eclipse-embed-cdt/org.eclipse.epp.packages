@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Copyright (C) 2013, 2017 EclipseSource and others.
+  Copyright (C) 2013, 2018 EclipseSource and others.
   All rights reserved. This program and the accompanying materials
   are made available under the terms of the Eclipse Public License v1.0
   which accompanies this distribution, and is available at
@@ -19,7 +19,7 @@
 
   <groupId>org.eclipse.epp</groupId>
   <artifactId>org.eclipse.epp-parent</artifactId>
-  <version>4.7.2-SNAPSHOT</version>
+  <version>4.7.3-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
@@ -37,11 +37,11 @@
     <!-- The location that is used to assemble the single EPP configuration p2 repository -->
     <eclipse.epp.targetRepository>${eclipse.epp.archiveDirectory}/repository/</eclipse.epp.targetRepository>
     <!-- ID used to generate the filename of the packages -->
-    <eclipse.simultaneous.release.id>oxygen-2</eclipse.simultaneous.release.id>
+    <eclipse.simultaneous.release.id>oxygen-3</eclipse.simultaneous.release.id>
     <!-- Timestamp used in various places, e.g. the about dialog (see about.mappings) -->
     <eclipse.simultaneous.release.build>${maven.build.timestamp}</eclipse.simultaneous.release.build>
     <!-- Human readable name of the release, e.g. used in the about dialog (see about.mappings) -->
-    <eclipse.simultaneous.release.name>Oxygen.2 Release (4.7.2)</eclipse.simultaneous.release.name>
+    <eclipse.simultaneous.release.name>Oxygen.3 Release (4.7.3)</eclipse.simultaneous.release.name>
     <!-- Upstream p2 repository, used as a source for pre-compiled build artifacts -->
     <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/oxygen/</eclipse.simultaneous.release.repository>
   </properties>
