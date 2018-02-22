@@ -45,9 +45,9 @@ rcp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.packa
 rcp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rcp.feature/feature.xml,OXYGEN,rcp.feature.xml
 rcp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rcp.product/epp.product,OXYGEN,rcp.product.xml
 
-reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.feature/epp.website.xml,OXYGEN,reporting.xml
-reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.feature/feature.xml,OXYGEN,reporting.feature.xml
-reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.product/epp.product,OXYGEN,reporting.product.xml
+reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.feature/epp.website.xml,OXYGEN,0.reporting.xml.0
+reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.feature/feature.xml,OXYGEN,0.reporting.feature.xml.0
+reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.product/epp.product,OXYGEN,0.reporting.product.xml.0
 
 scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.feature/epp.website.xml,OXYGEN,scout.xml
 scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.feature/feature.xml,OXYGEN,scout.feature.xml
