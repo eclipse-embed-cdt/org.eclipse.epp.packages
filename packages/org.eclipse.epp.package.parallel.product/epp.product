@@ -49,10 +49,10 @@
    <windowImages i16="/org.eclipse.epp.package.parallel/eclipse16.png" i32="/org.eclipse.epp.package.parallel/eclipse32.png" i48="/org.eclipse.epp.package.parallel/eclipse48.png" i256="/org.eclipse.epp.package.parallel/eclipse256.png"/>
 
    <splash
-      location="org.eclipse.epp.package.parallel"
+      location="org.eclipse.epp.package.common"
       startupProgressRect="2,290,448,10"
       startupMessageRect="7,265,320,20"
-      startupForegroundColor="9c9696" />
+      startupForegroundColor="c1bc1f" />
    <launcher name="eclipse">
       <solaris/>
       <win useIco="false">
