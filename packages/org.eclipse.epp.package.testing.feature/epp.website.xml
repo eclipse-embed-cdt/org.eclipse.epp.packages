@@ -42,6 +42,6 @@
   <rcp version="4.7.3" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-testing-oxygen-3-rc3" />
+  <product name="eclipse-testing-oxygen-3" />
 
 </configuration>
