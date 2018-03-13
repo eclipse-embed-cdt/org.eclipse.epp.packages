@@ -212,8 +212,9 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.jdt" installMode="root"/>
       <feature id="org.eclipse.jpt.common.eclipselink.feature" installMode="root"/>
       <feature id="org.eclipse.jpt.common.feature" installMode="root"/>
-      <feature id="org.eclipse.jpt.dbws.eclipselink.feature" installMode="root"/>
-      <feature id="org.eclipse.jpt.jaxb.eclipselink.feature" installMode="root"/>
+      <!-- temporarily removed: org.eclipse.persistence.moxy 2.6.0.v20140809-296a69f requires package com.sun.codemodel -->
+      <!-- <feature id="org.eclipse.jpt.dbws.eclipselink.feature" installMode="root"/> -->
+      <!-- <feature id="org.eclipse.jpt.jaxb.eclipselink.feature" installMode="root"/> -->
       <feature id="org.eclipse.jpt.jaxb.feature" installMode="root"/>
       <feature id="org.eclipse.jpt.jpa.eclipselink.feature" installMode="root"/>
       <feature id="org.eclipse.jpt.jpa.feature" installMode="root"/>
