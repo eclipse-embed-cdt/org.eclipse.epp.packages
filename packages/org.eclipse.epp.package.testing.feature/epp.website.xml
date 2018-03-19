@@ -8,7 +8,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse for Testers"
+   packageName="Eclipse IDE for Testers"
    maintainer="Eclipse Jubula Project"
    iconurl="http://www.eclipse.org/downloads/images/testing.png"
    bugzillaComponentId="testing-package"

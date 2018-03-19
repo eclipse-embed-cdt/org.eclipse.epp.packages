@@ -8,7 +8,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse for Scout Developers"
+   packageName="Eclipse IDE for Scout Developers"
    maintainer="Eclipse Scout Project"
    iconurl="http://www.eclipse.org/downloads/images/scout.jpg"
    bugzillaComponentId="scout-package"
