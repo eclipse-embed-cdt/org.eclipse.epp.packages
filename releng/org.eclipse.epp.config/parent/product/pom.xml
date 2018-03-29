@@ -99,7 +99,7 @@
             <configuration>
               <source>${project.build.directory}/products/${build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}-macosx.cocoa.x86_64.tar.gz</source>
               <sign>${eclipse-sign-dmg-property}</sign>
-              <connectTimeoutMillis>600000</connectTimeoutMillis>
+              <timeoutMillis>600000</timeoutMillis>
             </configuration>
           </execution>
         </executions>
@@ -134,7 +134,7 @@
                   <fileNames>
                     <fileName>Eclipse.app</fileName>
                   </fileNames>
-                  <connectTimeoutMillis>300000</connectTimeoutMillis> <!-- 5 min -->
+                  <timeoutMillis>300000</timeoutMillis> <!-- 5 min -->
                 </configuration>
               </execution>
             </executions>
@@ -164,7 +164,7 @@
                     <fileName>eclipse.exe</fileName>
                     <fileName>eclipsec.exe</fileName>
                   </fileNames>
-                <connectTimeoutMillis>120000</connectTimeoutMillis> <!-- 2 min -->
+                <timeoutMillis>120000</timeoutMillis> <!-- 2 min -->
                 </configuration>
               </execution>
             </executions>
