@@ -38,9 +38,9 @@
 
 	<!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="4.7.2" />
+  <rcp version="4.7.3" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-java-oxygen-2" />
+	<product name="eclipse-java-oxygen-3a" />
 
 </configuration>

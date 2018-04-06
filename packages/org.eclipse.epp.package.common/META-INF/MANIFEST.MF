@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Common EPP Bundle
 Bundle-SymbolicName: org.eclipse.epp.package.common;singleton:=true
-Bundle-Version: 4.7.2.qualifier
+Bundle-Version: 4.7.3.qualifier
 Bundle-Vendor: Eclipse Packaging Project
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Require-Bundle: org.eclipse.platform,
