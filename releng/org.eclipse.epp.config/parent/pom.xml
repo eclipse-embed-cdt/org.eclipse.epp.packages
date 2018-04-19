@@ -37,7 +37,7 @@
     <!-- The location that is used to assemble the single EPP configuration p2 repository -->
     <eclipse.epp.targetRepository>${eclipse.epp.archiveDirectory}/repository/</eclipse.epp.targetRepository>
     <!-- ID used to generate the filename of the packages -->
-    <eclipse.simultaneous.release.id>oxygen-3a-rc2</eclipse.simultaneous.release.id>
+    <eclipse.simultaneous.release.id>oxygen-3a</eclipse.simultaneous.release.id>
     <!-- Timestamp used in various places, e.g. the about dialog (see about.mappings) -->
     <eclipse.simultaneous.release.build>${maven.build.timestamp}</eclipse.simultaneous.release.build>
     <!-- Human readable name of the release, e.g. used in the about dialog (see about.mappings) -->
@@ -47,7 +47,7 @@
 
     <!-- <gnumcueclipse.repository>http://gnu-mcu-eclipse.netlify.com/v4-neon-updates-test</gnumcueclipse.repository> -->
     <gnumcueclipse.repository>http://gnu-mcu-eclipse.netlify.com/v4-neon-updates</gnumcueclipse.repository>
-    <gnumcueclipse.version>4.3.2</gnumcueclipse.version>
+    <gnumcueclipse.version>4.3.3</gnumcueclipse.version>
   </properties>
 
   <!--
