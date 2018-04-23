@@ -78,6 +78,10 @@ Contributors:
     <xsl:call-template name="artifact_properties" />
   </xsl:template>
 
+  <xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.rust']/properties">
+    <xsl:call-template name="artifact_properties" />
+  </xsl:template>
+
   <xsl:template name="artifact_properties">
     <properties size='{@size+1}'>
       <xsl:copy-of select="property" />
@@ -139,6 +143,10 @@ Contributors:
   </xsl:template>
 
   <xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.testing.feature']/properties">
+    <xsl:call-template name="artifact_properties_feature" />
+  </xsl:template>
+
+  <xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.rust.feature']/properties">
     <xsl:call-template name="artifact_properties_feature" />
   </xsl:template>
 

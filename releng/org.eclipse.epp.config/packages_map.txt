@@ -57,3 +57,6 @@ testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.p
 testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.feature/feature.xml,HEAD,testing.feature.xml
 testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.product/epp.product,HEAD,testing.product.xml
 
+rust,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rust.feature/epp.website.xml,HEAD,php.xml
+rust,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rust.feature/feature.xml,HEAD,php.feature.xml
+rust,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rust.product/epp.product,HEAD,php.product.xml

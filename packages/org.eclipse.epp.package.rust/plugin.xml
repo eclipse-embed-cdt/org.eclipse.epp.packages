@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="product"
+         name="Eclipse IDE for Rust Developers"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.ui.ide.workbench"
+            name="Eclipse IDE">
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+         <property
+               name="appName"
+               value="Eclipse IDE">
+         </property>
+         <property
+               name="aboutText"
+               value="Eclipse IDE for Rust Developers&#x0A;&#x0A;Version: {1}&#x0A;Build id: {0}&#x0A;&#x0A;(c) Copyright Eclipse contributors and others 2000, 2018.  All rights reserved. Eclipse and the Eclipse logo are trademarks of the Eclipse Foundation, Inc., https://www.eclipse.org/. The Eclipse logo cannot be altered without Eclipse's permission. Eclipse logos are provided for use under the Eclipse logo and trademark guidelines, https://www.eclipse.org/logotm/. Oracle and Java are trademarks or registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.&#x0A;&#x0A;This product includes software developed by other open source projects including the Apache Software Foundation, https://www.apache.org/.&#x0A;">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="c1bc1f">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="7,265,320,20">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="2,290,448,10">
+         </property>
+         <property
+               name="aboutImage"
+               value="eclipse_lg.png">
+         </property>
+         <property
+               name="windowImages"
+               value="eclipse16.png,eclipse32.png,eclipse48.png,eclipse256.png">
+         </property>
+         <property
+              name="introBrandingImage"
+              value="product:intro-eclipse.png">
+         </property>
+         <property
+               name="introTitle"
+               value="Welcome to Eclipse IDE for Rust Developers">
+         </property>
+         <property
+               name="introBrandingImageText"
+               value="Eclipse Project">
+         </property>
+         <property
+               name="applicationXMI"
+               value="org.eclipse.platform/LegacyIDE.e4xmi">
+         </property>
+         <property 
+               name="cssTheme"
+               value="org.eclipse.e4.ui.css.theme.e4_default">
+         </property>
+         <property
+               name="applicationCSSResources" 
+               value="platform:/plugin/org.eclipse.ui.themes/images/"> 
+         </property>
+         <property
+               name="buildIdLocation"
+               value="0,220">
+         </property>
+         <property
+               name="buildIdSize"
+               value="293,40">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro">
+      <introProductBinding
+            introId="org.eclipse.ui.intro.universal"
+            productId="org.eclipse.epp.package.rust.product">
+      </introProductBinding>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.intro.quicklinks">
+      <command
+            id="org.eclipse.ui.newWizard(newWizardId=org.eclipse.corrosion.wizards.newCargo)"
+            description="%ql.newCargoProject.description"
+            label="%ql.newCargoProject.label"
+            importance="medium"
+            resolution="launchbar">
+      </command>
+      <command
+            description="%ql.addRustExecutables.description"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
+            id="org.eclipse.ui.window.preferences(preferencePageId=org.eclipse.corrosion.preferencePage)"
+            importance="medium"
+            label="%ql.addRustExecutables.label">
+      </command>
+      <command
+            id="org.eclipse.ui.file.import(importWizardId=org.eclipse.egit.ui.internal.clone.GitCloneWizard)"
+            description="%ql.checkoutGitProject.description"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/egit-checkout.png"
+            label="%ql.checkoutGitProject.label"
+            importance="medium"
+            resolution="launchbar">
+      </command>
+      <command
+            id="org.eclipse.ui.edit.text.openLocalFile"
+            description="%ql.openExistingFile.description"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/open-file.png"
+            importance="low"
+            label="%ql.openExistingFile.label"
+            resolution="launchbar">
+      </command>
+      <command
+            id="org.eclipse.oomph.setup.ui.questionnaire"
+            importance="high"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/settings.png"
+            label="%ql.setupQuestionnaire.label">
+      </command>
+      <override
+            command="org.eclipse.ui.newWizard*"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
+            theme="org.eclipse.ui.intro.universal.solstice">
+      </override>
+      <command
+            id="org.eclipse.epp.mpc.ui.command.showMarketplaceWizard(trigger=welcome)"
+            label="%ql.mpc.label"
+            description="%ql.mpc.description"
+            icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
+      </command>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.preferencePages">
+	  <page
+            category="org.eclipse.ui.preferencePages.Workbench"
+            name="%PreferencePages.Capabilities"
+            id="org.eclipse.sdk.capabilities">
+            <class class="org.eclipse.ui.activities.ActivityCategoryPreferencePage">
+                <parameter name="allowAdvanced" value="true"/>
+                <parameter name="captionMessage" value="%PreferencePages.Capabilities.captionMessage" />
+                <parameter name="activityName" value="%PreferencePages.Capabilities.activityName" />
+                <parameter name="categoryName" value="%PreferencePages.Capabilities.categoryName" />
+                <parameter name="activityPromptButton" value="%PreferencePages.Capabilities.activityPromptButton"/>
+                <parameter name="activityPromptButtonTooltip" value="%PreferencePages.Capabilities.activityPromptButtonTooltip"/>
+            </class>
+      </page>
+   </extension>
+</plugin>
