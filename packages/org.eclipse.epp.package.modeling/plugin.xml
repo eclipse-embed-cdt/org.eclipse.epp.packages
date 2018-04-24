@@ -111,13 +111,7 @@
             command="org.eclipse.ui.newWizard*"
             icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
             theme="org.eclipse.ui.intro.universal.solstice">
-      </override>
-      <command
-            id="org.eclipse.amalgam.discovery.modeling.commands.discoveryCommand"
-            label="%ql.discovery.label"
-            description="%ql.discovery.description"
-            icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
-      </command>
+      </override>      
       <command
             id="org.eclipse.epp.mpc.ui.command.showMarketplaceWizard(trigger=welcome)"
             label="%ql.mpc.label"

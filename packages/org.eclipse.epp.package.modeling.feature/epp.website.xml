@@ -9,7 +9,7 @@
    -->
   <packageMetaData
    packageName="Eclipse Modeling Tools"
-   maintainer="Modeling Amalgamation Project"
+   maintainer="Remi Schnekenburger"
    iconurl="http://www.eclipse.org/modeling/images/modeling_about.png"
    bugzillaComponentId="modeling-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
@@ -22,10 +22,7 @@
       <tester>Cédric Brun</tester>
     </packageTesters>
   </packageMetaData>
-  <MoreInfo>
-  <NewAndNoteworthy
-    url="https://projects.eclipse.org/projects/modeling.amalgam/releases/1.8.0"
-    project="Modeling Package" />
+  <MoreInfo>  
   <NewAndNoteworthy
     url="https://wiki.eclipse.org/Ecore_Tools/New_and_Noteworthy"
     project="Eclipse EcoreTools" />

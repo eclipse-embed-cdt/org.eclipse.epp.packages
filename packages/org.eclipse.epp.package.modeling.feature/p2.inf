@@ -20,10 +20,4 @@ update.range = [4.6.0.20160301-1200, $version$)
 update.severity = 0
 update.description = Eclipse package upgrade from versions before Eclipse Neon (4.6) is not possible. See bug 332989.
 
-instructions.configure=\
-org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//www.eclipse.org/modeling/amalgam/downloads/package/modeling/photon/,name:Modeling Package Updates for Eclipse Photon);\
-org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//www.eclipse.org/modeling/amalgam/downloads/package/modeling/photon/,name:Modeling Package Updates for Eclipse Photon);
 
-instructions.unconfigure=\
-org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//www.eclipse.org/modeling/amalgam/downloads/package/modeling/photon/);\
-org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//www.eclipse.org/modeling/amalgam/downloads/package/modeling/photon/);
