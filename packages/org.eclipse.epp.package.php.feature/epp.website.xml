@@ -14,25 +14,26 @@
    bugzillaComponentId="php-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-     <description><![CDATA[The essential tools for any PHP developer, including PHP language support, Git client, Mylyn and editors for JavaScript, HTML, CSS and XML.]]></description>
+    <description><![CDATA[The essential tools for any PHP developer, including PHP language support, Git client, Mylyn and editors for JavaScript, HTML, CSS and XML.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
-     <packageTesters>
+    <packageTesters>
       <tester>Jacek Pospychala</tester>
-      <tester>Kaloyan Raev</tester>
+	    <tester>Kaloyan Raev</tester>
+	    <tester>Dawid Pakula</tester>
     </packageTesters>
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/PDT/NewIn50"
+    url="https://wiki.eclipse.org/PDT/NewIn60"
     project="Eclipse PHP Development Tools" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.7/"
+    url="https://www.eclipse.org/eclipse/news/4.8/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/4.8"
+    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/4.11"
     project="Eclipse EGit" />
   </MoreInfo>
 
