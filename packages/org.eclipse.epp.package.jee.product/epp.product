@@ -198,11 +198,38 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.datatools.common.doc.user" installMode="root"/>
       <feature id="org.eclipse.datatools.connectivity.doc.user" installMode="root"/>
       <feature id="org.eclipse.datatools.connectivity.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.connectivity.oda.designer.core.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.connectivity.oda.designer.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.connectivity.oda.feature" installMode="root"/>
       <feature id="org.eclipse.datatools.doc.user" installMode="root"/>
+      <feature id="org.eclipse.datatools.enablement.apache.derby.feature" installMode="root"/>
       <feature id="org.eclipse.datatools.enablement.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.enablement.hsqldb.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.enablement.ibm.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.enablement.ingres.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.enablement.jdbc.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.enablement.jdt.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.enablement.msft.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.enablement.mysql.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.enablement.oda.designer.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.enablement.oda.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.enablement.oracle.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.enablement.postgresql.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.enablement.sap.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.enablement.sdk.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.enablement.sqlite.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.enablement.sybase.feature" installMode="root"/>
       <feature id="org.eclipse.datatools.intro" installMode="root"/>
       <feature id="org.eclipse.datatools.modelbase.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.sdk.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.sqldevtools.data.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.sqldevtools.ddl.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.sqldevtools.ddlgen.feature" installMode="root"/>
       <feature id="org.eclipse.datatools.sqldevtools.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.sqldevtools.parsers.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.sqldevtools.results.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature" installMode="root"/>
+      <feature id="org.eclipse.datatools.sqldevtools.sqlbuilder.feature" installMode="root"/>
       <feature id="org.eclipse.datatools.sqltools.doc.user" installMode="root"/>
 
       <feature id="org.eclipse.buildship" installMode="root"/>
