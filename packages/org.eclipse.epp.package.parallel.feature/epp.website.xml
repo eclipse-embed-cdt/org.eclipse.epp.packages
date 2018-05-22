@@ -8,7 +8,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse IDE for Parallel Application Developers"
+   packageName="Eclipse IDE for Scientific Computing"
    maintainer="Eclipse Packaging Project"
    iconurl="http://www.eclipse.org/downloads/images/parallel.png"
    bugzillaComponentId="parallel-package"
