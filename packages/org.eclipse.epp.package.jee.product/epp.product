@@ -300,6 +300,8 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.wst.web_ui.feature" installMode="root"/>
       <feature id="org.eclipse.wst.xml_ui.feature" installMode="root"/>
       <feature id="org.eclipse.wst.xsl.feature" installMode="root"/>
+
+      <feature id="org.eclipse.tips.feature" installMode="root"/>
    </features>
 
 
