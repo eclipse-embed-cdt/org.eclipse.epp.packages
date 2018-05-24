@@ -43,6 +43,6 @@
   <rcp version="4.8.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-php-photon-M7" />
+  <product name="eclipse-php-photon-RC1" />
 
 </configuration>
