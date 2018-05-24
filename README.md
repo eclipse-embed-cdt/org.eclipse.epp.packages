@@ -4,7 +4,7 @@ The EPP Build
 The [Eclipse Packaging Project (EPP)](http://www.eclipse.org/epp/) provides 
 the download packages based on the content of the yearly Simultaneous Release. 
 The download packages are provided from 
-[www.eclipse.org/downloads/](http://www.eclipse.org/downloads/).
+[www.eclipse.org/downloads/eclipse-packages/](https://www.eclipse.org/downloads/eclipse-packages/).
 
 Build a Package Locally
 -----------------------
@@ -18,7 +18,7 @@ the Simultaneous Release staging p2 repository:
 
 This build creates output in two places:
 
-1. tar.gz/zip archives with the packages in `archive/` and
+1. tar.gz/zip/dmg archives with the packages in `archive/` and
 2. a p2 repository with the EPP artifacts in `archive/repository/`.
 
 Windows users
@@ -55,6 +55,7 @@ Each package uses its own profile:
 - epp.package.php
 - epp.package.rcp
 - epp.package.reporting
+- epp.package.rust
 - epp.package.scout
 - epp.package.testing
 
