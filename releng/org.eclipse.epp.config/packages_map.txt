@@ -49,6 +49,10 @@ reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp
 reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.feature/feature.xml,HEAD,reporting.feature.xml
 reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.reporting.product/epp.product,HEAD,reporting.product.xml
 
+rust,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rust.feature/epp.website.xml,HEAD,rust.xml
+rust,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rust.feature/feature.xml,HEAD,rust.feature.xml
+rust,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rust.product/epp.product,HEAD,rust
+
 scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.feature/epp.website.xml,HEAD,scout.xml
 scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.feature/feature.xml,HEAD,scout.feature.xml
 scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.product/epp.product,HEAD,scout.product.xml
@@ -56,7 +60,3 @@ scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.pac
 testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.feature/epp.website.xml,HEAD,testing.xml
 testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.feature/feature.xml,HEAD,testing.feature.xml
 testing,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.testing.product/epp.product,HEAD,testing.product.xml
-
-rust,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rust.feature/epp.website.xml,HEAD,php.xml
-rust,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rust.feature/feature.xml,HEAD,php.feature.xml
-rust,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rust.product/epp.product,HEAD,php.product.xml
