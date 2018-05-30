@@ -25,7 +25,7 @@
   <properties>
     <java.version>1.8</java.version>
     <maven.version>3.1.1</maven.version>
-    <tycho.version>1.1.0</tycho.version>
+    <tycho.version>1.2.0</tycho.version>
     <tycho.extras.version>${tycho.version}</tycho.extras.version>
     <tycho.scmUrl>scm:git:git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git</tycho.scmUrl>
     <cbi.version>1.1.5</cbi.version>
@@ -67,7 +67,7 @@
     </pluginRepository>
     <pluginRepository>
       <id>tycho-staged</id>
-      <url>https://oss.sonatype.org/content/repositories/orgeclipsetycho-1046/</url>
+      <url>https://oss.sonatype.org/content/repositories/orgeclipsetycho-1049/</url>
     </pluginRepository>
     <!--
     <pluginRepository>
