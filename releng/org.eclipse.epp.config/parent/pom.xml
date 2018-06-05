@@ -65,16 +65,6 @@
       <id>eclipse-cbi</id>
       <url>https://repo.eclipse.org/content/groups/cbi/</url>
     </pluginRepository>
-    <pluginRepository>
-      <id>tycho-staged</id>
-      <url>https://oss.sonatype.org/content/repositories/orgeclipsetycho-1049/</url>
-    </pluginRepository>
-    <!--
-    <pluginRepository>
-        <id>tycho-snapshots</id>
-        <url>https://repo.eclipse.org/content/repositories/tycho-snapshots/</url>
-     </pluginRepository>
-    -->
   </pluginRepositories>
 
   <repositories>
