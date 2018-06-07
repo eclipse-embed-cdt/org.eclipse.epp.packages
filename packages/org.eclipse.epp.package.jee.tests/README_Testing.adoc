@@ -1,0 +1,28 @@
+= Testing the Java EE Developers package
+
+Running manual tests is very expensive. The test cases below should be considered for automation!
+
+NOTE: TODO: Automate tests
+
+Any failure to those test cases should be reported to the Eclipse.org project causing the error, and to the link:https://accounts.eclipse.org/mailing-list/epp-dev[EPP mailing-list].
+
+There is room for improvement in these test cases (more test cases, more detailed steps). Feel free to contribute!
+
+
+== How to test the Eclipse IDE for Java EE Developers package
+
+
+. See https://wiki.eclipse.org/J2EE_Smoke_Tests[J2EE Smoke Tests]
+
+. Next, perform manual checks of general layout, preferences.
+
+. Finally, check for changes from integrated features like m2e, oomph, etc.
+
+Note: TODO: add more details here!
+
+
+---
+
+Process last documented by: link:mailto:cbridgha@us.ibm.com[Chuck Bridgham] & link:mailto:nboldt@redhat.com[Nick Boldt]
+
+Official Package Tester: link:mailto:cbridgha@us.ibm.com[Chuck Bridgham]
