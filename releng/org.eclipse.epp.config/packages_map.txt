@@ -51,7 +51,7 @@ reporting,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp
 
 rust,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rust.feature/epp.website.xml,HEAD,rust.xml
 rust,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rust.feature/feature.xml,HEAD,rust.feature.xml
-rust,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rust.product/epp.product,HEAD,rust
+rust,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.rust.product/epp.product,HEAD,rust.product.xml
 
 scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.feature/epp.website.xml,HEAD,scout.xml
 scout,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.scout.feature/feature.xml,HEAD,scout.feature.xml
