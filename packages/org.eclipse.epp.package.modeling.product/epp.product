@@ -17,6 +17,7 @@
       <programArgs>-product org.eclipse.epp.package.modeling.product
 -showsplash org.eclipse.epp.package.common
 --launcher.defaultAction openFile
+-name "Eclipse IDE"
       </programArgs>
       <vmArgs>-Dosgi.requiredJavaVersion=1.8
 -Dosgi.instance.area.default=@user.home/eclipse-workspace
@@ -117,7 +118,7 @@ including, but not limited to the following locations:
     - Feature directories
 
 Note: if a Feature made available by the Eclipse Foundation is installed using the
-Provisioning Technology (as defined below), you must agree to a license ("Feature 
+Provisioning Technology (as defined below), you must agree to a license ("Feature
 Update License") during the installation process. If the Feature contains
 Included Features, the Feature Update License should either provide you
 with the terms and conditions governing the Included Features or inform
@@ -194,7 +195,7 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.epp.package.modeling.feature" version="4.8.0.qualifier"/>
       <feature id="org.eclipse.epp.package.common.feature" version="4.8.0.qualifier"/>
       <feature id="org.eclipse.platform" version="4.8.0.qualifier"/>
-      
+
       <feature id="org.eclipse.e4.core.tools.feature" installMode="root"/>
       <!-- not available in Neon on 2016-02-21
       <feature id="org.eclipse.egit.import" installMode="root"/>

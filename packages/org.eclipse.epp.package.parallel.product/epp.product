@@ -17,6 +17,7 @@
       <programArgs>-product org.eclipse.epp.package.parallel.product
 -showsplash org.eclipse.epp.package.common
 --launcher.defaultAction openFile
+-name "Eclipse IDE"
       </programArgs>
       <vmArgs>-Dosgi.requiredJavaVersion=1.8
 -Dosgi.instance.area.default=@user.home/eclipse-workspace
@@ -122,7 +123,7 @@ including, but not limited to the following locations:
     - Feature directories
 
 Note: if a Feature made available by the Eclipse Foundation is installed using the
-Provisioning Technology (as defined below), you must agree to a license (&quot;Feature 
+Provisioning Technology (as defined below), you must agree to a license (&quot;Feature
 Update License&quot;) during the installation process. If the Feature contains
 Included Features, the Feature Update License should either provide you
 with the terms and conditions governing the Included Features or inform
