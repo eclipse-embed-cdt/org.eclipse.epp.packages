@@ -17,7 +17,6 @@
       <programArgs>-product org.eclipse.epp.package.dsl.product
 -showsplash org.eclipse.epp.package.common
 --launcher.defaultAction openFile
--name "Eclipse IDE"
       </programArgs>
       <vmArgs>-Dosgi.requiredJavaVersion=1.8
 -Dosgi.instance.area.default=@user.home/eclipse-workspace
