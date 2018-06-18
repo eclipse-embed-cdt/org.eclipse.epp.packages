@@ -22,19 +22,19 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/CDT/User/NewIn90"
+    url="https://wiki.eclipse.org/CDT/User/NewIn95"
     project="Eclipse CDT" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/Linux_Tools_Project/News/NewIn60"
+    url="https://wiki.eclipse.org/Linux_Tools_Project/News/NewIn70"
     project="Eclipse Linux Tools" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.7/"
+    url="https://www.eclipse.org/eclipse/news/4.8/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/4.8"
+    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.0"
     project="Eclipse EGit" />
   </MoreInfo>
 
