@@ -8,7 +8,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse IDE for Rust Developers"
+   packageName="Eclipse IDE for Rust Developers (includes Incubating components)"
    maintainer="Eclipse Packaging Project"
    iconurl="https://bugs.eclipse.org/bugs/attachment.cgi?id=272561"
    bugzillaComponentId="rust-package"
@@ -41,6 +41,6 @@
   <rcp version="4.8.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-rust-photon-R" />
+  <product name="eclipse-rust-photon-R-incubation" />
 
 </configuration>
