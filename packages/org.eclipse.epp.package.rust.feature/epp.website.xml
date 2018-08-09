@@ -41,6 +41,6 @@
   <rcp version="4.9.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-rust-2018-09-M1-incubation" />
+  <product name="eclipse-rust-2018-09-M2-incubation" />
 
 </configuration>
