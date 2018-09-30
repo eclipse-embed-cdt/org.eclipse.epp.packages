@@ -44,6 +44,10 @@
     <eclipse.simultaneous.release.name>2018-09 (4.9.0)</eclipse.simultaneous.release.name>
     <!-- Upstream p2 repository, used as a source for pre-compiled build artifacts -->
     <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/2018-09/</eclipse.simultaneous.release.repository>
+
+    <!-- <gnumcueclipse.repository>http://gnu-mcu-eclipse.netlify.com/v4-neon-updates-test</gnumcueclipse.repository> -->
+    <gnumcueclipse.repository>http://gnu-mcu-eclipse.netlify.com/v4-neon-updates</gnumcueclipse.repository>
+    <gnumcueclipse.version>4.4.2</gnumcueclipse.version> 
   </properties>
 
   <!--
@@ -77,6 +81,11 @@
       <id>license-feature</id>
       <url>http://download.eclipse.org/cbi/updates/license/</url>
       <layout>p2</layout>
+    </repository>
+    <repository>
+      <id>gnu-mcu-eclipse</id>
+      <layout>p2</layout>
+      <url>${gnumcueclipse.repository}</url>
     </repository>
   </repositories>
 
@@ -363,17 +372,20 @@
                 <rootFolders>
                   <macosx>Eclipse.app</macosx>
                 </rootFolders>
-                <archiveFileName>${build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}</archiveFileName>
+                <!-- <archiveFileName>${build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}</archiveFileName> -->
+                <archiveFileName>${build}-gnumcueclipse-${gnumcueclipse.version}-${eclipse.simultaneous.release.id}</archiveFileName>
               </product>
             </products>
             <profile>${project.artifactId}</profile>
           </configuration>
         </plugin>
+        <!--
         <plugin>
           <groupId>org.eclipse.cbi.maven.plugins</groupId>
           <artifactId>eclipse-dmg-packager</artifactId>
           <version>${cbi.version}</version>
         </plugin>
+        -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-antrun-plugin</artifactId>
@@ -387,7 +399,7 @@
                   <copy todir="${basedir}/../../archive">
                     <fileset dir="${project.build.directory}/products">
                       <include name="*.zip" />
-                      <include name="*linux*.tar.gz" />
+                      <include name="*.tar.gz" />
                       <include name="*.dmg" />
                     </fileset>
                   </copy>
