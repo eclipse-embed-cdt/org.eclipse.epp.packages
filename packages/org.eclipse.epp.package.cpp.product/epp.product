@@ -239,6 +239,7 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="ilg.gnumcueclipse.debug.gdbjtag.openocd.feature" installMode="root"/>
       <feature id="ilg.gnumcueclipse.debug.gdbjtag.pyocd.feature" installMode="root"/>
       <feature id="ilg.gnumcueclipse.debug.gdbjtag.qemu.feature" installMode="root"/>
+      <feature id="ilg.gnumcueclipse.debug.gdbjtag.jumper.feature" installMode="root"/>
       <feature id="ilg.gnumcueclipse.packs.feature" installMode="root"/>
       <feature id="ilg.gnumcueclipse.doc.user.feature" installMode="root"/>
       <feature id="ilg.gnumcueclipse.templates.ad.feature" installMode="root"/>
