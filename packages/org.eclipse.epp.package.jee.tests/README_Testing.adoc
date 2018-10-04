@@ -9,7 +9,7 @@ Any failure to those test cases should be reported to the Eclipse.org project ca
 There is room for improvement in these test cases (more test cases, more detailed steps). Feel free to contribute!
 
 
-== How to test the Eclipse IDE for Java EE Developers package
+== How to test the Eclipse IDE for Enterprise Java Developers package
 
 
 . See https://wiki.eclipse.org/J2EE_Smoke_Tests[J2EE Smoke Tests]
