@@ -19,7 +19,7 @@
 
   <groupId>org.eclipse.epp</groupId>
   <artifactId>org.eclipse.epp-parent</artifactId>
-  <version>4.9.0-SNAPSHOT</version>
+  <version>4.10.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
@@ -37,13 +37,13 @@
     <!-- The location that is used to assemble the single EPP configuration p2 repository -->
     <eclipse.epp.targetRepository>${eclipse.epp.archiveDirectory}/repository/</eclipse.epp.targetRepository>
     <!-- ID used to generate the filename of the packages -->
-    <eclipse.simultaneous.release.id>2018-09</eclipse.simultaneous.release.id>
+    <eclipse.simultaneous.release.id>2018-12</eclipse.simultaneous.release.id>
     <!-- Timestamp used in various places, e.g. the about dialog (see about.mappings) -->
     <eclipse.simultaneous.release.build>${maven.build.timestamp}</eclipse.simultaneous.release.build>
     <!-- Human readable name of the release, e.g. used in the about dialog (see about.mappings) -->
-    <eclipse.simultaneous.release.name>2018-09 (4.9.0)</eclipse.simultaneous.release.name>
+    <eclipse.simultaneous.release.name>2018-12 M1 (4.10.0)</eclipse.simultaneous.release.name>
     <!-- Upstream p2 repository, used as a source for pre-compiled build artifacts -->
-    <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/2018-09/</eclipse.simultaneous.release.repository>
+    <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/2018-12/</eclipse.simultaneous.release.repository>
   </properties>
 
   <!--

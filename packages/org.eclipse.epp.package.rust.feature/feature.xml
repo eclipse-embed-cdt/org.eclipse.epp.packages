@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.rust.feature"
       label="EPP PHP Feature"
-      version="4.9.0.qualifier"
+      version="4.10.0.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.rust"
       license-feature="org.eclipse.license"
