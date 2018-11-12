@@ -30,9 +30,6 @@
   <NewAndNoteworthy
     url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.0"
     project="Eclipse EGit" />
-  <NewAndNoteworthy
-    url="https://www.eclipse.org/recommenders/manual/"
-    project="Eclipse Code Recommenders" />  
   </MoreInfo>
 
 
