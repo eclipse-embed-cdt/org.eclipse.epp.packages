@@ -440,18 +440,4 @@
             icon="platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png">
       </command>
    </extension>
-   <extension
-         point="org.eclipse.recommenders.news.rcp.feed">
-      <feed
-            id="org.eclipse.epp.package.feed.planetEclipse"
-            name="%feed.planetEclipse.name"
-            uri="http://planeteclipse.org/planet/rss20.xml">
-      </feed>
-      <feed
-            id="org.eclipse.epp.package.feed.marketplace"
-            name="%feed.marketplace.name"
-            pollingInterval="480"
-            uri="http://marketplace.eclipse.org/rss.xml">
-      </feed>
-   </extension>
 </plugin>
