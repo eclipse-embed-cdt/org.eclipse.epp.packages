@@ -23,7 +23,6 @@
   <packaging>pom</packaging>
 
   <properties>
-    <java.version>1.8</java.version>
     <maven.version>3.1.1</maven.version>
     <tycho.version>1.2.0</tycho.version>
     <tycho.extras.version>${tycho.version}</tycho.extras.version>
@@ -46,12 +45,6 @@
     <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/2018-12/</eclipse.simultaneous.release.repository>
   </properties>
 
-  <!--
-     See maven-enforcer-plugin configuration to actually break the build if run with older maven.
-     prerequisites section is kept for now as even if it doesn't break the build, it is used by
-     other plugins like versions-maven-plugin which check and warn for using plugins with older
-     than they require Maven version.
-  -->
   <prerequisites>
     <maven>${maven.version}</maven>
   </prerequisites>
@@ -181,29 +174,6 @@
         </executions>
       </plugin>
 
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-enforcer-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>enforce-versions</id>
-            <goals>
-              <goal>enforce</goal>
-            </goals>
-            <configuration>
-              <rules>
-                <requireMavenVersion>
-                  <version>${maven.version}</version>
-                </requireMavenVersion>
-                <requireJavaVersion>
-                  <version>${java.version}</version>
-                </requireJavaVersion>
-              </rules>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-
     </plugins>
 
     <pluginManagement>
@@ -212,11 +182,6 @@
           <groupId>org.eclipse.tycho</groupId>
           <artifactId>tycho-maven-plugin</artifactId>
           <version>${tycho.version}</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-enforcer-plugin</artifactId>
-          <version>1.4</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
