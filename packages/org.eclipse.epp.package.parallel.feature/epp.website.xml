@@ -41,9 +41,9 @@
 
 	<!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-	<rcp version="4.9.0" />
+	<rcp version="4.10.0" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-parallel-2018-09" />
+	<product name="eclipse-parallel-2018-12-R" />
 
 </configuration>

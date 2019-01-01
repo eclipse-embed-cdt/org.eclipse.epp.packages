@@ -2,11 +2,10 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: EPP Java Package
 Bundle-SymbolicName: org.eclipse.epp.package.java;singleton:=true
-Bundle-Version: 4.9.0.qualifier
+Bundle-Version: 4.10.0.qualifier
 Bundle-Vendor: Eclipse Packaging Project
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Require-Bundle: org.eclipse.platform,
- org.eclipse.equinox.app,
- org.eclipse.recommenders.news.rcp;bundle-version="[2.3.0,3.0.0)";resolution:=optional
+ org.eclipse.equinox.app
 Eclipse-BundleShape: dir
 Bundle-Localization: plugin

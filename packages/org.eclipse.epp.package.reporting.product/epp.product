@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse IDE for Java and Report Developers" uid="epp.package.reporting" id="org.eclipse.epp.package.reporting.product" application="org.eclipse.ui.ide.workbench" version="4.9.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse IDE for Java and Report Developers" uid="epp.package.reporting" id="org.eclipse.epp.package.reporting.product" application="org.eclipse.ui.ide.workbench" version="4.10.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/org.eclipse.epp.package.reporting/eclipse_lg.png"/>
@@ -191,9 +191,9 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.reporting.feature" version="4.9.0.qualifier"/>
-      <feature id="org.eclipse.epp.package.common.feature" version="4.9.0.qualifier"/>
-      <feature id="org.eclipse.platform" version="4.9.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.reporting.feature" version="4.10.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.common.feature" version="4.10.0.qualifier"/>
+      <feature id="org.eclipse.platform" version="4.10.0.qualifier"/>
       <feature id="org.eclipse.epp.mpc" installMode="root"/>
 
       <feature id="org.eclipse.birt.chart.cshelp" installMode="root"/>
@@ -242,7 +242,9 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
       <feature id="org.eclipse.jdt" installMode="root"/>
       <feature id="org.eclipse.jpt.common.eclipselink.feature" installMode="root"/>
       <feature id="org.eclipse.jpt.common.feature" installMode="root"/>
+      <!-- Bug 539852 remove feature as not compatible w/ JDK 11
       <feature id="org.eclipse.jpt.dbws.eclipselink.feature" installMode="root"/>
+      -->
       <feature id="org.eclipse.jpt.jaxb.eclipselink.feature" installMode="root"/>
       <feature id="org.eclipse.jpt.jaxb.feature" installMode="root"/>
       <feature id="org.eclipse.jpt.jpa.eclipselink.feature" installMode="root"/>
