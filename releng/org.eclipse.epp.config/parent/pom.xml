@@ -47,7 +47,8 @@
     <!-- <gnumcueclipse.repository>http://gnu-mcu-eclipse.netlify.com/v4-neon-updates</gnumcueclipse.repository> -->
     <!-- <gnumcueclipse.repository>http://gnu-mcu-eclipse.netlify.com/v4-neon-updates-test</gnumcueclipse.repository> -->
     <!-- <gnumcueclipse.repository>http://gnu-mcu-eclipse.netlify.com/v4-neon-updates-experimental</gnumcueclipse.repository> -->
-    <gnumcueclipse.repository>http://gnu-mcu-eclipse.netlify.com/v4-neon-updates-test-experimenatal</gnumcueclipse.repository>
+    <gnumcueclipse.repository>http://gnu-mcu-eclipse.netlify.com/v4-neon-updates-experimental</gnumcueclipse.repository>
+    <gnumcueclipse.version>4.5.1</gnumcueclipse.version> 
   </properties>
 
   <prerequisites>
