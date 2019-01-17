@@ -30,7 +30,7 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=M2E-WTP">here
     url="https://www.eclipse.org/webtools/development/news/main.php"
     project="Eclipse Web Tools Platform Project" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.10/"
+    url="https://www.eclipse.org/eclipse/news/4.11/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/mylyn/new/"
@@ -42,9 +42,9 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=M2E-WTP">here
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="4.10.0" />
+  <rcp version="4.11.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-jee-2018-12-R" />
+  <product name="eclipse-jee-2019-03-M1" />
 
 </configuration>
