@@ -85,13 +85,6 @@
    <extension
          point="org.eclipse.ui.intro.quicklinks">
       <command
-            id="org.eclipse.ui.newWizard(newWizardId=org.eclipse.wst.web.ui.internal.wizards.SimpleWebProjectWizard)"
-            label="%ql.newWebProject.label"
-            description="%ql.newWebProject.description"
-            importance="medium"
-            resolution="launchbar">
-      </command>
-      <command
             id="org.eclipse.ui.file.import(importWizardId=org.eclipse.egit.ui.internal.clone.GitCloneWizard)"
             description="%ql.checkoutGitProject.description"
             icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/egit-checkout.png"
