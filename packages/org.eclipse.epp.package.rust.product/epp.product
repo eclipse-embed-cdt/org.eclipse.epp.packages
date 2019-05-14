@@ -365,7 +365,6 @@ version(s), and exceptions or additional permissions here}."
       <feature id="org.eclipse.corrosion.feature" installMode="root"/>
       <!-- TODO debug features for CDT? -->
       <feature id="org.eclipse.tm.terminal.feature" installMode="root"/>
-      <feature id="org.eclipse.wst.xml_ui.feature" installMode="root"/>
    </features>
 
    <repositories>

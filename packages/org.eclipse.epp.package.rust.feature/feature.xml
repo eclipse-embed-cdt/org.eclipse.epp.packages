@@ -20,6 +20,12 @@
       %license
    </license>
 
+   <requires>
+      <!-- Listed in feature.xml because the .product only allows features and
+       there is no feature for XML only in Wild Web Developer -->
+      <import plugin="org.eclipse.wildwebdeveloper.xml"/>
+   </requires>
+
    <includes
          id="org.eclipse.platform"
          version="0.0.0"
