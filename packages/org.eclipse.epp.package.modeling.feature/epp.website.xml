@@ -39,6 +39,6 @@
   <rcp version="4.12.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-modeling-2019-06-RC1" />
+  <product name="eclipse-modeling-2019-06-RC2" />
 
 </configuration>
