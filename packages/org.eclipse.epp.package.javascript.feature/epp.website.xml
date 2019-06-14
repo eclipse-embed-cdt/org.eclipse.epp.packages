@@ -25,13 +25,13 @@
     url="https://www.eclipse.org/webtools/development/news/main.php"
     project="Eclipse Webtools Project" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.11/"
+    url="https://www.eclipse.org/eclipse/news/4.12/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.0"
+    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.4"
     project="Eclipse EGit" />
   </MoreInfo>
 
@@ -41,6 +41,6 @@
   <rcp version="4.12.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-javascript-2019-06-RC2" />
+  <product name="eclipse-javascript-2019-06-R" />
 
 </configuration>
