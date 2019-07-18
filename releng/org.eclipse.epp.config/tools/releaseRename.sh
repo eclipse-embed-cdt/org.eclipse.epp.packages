@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RELEASETRAIN=2019-06
+RELEASETRAIN=2019-09
 RELEASEDIRECTORY=/home/data/httpd/download.eclipse.org/technology/epp/downloads/release
 TESTDIRECTORY=/shared/technology/epp/epp_build/${RELEASETRAIN}/download
 CURRENTDIR=${PWD}

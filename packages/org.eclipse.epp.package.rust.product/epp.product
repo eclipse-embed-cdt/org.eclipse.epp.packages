@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse IDE for Rust Developers" uid="epp.package.rust" id="org.eclipse.epp.package.rust.product" application="org.eclipse.ui.ide.workbench" version="4.12.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse IDE for Rust Developers" uid="epp.package.rust" id="org.eclipse.epp.package.rust.product" application="org.eclipse.ui.ide.workbench" version="4.13.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/org.eclipse.epp.package.rust/eclipse_lg.png"/>
@@ -345,9 +345,9 @@ version(s), and exceptions or additional permissions here}."
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.rust.feature" version="4.12.0.qualifier"/>
-      <feature id="org.eclipse.epp.package.common.feature" version="4.12.0.qualifier"/>
-      <feature id="org.eclipse.platform" version="4.12.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.rust.feature" version="4.13.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.common.feature" version="4.13.0.qualifier"/>
+      <feature id="org.eclipse.platform" version="4.13.0.qualifier"/>
       <feature id="org.eclipse.epp.mpc" installMode="root"/>
 
       <feature id="org.eclipse.egit" installMode="root"/>
