@@ -34,7 +34,7 @@
     url="https://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.4"
+    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.5"
     project="Eclipse EGit" />
   </MoreInfo>
 
@@ -44,6 +44,6 @@
   <rcp version="4.13.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-cpp-2019-09-RC1" />
+  <product name="eclipse-cpp-2019-09-R" />
 
 </configuration>

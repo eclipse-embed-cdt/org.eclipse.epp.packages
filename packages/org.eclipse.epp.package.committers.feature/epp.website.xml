@@ -32,7 +32,7 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EGit">here</a
     url="https://www.eclipse.org/eclipse/news/4.13/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.4"
+    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.5"
     project="Eclipse EGit" />
   </MoreInfo>
 
@@ -41,6 +41,6 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EGit">here</a
   <rcp version="4.13.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-committers-2019-09-RC1" />
+  <product name="eclipse-committers-2019-09-R" />
 
 </configuration>
