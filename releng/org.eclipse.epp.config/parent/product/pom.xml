@@ -135,6 +135,8 @@
                     <fileName>Eclipse.app</fileName>
                   </fileNames>
                   <timeoutMillis>300000</timeoutMillis> <!-- 5 min -->
+                  <signerUrl>http://172.30.206.146:8282/macosx-signing-service/1.0.1-SNAPSHOT</signerUrl>
+                  <entitlements>${project.basedir}/../releng/macos/product.entitlements</entitlements>
                 </configuration>
               </execution>
             </executions>
