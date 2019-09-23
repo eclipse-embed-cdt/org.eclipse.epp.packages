@@ -8,13 +8,13 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse IDE for JavaScript and Web Developers"
+   packageName="Eclipse IDE for Web and JavaScript Developers (includes Incubating components)"
    maintainer="Eclipse Packaging Project"
    iconurl="http://www.eclipse.org/downloads/images/javascript.png"
    bugzillaComponentId="javascript-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-     <description><![CDATA[The essential tools for any JavaScript developer, including JavaScript, HTML, CSS, XML languages support, Git client, and Mylyn.]]></description>
+     <description><![CDATA[The essential tools for any JavaScript developer, including JavaScript, TypeScript, HTML, CSS, XML, Yaml, Markdown... languages support; Kubernetes, Angular and React frameworks support;  Node.js debugger; Git client; Mylyn task management; integrated terminal and remote filesystem explorer; Web and application server management.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
       <tester>Mickael Istria</tester>
@@ -25,22 +25,22 @@
     url="https://www.eclipse.org/webtools/development/news/main.php"
     project="Eclipse Webtools Project" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.11/"
+    url="https://www.eclipse.org/eclipse/news/4.12/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.0"
+    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.4"
     project="Eclipse EGit" />
   </MoreInfo>
 
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="4.11.0" />
+  <rcp version="4.12.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-javascript-2019-03-R" />
+  <product name="eclipse-javascript-2019-06-R" />
 
 </configuration>

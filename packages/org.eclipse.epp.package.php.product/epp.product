@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse IDE for PHP Developers" uid="epp.package.php" id="org.eclipse.epp.package.php.product" application="org.eclipse.ui.ide.workbench" version="4.11.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse IDE for PHP Developers" uid="epp.package.php" id="org.eclipse.epp.package.php.product" application="org.eclipse.ui.ide.workbench" version="4.12.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/org.eclipse.epp.package.php/eclipse_lg.png"/>
@@ -41,7 +41,7 @@
       location="org.eclipse.epp.package.common"
       startupProgressRect="2,290,448,10"
       startupMessageRect="7,265,320,20"
-      startupForegroundColor="c1bc1f" />
+      startupForegroundColor="ffffff" />
    <launcher name="eclipse">
       <solaris/>
       <win useIco="false">
@@ -191,9 +191,9 @@ Java and all Java-based trademarks are trademarks of Oracle Corporation in the U
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.php.feature" version="4.11.0.qualifier"/>
-      <feature id="org.eclipse.epp.package.common.feature" version="4.11.0.qualifier"/>
-      <feature id="org.eclipse.platform" version="4.11.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.php.feature" version="4.12.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.common.feature" version="4.12.0.qualifier"/>
+      <feature id="org.eclipse.platform" version="4.12.0.qualifier"/>
       <feature id="org.eclipse.epp.mpc" installMode="root"/>
 
       <feature id="org.eclipse.egit" installMode="root"/>

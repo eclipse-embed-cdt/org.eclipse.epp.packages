@@ -22,7 +22,7 @@
          </property>
          <property
                name="startupForegroundColor"
-               value="c1bc1f">
+               value="ffffff">
          </property>
          <property
                name="startupMessageRect"
@@ -84,13 +84,6 @@
 
    <extension
          point="org.eclipse.ui.intro.quicklinks">
-      <command
-            id="org.eclipse.ui.newWizard(newWizardId=org.eclipse.wst.web.ui.internal.wizards.SimpleWebProjectWizard)"
-            label="%ql.newWebProject.label"
-            description="%ql.newWebProject.description"
-            importance="medium"
-            resolution="launchbar">
-      </command>
       <command
             id="org.eclipse.ui.file.import(importWizardId=org.eclipse.egit.ui.internal.clone.GitCloneWizard)"
             description="%ql.checkoutGitProject.description"
