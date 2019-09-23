@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.php.feature"
       label="EPP PHP Feature"
-      version="4.12.0.qualifier"
+      version="4.13.0.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.php"
       license-feature="org.eclipse.license"

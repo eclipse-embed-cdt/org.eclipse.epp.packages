@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.eclipse.epp.package.rust.feature"
-      label="EPP PHP Feature"
-      version="4.12.0.qualifier"
+      label="EPP Rust Feature"
+      version="4.13.0.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.rust"
       license-feature="org.eclipse.license"

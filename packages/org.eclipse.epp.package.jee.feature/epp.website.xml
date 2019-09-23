@@ -27,24 +27,24 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=M2E-WTP">here
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="https://www.eclipse.org/webtools/development/news/main.php"
+    url="https://www.eclipse.org/webtools/releases/3.15/NewAndNoteworthy/"
     project="Eclipse Web Tools Platform Project" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.12/"
+    url="https://www.eclipse.org/eclipse/news/4.13/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.4"
+    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.5"
     project="Eclipse EGit" />
   </MoreInfo>
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="4.12.0" />
+  <rcp version="4.13.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-jee-2019-06-R" />
+  <product name="eclipse-jee-2019-09-R" />
 
 </configuration>
