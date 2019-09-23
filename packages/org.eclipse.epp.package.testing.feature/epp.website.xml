@@ -29,7 +29,7 @@
     url="https://www.eclipse.org/jubula/new.php"
     project="Eclipse Jubula" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.8/"
+    url="https://www.eclipse.org/eclipse/news/4.11/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/mylyn/new/"
@@ -39,9 +39,9 @@
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="4.10.0" />
+  <rcp version="4.11.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-testing-2018-12-R" />
+  <product name="eclipse-testing-2019-03-R" />
 
 </configuration>

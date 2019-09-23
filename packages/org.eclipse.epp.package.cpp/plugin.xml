@@ -92,16 +92,11 @@
             importance="high">
       </url>
       <command
-            id="org.eclipse.ui.newWizard(newWizardId=org.eclipse.cdt.ui.wizards.NewCWizard2)"
-            description="%ql.newCProject.description"
-            label="%ql.newCProject.label"
+            id="org.eclipse.ui.newWizard(newWizardId=org.eclipse.cdt.ui.wizard.project)"
+            description="%ql.newCCPPProject.description"
+            label="%ql.newCCPPProject.label"
             importance="medium"
             resolution="launchbar">
-      </command>
-      <command
-            description="%ql.newCPPProject.description"
-            id="org.eclipse.ui.newWizard(newWizardId=org.eclipse.cdt.ui.wizards.NewCWizard1)"
-            label="%ql.newCPPProject.label">
       </command>
       <command
             id="org.eclipse.ui.newWizard(newWizardId=org.eclipse.cdt.ui.wizards.NewMakeFromExisting)"

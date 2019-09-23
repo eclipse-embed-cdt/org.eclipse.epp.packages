@@ -25,10 +25,10 @@
     url="https://wiki.eclipse.org/PTP/new_and_noteworthy/9.2.0"
     project="Eclipse PTP" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.8/"
+    url="https://www.eclipse.org/eclipse/news/4.11/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/CDT/User/NewIn95"
+    url="https://wiki.eclipse.org/CDT/User/NewIn97"
     project="Eclipse CDT" />
   <NewAndNoteworthy
     url="https://wiki.eclipse.org/Linux_Tools_Project/News/NewIn70"
@@ -41,9 +41,9 @@
 
 	<!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-	<rcp version="4.10.0" />
+	<rcp version="4.11.0" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-parallel-2018-12-R" />
+	<product name="eclipse-parallel-2019-03-R" />
 
 </configuration>
