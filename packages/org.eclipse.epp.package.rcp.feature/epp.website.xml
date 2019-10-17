@@ -22,7 +22,7 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.13/"
+    url="https://www.eclipse.org/eclipse/news/4.14/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/rap/noteworthy/3.10/"
@@ -41,9 +41,9 @@
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="4.13.0" />
+  <rcp version="4.14.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-rcp-2019-09-R" />
+  <product name="eclipse-rcp-2019-12-M1" />
 
 </configuration>

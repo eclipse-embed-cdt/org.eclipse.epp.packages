@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.java.feature"
       label="EPP Java Package"
-      version="4.13.0.qualifier"
+      version="4.14.0.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.java"
       license-feature="org.eclipse.license"

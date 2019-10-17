@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse IDE for Enterprise Java Developers" uid="epp.package.jee" id="org.eclipse.epp.package.jee.product" application="org.eclipse.ui.ide.workbench" version="4.13.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse IDE for Enterprise Java Developers" uid="epp.package.jee" id="org.eclipse.epp.package.jee.product" application="org.eclipse.ui.ide.workbench" version="4.14.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/org.eclipse.epp.package.jee/aboutgears_115x.png"/>
@@ -208,9 +208,9 @@ United States, other countries, or both.
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.jee.feature" version="4.13.0.qualifier"/>
-      <feature id="org.eclipse.epp.package.common.feature" version="4.13.0.qualifier"/>
-      <feature id="org.eclipse.platform" version="4.13.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.jee.feature" version="4.14.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.common.feature" version="4.14.0.qualifier"/>
+      <feature id="org.eclipse.platform" version="4.14.0.qualifier"/>
       <feature id="org.eclipse.epp.mpc" installMode="root"/>
 
       <feature id="org.eclipse.datatools.common.doc.user" installMode="root"/>
