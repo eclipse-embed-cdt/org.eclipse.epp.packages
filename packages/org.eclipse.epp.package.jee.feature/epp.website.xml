@@ -45,6 +45,6 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=M2E-WTP">here
   <rcp version="4.14.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-jee-2019-12-M1" />
+  <product name="eclipse-jee-2019-12-M2" />
 
 </configuration>
