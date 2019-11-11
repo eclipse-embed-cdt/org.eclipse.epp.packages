@@ -212,11 +212,7 @@ United States, other countries, or both.
       <feature id="org.eclipse.epp.package.common.feature" version="4.14.0.qualifier"/>
       <feature id="org.eclipse.platform" version="4.14.0.qualifier"/>
       <feature id="org.eclipse.epp.mpc" installMode="root"/>
-
       <feature id="org.eclipse.egit" installMode="root"/>
-      <!-- not available in Neon on 2016-02-21
-      <feature id="org.eclipse.egit.import" installMode="root"/>
-      -->
       <feature id="org.eclipse.egit.mylyn" installMode="root"/>
       <feature id="org.eclipse.help.source" installMode="root"/>
       <feature id="org.eclipse.jdt" installMode="root"/>
@@ -233,6 +229,7 @@ United States, other countries, or both.
       <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
       <feature id="org.eclipse.scout.sdk-feature" installMode="root"/>
       <feature id="org.eclipse.wst.xml_ui.feature" installMode="root"/>
+      <feature id="org.eclipse.wst.web_ui.feature" installMode="root"/>
    </features>
 
 
