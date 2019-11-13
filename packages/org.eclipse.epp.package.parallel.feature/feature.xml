@@ -44,12 +44,6 @@
          search-location="both"/>
 
    <includes
-         id="org.eclipse.linuxtools.oprofile.feature"
-         version="0.0.0"
-         optional="true"
-         search-location="both"/>
-
-   <includes
          id="org.eclipse.linuxtools.rpm"
          version="0.0.0"
          optional="true"
