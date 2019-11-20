@@ -273,6 +273,7 @@ United States, other countries, or both.
 
       <feature id="org.eclipse.jsf.feature"  installMode="root"/>
 
+      <feature id="org.eclipse.wst.server_adapters.feature" installMode="root"/>
       <feature id="org.eclipse.jst.common.fproj.enablement.jdt" installMode="root"/>
       <feature id="org.eclipse.jst.enterprise_ui.feature" installMode="root"/>
       <feature id="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature" installMode="root"/>
@@ -313,10 +314,10 @@ United States, other countries, or both.
       <feature id="org.eclipse.wst.common.fproj" installMode="root"/>
       <feature id="org.eclipse.wst.jsdt.feature" installMode="root"/>
       <feature id="org.eclipse.wst.jsdt.chromium.debug.feature" installMode="root"/>
-      <feature id="org.eclipse.wst.server_adapters.feature" installMode="root"/>
       <feature id="org.eclipse.wst.web_ui.feature" installMode="root"/>
       <feature id="org.eclipse.wst.xml_ui.feature" installMode="root"/>
       <feature id="org.eclipse.wst.xsl.feature" installMode="root"/>
+      <feature id="org.eclipse.wildwebdeveloper.feature" installMode="root"/>
 
       <feature id="org.eclipse.tips.feature" installMode="root"/>
    </features>
