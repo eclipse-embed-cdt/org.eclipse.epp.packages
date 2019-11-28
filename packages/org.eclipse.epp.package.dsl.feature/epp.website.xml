@@ -31,6 +31,6 @@
   <rcp version="4.14.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-dsl-2019-12-M2" />
+  <product name="eclipse-dsl-2019-12-M3" />
 
 </configuration>
