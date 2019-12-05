@@ -107,14 +107,6 @@
       </modules>
     </profile>
     <profile>
-      <id>epp.package.reporting</id>
-      <modules>
-        <module>packages/org.eclipse.epp.package.reporting</module>
-        <module>packages/org.eclipse.epp.package.reporting.feature</module>
-        <module>packages/org.eclipse.epp.package.reporting.product</module>
-      </modules>
-    </profile>
-    <profile>
       <id>epp.package.scout</id>
       <modules>
         <module>packages/org.eclipse.epp.package.scout</module>

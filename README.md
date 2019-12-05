@@ -54,7 +54,6 @@ Each package uses its own profile:
 - epp.package.parallel
 - epp.package.php
 - epp.package.rcp
-- epp.package.reporting
 - epp.package.rust
 - epp.package.scout
 - epp.package.testing
