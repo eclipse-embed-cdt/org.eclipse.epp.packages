@@ -27,7 +27,7 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=M2E-WTP">here
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="https://www.eclipse.org/webtools/releases/3.15/NewAndNoteworthy/"
+    url="https://www.eclipse.org/webtools/releases/3.16/NewAndNoteworthy/"
     project="Eclipse Web Tools Platform Project" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/eclipse/news/4.14/"
@@ -36,7 +36,7 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=M2E-WTP">here
     url="https://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.5"
+    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.6"
     project="Eclipse EGit" />
   </MoreInfo>
 
@@ -45,6 +45,6 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=M2E-WTP">here
   <rcp version="4.14.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-jee-2019-12-RC1" />
+  <product name="eclipse-jee-2019-12-R" />
 
 </configuration>
