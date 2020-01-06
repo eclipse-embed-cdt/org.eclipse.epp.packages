@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.parallel.feature"
       label="EPP Parallel Feature"
-      version="4.13.0.qualifier"
+      version="4.14.0.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.parallel"
       license-feature="org.eclipse.license"
@@ -39,12 +39,6 @@
 
    <includes
          id="org.eclipse.linuxtools.gprof.feature"
-         version="0.0.0"
-         optional="true"
-         search-location="both"/>
-
-   <includes
-         id="org.eclipse.linuxtools.oprofile.feature"
          version="0.0.0"
          optional="true"
          search-location="both"/>

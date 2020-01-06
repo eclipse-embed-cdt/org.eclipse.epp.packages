@@ -5,7 +5,7 @@ properties.0.name = org.eclipse.equinox.p2.type.product
 properties.0.value = true
 
 properties.1.name = org.eclipse.equinox.p2.description
-properties.1.value = 2019-09 Release of the Eclipse Committers package.
+properties.1.value = 2019-12 Release of the Eclipse Committers package.
 
 properties.2.name = org.eclipse.equinox.p2.provider
 properties.2.value = Eclipse Packaging Project

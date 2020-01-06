@@ -22,7 +22,7 @@ Contributors:
   <xsl:template match="repository/properties">
     <properties size='{@size+1}'>
       <xsl:copy-of select="property" />
-      <property name='p2.statsURI' value='http://download.eclipse.org/stats/technology/epp/packages/2019-09' />
+      <property name='p2.statsURI' value='http://download.eclipse.org/stats/technology/epp/packages/2019-12' />
     </properties>
   </xsl:template>
 
@@ -63,10 +63,6 @@ Contributors:
   </xsl:template>
 
   <xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.rcp']/properties">
-    <xsl:call-template name="artifact_properties" />
-  </xsl:template>
-
-  <xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.reporting']/properties">
     <xsl:call-template name="artifact_properties" />
   </xsl:template>
 
@@ -131,10 +127,6 @@ Contributors:
   </xsl:template>
 
   <xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.rcp.feature']/properties">
-    <xsl:call-template name="artifact_properties_feature" />
-  </xsl:template>
-
-  <xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.reporting.feature']/properties">
     <xsl:call-template name="artifact_properties_feature" />
   </xsl:template>
 

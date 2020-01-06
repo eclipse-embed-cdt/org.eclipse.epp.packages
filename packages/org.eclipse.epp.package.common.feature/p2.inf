@@ -3,5 +3,5 @@ properties.1.name=org.eclipse.equinox.p2.type.category
 properties.1.value=false
 
 instructions.configure=\
-org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/releases/latest,name:Latest Eclipse Release,enabled:false);\
-org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/releases/latest,name:Latest Eclipse Release,enabled:false);
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/releases/latest,name:Latest Eclipse Release,enabled:true);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/releases/latest,name:Latest Eclipse Release,enabled:true);

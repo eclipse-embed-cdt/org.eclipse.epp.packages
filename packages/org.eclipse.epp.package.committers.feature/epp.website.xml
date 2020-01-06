@@ -29,18 +29,18 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EGit">here</a
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.13/"
+    url="https://www.eclipse.org/eclipse/news/4.14/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.5"
+    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.6"
     project="Eclipse EGit" />
   </MoreInfo>
 
   <!-- version, the RCP version to build. This is used to determine the file
     name of the root file archives -->
-  <rcp version="4.13.0" />
+  <rcp version="4.14.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-committers-2019-09-R" />
+  <product name="eclipse-committers-2019-12-R" />
 
 </configuration>

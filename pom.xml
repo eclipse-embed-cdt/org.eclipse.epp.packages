@@ -20,7 +20,7 @@
   <parent>
     <groupId>org.eclipse.epp</groupId>
     <artifactId>org.eclipse.epp-parent</artifactId>
-    <version>4.13.0-SNAPSHOT</version>
+    <version>4.14.0-SNAPSHOT</version>
     <relativePath>releng/org.eclipse.epp.config/parent/</relativePath>
   </parent>
 
@@ -104,14 +104,6 @@
         <module>packages/org.eclipse.epp.package.rcp</module>
         <module>packages/org.eclipse.epp.package.rcp.feature</module>
         <module>packages/org.eclipse.epp.package.rcp.product</module>
-      </modules>
-    </profile>
-    <profile>
-      <id>epp.package.reporting</id>
-      <modules>
-        <module>packages/org.eclipse.epp.package.reporting</module>
-        <module>packages/org.eclipse.epp.package.reporting.feature</module>
-        <module>packages/org.eclipse.epp.package.reporting.product</module>
       </modules>
     </profile>
     <profile>
