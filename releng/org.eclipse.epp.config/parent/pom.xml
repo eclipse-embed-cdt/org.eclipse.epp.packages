@@ -40,7 +40,7 @@
     <!-- Timestamp used in various places, e.g. the about dialog (see about.mappings) -->
     <eclipse.simultaneous.release.build>${maven.build.timestamp}</eclipse.simultaneous.release.build>
     <!-- Human readable name of the release, e.g. used in the about dialog (see about.mappings) -->
-    <eclipse.simultaneous.release.name>2020-03 (4.15.0)</eclipse.simultaneous.release.name>
+    <eclipse.simultaneous.release.name>2020-03 M1 (4.15.0M1)</eclipse.simultaneous.release.name>
     <!-- Upstream p2 repository, used as a source for pre-compiled build artifacts -->
     <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/2020-03/</eclipse.simultaneous.release.repository>
   </properties>
