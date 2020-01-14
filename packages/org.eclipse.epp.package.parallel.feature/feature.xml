@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.parallel.feature"
       label="EPP Parallel Feature"
-      version="4.14.0.qualifier"
+      version="4.15.0.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.parallel"
       license-feature="org.eclipse.license"

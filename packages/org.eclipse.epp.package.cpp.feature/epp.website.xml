@@ -28,7 +28,7 @@
     url="https://wiki.eclipse.org/Linux_Tools_Project/News/NewIn75"
     project="Eclipse Linux Tools" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.14/"
+    url="https://www.eclipse.org/eclipse/news/4.15/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/mylyn/new/"
@@ -41,9 +41,9 @@
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="4.14.0" />
+  <rcp version="4.15.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-cpp-2019-12-R" />
+  <product name="eclipse-cpp-2020-03-M1" />
 
 </configuration>
