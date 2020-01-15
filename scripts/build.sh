@@ -55,3 +55,7 @@ do
   do_compute_sha shasum -a 256 -p ${f}
 done
 popd
+
+echo
+echo 'Done. The build used:'
+mvn --version
