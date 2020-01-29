@@ -22,8 +22,8 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="https://www.eclipse.org/webtools/releases/3.16/NewAndNoteworthy/"
-    project="Eclipse Webtools Project" />
+    url="https://www.eclipse.org/webtools/releases/3.17/NewAndNoteworthy/"
+    project="Eclipse Web Tools Platform Project" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/eclipse/news/4.15/"
     project="Eclipse Platform" />
@@ -31,7 +31,7 @@
     url="https://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.6"
+    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.7"
     project="Eclipse EGit" />
   </MoreInfo>
 
