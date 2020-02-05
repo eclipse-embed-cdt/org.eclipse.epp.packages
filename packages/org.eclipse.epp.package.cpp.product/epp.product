@@ -219,6 +219,7 @@ United States, other countries, or both.
       <feature id="org.eclipse.cdt.qt" installMode="root"/>
       <feature id="org.eclipse.cdt.arduino" installMode="root"/>
       <feature id="org.eclipse.cdt.cmake" installMode="root"/>
+      <feature id="org.eclipse.cdt.meson" installMode="root"/>
       <feature id="org.eclipse.cdt.docker.launcher" installMode="root"/>
       <feature id="org.eclipse.cdt.debug.gdbjtag" installMode="root"/>
       <feature id="org.eclipse.cdt.debug.standalone" installMode="root"/>
