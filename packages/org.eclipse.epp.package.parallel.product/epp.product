@@ -233,7 +233,6 @@ United States, other countries, or both.
       <feature id="org.eclipse.ptp" installMode="root"/>
       <feature id="org.eclipse.ptp.debug.sdm" installMode="root"/>
       <feature id="org.eclipse.ptp.fortran" installMode="root"/>
-      <feature id="org.eclipse.ptp.pldt.upc" installMode="root"/>
       <feature id="org.eclipse.ptp.rdt.sync" installMode="root"/>
       <feature id="org.eclipse.ptp.remote.terminal" installMode="root"/>
       <feature id="org.eclipse.ptp.rm.jaxb.contrib" installMode="root"/>
