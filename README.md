@@ -6,6 +6,11 @@ the download packages based on the content of the yearly Simultaneous Release.
 The download packages are provided from 
 [www.eclipse.org/downloads/eclipse-packages/](https://www.eclipse.org/downloads/eclipse-packages/).
 
+Creating and releasing packages
+-------------------------------
+
+Please see [RELEASING.md](RELEASING.md) in this repo for instructions on the release process for the EPP project.
+
 Build a Package Locally
 -----------------------
 
