@@ -303,7 +303,6 @@ United States, other countries, or both.
       <feature id="org.eclipse.mylyn.ide_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.java_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
-
       <feature id="org.eclipse.pde" installMode="root"/>
 
       <feature id="org.eclipse.cft.server.core.feature" installMode="root"/>
@@ -312,10 +311,6 @@ United States, other countries, or both.
       <feature id="org.eclipse.tm.terminal.feature" installMode="root"/>
 
       <feature id="org.eclipse.wst.common.fproj" installMode="root"/>
-      <feature id="org.eclipse.wst.jsdt.feature" installMode="root"/>
-      <feature id="org.eclipse.wst.jsdt.chromium.debug.feature" installMode="root"/>
-      <feature id="org.eclipse.wst.web_ui.feature" installMode="root"/>
-      <feature id="org.eclipse.wst.xml_ui.feature" installMode="root"/>
       <feature id="org.eclipse.wst.xsl.feature" installMode="root"/>
       <feature id="org.eclipse.wildwebdeveloper.feature" installMode="root"/>
 
