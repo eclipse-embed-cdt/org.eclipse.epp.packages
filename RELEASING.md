@@ -17,31 +17,33 @@ Steps for Milestones and RCs:
     - [ ] Variables in parent pom `releng/org.eclipse.epp.config/parent/pom.xml`
     - [ ] On M1, whole version string is updated, including platform version (e.g. `4.14` -> `4.15`); this is a large change including pom.xml, feature.xml, MANIFEST.MF, epp.website.xml, and epp.product
 - [ ] When the year changes, e.g. between 2019-12 and 2020-03 releases, an update of the copyright year is required with a very smart search&replace.
-- [ ] Wait for announcment that the staging repo is ready on [cross-project-issues-dev](https://accounts.eclipse.org/mailing-list/cross-project-issues-dev). An [example announcement](https://www.eclipse.org/lists/cross-project-issues-dev/msg17420.html).
+- [ ] Wait for announcement that the staging repo is ready on [cross-project-issues-dev](https://accounts.eclipse.org/mailing-list/cross-project-issues-dev). An [example announcement](https://www.eclipse.org/lists/cross-project-issues-dev/msg17420.html).
 - [ ] Run a [CI build](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build/) that includes the above changes
 - [ ] Sanity check the build for the following:
     - [ ] Download a package from the build's artifacts `artifact/org.eclipse.epp.packages/archive/`
     - [ ] Made sure filenames contain expected build name and milestone, e.g. `2020-03-M2`
     - [ ] Splash screen says expected release name (with no milestone), e.g. 2020-03
     - [ ] Help -> About says expected build name and milestone, e.g. `2020-03-M2`
-    - [ ] `org.eclipse.epp.packages.*` features and bundles have the timestamp of the forced qualifier update
+    - [ ] `org.eclipse.epp.package.*` features and bundles have the timestamp of the forced qualifier update or later
+- [ ] Mark build as Keep forever
+- [ ] Edit Build Information and name it (e.g. 2020-03 M3)
+- [ ] Send email to epp-dev to request package maintainers test it.
 - [ ] For a release build, the additional parameters (see parent pom) should be set in the Jenkins build job to a meaningful time/date:
 ```
 maven.build.timestamp=20191212-1212
 eclipse.simultaneous.release.build=20191212-1212
 build=20191212-1212
 ```
-- [ ] **TO BE AUTOMATED** Notarize the Mac DMG files. There is a [manual job today](https://ci.eclipse.org/packaging/job/macos-notarization/) that can be automated as part of the build. The automated part can be on every build, not just releases.
 - [ ] **TO BE AUTOMATED** Prepare the p2 repository
-  *These easy steps were done in the past from the command line because they are just easy commands but it takes a long time to put them into a Jenkins job or a similar script.* 
-    - [ ] In `/home/data/httpd/download.eclipse.org/technology/epp/packages/` there is a dedicated sub-directory for every Simultaneous Release, e.g. `2020-03/`. The _next_ release sub-directory needs to be created immediately _after_ a release, i.e. when 2019-12 was released, a directory 2020-03 had been created with an empty p2 composite repository pointing to 2019-12 until M1. On M1 release day this changes to a composite p2 repository with M1 content.
+  *These steps were done in the past from the command line.* 
+    - [ ] In `/home/data/httpd/download.eclipse.org/technology/epp/packages/` there is a dedicated sub-directory for every Simultaneous Release, e.g. `2020-03/`. The _next_ release sub-directory needs to be created immediately _after_ a release, i.e. when 2019-12 was released, a directory 2020-03 had been created with an empty p2 composite repository pointing to 2019-12 until M1. On M1 release day this changes to a composite p2 repository with M1 content. On other release days, add the new releases as children. 
     - [ ] ZIP the packages p2 repository from the Jenkins build job in `archive/repository/` and
         - [ ] copy it to the download server into the above directory; in the past we've been using a name like `epp.m2.854.zip` for a M2 build and build job number 854 on Jenkins.
         - [ ] unzip the p2 repository on the download server, e.g. into a directory `M2/`
         - [ ] On release day: Add this p2 repository to the composite p2 repository
         - [ ] For the final release, this composite p2 repository is being transformed into a flat p2 repository.
 - [ ] **TO BE AUTOMATED** Prepare the packages on the download server
-  *These easy steps were done in the past from the command line because they are just easy commands but it takes a long time to put them into a Jenkins job or a similar script.* 
+  *These steps were done in the past from the command line, the script that will be used as the Jenkins job is work in progress here [releaseRename.sh](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/tree/releng/org.eclipse.epp.config/tools/releaseRename.sh).* 
   - [ ] Create the new directory for the release in `/home/data/httpd/download.eclipse.org/technology/epp/downloads/release`, e.g. `2020-03`
   - [ ] On release day, update [release.xml](https://download.eclipse.org/technology/epp/downloads/release/release.xml) which basically lists the relative locations of past, present, and future package releases. This will allow the webmasters to publish the new packages on the main Eclipse download page.
   - [ ] Copy the packages to their final destination on the download server, rename the files, create MD5, SHA1, SHA256 files for all downloads, checkout the epp.website.xml files and put them next to the packages.
