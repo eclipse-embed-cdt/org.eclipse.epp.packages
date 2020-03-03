@@ -10,7 +10,7 @@
   <packageMetaData
    packageName="Eclipse IDE for Rust Developers (includes Incubating components)"
    maintainer="Eclipse Packaging Project"
-   iconurl="https://projects.eclipse.org/sites/default/files/epp-rust-about.png"
+   iconurl="https://www.eclipse.org/downloads/images/corrosion.png"
    bugzillaComponentId="rust-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
