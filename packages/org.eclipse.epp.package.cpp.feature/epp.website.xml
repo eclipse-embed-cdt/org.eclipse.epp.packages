@@ -17,12 +17,12 @@
      <description><![CDATA[An IDE for C/C++ developers with Mylyn integration.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
-      <tester>Doug Schaefer</tester>
+      <tester>Jonah Graham</tester>
     </packageTesters>
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/CDT/User/NewIn910"
+    url="https://wiki.eclipse.org/CDT/User/NewIn911"
     project="Eclipse CDT" />
   <NewAndNoteworthy
     url="https://wiki.eclipse.org/Linux_Tools_Project/News/NewIn75"
