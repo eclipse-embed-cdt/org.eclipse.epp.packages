@@ -8,4 +8,4 @@ requires.1.greedy=true
 
 instructions.configure=\
 org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/wildwebdeveloper/releases/latest,name:Latest Eclipse Wild Web Developer release,enabled:true);\
-org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/wildwebdeveloper/releases/latest,name:Latest Eclipse Wild Web Developer release:true);
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/wildwebdeveloper/releases/latest,name:Latest Eclipse Wild Web Developer release,enabled:true);
