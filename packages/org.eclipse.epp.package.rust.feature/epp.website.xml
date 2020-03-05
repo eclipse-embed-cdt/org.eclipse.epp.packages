@@ -17,7 +17,7 @@
      <description><![CDATA[The essential tools for any Rust developer, including Rust language support, Git client, command-line integration, Mylyn and editors.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
-      <tester>Lucas Bullen</tester>
+      <tester>Mickael Istria</tester>
     </packageTesters>
   </packageMetaData>
   <MoreInfo>
