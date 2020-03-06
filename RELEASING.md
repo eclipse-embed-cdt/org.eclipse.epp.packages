@@ -34,16 +34,8 @@ maven.build.timestamp=20191212-1212
 eclipse.simultaneous.release.build=20191212-1212
 build=20191212-1212
 ```
-- [ ] **TO BE AUTOMATED** Prepare the p2 repository
-  *These steps were done in the past from the command line.* 
-    - [ ] In `/home/data/httpd/download.eclipse.org/technology/epp/packages/` there is a dedicated sub-directory for every Simultaneous Release, e.g. `2020-03/`. The _next_ release sub-directory needs to be created immediately _after_ a release, i.e. when 2019-12 was released, a directory 2020-03 had been created with an empty p2 composite repository pointing to 2019-12 until M1. On M1 release day this changes to a composite p2 repository with M1 content. On other release days, add the new releases as children. 
-    - [ ] ZIP the packages p2 repository from the Jenkins build job in `archive/repository/` and
-        - [ ] copy it to the download server into the above directory; in the past we've been using a name like `epp.m2.854.zip` for a M2 build and build job number 854 on Jenkins.
-        - [ ] unzip the p2 repository on the download server, e.g. into a directory `M2/`
-        - [ ] On release day: Add this p2 repository to the composite p2 repository
-        - [ ] For the final release, this composite p2 repository is being transformed into a flat p2 repository.
-- [ ] **TO BE AUTOMATED** Prepare the packages on the download server
-  *These steps were done in the past from the command line, the script that will be used as the Jenkins job is work in progress here [releaseRename.sh](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/tree/releng/org.eclipse.epp.config/tools/releaseRename.sh).* 
-  - [ ] Create the new directory for the release in `/home/data/httpd/download.eclipse.org/technology/epp/downloads/release`, e.g. `2020-03`
-  - [ ] On release day, update [release.xml](https://download.eclipse.org/technology/epp/downloads/release/release.xml) which basically lists the relative locations of past, present, and future package releases. This will allow the webmasters to publish the new packages on the main Eclipse download page.
-  - [ ] Copy the packages to their final destination on the download server, rename the files, create MD5, SHA1, SHA256 files for all downloads, checkout the epp.website.xml files and put them next to the packages.
+- [ ] Run the [Promote a Build](https://ci.eclipse.org/packaging/job/promote-a-build/) CI job to prepare build artifacts and copy them to download.eclipse.org
+- [ ] **TO BE AUTOMATED** On release day, approximately 9:30am : copy the composite\*RC1.jar files over the composite\*.jar files in https://download.eclipse.org/technology/epp/packages/2020-03/ - when automated this can/should be triggered by the https://ci.eclipse.org/simrel/view/All/job/simrel.releng.makeVisible/ job - in the past this worked which meant that SimRel and EPP would synchronize their releases.
+  - [ ] However, for the final release, this composite p2 repository is being transformed into a flat p2 repository.
+- [ ] The _next_ release sub-directory needs to be created immediately _after_ a release, i.e. when 2019-12 was released, a directory 2020-03 had been created with an empty p2 composite repository pointing to 2019-12 until M1. On M1 release day this changes to a composite p2 repository with M1 content. On other release days, add the new releases as children. 
+- [ ] On release day, update [release.xml](https://download.eclipse.org/technology/epp/downloads/release/release.xml) which basically lists the relative locations of past, present, and future package releases. This will allow the webmasters to publish the new packages on the main Eclipse download page.

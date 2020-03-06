@@ -52,7 +52,7 @@ function pullAllConfigFiles {
   # name, [CVS,GIT], repository string, path to file, version [HEAD], EPP local filename
   # cpp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.cpp.feature/eclipse_cpp_juno.xml,HEAD,cpp.xml
   # cpp,CVS,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.epp/packages/org.eclipse.epp.package.cpp.feature/feature.xml,HEAD,cpp.feature.xml
-
+  ALL_PACKAGE_NAMES=""
   for II in ${ALL_PACKAGES};
   do
     PACKAGE_NAME=`echo ${II} | cut -d "," -f 1`
