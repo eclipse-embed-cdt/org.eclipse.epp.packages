@@ -221,22 +221,10 @@ United States, other countries, or both.
       <feature id="org.eclipse.buildship" installMode="root"/>
       <feature id="org.eclipse.e4.core.tools.feature" installMode="root"/>
       <feature id="org.eclipse.eclemma.feature" installMode="root"/>
-      <!-- not available in Neon on 2016-02-21
-      <feature id="org.eclipse.egit.import"/>
-      -->
       <feature id="org.eclipse.egit" installMode="root"/>
-      <feature id="org.eclipse.egit.mylyn" installMode="root"/>
+      <feature id="org.eclipse.egit.gitflow.feature" installMode="root"/>
       <feature id="org.eclipse.m2e.feature" installMode="root"/>
       <feature id="org.eclipse.m2e.logback.feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.bugzilla_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.context_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.gerrit.feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.git" installMode="root"/>
-      <feature id="org.eclipse.mylyn.hudson" installMode="root"/>
-      <feature id="org.eclipse.mylyn.ide_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.java_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.pde_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
       <feature id="org.eclipse.rap.tools.feature" installMode="root"/>
       <feature id="org.eclipse.swtbot.eclipse.gef" installMode="root"/>
       <feature id="org.eclipse.swtbot.eclipse" installMode="root"/>
