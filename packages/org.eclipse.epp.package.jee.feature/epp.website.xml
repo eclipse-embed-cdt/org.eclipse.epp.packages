@@ -8,16 +8,16 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse IDE for Enterprise Java Developers"
-   maintainer="WTP and the Eclipse Packaging Project"
+   packageName="Eclipse IDE for Enterprise Java Developers (includes Incubating components)"
+   maintainer="Eclipse Packaging and WTP Projects"
    iconurl="http://www.eclipse.org/downloads/images/javaee.png"
    bugzillaComponentId="jee-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-     <description><![CDATA[Tools for developers creating Java Enterprise and Web applications, including a Java IDE, tools for Web Services, JPA and Data Tools, JSF, Mylyn, Maven and Gradle, Git, and more. Note that this package includes some incubating components, as indicated by feature numbers less than 1.0.0 on the feature list.<br/>
+     <description><![CDATA[Tools for developers creating Java Enterprise and Web applications, including a Java IDE, tools for Web Services, JPA and Data Tools, JSF, Mylyn, Maven and Gradle, Git, and more.<br/>Note that this package includes some <a href="https://www.eclipse.org/projects/dev_process/#6_2_3_Incubation">incubating</a> components, as indicated by feature numbers less than 1.0.0 on the feature list.<br/>
 Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?classification=WebTools">here</a> to file a bug against Eclipse Web Tools Platform.<br/>
 Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">here</a> to file a bug against Eclipse Platform.<br/>
-Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=M2E-WTP">here</a> to file a bug against Maven integration for web projects.
+Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=M2E-WTP">here</a> to file a bug against Maven integration for web projects.<br/>
 Click <a href="https://github.com/eclipse/wildwebdeveloper/issues/new">here</a> to report an issue against Eclipse Wild Web Developer (incubating).<br/>
 ]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
