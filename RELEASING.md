@@ -39,3 +39,10 @@ build=20191212-1212
   - [ ] However, for the final release, this composite p2 repository is being transformed into a flat p2 repository.
 - [ ] The _next_ release sub-directory needs to be created immediately _after_ a release, i.e. when 2019-12 was released, a directory 2020-03 had been created with an empty p2 composite repository pointing to 2019-12 until M1. On M1 release day this changes to a composite p2 repository with M1 content. On other release days, add the new releases as children. 
 - [ ] On release day, update [release.xml](https://download.eclipse.org/technology/epp/downloads/release/release.xml) which basically lists the relative locations of past, present, and future package releases. This will allow the webmasters to publish the new packages on the main Eclipse download page.
+- [ ] These are the commands that need to be automated on M2-RC1 release days
+```
+CHECKPOINT=RC1
+REPO_ROOT=/home/data/httpd/download.eclipse.org/technology/epp/packages
+rsync --group --verbose ${REPO_ROOT}/compositeArtifacts${CHECKPOINT}.jar ${REPO_ROOT}/compositeArtifacts.jar
+rsync --group --verbose ${REPO_ROOT}/compositeContent${CHECKPOINT}.jar ${REPO_ROOT}/compositeContent.jar
+```
