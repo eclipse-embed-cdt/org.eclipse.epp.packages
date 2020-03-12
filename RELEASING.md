@@ -11,6 +11,9 @@ Steps for Milestones and RCs:
 
 - [ ] Ensure that the [CI build](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build/) is green. Resolving non-green builds will require tracking down problems and incompatibilities across all Eclipse participating projects. [cross-project-issues-dev](https://accounts.eclipse.org/mailing-list/cross-project-issues-dev) mailing list is a good place to start when tracking such problems.
 - [ ] Update splash screen (once per release cycle, hopefully done before M1). See detailed [instructions](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/tree/packages/org.eclipse.epp.package.common/splash/INSTRUCTIONS.md).
+- [ ] Review packageMetaData packageName= and product name= entries in epp.website.xml to ensure consistency with regards to use of incubation, speficially packages containing incubating components must have:
+    - [ ] `-incubation` at the end of the product name (e.g. `<product name="eclipse-cpp-2020-03-RC1-incubation" />`)
+    - [ ] ` (includes Incubating components)` at the end of the packageMetaData packageName matching whitespace and letter case (e.g. `packageName="Eclipse IDE for C/C++ Developers (includes Incubating components)"`)
 - [ ] Update the build qualifiers to ensure that packages are all updated. Run [setGitDate](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/tree/releng/org.eclipse.epp.config/tools/setGitDate) script to do that.
 - [ ] Update name of the release in strings with a "smart" global find&replace. See this [gerrit](https://git.eclipse.org/r/#/c/157267/) for an example. In particular, check:
     - [ ] `packages/*/epp.website.xml` for `product name=` line
