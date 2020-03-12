@@ -8,7 +8,7 @@
        testPlan is the fully qualified URL to the test plan for this package
    -->
   <packageMetaData
-   packageName="Eclipse IDE for C/C++ Developers"
+   packageName="Eclipse IDE for C/C++ Developers (includes Incubating components)"
    maintainer="Eclipse Packaging Project"
    iconurl="http://www.eclipse.org/downloads/images/cdt.png"
    bugzillaComponentId="cpp-package"
@@ -44,6 +44,6 @@
   <rcp version="4.15.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-cpp-2020-03-RC1" />
+  <product name="eclipse-cpp-2020-03-RC1-incubation" />
 
 </configuration>
