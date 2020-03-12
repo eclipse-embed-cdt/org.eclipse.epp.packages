@@ -10,3 +10,5 @@ for II in `find . -name .forceQualifierUpdate`; do
   echo "${GIT_DATE}" >$II;
   git add $II;
 done
+
+git commit -m"Set version qualifiers with setGitDate script"
