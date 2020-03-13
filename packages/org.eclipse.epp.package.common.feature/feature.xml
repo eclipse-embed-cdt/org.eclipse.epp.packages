@@ -20,7 +20,6 @@
    </license>
 
    <requires>
-      <import feature="org.eclipse.epp.logging.aeri.feature"/>
       <!-- Bug 455645: Integrate Oomph into all EPP packages
            https://bugs.eclipse.org/bugs/show_bug.cgi?id=455645 -->
       <import feature="org.eclipse.oomph.setup"/>
