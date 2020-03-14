@@ -38,14 +38,21 @@ eclipse.simultaneous.release.build=20191212-1212
 build=20191212-1212
 ```
 - [ ] Run the [Promote a Build](https://ci.eclipse.org/packaging/job/promote-a-build/) CI job to prepare build artifacts and copy them to download.eclipse.org
-- [ ] **TO BE AUTOMATED** On release day, approximately 9:30am : copy the composite\*RC1.jar files over the composite\*.jar files in https://download.eclipse.org/technology/epp/packages/2020-03/ - when automated this can/should be triggered by the https://ci.eclipse.org/simrel/view/All/job/simrel.releng.makeVisible/ job - in the past this worked which meant that SimRel and EPP would synchronize their releases.
-  - [ ] However, for the final release, this composite p2 repository is being transformed into a flat p2 repository.
+    - [ ] Run the build once in `DRY_RUN` mode to ensure that the output is correct before it is copied to download.eclipse.org.
+- [ ] **TO BE AUTOMATED**
+    - [ ] **On M1-RC1 release day** approximately 9:30am :
+        - [ ] copy the composite\*RC1.jar files over the composite\*.jar files in https://download.eclipse.org/technology/epp/packages/2020-03/
+    - [ ] **On final release day** approximately 9:30am (TBD when should these operaions happen - it needs time to be mirrored still!) :
+        - [ ] flatten the published RC2 (or respun RC2) P2 repository as https://download.eclipse.org/technology/epp/packages/2020-03/
+        - [ ] rename the provisional release milestone to final directory (E.g. [2020-03/RC2](https://download.eclipse.org/technology/epp/downloads/release/2020-03/RC2) -> [2020-03/R](https://download.eclipse.org/technology/epp/downloads/release/2020-03/R)
+    - [ ] When automated this can/should be triggered by the https://ci.eclipse.org/simrel/view/All/job/simrel.releng.makeVisible/ job - in the past this worked which meant that SimRel and EPP would synchronize their releases.
+    - [ ] These are the expected commands that need to be automated on M2-RC1 release days.
+    ```
+    CHECKPOINT=RC1
+    REPO_ROOT=/home/data/httpd/download.eclipse.org/technology/epp/packages
+    rsync --group --verbose ${REPO_ROOT}/compositeArtifacts${CHECKPOINT}.jar ${REPO_ROOT}/compositeArtifacts.jar
+    rsync --group --verbose ${REPO_ROOT}/compositeContent${CHECKPOINT}.jar ${REPO_ROOT}/compositeContent.jar
+    ```
+
 - [ ] The _next_ release sub-directory needs to be created immediately _after_ a release, i.e. when 2019-12 was released, a directory 2020-03 had been created with an empty p2 composite repository pointing to 2019-12 until M1. On M1 release day this changes to a composite p2 repository with M1 content. On other release days, add the new releases as children. 
 - [ ] On release day, update [release.xml](https://download.eclipse.org/technology/epp/downloads/release/release.xml) which basically lists the relative locations of past, present, and future package releases. This will allow the webmasters to publish the new packages on the main Eclipse download page.
-- [ ] These are the commands that need to be automated on M2-RC1 release days
-```
-CHECKPOINT=RC1
-REPO_ROOT=/home/data/httpd/download.eclipse.org/technology/epp/packages
-rsync --group --verbose ${REPO_ROOT}/compositeArtifacts${CHECKPOINT}.jar ${REPO_ROOT}/compositeArtifacts.jar
-rsync --group --verbose ${REPO_ROOT}/compositeContent${CHECKPOINT}.jar ${REPO_ROOT}/compositeContent.jar
-```

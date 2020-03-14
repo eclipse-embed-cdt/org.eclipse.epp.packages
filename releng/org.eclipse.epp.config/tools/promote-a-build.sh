@@ -5,13 +5,13 @@ set -e # error out on any failed commands
 set -x # echo all commands used for debugging purposes
 
 # The commented out parameters come from Jenkinsfile
-# PACKAGES=
-# PLATFORMS=
-# RELEASE=
+# RELEASE_NAME=
+# RELEASE_MILESTONE=
+# RELEASE_DIR=
 # BUILD_NUMBER=
+PACKAGES="committers cpp dsl java javascript jee modeling parallel php rcp rust scout testing"
+PLATFORMS="linux.gtk.x86_64.tar.gz macosx.cocoa.x86_64.dmg win32.win32.x86_64.zip"
 ARCHIVE_URL="https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build/${BUILD_NUMBER}/artifact/org.eclipse.epp.packages/archive/*zip*/archive.zip"
-RELEASE_NAME=$(echo $RELEASE | rev | sed 's@[^-]*-@@' | rev)
-RELEASE_MILESTONE=$(echo $RELEASE | rev | sed 's@-.*@@' | rev)
 EPP_DOWNLOADS=/home/data/httpd/download.eclipse.org/technology/epp
 DOWNLOADS=${EPP_DOWNLOADS}/downloads/release/${RELEASE_NAME}/
 REPO=${EPP_DOWNLOADS}/packages/${RELEASE_NAME}/
@@ -37,7 +37,7 @@ unzip archive.zip
 pushd archive
 for PACKAGE in $PACKAGES; do
   for PLATFORM in $PLATFORMS; do
-    NAME=$(echo *_eclipse-${PACKAGE}-${RELEASE}-${PLATFORM})
+    NAME=$(echo *_eclipse-${PACKAGE}-${RELEASE_NAME}-${RELEASE_MILESTONE}-${PLATFORM})
     NEWNAME=`echo ${NAME} | \
              cut -d "_" -f 2- | \
              sed 's/linux\.gtk\.x86\_64/linux-gtk-x86\_64/' | \
@@ -86,7 +86,7 @@ popd # leave downloads
 # Prepare compositeArtifacts.jar/compositeContent.jar
 pushd p2
 cp -rp ${REPO}/* .
-mv repository ${RELEASE_MILESTONE}
+mv repository ${RELEASE_DIR}
 cat > addmilestone.xml <<EOM
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="p2 composite repository">
@@ -94,7 +94,7 @@ cat > addmilestone.xml <<EOM
     <p2.composite.repository>
       <repository compressed="true" location="." name="${RELEASE_NAME}" />
       <add>
-        <repository location="${RELEASE_MILESTONE}" />
+        <repository location="${RELEASE_DIR}" />
       </add>
     </p2.composite.repository>
   </target>
@@ -128,10 +128,10 @@ else
     echo Dry run of build:
 fi
 
-${ECHO} mkdir -p ${DOWNLOADS}/${RELEASE_MILESTONE}
+${ECHO} mkdir -p ${DOWNLOADS}/${RELEASE_DIR}
 ${ECHO} mkdir -p ${REPO}
-${ECHO} cp -r downloads/* ${DOWNLOADS}/${RELEASE_MILESTONE}
+${ECHO} cp -r downloads/* ${DOWNLOADS}/${RELEASE_DIR}
 ${ECHO} cp -r p2/p2.index ${REPO}
-${ECHO} cp -r p2/${RELEASE_MILESTONE} ${REPO}
-${ECHO} cp p2/compositeArtifacts.jar ${REPO}/compositeArtifacts${RELEASE_MILESTONE}.jar
-${ECHO} cp p2/compositeContent.jar ${REPO}/compositeContent${RELEASE_MILESTONE}.jar
+${ECHO} cp -r p2/${RELEASE_DIR} ${REPO}
+${ECHO} cp p2/compositeArtifacts.jar ${REPO}/compositeArtifacts${RELEASE_DIR}.jar
+${ECHO} cp p2/compositeContent.jar ${REPO}/compositeContent${RELEASE_DIR}.jar
