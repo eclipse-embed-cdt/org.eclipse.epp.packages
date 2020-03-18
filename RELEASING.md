@@ -17,7 +17,7 @@ Steps for Milestones and RCs:
 - [ ] Update name of the release in strings with a "smart" global find&replace. See this [gerrit](https://git.eclipse.org/r/#/c/157267/) for an example. In particular, check:
     - [ ] `packages/*/epp.website.xml` for `product name=` line
     - [ ] Variables in parent pom `releng/org.eclipse.epp.config/parent/pom.xml`
-    - [ ] On M1, whole version string is updated, including platform version (e.g. `4.14` -> `4.15`); this is a large change including pom.xml, feature.xml, MANIFEST.MF, epp.website.xml, and epp.product
+    - [ ] On M1, whole version string is updated, including platform version (e.g. `4.14` -> `4.16`); this is a large change including pom.xml, feature.xml, MANIFEST.MF, epp.website.xml, and epp.product
 - [ ] When the year changes, e.g. between 2019-12 and 2020-03 releases, an update of the copyright year is required with a very smart search&replace.
 - [ ] Update the build qualifiers to ensure that packages are all updated. Run [setGitDate](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/tree/releng/org.eclipse.epp.config/tools/setGitDate) script. This script will make a local commit.
 - [ ] Wait for announcement that the staging repo is ready on [cross-project-issues-dev](https://accounts.eclipse.org/mailing-list/cross-project-issues-dev). An [example announcement](https://www.eclipse.org/lists/cross-project-issues-dev/msg17420.html).

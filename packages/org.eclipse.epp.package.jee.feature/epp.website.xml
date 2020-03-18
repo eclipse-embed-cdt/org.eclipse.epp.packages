@@ -31,7 +31,7 @@ Click <a href="https://github.com/eclipse/wildwebdeveloper/issues/new">here</a> 
     url="https://www.eclipse.org/webtools/releases/3.17/NewAndNoteworthy/"
     project="Eclipse Web Tools Platform Project" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.15/"
+    url="https://www.eclipse.org/eclipse/news/4.16/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/mylyn/new/"
@@ -43,9 +43,9 @@ Click <a href="https://github.com/eclipse/wildwebdeveloper/issues/new">here</a> 
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="4.15.0" />
+  <rcp version="4.16.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-jee-2020-03-R-incubation" />
+  <product name="eclipse-jee-2020-06-M1-incubation" />
 
 </configuration>

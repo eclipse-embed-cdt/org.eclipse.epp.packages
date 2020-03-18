@@ -25,7 +25,7 @@
     url="https://wiki.eclipse.org/PTP/new_and_noteworthy/9.3.1"
     project="Eclipse PTP" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.15/"
+    url="https://www.eclipse.org/eclipse/news/4.16/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="https://wiki.eclipse.org/CDT/User/NewIn910"
@@ -41,9 +41,9 @@
 
 	<!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-	<rcp version="4.15.0" />
+	<rcp version="4.16.0" />
 
 	<!-- name, the name of the product, used in naming the created files. -->
-	<product name="eclipse-parallel-2020-03-R" />
+	<product name="eclipse-parallel-2020-06-M1" />
 
 </configuration>
