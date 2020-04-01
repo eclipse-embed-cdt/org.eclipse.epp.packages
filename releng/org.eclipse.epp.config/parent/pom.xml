@@ -24,7 +24,7 @@
 
   <properties>
     <maven.version>3.1.1</maven.version>
-    <tycho.version>1.5.1</tycho.version>
+    <tycho.version>1.6.0</tycho.version>
     <tycho.extras.version>${tycho.version}</tycho.extras.version>
     <tycho.scmUrl>scm:git:git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git</tycho.scmUrl>
     <cbi.version>1.1.8-SNAPSHOT</cbi.version>
@@ -198,25 +198,14 @@
           <artifactId>tycho-p2-repository-plugin</artifactId>
           <version>${tycho.version}</version>
           <configuration>
+            <extraArtifactRepositoryProperties>
+              <p2.statsURI>http://download.eclipse.org/stats/technology/epp/packages/${eclipse.simultaneous.release.id}/</p2.statsURI>
+            </extraArtifactRepositoryProperties>
             <includeAllDependencies>true</includeAllDependencies>
             <compress>true</compress>
+            <!-- Mirror goal used to aggregate unit seem to ignore the .xz files so let's not generate them to avoid inconsistency between *.jar and *.xz -->
+            <xzCompress>false</xzCompress>
           </configuration>
-          <executions>
-            <execution>
-              <id>default-assemble-repository</id>
-              <phase></phase>
-              <configuration>
-                <skip>true</skip>
-              </configuration>
-            </execution>
-            <execution>
-              <id>default-archive-repository</id>
-              <phase></phase>
-              <configuration>
-                <skip>true</skip>
-              </configuration>
-            </execution>
-          </executions>
         </plugin>
         <plugin>
           <groupId>org.eclipse.tycho</groupId>
@@ -255,6 +244,9 @@
           <groupId>org.eclipse.tycho</groupId>
           <artifactId>tycho-p2-plugin</artifactId>
           <version>${tycho.version}</version>
+          <configuration>
+            <generateDownloadStatsProperty>true</generateDownloadStatsProperty>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.eclipse.cbi.maven.plugins</groupId>
@@ -336,27 +328,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-antrun-plugin</artifactId>
-          <version>1.6</version>
-          <executions>
-            <execution>
-              <id>copy-zips-to-archive-folder</id>
-              <phase>pre-integration-test</phase>
-              <configuration>
-                <target>
-                  <copy todir="${basedir}/../../archive">
-                    <fileset dir="${project.build.directory}/products">
-                      <include name="*.zip" />
-                      <include name="*linux*.tar.gz" />
-                      <include name="*.dmg" />
-                    </fileset>
-                  </copy>
-                </target>
-              </configuration>
-              <goals>
-                <goal>run</goal>
-              </goals>
-            </execution>
-          </executions>
+          <version>1.8</version>
         </plugin>
       </plugins>
     </pluginManagement>
