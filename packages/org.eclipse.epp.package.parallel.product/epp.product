@@ -209,7 +209,7 @@ United States, other countries, or both.
    <features>
       <feature id="org.eclipse.epp.package.parallel.feature" version="4.16.0.qualifier"/>
       <feature id="org.eclipse.epp.package.common.feature" version="4.16.0.qualifier"/>
-      <feature id="org.eclipse.platform" version="4.15.0.qualifier"/>
+      <feature id="org.eclipse.platform" version="4.16.0.qualifier"/>
       <feature id="org.eclipse.epp.mpc" installMode="root"/>
       <feature id="org.eclipse.cdt" installMode="root"/>
       <feature id="org.eclipse.cdt.autotools" installMode="root"/>
