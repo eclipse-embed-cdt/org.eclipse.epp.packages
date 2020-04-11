@@ -17,7 +17,8 @@ Steps for Milestones and RCs:
 - [ ] Update name of the release in strings with a "smart" global find&replace. See this [gerrit](https://git.eclipse.org/r/#/c/157267/) for an example. In particular, check:
     - [ ] `packages/*/epp.website.xml` for `product name=` line
     - [ ] Variables in parent pom `releng/org.eclipse.epp.config/parent/pom.xml`
-    - [ ] On M1, whole version string is updated, including platform version (e.g. `4.14` -> `4.16`); this is a large change including pom.xml, feature.xml, MANIFEST.MF, epp.website.xml, and epp.product
+    - [ ] On M1, whole version string is updated, including platform version (e.g. `4.14` -> `4.15`); this is a large change including pom.xml, feature.xml, MANIFEST.MF, epp.website.xml, and epp.product
+    - [ ] When Eclipse Platform contributes M1, the `<feature id="org.eclipse.platform" version="4.15.0.qualifier"/>` lines in each epp.product also needs to be updated.
 - [ ] When the year changes, e.g. between 2019-12 and 2020-03 releases, an update of the copyright year is required with a very smart search&replace.
 - [ ] Update the build qualifiers to ensure that packages are all updated. Run [setGitDate](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/tree/releng/org.eclipse.epp.config/tools/setGitDate) script. This script will make a local commit.
 - [ ] Wait for announcement that the staging repo is ready on [cross-project-issues-dev](https://accounts.eclipse.org/mailing-list/cross-project-issues-dev). An [example announcement](https://www.eclipse.org/lists/cross-project-issues-dev/msg17420.html).
@@ -42,8 +43,10 @@ build=20191212-1212
 - [ ] **TO BE AUTOMATED**
     - [ ] **On M1-RC1 release day** approximately 9:30am :
         - [ ] copy the composite\*RC1.jar files over the composite\*.jar files in https://download.eclipse.org/technology/epp/packages/2020-03/
-    - [ ] **On final release day** approximately 9:30am (TBD when should these operaions happen - it needs time to be mirrored still!) :
+    - [ ] **On final release day** approximately 9:30am (TBD when should these operaions happen - it needs time to be mirrored still!) : 
         - [ ] flatten the published RC2 (or respun RC2) P2 repository as https://download.eclipse.org/technology/epp/packages/2020-03/
+        - [ ] Include the p2.index file update
+        - [ ] Ensure that there is no unexpected caching of removed composite files. E.g. `curl -I http://download.eclipse.org/technology/epp/packages/2020-03/compositeContent.jar` **must** return 404.
         - [ ] rename the provisional release milestone to final directory (E.g. [2020-03/RC2](https://download.eclipse.org/technology/epp/downloads/release/2020-03/RC2) -> [2020-03/R](https://download.eclipse.org/technology/epp/downloads/release/2020-03/R)
     - [ ] When automated this can/should be triggered by the https://ci.eclipse.org/simrel/view/All/job/simrel.releng.makeVisible/ job - in the past this worked which meant that SimRel and EPP would synchronize their releases.
     - [ ] These are the expected commands that need to be automated on M2-RC1 release days.
@@ -53,6 +56,7 @@ build=20191212-1212
     rsync --group --verbose ${REPO_ROOT}/compositeArtifacts${CHECKPOINT}.jar ${REPO_ROOT}/compositeArtifacts.jar
     rsync --group --verbose ${REPO_ROOT}/compositeContent${CHECKPOINT}.jar ${REPO_ROOT}/compositeContent.jar
     ```
-
+- [ ] Tag the release, e.g. with 2020-03_R. Example command line `git tag -s -a 2020-03_R -m"2020-03 Release" 1b7a1c1af156e3ac57768b87be258cd22b49456b`
 - [ ] The _next_ release sub-directory needs to be created immediately _after_ a release, i.e. when 2019-12 was released, a directory 2020-03 had been created with an empty p2 composite repository pointing to 2019-12 until M1. On M1 release day this changes to a composite p2 repository with M1 content. On other release days, add the new releases as children. 
 - [ ] On release day, update [release.xml](https://download.eclipse.org/technology/epp/downloads/release/release.xml) which basically lists the relative locations of past, present, and future package releases. This will allow the webmasters to publish the new packages on the main Eclipse download page.
+
