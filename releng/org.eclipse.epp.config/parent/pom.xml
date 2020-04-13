@@ -58,10 +58,6 @@
       <id>eclipse-cbi</id>
       <url>https://repo.eclipse.org/content/groups/cbi/</url>
     </pluginRepository>
-    <pluginRepository>
-      <id>tycho-1.3-staged</id>
-      <url>https://oss.sonatype.org/content/repositories/orgeclipsetycho-1050/</url>
-    </pluginRepository>
   </pluginRepositories>
 
   <repositories>
@@ -128,19 +124,19 @@
             <artifactId>tycho-buildtimestamp-jgit</artifactId>
             <version>${tycho.extras.version}</version>
           </dependency>
-          <dependency> 
-            <groupId>org.eclipse.tycho.extras</groupId> 
-            <artifactId>tycho-sourceref-jgit</artifactId> 
-            <version>${tycho.extras.version}</version> 
-          </dependency> 
+          <dependency>
+            <groupId>org.eclipse.tycho.extras</groupId>
+            <artifactId>tycho-sourceref-jgit</artifactId>
+            <version>${tycho.extras.version}</version>
+          </dependency>
         </dependencies>
         <configuration>
           <timestampProvider>jgit</timestampProvider>
           <jgit.dirtyWorkingTree>ignore</jgit.dirtyWorkingTree>
           <format>yyyyMMdd-HHmm</format>
-          <sourceReferences> 
-            <generate>true</generate> 
-          </sourceReferences> 
+          <sourceReferences>
+            <generate>true</generate>
+          </sourceReferences>
         </configuration>
       </plugin>
 
