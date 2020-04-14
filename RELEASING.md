@@ -14,6 +14,10 @@ Steps for Milestones and RCs:
 - [ ] Review packageMetaData packageName= and product name= entries in epp.website.xml to ensure consistency with regards to use of incubation, speficially packages containing incubating components must have:
     - [ ] `-incubation` at the end of the product name (e.g. `<product name="eclipse-cpp-2020-03-RC1-incubation" />`)
     - [ ] ` (includes Incubating components)` at the end of the packageMetaData packageName matching whitespace and letter case (e.g. `packageName="Eclipse IDE for C/C++ Developers (includes Incubating components)"`)
+- [ ] Update the "new and noteworthy" version numbers:
+    - [ ] Search for ` url=` (notice the blank before url) in `epp.website.xml` to see which ones are contained in the different packages.
+    - [ ] Use global search and replace to update the version numbers at the end of the URLs.
+    - [ ] Remember that some of the features will release new versions together with the new Eclipse release. Therefore using the _currently_ released version number may be wrong. Instead lookup the feature version [to be released with the release train](https://projects.eclipse.org/releases/2020-03).
 - [ ] Update name of the release in strings with a "smart" global find&replace. See this [gerrit](https://git.eclipse.org/r/#/c/157267/) for an example. In particular, check:
     - [ ] `packages/*/epp.website.xml` for `product name=` line
     - [ ] Variables in parent pom `releng/org.eclipse.epp.config/parent/pom.xml`
