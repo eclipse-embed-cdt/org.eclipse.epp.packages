@@ -133,7 +133,7 @@ else
 fi
 
 ${ECHO} mkdir -p ${DOWNLOADS}/${RELEASE_DIR}
-${ECHO} mkdir -p ${REPO}
+${ECHO} mkdir -p ${REPO}/${RELEASE_DIR}
 ${ECHO} cp -r downloads/* ${DOWNLOADS}/${RELEASE_DIR}
 ${ECHO} cp -r p2/p2.index ${REPO}
 ${ECHO} cp -r p2/${RELEASE_DIR} ${REPO}
