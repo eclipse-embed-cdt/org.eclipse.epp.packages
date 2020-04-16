@@ -85,7 +85,11 @@ popd # leave downloads
 # ----------------------------------------------------------------------------------------------
 # Prepare compositeArtifacts.jar/compositeContent.jar
 pushd p2
-cp -rp ${REPO}/* .
+if [ "$RELEASE_MILESTONE" != "M1" ]; then
+    # For non M1 build we need to add to the existing p2 content,
+    # for M1 we start from scratch
+    cp -rp ${REPO}/* .
+fi
 mv repository ${RELEASE_DIR}
 cat > addmilestone.xml <<EOM
 <?xml version="1.0" encoding="UTF-8"?>
