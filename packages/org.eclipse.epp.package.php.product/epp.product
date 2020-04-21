@@ -232,8 +232,8 @@ United States, other countries, or both.
       <feature id="org.eclipse.php.profiler" installMode="root"/>
       <feature id="org.eclipse.php.rdt.sync" installMode="root"/>
       <feature id="org.eclipse.tm.terminal.feature" installMode="root"/>
-      <feature id="org.eclipse.wst.jsdt.feature" installMode="root"/>
       <feature id="org.eclipse.wst.xml_ui.feature" installMode="root"/>
+      <feature id="org.eclipse.wildwebdeveloper.feature" installMode="root"/>
    </features>
 
    <repositories>
