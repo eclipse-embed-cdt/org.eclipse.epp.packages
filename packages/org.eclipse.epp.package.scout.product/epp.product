@@ -220,6 +220,7 @@ United States, other countries, or both.
       <feature id="org.eclipse.jgit" installMode="root"/>
       <feature id="org.eclipse.jst.web_ui.feature" installMode="root"/>
       <feature id="org.eclipse.m2e.feature" installMode="root"/>
+      <feature id="org.eclipse.m2e.lemminx.feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.bugzilla_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.context_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn_feature" installMode="root"/>

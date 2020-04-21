@@ -291,6 +291,7 @@ United States, other countries, or both.
       <feature id="org.eclipse.jst.ws.jaxws.feature"  installMode="root"/>
 
       <feature id="org.eclipse.m2e.feature" installMode="root"/>
+      <feature id="org.eclipse.m2e.lemminx.feature" installMode="root"/>
       <feature id="org.eclipse.m2e.logback.feature" installMode="root"/>
       <feature id="org.eclipse.m2e.wtp.feature" installMode="root"/>
       <feature id="org.eclipse.m2e.wtp.jaxrs.feature" installMode="root"/>
