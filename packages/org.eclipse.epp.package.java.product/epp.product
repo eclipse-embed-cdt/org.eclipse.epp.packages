@@ -219,19 +219,11 @@ United States, other countries, or both.
       <!-- not available in Neon on 2016-02-21
       <feature id="org.eclipse.egit.import" installMode="root"/>
       -->
-      <feature id="org.eclipse.egit.mylyn" installMode="root"/>
       <feature id="org.eclipse.jdt" installMode="root"/>
       <feature id="org.eclipse.jgit" installMode="root"/>
       <feature id="org.eclipse.m2e.feature" installMode="root"/>
       <feature id="org.eclipse.m2e.lemminx.feature" installMode="root"/>
       <feature id="org.eclipse.m2e.logback.feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.bugzilla_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.context_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.git" installMode="root"/>
-      <feature id="org.eclipse.mylyn.hudson" installMode="root"/>
-      <feature id="org.eclipse.mylyn.ide_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.java_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
       <feature id="org.eclipse.wst.xml_ui.feature" installMode="root"/>
 

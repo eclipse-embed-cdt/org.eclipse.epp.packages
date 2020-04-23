@@ -33,9 +33,6 @@
   <NewAndNoteworthy
     url="https://wiki.eclipse.org/Linux_Tools_Project/News/NewIn75"
     project="Eclipse Linux Tools" />
-  <NewAndNoteworthy
-    url="https://www.eclipse.org/mylyn/new/"
-    project="Eclipse Mylyn" />
   </MoreInfo>
   
 

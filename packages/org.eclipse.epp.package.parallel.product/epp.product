@@ -221,14 +221,8 @@ United States, other countries, or both.
       <feature id="org.eclipse.cdt.debug.ui.memory" installMode="root"/>
       <feature id="org.eclipse.cdt.launch.remote" installMode="root"/>
       <feature id="org.eclipse.cdt.testsrunner.feature" installMode="root"/>
-      <feature id="org.eclipse.cdt.mylyn" installMode="root"/>
       <feature id="org.eclipse.egit" installMode="root"/>
       <feature id="org.eclipse.jgit" installMode="root"/>
-      <feature id="org.eclipse.mylyn.bugzilla_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.context_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.ide_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.team_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
       <feature id="org.eclipse.ptp" installMode="root"/>
       <feature id="org.eclipse.ptp.debug.sdm" installMode="root"/>
