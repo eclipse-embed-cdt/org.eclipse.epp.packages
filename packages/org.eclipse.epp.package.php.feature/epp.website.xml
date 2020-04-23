@@ -17,8 +17,6 @@
     <description><![CDATA[The essential tools for any PHP developer, including PHP language support, Git client, Mylyn and editors for JavaScript, HTML, CSS and XML.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
     <packageTesters>
-      <tester>Jacek Pospychala</tester>
-	    <tester>Kaloyan Raev</tester>
 	    <tester>Dawid Pakula</tester>
     </packageTesters>
   </packageMetaData>

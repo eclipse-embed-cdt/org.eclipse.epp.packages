@@ -23,7 +23,6 @@ Click <a href="https://github.com/eclipse/wildwebdeveloper/issues/new">here</a> 
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
       <tester>Chuck Bridgham</tester>
-      <tester>David Williams</tester>
     </packageTesters>
   </packageMetaData>
   <MoreInfo>
