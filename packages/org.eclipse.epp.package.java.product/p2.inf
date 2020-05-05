@@ -22,4 +22,4 @@ properties.2.value = Eclipse Packaging Project
 update.id = epp.package.java
 update.range = [4.6.0.20160301-1200, $version$)
 update.severity = 0
-update.description = Eclipse package upgrade from versions before Eclipse Neon (4.6) is not possible. See bug 332989.
+update.description = Eclipse IDE package upgrade from versions before Eclipse Neon (4.6) is not possible. See bug 332989.
