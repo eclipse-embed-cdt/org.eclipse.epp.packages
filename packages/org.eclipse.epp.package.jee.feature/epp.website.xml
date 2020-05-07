@@ -45,6 +45,6 @@ Click <a href="https://github.com/eclipse/wildwebdeveloper/issues/new">here</a> 
   <rcp version="4.16.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-jee-2020-06-M1-incubation" />
+  <product name="eclipse-jee-2020-06-M2-incubation" />
 
 </configuration>
