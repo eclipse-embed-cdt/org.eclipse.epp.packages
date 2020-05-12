@@ -17,7 +17,7 @@
      <description><![CDATA[The essential tools for any Java developer, including a Java IDE, a Git client, XML Editor, Maven and Gradle integration]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
-      <tester>No tester - become one by sending a message to epp-dev@eclipse.org</tester>
+      <tester>Aleksandar Kurtakov</tester>
     </packageTesters>
   </packageMetaData>
   <MoreInfo>
