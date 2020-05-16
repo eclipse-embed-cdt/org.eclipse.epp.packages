@@ -9,7 +9,7 @@
    -->
   <packageMetaData
    packageName="Eclipse IDE for Enterprise Java Developers (includes Incubating components)"
-   maintainer="Eclipse Packaging and WTP Projects"
+   maintainer="Eclipse Packaging and Web Tools Platform Projects"
    iconurl="http://www.eclipse.org/downloads/images/javaee.png"
    bugzillaComponentId="jee-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
@@ -23,11 +23,12 @@ Click <a href="https://github.com/eclipse/wildwebdeveloper/issues/new">here</a> 
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
       <tester>Chuck Bridgham</tester>
+      <tester>Nitin Dahyabhai</tester>
     </packageTesters>
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="https://www.eclipse.org/webtools/releases/3.17/NewAndNoteworthy/"
+    url="https://www.eclipse.org/webtools/releases/3.18/NewAndNoteworthy/"
     project="Eclipse Web Tools Platform Project" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/eclipse/news/4.16/"
@@ -36,7 +37,7 @@ Click <a href="https://github.com/eclipse/wildwebdeveloper/issues/new">here</a> 
     url="https://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.7"
+    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.8"
     project="Eclipse EGit" />
   </MoreInfo>
 
