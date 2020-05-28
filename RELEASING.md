@@ -31,6 +31,7 @@ EPP releases happen for each milestone and release candidate according to the [E
 - [ ] Update name of the release in strings with a "smart" global find&replace. See this [gerrit](https://git.eclipse.org/r/#/c/158509/) for an example. In particular, check:
     - [ ] `packages/*/epp.website.xml` for `product name=` line
     - [ ] Variables in parent pom `releng/org.eclipse.epp.config/parent/pom.xml`
+    - [ ] release.xml template in releng/org.eclipse.epp.config/tools/promote-a-build.sh
 - [ ] Update the build qualifiers to ensure that packages are all updated. See this [gerrit](https://git.eclipse.org/r/#/c/161075/) for an example. Run [setGitDate](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/tree/releng/org.eclipse.epp.config/tools/setGitDate) script. This script will make a local commit.
 - [ ] Wait for announcement that the staging repo is ready on [cross-project-issues-dev](https://accounts.eclipse.org/mailing-list/cross-project-issues-dev). An [example announcement](https://www.eclipse.org/lists/cross-project-issues-dev/msg17420.html).
 - [ ] Run a [CI build](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build/) that includes the above changes.
@@ -55,7 +56,6 @@ build=20191212-1212
 - [ ] **On M1-RC1 release day** approximately 9:30am check:
     - [ ] copy the composite\*RC1.jar files over the composite\*.jar files in https://download.eclipse.org/technology/epp/packages/2020-03/ - this is done automatically with the https://ci.eclipse.org/packaging/view/Packages/job/epp-makeVisible/ which is automatically triggered by simrel's https://ci.eclipse.org/simrel/view/All/job/simrel.releng.makeVisible/
 - [ ] **TO BE AUTOMATED**
-    - [ ] On release day, update [release.xml](https://download.eclipse.org/technology/epp/downloads/release/release.xml) which basically lists the relative locations of past, present, and future package releases. This will allow the webmasters to publish the new packages on the main Eclipse download page.
     - [ ] **On final release day** approximately 9:30am (TBD when should these operaions happen - it needs time to be mirrored still!) :
         - [ ] flatten the published RC2 (or respun RC2) P2 repository as https://download.eclipse.org/technology/epp/packages/2020-03/
         - [ ] Include the p2.index file update
