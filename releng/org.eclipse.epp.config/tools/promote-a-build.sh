@@ -121,6 +121,19 @@ EOM
 
 popd # leave p2
 
+# ----------------------------------------------------------------------------------------------
+# Make the new https://download.eclipse.org/technology/epp/downloads/release/release.xml file
+# The release.xml file is used by Eclipse Webmaster to populate eclipse.org/downloads
+cat > release.xml <<EOM
+<packages>
+<past>2019-03/R</past>
+<past>2019-06/R</past>
+<past>2019-09/R</past>
+<past>2019-12/R</past>
+<present>2020-03/R</present>
+<future>2020-06/M3</future>
+</packages>
+EOM
 
 # ----------------------------------------------------------------------------------------------
 # Copy everything to download.eclipse.org
@@ -139,3 +152,4 @@ ${ECHO} cp -r p2/p2.index ${REPO}
 ${ECHO} cp -r p2/${RELEASE_DIR} ${REPO}
 ${ECHO} cp p2/compositeArtifacts.jar ${REPO}/compositeArtifacts${RELEASE_DIR}.jar
 ${ECHO} cp p2/compositeContent.jar ${REPO}/compositeContent${RELEASE_DIR}.jar
+${ECHO} cp release.xml ${EPP_DOWNLOADS}/downloads/release/release.xml
