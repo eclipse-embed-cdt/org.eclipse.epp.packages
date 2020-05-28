@@ -17,7 +17,7 @@
      <description><![CDATA[Tools for developers creating Java Enterprise and Web applications, including a Java IDE, tools for Web Services, JPA and Data Tools, JSF, Mylyn, Maven and Gradle, Git, and more.<br/>
 Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?classification=WebTools">here</a> to file a bug against Eclipse Web Tools Platform.<br/>
 Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">here</a> to file a bug against Eclipse Platform.<br/>
-Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=M2E-WTP">here</a> to file a bug against Maven integration for web projects.<br/>
+Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=M3E-WTP">here</a> to file a bug against Maven integration for web projects.<br/>
 Click <a href="https://github.com/eclipse/wildwebdeveloper/issues/new">here</a> to report an issue against Eclipse Wild Web Developer (incubating).<br/>
 ]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
@@ -46,6 +46,6 @@ Click <a href="https://github.com/eclipse/wildwebdeveloper/issues/new">here</a> 
   <rcp version="4.16.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-jee-2020-06-M2-incubation" />
+  <product name="eclipse-jee-2020-06-M3-incubation" />
 
 </configuration>
