@@ -22,16 +22,16 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/PTP/new_and_noteworthy/9.3.1"
+    url="https://wiki.eclipse.org/PTP/new_and_noteworthy/9.4.0"
     project="Eclipse PTP" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/eclipse/news/4.16/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/CDT/User/NewIn910"
+    url="https://wiki.eclipse.org/CDT/User/NewIn911"
     project="Eclipse CDT" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/Linux_Tools_Project/News/NewIn75"
+    url="https://wiki.eclipse.org/Linux_Tools_Project/News/NewIn77"
     project="Eclipse Linux Tools" />
   </MoreInfo>
   
