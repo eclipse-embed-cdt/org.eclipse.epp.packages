@@ -42,7 +42,7 @@
          </property>
          <property
               name="introBrandingImage"
-              value="product:intro-eclipse.png">
+              value="product:intro-eclipse.svg">
          </property>
          <property
                name="introTitle"
