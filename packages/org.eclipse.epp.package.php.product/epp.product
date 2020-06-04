@@ -237,7 +237,6 @@ United States, other countries, or both.
    </features>
 
    <repositories>
-      <repository location="http://download.eclipse.org/tools/pdt/updates/photon" enabled="true" />
    </repositories>
 
 </product>
