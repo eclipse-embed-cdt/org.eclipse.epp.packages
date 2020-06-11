@@ -49,6 +49,6 @@ Installation of stable release of <a href="https://nodejs.org/">node.js</a> is s
   <rcp version="4.16.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-jee-2020-06-RC1-incubation" />
+  <product name="eclipse-jee-2020-06-R-incubation" />
 
 </configuration>
