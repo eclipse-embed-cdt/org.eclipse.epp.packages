@@ -59,7 +59,7 @@ build=20191212-1212
     - [ ] **On final release day** approximately 9:30am (TBD when should these operaions happen - it needs time to be mirrored still!) :
         - [ ] flatten the published RC2 (or respun RC2) P2 repository as https://download.eclipse.org/technology/epp/packages/2020-03/
         - [ ] Include the p2.index file update
-        - [ ] Ensure that there is no unexpected caching of removed composite files. E.g. `curl -I http://download.eclipse.org/technology/epp/packages/2020-03/compositeContent.jar` **must** return 404.
+        - [ ] Ensure that there is no unexpected caching of removed composite files. E.g. `curl -O http://download.eclipse.org/technology/epp/packages/2020-06/compositeContent.jar` and `curl -I http://download.eclipse.org/technology/epp/packages/2020-06/compositeContent.jar` **must** return 404.
         - [ ] rename the provisional release milestone to final directory (E.g. [2020-03/RC2](https://download.eclipse.org/technology/epp/downloads/release/2020-03/RC2) -> [2020-03/R](https://download.eclipse.org/technology/epp/downloads/release/2020-03/R)
     - [ ] When automated this can/should be triggered by the https://ci.eclipse.org/simrel/view/All/job/simrel.releng.makeVisible/ job - in the past this worked which meant that SimRel and EPP would synchronize their releases.
     - [ ] These are the expected commands that need to be automated on M2-RC1 release days.
