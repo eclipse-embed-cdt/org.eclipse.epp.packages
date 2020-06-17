@@ -41,6 +41,6 @@ Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EGit">here</a
   <rcp version="4.16.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-committers-2020-06-R" />
+  <product name="eclipse-committers-2020-09-M1" />
 
 </configuration>
