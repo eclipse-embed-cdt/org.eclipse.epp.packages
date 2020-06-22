@@ -218,7 +218,7 @@ United States, other countries, or both.
       <!-- not available in Neon on 2016-02-21
       <feature id="org.eclipse.egit.import" installMode="root"/>
       -->
-      <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
+      <feature id="org.eclipse.mylyn.wikitext.editors_feature" installMode="root"/>
       <feature id="org.eclipse.corrosion.feature" installMode="root"/>
       <!-- TODO debug features for CDT? -->
       <feature id="org.eclipse.tm.terminal.feature" installMode="root"/>
