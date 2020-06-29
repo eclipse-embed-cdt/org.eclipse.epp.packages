@@ -7,5 +7,7 @@ requires.1.name=org.eclipse.platform.ide
 requires.1.greedy=true
 
 instructions.configure=\
-org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:http${#58}//download.eclipse.org/wildwebdeveloper/releases/latest,name:Latest Eclipse Wild Web Developer release,enabled:true);\
-org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:http${#58}//download.eclipse.org/wildwebdeveloper/releases/latest,name:Latest Eclipse Wild Web Developer release,enabled:true);
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:0,location:http${#58}//download.eclipse.org/releases/latest);\
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(type:1,location:http${#58}//download.eclipse.org/releases/latest);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:https${#58}//download.eclipse.org/wildwebdeveloper/releases/latest,name:Latest Eclipse Wild Web Developer release,enabled:true);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:https${#58}//download.eclipse.org/wildwebdeveloper/releases/latest,name:Latest Eclipse Wild Web Developer release,enabled:true);
