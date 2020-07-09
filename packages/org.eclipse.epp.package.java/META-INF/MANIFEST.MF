@@ -4,7 +4,7 @@ Bundle-Name: EPP Java Package
 Bundle-SymbolicName: org.eclipse.epp.package.java;singleton:=true
 Bundle-Version: 4.17.0.qualifier
 Bundle-Vendor: Eclipse Packaging Project
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Require-Bundle: org.eclipse.platform,
  org.eclipse.equinox.app
 Eclipse-BundleShape: dir
