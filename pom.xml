@@ -28,6 +28,7 @@
   <packaging>pom</packaging>
 
   <modules>
+    <module>packages/a.jre.noop</module>
     <module>archive-template</module>
     <module>packages/org.eclipse.epp.package.common</module>
     <module>packages/org.eclipse.epp.package.common.feature</module>
