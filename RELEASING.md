@@ -12,7 +12,6 @@ EPP releases happen for each milestone and release candidate according to the [E
 - [ ] Update splash screen (once per release cycle, hopefully done before M1). See detailed [instructions](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/tree/packages/org.eclipse.epp.package.common/splash/INSTRUCTIONS.md).
 - [ ] When the year changes, e.g. between 2019-12 and 2020-03 releases, an update of the copyright year is required with a very smart search&replace.
 - [ ] In addition to the "Update Name" step on every M and RC, the whole version string is updated, including platform version (e.g. `4.14` -> `4.15`); this is a large change including pom.xml, feature.xml, MANIFEST.MF, epp.website.xml, and epp.product 
-- [ ] When Eclipse Platform contributes M1, the `<feature id="org.eclipse.platform" version="4.15.0.qualifier"/>` lines in each epp.product also needs to be updated.
 - [ ] rsync the downloads area to archive.eclipse.org and remove non-R downloads.
     - [ ] Remove the old M and RC builds with https://ci.eclipse.org/packaging/job/releng-delete-old-M-RC-downloads
     - [ ] rsync the last release to the archives with https://ci.eclipse.org/packaging/job/releng-rsync-epp-downloads-to-archive

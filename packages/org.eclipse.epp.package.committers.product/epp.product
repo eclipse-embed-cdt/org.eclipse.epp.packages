@@ -204,7 +204,7 @@ United States, other countries, or both.
    <features>
       <feature id="org.eclipse.epp.package.committers.feature" version="4.17.0.qualifier"/>
       <feature id="org.eclipse.epp.package.common.feature" version="4.17.0.qualifier"/>
-      <feature id="org.eclipse.platform" version="4.16.0.qualifier"/>
+      <feature id="org.eclipse.platform"/>
       <feature id="org.eclipse.epp.mpc" installMode="root"/>
       <feature id="org.eclipse.equinox.p2.user.ui"/>
       <feature id="org.eclipse.help"/>
