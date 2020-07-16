@@ -222,8 +222,6 @@ United States, other countries, or both.
       <feature id="org.eclipse.launchbar" installMode="root"/>
       <feature id="org.eclipse.launchbar.remote" installMode="root"/>
       <feature id="org.eclipse.egit" installMode="root"/>
-      <feature id="org.eclipse.linuxtools.cdt.libhover.feature" installMode="root"/>
-      <feature id="org.eclipse.linuxtools.cdt.libhover.devhelp.feature" installMode="root"/>
       <feature id="org.eclipse.linuxtools.changelog.c" installMode="root"/>
       <feature id="org.eclipse.linuxtools.gcov" installMode="root"/>
       <feature id="org.eclipse.linuxtools.gprof.feature" installMode="root"/>
