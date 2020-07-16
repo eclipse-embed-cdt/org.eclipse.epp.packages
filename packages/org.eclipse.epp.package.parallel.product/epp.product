@@ -210,8 +210,6 @@ United States, other countries, or both.
       <feature id="org.eclipse.cdt.autotools" installMode="root"/>
       <feature id="org.eclipse.cdt.build.crossgcc" installMode="root"/>
       <feature id="org.eclipse.cdt.cmake" installMode="root"/>
-      <feature id="org.eclipse.cdt.bupc" installMode="root"/>
-      <feature id="org.eclipse.cdt.core.parser.upc.feature" installMode="root"/>
       <feature id="org.eclipse.cdt.debug.standalone" installMode="root"/>
       <feature id="org.eclipse.cdt.debug.ui.memory" installMode="root"/>
       <feature id="org.eclipse.cdt.launch.remote" installMode="root"/>
