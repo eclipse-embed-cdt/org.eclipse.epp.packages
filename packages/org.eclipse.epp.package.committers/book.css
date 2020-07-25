@@ -120,7 +120,7 @@ a.command-link img {
 		color:      #f0f0f0; 
 		background: #3d3d3d;
 	} 
-	body, h1, h2, h3, h4, h5, h6, caption, p, 
+	body, h1, h2, h3, h4, h5, h6, h6.CaptionFigColumn, caption, p, p.note 
 	table, td,  th, ul, ol, dl, li, dd, dt{
 		color: #f0f0f0;
 	}
@@ -135,5 +135,14 @@ a.command-link img {
 	
 	a:hover{
 		color: #f0f0f0;
+	}
+	
+	/* darken images to add some comfort while reading in dark theme */
+	img {
+		opacity: .75;
+		transition: opacity .5s ease-in-out;
+	}
+	img:hover {
+		opacity: 1;
 	}
 }

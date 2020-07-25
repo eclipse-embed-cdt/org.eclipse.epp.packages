@@ -1,0 +1,14 @@
+#!/bin/bash
+
+GIT_DATE=`date --utc --iso-8601=seconds --date='12:00 today'`
+echo "Setting GIT dates to ${GIT_DATE}"
+
+export GIT_AUTHOR_DATE="${GIT_DATE}"
+export GIT_COMMITTER_DATE="${GIT_DATE}"
+
+for II in `find . -name .forceQualifierUpdate`; do
+  echo "${GIT_DATE}" >$II;
+  git add $II;
+done
+
+git commit -m"Set version qualifiers with setGitDate script"

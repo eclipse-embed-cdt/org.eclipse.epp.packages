@@ -17,27 +17,27 @@
      <description><![CDATA[<a href="http://www.eclipse.org/scout">Eclipse Scout</a> is a Java/HTML5 framework to develop business applications that run on the desktop, on tablets and mobile devices. This package includes Eclipse IDE support for Scout developers and source code.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
-      <tester>Matthias Zimmermann</tester>
-      <tester>Judith Gull</tester>
       <tester>Patrick Bänziger</tester>
       <tester>Arthur van Dorp</tester>
+      <tester>Andreas Dorta</tester>
+      <tester>Sandro Lombardo</tester>
     </packageTesters>
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="https://eclipsescout.github.io/9.0/release-notes.html"
+    url="https://eclipsescout.github.io/10.0/release-notes.html"
     project="Eclipse Scout" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.14/"
+    url="https://www.eclipse.org/eclipse/news/4.15/"
     project="Eclipse Platform" />
   </MoreInfo>
 
 
   <!-- version, the RCP version to build. This is used to determine the file
     name of the root file archives -->
-  <rcp version="4.14.0" />
+  <rcp version="4.15.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-scout-2019-12-R" />
+  <product name="eclipse-scout-2020-03-R" />
 
 </configuration>

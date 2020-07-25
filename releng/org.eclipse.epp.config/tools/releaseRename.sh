@@ -1,55 +1,51 @@
 #!/bin/bash
 
-RELEASETRAIN=2019-12
-RELEASEDIRECTORY=/home/data/httpd/download.eclipse.org/technology/epp/downloads/release
-TESTDIRECTORY=/shared/technology/epp/epp_build/${RELEASETRAIN}/download
-CURRENTDIR=${PWD}
+# These steps have to be executed on build.eclipse.org in the final download directory
+# of the EPP packages, e.g. for 2020-03 RC1 this is located in 
+# /home/data/httpd/download.eclipse.org/technology/epp/downloads/release/2020-03/RC1
 
+# 2020-03
+PACKAGES="committers cpp dsl java javascript jee modeling parallel php rcp rust scout testing"
+PLATFORMS="linux.gtk.x86_64.tar.gz macosx.cocoa.x86_64.dmg win32.win32.x86_64.zip"
+TIMESTAMP="20200227-1435"
+RELEASE="2020-03-RC1"
+BASEURL="https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build/896/artifact/org.eclipse.epp.packages/archive"
+GITBRANCH="master"
 
-#############################################################################
+GITURL="git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git"
 
-if [ -z ${2} ]
-then
-  echo "ERROR: At least two parameters (build id and target version) are necessary. Stopping."
-  echo "       Example: \"sh releaseRename.sh 20080117-0620 M5\""
-  exit 1
-fi
-TESTBUILDID=${1}
-TARGETVERSION=${2}
+# ----------------------------------------------------------------------------------------------
+# pull the XML configuration files that describe each package; these files are used by the
+# script that generates the package websites at eclipse.org/downloads
 
-echo "Running the releaseRename script for ${RELEASETRAIN} with build ${TESTBUILDID} and version ${TARGETVERSION}"
+GITURL="/gitroot/epp/org.eclipse.epp.packages.git"
+GITPROJECTPATH="packages"
 
-SOURCEDIR=${TESTDIRECTORY}/${TESTBUILDID}
-echo -n "Checking source directory: "
-if [ ! -d ${SOURCEDIR} ]
-then
-  echo "failed"
-  echo "ERROR: ${SOURCEDIR} does not exist. Stopping."
-  exit 1
-fi
-echo "okay"
+echo "...loading external functions"
+git archive --format=tar --remote=${GITURL} ${GITBRANCH} releng/org.eclipse.epp.config/tools/functions.sh | tar xf - --to-stdout >functions.sh
+. functions.sh
 
-TARGETDIR=${RELEASEDIRECTORY}/${RELEASETRAIN}/${TARGETVERSION}
-echo -n "Checking target directory: "
-if [ -d ${TARGETDIR} ]
-then
-  echo "failed"
-  echo "ERROR: ${TARGETDIR} does already exist. Stopping."
-  exit 1
-fi
-echo "okay"
+# check-out configuration
+PACKAGES_MAP_FILE=packages_map.txt
+echo "...checking out configuration map to ${PACKAGES_MAP_FILE}"
+git archive --format=tar --remote=${GITURL} ${GITBRANCH} releng/org.eclipse.epp.config/packages_map.txt | tar xf - --to-stdout >${PACKAGES_MAP_FILE}
+pullAllConfigFiles ${PACKAGES_MAP_FILE} .
 
-echo 1st: Create the release directory ${TARGETDIR}
-mkdir ${TARGETDIR}
+# ----------------------------------------------------------------------------------------------
+# download the packages from the Jenkins build server
 
-echo 2nd: Copy logfiles
-cp -a ${SOURCEDIR}/*.log ${TARGETDIR}
+for PACKAGE in $PACKAGES; do
+  for PLATFORM in $PLATFORMS; do
+    NAME="${TIMESTAMP}_eclipse-${PACKAGE}-${RELEASE}-${PLATFORM}"
+    echo ${NAME}
+    wget ${BASEURL}/${NAME}
+  done;
+done
 
-echo 3rd: Copy XML config files: renamed feature.xml and package configuration files
-cp -a ${SOURCEDIR}/*.xml ${TARGETDIR}
+# ----------------------------------------------------------------------------------------------
+# rename the packages, i.e. strip the build date, update the package file name, and add the
+# incubation name if required.
 
-echo 4th: Copy and rename packages
-cd ${SOURCEDIR}
 for II in *eclipse*; do
   if [[ ! ( "${II}" =~ ".sha1" || "${II}" =~ ".md5" || "${II}" =~ "^eclipse_" ) ]]
   then
@@ -59,21 +55,14 @@ for II in *eclipse*; do
              sed 's/linux\.gtk\.x86\./linux\-gtk\./' | \
              sed 's/win32\.win32\.x86\./win32\./' | \
              sed 's/win32\.win32\.x86\_64\./win32\-x86\_64\./' | \
-             sed 's/macosx\.cocoa\.x86\_64/macosx\-cocoa-x86\_64/'`
-    echo .. Copying ${II} to ${TARGETDIR}/${NEWNAME}
-    rsync -av ${II} ${TARGETDIR}/${NEWNAME}
-    if [ $? = "0" ]; then
-      echo .... Successfully copied
-    else
-      echo Trying again...
-      rsync -av --bwlimit=400 ${II} ${TARGETDIR}/${NEWNAME}
-    fi
+             sed 's/macosx\.cocoa\.x86\_64/macosx\-cocoa-x86\_64/' | \
+             sed 's/macosx\.cocoa\.x86/macosx\-cocoa/' | \
+             sed 's/macosx\.carbon\.ppc/macosx\-carbon/'`
+    echo .. Renaming ${II} to ${NEWNAME}
+    mv -i ${II} ${NEWNAME}
   fi
 done
 
-echo 5th: Adjust package names with incubating components
-cd ${TARGETDIR}
-# pattern to match: <product name="eclipse-linuxtools-juno-RC5-incubation" /> -> "eclipse-linuxtools-juno-RC5"
 INCUBATION=`ls *.xml | grep -v feature | xargs grep "product name=\"eclipse.*incubation" | sed 's/^.*\(eclipse-.*\)-incubation.*/\1/'`
 echo Found ${INCUBATION} in incubation
 for II in ${INCUBATION}; do
@@ -81,29 +70,17 @@ for II in ${INCUBATION}; do
   for INCUBATIONPACKAGE in `ls *${II}* | grep -v "\.md5$" | grep -v "\.sha1$" | grep -v "incubation"`; do
     INCUBATIONPACKAGE_FILE=`echo ${INCUBATIONPACKAGE} | sed 's:\(.*\)\('${II}'\)\(.*\):\1\2-incubation\3:'`
     echo -n ".... Moving ${INCUBATIONPACKAGE} to ${INCUBATIONPACKAGE_FILE}"
-    mv ${INCUBATIONPACKAGE} ${INCUBATIONPACKAGE_FILE}
+    mv -i ${INCUBATIONPACKAGE} ${INCUBATIONPACKAGE_FILE}
     echo " done."
   done
 done
 
-echo "6th: Update release string in archive file names"
-cd ${TARGETDIR}
-for II in `ls *eclipse-*.tar.gz *eclipse-*.zip`; do
-  # 20110615-0608_eclipse-testing-juno-RC5-macosx.cocoa.x86_64.tar.gz
-  # eclipse-parallel-juno-RC4-incubation-macosx-cocoa-x86_64.tar.gz
-  NEWNAME=`echo $II | sed 's:^\(.*eclipse\-\)\([a-z]*\-\)\([a-z]*\-\)\([A-Z,0-9]*\)\(\-.*\)$:\1\2\3'${TARGETVERSION}'\5:'`
-  echo -n ".. Updating $II with $NEWNAME"
-  mv ${II} ${NEWNAME}
-  echo " done."
-done
+# ----------------------------------------------------------------------------------------------
+# compute the checksum files for each package
 
-echo 7th: Re-calculate checksum files
-cd ${TARGETDIR}
-for II in eclipse*.zip eclipse*.tar.gz; do 
+for II in eclipse*.zip eclipse*.tar.gz eclipse*.dmg; do 
   echo .. $II
   md5sum $II >$II.md5
   sha1sum $II >$II.sha1
+  sha512sum -b $II >$II.sha512
 done
-
-echo Moving to release directory ${TARGETDIR} done.
-exit 0

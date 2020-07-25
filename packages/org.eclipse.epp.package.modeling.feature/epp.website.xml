@@ -19,7 +19,7 @@
         In addition, via the package's discover catalog, you can easily install a wide range of additional powerful, model-based tools and runtimes to suit your specific needs.]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
-      <tester>Cédric Brun</tester>
+      <tester>Remi Schnekenburger</tester>
     </packageTesters>
   </packageMetaData>
   <MoreInfo>  
@@ -36,9 +36,9 @@
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="4.14.0" />
+  <rcp version="4.15.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-modeling-2019-12-R" />
+  <product name="eclipse-modeling-2020-03-R" />
 
 </configuration>
