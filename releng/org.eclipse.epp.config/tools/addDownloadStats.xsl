@@ -34,6 +34,10 @@ Contributors:
     <xsl:call-template name="artifact_properties" />
   </xsl:template>
 
+  <xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.embedcdt']/properties">
+    <xsl:call-template name="artifact_properties" />
+  </xsl:template>
+
   <xsl:template match="artifact[@classifier='osgi.bundle' and @id='org.eclipse.epp.package.dsl']/properties">
     <xsl:call-template name="artifact_properties" />
   </xsl:template>
@@ -95,6 +99,10 @@ Contributors:
   </xsl:template>
 
   <xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.cpp.feature']/properties">
+    <xsl:call-template name="artifact_properties_feature" />
+  </xsl:template>
+
+  <xsl:template match="artifact[@classifier='org.eclipse.update.feature' and @id='org.eclipse.epp.package.embedcdt.feature']/properties">
     <xsl:call-template name="artifact_properties_feature" />
   </xsl:template>
 

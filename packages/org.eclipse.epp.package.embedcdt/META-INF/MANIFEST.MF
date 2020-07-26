@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: EPP Embedded CDT Bundle
+Bundle-SymbolicName: org.eclipse.epp.package.embedcdt;singleton:=true
+Bundle-Version: 4.15.0.qualifier
+Bundle-Vendor: Eclipse Packaging Project
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.platform,
+ org.eclipse.equinox.app
+Eclipse-BundleShape: dir
+Bundle-Localization: plugin

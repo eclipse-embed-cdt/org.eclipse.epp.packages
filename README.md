@@ -51,6 +51,7 @@ Each package uses its own profile:
 
 - epp.package.committers
 - epp.package.cpp
+- epp.package.embedcdt
 - epp.package.dsl
 - epp.package.java
 - epp.package.javascript

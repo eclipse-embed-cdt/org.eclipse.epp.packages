@@ -1,0 +1,49 @@
+# tell pde.build not to generate start levels
+org.eclipse.pde.build.append.startlevels=false
+
+# add requirement on org.eclipse.platform.ide
+requires.1.namespace=org.eclipse.equinox.p2.iu
+requires.1.name=org.eclipse.platform.ide
+requires.1.greedy=true
+
+#      <import feature="org.eclipse.linuxtools.oprofile.feature"/>
+requires.2.namespace=org.eclipse.equinox.p2.iu
+requires.2.name=org.eclipse.linuxtools.oprofile.feature.feature.group
+requires.2.optional=true
+
+#      <import feature="org.eclipse.linuxtools.perf.feature"/>
+requires.3.namespace=org.eclipse.equinox.p2.iu
+requires.3.name=org.eclipse.linuxtools.perf.feature.feature.group
+requires.3.optional=true
+
+#      <import feature="org.eclipse.linuxtools.systemtap"/>
+requires.4.namespace=org.eclipse.equinox.p2.iu
+requires.4.name=org.eclipse.linuxtools.systemtap.feature.group
+requires.4.optional=true
+
+#      <import feature="org.eclipse.linuxtools.callgraph.feature"/>
+requires.5.namespace=org.eclipse.equinox.p2.iu
+requires.5.name=org.eclipse.linuxtools.callgraph.feature.feature.group
+requires.5.optional=true
+
+# Bug 490515 - Prevent upgrade from old to new EPP package layout
+# https://bugs.eclipse.org/bugs/show_bug.cgi?id=490515
+#
+# With Eclipse Neon (4.6.0) all packages changed their structure from a single
+# feature to a product with multiple independent root features. Upgrades from
+# older versions to the new structure would result in an unexpected uninstall
+# of everything below the old main package feature. In order to prevent such
+# upgrades we add an artificial lower limit of the IU to the p2 metadata.
+
+update.id = org.eclipse.epp.package.embedcdt.feature.feature.group
+update.range = [4.6.0.20160301-1200, $version$)
+update.severity = 0
+update.description = Eclipse package upgrade from versions before Eclipse Neon (4.6) is not possible. See bug 332989.
+
+instructions.configure=\
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(location:http${#58}//download.eclipse.org/tools/cdt/releases/9.11,type:0,name:CDT,enabled:true); \
+org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(location:http${#58}//download.eclipse.org/tools/cdt/releases/9.11,type:1,name:CDT,enabled:true);
+
+instructions.unconfigure=\
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(location:http${#58}//download.eclipse.org/tools/cdt/releases/9.11,type:0); \
+org.eclipse.equinox.p2.touchpoint.eclipse.removeRepository(location:http${#58}//download.eclipse.org/tools/cdt/releases/9.11,type:1);
