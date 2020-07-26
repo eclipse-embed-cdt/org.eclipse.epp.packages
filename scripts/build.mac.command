@@ -37,7 +37,7 @@ project_root_folder=$(dirname ${scripts_folder})
 cd ${project_root_folder}
 
 # Force use of 1.8
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home
 
 # Add maven path to environment.
 export PATH=${HOME}/opt/apache-maven-3.6.3/bin:${JAVA_HOME}/bin:${PATH}
