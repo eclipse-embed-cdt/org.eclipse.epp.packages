@@ -44,8 +44,8 @@
     <!-- Upstream p2 repository, used as a source for pre-compiled build artifacts -->
     <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/2020-03/</eclipse.simultaneous.release.repository>
 
-    <gnumcueclipse.repository>https://download.eclipse.org/embed-cdt/releases/5.1.1/p2/</gnumcueclipse.repository>
     <gnumcueclipse.version>5.1.1</gnumcueclipse.version>
+    <gnumcueclipse.repository>https://download.eclipse.org/embed-cdt/releases/${gnumcueclipse.version}/p2/</gnumcueclipse.repository>
   </properties>
 
   <prerequisites>
