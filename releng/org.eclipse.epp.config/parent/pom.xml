@@ -330,7 +330,8 @@
                 <rootFolders>
                   <macosx>Eclipse.app</macosx>
                 </rootFolders>
-                <archiveFileName>${build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}</archiveFileName>
+                <!-- <archiveFileName>${build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}</archiveFileName> -->
+                <archiveFileName>eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}</archiveFileName>
               </product>
             </products>
             <profile>${project.artifactId}</profile>
