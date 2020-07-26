@@ -331,7 +331,8 @@
                   <macosx>Eclipse.app</macosx>
                 </rootFolders>
                 <!-- <archiveFileName>${build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}</archiveFileName> -->
-                <archiveFileName>${build}-gnumcueclipse-${gnumcueclipse.version}-${eclipse.simultaneous.release.id}</archiveFileName>
+                <!-- <archiveFileName>${build}-gnumcueclipse-${gnumcueclipse.version}-${eclipse.simultaneous.release.id}</archiveFileName> -->
+                <archiveFileName>eclipse-embedcdt-${eclipse.simultaneous.release.id}</archiveFileName>
               </product>
             </products>
             <profile>${project.artifactId}</profile>
