@@ -53,6 +53,7 @@ for f in *.zip *.gz
 do
   do_compute_sha shasum -a 256 -p ${f}
 done
+ls -lL
 popd
 
 echo
