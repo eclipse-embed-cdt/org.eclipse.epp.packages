@@ -46,7 +46,7 @@ do_compute_sha() {
 
 # -----------------------------------------------------------------------------
 
-mvn clean verify -Pepp.package.embedcdt
+mvn clean verify --batch-mode --show-version -Pepp.package.embedcdt
 
 pushd archive
 for f in *.zip *.gz 
