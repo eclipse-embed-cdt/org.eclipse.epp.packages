@@ -136,7 +136,7 @@
                 <copy todir="${basedir}/../../archive">
                   <fileset dir="${project.build.directory}/products">
                     <include name="*.zip" />
-                    <include name="*linux*.tar.gz" />
+                    <include name="*.tar.gz" />
                     <include name="*.dmg" />
                   </fileset>
                 </copy>
