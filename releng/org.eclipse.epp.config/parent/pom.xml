@@ -44,7 +44,7 @@
     <!-- Upstream p2 repository, used as a source for pre-compiled build artifacts -->
     <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/2020-06/</eclipse.simultaneous.release.repository>
 
-    <embedcdt.packageFolderName>2020-03</embedcdt.packageFolderName>
+    <embedcdt.packageFolderName>2020-06</embedcdt.packageFolderName>
     <embedcdt.version>5.1.1</embedcdt.version>
     <embedcdt.repository>https://download.eclipse.org/embed-cdt/releases/${embedcdt.version}/p2/</embedcdt.repository>
   </properties>
