@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.embedcdt.feature"
       label="EPP Embedded CDT Feature"
-      version="4.15.0.qualifier"
+      version="4.16.0.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.embedcdt"
       license-feature="org.eclipse.license"

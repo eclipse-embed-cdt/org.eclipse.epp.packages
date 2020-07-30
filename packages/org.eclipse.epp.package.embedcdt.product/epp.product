@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse IDE for Embedded C/C++ Developers" uid="epp.package.embedcdt" id="org.eclipse.epp.package.embedcdt.product" application="org.eclipse.ui.ide.workbench" version="4.15.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse IDE for Embedded C/C++ Developers" uid="epp.package.embedcdt" id="org.eclipse.epp.package.embedcdt.product" application="org.eclipse.ui.ide.workbench" version="4.16.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/org.eclipse.epp.package.embedcdt/eclipse_lg.png"/>
@@ -208,9 +208,9 @@ United States, other countries, or both.
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.embedcdt.feature" version="4.15.0.qualifier"/>
-      <feature id="org.eclipse.epp.package.common.feature" version="4.15.0.qualifier"/>
-      <feature id="org.eclipse.platform" version="4.15.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.embedcdt.feature" version="4.16.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.common.feature" version="4.16.0.qualifier"/>
+      <feature id="org.eclipse.platform" version="4.16.0.qualifier"/>
       <feature id="org.eclipse.epp.mpc" installMode="root"/>
 
       <feature id="org.eclipse.cdt" installMode="root"/>
@@ -227,7 +227,6 @@ United States, other countries, or both.
       <feature id="org.eclipse.cdt.launch.remote" installMode="root"/>
       <feature id="org.eclipse.cdt.launch.serial.feature" installMode="root"/>
       <feature id="org.eclipse.cdt.testsrunner.feature" installMode="root"/>
-      <feature id="org.eclipse.cdt.mylyn" installMode="root"/>
       <feature id="org.eclipse.launchbar" installMode="root"/>
       <feature id="org.eclipse.launchbar.remote" installMode="root"/>
       <feature id="org.eclipse.egit" installMode="root"/>
@@ -240,11 +239,6 @@ United States, other countries, or both.
       <feature id="org.eclipse.linuxtools.rpm" installMode="root"/>
       <feature id="org.eclipse.linuxtools.valgrind" installMode="root"/>
 
-      <feature id="org.eclipse.mylyn.bugzilla_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.context_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.ide_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.team_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
 
       <feature id="org.eclipse.tm.terminal.feature" installMode="root"/>
@@ -254,8 +248,8 @@ United States, other countries, or both.
       <feature id="org.eclipse.tracecompass.lttng2.control" installMode="root"/>
       <feature id="org.eclipse.tracecompass.lttng2.kernel" installMode="root"/>
       <feature id="org.eclipse.tracecompass.lttng2.ust" installMode="root"/>
-      
-      <!-- Add GNU MCU Eclipse features. -->
+
+      <!-- Add Embedded CDT features. -->
       <feature id="ilg.gnumcueclipse.managedbuild.cross.arm.feature" installMode="root"/>
       <feature id="ilg.gnumcueclipse.managedbuild.cross.riscv.feature" installMode="root"/>
       <feature id="ilg.gnumcueclipse.codered.feature" installMode="root"/>
@@ -271,7 +265,7 @@ United States, other countries, or both.
       <feature id="ilg.gnumcueclipse.templates.freescale.feature" installMode="root"/>
       <feature id="ilg.gnumcueclipse.templates.stm.feature" installMode="root"/>
       <feature id="ilg.gnumcueclipse.templates.sifive.feature" installMode="root"/>
-      
+
    </features>
 
 

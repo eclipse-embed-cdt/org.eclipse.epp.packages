@@ -12,7 +12,6 @@
       </group>
       <group path="page-content/bottom-left" default="true">
          <extension id="org.eclipse.epp.mpc.ui" importance="low"/>
-         <extension id="org.eclipse.mylyn" importance="low"/>
       </group>
       <group path="page-content/bottom-right" default="true">
          <extension id="org.eclipse.m2e" importance="low"/>
@@ -30,7 +29,6 @@
       </group>
       <group path="page-content/bottom-left" default="true">
          <extension id="org.eclipse.egit" importance="low"/>
-         <extension id="org.eclipse.mylyn" importance="low"/>
          <extension id="org.eclipse.ui.workbench.news" importance="low"/>
          <extension id="org.eclipse.ui.workbench.migration" importance="callout"/>
       </group>
@@ -48,7 +46,6 @@
          <extension id="org.eclipse.egit" importance="low"/>
       </group>
       <group path="page-content/bottom-left" default="true">
-         <extension id="org.eclipse.mylyn" importance="low"/>
       </group>
       <group path="page-content/bottom-right" default="true">
       </group>

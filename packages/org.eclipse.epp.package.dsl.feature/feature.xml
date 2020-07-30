@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epp.package.dsl.feature"
       label="EPP DSL Feature"
-      version="4.15.0.qualifier"
+      version="4.16.0.qualifier"
       provider-name="Eclipse Packaging Project"
       plugin="org.eclipse.epp.package.dsl"
       license-feature="org.eclipse.license"
@@ -36,6 +36,7 @@
       <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.egit.import"/>
       <import feature="org.eclipse.m2e.feature"/>
+      <import feature="org.eclipse.m2e.lemminx.feature"/>
       <import feature="org.eclipse.m2e.logback.feature"/>
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="org.eclipse.buildship"/>

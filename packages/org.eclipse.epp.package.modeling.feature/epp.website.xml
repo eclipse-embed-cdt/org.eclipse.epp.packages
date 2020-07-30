@@ -30,15 +30,15 @@
     url="https://wiki.eclipse.org/EMF_Compare/New_and_Noteworthy/3.3.0"
     project="Eclipse EMF Compare" />
   <NewAndNoteworthy
-    url="https://projects.eclipse.org/projects/modeling.mmt.atl/releases/4.0"
+    url="https://projects.eclipse.org/projects/modeling.mmt.atl/releases/4.2.0"
     project="Eclipse ATL" />
   </MoreInfo>
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="4.15.0" />
+  <rcp version="4.16.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-modeling-2020-03-R" />
+  <product name="eclipse-modeling-2020-06-R" />
 
 </configuration>

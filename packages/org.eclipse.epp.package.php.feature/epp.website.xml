@@ -9,40 +9,43 @@
    -->
   <packageMetaData
    packageName="Eclipse IDE for PHP Developers"
-   maintainer="Eclipse Packaging Project"
+   maintainer="Eclipse Packaging Project and PHP Development Tools Project"
    iconurl="http://www.eclipse.org/downloads/images/php.png"
    bugzillaComponentId="php-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-    <description><![CDATA[The essential tools for any PHP developer, including PHP language support, Git client, Mylyn and editors for JavaScript, HTML, CSS and XML.]]></description>
+    <description><![CDATA[The essential tools for any PHP developer, including PHP language support, Git client, Mylyn and editors for JavaScript, TypeScript, HTML, CSS and XML.<br />
+Click <a href="https://github.com/eclipse/pdt/issues/new/choose">here</a> to report an issue against Eclipse PHP Development Tools.<br />
+Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?classification=WebTools">here</a> to file a bug against Eclipse Web Tools Platform.<br />
+Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">here</a> to file a bug against Eclipse Platform.<br />
+Click <a href="https://github.com/eclipse/wildwebdeveloper/issues/new">here</a> to report an issue against Eclipse Wild Web Developer (incubating).
+]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
     <packageTesters>
-      <tester>Jacek Pospychala</tester>
-	    <tester>Kaloyan Raev</tester>
 	    <tester>Dawid Pakula</tester>
     </packageTesters>
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/PDT/NewIn70"
+    url="https://wiki.eclipse.org/PDT/NewIn72"
     project="Eclipse PHP Development Tools" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.15/"
+    url="https://www.eclipse.org/eclipse/news/4.16/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/mylyn/new/"
     project="Eclipse Mylyn" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.6"
+    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.8"
     project="Eclipse EGit" />
   </MoreInfo>
 
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="4.15.0" />
+  <rcp version="4.16.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-php-2020-03-R" />
+  <product name="eclipse-php-2020-06-R" />
 
 </configuration>

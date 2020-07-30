@@ -8,7 +8,6 @@
       <group path="page-content/top-right">
          <extension id="org.eclipse.epp.mpc.ui"/>
          <extension id="org.eclipse.egit"/>
-         <extension id="org.eclipse.mylyn"/>
       </group>
       <group path="page-content/bottom-left" default="true">
       </group>
@@ -22,7 +21,6 @@
       </group>
       <group path="page-content/top-right">
          <extension id="org.eclipse.egit"/>
-         <extension id="org.eclipse.mylyn"/>
       </group>
       <group path="page-content/bottom-left" default="true">
       </group>
@@ -43,7 +41,6 @@
       <group path="page-content/top-left">
          <extension id="org.eclipse.pdt"/>
          <extension id="org.eclipse.egit"/>
-         <extension id="org.eclipse.mylyn"/>
          <extension id="org.eclipse.ui.workbench.news" importance="low"/>
          <extension id="org.eclipse.ui.workbench.migration" importance="callout"/>
       </group>

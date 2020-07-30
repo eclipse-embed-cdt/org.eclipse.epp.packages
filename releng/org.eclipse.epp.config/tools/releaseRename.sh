@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # These steps have to be executed on build.eclipse.org in the final download directory
-# of the EPP packages, e.g. for 2020-03 RC1 this is located in 
-# /home/data/httpd/download.eclipse.org/technology/epp/downloads/release/2020-03/RC1
+# of the EPP packages, e.g. for 2020-06 RC1 this is located in 
+# /home/data/httpd/download.eclipse.org/technology/epp/downloads/release/2020-06/RC1
 
-# 2020-03
+# 2020-06
 PACKAGES="committers cpp dsl java javascript jee modeling parallel php rcp rust scout testing"
 PLATFORMS="linux.gtk.x86_64.tar.gz macosx.cocoa.x86_64.dmg win32.win32.x86_64.zip"
 TIMESTAMP="20200227-1435"
-RELEASE="2020-03-RC1"
+RELEASE="2020-06-RC1"
 BASEURL="https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build/896/artifact/org.eclipse.epp.packages/archive"
 GITBRANCH="master"
 

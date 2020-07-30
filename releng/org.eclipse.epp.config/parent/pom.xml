@@ -19,12 +19,12 @@
 
   <groupId>org.eclipse.epp</groupId>
   <artifactId>org.eclipse.epp-parent</artifactId>
-  <version>4.15.0-SNAPSHOT</version>
+  <version>4.16.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
     <maven.version>3.1.1</maven.version>
-    <tycho.version>1.5.1</tycho.version>
+    <tycho.version>1.7.0</tycho.version>
     <tycho.extras.version>${tycho.version}</tycho.extras.version>
     <tycho.scmUrl>scm:git:git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git</tycho.scmUrl>
     <cbi.version>1.1.8-SNAPSHOT</cbi.version>
@@ -36,13 +36,13 @@
     <!-- The location that is used to assemble the single EPP configuration p2 repository -->
     <eclipse.epp.targetRepository>${eclipse.epp.archiveDirectory}/repository/</eclipse.epp.targetRepository>
     <!-- ID used to generate the filename of the packages -->
-    <eclipse.simultaneous.release.id>2020-03-R</eclipse.simultaneous.release.id>
+    <eclipse.simultaneous.release.id>2020-06-R</eclipse.simultaneous.release.id>
     <!-- Timestamp used in various places, e.g. the about dialog (see about.mappings) -->
     <eclipse.simultaneous.release.build>${maven.build.timestamp}</eclipse.simultaneous.release.build>
     <!-- Human readable name of the release, e.g. used in the about dialog (see about.mappings) -->
-    <eclipse.simultaneous.release.name>2020-03 (4.15.0)</eclipse.simultaneous.release.name>
+    <eclipse.simultaneous.release.name>2020-06 (4.16.0)</eclipse.simultaneous.release.name>
     <!-- Upstream p2 repository, used as a source for pre-compiled build artifacts -->
-    <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/2020-03/</eclipse.simultaneous.release.repository>
+    <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/2020-06/</eclipse.simultaneous.release.repository>
 
     <embedcdt.packageFolderName>2020-03</embedcdt.packageFolderName>
     <embedcdt.version>5.1.1</embedcdt.version>
@@ -61,10 +61,6 @@
     <pluginRepository>
       <id>eclipse-cbi</id>
       <url>https://repo.eclipse.org/content/groups/cbi/</url>
-    </pluginRepository>
-    <pluginRepository>
-      <id>tycho-1.3-staged</id>
-      <url>https://oss.sonatype.org/content/repositories/orgeclipsetycho-1050/</url>
     </pluginRepository>
   </pluginRepositories>
 
@@ -137,19 +133,19 @@
             <artifactId>tycho-buildtimestamp-jgit</artifactId>
             <version>${tycho.extras.version}</version>
           </dependency>
-          <dependency> 
-            <groupId>org.eclipse.tycho.extras</groupId> 
-            <artifactId>tycho-sourceref-jgit</artifactId> 
-            <version>${tycho.extras.version}</version> 
-          </dependency> 
+          <dependency>
+            <groupId>org.eclipse.tycho.extras</groupId>
+            <artifactId>tycho-sourceref-jgit</artifactId>
+            <version>${tycho.extras.version}</version>
+          </dependency>
         </dependencies>
         <configuration>
           <timestampProvider>jgit</timestampProvider>
           <jgit.dirtyWorkingTree>ignore</jgit.dirtyWorkingTree>
           <format>yyyyMMdd-HHmm</format>
-          <sourceReferences> 
-            <generate>true</generate> 
-          </sourceReferences> 
+          <sourceReferences>
+            <generate>true</generate>
+          </sourceReferences>
         </configuration>
       </plugin>
 
@@ -207,25 +203,14 @@
           <artifactId>tycho-p2-repository-plugin</artifactId>
           <version>${tycho.version}</version>
           <configuration>
+            <extraArtifactRepositoryProperties>
+              <p2.statsURI>http://download.eclipse.org/stats/technology/epp/packages/${eclipse.simultaneous.release.id}/</p2.statsURI>
+            </extraArtifactRepositoryProperties>
             <includeAllDependencies>true</includeAllDependencies>
             <compress>true</compress>
+            <!-- Mirror goal used to aggregate unit seem to ignore the .xz files so let's not generate them to avoid inconsistency between *.jar and *.xz -->
+            <xzCompress>false</xzCompress>
           </configuration>
-          <executions>
-            <execution>
-              <id>default-assemble-repository</id>
-              <phase></phase>
-              <configuration>
-                <skip>true</skip>
-              </configuration>
-            </execution>
-            <execution>
-              <id>default-archive-repository</id>
-              <phase></phase>
-              <configuration>
-                <skip>true</skip>
-              </configuration>
-            </execution>
-          </executions>
         </plugin>
         <plugin>
           <groupId>org.eclipse.tycho</groupId>
@@ -264,6 +249,9 @@
           <groupId>org.eclipse.tycho</groupId>
           <artifactId>tycho-p2-plugin</artifactId>
           <version>${tycho.version}</version>
+          <configuration>
+            <generateDownloadStatsProperty>true</generateDownloadStatsProperty>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.eclipse.cbi.maven.plugins</groupId>
@@ -345,27 +333,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-antrun-plugin</artifactId>
-          <version>1.6</version>
-          <executions>
-            <execution>
-              <id>copy-zips-to-archive-folder</id>
-              <phase>pre-integration-test</phase>
-              <configuration>
-                <target>
-                  <copy todir="${basedir}/../../archive">
-                    <fileset dir="${project.build.directory}/products">
-                      <include name="*.zip" />
-                      <include name="*.tar.gz" />
-                      <include name="*.dmg" />
-                    </fileset>
-                  </copy>
-                </target>
-              </configuration>
-              <goals>
-                <goal>run</goal>
-              </goals>
-            </execution>
-          </executions>
+          <version>1.8</version>
         </plugin>
       </plugins>
     </pluginManagement>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse IDE for Java Developers" uid="epp.package.java" id="org.eclipse.epp.package.java.product" application="org.eclipse.ui.ide.workbench" version="4.15.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse IDE for Java Developers" uid="epp.package.java" id="org.eclipse.epp.package.java.product" application="org.eclipse.ui.ide.workbench" version="4.16.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/org.eclipse.epp.package.java/epp-java-about.png"/>
@@ -208,31 +208,21 @@ United States, other countries, or both.
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.java.feature" version="4.15.0.qualifier"/>
-      <feature id="org.eclipse.epp.package.common.feature" version="4.15.0.qualifier"/>
-      <feature id="org.eclipse.platform" version="4.15.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.java.feature" version="4.16.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.common.feature" version="4.16.0.qualifier"/>
+      <feature id="org.eclipse.platform" version="4.16.0.qualifier"/>
       <feature id="org.eclipse.epp.mpc" installMode="root"/>
 
       <feature id="org.eclipse.buildship" installMode="root"/>
       <feature id="org.eclipse.eclemma.feature" installMode="root"/>
       <feature id="org.eclipse.egit" installMode="root"/>
-      <!-- not available in Neon on 2016-02-21
-      <feature id="org.eclipse.egit.import" installMode="root"/>
-      -->
-      <feature id="org.eclipse.egit.mylyn" installMode="root"/>
       <feature id="org.eclipse.jdt" installMode="root"/>
       <feature id="org.eclipse.jgit" installMode="root"/>
       <feature id="org.eclipse.m2e.feature" installMode="root"/>
+      <feature id="org.eclipse.m2e.lemminx.feature" installMode="root"/>
       <feature id="org.eclipse.m2e.logback.feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.bugzilla_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.context_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.git" installMode="root"/>
-      <feature id="org.eclipse.mylyn.hudson" installMode="root"/>
-      <feature id="org.eclipse.mylyn.ide_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.java_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
-      <feature id="org.eclipse.wst.xml_ui.feature" installMode="root"/>
+      <feature id="org.eclipse.wildwebdeveloper.xml.feature" installMode="root"/>
 
       <feature id="org.eclipse.tips.feature" installMode="root"/>
    </features>

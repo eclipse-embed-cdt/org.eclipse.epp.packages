@@ -5,7 +5,7 @@ properties.0.name = org.eclipse.equinox.p2.type.product
 properties.0.value = true
 
 properties.1.name = org.eclipse.equinox.p2.description
-properties.1.value = 2020-03 Release of the Eclipse Java Developers package.
+properties.1.value = 2020-06 Release of the Eclipse Java Developers package.
 
 properties.2.name = org.eclipse.equinox.p2.provider
 properties.2.value = Eclipse Packaging Project
@@ -22,4 +22,4 @@ properties.2.value = Eclipse Packaging Project
 update.id = epp.package.java
 update.range = [4.6.0.20160301-1200, $version$)
 update.severity = 0
-update.description = Eclipse package upgrade from versions before Eclipse Neon (4.6) is not possible. See bug 332989.
+update.description = Eclipse IDE package upgrade from versions before Eclipse Neon (4.6) is not possible. See bug 332989.

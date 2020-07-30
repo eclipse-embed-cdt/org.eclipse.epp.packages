@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse Modeling Tools" uid="epp.package.modeling" id="org.eclipse.epp.package.modeling.product" application="org.eclipse.ui.ide.workbench" version="4.15.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse Modeling Tools" uid="epp.package.modeling" id="org.eclipse.epp.package.modeling.product" application="org.eclipse.ui.ide.workbench" version="4.16.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/org.eclipse.epp.package.modeling/eclipse_lg.png"/>
@@ -208,9 +208,9 @@ United States, other countries, or both.
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.modeling.feature" version="4.15.0.qualifier"/>
-      <feature id="org.eclipse.epp.package.common.feature" version="4.15.0.qualifier"/>
-      <feature id="org.eclipse.platform" version="4.15.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.modeling.feature" version="4.16.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.common.feature" version="4.16.0.qualifier"/>
+      <feature id="org.eclipse.platform" version="4.16.0.qualifier"/>
       <feature id="org.eclipse.epp.mpc" installMode="root"/>
 
       <feature id="org.eclipse.e4.core.tools.feature" installMode="root"/>
@@ -231,12 +231,6 @@ United States, other countries, or both.
       <feature id="org.eclipse.gef.sdk" installMode="root"/>
       <feature id="org.eclipse.gmf.runtime.sdk" installMode="root"/>
       <feature id="org.eclipse.jdt" installMode="root"/>
-      <feature id="org.eclipse.mylyn.bugzilla_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.context_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.ide_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.java_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.pde_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
       <feature id="org.eclipse.ocl.all.sdk" installMode="root"/>
       <feature id="org.eclipse.pde" installMode="root"/>
