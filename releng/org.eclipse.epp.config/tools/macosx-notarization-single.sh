@@ -25,7 +25,7 @@ DMG_FILE="$1"
 DMG="$(basename "${DMG_FILE}")"
 cp "${DMG_FILE}" "${DMG}"
 
-PRIMARY_BUNDLE_ID="$(echo ${DMG} | sed  's/-macosx-cocoa-x86_64.dmg//g' | sed -E 's/^[0-9\-]*_(.*)/\1/g')"
+PRIMARY_BUNDLE_ID="$(echo ${DMG} | sed  's/-macosx.cocoa.x86_64.dmg//g' | sed -E 's/^[0-9\-]*_(.*)/\1/g')"
 
 retryCount=3
 while [ ${retryCount} -gt 0 ]; do
