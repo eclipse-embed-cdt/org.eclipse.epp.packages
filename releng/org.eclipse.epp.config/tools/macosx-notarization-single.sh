@@ -27,6 +27,11 @@ cp "${DMG_FILE}" "${DMG}"
 
 PRIMARY_BUNDLE_ID="$(echo ${DMG} | sed  's/-macosx.cocoa.x86_64.dmg//g' | sed -E 's/^[0-9\-]*_(.*)/\1/g')"
 
+# Because this script is run in parallel, randomly delay each script so they don't start in the same second
+# (this should probably be moved to the caller that does parallel)
+sleep $((RANDOM%120))s
+
+
 set +u # The rest of this script can have empty variables
 
 
