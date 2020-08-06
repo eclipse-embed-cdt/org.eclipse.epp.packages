@@ -27,6 +27,9 @@ cp "${DMG_FILE}" "${DMG}"
 
 PRIMARY_BUNDLE_ID="$(echo ${DMG} | sed  's/-macosx.cocoa.x86_64.dmg//g' | sed -E 's/^[0-9\-]*_(.*)/\1/g')"
 
+set +u # The rest of this script can have empty variables
+
+
 retryCount=3
 while [ ${retryCount} -gt 0 ]; do
 
