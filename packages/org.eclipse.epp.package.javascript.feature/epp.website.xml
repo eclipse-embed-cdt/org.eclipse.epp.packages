@@ -38,6 +38,6 @@
   <rcp version="4.16.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-javascript-2020-09-M1" />
+  <product name="eclipse-javascript-2020-09-M2" />
 
 </configuration>
