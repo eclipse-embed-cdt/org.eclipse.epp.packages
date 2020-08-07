@@ -13,8 +13,6 @@
 #     Sravan Kumar Lakkimsetti - initial API and implementation
 #     Jonah Graham - adapted for the EPP project (used https://git.eclipse.org/c/platform/eclipse.platform.releng.aggregator.git/tree/cje-production/scripts/common-functions.shsource?id=8866cc6db76d777751acb56456b248708dd80eda#n47 as source)
 #*
-set -u # run with unset flag error so that missing parameters cause build failure
-set -e # error out on any failed commands
 set -x # echo all commands used for debugging purposes
 
 
@@ -30,10 +28,6 @@ PRIMARY_BUNDLE_ID="$(echo ${DMG} | sed  's/-macosx.cocoa.x86_64.dmg//g' | sed -E
 # Because this script is run in parallel, randomly delay each script so they don't start in the same second
 # (this should probably be moved to the caller that does parallel)
 sleep $((RANDOM%120))s
-
-
-set +u # The rest of this script can have empty variables
-
 
 retryCount=3
 while [ ${retryCount} -gt 0 ]; do
