@@ -258,14 +258,11 @@ United States, other countries, or both.
       <feature id="org.eclipse.jst.common.fproj.enablement.jdt" installMode="root"/>
       <feature id="org.eclipse.jst.enterprise_ui.feature" installMode="root"/>
       <feature id="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature" installMode="root"/>
-      <feature id="org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature" installMode="root"/>
       <feature id="org.eclipse.jst.server_adapters.ext.feature" installMode="root"/>
       <feature id="org.eclipse.jst.server_adapters.feature" installMode="root"/>
       <feature id="org.eclipse.jst.server_ui.feature" installMode="root"/>
       <feature id="org.eclipse.jst.webpageeditor.feature" installMode="root"/>
-      <feature id="org.eclipse.jst.webpageeditor.feature" installMode="root"/>
       <feature id="org.eclipse.jst.web_ui.feature" installMode="root"/>
-      <feature id="org.eclipse.jst.ws.axis2tools.feature" installMode="root"/>
       <feature id="org.eclipse.jst.ws.axis2tools.feature" installMode="root"/>
       <feature id="org.eclipse.jst.ws.cxf.feature" installMode="root"/>
       <feature id="org.eclipse.jst.ws.jaxws.dom.feature" installMode="root"/>
@@ -283,7 +280,6 @@ United States, other countries, or both.
       <feature id="org.eclipse.mylyn.java_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
       <feature id="org.eclipse.pde" installMode="root"/>
-      <feature id="org.eclipse.cft.server.core.feature" installMode="root"/>
       <feature id="org.eclipse.cft.server.ui.feature" installMode="root"/>
       <feature id="org.eclipse.tm.terminal.feature" installMode="root"/>
       <feature id="org.eclipse.wst.common.fproj" installMode="root"/>

@@ -14,7 +14,7 @@
    bugzillaComponentId="jee-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-     <description><![CDATA[Tools for developers creating Java Enterprise and Web applications, including a Java IDE, tools for Web Services, JPA and Data Tools, JSF, Mylyn, Maven and Gradle, Git, and more.<br/>
+     <description><![CDATA[Tools for developers working with Java and Web applications, including a Java IDE, tools for Web Services, JPA and Data Tools, JSF, Mylyn, Maven and Gradle, Git, and more.<br/>
 <br/>
 Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?classification=WebTools">here</a> to file a bug against Eclipse Web Tools Platform.<br/>
 Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">here</a> to file a bug against Eclipse Platform.<br/>
@@ -31,7 +31,7 @@ Installation of stable release of <a href="https://nodejs.org/">node.js</a> is s
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="https://www.eclipse.org/webtools/releases/3.18/NewAndNoteworthy/"
+    url="https://www.eclipse.org/webtools/releases/3.19/NewAndNoteworthy/"
     project="Eclipse Web Tools Platform Project" />
   <NewAndNoteworthy
     url="https://www.eclipse.org/eclipse/news/4.16/"
