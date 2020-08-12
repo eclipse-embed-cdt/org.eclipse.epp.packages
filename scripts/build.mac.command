@@ -36,7 +36,7 @@ project_root_folder=$(dirname ${scripts_folder})
 
 cd ${project_root_folder}
 
-# Force use of 1.8
+# Force use of Java 11.
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home
 
 # Add maven path to environment.
