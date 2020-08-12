@@ -143,6 +143,7 @@
       <xsd:enumeration value="x86"/>
       <xsd:enumeration value="x86_64"/>
       <xsd:enumeration value="ppc"/>
+      <xsd:enumeration value="aarch64"/>
     </xsd:restriction>
   </xsd:simpleType>
 
