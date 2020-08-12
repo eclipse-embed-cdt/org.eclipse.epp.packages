@@ -2,9 +2,9 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: EPP JavaScript and Web Package Tests
 Bundle-SymbolicName: org.eclipse.epp.package.javascript.tests;singleton:=true
-Bundle-Version: 4.16.0.qualifier
+Bundle-Version: 4.17.0.qualifier
 Bundle-Vendor: Eclipse Packaging Project
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Require-Bundle: org.eclipse.platform,
  org.eclipse.equinox.app
 Eclipse-BundleShape: dir

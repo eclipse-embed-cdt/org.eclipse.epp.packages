@@ -19,7 +19,7 @@
 
   <groupId>org.eclipse.epp</groupId>
   <artifactId>org.eclipse.epp-parent</artifactId>
-  <version>4.16.0-SNAPSHOT</version>
+  <version>4.17.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
@@ -36,14 +36,14 @@
     <!-- The location that is used to assemble the single EPP configuration p2 repository -->
     <eclipse.epp.targetRepository>${eclipse.epp.archiveDirectory}/repository/</eclipse.epp.targetRepository>
     <!-- ID used to generate the filename of the packages -->
-    <eclipse.simultaneous.release.id>2020-06-R</eclipse.simultaneous.release.id>
+    <eclipse.simultaneous.release.id>2020-09-M2</eclipse.simultaneous.release.id>
     <!-- Timestamp used in various places, e.g. the about dialog (see about.mappings) -->
     <eclipse.simultaneous.release.build>${maven.build.timestamp}</eclipse.simultaneous.release.build>
     <!-- Human readable name of the release, e.g. used in the about dialog (see about.mappings) -->
-    <eclipse.simultaneous.release.name>2020-06 (4.16.0)</eclipse.simultaneous.release.name>
+    <eclipse.simultaneous.release.name>2020-09 M2 (4.17.0 M2)</eclipse.simultaneous.release.name>
     <!-- Upstream p2 repository, used as a source for pre-compiled build artifacts -->
-    <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/2020-06/</eclipse.simultaneous.release.repository>
-
+    <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/2020-09/</eclipse.simultaneous.release.repository>
+    <!-- Embedded CDT specifics -->
     <embedcdt.packageFolderName>2020-06</embedcdt.packageFolderName>
     <embedcdt.version>5.1.1</embedcdt.version>
     <embedcdt.repository>https://download.eclipse.org/embed-cdt/releases/${embedcdt.version}/p2/</embedcdt.repository>
@@ -72,7 +72,11 @@
     </repository>
     <repository>
       <id>license-feature</id>
-      <url>http://download.eclipse.org/cbi/updates/license/</url>
+      <url>https://download.eclipse.org/cbi/updates/license/</url>
+      <layout>p2</layout>
+    </repository>
+      <id>justj</id>
+      <url>https://download.eclipse.org/justj/sandbox/jres/14/updates/nightly/latest/</url>
       <layout>p2</layout>
     </repository>
     <repository>
@@ -204,7 +208,7 @@
           <version>${tycho.version}</version>
           <configuration>
             <extraArtifactRepositoryProperties>
-              <p2.statsURI>http://download.eclipse.org/stats/technology/epp/packages/${eclipse.simultaneous.release.id}/</p2.statsURI>
+              <p2.statsURI>https://download.eclipse.org/stats/technology/epp/packages/${eclipse.simultaneous.release.id}/</p2.statsURI>
             </extraArtifactRepositoryProperties>
             <includeAllDependencies>true</includeAllDependencies>
             <compress>true</compress>

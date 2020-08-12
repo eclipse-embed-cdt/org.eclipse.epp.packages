@@ -41,7 +41,7 @@
 	            latestversiononly="false"/>
 	        <source>
 	                <sort>
-			            <fileset dir="/tmp/2020-06">
+			            <fileset dir="/tmp/2020-09">
     						<include name="*"/>
 						</fileset>
 						<reverse xmlns="antlib:org.apache.tools.ant.types.resources.comparators">
@@ -49,7 +49,7 @@
 						</reverse>
 	                </sort>
 	        </source>
-	        <destination location="${targetRepository}" name="EPP 2020-06 Package Repository" append="true" compressed="true" />
+	        <destination location="${targetRepository}" name="EPP 2020-09 Package Repository" append="true" compressed="true" />
 	    </p2.mirror>
 	</target>
 

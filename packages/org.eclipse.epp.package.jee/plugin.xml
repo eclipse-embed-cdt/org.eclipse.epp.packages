@@ -97,13 +97,6 @@
             resolution="launchbar">
       </command>
       <command
-            id="org.eclipse.ui.newWizard(newWizardId=org.eclipse.wst.jsdt.ui.wizards.JavaProjectWizard)"
-            description="%ql.newJSDTProject.description"
-            label="%ql.newJSDTProject.label"
-            importance="medium"
-            resolution="launchbar">
-      </command>
-      <command
             id="org.eclipse.ui.file.import(importWizardId=org.eclipse.egit.ui.internal.clone.GitCloneWizard)"
             description="%ql.checkoutGitProject.description"
             icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/egit-checkout.png"

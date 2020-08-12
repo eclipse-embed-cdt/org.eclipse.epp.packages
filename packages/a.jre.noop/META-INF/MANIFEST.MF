@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Noop Execution environment to make JustJ work
+Bundle-SymbolicName: a.jre.noop
+Bundle-Version: 1.0.0
+Bundle-Vendor: Eclipse Packaging Project
+Automatic-Module-Name: a.jre.noop

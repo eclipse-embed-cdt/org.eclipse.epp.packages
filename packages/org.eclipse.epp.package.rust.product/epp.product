@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse IDE for Rust Developers" uid="epp.package.rust" id="org.eclipse.epp.package.rust.product" application="org.eclipse.ui.ide.workbench" version="4.16.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse IDE for Rust Developers" uid="epp.package.rust" id="org.eclipse.epp.package.rust.product" application="org.eclipse.ui.ide.workbench" version="4.17.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/org.eclipse.epp.package.rust/eclipse_lg.png"/>
@@ -18,7 +18,7 @@
 -showsplash org.eclipse.epp.package.common
 --launcher.defaultAction openFile
       </programArgs>
-      <vmArgs>-Dosgi.requiredJavaVersion=1.8
+      <vmArgs>-Dosgi.requiredJavaVersion=11
 -Dosgi.instance.area.default=@user.home/eclipse-workspace
 -Xms256m
 -Xmx2048m
@@ -26,13 +26,9 @@
 -XX:+UseStringDeduplication
 --add-modules=ALL-SYSTEM
       </vmArgs>
-      <vmArgsLin>
-      </vmArgsLin>
       <vmArgsMac>-XstartOnFirstThread
 -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>
-      <vmArgsWin>
-      </vmArgsWin>
    </launcherArgs>
 
    <windowImages i16="/org.eclipse.epp.package.rust/eclipse16.png" i32="/org.eclipse.epp.package.rust/eclipse32.png" i48="/org.eclipse.epp.package.rust/eclipse48.png" i256="/org.eclipse.epp.package.rust/eclipse256.png"/>
@@ -43,7 +39,6 @@
       startupMessageRect="7,265,320,20"
       startupForegroundColor="ffffff" />
    <launcher name="eclipse">
-      <solaris/>
       <win useIco="false">
          <bmp/>
       </win>
@@ -52,10 +47,9 @@
    <intro introId="org.eclipse.ui.intro.universal"/>
 
    <vm>
-      <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</linux>
-      <macos include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</macos>
-      <solaris include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</solaris>
-      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</windows>
+      <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11</linux>
+      <macos include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11</macos>
+      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11</windows>
    </vm>
 
    <license>
@@ -96,7 +90,7 @@ downloadable archives (&quot;Downloads&quot;).
     include plug-ins (&quot;Plug-ins&quot;), plug-in fragments (&quot;Fragments&quot;), and
     features (&quot;Features&quot;).
 -   Each Plug-in or Fragment may be packaged as a sub-directory or JAR
-    (Java&#8482; ARchive) in a directory named &quot;plugins&quot;.
+    (Java™ ARchive) in a directory named &quot;plugins&quot;.
 -   A Feature is a bundle of one or more Plug-ins and/or Fragments and
     associated material. Each Feature may be packaged as a sub-directory in a
     directory named &quot;features&quot;. Within a Feature, files named &quot;feature.xml&quot; may
@@ -208,23 +202,18 @@ United States, other countries, or both.
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.rust.feature" version="4.16.0.qualifier"/>
-      <feature id="org.eclipse.epp.package.common.feature" version="4.16.0.qualifier"/>
-      <feature id="org.eclipse.platform" version="4.16.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.rust.feature" version="4.17.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.common.feature" version="4.17.0.qualifier"/>
+      <feature id="org.eclipse.platform"/>
       <feature id="org.eclipse.epp.mpc" installMode="root"/>
+      <feature id="org.eclipse.justj.openjdk.hotspot.jre.full" installMode="root"/> 
 
       <feature id="org.eclipse.egit" installMode="root"/>
-      <feature id="org.eclipse.egit.gitflow.feature"  installMode="root"/>
-      <!-- not available in Neon on 2016-02-21
-      <feature id="org.eclipse.egit.import" installMode="root"/>
-      -->
-      <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
+      <feature id="org.eclipse.egit.gitflow.feature" installMode="root"/>
+      <feature id="org.eclipse.mylyn.wikitext.editors_feature" installMode="root"/>
       <feature id="org.eclipse.corrosion.feature" installMode="root"/>
-      <!-- TODO debug features for CDT? -->
       <feature id="org.eclipse.tm.terminal.feature" installMode="root"/>
    </features>
 
-   <repositories>
-   </repositories>
 
 </product>
