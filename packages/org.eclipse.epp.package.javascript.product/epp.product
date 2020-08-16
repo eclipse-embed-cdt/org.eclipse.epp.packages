@@ -215,6 +215,7 @@ United States, other countries, or both.
       <feature id="org.eclipse.help" installMode="root"/>
       <feature id="org.eclipse.mylyn.wikitext.editors_feature" installMode="root"/>
       <feature id="org.eclipse.wildwebdeveloper.feature" installMode="root"/>
+      <feature id="org.eclipse.wildwebdeveloper.embedder.node.feature" installMode="root"/>
       <feature id="org.eclipse.wst.server_ui.feature" installMode="root"/>
       <feature id="org.eclipse.wst.server_adapters.feature" installMode="root"/>
       <feature id="org.eclipse.tm.terminal.feature" installMode="root"/>

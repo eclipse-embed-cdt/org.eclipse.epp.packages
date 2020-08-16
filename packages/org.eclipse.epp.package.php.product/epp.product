@@ -223,6 +223,7 @@ United States, other countries, or both.
       <feature id="org.eclipse.tm.terminal.feature" installMode="root"/>
       <feature id="org.eclipse.wst.xml_ui.feature" installMode="root"/>
       <feature id="org.eclipse.wildwebdeveloper.feature" installMode="root"/>
+      <feature id="org.eclipse.wildwebdeveloper.embedder.node.feature" installMode="root"/>
    </features>
 
 
