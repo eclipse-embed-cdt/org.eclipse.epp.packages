@@ -29,16 +29,16 @@ retryCount=3
 while [ ${retryCount} -gt 0 ]; do
 
   RESPONSE_RAW=$(curl  --write-out "%{http_code}" -s -X POST -F file=@${DMG} -F 'options={"primaryBundleId": "'${PRIMARY_BUNDLE_ID}'", "staple": true};type=application/json' http://172.30.206.146:8383/macos-notarization-service/notarize)
-  RESPONSE=$(head -n1 <<<"${RAW_RESPONSE}")
-  STATUS_CODE=$(tail -n1 <<<"${RAW_RESPONSE}")
+  RESPONSE=$(head -n1 <<<"${RESPONSE_RAW}")
+  STATUS_CODE=$(tail -n1 <<<"${RESPONSE_RAW}")
   UUID="$(echo "${RESPONSE}" | jq -r '.uuid')"
   STATUS="$(echo "${RESPONSE}" | jq -r '.notarizationStatus.status')"
 
   while [[ ${STATUS} == 'IN_PROGRESS' ]]; do
     sleep 1m
     RESPONSE_RAW=$(curl  --write-out "%{http_code}" -s http://172.30.206.146:8383/macos-notarization-service/${UUID}/status)
-    RESPONSE=$(head -n1 <<<"${RAW_RESPONSE}")
-    STATUS_CODE=$(tail -n1 <<<"${RAW_RESPONSE}")
+    RESPONSE=$(head -n1 <<<"${RESPONSE_RAW}")
+    STATUS_CODE=$(tail -n1 <<<"${RESPONSE_RAW}")
     STATUS=$(echo ${RESPONSE} | jq -r '.notarizationStatus.status')
   done
 
