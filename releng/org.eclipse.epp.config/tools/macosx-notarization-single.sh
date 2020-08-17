@@ -25,20 +25,20 @@ cp "${DMG_FILE}" "${DMG}"
 
 PRIMARY_BUNDLE_ID="$(echo ${DMG} | sed  's/-macosx.cocoa.x86_64.dmg//g' | sed -E 's/^[0-9\-]*_(.*)/\1/g')"
 
-# Because this script is run in parallel, randomly delay each script so they don't start in the same second
-# (this should probably be moved to the caller that does parallel)
-sleep $((RANDOM%120))s
-
 retryCount=3
 while [ ${retryCount} -gt 0 ]; do
 
-  RESPONSE=$(curl -s -X POST -F file=@${DMG} -F 'options={"primaryBundleId": "'${PRIMARY_BUNDLE_ID}'", "staple": true};type=application/json' http://172.30.206.146:8383/macos-notarization-service/notarize)
+  RESPONSE_RAW=$(curl  --write-out "%{http_code}" -s -X POST -F file=@${DMG} -F 'options={"primaryBundleId": "'${PRIMARY_BUNDLE_ID}'", "staple": true};type=application/json' http://172.30.206.146:8383/macos-notarization-service/notarize)
+  RESPONSE=$(head -n1 <<<"${RAW_RESPONSE}")
+  STATUS_CODE=$(tail -n1 <<<"${RAW_RESPONSE}")
   UUID="$(echo "${RESPONSE}" | jq -r '.uuid')"
   STATUS="$(echo "${RESPONSE}" | jq -r '.notarizationStatus.status')"
 
   while [[ ${STATUS} == 'IN_PROGRESS' ]]; do
     sleep 1m
-    RESPONSE=$(curl -s http://172.30.206.146:8383/macos-notarization-service/${UUID}/status)
+    RESPONSE_RAW=$(curl  --write-out "%{http_code}" -s http://172.30.206.146:8383/macos-notarization-service/${UUID}/status)
+    RESPONSE=$(head -n1 <<<"${RAW_RESPONSE}")
+    STATUS_CODE=$(tail -n1 <<<"${RAW_RESPONSE}")
     STATUS=$(echo ${RESPONSE} | jq -r '.notarizationStatus.status')
   done
 
