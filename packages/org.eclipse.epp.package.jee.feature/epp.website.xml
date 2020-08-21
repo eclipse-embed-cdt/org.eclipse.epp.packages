@@ -14,14 +14,13 @@
    bugzillaComponentId="jee-package"
    testPlan="http://www.eclipse.org/epp/testplan.php" >
     <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
-     <description><![CDATA[Tools for developers working with Java and Web applications, including a Java IDE, tools for Web Services, JPA and Data Tools, JSF, Mylyn, Maven and Gradle, Git, and more.<br/>
+     <description><![CDATA[Tools for developers working with Java and Web applications, including a Java IDE, tools for Web Services, JPA and Data Tools, JavaServer Pages and Faces, Mylyn, Maven and Gradle, Git, and more.<br/>
 <br/>
 Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?classification=WebTools">here</a> to file a bug against Eclipse Web Tools Platform.<br/>
 Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">here</a> to file a bug against Eclipse Platform.<br/>
 Click <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=M2E-WTP">here</a> to file a bug against Maven integration for web projects.<br/>
 Click <a href="https://github.com/eclipse/wildwebdeveloper/issues/new">here</a> to report an issue against Eclipse Wild Web Developer (incubating).<br/>
 <br/>
-Installation of stable release of <a href="https://nodejs.org/">node.js</a> is strongly recommended.
 ]]></description>
     <!-- packageTesters is a list of the people that are testing the package -->
      <packageTesters>
