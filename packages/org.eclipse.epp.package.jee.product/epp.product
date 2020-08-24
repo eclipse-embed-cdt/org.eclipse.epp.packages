@@ -280,7 +280,6 @@ United States, other countries, or both.
       <feature id="org.eclipse.mylyn.java_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
       <feature id="org.eclipse.pde" installMode="root"/>
-      <feature id="org.eclipse.cft.server.ui.feature" installMode="root"/>
       <feature id="org.eclipse.tm.terminal.feature" installMode="root"/>
       <feature id="org.eclipse.wst.common.fproj" installMode="root"/>
       <feature id="org.eclipse.wst.xsl.feature" installMode="root"/>
