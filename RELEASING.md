@@ -20,18 +20,18 @@ EPP releases happen for each milestone and release candidate according to the [E
 **Steps for all Milestones and RCs:**
 
 - [ ] Ensure that the [CI build](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build/) is green. Resolving non-green builds will require tracking down problems and incompatibilities across all Eclipse participating projects. [cross-project-issues-dev](https://accounts.eclipse.org/mailing-list/cross-project-issues-dev) mailing list is a good place to start when tracking such problems.
-- [ ] Check that packages containing incubating projects have that information reflected in Help -> About dialog.
+- [ ] Check that packages containing incubating projects have that information reflected in Help -> About dialog. (Normally only done on M3 and RCs)
     - Use this command line (appropriately updated as projects exit incubation) to identify incubating components: `for i in eclipse*win32-x86_64.zip; do echo $i; unzip -l $i "eclipse/plugins/*" | grep "_0\\." | sed "1,\$s/.*eclipse\/plugins\//  /g" | grep "org\\.eclipse\\." | grep -v "org\\.eclipse\\.e4\\..*" | grep -v "org\\.eclipse\\.wst\\.jsdt\\.chromium.*" | grep -v "org\\.eclipse\\.passage\\..*" | grep -v "org\\.eclipse\\.tips\\..*" | grep -v "org\\.eclipse\\.tracecompass\\..*" | grep -v "org\\.eclipse\\.m2e\\.workspace\\.cli.*" | grep -v "org\\.eclipse\\.jface\\.notifications" | cut -f1 -d\/ | sort | uniq ; done` (ref see [this email](https://www.eclipse.org/lists/epp-dev/msg05912.html))
     - `-incubation` and ` (includes Incubating components)` are not used in packageMetaData anymore (See [Bug 564214](https://bugs.eclipse.org/bugs/show_bug.cgi?id=564214))
-- [ ] Update the "new and noteworthy" version numbers:
+- [ ] Update the "new and noteworthy" version numbers: (Normally only done on M3 and RCs)
     - [ ] Search for ` url=` (notice the blank before url) in `epp.website.xml` to see which ones are contained in the different packages.
     - [ ] Use global search and replace to update the version numbers at the end of the URLs.
     - [ ] Remember that some of the features will release new versions together with the new Eclipse release. Therefore using the _currently_ released version number may be wrong. Instead lookup the feature version [to be released with the release train](https://projects.eclipse.org/releases/2020-03).
-- [ ] Update name of the release in strings with a "smart" global find&replace. See this [gerrit](https://git.eclipse.org/r/#/c/158509/) for an example. In particular, check:
+- [ ] Update name of the release in strings with a "smart" global find&replace. See this [gerrit](https://git.eclipse.org/r/#/c/158509/) for an example. Use commit message like `Update strings for 2020-09 M2`. In particular, check:
     - [ ] `packages/*/epp.website.xml` for `product name=` line
     - [ ] Variables in parent pom `releng/org.eclipse.epp.config/parent/pom.xml`
     - [ ] release.xml template in releng/org.eclipse.epp.config/tools/promote-a-build.sh
-- [ ] Update the build qualifiers to ensure that packages are all updated. See this [gerrit](https://git.eclipse.org/r/#/c/161075/) for an example. Run [setGitDate](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/tree/releng/org.eclipse.epp.config/tools/setGitDate) script. This script will make a local commit.
+- [ ] Update the build qualifiers to ensure that packages are all updated. See this [gerrit](https://git.eclipse.org/r/#/c/161075/) for an example. To do this run [`releng/org.eclipse.epp.config/tools/setGitDate`](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/tree/releng/org.eclipse.epp.config/tools/setGitDate) script. This script will make a local commit you need to push.
 - [ ] Wait for announcement that the staging repo is ready on [cross-project-issues-dev](https://accounts.eclipse.org/mailing-list/cross-project-issues-dev). An [example announcement](https://www.eclipse.org/lists/cross-project-issues-dev/msg17420.html).
 - [ ] Run a [CI build](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build/) that includes the above changes.
 - [ ] Sanity check the build for the following:
