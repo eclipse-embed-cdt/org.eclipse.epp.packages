@@ -42,7 +42,8 @@ for PACKAGE in $PACKAGES; do
              cut -d "_" -f 2- | \
              sed 's/linux\.gtk\.x86\_64/linux-gtk-x86\_64/' | \
              sed 's/win32\.win32\.x86\_64\./win32\-x86\_64\./' | \
-             sed 's/macosx\.cocoa\.x86\_64/macosx\-cocoa-x86\_64/'`
+             sed 's/macosx\.cocoa\.x86\_64/macosx\-cocoa-x86\_64/' | \
+             sed 's/macosx-cocoa-x86_64.dmg/macosx-cocoa-x86_64.dmg-tonotarize/'`
     # Move and rename file
     mv ${NAME} ../${NEWNAME}
   done;
@@ -72,7 +73,7 @@ done
 # ----------------------------------------------------------------------------------------------
 # compute the checksum files for each package
 
-for II in eclipse*.zip eclipse*.tar.gz eclipse*.dmg; do 
+for II in eclipse*.zip eclipse*.tar.gz eclipse*.dmg-tonotarize; do
   echo .. $II
   md5sum $II >$II.md5
   sha1sum $II >$II.sha1
