@@ -64,3 +64,6 @@ md5sum "${DMG_FILE}" >"${DMG_FILE}".md5
 sha1sum "${DMG_FILE}" >"${DMG_FILE}".sha1
 sha512sum -b "${DMG_FILE}" >"${DMG_FILE}".sha512
 rm "${DMG_FILE}"-tonotarize
+rm "${DMG_FILE}"-tonotarize.md5
+rm "${DMG_FILE}"-tonotarize.sha1
+rm "${DMG_FILE}"-tonotarize.sha512
