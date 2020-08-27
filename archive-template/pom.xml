@@ -43,6 +43,14 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<executionEnvironment>none</executionEnvironment>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>

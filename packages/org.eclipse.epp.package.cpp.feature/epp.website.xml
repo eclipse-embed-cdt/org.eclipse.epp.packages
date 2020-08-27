@@ -41,6 +41,6 @@
   <rcp version="4.16.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-cpp-2020-09-M2" />
+  <product name="eclipse-cpp-2020-09-M3" />
 
 </configuration>

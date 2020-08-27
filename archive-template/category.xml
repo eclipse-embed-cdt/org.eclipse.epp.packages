@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+	<!-- This file covers the content of packages that are missing in SimRel,
+	 so they get available in the EPP repo, so available for updates and installer -->
+	<feature id="org.eclipse.justj.openjdk.hotspot.jre.full" version="0.0.0"/>
+	<feature id="org.eclipse.corrosion.feature" version="0.0.0"/>
+</site>

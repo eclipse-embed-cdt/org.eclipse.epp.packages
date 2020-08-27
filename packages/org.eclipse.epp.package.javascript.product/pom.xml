@@ -33,21 +33,8 @@
 				<artifactId>target-platform-configuration</artifactId>
 				<version>${tycho.version}</version>
 				<configuration>
-					<!-- a.jre.javase units are added by Tycho for regular execution environments.
-						Those units aren't compatible with JustJ which has a negative requirement
-						on a.jre.javase.
-						So we raplace those EE units in Tycho by an empty EE/Unit that doesn't interfere
-						with JustJ -->
-					<executionEnvironment>Noop-1.0</executionEnvironment>
-					<dependency-resolution>
-						<extraRequirements>
-							<requirement>
-								<type>eclipse-plugin</type>
-								<id>a.jre.noop</id>
-								<versionRange>0.0.0</versionRange>
-							</requirement>
-						</extraRequirements>
-					</dependency-resolution>
+					<!-- Do not include execution environment units, so we're sure JustJ is used -->
+					<executionEnvironment>none</executionEnvironment>
 				</configuration>
 			</plugin>
 		</plugins>

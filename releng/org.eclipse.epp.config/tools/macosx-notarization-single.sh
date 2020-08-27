@@ -21,24 +21,24 @@ set -x # echo all commands used for debugging purposes
 
 DMG_FILE="$1"
 DMG="$(basename "${DMG_FILE}")"
-cp "${DMG_FILE}" "${DMG}"
+cp "${DMG_FILE}"-tonotarize "${DMG}"
 
 PRIMARY_BUNDLE_ID="$(echo ${DMG} | sed  's/-macosx.cocoa.x86_64.dmg//g' | sed -E 's/^[0-9\-]*_(.*)/\1/g')"
-
-# Because this script is run in parallel, randomly delay each script so they don't start in the same second
-# (this should probably be moved to the caller that does parallel)
-sleep $((RANDOM%120))s
 
 retryCount=3
 while [ ${retryCount} -gt 0 ]; do
 
-  RESPONSE=$(curl -s -X POST -F file=@${DMG} -F 'options={"primaryBundleId": "'${PRIMARY_BUNDLE_ID}'", "staple": true};type=application/json' http://172.30.206.146:8383/macos-notarization-service/notarize)
+  RESPONSE_RAW=$(curl  --write-out "\n%{http_code}" -s -X POST -F file=@${DMG} -F 'options={"primaryBundleId": "'${PRIMARY_BUNDLE_ID}'", "staple": true};type=application/json' http://172.30.206.146:8383/macos-notarization-service/notarize)
+  RESPONSE=$(head -n1 <<<"${RESPONSE_RAW}")
+  STATUS_CODE=$(tail -n1 <<<"${RESPONSE_RAW}")
   UUID="$(echo "${RESPONSE}" | jq -r '.uuid')"
   STATUS="$(echo "${RESPONSE}" | jq -r '.notarizationStatus.status')"
 
   while [[ ${STATUS} == 'IN_PROGRESS' ]]; do
     sleep 1m
-    RESPONSE=$(curl -s http://172.30.206.146:8383/macos-notarization-service/${UUID}/status)
+    RESPONSE_RAW=$(curl  --write-out "\n%{http_code}" -s http://172.30.206.146:8383/macos-notarization-service/${UUID}/status)
+    RESPONSE=$(head -n1 <<<"${RESPONSE_RAW}")
+    STATUS_CODE=$(tail -n1 <<<"${RESPONSE_RAW}")
     STATUS=$(echo ${RESPONSE} | jq -r '.notarizationStatus.status')
   done
 
@@ -60,3 +60,10 @@ done
 rm "${DMG}"
 curl -JO http://172.30.206.146:8383/macos-notarization-service/${UUID}/download
 cp -vf "${DMG}" "${DMG_FILE}"
+md5sum "${DMG_FILE}" >"${DMG_FILE}".md5
+sha1sum "${DMG_FILE}" >"${DMG_FILE}".sha1
+sha512sum -b "${DMG_FILE}" >"${DMG_FILE}".sha512
+rm "${DMG_FILE}"-tonotarize
+rm "${DMG_FILE}"-tonotarize.md5
+rm "${DMG_FILE}"-tonotarize.sha1
+rm "${DMG_FILE}"-tonotarize.sha512

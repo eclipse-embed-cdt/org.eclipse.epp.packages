@@ -242,6 +242,7 @@ United States, other countries, or both.
       <feature id="org.eclipse.mylyn.versions" installMode="root"/>
       <feature id="org.eclipse.mylyn.wikitext_feature" installMode="root"/>
       <feature id="org.eclipse.wildwebdeveloper.feature" installMode="root"/>
+      <feature id="org.eclipse.wildwebdeveloper.embedder.node.feature" installMode="root"/>
    </features>
 
 
