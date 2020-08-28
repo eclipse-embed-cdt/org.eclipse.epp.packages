@@ -86,6 +86,11 @@
       <layout>p2</layout>
       <url>${embedcdt.repository}</url>
     </repository>
+	<repository>
+      <id>corrosion</id>
+      <layout>p2</layout>
+      <url>https://download.eclipse.org/corrosion/releases/0.4.2/</url>
+    </repository>
   </repositories>
 
   <build>

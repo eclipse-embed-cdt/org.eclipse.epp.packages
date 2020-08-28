@@ -146,13 +146,6 @@
         <module>packages/org.eclipse.epp.package.rust.feature</module>
         <module>packages/org.eclipse.epp.package.rust.product</module>
       </modules>
-      <repositories>
-				<repository>
-					<id>corrosion</id>
-					<layout>p2</layout>
-					<url>https://download.eclipse.org/corrosion/releases/0.4.2/</url>
-				</repository>
-      </repositories>
     </profile>
   </profiles>
 
