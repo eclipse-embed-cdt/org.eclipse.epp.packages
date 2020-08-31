@@ -215,6 +215,8 @@ United States, other countries, or both.
       <feature id="org.eclipse.emf.compare.egit" installMode="root"/>
       <feature id="org.eclipse.emf.ecoretools.design" installMode="root"/>
       <feature id="org.eclipse.emf.ecp.emfforms.sdk.feature" installMode="root"/>
+      <feature id="org.eclipse.emf.parsley.sdk" installMode="root"/>
+      <feature id="org.eclipse.emf.parsley.sdk.source" installMode="root"/>
       <feature id="org.eclipse.emf.query.sdk" installMode="root"/>
       <feature id="org.eclipse.emf.sdk" installMode="root"/>
       <feature id="org.eclipse.emf.transaction.sdk" installMode="root"/>
