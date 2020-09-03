@@ -25,10 +25,10 @@
     url="https://github.com/eclipse/wildwebdeveloper/blob/master/RELEASE_NOTES.md"
     project="Eclipse Wild Web Developer" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.16/"
+    url="https://www.eclipse.org/eclipse/news/4.17/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.8"
+    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.9"
     project="Eclipse EGit" />
   </MoreInfo>
 

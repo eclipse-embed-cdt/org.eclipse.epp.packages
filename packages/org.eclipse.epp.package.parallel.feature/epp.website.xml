@@ -25,13 +25,13 @@
     url="https://wiki.eclipse.org/PTP/new_and_noteworthy/9.4.0"
     project="Eclipse PTP" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.16/"
+    url="https://www.eclipse.org/eclipse/news/4.17/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/CDT/User/NewIn911"
+    url="https://wiki.eclipse.org/CDT/User/NewIn100"
     project="Eclipse CDT" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/Linux_Tools_Project/News/NewIn77"
+    url="https://wiki.eclipse.org/Linux_Tools_Project/News/NewIn80"
     project="Eclipse Linux Tools" />
   </MoreInfo>
   
