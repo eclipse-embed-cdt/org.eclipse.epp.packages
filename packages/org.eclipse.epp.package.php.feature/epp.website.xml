@@ -46,6 +46,6 @@ Click <a href="https://github.com/eclipse/wildwebdeveloper/issues/new">here</a> 
   <rcp version="4.16.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-php-2020-09-RC1" />
+  <product name="eclipse-php-2020-09-R" />
 
 </configuration>
