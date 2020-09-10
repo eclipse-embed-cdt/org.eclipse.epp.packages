@@ -86,9 +86,11 @@ popd # leave downloads
 # ----------------------------------------------------------------------------------------------
 # Prepare compositeArtifacts.jar/compositeContent.jar
 pushd p2
-if [ "$RELEASE_MILESTONE" != "M1" ]; then
+if [ "$RELEASE_MILESTONE" != "M1" ] && [ "$RELEASE_MILESTONE" != "RC2" ]; then
     # For non M1 build we need to add to the existing p2 content,
     # for M1 we start from scratch
+
+    # For RC2 build the composite should have just the release in it
     cp -rp ${REPO}/* .
 fi
 mv repository ${RELEASE_DIR}
