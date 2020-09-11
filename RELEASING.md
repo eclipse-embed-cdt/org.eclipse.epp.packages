@@ -42,31 +42,18 @@ EPP releases happen for each milestone and release candidate according to the [E
 - [ ] Edit the Jenkins build
     - [ ] Mark build as Keep forever
     - [ ] Edit Jenkins Build Information and name it (e.g. `2020-03 M3`)
-- [ ] For a release build, the additional parameters (see parent pom) should be set in the Jenkins build job to a meaningful time/date:
+- [ ] For a release build, the additional parameters (see parent pom) should be set in the Jenkins build job to a meaningful time/date **TODO: Move this into the build itself and/or updated by the string updates/setGitDate in the above steps**:
 ```
-maven.build.timestamp=20191212-1212
 eclipse.simultaneous.release.build=20191212-1212
-build=20191212-1212
 ```
 - [ ] Run the [Promote a Build](https://ci.eclipse.org/packaging/job/promote-a-build/) CI job to prepare build artifacts and copy them to download.eclipse.org
     - [ ] Run the build once in `DRY_RUN` mode to ensure that the output is correct before it is copied to download.eclipse.org.
 - [ ] Run the [Notarize MacOSX Downloads](https://ci.eclipse.org/packaging/job/notarize-downloads/) CI job to notarize DMG packages on download.eclipse.org
 - [ ] Send email to epp-dev to request package maintainers test it.
-- [ ] **On M1-RC1 release day** approximately 9:30am check:
+- [ ] **24 Hours before Final release** Make sure files are in final location to allow downloads to mirror
+    - [ ] rename the provisional release milestone to final directory (E.g. [2020-09/202009101200](https://download.eclipse.org/technology/epp/downloads/release/2020-09/202009101200/) -> [2020-09/R](https://download.eclipse.org/technology/epp/downloads/release/2020-09/R/) (to match what is in [release.xml](https://download.eclipse.org/technology/epp/downloads/release/release.xml)) - this only applies to downloads, not to packages
+- [ ] **On release days** approximately 9:30am check that the below worked:
     - [ ] copy the composite\*RC1.jar files over the composite\*.jar files in https://download.eclipse.org/technology/epp/packages/2020-03/ - this is done automatically with the https://ci.eclipse.org/packaging/view/Packages/job/epp-makeVisible/ which is automatically triggered by simrel's https://ci.eclipse.org/simrel/view/All/job/simrel.releng.makeVisible/
-- [ ] **TO BE AUTOMATED**
-    - [ ] **On final release day** approximately 9:30am (TBD when should these operaions happen - it needs time to be mirrored still!) :
-        - [ ] flatten the published RC2 (or respun RC2) P2 repository as https://download.eclipse.org/technology/epp/packages/2020-03/
-        - [ ] Include the p2.index file update
-        - [ ] Ensure that there is no unexpected caching of removed composite files. E.g. `curl -O http://download.eclipse.org/technology/epp/packages/2020-09/compositeContent.jar` and `curl -I http://download.eclipse.org/technology/epp/packages/2020-09/compositeContent.jar` **must** return 404.
-        - [ ] rename the provisional release milestone to final directory (E.g. [2020-03/RC2](https://download.eclipse.org/technology/epp/downloads/release/2020-03/RC2) -> [2020-03/R](https://download.eclipse.org/technology/epp/downloads/release/2020-03/R)
-    - [ ] When automated this can/should be triggered by the https://ci.eclipse.org/simrel/view/All/job/simrel.releng.makeVisible/ job - in the past this worked which meant that SimRel and EPP would synchronize their releases.
-    - [ ] These are the expected commands that need to be automated on M2-RC1 release days.
-    ```
-    CHECKPOINT=RC1
-    REPO_ROOT=/home/data/httpd/download.eclipse.org/technology/epp/packages
-    rsync --group --verbose ${REPO_ROOT}/compositeArtifacts${CHECKPOINT}.jar ${REPO_ROOT}/compositeArtifacts.jar
-    rsync --group --verbose ${REPO_ROOT}/compositeContent${CHECKPOINT}.jar ${REPO_ROOT}/compositeContent.jar
-    ```
-- [ ] Tag the release, e.g. with 2020-03_R. Example command line: `git tag -s -a 2020-03_R -m"2020-03 Release" 1b7a1c1af156e3ac57768b87be258cd22b49456b`
-- [ ] The _next_ release sub-directory needs to be created immediately _after_ a release, i.e. when 2019-12 was released, a directory 2020-03 had been created with an empty p2 composite repository pointing to 2019-12 until M1. (Use Job https://ci.eclipse.org/packaging/view/Packages/job/epp-createNextRelease/) On M1 release day this changes to a composite p2 repository with M1 content. On other release days, add the new releases as children.
+    - [ ] Tag the release, e.g. with 2020-03_R. Example command line: `git tag -s -a 2020-03_R -m"2020-03 Release" 1b7a1c1af156e3ac57768b87be258cd22b49456b`
+- [ ] **On Final release day** immediately _after_ a release (just after 10am):
+    - [ ] The _next_ release sub-directory needs to be created immediately _after_ a release, i.e. when 2019-12 was released, a directory 2020-03 had been created with an empty p2 composite repository pointing to 2019-12 until M1. (Use Job https://ci.eclipse.org/packaging/view/Packages/job/epp-createNextRelease/) On M1 release day this changes to a composite p2 repository with M1 content. On other release days, add the new releases as children and on final release this changes to a composite with just the one child.
