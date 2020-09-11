@@ -25,7 +25,6 @@
   <properties>
     <maven.version>3.1.1</maven.version>
     <tycho.version>2.0.0</tycho.version>
-    <tycho.extras.version>${tycho.version}</tycho.extras.version>
     <tycho.scmUrl>scm:git:git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git</tycho.scmUrl>
     <cbi.version>1.1.8-SNAPSHOT</cbi.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -132,12 +131,12 @@
           <dependency>
             <groupId>org.eclipse.tycho.extras</groupId>
             <artifactId>tycho-buildtimestamp-jgit</artifactId>
-            <version>${tycho.extras.version}</version>
+            <version>${tycho.version}</version>
           </dependency>
           <dependency>
             <groupId>org.eclipse.tycho.extras</groupId>
             <artifactId>tycho-sourceref-jgit</artifactId>
-            <version>${tycho.extras.version}</version>
+            <version>${tycho.version}</version>
           </dependency>
         </dependencies>
         <configuration>
@@ -238,12 +237,12 @@
         <plugin>
           <groupId>org.eclipse.tycho.extras</groupId>
           <artifactId>tycho-pack200a-plugin</artifactId>
-          <version>${tycho.extras.version}</version>
+          <version>${tycho.version}</version>
         </plugin>
         <plugin>
           <groupId>org.eclipse.tycho.extras</groupId>
           <artifactId>tycho-pack200b-plugin</artifactId>
-          <version>${tycho.extras.version}</version>
+          <version>${tycho.version}</version>
         </plugin>
         <plugin>
           <groupId>org.eclipse.tycho</groupId>
@@ -266,7 +265,7 @@
         <plugin>
           <groupId>org.eclipse.tycho.extras</groupId>
           <artifactId>tycho-source-feature-plugin</artifactId>
-          <version>${tycho.extras.version}</version>
+          <version>${tycho.version}</version>
           <configuration>
             <archive>
               <addMavenDescriptor>false</addMavenDescriptor>
