@@ -60,10 +60,15 @@ done
 rm "${DMG}"
 curl -JO http://172.30.206.146:8383/macos-notarization-service/${UUID}/download
 cp -vf "${DMG}" "${DMG_FILE}"
-md5sum "${DMG_FILE}" >"${DMG_FILE}".md5
-sha1sum "${DMG_FILE}" >"${DMG_FILE}".sha1
-sha512sum -b "${DMG_FILE}" >"${DMG_FILE}".sha512
-rm "${DMG_FILE}"-tonotarize
-rm "${DMG_FILE}"-tonotarize.md5
-rm "${DMG_FILE}"-tonotarize.sha1
-rm "${DMG_FILE}"-tonotarize.sha512
+
+# Generate the checksums in the directory that the files are in
+d=$(dirname ${DMG_FILE})
+b=$(basename ${DMG_FILE})
+cd "$d"
+md5sum "${b}" >"${b}".md5
+sha1sum "${b}" >"${b}".sha1
+sha512sum -b "${b}" >"${b}".sha512
+rm "${b}"-tonotarize
+rm "${b}"-tonotarize.md5
+rm "${b}"-tonotarize.sha1
+rm "${b}"-tonotarize.sha512
