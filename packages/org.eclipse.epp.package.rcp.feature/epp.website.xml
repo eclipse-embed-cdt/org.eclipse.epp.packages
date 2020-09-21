@@ -22,16 +22,16 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.16/"
+    url="https://www.eclipse.org/eclipse/news/4.17/"
     project="Eclipse Platform" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/rap/noteworthy/3.13/"
+    url="https://www.eclipse.org/rap/noteworthy/3.14/"
     project="Eclipse RAP" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.8"
+    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.9"
     project="Eclipse EGit" />
   <NewAndNoteworthy
-    url="https://wiki.eclipse.org/Passage/Release_Notes/0.9.0"
+    url="https://wiki.eclipse.org/Passage/Release_Notes/1.0.0"
     project="Eclipse Passage" />
   </MoreInfo>
 
@@ -41,6 +41,6 @@
   <rcp version="4.16.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-rcp-2020-09-M3" />
+  <product name="eclipse-rcp-2020-09-R" />
 
 </configuration>

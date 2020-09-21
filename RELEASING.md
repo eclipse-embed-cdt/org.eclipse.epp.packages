@@ -20,14 +20,13 @@ EPP releases happen for each milestone and release candidate according to the [E
 **Steps for all Milestones and RCs:**
 
 - [ ] Ensure that the [CI build](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build/) is green. Resolving non-green builds will require tracking down problems and incompatibilities across all Eclipse participating projects. [cross-project-issues-dev](https://accounts.eclipse.org/mailing-list/cross-project-issues-dev) mailing list is a good place to start when tracking such problems.
-- [ ] Check that packages containing incubating projects have that information reflected in Help -> About dialog. (Normally only done on M3 and RCs)
-    - Use this command line (appropriately updated as projects exit incubation) to identify incubating components: `for i in eclipse*win32-x86_64.zip; do echo $i; unzip -l $i "eclipse/plugins/*" | grep "_0\\." | sed "1,\$s/.*eclipse\/plugins\//  /g" | grep "org\\.eclipse\\." | grep -v "org\\.eclipse\\.e4\\..*" | grep -v "org\\.eclipse\\.wst\\.jsdt\\.chromium.*" | grep -v "org\\.eclipse\\.passage\\..*" | grep -v "org\\.eclipse\\.tips\\..*" | grep -v "org\\.eclipse\\.tracecompass\\..*" | grep -v "org\\.eclipse\\.m2e\\.workspace\\.cli.*" | grep -v "org\\.eclipse\\.jface\\.notifications" | cut -f1 -d\/ | sort | uniq ; done` (ref see [this email](https://www.eclipse.org/lists/epp-dev/msg05912.html))
+- [ ] Check that packages containing incubating projects have that information reflected in Help -> About dialog. See near the end of build output for report of check-incubating.sh script.
     - `-incubation` and ` (includes Incubating components)` are not used in packageMetaData anymore (See [Bug 564214](https://bugs.eclipse.org/bugs/show_bug.cgi?id=564214))
 - [ ] Update the "new and noteworthy" version numbers: (Normally only done on M3 and RCs)
     - [ ] Search for ` url=` (notice the blank before url) in `epp.website.xml` to see which ones are contained in the different packages.
     - [ ] Use global search and replace to update the version numbers at the end of the URLs.
     - [ ] Remember that some of the features will release new versions together with the new Eclipse release. Therefore using the _currently_ released version number may be wrong. Instead lookup the feature version [to be released with the release train](https://projects.eclipse.org/releases/2020-03).
-- [ ] Update name of the release in strings with a "smart" global find&replace. See this [gerrit](https://git.eclipse.org/r/#/c/158509/) for an example. Use commit message like `Update strings for 2020-09 M2`. In particular, check:
+- [ ] Update name of the release in strings with a "smart" global find&replace. *Be careful on M3 that the replace did not match the Eclipse project name M2E!* See this [gerrit](https://git.eclipse.org/r/#/c/158509/) for an example. Use commit message like `Update strings for 2020-09 M2`. In particular, check:
     - [ ] `packages/*/epp.website.xml` for `product name=` line
     - [ ] Variables in parent pom `releng/org.eclipse.epp.config/parent/pom.xml`
     - [ ] release.xml template in releng/org.eclipse.epp.config/tools/promote-a-build.sh
@@ -51,6 +50,7 @@ build=20191212-1212
 ```
 - [ ] Run the [Promote a Build](https://ci.eclipse.org/packaging/job/promote-a-build/) CI job to prepare build artifacts and copy them to download.eclipse.org
     - [ ] Run the build once in `DRY_RUN` mode to ensure that the output is correct before it is copied to download.eclipse.org.
+- [ ] Run the [Notarize MacOSX Downloads](https://ci.eclipse.org/packaging/job/notarize-downloads/) CI job to notarize DMG packages on download.eclipse.org
 - [ ] Send email to epp-dev to request package maintainers test it.
 - [ ] **On M1-RC1 release day** approximately 9:30am check:
     - [ ] copy the composite\*RC1.jar files over the composite\*.jar files in https://download.eclipse.org/technology/epp/packages/2020-03/ - this is done automatically with the https://ci.eclipse.org/packaging/view/Packages/job/epp-makeVisible/ which is automatically triggered by simrel's https://ci.eclipse.org/simrel/view/All/job/simrel.releng.makeVisible/

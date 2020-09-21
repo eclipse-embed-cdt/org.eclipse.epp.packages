@@ -28,7 +28,7 @@
     url="https://eclipsescout.github.io/10.0/release-notes.html"
     project="Eclipse Scout" />
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.16/"
+    url="https://www.eclipse.org/eclipse/news/4.17/"
     project="Eclipse Platform" />
   </MoreInfo>
 
@@ -38,6 +38,6 @@
   <rcp version="4.16.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-scout-2020-09-M3" />
+  <product name="eclipse-scout-2020-09-R" />
 
 </configuration>

@@ -1,0 +1,8 @@
+<project default="remove-categories">
+	<target name="remove-categories">
+		<p2.remove.iu>
+			<repository location="file:/${basedir}/target/repository" />
+			<iu query="property[@name='org.eclipse.equinox.p2.type.category']" />
+		</p2.remove.iu>
+	</target>
+</project>
