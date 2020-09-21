@@ -43,8 +43,9 @@
     <eclipse.simultaneous.release.name>2020-09 (4.17.0)</eclipse.simultaneous.release.name>
     <!-- Upstream p2 repository, used as a source for pre-compiled build artifacts -->
     <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/2020-09/</eclipse.simultaneous.release.repository>
+
     <!-- Embedded CDT specifics -->
-    <embedcdt.packageFolderName>2020-09-M3-KSE</embedcdt.packageFolderName>
+    <embedcdt.packageFolderName>2020-09</embedcdt.packageFolderName>
     <embedcdt.version>5.1.2</embedcdt.version>
     <!-- <embedcdt.repository>https://download.eclipse.org/embed-cdt/releases/${embedcdt.version}/p2/</embedcdt.repository> -->
     <embedcdt.repository>https://download.eclipse.org/embed-cdt/updates/neon-test/</embedcdt.repository>
