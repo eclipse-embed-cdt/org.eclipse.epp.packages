@@ -136,12 +136,9 @@ cat > release.xml <<EOM
 <past>2020-03/R</past>
 <past>2020-06/R</past>
 <present>2020-09/R</present>
+<future>2020-12/M1</future>
 </packages>
 EOM
-
-# Add this line above on M1
-# <future>2020-12/M1</future>
-
 
 # ----------------------------------------------------------------------------------------------
 # Copy everything to download.eclipse.org

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Eclipse for RCP and RAP Developers" uid="epp.package.rcp" id="org.eclipse.epp.package.rcp.product" application="org.eclipse.ui.ide.workbench" version="4.17.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Eclipse for RCP and RAP Developers" uid="epp.package.rcp" id="org.eclipse.epp.package.rcp.product" application="org.eclipse.ui.ide.workbench" version="4.18.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/org.eclipse.epp.package.rcp/eclipse_lg.png"/>
@@ -202,8 +202,8 @@ United States, other countries, or both.
    </plugins>
 
    <features>
-      <feature id="org.eclipse.epp.package.rcp.feature" version="4.17.0.qualifier"/>
-      <feature id="org.eclipse.epp.package.common.feature" version="4.17.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.rcp.feature" version="4.18.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.common.feature" version="4.18.0.qualifier"/>
       <feature id="org.eclipse.platform"/>
       <feature id="org.eclipse.epp.mpc" installMode="root"/>
       <feature id="org.eclipse.jdt"/>
