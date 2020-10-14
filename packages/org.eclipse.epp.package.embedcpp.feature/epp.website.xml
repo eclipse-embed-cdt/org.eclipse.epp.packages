@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <!-- Package Description information to be picked up by www.eclipse.org/packages -->
+  <!-- PackageName is the title of your package
+       maintainer is the project or persons that are maintaining the package
+       iconurl is the fully qualified URL to the icon you wish to use on the site (48x48)
+       bugzillaComponentID is used to gather bugzilla information about your package.  This should be given to you after provisioning of the package is finished
+       testPlan is the fully qualified URL to the test plan for this package
+   -->
+  <packageMetaData
+   packageName="Eclipse IDE for Embedded C/C++ Developers"
+   maintainer="Eclipse Packaging Project"
+   iconurl="http://www.eclipse.org/downloads/images/cdt.png"
+   bugzillaComponentId="embedcpp-package"
+   testPlan="http://www.eclipse.org/epp/testplan.php" >
+    <!-- Description is wrapped in CDATA tags to allow you to insert HTML code if necessary -->
+     <description><![CDATA[An IDE for Embedded C/C++ developers.]]></description>
+    <!-- packageTesters is a list of the people that are testing the package -->
+     <packageTesters>
+      <tester>Liviu Ionescu</tester>
+      <tester>Jonah Graham</tester>
+    </packageTesters>
+  </packageMetaData>
+  <MoreInfo>
+  <NewAndNoteworthy
+    url="https://wiki.eclipse.org/CDT/User/NewIn100"
+    project="Eclipse CDT" />
+  <NewAndNoteworthy
+    url="https://projects.eclipse.org/projects/iot.embed-cdt/releases/5.1.3/"
+    project="Eclipse Embedded CDT" />
+  <NewAndNoteworthy
+    url="https://wiki.eclipse.org/Linux_Tools_Project/News/NewIn80"
+    project="Eclipse Linux Tools" />
+  <NewAndNoteworthy
+    url="https://www.eclipse.org/eclipse/news/4.18/"
+    project="Eclipse Platform" />
+  <NewAndNoteworthy
+    url="https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.9"
+    project="Eclipse EGit" />
+  </MoreInfo>
+
+
+  <!-- version, the RCP version to build. This is used to determine the file
+    name of the root file archives -->
+  <rcp version="4.18.0" />
+
+  <!-- name, the name of the product, used in naming the created files. -->
+  <product name="eclipse-embedcpp-2020-12-M1" />
+
+</configuration>

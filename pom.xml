@@ -51,6 +51,14 @@
       </modules>
     </profile>
     <profile>
+      <id>epp.package.embedcpp</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.embedcpp</module>
+        <module>packages/org.eclipse.epp.package.embedcpp.feature</module>
+        <module>packages/org.eclipse.epp.package.embedcpp.product</module>
+      </modules>
+    </profile>
+    <profile>
       <id>epp.package.javascript</id>
       <modules>
         <module>packages/org.eclipse.epp.package.javascript</module>

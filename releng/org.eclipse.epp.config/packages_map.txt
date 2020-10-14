@@ -17,6 +17,10 @@ dsl,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.packa
 dsl,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.dsl.feature/feature.xml,HEAD,dsl.feature.xml
 dsl,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.dsl.product/epp.product,HEAD,dsl.product.xml
 
+embedcpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.embedcpp.feature/epp.website.xml,HEAD,embedcpp.xml
+embedcpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.embedcpp.feature/feature.xml,HEAD,embedcpp.feature.xml
+embedcpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.embedcpp.product/epp.product,HEAD,embedcpp.product.xml
+
 java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/epp.website.xml,HEAD,java.xml
 java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.feature/feature.xml,HEAD,java.feature.xml
 java,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.java.product/epp.product,HEAD,java.product.xml

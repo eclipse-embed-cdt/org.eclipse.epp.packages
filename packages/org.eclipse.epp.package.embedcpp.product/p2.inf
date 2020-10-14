@@ -1,0 +1,25 @@
+# Bug 458776 - Let's be sure to "describe" future "updates"
+# https://bugs.eclipse.org/bugs/show_bug.cgi?id=458776
+
+properties.0.name = org.eclipse.equinox.p2.type.product
+properties.0.value = true
+
+properties.1.name = org.eclipse.equinox.p2.description
+properties.1.value = 2020-12 Release of the Eclipse Embedded C/C++ Developers Developers package.
+
+properties.2.name = org.eclipse.equinox.p2.provider
+properties.2.value = Eclipse Packaging Project
+
+# Bug 490515 - Prevent upgrade from old to new EPP package layout
+# https://bugs.eclipse.org/bugs/show_bug.cgi?id=490515
+#
+# With Eclipse Neon (4.6.0) all packages changed their structure from a single
+# feature to a product with multiple independent root features. Upgrades from
+# older versions to the new structure would result in an unexpected uninstall
+# of everything below the old main package feature. In order to prevent such
+# upgrades we add an artificial lower limit of the IU to the p2 metadata.
+
+update.id = epp.package.embedcpp
+update.range = [4.6.0.20160301-1200, $version$)
+update.severity = 0
+update.description = Eclipse package upgrade from versions before Eclipse Neon (4.6) is not possible. See bug 332989.
