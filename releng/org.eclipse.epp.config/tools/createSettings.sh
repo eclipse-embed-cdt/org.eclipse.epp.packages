@@ -53,19 +53,23 @@ echo "  </mirrors>" >>$SETTINGS_FILE
 
 echo "  <activeProfiles>" >>$SETTINGS_FILE
 
-### use the HEAD commit to find out which package directories contain a change
+## PACKAGES contains the list of packages that have been examined already. Start
+## by preloading with IGNORED_PACKAGES so that none of them are added
 PACKAGES="${IGNORED_PACKAGES}"
+
+
+### use the HEAD commit to find out which package directories contain a change
 cd ${WORKSPACE}/${GIT_REPOSITORY}
 for II in `git diff-tree --name-only --no-commit-id -r HEAD | cut -d "/" -f 2 | cut -d "." -f 5 | sort | uniq`; do
-  if [[ "common" =~ ${II} ]]
+  if [[ "common" == ${II} ]]
   then
-    echo "${II} found; will trigger a full package build."
+    echo "Change detected in common bundles found; will trigger a full package build."
     FULL_BUILD="true"
     continue
   fi
   if [[ ${IGNORED_PACKAGES} =~ ${II} ]]
   then
-    echo "${II} contains changes, but is ignored or a duplicate."
+    echo "${II} contains changes, but is ignored or already added."
     continue
   fi
   PACKAGE="epp.package.${II}"
@@ -81,21 +85,25 @@ OTHERCHANGES="xxx`git diff-tree --name-only --no-commit-id -r HEAD | grep -v "^p
 if [ "${OTHERCHANGES}" != "xxxxxx" ] || [ "${FULL_BUILD}" == "true" ]
 then
   echo "Full build required. Adding all packages"
-  ALLPACKAGES=`ls packages | cut -d "." -f 5 | sort | uniq`
+  ALLPACKAGES="xxx `ls packages | cut -d "." -f 5 | sort | uniq` xxx"
   for II in ${ALLPACKAGES}; do
-    if [[ "common" =~ ${II} ]]
+    if [[ "xxx" == ${II} ]]
     then
       continue
     fi
-    if [[ ${PACKAGES} =~ ${II} ]]
+    if [[ "common" == ${II} ]]
     then
-      echo "${II} should be added for all packages, but it is ignored or a duplicate."
+      continue
+    fi
+    if [[ ${PACKAGES} =~ "epp.package.${II} " ]]
+    then
+      echo "${II} should be added for all packages, but it is ignored or already added."
       continue
     else
       PACKAGE="epp.package.${II}"
       echo "Adding package $PACKAGE"
       echo "    <activeProfile>${PACKAGE}</activeProfile>" >>$SETTINGS_FILE
-      PACKAGES="${PACKAGES}"
+      PACKAGES="${PACKAGES} ${PACKAGE}"
     fi
   done
 fi
