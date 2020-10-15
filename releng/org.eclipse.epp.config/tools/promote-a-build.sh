@@ -54,9 +54,12 @@ popd
 # archive will be empty now, unless we are only publishing some packages
 rm -rvf archive.zip archive
 
-# check-out configuration
-. functions.sh
-pullAllConfigFiles packages_map.txt .
+# place configurations in final location
+for PACKAGE in $PACKAGES; do
+  cp ${WORKSPACE}/packages/org.eclipse.epp.package.${PACKAGE}.feature/epp.website.xml ${PACKAGE}.xml
+  cp ${WORKSPACE}/packages/org.eclipse.epp.package.${PACKAGE}.feature/feature.xml ${PACKAGE}.feature.xml
+  cp ${WORKSPACE}/packages/org.eclipse.epp.package.${PACKAGE}.product/epp.product ${PACKAGE}.product.xml
+done
 
 # Rename incubation packages
 INCUBATION=`ls *.xml | grep -v feature | xargs grep "product name=\"eclipse.*incubation" | sed 's/^.*\(eclipse-.*\)-incubation.*/\1/'`
