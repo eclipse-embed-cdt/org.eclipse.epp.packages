@@ -55,7 +55,7 @@ echo "  <activeProfiles>" >>$SETTINGS_FILE
 
 ## PACKAGES contains the list of packages that have been examined already. Start
 ## by preloading with IGNORED_PACKAGES so that none of them are added
-PACKAGES="${IGNORED_PACKAGES}"
+PACKAGES="xxx ${IGNORED_PACKAGES} xxx"
 
 
 ### use the HEAD commit to find out which package directories contain a change
@@ -95,7 +95,11 @@ then
     then
       continue
     fi
-    if [[ ${PACKAGES} =~ "epp.package.${II} " ]]
+    if [[ ${PACKAGES} =~ "epp.package.${II}" ]]
+    then
+      echo "${II} should be added for all packages, but it is ignored or already added."
+      continue
+    elif [[ ${PACKAGES} =~ " ${II} " ]]
     then
       echo "${II} should be added for all packages, but it is ignored or already added."
       continue
