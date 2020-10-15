@@ -84,7 +84,8 @@
               <includePacked>true</includePacked>
               <mirrorMetadataOnly>false</mirrorMetadataOnly>
               <append>true</append>
-              <xzCompress>true</xzCompress>
+              <!-- Mirror goal used to aggregate unit seem to ignore the .xz files so let's not generate them to avoid inconsistency between *.jar and *.xz -->
+              <xzCompress>false</xzCompress>
             </configuration>
           </execution>
         </executions>

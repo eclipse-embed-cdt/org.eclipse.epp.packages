@@ -212,7 +212,8 @@
               <p2.statsURI>https://download.eclipse.org/stats/technology/epp/packages/${eclipse.simultaneous.release.id}/</p2.statsURI>
             </extraArtifactRepositoryProperties>
             <compress>true</compress>
-            <xzCompress>true</xzCompress>
+            <!-- Mirror goal used to aggregate unit seem to ignore the .xz files so let's not generate them to avoid inconsistency between *.jar and *.xz -->
+            <xzCompress>false</xzCompress>
           </configuration>
         </plugin>
         <plugin>
