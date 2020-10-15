@@ -21,12 +21,6 @@ mkdir p2
 pushd downloads
 
 # ----------------------------------------------------------------------------------------------
-# pull the XML configuration files that describe each package; these files are used by the
-# script that generates the package websites at eclipse.org/downloads
-
-cp ../releng/org.eclipse.epp.config/tools/functions.sh ../releng/org.eclipse.epp.config/packages_map.txt .
-
-# ----------------------------------------------------------------------------------------------
 # download the packages from the Jenkins build server
 # rename the packages, i.e. strip the build date, update the package file name, and add the
 # incubation name if required.
