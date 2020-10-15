@@ -10,7 +10,7 @@ set -x # echo all commands used for debugging purposes
 # RELEASE_DIR=
 # BUILD_NUMBER=
 PACKAGES="committers cpp dsl embedcpp java javascript jee modeling parallel php rcp rust scout testing"
-PLATFORMS="linux.gtk.x86_64.tar.gz macosx.cocoa.x86_64.dmg win32.win32.x86_64.zip"
+PLATFORMS="linux.gtk.aarch64.tar.gz linux.gtk.x86_64.tar.gz macosx.cocoa.x86_64.dmg win32.win32.x86_64.zip"
 ARCHIVE_URL="https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build/${BUILD_NUMBER}/artifact/org.eclipse.epp.packages/archive/*zip*/archive.zip"
 EPP_DOWNLOADS=/home/data/httpd/download.eclipse.org/technology/epp
 DOWNLOADS=${EPP_DOWNLOADS}/downloads/release/${RELEASE_NAME}/
@@ -40,6 +40,7 @@ for PACKAGE in $PACKAGES; do
     NAME=$(echo *_eclipse-${PACKAGE}-${RELEASE_NAME}-${RELEASE_MILESTONE}-${PLATFORM})
     NEWNAME=`echo ${NAME} | \
              cut -d "_" -f 2- | \
+             sed 's/linux\.gtk\.aarch64\_64/linux-gtk-aarch64/' | \
              sed 's/linux\.gtk\.x86\_64/linux-gtk-x86\_64/' | \
              sed 's/win32\.win32\.x86\_64\./win32\-x86\_64\./' | \
              sed 's/macosx\.cocoa\.x86\_64/macosx\-cocoa-x86\_64/' | \
