@@ -43,11 +43,11 @@
       </modules>
     </profile>
     <profile>
-      <id>epp.package.embedcdt</id>
+      <id>epp.package.embedcpp</id>
       <modules>
-        <module>packages/org.eclipse.epp.package.embedcdt</module>
-        <module>packages/org.eclipse.epp.package.embedcdt.feature</module>
-        <module>packages/org.eclipse.epp.package.embedcdt.product</module>
+        <module>packages/org.eclipse.epp.package.embedcpp</module>
+        <module>packages/org.eclipse.epp.package.embedcpp.feature</module>
+        <module>packages/org.eclipse.epp.package.embedcpp.product</module>
       </modules>
     </profile>
     <profile>

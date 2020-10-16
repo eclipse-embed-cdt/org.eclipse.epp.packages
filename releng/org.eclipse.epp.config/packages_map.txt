@@ -13,9 +13,9 @@ cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.packa
 cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.feature/feature.xml,HEAD,cpp.feature.xml
 cpp,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.cpp.product/epp.product,HEAD,cpp.product.xml
 
-embedcdt,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.embedcdt.feature/epp.website.xml,HEAD,embedcdt.xml
-embedcdt,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.embedcdt.feature/feature.xml,HEAD,embedcdt.feature.xml
-embedcdt,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.embedcdt.product/epp.product,HEAD,embedcdt.product.xml
+embedcdt,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.embedcpp.feature/epp.website.xml,HEAD,embedcdt.xml
+embedcdt,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.embedcpp.feature/feature.xml,HEAD,embedcdt.feature.xml
+embedcdt,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.embedcpp.product/epp.product,HEAD,embedcdt.product.xml
 
 dsl,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.dsl.feature/epp.website.xml,HEAD,dsl.xml
 dsl,GIT,/gitroot/epp/org.eclipse.epp.packages.git,packages/org.eclipse.epp.package.dsl.feature/feature.xml,HEAD,dsl.feature.xml

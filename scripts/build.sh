@@ -46,8 +46,8 @@ do_compute_sha() {
 
 # -----------------------------------------------------------------------------
 
-mvn clean verify --batch-mode --show-version -Pepp.package.embedcdt
-# mvn clean verify --batch-mode --show-version -Pepp.package.embedcdt -Pepp.package.cpp
+mvn clean verify --batch-mode --show-version -Pepp.package.embedcpp
+# mvn clean verify --batch-mode --show-version -Pepp.package.embedcpp -Pepp.package.cpp
 
 pushd archive
 for f in *.zip *.gz 
