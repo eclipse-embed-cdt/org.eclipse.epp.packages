@@ -210,7 +210,8 @@ United States, other countries, or both.
       <feature id="org.eclipse.cdt" installMode="root"/>
       <feature id="org.eclipse.cdt.autotools" installMode="root"/>
       <feature id="org.eclipse.cdt.build.crossgcc" installMode="root"/>
-      <feature id="org.eclipse.cdt.qt" installMode="root"/>
+      <!-- Temporarily disabled, it fails with Java 15 -->
+      <!-- <feature id="org.eclipse.cdt.qt" installMode="root"/> -->
       <feature id="org.eclipse.cdt.cmake" installMode="root"/>
       <feature id="org.eclipse.cdt.meson" installMode="root"/>
       <feature id="org.eclipse.cdt.docker.launcher" installMode="root"/>
