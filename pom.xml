@@ -20,7 +20,7 @@
   <parent>
     <groupId>org.eclipse.epp</groupId>
     <artifactId>org.eclipse.epp-parent</artifactId>
-    <version>4.17.0-SNAPSHOT</version>
+    <version>4.18.0-SNAPSHOT</version>
     <relativePath>releng/org.eclipse.epp.config/parent/</relativePath>
   </parent>
 
@@ -56,6 +56,14 @@
         <module>packages/org.eclipse.epp.package.dsl</module>
         <module>packages/org.eclipse.epp.package.dsl.feature</module>
         <module>packages/org.eclipse.epp.package.dsl.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.embedcpp</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.embedcpp</module>
+        <module>packages/org.eclipse.epp.package.embedcpp.feature</module>
+        <module>packages/org.eclipse.epp.package.embedcpp.product</module>
       </modules>
     </profile>
     <profile>

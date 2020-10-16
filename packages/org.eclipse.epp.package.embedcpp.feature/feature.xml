@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.epp.package.embedcpp.feature"
+      label="EPP Embedded CPP Feature"
+      version="4.18.0.qualifier"
+      provider-name="Eclipse Packaging Project"
+      plugin="org.eclipse.epp.package.embedcpp"
+      license-feature="org.eclipse.license"
+      license-feature-version="0.0.0">
+
+   <description url="http://eclipse.org/epp">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <!-- see p2.inf file for optionally imported Linux Tools features -->
+
+   <!--
+        All requirements to features and the content of the product are defined 
+        in the product configuration epp.product since Eclipse Neon. For further
+        details see the following bug:
+
+        Bug 332989 - Allow parts of a package to upgraded or removed
+        https://bugs.eclipse.org/bugs/show_bug.cgi?id=332989
+
+        The Embedded CPP package includes several features/IUs by the p2.inf file in
+        the Embedded CPP feature; this hasn't been touched and could be part of another
+        change.
+     -->
+
+   <plugin
+         id="org.eclipse.epp.package.embedcpp"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>

@@ -22,15 +22,15 @@
   </packageMetaData>
   <MoreInfo>
   <NewAndNoteworthy
-    url="https://www.eclipse.org/eclipse/news/4.17/"
+    url="https://www.eclipse.org/eclipse/news/4.18/"
     project="Eclipse Platform" />
   </MoreInfo>
 
   <!-- version, the RCP version to build. This is used to determine the file 
     name of the root file archives -->
-  <rcp version="4.16.0" />
+  <rcp version="4.18.0" />
 
   <!-- name, the name of the product, used in naming the created files. -->
-  <product name="eclipse-dsl-2020-09-R" />
+  <product name="eclipse-dsl-2020-12-M1" />
 
 </configuration>

@@ -19,13 +19,12 @@
 
   <groupId>org.eclipse.epp</groupId>
   <artifactId>org.eclipse.epp-parent</artifactId>
-  <version>4.17.0-SNAPSHOT</version>
+  <version>4.18.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
-    <maven.version>3.1.1</maven.version>
+    <maven.version>3.6.3</maven.version>
     <tycho.version>2.0.0</tycho.version>
-    <tycho.extras.version>${tycho.version}</tycho.extras.version>
     <tycho.scmUrl>scm:git:git://git.eclipse.org/gitroot/epp/org.eclipse.epp.packages.git</tycho.scmUrl>
     <cbi.version>1.1.8-SNAPSHOT</cbi.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -36,18 +35,18 @@
     <!-- The location that is used to assemble the single EPP configuration p2 repository -->
     <eclipse.epp.targetRepository>${eclipse.epp.archiveDirectory}/repository/</eclipse.epp.targetRepository>
     <!-- ID used to generate the filename of the packages -->
-    <eclipse.simultaneous.release.id>2020-09-R</eclipse.simultaneous.release.id>
+    <eclipse.simultaneous.release.id>2020-12-M1</eclipse.simultaneous.release.id>
     <!-- Timestamp used in various places, e.g. the about dialog (see about.mappings) -->
     <eclipse.simultaneous.release.build>${maven.build.timestamp}</eclipse.simultaneous.release.build>
     <!-- Human readable name of the release, e.g. used in the about dialog (see about.mappings) -->
-    <eclipse.simultaneous.release.name>2020-09 (4.17.0)</eclipse.simultaneous.release.name>
+    <eclipse.simultaneous.release.name>2020-12 M1 (4.18.0 M1)</eclipse.simultaneous.release.name>
     <!-- Upstream p2 repository, used as a source for pre-compiled build artifacts -->
-    <eclipse.simultaneous.release.repository>http://download.eclipse.org/staging/2020-09/</eclipse.simultaneous.release.repository>
+    <eclipse.simultaneous.release.repository>https://download.eclipse.org/staging/2020-12/</eclipse.simultaneous.release.repository>
 
     <!-- Embedded CDT specifics -->
-    <embedcdt.packageFolderName>2020-09</embedcdt.packageFolderName>
+    <embedcdt.packageFolderName>2020-12</embedcdt.packageFolderName>
     <embedcdt.version>5.1.2</embedcdt.version>
-    <!-- Use /releases/${embedcdt.version}/p2/ for final the releases and /updates/neon-test/ for develop packages -->
+    <!-- Use /releases/${embedcdt.version}/p2/ for final releases and /updates/neon-test/ for develop packages -->
     <embedcdt.repository>https://download.eclipse.org/embed-cdt/releases/${embedcdt.version}/p2/</embedcdt.repository>
     <!-- <embedcdt.repository>https://download.eclipse.org/embed-cdt/updates/neon-test/</embedcdt.repository> -->
 
@@ -150,12 +149,12 @@
           <dependency>
             <groupId>org.eclipse.tycho.extras</groupId>
             <artifactId>tycho-buildtimestamp-jgit</artifactId>
-            <version>${tycho.extras.version}</version>
+            <version>${tycho.version}</version>
           </dependency>
           <dependency>
             <groupId>org.eclipse.tycho.extras</groupId>
             <artifactId>tycho-sourceref-jgit</artifactId>
-            <version>${tycho.extras.version}</version>
+            <version>${tycho.version}</version>
           </dependency>
         </dependencies>
         <configuration>
@@ -200,7 +199,7 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>build-helper-maven-plugin</artifactId>
-          <version>1.8</version>
+          <version>3.2.0</version>
         </plugin>
         <plugin>
           <groupId>org.eclipse.tycho</groupId>
@@ -256,12 +255,12 @@
         <plugin>
           <groupId>org.eclipse.tycho.extras</groupId>
           <artifactId>tycho-pack200a-plugin</artifactId>
-          <version>${tycho.extras.version}</version>
+          <version>${tycho.version}</version>
         </plugin>
         <plugin>
           <groupId>org.eclipse.tycho.extras</groupId>
           <artifactId>tycho-pack200b-plugin</artifactId>
-          <version>${tycho.extras.version}</version>
+          <version>${tycho.version}</version>
         </plugin>
         <plugin>
           <groupId>org.eclipse.tycho</groupId>
@@ -279,12 +278,12 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-resources-plugin</artifactId>
-          <version>2.6</version>
+          <version>3.2.0</version>
         </plugin>
         <plugin>
           <groupId>org.eclipse.tycho.extras</groupId>
           <artifactId>tycho-source-feature-plugin</artifactId>
-          <version>${tycho.extras.version}</version>
+          <version>${tycho.version}</version>
           <configuration>
             <archive>
               <addMavenDescriptor>false</addMavenDescriptor>
@@ -351,7 +350,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-antrun-plugin</artifactId>
-          <version>1.8</version>
+          <version>3.0.0</version>
         </plugin>
       </plugins>
     </pluginManagement>

@@ -20,11 +20,25 @@
   <parent>
     <groupId>org.eclipse.epp</groupId>
     <artifactId>org.eclipse.epp-product-parent</artifactId>
-    <version>4.17.0-SNAPSHOT</version>
+    <version>4.18.0-SNAPSHOT</version>
     <relativePath>../../releng/org.eclipse.epp.config/parent/product</relativePath>
   </parent>
 
   <artifactId>epp.package.jee</artifactId>
   <packaging>eclipse-repository</packaging>
+  
+  <build>
+ 		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<!-- Do not include execution environment units, so we're sure JustJ is used -->
+					<executionEnvironment>none</executionEnvironment>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>

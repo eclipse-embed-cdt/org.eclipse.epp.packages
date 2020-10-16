@@ -9,8 +9,8 @@ set -x # echo all commands used for debugging purposes
 # RELEASE_MILESTONE=
 # RELEASE_DIR=
 # BUILD_NUMBER=
-PACKAGES="committers cpp dsl java javascript jee modeling parallel php rcp rust scout testing"
-PLATFORMS="linux.gtk.x86_64.tar.gz macosx.cocoa.x86_64.dmg win32.win32.x86_64.zip"
+PACKAGES="committers cpp dsl embedcpp java javascript jee modeling parallel php rcp rust scout testing"
+PLATFORMS="linux.gtk.aarch64.tar.gz linux.gtk.x86_64.tar.gz macosx.cocoa.x86_64.dmg win32.win32.x86_64.zip"
 ARCHIVE_URL="https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build/${BUILD_NUMBER}/artifact/org.eclipse.epp.packages/archive/*zip*/archive.zip"
 EPP_DOWNLOADS=/home/data/httpd/download.eclipse.org/technology/epp
 DOWNLOADS=${EPP_DOWNLOADS}/downloads/release/${RELEASE_NAME}/
@@ -19,12 +19,6 @@ REPO=${EPP_DOWNLOADS}/packages/${RELEASE_NAME}/
 mkdir downloads
 mkdir p2
 pushd downloads
-
-# ----------------------------------------------------------------------------------------------
-# pull the XML configuration files that describe each package; these files are used by the
-# script that generates the package websites at eclipse.org/downloads
-
-cp ../releng/org.eclipse.epp.config/tools/functions.sh ../releng/org.eclipse.epp.config/packages_map.txt .
 
 # ----------------------------------------------------------------------------------------------
 # download the packages from the Jenkins build server
@@ -40,6 +34,7 @@ for PACKAGE in $PACKAGES; do
     NAME=$(echo *_eclipse-${PACKAGE}-${RELEASE_NAME}-${RELEASE_MILESTONE}-${PLATFORM})
     NEWNAME=`echo ${NAME} | \
              cut -d "_" -f 2- | \
+             sed 's/linux\.gtk\.aarch64\_64/linux-gtk-aarch64/' | \
              sed 's/linux\.gtk\.x86\_64/linux-gtk-x86\_64/' | \
              sed 's/win32\.win32\.x86\_64\./win32\-x86\_64\./' | \
              sed 's/macosx\.cocoa\.x86\_64/macosx\-cocoa-x86\_64/' | \
@@ -53,9 +48,12 @@ popd
 # archive will be empty now, unless we are only publishing some packages
 rm -rvf archive.zip archive
 
-# check-out configuration
-. functions.sh
-pullAllConfigFiles packages_map.txt .
+# place configurations in final location
+for PACKAGE in $PACKAGES; do
+  cp ${WORKSPACE}/packages/org.eclipse.epp.package.${PACKAGE}.feature/epp.website.xml ${PACKAGE}.xml
+  cp ${WORKSPACE}/packages/org.eclipse.epp.package.${PACKAGE}.feature/feature.xml ${PACKAGE}.feature.xml
+  cp ${WORKSPACE}/packages/org.eclipse.epp.package.${PACKAGE}.product/epp.product ${PACKAGE}.product.xml
+done
 
 # Rename incubation packages
 INCUBATION=`ls *.xml | grep -v feature | xargs grep "product name=\"eclipse.*incubation" | sed 's/^.*\(eclipse-.*\)-incubation.*/\1/'`
@@ -86,9 +84,11 @@ popd # leave downloads
 # ----------------------------------------------------------------------------------------------
 # Prepare compositeArtifacts.jar/compositeContent.jar
 pushd p2
-if [ "$RELEASE_MILESTONE" != "M1" ]; then
+if [ "$RELEASE_MILESTONE" != "M1" ] && [ "$RELEASE_MILESTONE" != "R" ]; then
     # For non M1 build we need to add to the existing p2 content,
     # for M1 we start from scratch
+
+    # For R build the composite should have just the release in it
     cp -rp ${REPO}/* .
 fi
 mv repository ${RELEASE_DIR}
@@ -134,12 +134,9 @@ cat > release.xml <<EOM
 <past>2020-03/R</past>
 <past>2020-06/R</past>
 <present>2020-09/R</present>
+<future>2020-12/M1</future>
 </packages>
 EOM
-
-# Add this line above on M1
-# <future>2020-12/M1</future>
-
 
 # ----------------------------------------------------------------------------------------------
 # Copy everything to download.eclipse.org
@@ -156,6 +153,6 @@ ${ECHO} mkdir -p ${REPO}
 ${ECHO} cp -r downloads/* ${DOWNLOADS}/${RELEASE_DIR}
 ${ECHO} cp -r p2/p2.index ${REPO}
 ${ECHO} cp -r p2/${RELEASE_DIR} ${REPO}
-${ECHO} cp p2/compositeArtifacts.jar ${REPO}/compositeArtifacts${RELEASE_DIR}.jar
-${ECHO} cp p2/compositeContent.jar ${REPO}/compositeContent${RELEASE_DIR}.jar
+${ECHO} cp p2/compositeArtifacts.jar ${REPO}/compositeArtifacts${RELEASE_MILESTONE}.jar
+${ECHO} cp p2/compositeContent.jar ${REPO}/compositeContent${RELEASE_MILESTONE}.jar
 ${ECHO} cp release.xml ${EPP_DOWNLOADS}/downloads/release/release.xml
